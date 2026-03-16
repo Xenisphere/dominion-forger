@@ -30,8 +30,7 @@ function saveCards(cards) {
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}" on Dominion Strategy wiki`);
 
-const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
-  return new Promise((resolve) => {
+const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;  return new Promise((resolve) => {
     https.get(url, (res) => {
       let data = '';
 
