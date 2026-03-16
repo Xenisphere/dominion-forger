@@ -25,8 +25,7 @@ function saveCards(cards) {
 
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}" on wiki API`);
-  const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
-
+const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json&origin=*`;
   let data;
   try {
     const res = await fetch(url, {
