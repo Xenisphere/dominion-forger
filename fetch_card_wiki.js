@@ -23,6 +23,13 @@ function saveCards(cards) {
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
 }
 
+// At the top of fetchCard, before the fetch call:
+const localPath = path.join(__dirname, 'raw', `${cardName}.json`);
+if (fs.existsSync(localPath)) {
+  console.log(`[DEBUG] Using local cache for "${cardName}"`);
+  data = fs.readFileSync(localPath, 'utf-8');
+}
+
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}" on wiki API`);
 const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json&origin=*`;
