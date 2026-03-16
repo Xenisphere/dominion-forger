@@ -1,14 +1,1 @@
-[
-  {
-    "name": "Village",
-    "cost": 3,
-    "tags": ["village"],
-    "effects": ["+1 Card", "+2 Actions"]
-  },
-  {
-    "name": "Smithy",
-    "cost": 4,
-    "tags": ["draw", "terminal"],
-    "effects": ["+3 Cards"]
-  }
-]
+
