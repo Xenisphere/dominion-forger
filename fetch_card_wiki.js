@@ -25,7 +25,15 @@ function saveCards(cards) {
 
 function httpsGet(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
+    function httpsGet(url) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      headers: {
+        'User-Agent': 'DominionCardFetcher/1.0 (your-email@example.com)'
+      }
+    };
+
+    https.get(url, options, (res) => {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         console.log(`[DEBUG] Redirecting to: ${res.headers.location}`);
         return httpsGet(res.headers.location).then(resolve).catch(reject);
@@ -35,6 +43,8 @@ function httpsGet(url) {
       res.on('data', (chunk) => data += chunk);
       res.on('end', () => resolve(data));
     }).on('error', reject);
+  });
+}
   });
 }
 
