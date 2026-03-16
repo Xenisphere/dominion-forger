@@ -25,8 +25,6 @@ function saveCards(cards) {
 
 function httpsGet(url) {
   return new Promise((resolve, reject) => {
-    function httpsGet(url) {
-  return new Promise((resolve, reject) => {
     const options = {
       headers: {
         'User-Agent': 'DominionCardFetcher/1.0 (your-email@example.com)'
@@ -43,8 +41,6 @@ function httpsGet(url) {
       res.on('data', (chunk) => data += chunk);
       res.on('end', () => resolve(data));
     }).on('error', reject);
-  });
-}
   });
 }
 
