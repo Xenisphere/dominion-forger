@@ -27,27 +27,23 @@ function saveCards(cards) {
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
 }
 
-// Function to fetch card info from WikiMedia API
 const https = require('https');
 
-// Function to fetch card info from WikiMedia API using https
 async function fetchCard(cardName) {
-  console.log(`[DEBUG] Searching for "${cardName}" on WikiMedia API`);
+  console.log(`[DEBUG] Searching for "${cardName}" on Fandom API`);
 
-const url = `https://community.fandom.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
+  const url = `https://community.fandom.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
+
   return new Promise((resolve) => {
     https.get(url, (res) => {
       let data = '';
-
-      res.on('data', (chunk) => {
-        data += chunk;
-      });
-
+      res.on('data', chunk => data += chunk);
       res.on('end', () => {
         try {
           const json = JSON.parse(data);
 
-          if (!json.parse || !json.parse.wikitext) {
+          // The wikitext is now under json.parse.wikitext['*']
+          if (!json.parse || !json.parse.wikitext || !json.parse.wikitext['*']) {
             console.error('[ERROR] Card page not found or invalid format');
             resolve(null);
             return;
@@ -55,6 +51,7 @@ const url = `https://community.fandom.com/api.php?action=parse&page=${encodeURIC
 
           const wikitext = json.parse.wikitext['*'];
 
+          // Parse the fields
           const kingdomMatch = wikitext.match(/\|\s*Expansion\s*=\s*(.+)/i);
           const costMatch = wikitext.match(/\|\s*Cost\s*=\s*(.+)/i);
           const typesMatch = wikitext.match(/\|\s*Type\s*=\s*(.+)/i);
@@ -76,7 +73,6 @@ const url = `https://community.fandom.com/api.php?action=parse&page=${encodeURIC
           resolve(null);
         }
       });
-
     }).on('error', (err) => {
       console.error('[ERROR] HTTPS request failed:', err);
       resolve(null);
