@@ -1,12 +1,11 @@
-// Node.js script to fetch a Dominion card from WikiMedia API and write to cards.json
-
+// fetch_card_wiki.js
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch'); // npm install node-fetch@2 for Node 18
+const https = require('https');
 
 const cardsFilePath = path.join(__dirname, 'cards.json');
 
-// Function to load existing cards
+// Load existing cards from JSON
 function loadCards() {
   if (fs.existsSync(cardsFilePath)) {
     const data = fs.readFileSync(cardsFilePath, 'utf-8');
@@ -21,14 +20,13 @@ function loadCards() {
   }
 }
 
-// Function to save cards
+// Save cards to JSON
 function saveCards(cards) {
   fs.writeFileSync(cardsFilePath, JSON.stringify(cards, null, 2), 'utf-8');
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
 }
 
-const https = require('https');
-
+// Fetch a single card from Fandom API
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}" on Fandom API`);
 
@@ -37,12 +35,12 @@ async function fetchCard(cardName) {
   return new Promise((resolve) => {
     https.get(url, (res) => {
       let data = '';
-      res.on('data', chunk => data += chunk);
+
+      res.on('data', (chunk) => data += chunk);
       res.on('end', () => {
         try {
           const json = JSON.parse(data);
 
-          // The wikitext is now under json.parse.wikitext['*']
           if (!json.parse || !json.parse.wikitext || !json.parse.wikitext['*']) {
             console.error('[ERROR] Card page not found or invalid format');
             resolve(null);
@@ -51,7 +49,7 @@ async function fetchCard(cardName) {
 
           const wikitext = json.parse.wikitext['*'];
 
-          // Parse the fields
+          // Regex parse fields
           const kingdomMatch = wikitext.match(/\|\s*Expansion\s*=\s*(.+)/i);
           const costMatch = wikitext.match(/\|\s*Cost\s*=\s*(.+)/i);
           const typesMatch = wikitext.match(/\|\s*Type\s*=\s*(.+)/i);
@@ -80,9 +78,9 @@ async function fetchCard(cardName) {
   });
 }
 
-// Main function
+// Main
 async function main() {
-  const cardName = process.argv[2]; // e.g., "Village"
+  const cardName = process.argv[2];
   if (!cardName) {
     console.error('Usage: node fetch_card_wiki.js "Card Name"');
     process.exit(1);
