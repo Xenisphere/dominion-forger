@@ -1,47 +1,44 @@
-const fetch = require("node-fetch")
+// test_card_fetch.js
+// Node-friendly test loader for your Dominion card file
 
-const API = "https://wiki.dominionstrategy.com/api.php"
+// Import Node's filesystem module
+const fs = require('fs');
+const path = require('path');
 
-async function getCard(cardName) {
+// Path to the JSON file
+const cardFilePath = path.join(__dirname, 'cards.json');
 
-    const params = new URLSearchParams({
-        action: "parse",
-        page: cardName,
-        prop: "text|images",
-        format: "json"
-    })
+console.log("[DEBUG] Starting test_card_fetch.js");
 
-    const url = `${API}?${params}`
-
-    const res = await fetch(url)
-    const data = await res.json()
-
-    if (!data.parse) {
-        console.log("Card not found")
-        return
-    }
-
-    const html = data.parse.text["*"]
-
-    console.log("Card:", cardName)
-    console.log("Images:", data.parse.images)
-
-    // quick image guess (usually the card image)
-    const cardImage = data.parse.images.find(img =>
-        img.toLowerCase().includes(cardName.toLowerCase())
-    )
-
-    if (cardImage) {
-        const imageUrl =
-            "https://wiki.dominionstrategy.com/images/" +
-            cardImage.replace(/ /g, "_")
-
-        console.log("Likely card image:", imageUrl)
-    }
-
-    console.log("\nHTML snippet:")
-    console.log(html.substring(0, 500))
+// Check if the file exists
+if (!fs.existsSync(cardFilePath)) {
+  console.error(`[ERROR] File not found: ${cardFilePath}`);
+  process.exit(1); // Stop execution
 }
 
-getCard("Farm")
-```
+console.log(`[DEBUG] Found cards.json at: ${cardFilePath}`);
+
+// Read the file asynchronously
+fs.readFile(cardFilePath, 'utf-8', (err, data) => {
+  if (err) {
+    console.error("[ERROR] Failed to read the file:", err);
+    return;
+  }
+
+  console.log("[DEBUG] File read successfully, parsing JSON...");
+
+  try {
+    const cards = JSON.parse(data);
+    console.log("[DEBUG] JSON parsed successfully!");
+
+    // Log the first few cards to check content
+    console.log("[DEBUG] First 5 cards:");
+    console.log(cards.slice(0, 5));
+
+    console.log(`[DEBUG] Total cards loaded: ${cards.length}`);
+  } catch (parseErr) {
+    console.error("[ERROR] Failed to parse JSON:", parseErr.message);
+  }
+});
+
+console.log("[DEBUG] Finished initiating file read (async)");
