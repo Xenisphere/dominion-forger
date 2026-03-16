@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
 const cardsFilePath = path.join(__dirname, 'cards.json');
+const rawDir = path.join(__dirname, 'raw');
 
 function loadCards() {
   if (fs.existsSync(cardsFilePath)) {
@@ -23,31 +24,33 @@ function saveCards(cards) {
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
 }
 
-// At the top of fetchCard, before the fetch call:
-const localPath = path.join(__dirname, 'raw', `${cardName}.json`);
-if (fs.existsSync(localPath)) {
-  console.log(`[DEBUG] Using local cache for "${cardName}"`);
-  data = fs.readFileSync(localPath, 'utf-8');
-}
-
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}" on wiki API`);
-const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json&origin=*`;
+
   let data;
-  try {
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Referer': 'https://wiki.dominionstrategy.com/',
-      },
-      redirect: 'follow'
-    });
-    data = await res.text();
-  } catch (err) {
-    console.error('[ERROR] HTTPS request failed:', err);
-    return null;
+
+  // Check for local cache first
+  const localPath = path.join(rawDir, `${cardName}.json`);
+  if (fs.existsSync(localPath)) {
+    console.log(`[DEBUG] Using local cache for "${cardName}"`);
+    data = fs.readFileSync(localPath, 'utf-8');
+  } else {
+    const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json&origin=*`;
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Accept': 'application/json, text/plain, */*',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Referer': 'https://wiki.dominionstrategy.com/',
+        },
+        redirect: 'follow'
+      });
+      data = await res.text();
+    } catch (err) {
+      console.error('[ERROR] HTTPS request failed:', err);
+      return null;
+    }
   }
 
   try {
@@ -59,10 +62,10 @@ const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encod
 
     const wikitext = json.parse.wikitext['*'];
 
-    const kingdomMatch = wikitext.match(/\|\s*Expansion\s*=\s*(.+)/i);
-    const costMatch = wikitext.match(/\|\s*Cost\s*=\s*(.+)/i);
-    const typesMatch = wikitext.match(/\|\s*Type\s*=\s*(.+)/i);
-    const textMatch = wikitext.match(/\|\s*Text\s*=\s*(.+)/i);
+    const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
+    const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
+    const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
+    const textMatch = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
 
     const cardData = {
       name: cardName,
@@ -86,6 +89,11 @@ async function main() {
   if (!cardName) {
     console.error('Usage: node fetch_card_wiki.js "Card Name"');
     process.exit(1);
+  }
+
+  // Ensure raw directory exists
+  if (!fs.existsSync(rawDir)) {
+    fs.mkdirSync(rawDir);
   }
 
   const card = await fetchCard(cardName);
