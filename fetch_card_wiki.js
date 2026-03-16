@@ -1,7 +1,7 @@
 // fetch_card_wiki.js
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
+const fetch = require('node-fetch');
 const cardsFilePath = path.join(__dirname, 'cards.json');
 
 function loadCards() {
@@ -23,37 +23,26 @@ function saveCards(cards) {
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
 }
 
-function httpsGet(url) {
-  return new Promise((resolve, reject) => {
-    const options = {
-      headers: {
-        'User-Agent': 'DominionCardFetcher/1.0 (your-email@example.com)'
-      }
-    };
-
-    https.get(url, options, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        console.log(`[DEBUG] Redirecting to: ${res.headers.location}`);
-        return httpsGet(res.headers.location).then(resolve).catch(reject);
-      }
-
-      let data = '';
-      res.on('data', (chunk) => data += chunk);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
-  });
-}
-
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}" on wiki API`);
   const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
 
-  const data = await httpsGet(url).catch((err) => {
+  let data;
+  try {
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://wiki.dominionstrategy.com/',
+      },
+      redirect: 'follow'
+    });
+    data = await res.text();
+  } catch (err) {
     console.error('[ERROR] HTTPS request failed:', err);
     return null;
-  });
-
-  if (!data) return null;
+  }
 
   try {
     const json = JSON.parse(data);
