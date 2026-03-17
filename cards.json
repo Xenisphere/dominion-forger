@@ -1,1 +1,11 @@
-
+[
+  {
+    "name": "Village",
+    "kingdom": "Dominion",
+    "cost": "3",
+    "types": [
+      "Action"
+    ],
+    "text": "'''+1&nbsp;Card'''<br>'''+2&nbsp;Actions'''"
+  }
+]
