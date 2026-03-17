@@ -1,7 +1,7 @@
 // fetch_card_wiki.js
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch');
+const puppeteer = require('puppeteer');
 const cardsFilePath = path.join(__dirname, 'cards.json');
 const rawDir = path.join(__dirname, 'raw');
 
@@ -15,9 +15,8 @@ function loadCards() {
       console.error('[ERROR] Failed to parse cards.json, starting fresh.');
       return [];
     }
-  } else {
-    return [];
   }
+  return [];
 }
 
 function saveCards(cards) {
@@ -26,32 +25,33 @@ function saveCards(cards) {
 }
 
 async function fetchCard(cardName) {
-  console.log(`[DEBUG] Searching for "${cardName}" on wiki API`);
+  console.log(`[DEBUG] Searching for "${cardName}"`);
 
   let data;
 
-  // Check for local cache first
+  // Check local cache first
   const localPath = path.join(rawDir, `${cardName}.json`);
   if (fs.existsSync(localPath)) {
     console.log(`[DEBUG] Using local cache for "${cardName}"`);
     data = fs.readFileSync(localPath, 'utf-8');
   } else {
-    const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json&origin=*`;
+    // Use Puppeteer to bypass bot detection
+    console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
+    const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
+
+    const browser = await puppeteer.launch({ headless: true });
     try {
-      const res = await fetch(url, {
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-          'Accept': 'application/json, text/plain, */*',
-          'Accept-Language': 'en-US,en;q=0.9',
-          'Referer': 'https://wiki.dominionstrategy.com/',
-        },
-        redirect: 'follow'
-      });
-      data = await res.text();
-    } catch (err) {
-      console.error('[ERROR] HTTPS request failed:', err);
-      return null;
+      const page = await browser.newPage();
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
+      data = await page.evaluate(() => document.body.innerText);
+    } finally {
+      await browser.close();
     }
+
+    // Cache the result locally
+    if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
+    fs.writeFileSync(localPath, data, 'utf-8');
+    console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
   }
 
   try {
@@ -92,10 +92,7 @@ async function main() {
     process.exit(1);
   }
 
-  // Ensure raw directory exists
-  if (!fs.existsSync(rawDir)) {
-    fs.mkdirSync(rawDir);
-  }
+  if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
 
   const card = await fetchCard(cardName);
   if (!card) return;
