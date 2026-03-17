@@ -9,7 +9,8 @@ function loadCards() {
   if (fs.existsSync(cardsFilePath)) {
     const data = fs.readFileSync(cardsFilePath, 'utf-8');
     try {
-      return JSON.parse(data);
+      const parsed = JSON.parse(data);
+      return Array.isArray(parsed) ? parsed : [];
     } catch (e) {
       console.error('[ERROR] Failed to parse cards.json, starting fresh.');
       return [];
