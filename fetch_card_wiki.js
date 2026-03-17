@@ -40,13 +40,20 @@ async function fetchCard(cardName) {
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
 
     const browser = await puppeteer.launch({ headless: true });
-    try {
-      const page = await browser.newPage();
-      await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-      data = await page.evaluate(() => document.body.innerText);
-    } finally {
-      await browser.close();
-    }
+try {
+  const page = await browser.newPage();
+  await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+  
+  // Wait for the bot challenge to resolve and JSON to appear
+  await page.waitForFunction(
+    () => document.body.innerText.trim().startsWith('{'),
+    { timeout: 30000 }
+  );
+
+  data = await page.evaluate(() => document.body.innerText);
+} finally {
+  await browser.close();
+}
 
     // Cache the result locally
     if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
