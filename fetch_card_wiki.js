@@ -65,11 +65,11 @@ async function fetchCard(cardName) {
     const browser = await puppeteer.launch({ headless: true });
     try {
       const page = await browser.newPage();
-      await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 200000 });
       console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
       await page.waitForFunction(
         () => document.body.innerText.trim().startsWith('{'),
-        { timeout: 100000 }
+        { timeout: 200000 }
       );
       data = await page.evaluate(() => document.body.innerText);
     } finally {
