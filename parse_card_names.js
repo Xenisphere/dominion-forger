@@ -1,0 +1,89 @@
+// parse_card_names.js
+const fs = require('fs');
+const path = require('path');
+
+const raw = `Basic cards	$0$0 Copper • Curse $2$2 Estate $3$3 Silver $5$5 Duchy $6$6 Gold $8$8 Province
+Dominion	$2$2 Cellar • Chapel • Moat $3$3 Harbinger • Merchant • Vassal • Village • Workshop $4$4 Bureaucrat • Gardens • Militia • Moneylender • Poacher • Remodel • Smithy • Throne Room $5$5 Bandit • Council Room • Festival • Laboratory • Library • Market • Mine • Sentry • Witch $6$6 Artisan
+Removed cards: $3$3 Chancellor • Woodcutter $4$4 Feast • Spy • Thief $6$6 Adventurer
+Intrigue	$2$2 Courtyard • Lurker • Pawn $3$3 Masquerade • Shanty Town • Steward • Swindler • Wishing Well $4$4 Baron • Bridge • Conspirator • Diplomat • Ironworks • Mill • Mining Village • Secret Passage $5$5 Courtier • Duke • Minion • Patrol • Replace • Torturer • Trading Post • Upgrade $6$6 Farm • Nobles
+Removed cards: $2$2 Secret Chamber $3$3 Great Hall $4$4 Coppersmith • Scout $5$5 Saboteur • Tribute
+Seaside	$2$2 Haven • Lighthouse • Native Village $3$3 Astrolabe • Fishing Village • Lookout • Monkey • Sea Chart • Smugglers • Warehouse $4$4 Blockade • Caravan • Cutpurse • Island • Sailor • Salvager • Tide Pools • Treasure Map $5$5 Bazaar • Corsair • Merchant Ship • Outpost • Pirate • Sea Witch • Tactician • Treasury • Wharf
+Removed cards: $2$2 Embargo • Pearl Diver $3$3 Ambassador $4$4 Navigator • Pirate Ship • Sea Hag $5$5 Explorer • Ghost Ship
+Alchemy	PP Transmute • Vineyard $2$2 Herbalist $2$2PP Apothecary • Scrying Pool • University $3$3PP Alchemist • Familiar • Philosopher's Stone $4$4 Potion $4$4PP Golem $5$5 Apprentice $6$6PP Possession
+Prosperity	$3$3 Anvil • Watchtower $4$4 Bishop • Clerk • Investment • Tiara • Monument • Quarry • Worker's Village $5$5 Charlatan • City • Collection • Crystal Ball • Magnate • Mint • Rabble • Vault • War Chest $6$6 Hoard $6*$6* Grand Market $7$7 Bank • Expand • Forge • King's Court $8star$8star Peddler $9$9 Platinum $11$11 Colony
+Removed cards: $3$3 Loan • Trade Route $4$4 Talisman $5$5 Contraband • Counting House • Mountebank • Royal Seal • Venture $6$6 Goons
+Cornucopia & Guilds	$2$2 Candlestick Maker • Hamlet $2+$2+ Farrier • Stonemason $3$3 Menagerie • Shop $3+$3+ Infirmary $4$4 Advisor • Farmhands • Plaza • Remake • Young Witch $4+$4+ Herald $5$5 Baker • Butcher • Carnival • Ferryman • Footpad • Horn of Plenty • Hunting Party • Jester • Journeyman • Joust (Rewards: Coronet • Courser • Demesne • Housecarl • Huge Turnip • Renown)• Merchant Guild • Soothsayer $6$6 Fairgrounds
+Removed cards: $3$3 Fortune Teller $3+$3+ Doctor • Masterpiece $4$4 Farming Village • Horse Traders • Taxman • Tournament (Prizes: Bag of Gold • Diadem • Followers • Princess • Trusty Steed) $5$5 Harvest
+Hinterlands	$2$2 Crossroads • Fool's Gold $3$3 Develop • Guard Dog • Oasis • Scheme • Tunnel $4$4 Jack of All Trades • Nomads • Spice Merchant • Trader • Trail • Weaver $5$5 Berserker • Cartographer • Cauldron • Haggler • Highway • Inn • Margrave • Souk • Stables • Wheelwright • Witch's Hut $6$6 Border Village • Farmland
+Removed cards: $2$2 Duchess $3$3 Oracle $4$4 Noble Brigand • Nomad Camp • Silk Road $5$5 Cache • Embassy • Ill-Gotten Gains • Mandarin
+Dark Ages	$0$0 Ruins (Abandoned Mine • Ruined Library • Ruined Market • Ruined Village • Survivors) $0*$0* Spoils $1$1 Poor House • Shelters (Hovel • Necropolis • Overgrown Estate) $2$2 Beggar • Squire • Vagrant $3$3 Forager • Hermit (Madman) • Market Square • Sage • Storeroom • Urchin (Mercenary) $4$4 Armory • Death Cart • Feodum • Fortress • Ironmonger • Marauder • Procession • Rats • Scavenger • Wandering Minstrel $5$5 Band of Misfits • Bandit Camp • Catacombs • Count • Counterfeit • Cultist • Graverobber • Junk Dealer • Knights (Dames Anna • Josephine • Molly • Natalie • Sylvia • Sirs Bailey • Destry • Martin • Michael • Vander) • Mystic • Pillage • Rebuild • Rogue $6$6 Altar • Hunting Grounds
+Adventures	$2$2 Coin of the Realm • Page (Treasure Hunter • Warrior • Hero • Champion) • Peasant (Soldier • Fugitive • Disciple • Teacher) • Ratcatcher • Raze $3$3 Amulet • Caravan Guard • Dungeon • Gear • Guide $4$4 Duplicate • Magpie • Messenger • Miser • Port • Ranger • Transmogrify $5$5 Artificer • Bridge Troll • Distant Lands • Giant • Haunted Woods • Lost City • Relic • Royal Carriage • Storyteller • Swamp Hag • Treasure Trove • Wine Merchant $6$6 Hireling
+Events: $0$0 Alms • Borrow • Quest $1$1 Save $2$2 Scouting Party • Travelling Fair $3$3 Bonfire • Expedition • Ferry • Plan $4$4 Mission • Pilgrimage $5$5 Ball • Raid • Seaway • Trade $6$6 Lost Arts • Training $7$7 Inheritance $8$8 Pathfinding
+Empires	4D4D Engineer 8D8D City Quarter • Overlord • Royal Blacksmith $2$2 Encampment/Plunder • Patrician/Emporium • Settlers/Bustling Village $3$3 Castles (Humble • Crumbling • Small • Haunted • Opulent • Sprawling • Grand • King's) • Catapult/Rocks • Chariot Race • Enchantress • Farmers' Market • Gladiator/Fortune $4$4 Sacrifice • Temple • Villa $5$5 Archive • Capital • Charm • Crown • Forum • Groundskeeper • Legionary • Wild Hunt
+Events: 5D5D Triumph 8D8D Annex • Donate $0$0 Advance $2$2 Delve • Tax $3$3 Banquet $4$4 Ritual • Salt the Earth $4$43D3D Wedding $5$5 Windfall $6$6 Conquest $14$14 Dominate
+Landmarks: Aqueduct • Arena • Bandit Fort • Basilica • Baths • Battlefield • Colonnade • Defiled Shrine • Fountain • Keep • Labyrinth • Mountain Pass • Museum • Obelisk • Orchard • Palace • Tomb • Tower • Triumphal Arch • Wall • Wolf Den
+Nocturne	$0*$0* Will-o'-Wisp • Wish $2$2 Druid • Faithful Hound • Guardian • Monastery • Pixie (Goat) • Tracker (Pouch) $2*$2* Imp $3$3 Changeling • Fool (Lost in the Woods • Lucky Coin) • Ghost Town • Leprechaun • Night Watchman • Secret Cave (Magic Lamp) $4$4 Bard • Blessed Village • Cemetery (Haunted Mirror) • Conclave • Devil's Workshop • Exorcist • Necromancer (Zombies: Apprentice • Mason • Spy) • Shepherd (Pasture) • Skulk $4*$4* Ghost $5$5 Cobbler • Crypt • Cursed Village • Den of Sin • Idol • Pooka (Cursed Gold) • Sacred Grove • Tormentor • Tragic Hero • Vampire (Bat) • Werewolf $6$6 Raider
+Boons: The Earth's Gift • Field • Flame • Forest • Moon • Mountain • River • Sea • Sky • Sun • Swamp • Wind
+Hexes: Bad Omens • Delusion (Deluded) • Envy (Envious) • Famine • Fear • Greed • Haunting • Locusts • Misery (Miserable/Twice Miserable) • Plague • Poverty • War
+Renaissance	$2$2 Border Guard (Horn • Lantern) • Ducat • Lackeys $3$3 Acting Troupe • Cargo Ship • Experiment • Improve $4$4 Flag Bearer (Flag) • Hideout • Inventor • Mountain Village • Patron • Priest • Research • Silk Merchant $5$5 Old Witch • Recruiter • Scepter • Scholar • Sculptor • Seer • Spices • Swashbuckler (Treasure Chest) • Treasurer (Key) • Villain
+Projects: $3$3 Cathedral • City Gate • Pageant • Sewers • Star Chart $4$4 Exploration • Fair • Silos • Sinister Plot $5$5 Academy • Capitalism • Fleet • Guildhall • Piazza • Road Network $6$6 Barracks • Crop Rotation • Innovation $7$7 Canal $8$8 Citadel
+Menagerie	$2$2 Black Cat • Sleigh • Supplies $3$3 Camel Train • Goatherd • Scrap • Sheepdog • Snowy Village • Stockpile $3*$3* Horse $4$4 Bounty Hunter • Cardinal • Cavalry • Groom • Hostelry • Village Green $5$5 Barge • Coven • Displace • Falconer • Gatekeeper • Hunting Lodge • Kiln • Livery • Mastermind • Paddock • Sanctuary $5*$5* Fisherman $6*$6* Destrier • Wayfarer $7*$7* Animal Fair
+Events: $0$0 Delay • Desperation $2$2 Gamble • Pursue • Ride • Toil $3$3 Enhance • March • Transport $4$4 Banish • Bargain • Invest • Seize the Day $5$5 Commerce • Demand • Stampede $7$7 Reap $8$8 Enclave $10$10 Alliance • Populate
+Ways: Butterfly • Camel • Chameleon • Frog • Goat • Horse • Mole • Monkey • Mouse • Mule • Otter • Owl • Ox • Pig • Rat • Seal • Sheep • Squirrel • Turtle • Worm
+Allies	$2$2 Bauble • Sycophant • Townsfolk (Town Crier / Blacksmith / Miller / Elder) $3$3 Augurs (Herb Gatherer / Acolyte / Sorceress / Sibyl) • Clashes (Battle Plan / Archer / Warlord / Territory) • Forts (Tent / Garrison / Hill Fort / Stronghold) • Importer • Merchant Camp • Odysseys (Old Map / Voyage / Sunken Treasure / Distant Shore) • Sentinel • Underling • Wizards (Student / Conjurer / Sorcerer / Lich) $4$4 Broker • Carpenter • Courier • Innkeeper • Royal Galley • Town $5$5 Barbarian • Capital City • Contract • Emissary • Galleria • Guildmaster • Highwayman • Hunter • Modify • Skirmisher • Specialist • Swap $6$6 Marquis
+Allies: Architects' Guild • Band of Nomads • Cave Dwellers • Circle of Witches • City-state • Coastal Haven • Crafters' Guild • Desert Guides • Family of Inventors • Fellowship of Scribes • Forest Dwellers • Gang of Pickpockets • Island Folk • League of Bankers • League of Shopkeepers • Market Towns • Mountain Folk • Order of Astrologers • Order of Masons • Peaceful Cult • Plateau Shepherds • Trappers' Lodge • Woodworkers' Guild
+Plunder	$2$2 Cage • Grotto • Jewelled Egg • Search • Shaman $3$3 Secluded Shrine • Siren • Stowaway • Taskmaster $4$4 Abundance • Cabin Boy • Crucible • Flagship • Fortune Hunter • Gondola • Harbor Village • Landing Party • Mapmaker • Maroon • Rope • Swamp Shacks • Tools $5$5 Buried Treasure • Crew • Cutthroat • Enlarge • Figurine • First Mate • Frigate • Longship • Mining Road • Pendant • Pickaxe • Pilgrim • Quartermaster • Silver Mine • Trickster • Wealthy Village $6$6 Sack of Loot $7$7 King's Cache $7*$7* Loots (Amphora • Doubloons • Endless Chalice • Figurehead • Hammer • Insignia • Jewels • Orb • Prize Goat • Puzzle Box • Sextant • Shield • Spell Scroll • Staff • Sword)
+Events: $1$1 Bury $2$2 Avoid • Deliver • Peril • Rush $3$3 Foray • Launch • Mirror • Prepare • Scrounge $4$4 Maelstrom • Journey $6$6 Looting $10$10 Invasion • Prosper
+Traits: Cheap • Cursed • Fated • Fawning • Friendly • Hasty • Inherited • Inspiring • Nearby • Patient • Pious • Reckless • Rich • Shy • Tireless
+Rising Sun	5D5D Mountain Shrine 6D6D Daimyo 8D8D Artist $2$2 Fishmonger • Snake Witch $3$3 Aristocrat • Craftsman • Riverboat • Root Cellar $4$4 Alley • Change • Ninja • Poet • River Shrine • Rustic Village $5$5 Gold Mine • Imperial Envoy • Kitsune • Litter • Rice Broker • Ronin • Tanuki • Tea House $6$6 Samurai $7$7 Rice
+Events: 8D8D Continue $2$2 Amass • Asceticism • Credit • Foresight $3$3 Kintsugi • Practice $4$4 Sea Trade $5$5 Receive Tribute $7$7 Gather
+Prophecies: Approaching Army • Biding Time • Bureaucracy • Divine Wind • Enlightenment • Flourishing Trade • Good Harvest • Great Leader • Growth • Harsh Winter • Kind Emperor • Panic • Progress • Rapid Expansion • Sickness
+Promo	$3$3 Black Market • Church $4$4 Dismantle • Envoy • Sauna/Avanto • Walled Village $5$5 Governor • Marchland • Stash $6$6 Captain $8$8 Prince
+Events: $5$5 Summon`;
+
+function parseCardNames(text) {
+  const names = new Set();
+
+  // Remove cost tokens like $2$2, 4D4D, PP, $6*$6*, $8star$8star etc.
+  text = text.replace(/\$[\d*]+\$[\d*]+|\d+D\d+D|PP|\d+\w*\$\d+\w*|\$[\w*]+/g, '');
+
+  // Remove section labels like "Removed cards:", "Events:", "Landmarks:", etc.
+  text = text.replace(/^.+?[\t]/gm, '');  // remove expansion name at start of line
+  text = text.replace(/(Removed cards|Events|Landmarks|Projects|Boons|Hexes|Ways|Allies|Traits|Prophecies):/g, '');
+
+  // Remove parenthetical sub-cards like (Rewards: ...) but extract names inside
+  // Split on bullets and commas and slashes
+  const tokens = text.split(/[•,/\n]+/);
+
+  for (let token of tokens) {
+    // Strip parentheses content markers but keep the names inside
+    token = token.replace(/\(([^)]+)\)/g, (_, inner) => ' ' + inner + ' ');
+
+    // Remove leftover cost patterns and junk
+    token = token
+      .replace(/\$[\d*]+\$[\d*]+|\d+D\d+D|PP|\d+D/g, '')
+      .replace(/Rewards:|Prizes:|Zombies:|Dames|Sirs/g, '')
+      .trim();
+
+    // Split any remaining multi-word chunks by bullet or newline
+    const parts = token.split(/\s{2,}/);
+    for (let part of parts) {
+      part = part.trim();
+      // Must start with a capital letter and be at least 2 chars
+      if (/^[A-Z]/.test(part) && part.length >= 2) {
+        const name = part.replace(/\s+/g, '_');
+        names.add(name);
+      }
+    }
+  }
+
+  return [...names].sort();
+}
+
+const cardNames = parseCardNames(raw);
+fs.writeFileSync(
+  path.join(__dirname, 'card_names.json'),
+  JSON.stringify(cardNames, null, 2),
+  'utf-8'
+);
+console.log(`[DEBUG] Saved ${cardNames.length} card names to card_names.json`);
