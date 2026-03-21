@@ -19,9 +19,34 @@ function loadCards() {
   return [];
 }
 
+
+
 function saveCards(cards) {
   fs.writeFileSync(cardsFilePath, JSON.stringify(cards, null, 2), 'utf-8');
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
+}
+
+function cleanText(text) {
+  return text
+    .replace(/<[^>]+>/g, ' ')                          // remove anything in <>
+    .replace(/{{[^}]+}}/g, ' ')                        // remove {{ }} templates
+    .replace(/&nbsp;/g, ' ')                           // &nbsp; → space
+    .replace(/&[a-z]+;/gi, ' ')                        // remove other HTML entities
+    .replace(/'{2,}/g, '')                             // remove '' or ''' wiki markup
+    .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')   // [[link|text]] → text
+    .split(/\s+/)                                      // split into words
+    .map(word => {
+      word = word.replace(/^[^a-zA-Z0-9;:]+|[^a-zA-Z0-9;:]+$/g, '');
+      word = word.replace(/[^a-zA-Z0-9;:\s]/g, '');
+      if (!/[aeiouAEIOU]/.test(word) && !/^\d+$/.test(word)) return '';
+      if (word.length === 1 && !['a', 'i', 'A', 'I'].test(word)) return '';
+      return word;
+    })
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\s+([;:])/g, '$1')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
 }
 
 async function fetchCard(cardName) {
@@ -29,33 +54,27 @@ async function fetchCard(cardName) {
 
   let data;
 
-  // Check local cache first
   const localPath = path.join(rawDir, `${cardName}.json`);
   if (fs.existsSync(localPath)) {
     console.log(`[DEBUG] Using local cache for "${cardName}"`);
     data = fs.readFileSync(localPath, 'utf-8');
   } else {
-    // Use Puppeteer to bypass bot detection
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
 
     const browser = await puppeteer.launch({ headless: true });
-try {
-  const page = await browser.newPage();
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
-  
-  // Wait for the bot challenge to resolve and JSON to appear
-  await page.waitForFunction(
-    () => document.body.innerText.trim().startsWith('{'),
-    { timeout: 30000 }
-  );
+    try {
+      const page = await browser.newPage();
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+      await page.waitForFunction(
+        () => document.body.innerText.trim().startsWith('{'),
+        { timeout: 30000 }
+      );
+      data = await page.evaluate(() => document.body.innerText);
+    } finally {
+      await browser.close();
+    }
 
-  data = await page.evaluate(() => document.body.innerText);
-} finally {
-  await browser.close();
-}
-
-    // Cache the result locally
     if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
     fs.writeFileSync(localPath, data, 'utf-8');
     console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
@@ -80,7 +99,7 @@ try {
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
       cost: costMatch ? costMatch[1].trim() : 'Unknown',
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-      text: textMatch ? textMatch[1].trim() : ''
+      text: textMatch ? cleanText(textMatch[1].trim()) : ''
     };
 
     console.log('[DEBUG] Parsed card:', cardData);
