@@ -65,7 +65,7 @@ async function fetchCard(cardName) {
    const browser = await puppeteer.launch({ headless: true });
 try {
   const page = await browser.newPage();
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
+  await page.goto(url, { waitUntil: 'networkidle2', timeout: 200000 });
 
   // Log what the page shows while waiting
   console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
