@@ -72,7 +72,7 @@ try {
 
   await page.waitForFunction(
     () => document.body.innerText.trim().startsWith('{'),
-    { timeout: 60000 }  // increased to 60s
+    { timeout: 200000 }  // increased to 60s
   );
 
   data = await page.evaluate(() => document.body.innerText);
