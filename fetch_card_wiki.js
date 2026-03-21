@@ -124,15 +124,6 @@ async function fetchCard(cardName) {
   }
 }
 
-    console.log('[DEBUG] Parsed card:', cardData);
-    return cardData;
-  } catch (err) {
-    console.error('[ERROR] Failed to parse JSON:', err);
-    console.error('[DEBUG] Response preview:', data.slice(0, 200));
-    return null;
-  }
-}
-
 async function main() {
   const cardName = process.argv[2];
   if (!cardName) {
