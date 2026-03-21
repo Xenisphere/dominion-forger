@@ -7,5 +7,50 @@
       "Action"
     ],
     "text": "'''+1&nbsp;Card'''<br>'''+2&nbsp;Actions'''"
+  },
+  {
+    "name": "Smithy",
+    "kingdom": "Dominion",
+    "cost": "4",
+    "types": [
+      "Action"
+    ],
+    "text": "'''+3&nbsp;Cards'''"
+  },
+  {
+    "name": "Artisan",
+    "kingdom": "Dominion",
+    "cost": "6",
+    "types": [
+      "Action"
+    ],
+    "text": "<p>Gain a card to your hand costing up to {{cost|5}}.</p>Put a card from your hand onto your deck."
+  },
+  {
+    "name": "Bandit",
+    "kingdom": "Dominion",
+    "cost": "5",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Gain a Gold. Each other player reveals the top 2&nbsp;cards of their deck, trashes a revealed Treasure other than Copper, and discards the rest."
+  },
+  {
+    "name": "Cursed Gold",
+    "kingdom": "Nocturne",
+    "cost": "4",
+    "types": [
+      "Treasure-Heirloom"
+    ],
+    "text": "{{Cost|3|l}}<p>Gain a Curse.</p>"
+  },
+  {
+    "name": "changeling",
+    "kingdom": "Nocturne",
+    "cost": "3",
+    "types": [
+      "Night"
+    ],
+    "text": "Trash this Gain a copy of a card you have in play"
   }
 ]
