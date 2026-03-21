@@ -62,23 +62,19 @@ async function fetchCard(cardName) {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
 
-   const browser = await puppeteer.launch({ headless: true });
-try {
-  const page = await browser.newPage();
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 200000 });
-
-  // Log what the page shows while waiting
-  console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
-
-  await page.waitForFunction(
-    () => document.body.innerText.trim().startsWith('{'),
-    { timeout: 200000 }  // increased to 60s
-  );
-
-  data = await page.evaluate(() => document.body.innerText);
-} finally {
-  await browser.close();
-}
+    const browser = await puppeteer.launch({ headless: true });
+    try {
+      const page = await browser.newPage();
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
+      console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
+      await page.waitForFunction(
+        () => document.body.innerText.trim().startsWith('{'),
+        { timeout: 100000 }
+      );
+      data = await page.evaluate(() => document.body.innerText);
+    } finally {
+      await browser.close();
+    }
 
     if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
     fs.writeFileSync(localPath, data, 'utf-8');
@@ -97,15 +93,36 @@ try {
     const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
-    const textMatch = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
+
+    // Grab all text fields: text, text2, text3, etc.
+    const textFields = [];
+    const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
+    if (baseText) textFields.push(baseText[1]);
+    let i = 2;
+    while (true) {
+      const match = wikitext.match(new RegExp(`\\|\\s*text${i}\\s*=\\s*([\\s\\S]+?)(?=\\n\\s*[|}])`, 'i'));
+      if (!match) break;
+      textFields.push(match[1]);
+      i++;
+    }
+    const rawText = textFields.join(' ').trim();
 
     const cardData = {
       name: cardName,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
       cost: costMatch ? costMatch[1].trim() : 'Unknown',
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-      text: textMatch ? cleanText(textMatch[1].trim()) : ''
+      text: rawText ? cleanText(rawText) : ''
     };
+
+    console.log('[DEBUG] Parsed card:', cardData);
+    return cardData;
+  } catch (err) {
+    console.error('[ERROR] Failed to parse JSON:', err);
+    console.error('[DEBUG] Response preview:', data.slice(0, 200));
+    return null;
+  }
+}
 
     console.log('[DEBUG] Parsed card:', cardData);
     return cardData;
