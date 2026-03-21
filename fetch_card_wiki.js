@@ -62,18 +62,23 @@ async function fetchCard(cardName) {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
 
-    const browser = await puppeteer.launch({ headless: true });
-    try {
-      const page = await browser.newPage();
-      await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
-      await page.waitForFunction(
-        () => document.body.innerText.trim().startsWith('{'),
-        { timeout: 30000 }
-      );
-      data = await page.evaluate(() => document.body.innerText);
-    } finally {
-      await browser.close();
-    }
+   const browser = await puppeteer.launch({ headless: true });
+try {
+  const page = await browser.newPage();
+  await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+
+  // Log what the page shows while waiting
+  console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
+
+  await page.waitForFunction(
+    () => document.body.innerText.trim().startsWith('{'),
+    { timeout: 60000 }  // increased to 60s
+  );
+
+  data = await page.evaluate(() => document.body.innerText);
+} finally {
+  await browser.close();
+}
 
     if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
     fs.writeFileSync(localPath, data, 'utf-8');
