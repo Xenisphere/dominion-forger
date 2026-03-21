@@ -34,17 +34,17 @@ function cleanText(text) {
     .replace(/&[a-z]+;/gi, ' ')                        // remove other HTML entities
     .replace(/'{2,}/g, '')                             // remove '' or ''' wiki markup
     .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')   // [[link|text]] → text
-    .split(/\s+/)                                      // split into words
+    .split(/\s+/)
     .map(word => {
-      word = word.replace(/^[^a-zA-Z0-9;:]+|[^a-zA-Z0-9;:]+$/g, '');
-      word = word.replace(/[^a-zA-Z0-9;:\s]/g, '');
+      word = word.replace(/^[^a-zA-Z0-9;:.,!?]+|[^a-zA-Z0-9;:.,!?]+$/g, '');
+      word = word.replace(/[^a-zA-Z0-9;:.,!?\s]/g, '');
       if (!/[aeiouAEIOU]/.test(word) && !/^\d+$/.test(word)) return '';
       if (word.length === 1 && !/^[aiAI]$/.test(word)) return '';
       return word;
     })
     .filter(Boolean)
     .join(' ')
-    .replace(/\s+([;:])/g, '$1')
+    .replace(/\s+([;:.,!?])/g, '$1')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
 }
