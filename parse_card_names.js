@@ -45,7 +45,7 @@ function parseCardNames(text) {
   const names = new Set();
 
   // Remove cost tokens like $2$2, 4D4D, PP, $6*$6*, $8star$8star etc.
-  text = text.replace(/\$[\d*]+\$[\d*]+|\d+D\d+D|PP|\d+\w*\$\d+\w*|\$[\w*]+/g, '');
+  text = text.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|PP|\d+\w*\$\d+\w*|\$[\w*]+/g, '');
 
   // Remove section labels like "Removed cards:", "Events:", "Landmarks:", etc.
   text = text.replace(/^.+?[\t]/gm, '');  // remove expansion name at start of line
