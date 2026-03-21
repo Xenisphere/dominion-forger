@@ -39,7 +39,7 @@ function cleanText(text) {
       word = word.replace(/^[^a-zA-Z0-9;:]+|[^a-zA-Z0-9;:]+$/g, '');
       word = word.replace(/[^a-zA-Z0-9;:\s]/g, '');
       if (!/[aeiouAEIOU]/.test(word) && !/^\d+$/.test(word)) return '';
-      if (word.length === 1 && !['a', 'i', 'A', 'I'].test(word)) return '';
+      if (word.length === 1 && !/^[aiAI]$/.test(word)) return '';
       return word;
     })
     .filter(Boolean)
