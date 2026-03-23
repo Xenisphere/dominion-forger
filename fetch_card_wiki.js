@@ -72,18 +72,27 @@ async function fetchCard(cardName) {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
 const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName.replace(/_/g, ' '))}&prop=wikitext&format=json`;
     const browser = await puppeteer.launch({ headless: true });
-    try {
-      const page = await browser.newPage();
-      await page.goto(url, { waitUntil: 'networkidle2', timeout: 200000 });
-      console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
-      await page.waitForFunction(
-        () => document.body.innerText.trim().startsWith('{'),
-        { timeout: 200000 }
-      );
-      data = await page.evaluate(() => document.body.innerText);
-    } finally {
-      await browser.close();
-    }
+      try {
+        const page = await browser.newPage();
+        await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
+        console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
+        await page.waitForFunction(
+          () => document.body.innerText.trim().startsWith('{'),
+          { timeout: 100000 }
+        );
+      
+        // Retry up to 3 times in case of navigation during extraction
+      let data = null;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          data = await page.evaluate(() => document.body.innerText);
+          break;
+        } catch (err) {
+          console.log(`[DEBUG] Extraction attempt ${attempt} failed, retrying...`);
+          await new Promise(r => setTimeout(r, 2000));
+        }
+      }
+      if (!data) throw new Error('Failed to extract page data after 3 attempts');
 
     if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
     fs.writeFileSync(localPath, data, 'utf-8');
