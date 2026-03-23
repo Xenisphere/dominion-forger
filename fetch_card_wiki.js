@@ -114,8 +114,6 @@ async function fetchCard(cardName) {
 
     const wikitext = json.parse.wikitext['*'];
     const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
-    const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
-    const cost2Match = wikitext.match(/\|\s*cost2\s*=\s*(.+)/i);
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
     const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
