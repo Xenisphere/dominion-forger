@@ -28,12 +28,13 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/<[^>]+>/g, ' ')                          // remove anything in <>
-    .replace(/{{[^}]+}}/g, ' ')                        // remove {{ }} templates
-    .replace(/&nbsp;/g, ' ')                           // &nbsp; → space
-    .replace(/&[a-z]+;/gi, ' ')                        // remove other HTML entities
-    .replace(/'{2,}/g, '')                             // remove '' or ''' wiki markup
-    .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')   // [[link|text]] → text
+    .replace(/<[^>]+>/g, ' ')                        // remove anything in <>
+    .replace(/{{VP\|(\d+)[^}]*}}/gi, '$1 VP')        // {{VP|2|l}} → 2 VP
+    .replace(/{{[^}]+}}/g, ' ')                      // remove {{ }} templates
+    .replace(/&nbsp;/g, ' ')                         // &nbsp; → space
+    .replace(/&[a-z]+;/gi, ' ')                      // remove other HTML entities
+    .replace(/'{2,}/g, '')                           // remove '' or ''' wiki markup
+    .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')  // [[link|text]] → text
     .split(/\s+/)
     .map(word => {
       word = word.replace(/^[^a-zA-Z0-9;:.,!?]+|[^a-zA-Z0-9;:.,!?]+$/g, '');
