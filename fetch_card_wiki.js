@@ -26,15 +26,14 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/<[^>]+>/g, ' ')                        // remove anything in <>
-    .replace(/{{VP\|(\d+)[^}]*}}/gi, '$1 VP')        // {{VP|2|l}} → 2 VP
-    .replace(/{{Costplus\|(\d+)}}/gi, '+$1 coins')   // {{Costplus|1}} → +1 coins
-    .replace(/{{Cost\|(\d+)}}/gi, '$1 coins')         // {{Cost|5}} → 5 coins
-    .replace(/{{[^}]+}}/g, ' ')                      // remove {{ }} templates
-    .replace(/&nbsp;/g, ' ')                         // &nbsp; → space
-    .replace(/&[a-z]+;/gi, ' ')                      // remove other HTML entities
-    .replace(/'{2,}/g, '')                           // remove '' or ''' wiki markup
-    .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')  // [[link|text]] → text
+    .replace(/{{VP\|(\d+)[^}]*}}/gi, '{$1}')           // {{VP|2}} → {2}
+    .replace(/{{Costplus\|(\d+)}}/gi, '($1)')           // {{Costplus|1}} → (1)
+    .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')         // {{Cost|4D}} → <4> debt
+    .replace(/{{Cost\|(\d+)P[^}]*}}/gi, '[$1]')         // {{Cost|2P}} → [2] potion
+    .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')          // {{Cost|5}} → (5) coins
+    .replace(/{{Debt\|(\d+)[^}]*}}/gi, '<$1>')          // {{Debt|4}} → <4>
+    .replace(/{{Potion[^}]*}}/gi, '[1]')                // {{Potion}} → [1]
+    .replace(/{{[^}]+}}/g, ' ')                         // generic - after specific ones
     .split(/\s+/)
     .map(word => {
       word = word.replace(/^[^a-zA-Z0-9;:.,!?]+|[^a-zA-Z0-9;:.,!?]+$/g, '');
