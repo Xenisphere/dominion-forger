@@ -35,6 +35,7 @@ function cleanText(text) {
     .replace(/{{Potion[^}]*}}/gi, '[1]')
     .replace(/{{[^}]+}}/g, ' ')
     .replace(/&nbsp;/g, ' ')
+    .replace(/&nbsp;?/g, ' ')
     .replace(/&[a-z]+;/gi, ' ')
     .replace(/'{2,}/g, '')
     .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')
@@ -45,6 +46,7 @@ function cleanText(text) {
     .split(/\s+/)
     .map(word => {
       if (word === '|') return word;
+      if (/^\d+$/.test(word)) return word;  // preserve standalone numbers
       word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>]+$/g, '');
       word = word.replace(/[^a-zA-Z0-9;:.,!?()\[\]{}<>+\s]/g, '');
       if (/^[+<(\[{]/.test(word)) return word;
@@ -127,7 +129,7 @@ async function fetchCard(cardName) {
       const coinMatch = raw.match(/(\d+)/);
       if (debtMatch) return `<${debtMatch[1]}${plus}>`;
       if (potionMatch) return `[1${plus}]`;
-      if (coinMatch) return `(${coinMatch[1]}${plus})`;
+      if (coinMatch) return `(${coinMatch[1]})${plus}`;
       return raw;
     }
     const textFields = [];
