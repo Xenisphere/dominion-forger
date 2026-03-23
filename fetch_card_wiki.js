@@ -118,6 +118,10 @@ async function fetchCard(cardName) {
     const cost2Match = wikitext.match(/\|\s*cost2\s*=\s*(.+)/i);
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
     const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
+    const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
+    const cost2Match = wikitext.match(/\|\s*cost2\s*=\s*(.+)/i);
+    const costExtraMatch = wikitext.match(/\|\s*cost_extra\s*=\s*(.+)/i);
+    const costExtra = costExtraMatch ? costExtraMatch[1].trim() : '';
     const supply = purposeMatch ? !purposeMatch[1].toLowerCase().includes('non-supply') : true;
 
     function formatCost(raw, extra) {
@@ -127,8 +131,6 @@ async function fetchCard(cardName) {
       const debtMatch = raw.match(/(\d+)D/i);
       const potionMatch = raw.match(/P/i);
       const coinMatch = raw.match(/(\d+)/);
-      const costExtraMatch = wikitext.match(/\|\s*cost_extra\s*=\s*(.+)/i);
-      const costExtra = costExtraMatch ? costExtraMatch[1].trim() : '';
       if (debtMatch) return `<${debtMatch[1]}>${plus}`;
       if (potionMatch) return `[1]${plus}`;
       if (coinMatch) return `(${coinMatch[1]})${plus}`;
