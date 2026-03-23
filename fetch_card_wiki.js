@@ -19,8 +19,6 @@ function loadCards() {
   return [];
 }
 
-
-
 function saveCards(cards) {
   fs.writeFileSync(cardsFilePath, JSON.stringify(cards, null, 2), 'utf-8');
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
@@ -113,7 +111,10 @@ async function fetchCard(cardName) {
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
       cost: costMatch ? costMatch[1].trim() : 'Unknown',
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-      text: rawText ? cleanText(rawText) : ''
+      console.log('[DEBUG] Raw text:', rawText);
+      const cleanedText = rawText ? cleanText(rawText) : '';
+      console.log('[DEBUG] Cleaned text:', cleanedText);
+      cleanedText: rawText ? cleanText(rawText) : ''
     };
 
     console.log('[DEBUG] Parsed card:', cardData);
