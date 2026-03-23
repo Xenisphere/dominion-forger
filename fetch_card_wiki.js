@@ -114,6 +114,7 @@ async function fetchCard(cardName) {
     const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
+    const supplyMatch = wikitext.match(/This is not in the Supply\./i);
 
     const textFields = [];
     const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
@@ -132,6 +133,7 @@ async function fetchCard(cardName) {
 
     const cardData = {
       name: cardName,
+      supply: !supplyMatch,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
       cost: costMatch ? costMatch[1].trim() : 'Unknown',
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
