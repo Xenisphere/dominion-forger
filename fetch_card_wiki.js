@@ -114,8 +114,21 @@ async function fetchCard(cardName) {
     const wikitext = json.parse.wikitext['*'];
     const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
+    const cost2Match = wikitext.match(/\|\s*cost2\s*=\s*(.+)/i);
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
     const supplyMatch = wikitext.match(/This is not in the Supply\./i);
+
+    function formatCost(raw) {
+      if (!raw) return 'Unknown';
+      raw = raw.trim();
+      const debtMatch = raw.match(/(\d+)D/i);
+      const potionMatch = raw.match(/P/i);
+      const coinMatch = raw.match(/(\d+)/);
+      if (debtMatch) return `<${debtMatch[1]}>`;
+      if (potionMatch) return '[1]';
+      if (coinMatch) return `(${coinMatch[1]})`;
+      return raw;
+    }
 
     const textFields = [];
     const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
@@ -136,7 +149,7 @@ async function fetchCard(cardName) {
       name: cardName,
       supply: !supplyMatch,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-      cost: costMatch ? costMatch[1].trim() : 'Unknown',
+      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null)
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
       text: cleanedText
     };
