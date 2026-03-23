@@ -26,14 +26,16 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/{{VP\|(\d+)[^}]*}}/gi, '{$1}')           // {{VP|2}} → {2}
-    .replace(/{{Costplus\|(\d+)}}/gi, '($1)')           // {{Costplus|1}} → (1)
-    .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')         // {{Cost|4D}} → <4> debt
-    .replace(/{{Cost\|(\d+)P[^}]*}}/gi, '[$1]')         // {{Cost|2P}} → [2] potion
-    .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')          // {{Cost|5}} → (5) coins
-    .replace(/{{Debt\|(\d+)[^}]*}}/gi, '<$1>')          // {{Debt|4}} → <4>
-    .replace(/{{Potion[^}]*}}/gi, '[1]')                // {{Potion}} → [1]
-    .replace(/{{[^}]+}}/g, ' ')                         // generic - after specific ones
+    .replace(/{{VP\|(\d+)[^}]*}}/gi, '$1 VP')
+    .replace(/{{Costplus\|(\d+)}}/gi, '+$1 coins')
+    .replace(/{{Cost\|(\d+)}}/gi, '$1 coins')
+    .replace(/{{[^}]+}}/g, ' ')                        // generic - must be after specific ones
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&[a-z]+;/gi, ' ')
+    .replace(/'{2,}/g, '')
+    .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')
+    .replace(/<br\s*\/?>/gi, ' ')                       // <br> → space (add this line)
+    .replace(/<[^>]+>/g, ' ')
     .split(/\s+/)
     .map(word => {
       word = word.replace(/^[^a-zA-Z0-9;:.,!?]+|[^a-zA-Z0-9;:.,!?]+$/g, '');
