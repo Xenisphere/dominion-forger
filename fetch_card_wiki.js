@@ -50,6 +50,7 @@ function cleanText(text) {
 
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}"`);
+  cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
   let data;
 
