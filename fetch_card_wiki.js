@@ -114,7 +114,7 @@ const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encod
       textFields.push(match[1]);
       i++;
     }
-    const rawText = textFields.join(' ').trim();
+    const rawText = textFields.join(' | ').trim();
 
     console.log('[DEBUG] Raw text:', rawText);
     const cleanedText = rawText ? cleanText(rawText) : '';
