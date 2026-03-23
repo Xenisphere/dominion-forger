@@ -121,15 +121,15 @@ async function fetchCard(cardName) {
     function formatCost(raw) {
       if (!raw) return 'Unknown';
       raw = raw.trim();
+      const plus = raw.includes('+') ? '+' : '';
       const debtMatch = raw.match(/(\d+)D/i);
       const potionMatch = raw.match(/P/i);
       const coinMatch = raw.match(/(\d+)/);
-      if (debtMatch) return `<${debtMatch[1]}>`;
-      if (potionMatch) return '[1]';
-      if (coinMatch) return `(${coinMatch[1]})`;
+      if (debtMatch) return `<${debtMatch[1]}${plus}>`;
+      if (potionMatch) return `[1${plus}]`;
+      if (coinMatch) return `(${coinMatch[1]}${plus})`;
       return raw;
     }
-
     const textFields = [];
     const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
     if (baseText) textFields.push(baseText[1]);
@@ -149,7 +149,7 @@ async function fetchCard(cardName) {
       name: cardName,
       supply: !supplyMatch,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null)
+      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null),
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
       text: cleanedText
     };
