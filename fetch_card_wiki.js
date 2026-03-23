@@ -153,7 +153,7 @@ async function fetchCard(cardName) {
       name: cardName,
       supply: supply,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra)
+      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra),
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
       text: cleanedText
     };
