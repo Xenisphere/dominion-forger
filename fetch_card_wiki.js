@@ -63,26 +63,27 @@ async function fetchCard(cardName) {
   cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
   let data;
-
   const localPath = path.join(rawDir, `${cardName}.json`);
+
   if (fs.existsSync(localPath)) {
     console.log(`[DEBUG] Using local cache for "${cardName}"`);
     data = fs.readFileSync(localPath, 'utf-8');
   } else {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
-const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName.replace(/_/g, ' '))}&prop=wikitext&format=json`;
+    const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
+
     const browser = await puppeteer.launch({ headless: true });
-      try {
-        const page = await browser.newPage();
-        await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
-        console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
-        await page.waitForFunction(
-          () => document.body.innerText.trim().startsWith('{'),
-          { timeout: 100000 }
-        );
-      
-        // Retry up to 3 times in case of navigation during extraction
-      let data = null;
+    try {
+      const page = await browser.newPage();
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
+      console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
+      await page.waitForFunction(
+        () => document.body.innerText.trim().startsWith('{'),
+        { timeout: 100000 }
+      );
+
+      // Retry up to 3 times in case of navigation during extraction
+      data = null;
       for (let attempt = 1; attempt <= 3; attempt++) {
         try {
           data = await page.evaluate(() => document.body.innerText);
@@ -94,9 +95,12 @@ const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encod
       }
       if (!data) throw new Error('Failed to extract page data after 3 attempts');
 
-    if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
-    fs.writeFileSync(localPath, data, 'utf-8');
-    console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
+      if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
+      fs.writeFileSync(localPath, data, 'utf-8');
+      console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
+    } finally {
+      await browser.close();
+    }
   }
 
   try {
@@ -107,12 +111,10 @@ const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encod
     }
 
     const wikitext = json.parse.wikitext['*'];
-
     const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
 
-    // Grab all text fields: text, text2, text3, etc.
     const textFields = [];
     const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
     if (baseText) textFields.push(baseText[1]);
@@ -124,11 +126,10 @@ const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encod
       i++;
     }
     const rawText = textFields.join(' | ').trim();
-
     console.log('[DEBUG] Raw text:', rawText);
     const cleanedText = rawText ? cleanText(rawText) : '';
     console.log('[DEBUG] Cleaned text:', cleanedText);
-    
+
     const cardData = {
       name: cardName,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
