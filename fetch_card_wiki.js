@@ -42,7 +42,6 @@ function cleanText(text) {
     .replace(/<\/p\s*>/gi, ' ')                        // </p> → space
     .replace(/<p\s*\/?>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')                          // remove remaining tags
-    .replace(/\(This is not in the Supply\.\)/gi, '')
     .split(/\s+/)
     .map(word => {
       if (word === '|') return word;
@@ -99,7 +98,7 @@ async function fetchCard(cardName) {
       if (!data) throw new Error('Failed to extract page data after 3 attempts');
 
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
-      fs.writeFileSync(localPath, data, 'utf-8');
+      fs.writeFileSync(localPath, JSON.stringify(JSON.parse(data), null, 2), 'utf-8');
       console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
     } finally {
       await browser.close();
@@ -118,17 +117,20 @@ async function fetchCard(cardName) {
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
     const cost2Match = wikitext.match(/\|\s*cost2\s*=\s*(.+)/i);
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
-    const supplyMatch = wikitext.match(/This is not in the Supply\./i);
+    const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
+    const supply = purposeMatch ? !purposeMatch[1].toLowerCase().includes('non-supply') : true;
 
-    function formatCost(raw) {
+    function formatCost(raw, extra) {
       if (!raw) return 'Unknown';
       raw = raw.trim();
-      const plus = raw.includes('+') ? '+' : '';
+      const plus = extra === '+' ? '+' : '';
       const debtMatch = raw.match(/(\d+)D/i);
       const potionMatch = raw.match(/P/i);
       const coinMatch = raw.match(/(\d+)/);
-      if (debtMatch) return `<${debtMatch[1]}${plus}>`;
-      if (potionMatch) return `[1${plus}]`;
+      const costExtraMatch = wikitext.match(/\|\s*cost_extra\s*=\s*(.+)/i);
+      const costExtra = costExtraMatch ? costExtraMatch[1].trim() : '';
+      if (debtMatch) return `<${debtMatch[1]}>${plus}`;
+      if (potionMatch) return `[1]${plus}`;
       if (coinMatch) return `(${coinMatch[1]})${plus}`;
       return raw;
     }
@@ -149,9 +151,9 @@ async function fetchCard(cardName) {
 
     const cardData = {
       name: cardName,
-      supply: !supplyMatch,
+      supply: supply,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null),
+      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra)
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
       text: cleanedText
     };
