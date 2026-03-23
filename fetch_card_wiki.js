@@ -44,6 +44,7 @@ function cleanText(text) {
     .replace(/<[^>]+>/g, ' ')                          // remove remaining tags
     .split(/\s+/)
     .map(word => {
+      if (word === '|') return word;
       word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>]+$/g, '');
       word = word.replace(/[^a-zA-Z0-9;:.,!?()\[\]{}<>+\s]/g, '');
       if (/^[+<(\[{]/.test(word)) return word;
