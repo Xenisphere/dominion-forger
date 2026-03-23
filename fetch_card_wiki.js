@@ -38,8 +38,8 @@ function cleanText(text) {
     .replace(/&[a-z]+;/gi, ' ')
     .replace(/'{2,}/g, '')
     .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')
-    .replace(/<br\s*\/?>/gi, ' ')                // <p> → |
     .replace(/<\/p\s*>/gi, ' ')                        // </p> → space
+    .replace(/<p\s*\/?>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')                          // remove remaining tags
     .split(/\s+/)
     .map(word => {
