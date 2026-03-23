@@ -106,15 +106,16 @@ async function fetchCard(cardName) {
     }
     const rawText = textFields.join(' ').trim();
 
+    console.log('[DEBUG] Raw text:', rawText);
+    const cleanedText = rawText ? cleanText(rawText) : '';
+    console.log('[DEBUG] Cleaned text:', cleanedText);
+    
     const cardData = {
       name: cardName,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
       cost: costMatch ? costMatch[1].trim() : 'Unknown',
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-      console.log('[DEBUG] Raw text:', rawText);
-      const cleanedText = rawText ? cleanText(rawText) : '';
-      console.log('[DEBUG] Cleaned text:', cleanedText);
-      cleanedText: rawText ? cleanText(rawText) : ''
+      text: cleanedText
     };
 
     console.log('[DEBUG] Parsed card:', cardData);
