@@ -28,6 +28,8 @@ function cleanText(text) {
   return text
     .replace(/<[^>]+>/g, ' ')                        // remove anything in <>
     .replace(/{{VP\|(\d+)[^}]*}}/gi, '$1 VP')        // {{VP|2|l}} → 2 VP
+    .replace(/{{Costplus\|(\d+)}}/gi, '+$1 coins')   // {{Costplus|1}} → +1 coins
+    .replace(/{{Cost\|(\d+)}}/gi, '$1 coins')         // {{Cost|5}} → 5 coins
     .replace(/{{[^}]+}}/g, ' ')                      // remove {{ }} templates
     .replace(/&nbsp;/g, ' ')                         // &nbsp; → space
     .replace(/&[a-z]+;/gi, ' ')                      // remove other HTML entities
@@ -37,6 +39,7 @@ function cleanText(text) {
     .map(word => {
       word = word.replace(/^[^a-zA-Z0-9;:.,!?]+|[^a-zA-Z0-9;:.,!?]+$/g, '');
       word = word.replace(/[^a-zA-Z0-9;:.,!?\s]/g, '');
+      if (word.startsWith('+')) return word;
       if (!/[aeiouAEIOU]/.test(word) && !/^\d+$/.test(word)) return '';
       if (word.length === 1 && !/^[aiAI]$/.test(word)) return '';
       return word;
