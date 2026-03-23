@@ -59,8 +59,7 @@ async function fetchCard(cardName) {
     data = fs.readFileSync(localPath, 'utf-8');
   } else {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
-    const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
-
+const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName.replace(/_/g, ' '))}&prop=wikitext&format=json`;
     const browser = await puppeteer.launch({ headless: true });
     try {
       const page = await browser.newPage();
