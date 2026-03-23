@@ -41,6 +41,7 @@ function cleanText(text) {
     .replace(/<\/p\s*>/gi, ' ')                        // </p> → space
     .replace(/<p\s*\/?>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')                          // remove remaining tags
+    .replace(/This is not in the Supply\./gi, '')
     .split(/\s+/)
     .map(word => {
       if (word === '|') return word;
