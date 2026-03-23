@@ -26,21 +26,27 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/{{VP\|(\d+)[^}]*}}/gi, '$1 VP')
-    .replace(/{{Costplus\|(\d+)}}/gi, '+$1 coins')
-    .replace(/{{Cost\|(\d+)}}/gi, '$1 coins')
-    .replace(/{{[^}]+}}/g, ' ')                        // generic - must be after specific ones
+    .replace(/{{VP\|(\d+)[^}]*}}/gi, '{$1}')
+    .replace(/{{Costplus\|(\d+)[^}]*}}/gi, '($1)')
+    .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')
+    .replace(/{{Cost\|(\d+)P[^}]*}}/gi, '[$1]')
+    .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')
+    .replace(/{{Debt\|(\d+)[^}]*}}/gi, '<$1>')
+    .replace(/{{Potion[^}]*}}/gi, '[1]')
+    .replace(/{{[^}]+}}/g, ' ')
     .replace(/&nbsp;/g, ' ')
     .replace(/&[a-z]+;/gi, ' ')
     .replace(/'{2,}/g, '')
     .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')
-    .replace(/<br\s*\/?>/gi, ' ')                       // <br> → space (add this line)
-    .replace(/<[^>]+>/g, ' ')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<p\s*\/?>/gi, ' | ')                     // <p> → |
+    .replace(/<\/p\s*>/gi, ' ')                        // </p> → space
+    .replace(/<[^>]+>/g, ' ')                          // remove remaining tags
     .split(/\s+/)
     .map(word => {
-      word = word.replace(/^[^a-zA-Z0-9;:.,!?]+|[^a-zA-Z0-9;:.,!?]+$/g, '');
-      word = word.replace(/[^a-zA-Z0-9;:.,!?\s]/g, '');
-      if (word.startsWith('+')) return word;
+      word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>]+$/g, '');
+      word = word.replace(/[^a-zA-Z0-9;:.,!?()\[\]{}<>+\s]/g, '');
+      if (/^[+<(\[{]/.test(word)) return word;
       if (!/[aeiouAEIOU]/.test(word) && !/^\d+$/.test(word)) return '';
       if (word.length === 1 && !/^[aiAI]$/.test(word)) return '';
       return word;
