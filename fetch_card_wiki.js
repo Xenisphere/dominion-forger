@@ -64,12 +64,13 @@ async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}"`);
   cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
-  let data;
+  let wikitext;
   const localPath = path.join(rawDir, `${cardName}.json`);
 
   if (fs.existsSync(localPath)) {
     console.log(`[DEBUG] Using local cache for "${cardName}"`);
-    data = fs.readFileSync(localPath, 'utf-8');
+    const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
+    wikitext = fileData.infobox;
   } else {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
@@ -84,21 +85,25 @@ async function fetchCard(cardName) {
         { timeout: 100000 }
       );
 
-      // Retry up to 3 times in case of navigation during extraction
-      data = null;
+      let rawData = null;
       for (let attempt = 1; attempt <= 3; attempt++) {
         try {
-          data = await page.evaluate(() => document.body.innerText);
+          rawData = await page.evaluate(() => document.body.innerText);
           break;
         } catch (err) {
           console.log(`[DEBUG] Extraction attempt ${attempt} failed, retrying...`);
           await new Promise(r => setTimeout(r, 2000));
         }
       }
-      if (!data) throw new Error('Failed to extract page data after 3 attempts');
+      if (!rawData) throw new Error('Failed to extract page data after 3 attempts');
+
+      const parsed = JSON.parse(rawData);
+      const wikiRaw = parsed?.parse?.wikitext?.['*'] || '';
+      const infoboxMatch = wikiRaw.match(/{{Infobox Card[\s\S]+?}}/i);
+      wikitext = infoboxMatch ? infoboxMatch[0] : wikiRaw;
 
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
-      fs.writeFileSync(localPath, JSON.stringify(JSON.parse(data), null, 2), 'utf-8');
+      fs.writeFileSync(localPath, JSON.stringify({ infobox: wikitext }, null, 2), 'utf-8');
       console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
     } finally {
       await browser.close();
@@ -106,34 +111,33 @@ async function fetchCard(cardName) {
   }
 
   try {
-    const json = JSON.parse(data);
-    if (!json.parse || !json.parse.wikitext || !json.parse.wikitext['*']) {
+    if (!wikitext) {
       console.error('[ERROR] Card page not found or invalid format');
       return null;
     }
 
-    const wikitext = json.parse.wikitext['*'];
     const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
-    const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
-    const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
     const cost2Match = wikitext.match(/\|\s*cost2\s*=\s*(.+)/i);
     const costExtraMatch = wikitext.match(/\|\s*cost_extra\s*=\s*(.+)/i);
     const costExtra = costExtraMatch ? costExtraMatch[1].trim() : '';
+    const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
+    const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
     const supply = purposeMatch ? !purposeMatch[1].toLowerCase().includes('non-supply') : true;
 
-    function formatCost(raw, extra) {
+    function formatCost(raw, extra, isDebt) {
       if (!raw) return 'Unknown';
       raw = raw.trim();
       const plus = extra === '+' ? '+' : '';
       const debtMatch = raw.match(/(\d+)D/i);
       const potionMatch = raw.match(/P/i);
       const coinMatch = raw.match(/(\d+)/);
-      if (debtMatch) return `<${debtMatch[1]}>${plus}`;
+      if (debtMatch || isDebt) return `<${debtMatch ? debtMatch[1] : coinMatch[1]}>${plus}`;
       if (potionMatch) return `[1]${plus}`;
       if (coinMatch) return `(${coinMatch[1]})${plus}`;
       return raw;
     }
+
     const textFields = [];
     const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
     if (baseText) textFields.push(baseText[1]);
@@ -153,7 +157,7 @@ async function fetchCard(cardName) {
       name: cardName,
       supply: supply,
       kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra),
+      cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch),
       types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
       text: cleanedText
     };
@@ -162,7 +166,6 @@ async function fetchCard(cardName) {
     return cardData;
   } catch (err) {
     console.error('[ERROR] Failed to parse JSON:', err);
-    console.error('[DEBUG] Response preview:', data.slice(0, 200));
     return null;
   }
 }
