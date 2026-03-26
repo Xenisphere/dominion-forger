@@ -99,7 +99,7 @@ async function fetchCard(cardName) {
 
       const parsed = JSON.parse(rawData);
       const wikiRaw = parsed?.parse?.wikitext?.['*'] || '';
-      const infoboxMatch = wikiRaw.match(/{{Infobox Card[\s\S]+?}}/i);
+      const infoboxMatch = wikiRaw.match(/{{Infobox Card[\s\S]+?(?=\n}})\n}}/i);
       wikitext = infoboxMatch ? infoboxMatch[0] : wikiRaw;
 
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
