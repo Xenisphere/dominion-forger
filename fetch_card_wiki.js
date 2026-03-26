@@ -119,14 +119,15 @@ async function fetchCard(cardName) {
     const kingdomMatch = wikitext.match(/\|\s*set\s*=\s*(.+)/i);
     const costMatch = wikitext.match(/\|\s*cost\s*=\s*(.+)/i);
     const cost2Match = wikitext.match(/\|\s*cost2\s*=\s*(.+)/i);
+    const cost3Match = wikitext.match(/\|\s*cost3\s*=\s*(.+)/i);
     const costExtraMatch = wikitext.match(/\|\s*cost_extra\s*=\s*(.+)/i);
     const costExtra = costExtraMatch ? costExtraMatch[1].trim() : '';
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
     const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
-const purpose = purposeMatch ? purposeMatch[1].trim() : 'Unknown';
-const supply = purpose.toLowerCase().includes('non-supply') ? 'Non-Supply' :
-               purpose.toLowerCase().includes('kingdom') ? 'Kingdom Pile' :
-               purpose.toLowerCase().includes('base') ? 'Base' : purpose;
+    const purpose = purposeMatch ? purposeMatch[1].trim() : 'Unknown';
+    const supply = purpose.toLowerCase().includes('non-supply') ? 'Non-Supply' :
+                   purpose.toLowerCase().includes('kingdom') ? 'Kingdom Pile' :
+                   purpose.toLowerCase().includes('base') ? 'Base' : purpose;
 
     function formatCost(raw, extra, isDebt) {
       if (!raw) return 'Unknown';
@@ -157,13 +158,17 @@ const supply = purpose.toLowerCase().includes('non-supply') ? 'Non-Supply' :
     console.log('[DEBUG] Cleaned text:', cleanedText);
 
     const cardData = {
-  name: cardName,
-  supply: supply,
-  kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-  cost: formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch),
-  types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-  text: cleanedText
-};
+      name: cardName,
+      supply: supply,
+      kingdom: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
+      cost: costMatch && cost2Match
+        ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
+        : cost3Match
+        ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
+        : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch),
+      types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
+      text: cleanedText
+    };
 
     console.log('[DEBUG] Parsed card:', cardData);
     return cardData;
