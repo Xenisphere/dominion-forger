@@ -123,7 +123,6 @@ async function fetchCard(cardName) {
     const costExtra = costExtraMatch ? costExtraMatch[1].trim() : '';
     const typesMatch = wikitext.match(/\|\s*types\s*=\s*(.+)/i);
     const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
-    const purposeMatch = wikitext.match(/\|\s*purpose\s*=\s*(.+)/i);
 const purpose = purposeMatch ? purposeMatch[1].trim() : 'Unknown';
 const supply = purpose.toLowerCase().includes('non-supply') ? 'Non-Supply' :
                purpose.toLowerCase().includes('kingdom') ? 'Kingdom Pile' :
