@@ -4,6 +4,9 @@ const path = require('path');
 const puppeteer = require('puppeteer');
 const cardsFilePath = path.join(__dirname, 'cards.json');
 const rawDir = path.join(__dirname, 'raw');
+const aliases = {
+  'Harem': 'Farm'
+};
 
 function loadCards() {
   if (fs.existsSync(cardsFilePath)) {
@@ -63,6 +66,8 @@ function cleanText(text) {
 async function fetchCard(cardName) {
   console.log(`[DEBUG] Searching for "${cardName}"`);
   cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+  cardName = aliases[cardName] || cardName;
 
   let wikitext;
   const localPath = path.join(rawDir, `${cardName}.json`);
