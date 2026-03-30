@@ -5,9 +5,10 @@ const path = require('path');
 const rawText = fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8');
 const raw = rawText
   .trim()
-  .slice(1, -1) // remove outer [ ]
-  .split(/",\s*\n\s*"/) // split on line boundaries
-  .map(s => s.replace(/^"|"$/g, '').replace(/\\t/g, '\t'));
+  .replace(/^\uFEFF/, '')          // remove BOM if present
+  .slice(1, -1)                    // remove outer [ ]
+  .split(/",\s*\n\s*"/)            // split on line boundaries
+  .map(s => s.replace(/^["\\]+|["\\]+$/g, '').replace(/\\t/g, '\t'));
 
 function cleanName(name) {
   return name.replace(/[^a-zA-Z0-9'',\- ]/g, '').trim();
