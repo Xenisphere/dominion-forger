@@ -250,10 +250,5 @@ const json = JSON.stringify(output, null, 2).replace(
   (match) => match.replace(/\s+/g, ' ')
 );
 
-if (fs.existsSync(path.join(__dirname, 'card_names.json'))) {
-  fs.unlinkSync(path.join(__dirname, 'card_names.json'));
-  console.log('[DEBUG] Deleted existing card_names.json');
-}
-
 fs.writeFileSync(path.join(__dirname, 'card_names.json'), '', 'utf-8');
 console.log('[DEBUG] Cleared card_names.json');
