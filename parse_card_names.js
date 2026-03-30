@@ -12,6 +12,8 @@ function stripCosts(str) {
   return str.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|PP|\d+P\d+P|\d+star\d+star/g, '•').trim();
 }
 
+const pileGroups = ['Ruins', 'Shelters', 'Castles'];
+
 const travellerChains = {
   'Page': ['Page', 'Treasure Hunter', 'Warrior', 'Hero', 'Champion'],
   'Peasant': ['Peasant', 'Soldier', 'Fugitive', 'Disciple', 'Teacher'],
@@ -31,7 +33,7 @@ function expandKnightNames(cards) {
   return result;
 }
 
-// Parse a segment that may contain parenthetical subgroups
+// Parse a segment that may contain parenthetical groups
 function parseSegment(seg) {
   seg = seg.trim();
   if (!seg) return [];
@@ -53,36 +55,49 @@ function parseSegment(seg) {
     const inner = parenMatch[2].trim();
     const after = parenMatch[3].trim();
 
-    // Named subgroup like "Zombies: Apprentice • Mason • Spy"
-    const namedGroup = inner.match(/^(\w+):\s*(.+)$/);
-    if (namedGroup) {
-      const groupName = namedGroup[1];
-      const subCards = namedGroup[2].split('•').map(s => cleanName(s.trim())).filter(Boolean);
-      const prefixedCards = subCards.map(c => `${groupName} ${c}`);
-      results.push({ name: parentName, subgroup: prefixedCards });
-    } else if (inner.includes('/')) {
-      // Split pile inside parens like Misery (Miserable/Twice Miserable)
-      const subParts = inner.split('/').map(s => cleanName(s.trim()));
-      results.push({ name: parentName, subgroup: subParts });
+   // Named group like "Zombies: Apprentice • Mason • Spy" or "Dames Anna • ... • Sirs Bailey • ..."
+const namedGroup = inner.match(/^(\w+):\s*(.+)$/);
+if (namedGroup) {
+  const groupName = namedGroup[1];
+  const subCards = namedGroup[2].split('•').map(s => cleanName(s.trim())).filter(Boolean);
+  const prefixedCards = subCards.map(c => `${groupName} ${c}`);
+  results.push({ name: parentName, group: prefixedCards });
+} else if (inner.includes('Dames') || inner.includes('Sirs')) {
+  // Knights pile
+  const subCards = inner.split('•').map(s => s.trim()).filter(Boolean);
+  const knightNames = [];
+  let prefix = 'Dame';
+  for (const card of subCards) {
+    if (card.startsWith('Dames ')) {
+      prefix = 'Dame';
+      knightNames.push(`Dame ${card.replace('Dames ', '').trim()}`);
+    } else if (card.startsWith('Sirs ')) {
+      prefix = 'Sir';
+      knightNames.push(`Sir ${card.replace('Sirs ', '').trim()}`);
     } else {
-      // Heirlooms or traveller sub-cards separated by •
-      const subCards = inner.split('•').map(s => cleanName(s.trim())).filter(Boolean);
-      if (travellerChains[parentName]) {
-        results.push({ name: parentName, chain: travellerChains[parentName] });
-      } else {
-        // Heirloom — single sub-card
-        if (subCards.length === 1) {
-          results.push({ name: parentName, heirloom: subCards[0] });
-          results.push({ name: subCards[0], parent: parentName });
-        } else {
-          // Multiple sub-cards like Fool (Lost in the Woods • Lucky Coin)
-          results.push({ name: parentName, heirloom: subCards });
-          for (const sub of subCards) {
-            results.push({ name: sub, parent: parentName });
-          }
-        }
-      }
+      knightNames.push(`${prefix} ${card}`);
     }
+  }
+  results.push({ name: parentName, group: knightNames });
+} else if (inner.includes('/')) {
+  const subParts = inner.split('/').map(s => cleanName(s.trim()));
+  results.push({ name: parentName, group: subParts });
+} else {
+  const subCards = inner.split('•').map(s => cleanName(s.trim())).filter(Boolean);
+  if (travellerChains[parentName]) {
+    results.push({ name: parentName, chain: travellerChains[parentName] });
+  } else if (subCards.length === 1) {
+    results.push({ name: parentName, heirloom: subCards[0] });
+    results.push({ name: subCards[0], parent: parentName });
+  } else if (pileGroups.includes(parentName)) {
+    results.push({ name: parentName, group: subCards });
+  } else {
+    results.push({ name: parentName, heirloom: subCards });
+    for (const sub of subCards) {
+      results.push({ name: sub, parent: parentName });
+    }
+  }
+}
 
     // Handle any remaining text after the closing paren
     if (after) {
@@ -228,7 +243,7 @@ for (const line of raw) {
 if (output['Nocturne']) {
   output['Nocturne'].kingdom.push({
     name: 'States',
-    subgroup: ['Deluded', 'Envious', 'Miserable', 'Twice Miserable']
+    group: ['Deluded', 'Envious', 'Miserable', 'Twice Miserable']
   });
 }
 
