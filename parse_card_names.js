@@ -9,7 +9,7 @@ function cleanName(name) {
 }
 
 function stripCosts(str) {
-  return str.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|\d+star\d+star|PP|\d+P\d+P|\d+D\d+D|\b\d+D\b/g, '•').trim();
+  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|PP|\d+P)+/g, '•').trim();
 }
 
 const pileGroups = ['Ruins', 'Shelters', 'Castles'];
