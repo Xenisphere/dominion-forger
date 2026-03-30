@@ -10,7 +10,7 @@ const raw = rawText
   .map(s => s.replace(/^"|"$/g, '').replace(/\\t/g, '\t'));
 
 function cleanName(name) {
-  return name.replace(/[^a-zA-Z0-9'\- ]/g, '').trim();
+  return name.replace(/[^a-zA-Z0-9'',\- ]/g, '').trim();
 }
 
 function stripCosts(str) {
