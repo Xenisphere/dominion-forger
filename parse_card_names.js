@@ -251,11 +251,6 @@ const json = JSON.stringify(output, null, 2).replace(
   (match) => match.replace(/\s+/g, ' ')
 );
 
-console.log('[DEBUG] JSON length:', json.length);
-console.log('[DEBUG] First 200 chars:', json.slice(0, 200));
-fs.writeFileSync(path.join(__dirname, 'card_names.json'), json, 'utf-8');
-console.log(`[DEBUG] Saved card_names.json with ${Object.keys(output).length} expansions`);
-
 fs.writeFileSync(path.join(__dirname, 'card_names.json'), '', 'utf-8');
 console.log('[DEBUG] Cleared card_names.json');
 
