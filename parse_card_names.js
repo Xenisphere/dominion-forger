@@ -2,13 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const rawText = fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8');
-const raw = rawText
-  .trim()
-  .replace(/^\uFEFF/, '')          // remove BOM if present
-  .slice(1, -1)                    // remove outer [ ]
-  .split(/",\s*\n\s*"/)            // split on line boundaries
-  .map(s => s.replace(/^["\\]+|["\\]+$/g, '').replace(/\\t/g, '\t'));
+const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8'));
 
 function cleanName(name) {
   return name.replace(/[^a-zA-Z0-9'',\- ]/g, '').trim();
@@ -16,6 +10,7 @@ function cleanName(name) {
 
 function stripCosts(str) {
   return str.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|PP|\d+P\d+P|\d+star\d+star/g, '').trim();
+  console.log('[DEBUG] First line after strip:', stripCosts(raw[0].replace(/^.+?\t/, '')));
 }
 
 const travellerChains = {
