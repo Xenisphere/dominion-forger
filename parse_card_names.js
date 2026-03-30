@@ -5,7 +5,9 @@ const path = require('path');
 const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8'));
 
 function cleanName(name) {
-  return name.replace(/\b\d+\w*\b/g, '').replace(/[^a-zA-Z0-9'',\- ]/g, '').replace(/\s+/g, ' ').trim();
+  name = name.replace(/[^a-zA-Z0-9'',\- ]/g, '').replace(/\s+/g, ' ').trim();
+  if (/\d/.test(name)) return '';
+  return name;
 }
 
 function stripCosts(str) {
