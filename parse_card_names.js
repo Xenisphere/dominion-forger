@@ -7,11 +7,12 @@ const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json
 function cleanName(name) {
   name = name.replace(/[^a-zA-Z0-9'',\- ]/g, '').replace(/\s+/g, ' ').trim();
   if (/\d/.test(name)) return '';
+  if (name.length <= 1) return '';
   return name;
 }
 
 function stripCosts(str) {
-  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|PP|\d+P)+/g, '•').trim();
+  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|PP|\d+P|[A-Z]\d+[A-Z]|\b[A-Z]\b)+/g, '•').trim();
 }
 
 const pileGroups = ['Ruins', 'Shelters', 'Castles'];
