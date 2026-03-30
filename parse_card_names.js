@@ -225,24 +225,24 @@ for (const line of raw) {
   if (trimmed.startsWith('Removed cards:') && currentExpansion) {
     const str = trimmed.replace('Removed cards:', '').trim();
     const cards = parseCardLine('\t' + str);
-    if (!output[currentExpansion].removed) output[currentExpansion].removed = [];
-    output[currentExpansion].removed.push(...cards);
+    if (!output[currentExpansion].Removed) output[currentExpansion].Removed = [];
+    output[currentExpansion].Removed.push(...cards);
     continue;
   }
 
   // Expansion line
   if (trimmed.includes('\t')) {
     currentExpansion = trimmed.split('\t')[0].trim();
-    output[currentExpansion] = { kingdom: [] };
+    output[currentExpansion] = { Kingdom: [] };
     const cards = parseCardLine(trimmed);
-    output[currentExpansion].kingdom.push(...cards);
+    output[currentExpansion].Kingdom.push(...cards);
     continue;
   }
 }
 
 // Add States group to Nocturne
 if (output['Nocturne']) {
-  output['Nocturne'].kingdom.push({
+  output['Nocturne'].Kingdom.push({
     name: 'States',
     group: ['Deluded', 'Envious', 'Miserable', 'Twice Miserable']
   });
@@ -250,8 +250,8 @@ if (output['Nocturne']) {
 
 // Sort all kingdoms and landscapes by name
 for (const exp of Object.keys(output)) {
-  output[exp].kingdom = sortByName(output[exp].kingdom);
-  if (output[exp].removed) output[exp].removed = sortByName(output[exp].removed);
+  output[exp].Kingdom = sortByName(output[exp].Kingdom);
+  if (output[exp].Removed) output[exp].Removed = sortByName(output[exp].Removed);
   for (const type of Object.values(landscapeKeywords)) {
     if (output[exp][type]) output[exp][type] = sortByName(output[exp][type]);
   }
@@ -259,12 +259,12 @@ for (const exp of Object.keys(output)) {
 
 for (const exp of Object.keys(output)) {
   const counts = {};
-  if (output[exp].kingdom) counts.kingdom = output[exp].kingdom.length;
-  if (output[exp].removed) counts.removed = output[exp].removed.length;
+  if (output[exp].Kingdom) counts['Kingdom'] = output[exp].Kingdom.length;
+  if (output[exp].Removed) counts['Removed'] = output[exp].Removed.length;
   for (const type of Object.values(landscapeKeywords)) {
     if (output[exp][type]) counts[type] = output[exp][type].length;
   }
-  output[exp]._counts = counts;
+  output[exp]['Card Count'] = counts;
 }
 
 // Compact JSON serialization - one card per line
