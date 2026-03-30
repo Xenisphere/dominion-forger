@@ -292,7 +292,7 @@ for (const exp of Object.keys(output)) {
 
 fs.writeFileSync(
   path.join(__dirname, 'card_names.json'),
-  JSON.stringify(output, null, 2),
+  JSON.stringify(output, null, 2).replace(/\{\s*"name":\s*"([^"]+)",\s*"cost":\s*("([^"]*?)"|null)\s*\}/g, '{"name":"$1","cost":$2}'),
   'utf-8'
 );
 
