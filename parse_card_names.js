@@ -252,3 +252,6 @@ const json = JSON.stringify(output, null, 2).replace(
 
 fs.writeFileSync(path.join(__dirname, 'card_names.json'), '', 'utf-8');
 console.log('[DEBUG] Cleared card_names.json');
+
+fs.writeFileSync(path.join(__dirname, 'card_names.json'), json, 'utf-8');
+console.log(`[DEBUG] Saved card_names.json with ${Object.keys(output).length} expansions`);
