@@ -1,1 +1,234 @@
-
+[
+  {
+    "name": "Smithy",
+    "supply": true,
+    "kingdom": "Dominion",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+3 Cards"
+  },
+  {
+    "name": "Daimyo",
+    "supply": true,
+    "kingdom": "Rising Sun",
+    "cost": "<6>",
+    "types": [
+      "Action-Command"
+    ],
+    "text": "+1 Card +1 Action The next time you play a nonCommand Action card this turn, replay it afterwards."
+  },
+  {
+    "name": "Cemetery",
+    "supply": true,
+    "kingdom": "Nocturne",
+    "cost": "(4)",
+    "types": [
+      "Victory"
+    ],
+    "text": "{2} | When you gain this, trash up to 4 cards from your hand. Heirloom: Haunted Mirror"
+  },
+  {
+    "name": "Caravan Guard",
+    "supply": true,
+    "kingdom": "Adventures",
+    "cost": "(3)",
+    "types": [
+      "Action-Duration-Reaction"
+    ],
+    "text": "+1 Card +1 Action At the start of your next turn, (1). | When another player plays an Attack card, you may first play this from your hand."
+  },
+  {
+    "name": "Quarry",
+    "supply": true,
+    "kingdom": "Prosperity",
+    "cost": "(4)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(1) This turn, Actions cost (2) less."
+  },
+  {
+    "name": "Imp",
+    "supply": false,
+    "kingdom": "Nocturne",
+    "cost": "(2)",
+    "types": [
+      "Action-Spirit"
+    ],
+    "text": "+2 Cards You may play an Action card from your hand that you dont have a copy of in play. (This is not in the Supply.)"
+  },
+  {
+    "name": "Colony",
+    "supply": true,
+    "kingdom": "Prosperity",
+    "cost": "(11)",
+    "types": [
+      "Victory"
+    ],
+    "text": "{10}"
+  },
+  {
+    "name": "Copper",
+    "supply": "Basic",
+    "kingdom": "Dominion",
+    "cost": "(0)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(1)"
+  },
+  {
+    "name": "Spy",
+    "supply": "Kingdom Pile",
+    "kingdom": "Dominion",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+1 Card +1 Action Each player (including you) reveals the top card of their deck and either discards it or puts it back, your choice."
+  },
+  {
+    "name": "Ghost",
+    "supply": "Non-Supply",
+    "kingdom": "Nocturne",
+    "cost": "(4)",
+    "types": [
+      "Night-Duration-Spirit"
+    ],
+    "text": "Reveal cards from your deck until you reveal an Action. Discard the other cards and set aside the Action. At the start of your next turn, play it twice. (This is not in the Supply.)"
+  },
+  {
+    "name": "Horse",
+    "supply": "Non-Supply",
+    "kingdom": "Menagerie",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +1 Action Return this to its pile. (This is not in the Supply.)"
+  },
+  {
+    "name": "Fortune",
+    "supply": "Mixed Pile Card",
+    "kingdom": "Empires",
+    "cost": "(8)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "+1 Buy Double your if you havent yet this turn. | When you gain this, gain a Gold per Gladiator you have in play."
+  },
+  {
+    "name": "Alchemist",
+    "supply": "Kingdom Pile",
+    "kingdom": "Alchemy",
+    "cost": "(3)[1]",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +1 Action At the start of Cleanup this turn, if you have a Potion in play, you may put this onto your deck."
+  },
+  {
+    "name": "Farm",
+    "supply": "Kingdom Pile",
+    "kingdom": "Intrigue",
+    "cost": "(6)",
+    "types": [
+      "Treasure-Victory"
+    ],
+    "text": "(2) | {2}"
+  },
+  {
+    "name": "Ruins",
+    "supply": "Unknown",
+    "kingdom": "Unknown",
+    "cost": "Unknown",
+    "types": [],
+    "text": "Ruinses, it turns out, are a pile of cards like with three ways to get them, besides just buying them or something. They only show up in games with a Looter, which is a word you may have been wondering about on There are five different ones (ten copies each) and theyre shuffled together, Im not making this up. As with Curses you only use ten total per opponent. Not two of each per opponent, just whatever random mix you got. So when you play Cultist, your opponent will get one of these five cards. You will know which one is on top of the Ruins pile, but not whats under it. You wont really care; even though some are worse than others, theyre all bad."
+  },
+  {
+    "name": "Knights",
+    "supply": "Kingdom Pile",
+    "kingdom": "Dark Ages",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "Shuffle the Knights pile before each game with the Knights. Keep it face down except for the top card, which is the only one that can be bought or gained."
+  },
+  {
+    "name": "Odysseys",
+    "supply": "Kingdom Pile",
+    "kingdom": "Allies",
+    "cost": "(3)",
+    "types": [
+      "Action-Odyssey"
+    ],
+    "text": "This pile starts the game with 4 copies each of Old Map, Voyage, Sunken Treasure, and Distant Shore, in that order. Only the top card can be gained or bought."
+  },
+  {
+    "name": "Forts",
+    "supply": "Kingdom Pile",
+    "kingdom": "Allies",
+    "cost": "(3)",
+    "types": [
+      "Action-Fort"
+    ],
+    "text": "This pile starts the game with 4 copies each of Tent, Garrison, Hill Fort, and Stronghold, in that order. Only the top card can be gained or bought."
+  },
+  {
+    "name": "Wizards",
+    "supply": "Kingdom Pile",
+    "kingdom": "Allies",
+    "cost": "(3)",
+    "types": [
+      "Action-Wizard-Liaison"
+    ],
+    "text": "This pile starts the game with 4 copies each of Student, Conjurer, Sorcerer, and Lich, in that order. Only the top card can be gained or bought."
+  },
+  {
+    "name": "Zombies",
+    "supply": "Unknown",
+    "kingdom": "Unknown",
+    "cost": "Unknown",
+    "types": [],
+    "text": ""
+  },
+  {
+    "name": "Encampment",
+    "supply": "Mixed Pile Card",
+    "kingdom": "Empires",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +2 Actions You may reveal a Gold or Plunder from your hand. If you do not, set this aside, and return it to its pile at the start of Cleanup."
+  },
+  {
+    "name": "Bandit",
+    "supply": "Kingdom Pile",
+    "kingdom": "Dominion",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Gain a Gold. Each other player reveals the top 2 cards of their deck, trashes a revealed Treasure other than Copper, and discards the rest."
+  },
+  {
+    "name": "Hex",
+    "supply": "Unknown",
+    "kingdom": "Unknown",
+    "cost": "Unknown",
+    "types": [],
+    "text": "Your punishment today: a preview. See its all about your own perspective on it. has Hexes. Hexes are another 12card deck of landscapestyle instructions. These ones are bad though. You get an effect like each other player receives the next Hex, and then you turn over just one Hex, just one okay, and they all get that Hex. Of course sometimes you Hex yourself instead."
+  },
+  {
+    "name": "Prizes",
+    "supply": "Unknown",
+    "kingdom": "Unknown",
+    "cost": "Unknown",
+    "types": [],
+    "text": ""
+  }
+]
