@@ -246,7 +246,7 @@ for (const exp of Object.keys(output)) {
 
 // Compact JSON serialization - one card per line
 const json = JSON.stringify(output, null, 2).replace(
-  /\{\s*"name":\s*"([^"]+)"([^}]*)\}/g,
+  /\{\s*"name":\s*"([^"]+)"([^}]*)\}/gs,
   (match) => match.replace(/\s+/g, ' ')
 );
 
