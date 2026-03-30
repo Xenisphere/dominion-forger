@@ -5,11 +5,11 @@ const path = require('path');
 const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8'));
 
 function cleanName(name) {
-  return name.replace(/[^a-zA-Z0-9'',\- ]/g, '').trim();
+  return name.replace(/\b\d+\w*\b/g, '').replace(/[^a-zA-Z0-9'',\- ]/g, '').replace(/\s+/g, ' ').trim();
 }
 
 function stripCosts(str) {
-  return str.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|PP|\d+P\d+P|\d+star\d+star/g, '•').trim();
+  return str.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|\d+star\d+star|PP|\d+P\d+P|\d+D\d+D|\b\d+D\b/g, '•').trim();
 }
 
 const pileGroups = ['Ruins', 'Shelters', 'Castles'];
