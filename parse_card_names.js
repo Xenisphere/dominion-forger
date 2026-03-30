@@ -193,6 +193,16 @@ function sortByName(arr) {
   return arr.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+for (const exp of Object.keys(output)) {
+  const counts = {};
+  if (output[exp].kingdom) counts.kingdom = output[exp].kingdom.length;
+  if (output[exp].removed) counts.removed = output[exp].removed.length;
+  for (const type of Object.values(landscapeKeywords)) {
+    if (output[exp][type]) counts[type] = output[exp][type].length;
+  }
+  output[exp]._counts = counts;
+}
+
 const landscapeKeywords = {
   'Events:': 'Event',
   'Landmarks:': 'Landmark',
