@@ -9,8 +9,7 @@ function cleanName(name) {
 }
 
 function stripCosts(str) {
-  return str.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|PP|\d+P\d+P|\d+star\d+star/g, '').trim();
-  console.log('[DEBUG] First line after strip:', stripCosts(raw[0].replace(/^.+?\t/, '')));
+  return str.replace(/\$[\d*]+[+]?\$[\d*]+[+]?|\d+D\d+D|PP|\d+P\d+P|\d+star\d+star/g, '•').trim();
 }
 
 const travellerChains = {
@@ -110,6 +109,7 @@ function parseCardLine(str) {
   // Remove expansion name prefix (before tab)
   str = str.replace(/^.+?\t/, '').trim();
   str = stripCosts(str);
+  console.log('[DEBUG] First line after strip:', stripCosts(raw[0].replace(/^.+?\t/, '')));
 
   const results = [];
   // Split by bullet but preserve parenthetical groups
@@ -138,6 +138,7 @@ function parseCardLine(str) {
 function parseLandscapeLine(str, type) {
   str = str.replace(/^[^:]+:\s*/, '').trim();
   str = stripCosts(str);
+  console.log('[DEBUG] First line after strip:', stripCosts(raw[0].replace(/^.+?\t/, '')));
 
   const results = [];
   const parts = [];
