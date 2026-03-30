@@ -2,8 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8'));
-
+const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8').replace(/\t/g, '\\t'));
 // Cost parsing for sorting
 function parseCostValue(cost) {
   if (!cost) return 9999;
