@@ -13,8 +13,10 @@ function cleanName(name) {
 }
 
 function stripCosts(str) {
-  // Only match tokens that START with a digit or are exactly PP
-  str = str.replace(/\b(\d[\w*]+[+]?)+\b|PP/g, '•');
+  // First pass: replace known cost patterns
+  str = str.replace(/(\$[\d*]+[+]?|\d+[A-Za-z]+\d*[A-Za-z]*|\d+[+]?)+/g, '•');
+  // Second pass: remove any remaining standalone tokens containing digits or that are only letters from a cost fragment
+  str = str.replace(/\b\w*\d\w*\b/g, '•');
   // Collapse multiple bullets
   str = str.replace(/•+/g, '•');
   return str.trim();
