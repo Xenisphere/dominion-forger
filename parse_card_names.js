@@ -12,10 +12,10 @@ function cleanName(name) {
 }
 
 function stripCosts(str) {
-  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|PP|\d+P|[A-Z]\d+[A-Z]|\b[A-Z]\b)+/g, '•').trim();
+  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|\bstar\b|PP|\d+P|[A-Z]\d+[A-Z]|\b[A-Z]\b)+/g, '•').trim();
 }
 
-const pileGroups = ['Ruins', 'Shelters', 'Castles'];
+const pileGroups = ['Ruins', 'Shelters', 'Castles', 'Loots', 'Knights'];
 
 const travellerChains = {
   'Page': ['Page', 'Treasure Hunter', 'Warrior', 'Hero', 'Champion'],
@@ -90,12 +90,10 @@ if (namedGroup) {
   if (travellerChains[parentName]) {
     results.push({ name: parentName, chain: travellerChains[parentName] });
   } else if (subCards.length === 1) {
-    results.push({ name: parentName, heirloom: subCards[0] });
+    results.push({ name: parentName, group: subCards[0] });
     results.push({ name: subCards[0], parent: parentName });
-  } else if (pileGroups.includes(parentName)) {
-    results.push({ name: parentName, group: subCards });
   } else {
-    results.push({ name: parentName, heirloom: subCards });
+    results.push({ name: parentName, group: subCards });
     for (const sub of subCards) {
       results.push({ name: sub, parent: parentName });
     }
