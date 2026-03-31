@@ -188,6 +188,8 @@
       { "name": "Platinum" },
       { "name": "Quarry" },
       { "name": "Rabble" },
+      { "name": "star" },
+      { "name": "star Peddler" },
       { "name": "Tiara" },
       { "name": "Vault" },
       { "name": "War Chest" },
@@ -206,7 +208,7 @@
       { "name": "Venture" }
     ],
     "Card Count": {
-      "Kingdom": 26,
+      "Kingdom": 28,
       "Removed": 9
     }
   },

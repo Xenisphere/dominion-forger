@@ -13,7 +13,13 @@ function cleanName(name) {
 }
 
 function stripCosts(str) {
-  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|\bstar\b|PP|\d+P)+/g, '•').trim();
+  // First pass: replace known cost patterns
+  str = str.replace(/(\$[\d*]+[+]?|\d+[A-Za-z]+\d*[A-Za-z]*|\d+[+]?)+/g, '•');
+  // Second pass: remove any remaining standalone tokens containing digits or that are only letters from a cost fragment
+  str = str.replace(/\b\w*\d\w*\b/g, '•');
+  // Collapse multiple bullets
+  str = str.replace(/•+/g, '•');
+  return str.trim();
 }
 
 const pileGroups = ['Ruins', 'Shelters', 'Castles', 'Loots', 'Knights'];
