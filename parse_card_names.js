@@ -19,7 +19,7 @@ function stripCosts(str) {
   str = str.replace(/\d+star\d+star/g, '•');                // 8star8star
   str = str.replace(/\d+P\d+P/g, '•');                      // 2PP style
   str = str.replace(/\bPP\b/g, '•');                        // standalone PP
-  str = str.replace(/•+/g, '•');                            // collapse multiple bullets
+  
   return str.trim();
 }
 
