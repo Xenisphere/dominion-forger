@@ -95,8 +95,8 @@ function parseSegment(seg) {
       } else if (pileGroups.includes(parentName)) {
         results.push({ name: parentName, group: subCards });
       } else if (subCards.length === 1) {
-        results.push({ name: parentName, group: subCards[0] });
-        results.push({ name: subCards[0], parent: parentName });
+        results.push({ name: parentName, paired_with: subCards[0] });
+        results.push({ name: subCards[0], paired_with: parentName });
       } else {
         results.push({ name: parentName, group: subCards });
         for (const sub of subCards) {
