@@ -8,11 +8,12 @@ function cleanName(name) {
   name = name.replace(/[^a-zA-Z0-9'',\- ]/g, '').replace(/\s+/g, ' ').trim();
   if (/\d/.test(name)) return '';
   if (name.length <= 1) return '';
+  if (/^[a-z]/.test(name)) return '';
   return name;
 }
 
 function stripCosts(str) {
-  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|\bstar\b|PP|\d+P|[A-Z]\d+[A-Z]|\b[A-Z]\b)+/g, '•').trim();
+  return str.replace(/(\$[\d*]+[+]?|\d+D|\d+star|\bstar\b|PP|\d+P)+/g, '•').trim();
 }
 
 const pileGroups = ['Ruins', 'Shelters', 'Castles', 'Loots', 'Knights'];
