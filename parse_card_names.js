@@ -44,7 +44,6 @@ function expandKnightNames(cards) {
 function parseSegment(seg) {
   seg = seg.trim();
   if (!seg) return [];
-
   const results = [];
 
   // Handle split piles with /
@@ -62,66 +61,65 @@ function parseSegment(seg) {
     const inner = parenMatch[2].trim();
     const after = parenMatch[3].trim();
 
-   // Named group like "Zombies: Apprentice • Mason • Spy" or "Dames Anna • ... • Sirs Bailey • ..."
-const namedGroup = inner.match(/^(\w+):\s*(.+)$/);
-if (namedGroup) {
-  const groupName = namedGroup[1];
-  const subCards = namedGroup[2].split('•').map(s => cleanName(s.trim())).filter(Boolean);
-  const prefixedCards = subCards.map(c => `${groupName} ${c}`);
-  results.push({ name: parentName, group: prefixedCards });
-} else if (inner.includes('Dames') || inner.includes('Sirs')) {
-  // Knights pile
-  const subCards = inner.split('•').map(s => s.trim()).filter(Boolean);
-  const knightNames = [];
-  let prefix = 'Dame';
-  for (const card of subCards) {
-    if (card.startsWith('Dames ')) {
-      prefix = 'Dame';
-      knightNames.push(`Dame ${card.replace('Dames ', '').trim()}`);
-    } else if (card.startsWith('Sirs ')) {
-      prefix = 'Sir';
-      knightNames.push(`Sir ${card.replace('Sirs ', '').trim()}`);
+    // Named group like "Zombies: Apprentice • Mason • Spy"
+    const namedGroup = inner.match(/^(\w+):\s*(.+)$/);
+    if (namedGroup) {
+      const groupName = namedGroup[1];
+      const subCards = namedGroup[2].split('•').map(s => cleanName(s.trim())).filter(Boolean);
+      const prefixedCards = subCards.map(c => `${groupName} ${c}`);
+      results.push({ name: parentName, group: prefixedCards });
+    } else if (inner.includes('Dames') || inner.includes('Sirs')) {
+      // Knights pile
+      const subCards = inner.split('•').map(s => s.trim()).filter(Boolean);
+      const knightNames = [];
+      let prefix = 'Dame';
+      for (const card of subCards) {
+        if (card.startsWith('Dames ')) {
+          prefix = 'Dame';
+          knightNames.push(`Dame ${card.replace('Dames ', '').trim()}`);
+        } else if (card.startsWith('Sirs ')) {
+          prefix = 'Sir';
+          knightNames.push(`Sir ${card.replace('Sirs ', '').trim()}`);
+        } else {
+          knightNames.push(`${prefix} ${card}`);
+        }
+      }
+      results.push({ name: parentName, group: knightNames });
+    } else if (inner.includes('/')) {
+      const subParts = inner.split('/').map(s => cleanName(s.trim()));
+      results.push({ name: parentName, group: subParts });
     } else {
-      knightNames.push(`${prefix} ${card}`);
+      const subCards = inner.split('•').map(s => cleanName(s.trim())).filter(Boolean);
+      if (travellerChains[parentName]) {
+        results.push({ name: parentName, chain: travellerChains[parentName] });
+      } else if (pileGroups.includes(parentName)) {
+        results.push({ name: parentName, group: subCards });
+      } else if (subCards.length === 1) {
+        results.push({ name: parentName, group: subCards[0] });
+        results.push({ name: subCards[0], parent: parentName });
+      } else {
+        results.push({ name: parentName, group: subCards });
+        for (const sub of subCards) {
+          results.push({ name: sub, parent: parentName });
+        }
+      }
     }
-  }
-  results.push({ name: parentName, group: knightNames });
-} else if (inner.includes('/')) {
-  const subParts = inner.split('/').map(s => cleanName(s.trim()));
-  results.push({ name: parentName, group: subParts });
-} else {
-  const subCards = inner.split('•').map(s => cleanName(s.trim())).filter(Boolean);
-  if (travellerChains[parentName]) {
-    results.push({ name: parentName, chain: travellerChains[parentName] });
-  } else if (subCards.length === 1) {
-    results.push({ name: parentName, group: subCards[0] });
-    results.push({ name: subCards[0], parent: parentName });
-  } else {
-    results.push({ name: parentName, group: subCards });
-    for (const sub of subCards) {
-      results.push({ name: sub, parent: parentName });
-    }
-  }
-}
 
     // Handle any remaining text after the closing paren
     if (after) {
       for (const r of parseSegment(after)) results.push(r);
     }
-
     return results;
   }
 
   // Plain card name
   const name = cleanName(seg);
   if (!name) return [];
-
   if (travellerChains[name]) {
     results.push({ name, chain: travellerChains[name] });
   } else {
     results.push({ name });
   }
-
   return results;
 }
 
