@@ -5,23 +5,20 @@ const path = require('path');
 const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8'));
 
 function cleanName(name) {
-  const original = name;
-  name = name.replace(/[^a-zA-Z0-9'',\- ]/g, '').replace(/\s+/g, ' ').trim();
-  if (original.includes('eddler')) console.log('[DEBUG] Peddler check:', JSON.stringify(original), '->', JSON.stringify(name));
-  if (/\d/.test(name)) return '';
+  name = name.replace(/[^a-zA-Z'\- ]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (/[^a-zA-Z'\- ]/.test(name)) return '';  // any remaining special chars or numbers
   if (name.length <= 1) return '';
   if (/^[a-z]/.test(name)) return '';
   return name;
 }
 
 function stripCosts(str) {
-  // Match only specific cost formats: $2$2, $2+$2+, 4D4D, PP, 2PP, 8star8star
-  str = str.replace(/\$\d+[*]?[+]?\$\d+[*]?[+]?/g, '•');    // $2$2, $2+$2+, $6*$6*
-  str = str.replace(/\$\d+star\$?\d*star?/g, '•');          // $8star$8star
-  str = str.replace(/\d+D\d+D/g, '•');                      // 4D4D, 8D8D
-  str = str.replace(/\d+P\d+P/g, '•');                      // 2PP style
-  str = str.replace(/\bPP\b/g, '•');                        // standalone PP
-  str = str.replace(/•+/g, '•');                            // collapse multiple bullets
+  str = str.replace(/\$\d+[*+]*\$\d+[*+]*/g, '•');  // $2$2, $2+$2+, $6*$6*
+  str = str.replace(/\$\d+star\$?\d*star?/g, '•');   // $8star$8star
+  str = str.replace(/\d+D\d+D/g, '•');               // 4D4D, 8D8D
+  str = str.replace(/\d+P\d+P/g, '•');               // 2PP style
+  str = str.replace(/\bPP\b/g, '•');                 // standalone PP
+  str = str.replace(/•+/g, '•');                     // collapse multiple bullets
   return str.trim();
 }
 
