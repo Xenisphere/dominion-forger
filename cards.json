@@ -230,5 +230,25 @@
     "cost": "Unknown",
     "types": [],
     "text": ""
+  },
+  {
+    "name": "Peasant",
+    "supply": "Kingdom Pile",
+    "kingdom": "Adventures",
+    "cost": "(2)",
+    "types": [
+      "Action-Traveller"
+    ],
+    "text": "+1 Buy +(1) | When you discard this from play, you may exchange it for a Soldier."
+  },
+  {
+    "name": "Wedding",
+    "supply": "Landscape",
+    "kingdom": "Empires",
+    "cost": "(4)<3>",
+    "types": [
+      "Event"
+    ],
+    "text": "Gain a Gold."
   }
 ]
