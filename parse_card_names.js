@@ -17,8 +17,8 @@ function stripCosts(str) {
   str = str.replace(/\$\d+[*]?[+]?\$\d+[*]?[+]?/g, '•');  // $2$2, $2+$2+, $6*$6*
   str = str.replace(/\d+D\d+D/g, '•');                      // 4D4D, 8D8D
   str = str.replace(/\d+star\d+star/g, '•');                // 8star8star
-  str = str.replace(/\d+P\d+P/g, '•');                      // 2PP style
   
+  str = str.replace(/\bPP\b/g, '•');                        // standalone PP
   str = str.replace(/•+/g, '•');                            // collapse multiple bullets
   return str.trim();
 }
