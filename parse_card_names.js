@@ -18,6 +18,7 @@ function stripCosts(str) {
   str = str.replace(/\d+D\d+D/g, '•');               // 4D4D, 8D8D
   str = str.replace(/\d+P\d+P/g, '•');               // 2PP style
   str = str.replace(/\bPP\b/g, '•');                 // standalone PP
+  str = str.replace(/\b\d+[A-Z]+\b/g, '•');          // leftover fragments like 3D
   str = str.replace(/•+/g, '•');                     // collapse multiple bullets
   return str.trim();
 }
