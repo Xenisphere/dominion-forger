@@ -13,12 +13,13 @@ function cleanName(name) {
 }
 
 function stripCosts(str) {
-  // First pass: replace known cost patterns
-  str = str.replace(/(\$[\d*]+[+]?|\d+[A-Za-z]+\d*[A-Za-z]*|\d+[+]?)+/g, '•');
-  // Second pass: remove any remaining standalone tokens containing digits or that are only letters from a cost fragment
-  str = str.replace(/\b\w*\d\w*\b/g, '•');
-  // Collapse multiple bullets
-  str = str.replace(/•+/g, '•');
+  // Match only specific cost formats: $2$2, $2+$2+, 4D4D, PP, 2PP, 8star8star
+  str = str.replace(/\$\d+[*]?[+]?\$\d+[*]?[+]?/g, '•');  // $2$2, $2+$2+, $6*$6*
+  str = str.replace(/\d+D\d+D/g, '•');                      // 4D4D, 8D8D
+  str = str.replace(/\d+star\d+star/g, '•');                // 8star8star
+  str = str.replace(/\d+P\d+P/g, '•');                      // 2PP style
+  str = str.replace(/\bPP\b/g, '•');                        // standalone PP
+  str = str.replace(/•+/g, '•');                            // collapse multiple bullets
   return str.trim();
 }
 
