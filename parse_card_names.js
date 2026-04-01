@@ -13,9 +13,10 @@ function cleanName(name) {
 }
 
 function stripCosts(str) {
-  str = str.replace(/(\$\d+[*+]*|\d+D|\d+P|\d+star|\bPP\b)+/g, '•');  // catch all chained cost tokens in one pass
+  str = str.replace(/(\$\d+[*+]*|\d+D|\d+P|\d+star|\bPP\b)+/g, '•');   // catch all chained cost tokens in one pass
   str = str.replace(/\$\d+star\$?\d*star?/g, '•');                     // $8star$8star
-  str = str.replace(/\b\d+[A-Za-z]+\b/g, '•');                        // leftover digit+letter fragments
+  str = str.replace(/\b\d+[A-Za-z]+\b/g, '•');                         // leftover digit+letter fragment
+  str = str.replace(/\bPP\s*/g, '•');                                  // PP prefix before card names
   str = str.replace(/•+/g, '•');                                       // collapse multiple bullets
   return str.trim();
 }
@@ -50,7 +51,6 @@ function parseSegment(seg) {
   if (seg.includes('/') && !seg.includes('(')) {
     const parts = seg.split('/').map(s => cleanName(s.trim()));
     results.push({ name: parts[0], paired_with: parts[1] });
-    results.push({ name: parts[1], paired_with: parts[0] });
     return results;
   }
 
@@ -95,13 +95,9 @@ function parseSegment(seg) {
       } else if (pileGroups.includes(parentName)) {
         results.push({ name: parentName, group: subCards });
       } else if (subCards.length === 1) {
-        results.push({ name: parentName, paired_with: subCards[0] });
-        results.push({ name: subCards[0], paired_with: parentName });
+          results.push({ name: parentName, paired_with: subCards[0] });
       } else {
         results.push({ name: parentName, group: subCards });
-        for (const sub of subCards) {
-          results.push({ name: sub, parent: parentName });
-        }
       }
     }
 
@@ -179,7 +175,6 @@ function parseLandscapeLine(str, type) {
       const inner = parenMatch[2].trim();
       const subNames = inner.split('/').map(s => cleanName(s.trim()));
       results.push({ name: parentName });
-      for (const sub of subNames) results.push({ name: sub, parent: parentName });
     } else {
       const name = cleanName(part);
       if (name) results.push({ name });
