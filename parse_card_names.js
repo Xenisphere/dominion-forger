@@ -21,6 +21,17 @@ function stripCosts(str) {
   return str.trim();
 }
 
+  function countCards(arr) {
+    let count = 0;
+    for (const card of arr) {
+      count++;
+      if (Array.isArray(card.group)) count += card.group.length;
+      else if (card.group) count += 1;
+      if (card.paired_with) count += 1;
+    }
+    return count;
+  }
+
 const pileGroups = ['Ruins', 'Shelters', 'Castles', 'Loots', 'Knights'];
 
 const travellerChains = {
@@ -53,17 +64,6 @@ function parseSegment(seg) {
     const parts = seg.split('/').map(s => cleanName(s.trim()));
     results.push({ name: parts[0], paired_with: parts[1] });
     return results;
-  }
-
-  function countCards(arr) {
-    let count = 0;
-    for (const card of arr) {
-      count++;
-      if (Array.isArray(card.group)) count += card.group.length;
-      else if (card.group) count += 1;
-      if (card.paired_with) count += 1;
-    }
-    return count;
   }
 
   // Handle card with parenthetical
