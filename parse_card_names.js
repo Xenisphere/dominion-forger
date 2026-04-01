@@ -20,6 +20,7 @@ function stripCosts(str) {
   str = str.replace(/•+/g, '•');                                       // collapse multiple bullets
   return str.trim();
 }
+
 const pileGroups = ['Ruins', 'Shelters', 'Castles', 'Loots', 'Knights'];
 
 const travellerChains = {
@@ -52,6 +53,17 @@ function parseSegment(seg) {
     const parts = seg.split('/').map(s => cleanName(s.trim()));
     results.push({ name: parts[0], paired_with: parts[1] });
     return results;
+  }
+
+  function countCards(arr) {
+    let count = 0;
+    for (const card of arr) {
+      count++;
+      if (Array.isArray(card.group)) count += card.group.length;
+      else if (card.group) count += 1;
+      if (card.paired_with) count += 1;
+    }
+    return count;
   }
 
   // Handle card with parenthetical
@@ -173,8 +185,13 @@ function parseLandscapeLine(str, type) {
     if (parenMatch) {
       const parentName = cleanName(parenMatch[1].trim());
       const inner = parenMatch[2].trim();
-      const subNames = inner.split('/').map(s => cleanName(s.trim()));
-      results.push({ name: parentName });
+      if (inner.includes('/')) {
+        const subNames = inner.split('/').map(s => cleanName(s.trim()));
+        results.push({ name: parentName, group: subNames });
+      } else {
+        const subName = cleanName(inner);
+        results.push({ name: parentName, group: subName });
+      }
     } else {
       const name = cleanName(part);
       if (name) results.push({ name });
@@ -235,14 +252,6 @@ for (const line of raw) {
   }
 }
 
-// Add States group to Nocturne
-if (output['Nocturne']) {
-  output['Nocturne'].Kingdom.push({
-    name: 'States',
-    group: ['Deluded', 'Envious', 'Miserable', 'Twice Miserable']
-  });
-}
-
 // Sort all kingdoms and landscapes by name
 for (const exp of Object.keys(output)) {
   output[exp].Kingdom = sortByName(output[exp].Kingdom);
@@ -254,13 +263,22 @@ for (const exp of Object.keys(output)) {
 
 for (const exp of Object.keys(output)) {
   const counts = {};
-  if (output[exp].Kingdom) counts['Kingdom'] = output[exp].Kingdom.length;
-  if (output[exp].Removed) counts['Removed'] = output[exp].Removed.length;
+  if (output[exp].Kingdom) counts['Kingdom'] = countCards(output[exp].Kingdom);
+  if (output[exp].Removed) counts['Removed'] = countCards(output[exp].Removed);
   for (const type of Object.values(landscapeKeywords)) {
-    if (output[exp][type]) counts[type] = output[exp][type].length;
+    if (output[exp][type]) counts[type] = countCards(output[exp][type]);
   }
   output[exp]['Card Count'] = counts;
 }
+
+let allTotal = 0;
+for (const exp of Object.keys(output)) {
+  if (exp === 'all_total') continue;
+  for (const key of Object.keys(output[exp]['Card Count'] || {})) {
+    allTotal += output[exp]['Card Count'][key];
+  }
+}
+output['all_total'] = allTotal;
 
 // Compact JSON serialization - one card per line
 const json = JSON.stringify(output, null, 2).replace(
