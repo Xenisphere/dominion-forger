@@ -18,6 +18,7 @@ function stripCosts(str) {
   str = str.replace(/(\$\d+[*+]*|\d+D|\d+P|\d+star|\bPP\b)+/g, '•');   // catch all chained cost tokens in one pass
   str = str.replace(/\$\d+star\$?\d*star?/g, '•');                     // $8star$8star
   str = str.replace(/\b\d+[A-Za-z]+\b/g, '•');                         // leftover digit+letter fragment
+  str = str.replace(/\bstar\b/gi, '•');                                // catch any remaining star fragments
   str = str.replace(/\bPP\s*/g, '•');                                  // PP prefix before card names
   str = str.replace(/•+/g, '•');                                       // collapse multiple bullets
   return str.trim();
