@@ -1,19 +1,17 @@
 {
   "Base Cards": {
     "Kingdom": [
-      { "name": "Colony" },
       { "name": "Copper" },
       { "name": "Curse" },
       { "name": "Duchy" },
       { "name": "Estate" },
       { "name": "Gold" },
-      { "name": "Platinum" },
       { "name": "Potion" },
       { "name": "Province" },
       { "name": "Silver" }
     ],
     "Card Count": {
-      "Kingdom": 10
+      "Kingdom": 8
     }
   },
   "Dominion": {
@@ -185,11 +183,10 @@
       { "name": "Magnate" },
       { "name": "Mint" },
       { "name": "Monument" },
+      { "name": "Peddler" },
       { "name": "Platinum" },
       { "name": "Quarry" },
       { "name": "Rabble" },
-      { "name": "star" },
-      { "name": "star Peddler" },
       { "name": "Tiara" },
       { "name": "Vault" },
       { "name": "War Chest" },
@@ -208,7 +205,7 @@
       { "name": "Venture" }
     ],
     "Card Count": {
-      "Kingdom": 28,
+      "Kingdom": 27,
       "Removed": 9
     }
   },
@@ -252,8 +249,8 @@
       { "name": "Tournament", "group": [ "Prizes Bag of Gold", "Prizes Diadem", "Prizes Followers", "Prizes Princess", "Prizes Trusty Steed" ] }
     ],
     "Card Count": {
-      "Kingdom": 26,
-      "Removed": 8
+      "Kingdom": 32,
+      "Removed": 13
     }
   },
   "Hinterlands": {
@@ -303,7 +300,6 @@
   },
   "Dark Ages": {
     "Kingdom": [
-      { "name": "Abandoned Mine", "parent": "Ruins" },
       { "name": "Altar" },
       { "name": "Armory" },
       { "name": "Band of Misfits" },
@@ -318,28 +314,20 @@
       { "name": "Forager" },
       { "name": "Fortress" },
       { "name": "Graverobber" },
-      { "name": "Hermit", "group": "Madman" },
-      { "name": "Hovel", "parent": "Shelters" },
+      { "name": "Hermit", "paired_with": "Madman" },
       { "name": "Hunting Grounds" },
       { "name": "Ironmonger" },
       { "name": "Junk Dealer" },
       { "name": "Knights", "group": [ "Dame Anna", "Dame Josephine", "Dame Molly", "Dame Natalie", "Dame Sylvia", "Sir Bailey", "Sir Destry", "Sir Martin", "Sir Michael", "Sir Vander" ] },
-      { "name": "Madman", "parent": "Hermit" },
       { "name": "Marauder" },
       { "name": "Market Square" },
-      { "name": "Mercenary", "parent": "Urchin" },
       { "name": "Mystic" },
-      { "name": "Necropolis", "parent": "Shelters" },
-      { "name": "Overgrown Estate", "parent": "Shelters" },
       { "name": "Pillage" },
       { "name": "Poor House" },
       { "name": "Procession" },
       { "name": "Rats" },
       { "name": "Rebuild" },
       { "name": "Rogue" },
-      { "name": "Ruined Library", "parent": "Ruins" },
-      { "name": "Ruined Market", "parent": "Ruins" },
-      { "name": "Ruined Village", "parent": "Ruins" },
       { "name": "Ruins", "group": [ "Abandoned Mine", "Ruined Library", "Ruined Market", "Ruined Village", "Survivors" ] },
       { "name": "Sage" },
       { "name": "Scavenger" },
@@ -347,13 +335,12 @@
       { "name": "Spoils" },
       { "name": "Squire" },
       { "name": "Storeroom" },
-      { "name": "Survivors", "parent": "Ruins" },
-      { "name": "Urchin", "group": "Mercenary" },
+      { "name": "Urchin", "paired_with": "Mercenary" },
       { "name": "Vagrant" },
       { "name": "Wandering Minstrel" }
     ],
     "Card Count": {
-      "Kingdom": 48
+      "Kingdom": 58
     }
   },
   "Adventures": {
@@ -412,14 +399,13 @@
       { "name": "Travelling Fair" }
     ],
     "Card Count": {
-      "Kingdom": 30,
+      "Kingdom": 38,
       "Event": 20
     }
   },
   "Empires": {
     "Kingdom": [
       { "name": "Archive" },
-      { "name": "Bustling Village", "paired_with": "Settlers" },
       { "name": "Capital" },
       { "name": "Castles", "group": [ "Humble", "Crumbling", "Small", "Haunted", "Opulent", "Sprawling", "Grand", "King's" ] },
       { "name": "Catapult", "paired_with": "Rocks" },
@@ -427,31 +413,19 @@
       { "name": "Charm" },
       { "name": "City Quarter" },
       { "name": "Crown" },
-      { "name": "Crumbling", "parent": "Castles" },
-      { "name": "Emporium", "paired_with": "Patrician" },
       { "name": "Encampment", "paired_with": "Plunder" },
       { "name": "Enchantress" },
       { "name": "Engineer" },
       { "name": "Farmers' Market" },
-      { "name": "Fortune", "paired_with": "Gladiator" },
       { "name": "Forum" },
       { "name": "Gladiator", "paired_with": "Fortune" },
-      { "name": "Grand", "parent": "Castles" },
       { "name": "Groundskeeper" },
-      { "name": "Haunted", "parent": "Castles" },
-      { "name": "Humble", "parent": "Castles" },
-      { "name": "King's", "parent": "Castles" },
       { "name": "Legionary" },
-      { "name": "Opulent", "parent": "Castles" },
       { "name": "Overlord" },
       { "name": "Patrician", "paired_with": "Emporium" },
-      { "name": "Plunder", "paired_with": "Encampment" },
-      { "name": "Rocks", "paired_with": "Catapult" },
       { "name": "Royal Blacksmith" },
       { "name": "Sacrifice" },
       { "name": "Settlers", "paired_with": "Bustling Village" },
-      { "name": "Small", "parent": "Castles" },
-      { "name": "Sprawling", "parent": "Castles" },
       { "name": "Temple" },
       { "name": "Villa" },
       { "name": "Wild Hunt" }
@@ -503,14 +477,12 @@
   "Nocturne": {
     "Kingdom": [
       { "name": "Bard" },
-      { "name": "Bat", "parent": "Vampire" },
       { "name": "Blessed Village" },
-      { "name": "Cemetery", "group": "Haunted Mirror" },
+      { "name": "Cemetery", "paired_with": "Haunted Mirror" },
       { "name": "Changeling" },
       { "name": "Cobbler" },
       { "name": "Conclave" },
       { "name": "Crypt" },
-      { "name": "Cursed Gold", "parent": "Pooka" },
       { "name": "Cursed Village" },
       { "name": "Den of Sin" },
       { "name": "Devil's Workshop" },
@@ -520,32 +492,24 @@
       { "name": "Fool", "group": [ "Lost in the Woods", "Lucky Coin" ] },
       { "name": "Ghost" },
       { "name": "Ghost Town" },
-      { "name": "Goat", "parent": "Pixie" },
       { "name": "Guardian" },
-      { "name": "Haunted Mirror", "parent": "Cemetery" },
       { "name": "Idol" },
       { "name": "Imp" },
       { "name": "Leprechaun" },
-      { "name": "Lost in the Woods", "parent": "Fool" },
-      { "name": "Lucky Coin", "parent": "Fool" },
-      { "name": "Magic Lamp", "parent": "Secret Cave" },
       { "name": "Monastery" },
       { "name": "Necromancer", "group": [ "Zombies Apprentice", "Zombies Mason", "Zombies Spy" ] },
       { "name": "Night Watchman" },
-      { "name": "Pasture", "parent": "Shepherd" },
-      { "name": "Pixie", "group": "Goat" },
-      { "name": "Pooka", "group": "Cursed Gold" },
-      { "name": "Pouch", "parent": "Tracker" },
+      { "name": "Pixie", "paired_with": "Goat" },
+      { "name": "Pooka", "paired_with": "Cursed Gold" },
       { "name": "Raider" },
       { "name": "Sacred Grove" },
-      { "name": "Secret Cave", "group": "Magic Lamp" },
-      { "name": "Shepherd", "group": "Pasture" },
+      { "name": "Secret Cave", "paired_with": "Magic Lamp" },
+      { "name": "Shepherd", "paired_with": "Pasture" },
       { "name": "Skulk" },
-      { "name": "States", "group": [ "Deluded", "Envious", "Miserable", "Twice Miserable" ] },
       { "name": "Tormentor" },
-      { "name": "Tracker", "group": "Pouch" },
+      { "name": "Tracker", "paired_with": "Pouch" },
       { "name": "Tragic Hero" },
-      { "name": "Vampire", "group": "Bat" },
+      { "name": "Vampire", "paired_with": "Bat" },
       { "name": "Werewolf" },
       { "name": "Will-o'-Wisp" },
       { "name": "Wish" }
@@ -566,24 +530,20 @@
     ],
     "Hex": [
       { "name": "Bad Omens" },
-      { "name": "Deluded", "parent": "Delusion" },
-      { "name": "Delusion" },
-      { "name": "Envious", "parent": "Envy" },
-      { "name": "Envy" },
+      { "name": "Delusion", "group": "Deluded" },
+      { "name": "Envy", "group": "Envious" },
       { "name": "Famine" },
       { "name": "Fear" },
       { "name": "Greed" },
       { "name": "Haunting" },
       { "name": "Locusts" },
-      { "name": "Miserable", "parent": "Misery" },
-      { "name": "Misery" },
+      { "name": "Misery", "group": [ "Miserable", "Twice Miserable" ] },
       { "name": "Plague" },
       { "name": "Poverty" },
-      { "name": "Twice Miserable", "parent": "Misery" },
       { "name": "War" }
     ],
     "Card Count": {
-      "Kingdom": 47,
+      "Kingdom": 49,
       "Boon": 12,
       "Hex": 16
     }
@@ -595,15 +555,11 @@
       { "name": "Cargo Ship" },
       { "name": "Ducat" },
       { "name": "Experiment" },
-      { "name": "Flag", "parent": "Flag Bearer" },
-      { "name": "Flag Bearer", "group": "Flag" },
+      { "name": "Flag Bearer", "paired_with": "Flag" },
       { "name": "Hideout" },
-      { "name": "Horn", "parent": "Border Guard" },
       { "name": "Improve" },
       { "name": "Inventor" },
-      { "name": "Key", "parent": "Treasurer" },
       { "name": "Lackeys" },
-      { "name": "Lantern", "parent": "Border Guard" },
       { "name": "Mountain Village" },
       { "name": "Old Witch" },
       { "name": "Patron" },
@@ -616,9 +572,8 @@
       { "name": "Seer" },
       { "name": "Silk Merchant" },
       { "name": "Spices" },
-      { "name": "Swashbuckler", "group": "Treasure Chest" },
-      { "name": "Treasure Chest", "parent": "Swashbuckler" },
-      { "name": "Treasurer", "group": "Key" },
+      { "name": "Swashbuckler", "paired_with": "Treasure Chest" },
+      { "name": "Treasurer", "paired_with": "Key" },
       { "name": "Villain" }
     ],
     "Project": [
@@ -627,6 +582,7 @@
       { "name": "Canal" },
       { "name": "Capitalism" },
       { "name": "Cathedral" },
+      { "name": "Chart" },
       { "name": "Citadel" },
       { "name": "City Gate" },
       { "name": "Crop Rotation" },
@@ -640,8 +596,7 @@
       { "name": "Road Network" },
       { "name": "Sewers" },
       { "name": "Silos" },
-      { "name": "Sinister Plot" },
-      { "name": "Star Chart" }
+      { "name": "Sinister Plot" }
     ],
     "Card Count": {
       "Kingdom": 30,
@@ -792,24 +747,20 @@
       { "name": "Woodworkers' Guild" }
     ],
     "Card Count": {
-      "Kingdom": 31,
+      "Kingdom": 55,
       "Ally": 23
     }
   },
   "Plunder": {
     "Kingdom": [
       { "name": "Abundance" },
-      { "name": "Amphora", "parent": "Loots" },
       { "name": "Buried Treasure" },
       { "name": "Cabin Boy" },
       { "name": "Cage" },
       { "name": "Crew" },
       { "name": "Crucible" },
       { "name": "Cutthroat" },
-      { "name": "Doubloons", "parent": "Loots" },
-      { "name": "Endless Chalice", "parent": "Loots" },
       { "name": "Enlarge" },
-      { "name": "Figurehead", "parent": "Loots" },
       { "name": "Figurine" },
       { "name": "First Mate" },
       { "name": "Flagship" },
@@ -817,11 +768,8 @@
       { "name": "Frigate" },
       { "name": "Gondola" },
       { "name": "Grotto" },
-      { "name": "Hammer", "parent": "Loots" },
       { "name": "Harbor Village" },
-      { "name": "Insignia", "parent": "Loots" },
       { "name": "Jewelled Egg" },
-      { "name": "Jewels", "parent": "Loots" },
       { "name": "King's Cache" },
       { "name": "Landing Party" },
       { "name": "Longship" },
@@ -829,27 +777,19 @@
       { "name": "Mapmaker" },
       { "name": "Maroon" },
       { "name": "Mining Road" },
-      { "name": "Orb", "parent": "Loots" },
       { "name": "Pendant" },
       { "name": "Pickaxe" },
       { "name": "Pilgrim" },
-      { "name": "Prize Goat", "parent": "Loots" },
-      { "name": "Puzzle Box", "parent": "Loots" },
       { "name": "Quartermaster" },
       { "name": "Rope" },
       { "name": "Sack of Loot" },
       { "name": "Search" },
       { "name": "Secluded Shrine" },
-      { "name": "Sextant", "parent": "Loots" },
       { "name": "Shaman" },
-      { "name": "Shield", "parent": "Loots" },
       { "name": "Silver Mine" },
       { "name": "Siren" },
-      { "name": "Spell Scroll", "parent": "Loots" },
-      { "name": "Staff", "parent": "Loots" },
       { "name": "Stowaway" },
       { "name": "Swamp Shacks" },
-      { "name": "Sword", "parent": "Loots" },
       { "name": "Taskmaster" },
       { "name": "Tools" },
       { "name": "Trickster" },
@@ -960,7 +900,6 @@
   },
   "Promo": {
     "Kingdom": [
-      { "name": "Avanto", "paired_with": "Sauna" },
       { "name": "Black Market" },
       { "name": "Captain" },
       { "name": "Church" },
@@ -980,5 +919,6 @@
       "Kingdom": 12,
       "Event": 1
     }
-  }
+  },
+  "all_total": 848
 }
