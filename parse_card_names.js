@@ -5,9 +5,10 @@ const path = require('path');
 const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8'));
 
 function cleanName(name) {
-  name = name.replace(/[^a-zA-Z'\- ]/g, ' ').replace(/\s+/g, ' ').trim();
+  const original = name;
   if (original.toLowerCase().includes('eddler')) console.log('[DEBUG] Peddler:', JSON.stringify(original), '->', JSON.stringify(name));
-  if (/[^a-zA-Z'\- ]/.test(name)) return '';  // any remaining special chars or numbers
+  name = name.replace(/[^a-zA-Z'\- ]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (/[^a-zA-Z'\- ]/.test(name)) return '';
   if (name.length <= 1) return '';
   if (/^[a-z]/.test(name)) return '';
   return name;
