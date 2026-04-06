@@ -5,22 +5,21 @@ const path = require('path');
 const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json'), 'utf-8'));
 
 function cleanName(name) {
-  const original = name;
-  if (original.toLowerCase().includes('eddler')) console.log('[DEBUG] Peddler:', JSON.stringify(original), '->', JSON.stringify(name));
-  name = name.replace(/[^a-zA-Z'\- ]/g, ' ').replace(/\s+/g, ' ').trim();
-  if (/[^a-zA-Z'\- ]/.test(name)) return '';
+  // Split into words and reject any word containing non-letter, non-' non-- characters
+  const words = name.split(' ');
+  const cleaned = words.filter(w => w.length > 0 && !/[^a-zA-Z'\-]/.test(w));
+  name = cleaned.join(' ').trim();
   if (name.length <= 1) return '';
   if (/^[a-z]/.test(name)) return '';
   return name;
 }
 
 function stripCosts(str) {
-  str = str.replace(/(\$\d+[*+]*|\d+D|\d+P|\d+star|\bPP\b)+/g, '•');   // catch all chained cost tokens in one pass
-  str = str.replace(/\$\d+star\$?\d*star?/g, '•');                     // $8star$8star
-  str = str.replace(/\b\d+[A-Za-z]+\b/g, '•');                         // leftover digit+letter fragment
-  str = str.replace(/\bstar\b/g, '•');                                 // catch any remaining star fragments
-  str = str.replace(/\bPP\s*/g, '•');                                  // PP prefix before card names
-  str = str.replace(/•+/g, '•');                                       // collapse multiple bullets
+  str = str.replace(/(\$\d+[*+]*|\d+D|\d+P|\d+star|\bPP\b)+/g, '•');
+  str = str.replace(/\$\d+star\$?\d*star?/g, '•');
+  str = str.replace(/\b\d+[A-Za-z]+\b/g, '•');
+  str = str.replace(/\bPP\s*/g, '•');
+  str = str.replace(/•+/g, '•');
   return str.trim();
 }
 
