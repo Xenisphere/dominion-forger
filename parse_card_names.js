@@ -6,6 +6,7 @@ const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names_raw.json
 
 function cleanName(name) {
   name = name.replace(/[^a-zA-Z'\- ]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (original.toLowerCase().includes('eddler')) console.log('[DEBUG] Peddler:', JSON.stringify(original), '->', JSON.stringify(name));
   if (/[^a-zA-Z'\- ]/.test(name)) return '';  // any remaining special chars or numbers
   if (name.length <= 1) return '';
   if (/^[a-z]/.test(name)) return '';
@@ -28,6 +29,7 @@ function stripCosts(str) {
       if (Array.isArray(card.group)) count += card.group.length;
       else if (card.group) count += 1;
       if (card.paired_with) count += 1;
+      if (Array.isArray(card.chain)) count += card.chain.length - 1;
     }
     return count;
   }
