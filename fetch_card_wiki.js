@@ -71,6 +71,7 @@ function cleanText(text) {
       word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>]+$/g, '');
       word = word.replace(/[^a-zA-Z0-9;:.,!?()\[\]{}<>+\s]/g, '');
       if (/^[+<(\[{]/.test(word)) return word;
+      if (word.includes('_')) return word;  // preserve placeholder tokens like <_>
       if (!/[aeiouAEIOU]/.test(word) && !/^\d+$/.test(word)) return '';
       if (word.length === 1 && !/^[aiAI]$/.test(word)) return '';
       return word;
