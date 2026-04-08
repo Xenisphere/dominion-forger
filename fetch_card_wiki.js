@@ -46,6 +46,7 @@ function cleanText(text) {
   return text
     .replace(/{{VP\|(\d+)[^}]*}}/gi, '{$1}')
     .replace(/{{Costplus\|(\d+)[^}]*}}/gi, '+($1)')
+    .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+($1)')
     .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')
     .replace(/{{Cost\|(\d+)P[^}]*}}/gi, '[$1]')
     .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')
