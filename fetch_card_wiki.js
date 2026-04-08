@@ -96,6 +96,19 @@ async function fetchCard(cardName) {
   cardName = aliases[cardName] || cardName;
 
   // Handle pile groups
+  let wikitext;
+  const localPath = path.join(rawDir, `${cardName}.json`);
+  
+  if (fs.existsSync(localPath)) {
+    console.log(`[DEBUG] Using local cache for "${cardName}"`);
+    const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
+    wikitext = fileData.infobox;
+  } else {
+    console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
+    const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
+
+    const browser = await puppeteer.launch({ headless: true });
+    
   // Check if this is a pile/group page rather than an individual card
 const isPilePage = !wikitext.startsWith('{{Infobox Card');
   if (isPilePage) {
@@ -117,18 +130,6 @@ const isPilePage = !wikitext.startsWith('{{Infobox Card');
     return null;
   }
 
-  let wikitext;
-  const localPath = path.join(rawDir, `${cardName}.json`);
-
-  if (fs.existsSync(localPath)) {
-    console.log(`[DEBUG] Using local cache for "${cardName}"`);
-    const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
-    wikitext = fileData.infobox;
-  } else {
-    console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
-    const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
-
-    const browser = await puppeteer.launch({ headless: true });
     try {
       const page = await browser.newPage();
       await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
