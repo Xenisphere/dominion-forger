@@ -51,6 +51,8 @@ function cleanText(text) {
     .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')
     .replace(/{{Debt\|(\d+)[^}]*}}/gi, '<$1>')
     .replace(/{{Potion[^}]*}}/gi, '[1]')
+    .replace(/{{Cost}}/gi, '(_)')
+    .replace(/{{Cost2}}/gi, '<_>')
     .replace(/{{[^}]+}}/g, ' ')
     .replace(/&nbsp;/g, ' ')
     .replace(/&[a-z]+;/gi, ' ')
