@@ -68,8 +68,8 @@ function cleanText(text) {
     .map(word => {
       if (word === '|') return word;
       if (/^\d+$_/.test(word)) return word;
-      word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>]+$/g, '');
-      word = word.replace(/[^a-zA-Z0-9;:.,!?()\[\]{}<>+\s]/g, '');
+      word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+_]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>_]+$/g, '');
+      word = word.replace(/[^a-zA-Z0-9;:.,!?()\[\]{}<>+_\s]/g, '');
       if (/^[+<(\[{]/.test(word)) return word;
       if (word.includes('_')) return word;  // preserve placeholder tokens like <_>
       if (!/[aeiouAEIOU]/.test(word) && !/^\d+$/.test(word)) return '';
