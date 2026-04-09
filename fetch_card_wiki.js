@@ -54,7 +54,7 @@ function cleanText(text) {
     .replace(/{{Potion[^}]*}}/gi, '[1]')
     .replace(/{{Costplus}}/gi, '+(_)')
     .replace(/{{Debtplus}}/gi, '+<_>')
-    .replace(/{{Cost}}/gi, '(_)')
+    .replace(/{{Cost}}/gi, '())')
     .replace(/{{Debt}}/gi, '<_>')
     .replace(/{{[^}]+}}/g, ' ')
     .replace(/&nbsp;/g, ' ')
