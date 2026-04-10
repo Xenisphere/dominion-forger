@@ -136,7 +136,7 @@ async function fetchCard(cardName) {
 
       const parsed = JSON.parse(rawData);
       const wikiRaw = parsed?.parse?.wikitext?.['*'] || '';
-      const infoboxMatch = wikiRaw.match(/{{Infobox Card[\s\S]+?(?=\n}})\n}}/i);
+      const infoboxMatch = wikiRaw.match(/{{Infobox [\s\S]+?\n}}/i);
       wikitext = infoboxMatch ? infoboxMatch[0] : wikiRaw;
 
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
@@ -148,7 +148,9 @@ async function fetchCard(cardName) {
   }
 
   // Check if this is a pile/group page rather than an individual card
-  const isPilePage = !wikitext.startsWith('{{Infobox Card');
+  const isPilePage = !wikitext.includes('{{Infobox Card') && 
+                     !wikitext.includes('{{Infobox Landscape') &&
+                     !wikitext.includes('{{Infobox ');
   if (isPilePage) {
     console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
     const listMatch = wikitext.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
