@@ -117,21 +117,21 @@ async function fetchCard(cardName) {
       const page = await browser.newPage();
       await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
       console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
-      await page.waitForFunction(
-        () => document.body.innerText.trim().startsWith('{'),
-        { timeout: 100000 }
-      );
 
-      let rawData = null;
-      for (let attempt = 1; attempt <= 3; attempt++) {
-        try {
-          rawData = await page.evaluate(() => document.body.innerText);
-          break;
-        } catch (err) {
-          console.log(`[DEBUG] Extraction attempt ${attempt} failed, retrying...`);
-          await new Promise(r => setTimeout(r, 2000));
+     let rawData = null;
+        for (let attempt = 1; attempt <= 3; attempt++) {
+          try {
+            await page.waitForFunction(
+              () => document.body.innerText.trim().startsWith('{'),
+              { timeout: 100000 }
+            );
+            rawData = await page.evaluate(() => document.body.innerText);
+            break;
+          } catch (err) {
+            console.log(`[DEBUG] Extraction attempt ${attempt} failed: ${err.message}, retrying...`);
+            await new Promise(r => setTimeout(r, 3000));
+          }
         }
-      }
       if (!rawData) throw new Error('Failed to extract page data after 3 attempts');
 
       const parsed = JSON.parse(rawData);
