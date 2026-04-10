@@ -63,7 +63,7 @@ function cleanText(text) {
     .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, '$2')
     .replace(/<\/p\s*>/gi, ' ')
     .replace(/<p\s*\/?>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
+    //.replace(/<[^>]+>/g, ' ')
     .split(/\s+/)
     .map(word => {
       if (word === '|') return word;
