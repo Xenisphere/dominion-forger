@@ -38,7 +38,7 @@ function loadCards() {
 }
 
 function saveCards(cards) {
-  fs.writeFileSync(localPath, JSON.stringify({ infobox: wikitext }, null, 2), 'utf-8');
+  fs.writeFileSync(cardsFilePath, JSON.stringify(cards, null, 2), 'utf-8');
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
 }
 
@@ -154,9 +154,8 @@ async function fetchCard(cardName) {
       }
       
       fs.writeFileSync(localPath, JSON.stringify(saveData, null, 2), 'utf-8');
-
+      wikitext = saveData.infobox || saveData.list || '';
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
-      fs.writeFileSync(localPath, JSON.stringify({ infobox: wikitext }, null, 2), 'utf-8');
       console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
     } finally {
       await browser.close();
