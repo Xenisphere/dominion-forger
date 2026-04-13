@@ -173,6 +173,7 @@ async function fetchCard(cardName) {
     if (listMatch) {
       const subCards = [...listMatch[1].matchAll(/\*\s*\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]|\*\s*([^\n]+)/g)]
         .map(m => (m[1] || m[2]).trim())
+        .map(s => s.replace(/{{Card\|([^}]+)}}/g, '$1').trim())  // strip {{Card|Name}} → Name
         .filter(Boolean);
       console.log(`[DEBUG] Found pile cards:`, subCards);
       const results = [];
