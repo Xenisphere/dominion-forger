@@ -44,7 +44,7 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/{{VP\|(\d+)[^}]*}}/gi, '{$1}')
+    .replace(/{{VP\|'{0,3}\+?(\d+)'{0,3}[^}]*}}/gi, '{$1}')
     .replace(/{{Costplus\|(\d+)[^}]*}}/gi, '+($1)')
     .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+($1)')
     .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')
@@ -99,7 +99,7 @@ function formatCost(raw, extra, isDebt) {
 async function fetchCard(cardName, sharedPage = null) {
   let page = sharedPage;
   //console.log(`[DEBUG] Searching for "${cardName}"`);
-  cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  cardName = cardName.replace(/_/g, ' ').replace(/(^|\s)\w/g, c => c.toUpperCase());
   cardName = aliases[cardName] || cardName;
 
   let wikitext;
