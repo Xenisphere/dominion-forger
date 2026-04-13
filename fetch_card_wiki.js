@@ -169,9 +169,17 @@ async function fetchCard(cardName, sharedPage = null) {
   const listText = (fileData && fileData.list) ? fileData.list : wikitext;
   const listMatch = listText.match(/List of [^\n]+\n([\s\S]+)/i);
   if (listMatch) {
-    const subCards = [...listMatch[1].matchAll(/\*\s*\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]|\*\s*([^\n]+)/g)]
-      .map(m => (m[1] || m[2]).trim())
-      .map(s => s.replace(/{{Card\|([^}]+)}}/g, '$1').trim())
+    const subCards = [...listMatch[1].matchAll(/\*\s*([^\n]+)/g)]
+      .map(m => m[1].trim())
+      .flatMap(line => {
+        // Extract all {{Type|Name}} card references from the line
+        const cardRefs = [...line.matchAll(/{{(?:Card|Event|Way|Landmark|Project|Trait|Prophecy|Ally|Boon|Hex)[|]([^}]+)}}/gi)]
+          .map(m => m[1].trim());
+        // Also extract [[Wiki Link]] style references
+        const wikiRefs = [...line.matchAll(/\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]/g)]
+          .map(m => m[1].trim());
+        return [...cardRefs, ...wikiRefs];
+      })
       .filter(Boolean);
     console.log(`[DEBUG] Found pile cards:`, subCards);
     
