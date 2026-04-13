@@ -98,7 +98,7 @@ function formatCost(raw, extra, isDebt) {
 
 async function fetchCard(cardName, sharedPage = null) {
   let page = sharedPage;
-  console.log(`[DEBUG] Searching for "${cardName}"`);
+  //console.log(`[DEBUG] Searching for "${cardName}"`);
   cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   cardName = aliases[cardName] || cardName;
 
@@ -119,7 +119,7 @@ async function fetchCard(cardName, sharedPage = null) {
     try {
       if (ownBrowser) page = await browser.newPage();
       await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
-      console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
+      //console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
       let rawData = null;
       for (let attempt = 1; attempt <= 3; attempt++) {
         try {
@@ -154,7 +154,7 @@ async function fetchCard(cardName, sharedPage = null) {
       fs.writeFileSync(localPath, JSON.stringify(saveData, null, 2), 'utf-8');
       wikitext = saveData.infobox || saveData.list || '';
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
-      console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
+      //console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
     } finally {
       if (ownBrowser) await browser.close();
     }
@@ -234,7 +234,7 @@ async function fetchCard(cardName, sharedPage = null) {
     const rawText = textFields.join(' | ').trim();
     console.log('[DEBUG] Raw text:', rawText);
     const cleanedText = rawText ? cleanText(rawText) : '';
-    console.log('[DEBUG] Cleaned text:', cleanedText);
+    //console.log('[DEBUG] Cleaned text:', cleanedText);
 
     const cardData = {
       name: cardName,
