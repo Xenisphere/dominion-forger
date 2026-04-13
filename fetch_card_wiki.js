@@ -104,11 +104,12 @@ async function fetchCard(cardName) {
   let wikitext;
   const localPath = path.join(rawDir, `${cardName}.json`);
 
-  if (fs.existsSync(localPath)) {
-    console.log(`[DEBUG] Using local cache for "${cardName}"`);
-    const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
-    wikitext = fileData.infobox || fileData.list || '';
-  } else {
+    let fileData = null;
+    if (fs.existsSync(localPath)) {
+      console.log(`[DEBUG] Using local cache for "${cardName}"`);
+      fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
+      wikitext = fileData.infobox || fileData.list || '';
+    } else {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
 
