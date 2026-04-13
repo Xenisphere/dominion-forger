@@ -44,7 +44,7 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/{{VP\|'{0,3}\+?(\d+)'{0,3}[^}]*}}/gi, '{$1}')
+    .replace(/{{VP\|'{0,3}(\+?\d+)'{0,3}[^}]*}}/gi, '{$1}')
     .replace(/{{Costplus\|(\d+)[^}]*}}/gi, '+($1)')
     .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+($1)')
     .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')
@@ -99,11 +99,12 @@ function formatCost(raw, extra, isDebt) {
 async function fetchCard(cardName, sharedPage = null) {
   let page = sharedPage;
   //console.log(`[DEBUG] Searching for "${cardName}"`);
-  cardName = cardName.replace(/_/g, ' ').replace(/(^|\s)\w/g, c => c.toUpperCase());
+  cardName = cardName.replace(/_/g, ' ').replace(/(?:^|\s)\S/g, c => c.toUpperCase());
   cardName = aliases[cardName] || cardName;
 
   let wikitext;
-  const localPath = path.join(rawDir, `${cardName}.json`);
+  const safeFileName = cardName.replace(/'/g, '%27');
+  const localPath = path.join(rawDir, `${safeFileName}.json`);
 
     let fileData = null;
     if (fs.existsSync(localPath)) {
@@ -113,8 +114,8 @@ async function fetchCard(cardName, sharedPage = null) {
     } else {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
-
-    const ownBrowser = !page;
+    
+      const ownBrowser = !page;
     const browser = ownBrowser ? await puppeteer.launch({ headless: true }) : null;
     try {
       if (ownBrowser) page = await browser.newPage();
