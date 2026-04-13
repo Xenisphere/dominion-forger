@@ -96,7 +96,8 @@ function formatCost(raw, extra, isDebt) {
   return raw;
 }
 
-async function fetchCard(cardName, page = null) {
+async function fetchCard(cardName, sharedPage = null) {
+  let page = sharedPage;
   console.log(`[DEBUG] Searching for "${cardName}"`);
   cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   cardName = aliases[cardName] || cardName;
@@ -117,44 +118,39 @@ async function fetchCard(cardName, page = null) {
     const browser = ownBrowser ? await puppeteer.launch({ headless: true }) : null;
     try {
       if (ownBrowser) page = await browser.newPage();
-      const page = await browser.newPage();
       await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
       console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
-
-     let rawData = null;
-        for (let attempt = 1; attempt <= 3; attempt++) {
-          try {
-            await page.waitForFunction(
-              () => document.body.innerText.trim().startsWith('{'),
-              { timeout: 100000 }
-            );
-            rawData = await page.evaluate(() => document.body.innerText);
-            break;
-          } catch (err) {
-            console.log(`[DEBUG] Extraction attempt ${attempt} failed: ${err.message}, retrying...`);
-            await new Promise(r => setTimeout(r, 3000));
-          }
+      let rawData = null;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          await page.waitForFunction(
+            () => document.body.innerText.trim().startsWith('{'),
+            { timeout: 100000 }
+          );
+          rawData = await page.evaluate(() => document.body.innerText);
+          break;
+        } catch (err) {
+          console.log(`[DEBUG] Extraction attempt ${attempt} failed: ${err.message}, retrying...`);
+          await new Promise(r => setTimeout(r, 3000));
         }
+      }
       if (!rawData) throw new Error('Failed to extract page data after 3 attempts');
-
       const parsed = JSON.parse(rawData);
       const wikiRaw = parsed?.parse?.wikitext?.['*'] || '';
       const infoboxMatch = wikiRaw.match(/{{Infobox [\s\S]+?\n}}/i);
       const listMatch = wikiRaw.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
-      
+    
       let saveData = {};
-      
       if (infoboxMatch) saveData.infobox = infoboxMatch[0];
-      
       if (listMatch) {
         const listLines = listMatch[1]
           .split('\n')
-          .filter(line => line.trim().startsWith('*'))  // only keep bullet lines
+          .filter(line => line.trim().startsWith('*'))
           .join('\n');
         const listTitle = listMatch[0].match(/==\s*List of ([^=]+)==/i)?.[1].trim();
         saveData.list = `List of ${listTitle}\n${listLines}`;
       }
-      
+    
       fs.writeFileSync(localPath, JSON.stringify(saveData, null, 2), 'utf-8');
       wikitext = saveData.infobox || saveData.list || '';
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
