@@ -49,7 +49,7 @@ function cleanText(text) {
     .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+($1)')//isn't this debt not cost
     .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')//isn't this cost not debt
     .replace(/{{Cost\|(\d+)P[^}]*}}/gi, '[$1]')//go through each of these to make sure each one is represented and used
-    .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')
+    .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')//uncapitalize whole word before proper capitalization
     .replace(/{{Debt\|(\d+)[^}]*}}/gi, '<$1>')
     .replace(/{{Potion[^}]*}}/gi, '[1]')
     .replace(/{{Costplus}}/gi, '+(_)')
