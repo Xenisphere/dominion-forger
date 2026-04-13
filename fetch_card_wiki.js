@@ -96,7 +96,7 @@ function formatCost(raw, extra, isDebt) {
   return raw;
 }
 
-async function fetchCard(cardName) {
+async function fetchCard(cardName, page = null) {
   console.log(`[DEBUG] Searching for "${cardName}"`);
   cardName = cardName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   cardName = aliases[cardName] || cardName;
@@ -166,26 +166,29 @@ async function fetchCard(cardName) {
   const isPilePage = !wikitext.includes('{{Infobox Card') && 
                      !wikitext.includes('{{Infobox Landscape') &&
                      !wikitext.includes('{{Infobox ');
-  if (isPilePage) {
-    console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
-    const listText = (fileData && fileData.list) ? fileData.list : wikitext;
-    const listMatch = listText.match(/List of [^\n]+\n([\s\S]+)/i);
-    if (listMatch) {
-      const subCards = [...listMatch[1].matchAll(/\*\s*\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]|\*\s*([^\n]+)/g)]
-        .map(m => (m[1] || m[2]).trim())
-        .map(s => s.replace(/{{Card\|([^}]+)}}/g, '$1').trim())  // strip {{Card|Name}} → Name
-        .filter(Boolean);
-      console.log(`[DEBUG] Found pile cards:`, subCards);
-      const results = [];
-      for (const subCard of subCards) {
-        const card = await fetchCard(subCard);
-        if (card) results.push(card);
-      }
-      return results;
+ if (isPilePage) {
+  console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
+  const listText = (fileData && fileData.list) ? fileData.list : wikitext;
+  const listMatch = listText.match(/List of [^\n]+\n([\s\S]+)/i);
+  if (listMatch) {
+    const subCards = [...listMatch[1].matchAll(/\*\s*\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]|\*\s*([^\n]+)/g)]
+      .map(m => (m[1] || m[2]).trim())
+      .map(s => s.replace(/{{Card\|([^}]+)}}/g, '$1').trim())
+      .filter(Boolean);
+    console.log(`[DEBUG] Found pile cards:`, subCards);
+    
+    const ownBrowser = !page;
+    const browser = ownBrowser ? await puppeteer.launch({ headless: true }) : null;
+    try {
+      if (ownBrowser) page = await browser.newPage();
+      // ... rest of fetch logic unchanged
+    } finally {
+      if (ownBrowser) await browser.close();
     }
-    console.error(`[ERROR] Could not find card list on pile page for "${cardName}"`);
-    return null;
   }
+  console.error(`[ERROR] Could not find card list on pile page for "${cardName}"`);
+  return null;
+}
 
   try {
     if (!wikitext) {
