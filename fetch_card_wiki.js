@@ -67,7 +67,7 @@ function cleanText(text) {
     .split(/\s+/)
     .map(word => {
       if (word === '|') return word;
-      if (/^\d+$_/.test(word)) return word;
+      if (/^\d+$/.test(word)) return word;
       word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+_]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>_]+$/g, '');
       word = word.replace(/[^a-zA-Z0-9;:.,!?()\[\]{}<>+_\s]/g, '');
       if (/^[+<(\[{]/.test(word)) return word;
