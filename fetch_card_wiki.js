@@ -113,8 +113,10 @@ async function fetchCard(cardName, page = null) {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
 
-    const browser = await puppeteer.launch({ headless: true });
+    const ownBrowser = !page;
+    const browser = ownBrowser ? await puppeteer.launch({ headless: true }) : null;
     try {
+      if (ownBrowser) page = await browser.newPage();
       const page = await browser.newPage();
       await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
       console.log('[DEBUG] Page preview:', await page.evaluate(() => document.body.innerText.slice(0, 100)));
@@ -158,7 +160,7 @@ async function fetchCard(cardName, page = null) {
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
       console.log(`[DEBUG] Cached response to raw/${cardName}.json`);
     } finally {
-      await browser.close();
+      if (ownBrowser) await browser.close();
     }
   }
 
@@ -177,13 +179,17 @@ async function fetchCard(cardName, page = null) {
       .filter(Boolean);
     console.log(`[DEBUG] Found pile cards:`, subCards);
     
-    const ownBrowser = !page;
-    const browser = ownBrowser ? await puppeteer.launch({ headless: true }) : null;
+    const browser = await puppeteer.launch({ headless: true });
     try {
-      if (ownBrowser) page = await browser.newPage();
-      // ... rest of fetch logic unchanged
+      const sharedPage = await browser.newPage();
+      const results = [];
+      for (const subCard of subCards) {
+        const card = await fetchCard(subCard, sharedPage);
+        if (card) results.push(card);
+      }
+      return results;
     } finally {
-      if (ownBrowser) await browser.close();
+      await browser.close();
     }
   }
   console.error(`[ERROR] Could not find card list on pile page for "${cardName}"`);
