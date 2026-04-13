@@ -38,7 +38,7 @@ function loadCards() {
 }
 
 function saveCards(cards) {
-  fs.writeFileSync(cardsFilePath, JSON.stringify(cards, null, 2), 'utf-8');
+  fs.writeFileSync(localPath, JSON.stringify({ infobox: wikitext }, null, 2), 'utf-8');
   console.log(`[DEBUG] Saved ${cards.length} cards to cards.json`);
 }
 
@@ -107,7 +107,7 @@ async function fetchCard(cardName) {
   if (fs.existsSync(localPath)) {
     console.log(`[DEBUG] Using local cache for "${cardName}"`);
     const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
-    wikitext = fileData.infobox;
+    wikitext = fileData.infobox || fileData.list || '';
   } else {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
@@ -137,7 +137,22 @@ async function fetchCard(cardName) {
       const parsed = JSON.parse(rawData);
       const wikiRaw = parsed?.parse?.wikitext?.['*'] || '';
       const infoboxMatch = wikiRaw.match(/{{Infobox [\s\S]+?\n}}/i);
-      wikitext = infoboxMatch ? infoboxMatch[0] : wikiRaw;
+      const listMatch = wikiRaw.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
+      
+      let saveData = {};
+      
+      if (infoboxMatch) saveData.infobox = infoboxMatch[0];
+      
+      if (listMatch) {
+        const listLines = listMatch[1]
+          .split('\n')
+          .filter(line => line.trim().startsWith('*'))  // only keep bullet lines
+          .join('\n');
+        const listTitle = listMatch[0].match(/==\s*List of ([^=]+)==/i)?.[1].trim();
+        saveData.list = `List of ${listTitle}\n${listLines}`;
+      }
+      
+      fs.writeFileSync(localPath, JSON.stringify(saveData, null, 2), 'utf-8');
 
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
       fs.writeFileSync(localPath, JSON.stringify({ infobox: wikitext }, null, 2), 'utf-8');
@@ -153,7 +168,8 @@ async function fetchCard(cardName) {
                      !wikitext.includes('{{Infobox ');
   if (isPilePage) {
     console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
-    const listMatch = wikitext.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
+    const listText = fileData.list || wikitext;
+    const listMatch = listText.match(/List of [^\n]+\n([\s\S]+)/i);
     if (listMatch) {
       const subCards = [...listMatch[1].matchAll(/\*\s*\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]|\*\s*([^\n]+)/g)]
         .map(m => (m[1] || m[2]).trim())
