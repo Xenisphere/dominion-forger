@@ -168,7 +168,7 @@ async function fetchCard(cardName) {
                      !wikitext.includes('{{Infobox ');
   if (isPilePage) {
     console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
-    const listText = fileData.list || wikitext;
+    const listText = (fileData && fileData.list) ? fileData.list : wikitext;
     const listMatch = listText.match(/List of [^\n]+\n([\s\S]+)/i);
     if (listMatch) {
       const subCards = [...listMatch[1].matchAll(/\*\s*\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]|\*\s*([^\n]+)/g)]
