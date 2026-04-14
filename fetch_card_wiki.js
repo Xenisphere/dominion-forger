@@ -44,7 +44,7 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/{{VP\|'{0,3}(\+?\d+)'{0,3}[^}]*}}/gi, '{$1}')//+ before {1}
+    .replace(/{{VP\|'{0,3}(\+?\d+)'{0,3}[^}]*}}/gi, '{$1}')
     .replace(/{{Costplus\|(\d+)[^}]*}}/gi, '+($1)')
     .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+($1)')//isn't this debt not cost
     .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')//isn't this cost not debt
