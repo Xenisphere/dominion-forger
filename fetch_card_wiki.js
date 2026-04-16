@@ -142,14 +142,22 @@ async function fetchCard(cardName, sharedPage = null) {
       const listMatch = wikiRaw.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
     
       let saveData = {};
-      if (infoboxMatch) saveData.infobox = infoboxMatch[0];
-      if (listMatch) {
-        const listLines = listMatch[1]
-          .split('\n')
-          .filter(line => line.trim().startsWith('*'))
-          .join('\n');
-        const listTitle = listMatch[0].match(/==\s*List of ([^=]+)==/i)?.[1].trim();
-        saveData.list = `List of ${listTitle}\n${listLines}`;
+      if (infoboxMatch) {
+        const fullInfobox = infoboxMatch[0];
+        
+        // Extract text fields separately
+        const textFieldRegex = /\|\s*(text\d*)\s*=\s*([\s\S]+?)(?=\n\s*[|}])/gi;
+        let saveIntobox = fullInfobox;
+        const textFields = {};
+        
+        let match;
+        while ((match = textFieldRegex.exec(fullInfobox)) !== null) {
+          textFields[match[1]] = match[2].trim();
+          saveIntobox = saveIntobox.replace(match[0], `| ${match[1]} = `);
+        }
+        
+        saveData.infobox = saveIntobox;
+        Object.assign(saveData, textFields);
       }
     
       fs.writeFileSync(localPath, JSON.stringify(saveData, null, 2), 'utf-8');
