@@ -44,7 +44,7 @@ function saveCards(cards) {
 
 function cleanText(text) {
   return text
-    .replace(/{{VP\|'{0,3}(\+?\d+)'{0,3}[^}]*}}/gi, '{$1}')
+    .replace(/{{VP\|'{0,3}(\+?\d+)'{0,3}[^}]*}}/gi, (_, n) => n.startsWith('+') ? `+{${n.slice(1)}}` : `{${n}}`)
     .replace(/{{Costplus\|(\d+)[^}]*}}/gi, '+($1)')
     .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+($1)')//isn't this debt not cost
     .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')//isn't this cost not debt
@@ -109,8 +109,20 @@ async function fetchCard(cardName, sharedPage = null) {
     let fileData = null;
     if (fs.existsSync(localPath)) {
       console.log(`[DEBUG] Using local cache for "${cardName}"`);
-      fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
+      const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
       wikitext = fileData.infobox || fileData.list || '';
+      
+      // Reassemble text fields from separate keys
+      const textFields = [];
+      let i = 1;
+      while (true) {
+        const key = i === 1 ? 'text' : `text${i}`;
+        if (!fileData[key]) break;
+        textFields.push(fileData[key]);
+        i++;
+      }
+      // Store for later use
+      fileData._textFields = textFields;
     } else {
     console.log(`[DEBUG] Launching browser to fetch "${cardName}"`);
     const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName)}&prop=wikitext&format=json`;
@@ -146,14 +158,18 @@ async function fetchCard(cardName, sharedPage = null) {
         const fullInfobox = infoboxMatch[0];
         
         // Extract text fields separately
-        const textFieldRegex = /\|\s*(text\d*)\s*=\s*([\s\S]+?)(?=\n\s*[|}])/gi;
-        let saveIntobox = fullInfobox;
-        const textFields = {};
-        
-        let match;
-        while ((match = textFieldRegex.exec(fullInfobox)) !== null) {
-          textFields[match[1]] = match[2].trim();
-          saveIntobox = saveIntobox.replace(match[0], `| ${match[1]} = `);
+        const textFields = fileData?._textFields || [];
+        if (textFields.length === 0) {
+          // Fall back to extracting from wikitext for browser-fetched cards
+          const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
+          if (baseText) textFields.push(baseText[1]);
+          let i = 2;
+          while (true) {
+            const match = wikitext.match(new RegExp(`\\|\\s*text${i}\\s*=\\s*([\\s\\S]+?)(?=\\n\\s*[|}])`, 'i'));
+            if (!match) break;
+            textFields.push(match[1]);
+            i++;
+          }
         }
         
         saveData.infobox = saveIntobox;
