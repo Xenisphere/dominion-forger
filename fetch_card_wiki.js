@@ -188,30 +188,29 @@ async function fetchCard(cardName, sharedPage = null) {
   }
 
   // Check if this is a pile/group page rather than an individual card
-  const isPilePage = !wikitext.includes('{{Infobox Card') && 
-                     !wikitext.includes('{{Infobox Landscape') &&
-                     !wikitext.includes('{{Infobox ');
   if (isPilePage) {
     console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
     const listText = (fileData && fileData.list) ? fileData.list : wikitext;
     const listContent = listText.match(/List of [^\n]+\n([\s\S]+)/i)?.[1] ?? listText;
+  
     const subCards = [...listContent.matchAll(/\*\s*([^\n]+)/g)]
       .map(m => m[1].trim())
-     
-    const subCards = [...listMatch[1].matchAll(/\*\s*([^\n]+)/g)]
-      .map(m => m[1].trim())
       .flatMap(line => {
-        // Extract all {{Type|Name}} card references from the line
         const cardRefs = [...line.matchAll(/{{(?:Card|Event|Way|Landmark|Project|Trait|Prophecy|Ally|Boon|Hex)[|]([^}]+)}}/gi)]
           .map(m => m[1].trim());
-        // Also extract [[Wiki Link]] style references
         const wikiRefs = [...line.matchAll(/\[\[([^\]|]+?)(?:\|[^\]]+)?\]\]/g)]
           .map(m => m[1].trim());
         return [...cardRefs, ...wikiRefs];
       })
       .filter(Boolean);
+  
     console.log(`[DEBUG] Found pile cards:`, subCards);
-    
+  
+    if (!subCards.length) {
+      console.error(`[ERROR] Could not find card list on pile page for "${cardName}"`);
+      return null;
+    }
+  
     const browser = await puppeteer.launch({ headless: true });
     try {
       const sharedPage = await browser.newPage();
@@ -224,8 +223,6 @@ async function fetchCard(cardName, sharedPage = null) {
     } finally {
       await browser.close();
     }
-    console.error(`[ERROR] Could not find card list on pile page for "${cardName}"`);
-    return null;
   }
 
   try {
