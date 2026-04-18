@@ -191,14 +191,13 @@ async function fetchCard(cardName, sharedPage = null) {
   const isPilePage = !wikitext.includes('{{Infobox Card') && 
                      !wikitext.includes('{{Infobox Landscape') &&
                      !wikitext.includes('{{Infobox ');
- if (isPilePage) {
-  console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
-  const listText = (fileData && fileData.list) ? fileData.list : wikitext;
-  const listContent = listText.match(/List of [^\n]+\n([\s\S]+)/i)?.[1] ?? listText;
-  const subCards = [...listContent.matchAll(/\*\s*([^\n]+)/g)]
-    .map(m => m[1].trim())
-   
-  if (listMatch) {
+  if (isPilePage) {
+    console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
+    const listText = (fileData && fileData.list) ? fileData.list : wikitext;
+    const listContent = listText.match(/List of [^\n]+\n([\s\S]+)/i)?.[1] ?? listText;
+    const subCards = [...listContent.matchAll(/\*\s*([^\n]+)/g)]
+      .map(m => m[1].trim())
+     
     const subCards = [...listMatch[1].matchAll(/\*\s*([^\n]+)/g)]
       .map(m => m[1].trim())
       .flatMap(line => {
@@ -225,10 +224,9 @@ async function fetchCard(cardName, sharedPage = null) {
     } finally {
       await browser.close();
     }
+    console.error(`[ERROR] Could not find card list on pile page for "${cardName}"`);
+    return null;
   }
-  console.error(`[ERROR] Could not find card list on pile page for "${cardName}"`);
-  return null;
-}
 
   try {
     if (!wikitext) {
