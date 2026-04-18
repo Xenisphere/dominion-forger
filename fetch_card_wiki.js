@@ -151,31 +151,33 @@ async function fetchCard(cardName, sharedPage = null) {
       const parsed = JSON.parse(rawData);
       const wikiRaw = parsed?.parse?.wikitext?.['*'] || '';
       const infoboxMatch = wikiRaw.match(/{{Infobox [\s\S]+?\n}}/i);
-      const listMatch = wikiRaw.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
-    
+      
       let saveData = {};
       if (infoboxMatch) {
         const fullInfobox = infoboxMatch[0];
-        
-        // Extract text fields separately
-        const textFields = fileData?._textFields || [];
-        if (textFields.length === 0) {
-          // Fall back to extracting from wikitext for browser-fetched cards
-          const baseText = wikitext.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
-          if (baseText) textFields.push(baseText[1]);
-          let i = 2;
-          while (true) {
-            const match = wikitext.match(new RegExp(`\\|\\s*text${i}\\s*=\\s*([\\s\\S]+?)(?=\\n\\s*[|}])`, 'i'));
-            if (!match) break;
-            textFields.push(match[1]);
-            i++;
-          }
+        saveData.infobox = fullInfobox;
+      
+        const textFields = [];
+        const baseText = wikiRaw.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
+        if (baseText) textFields.push(baseText[1]);
+        let i = 2;
+        while (true) {
+          const match = wikiRaw.match(new RegExp(`\\|\\s*text${i}\\s*=\\s*([\\s\\S]+?)(?=\\n\\s*[|}])`, 'i'));
+          if (!match) break;
+          textFields.push(match[1]);
+          i++;
         }
-        
-        saveData.infobox = saveIntobox;
-        Object.assign(saveData, textFields);
+      
+        textFields.forEach((t, idx) => {
+          const key = idx === 0 ? 'text' : `text${idx + 1}`;
+          saveData[key] = t;
+        });
       }
-    
+      
+      const listMatch = wikiRaw.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
+      if (listMatch) saveData.list = listMatch[1];
+      
+      if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
       fs.writeFileSync(localPath, JSON.stringify(saveData, null, 2), 'utf-8');
       wikitext = saveData.infobox || saveData.list || '';
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
