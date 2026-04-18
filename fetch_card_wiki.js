@@ -187,7 +187,10 @@ async function fetchCard(cardName, sharedPage = null) {
       if (ownBrowser) await browser.close();
     }
   }
-
+  // Check if this is a pile/group page rather than an individual card
+  const isPilePage = !wikitext.includes('{{Infobox Card') && 
+                     !wikitext.includes('{{Infobox Landscape') &&
+                     !wikitext.includes('{{Infobox ');
   // Check if this is a pile/group page rather than an individual card
   if (isPilePage) {
     console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
