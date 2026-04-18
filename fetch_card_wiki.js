@@ -109,7 +109,7 @@ async function fetchCard(cardName, sharedPage = null) {
     let fileData = null;
     if (fs.existsSync(localPath)) {
       console.log(`[DEBUG] Using local cache for "${cardName}"`);
-      const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
+      fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
       wikitext = fileData.infobox || fileData.list || '';
       
       // Reassemble text fields from separate keys
@@ -176,6 +176,7 @@ async function fetchCard(cardName, sharedPage = null) {
       
       const listMatch = wikiRaw.match(/==\s*List of [^=]+==\s*([\s\S]+?)(?=\n==|$)/i);
       if (listMatch) saveData.list = listMatch[1];
+      else if (!infoboxMatch) saveData.list = wikiRaw; // save raw wikitext for pile pages
       
       if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
       fs.writeFileSync(localPath, JSON.stringify(saveData, null, 2), 'utf-8');
