@@ -194,7 +194,10 @@ async function fetchCard(cardName, sharedPage = null) {
  if (isPilePage) {
   console.log(`[DEBUG] "${cardName}" appears to be a pile page — extracting card list`);
   const listText = (fileData && fileData.list) ? fileData.list : wikitext;
-  const listMatch = listText.match(/List of [^\n]+\n([\s\S]+)/i);
+  const listContent = listText.match(/List of [^\n]+\n([\s\S]+)/i)?.[1] ?? listText;
+  const subCards = [...listContent.matchAll(/\*\s*([^\n]+)/g)]
+    .map(m => m[1].trim())
+   
   if (listMatch) {
     const subCards = [...listMatch[1].matchAll(/\*\s*([^\n]+)/g)]
       .map(m => m[1].trim())
