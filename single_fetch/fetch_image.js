@@ -112,7 +112,7 @@ async function main() {
     process.exit(1);
   }
   
-  const directUrl = match[1];
+  const directUrl = match[1].replace('http://', 'https://');
   console.log(`[DEBUG] Found image URL: ${directUrl}`);
   await downloadImage(directUrl, destPath);
   console.log(`[DEBUG] Saved to images/${boxName}/${filename}`);
