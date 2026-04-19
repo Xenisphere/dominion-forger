@@ -106,7 +106,7 @@ async function main() {
   const html = await fetchHtml(mediaUrl);
   console.log('[DEBUG] HTML snippet:', html.slice(0, 1000));
 
-  const match = html.match(/href="(\/images\/[^"]+\.jpg)"/);
+  const match = html.match(/og:image" content="([^"]+\.jpg)"/);
   if (!match) {
     console.error(`[ERROR] Could not find image URL in page`);
     process.exit(1);
