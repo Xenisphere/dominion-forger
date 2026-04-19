@@ -73,7 +73,16 @@ function fetchHtml(url) {
 }
 
 async function main() {
-  const cardName = process.argv[2];
+  const cardName = process.argv[2]
+  const hyphenExceptions = {
+    'ill-gotten gains': 'Ill-Gotten Gains',
+    "will-o'-wisp": "Will-o'-Wisp",
+    'city-state': 'City-state'
+  };
+  const raw = process.argv[2].toLowerCase();
+  const cardName = hyphenExceptions[raw] ||
+    raw.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  
   if (!cardName) {
     console.error('Usage: node fetch_image.js "Card Name"');
     process.exit(1);
