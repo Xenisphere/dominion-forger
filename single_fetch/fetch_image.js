@@ -2,7 +2,6 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const puppeteer = require('puppeteer');
 
 const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'card_names.json'), 'utf-8'));
 
@@ -123,19 +122,6 @@ async function main() {
   console.log(`[DEBUG] Found image URL: ${directUrl}`);
   await downloadImage(directUrl, destPath);
   console.log(`[DEBUG] Saved to images/${boxName}/${filename}`);
-
-  const browser = await puppeteer.launch({ headless: true });
-  try {
-    const page = await browser.newPage();
-    await page.goto(mediaUrl, { waitUntil: 'networkidle2', timeout: 60000 });
-
-    const { directUrl, htmlSnippet } = await page.evaluate(() => {
-      const img = document.querySelector('.fullImageLink img, #file img');
-      return {
-        directUrl: img ? img.src : null,
-        htmlSnippet: document.body.innerHTML.slice(0, 1000)
-      };
-    });
 
     if (!directUrl) {
       console.error(`[ERROR] Could not find image URL on media page`);
