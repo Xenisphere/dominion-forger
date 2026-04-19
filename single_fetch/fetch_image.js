@@ -87,7 +87,8 @@ async function main() {
   const mediaUrl = `https://wiki.dominionstrategy.com/index.php/${safeName}`;
   console.log(`[DEBUG] Fetching image for "${cardName}" (ID: ${id})`);
 
-  const directUrl = `https://wiki.dominionstrategy.com/images/${safeName}.jpg`;
+  const directUrl = `https://wiki.dominionstrategy.com/index.php/${safeName}#/media/File:${safeName}.jpg`; //https://wiki.dominionstrategy.com/images/${safeName}.jpg
+  
   try {
     await downloadImage(directUrl, destPath);
     console.log(`[DEBUG] Saved to ${destPath}`);
