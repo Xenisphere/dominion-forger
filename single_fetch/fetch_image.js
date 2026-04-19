@@ -87,14 +87,20 @@ async function main() {
   const mediaUrl = `https://wiki.dominionstrategy.com/index.php/${safeName}`;
   console.log(`[DEBUG] Fetching image for "${cardName}" (ID: ${id})`);
 
-  const directUrl = `https://wiki.dominionstrategy.com/index.php/${safeName}#/media/File:${safeName}.jpg`; //https://wiki.dominionstrategy.com/images/${safeName}.jpg
-  
-  try {
-    await downloadImage(directUrl, destPath);
-    console.log(`[DEBUG] Saved to ${destPath}`);
-  } catch (err) {
-    console.error(`[ERROR] Failed to download: ${err.message}`);
-  }
+  const directUrl = await page.evaluate(() => {
+  const img = document.querySelector('.fullImageLink img, #file img');
+  return img ? img.src : null;
+});
+
+if (!directUrl) {
+  console.error(`[ERROR] Could not find image URL on media page`);
+  await browser.close();
+  process.exit(1);
+}
+
+console.log(`[DEBUG] Found image URL: ${directUrl}`);
+await downloadImage(directUrl, destPath);
+console.log(`[DEBUG] Saved to ${destPath}`);
 }
 
 main();
