@@ -94,6 +94,7 @@ async function main() {
 
     const directUrl = await page.evaluate(() => {
       const img = document.querySelector('.fullImageLink img, #file img');
+      console.log('HTML snippet:', document.body.innerHTML.slice(0, 500));
       return img ? img.src : null;
     });
 
