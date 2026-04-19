@@ -4,7 +4,7 @@ const path = require('path');
 const https = require('https');
 const puppeteer = require('puppeteer');
 
-const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, 'card_names.json'), 'utf-8'));
+const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'card_names.json'), 'utf-8'));
 
 function buildCardLookup() {
   const lookup = {};
@@ -71,7 +71,7 @@ async function main() {
   const safeName = cardName.replace(/ /g, '_');
   const filename = `${safeName}${id}.jpg`;
 
-  const outDir = path.join(__dirname, 'images', boxName);
+  const outDir = path.join(__dirname, '..', 'images', boxName);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
   const destPath = path.join(outDir, filename);
