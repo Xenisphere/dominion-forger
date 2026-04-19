@@ -95,7 +95,7 @@ async function main() {
   const { boxName, boxNum, position, edition } = info;
   const id = `${boxNum}${edition}${position}`;
   const safeName = cardName.replace(/ /g, '_');
-  const filename = `${safeName}${id}.jpg`;
+  const filename = `${safeName}_${id}.jpg`;
 
   const outDir = path.join(__dirname, '..', 'images', boxName);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
