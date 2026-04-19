@@ -104,6 +104,10 @@ async function main() {
   console.log(`[DEBUG] Fetching media page for "${cardName}" (ID: ${id})`);
   
   const html = await fetchHtml(mediaUrl);
+  
+  const html = await fetchHtml(mediaUrl);
+  console.log('[DEBUG] HTML snippet:', html.slice(0, 1000));
+
   const match = html.match(/href="(\/images\/[^"]+\.jpg)"/);
   if (!match) {
     console.error(`[ERROR] Could not find image URL in page`);
@@ -127,9 +131,6 @@ async function main() {
         htmlSnippet: document.body.innerHTML.slice(0, 1000)
       };
     });
-
-    const html = await fetchHtml(mediaUrl);
-    console.log('[DEBUG] HTML snippet:', html.slice(0, 1000));
 
     if (!directUrl) {
       console.error(`[ERROR] Could not find image URL on media page`);
