@@ -56,8 +56,6 @@ function downloadImage(url, destPath) {
   });
 }
 
-const https = require('https');
-
 function fetchHtml(url) {
   return new Promise((resolve, reject) => {
     const options = {
