@@ -497,7 +497,7 @@
       { "name": "Imp" },
       { "name": "Leprechaun" },
       { "name": "Monastery" },
-      { "name": "Necromancer", "group": [ "Zombies Apprentice", "Zombies Mason", "Zombies Spy" ] },
+      { "name": "Necromancer", "group": [ "Zombie Apprentice", "Zombie Mason", "Zombie Spy" ] },
       { "name": "Night Watchman" },
       { "name": "Pixie", "paired_with": "Goat" },
       { "name": "Pooka", "paired_with": "Cursed Gold" },
@@ -582,7 +582,6 @@
       { "name": "Canal" },
       { "name": "Capitalism" },
       { "name": "Cathedral" },
-      { "name": "Chart" },
       { "name": "Citadel" },
       { "name": "City Gate" },
       { "name": "Crop Rotation" },
@@ -596,7 +595,8 @@
       { "name": "Road Network" },
       { "name": "Sewers" },
       { "name": "Silos" },
-      { "name": "Sinister Plot" }
+      { "name": "Sinister Plot" },
+      { "name": "Star Chart" }
     ],
     "Card Count": {
       "Kingdom": 30,
