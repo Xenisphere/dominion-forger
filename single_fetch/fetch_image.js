@@ -56,6 +56,24 @@ function downloadImage(url, destPath) {
   });
 }
 
+const https = require('https');
+
+function fetchHtml(url) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Accept': 'text/html'
+      }
+    };
+    https.get(url, options, res => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => resolve(data));
+    }).on('error', reject);
+  });
+}
+
 async function main() {
   const cardName = process.argv[2];
   if (!cardName) {
@@ -84,8 +102,20 @@ async function main() {
     process.exit(0);
   }
 
-  const mediaUrl = `https://wiki.dominionstrategy.com/index.php/${safeName}#/media/File:${safeName}.jpg`;
-  console.log(`[DEBUG] Fetching image page for "${cardName}" (ID: ${id})`);
+  const mediaUrl = `https://wiki.dominionstrategy.com/index.php/File:${safeName}.jpg`;
+  console.log(`[DEBUG] Fetching media page for "${cardName}" (ID: ${id})`);
+  
+  const html = await fetchHtml(mediaUrl);
+  const match = html.match(/href="(\/images\/[^"]+\.jpg)"/);
+  if (!match) {
+    console.error(`[ERROR] Could not find image URL in page`);
+    process.exit(1);
+  }
+  
+  const directUrl = `https://wiki.dominionstrategy.com${match[1]}`;
+  console.log(`[DEBUG] Found image URL: ${directUrl}`);
+  await downloadImage(directUrl, destPath);
+  console.log(`[DEBUG] Saved to images/${boxName}/${filename}`);
 
   const browser = await puppeteer.launch({ headless: true });
   try {
