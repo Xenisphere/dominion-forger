@@ -122,20 +122,6 @@ async function main() {
   console.log(`[DEBUG] Found image URL: ${directUrl}`);
   await downloadImage(directUrl, destPath);
   console.log(`[DEBUG] Saved to images/${boxName}/${filename}`);
-
-    if (!directUrl) {
-      console.error(`[ERROR] Could not find image URL on media page`);
-      process.exit(1);
-    }
-
-    console.log(`[DEBUG] Found image URL: ${directUrl}`);
-    await downloadImage(directUrl, destPath);
-    console.log(`[DEBUG] Saved to images/${boxName}/${filename}`);
-  } catch (err) {
-    console.error(`[ERROR] ${err.message}`);
-  } finally {
-    await browser.close();
-  }
 }
 
 main();
