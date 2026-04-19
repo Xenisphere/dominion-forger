@@ -104,8 +104,6 @@ async function main() {
   console.log(`[DEBUG] Fetching media page for "${cardName}" (ID: ${id})`);
   
   const html = await fetchHtml(mediaUrl);
-  
-  const html = await fetchHtml(mediaUrl);
   console.log('[DEBUG] HTML snippet:', html.slice(0, 1000));
 
   const match = html.match(/href="(\/images\/[^"]+\.jpg)"/);
