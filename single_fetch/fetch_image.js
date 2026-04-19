@@ -128,7 +128,8 @@ async function main() {
       };
     });
 
-console.log('[DEBUG] HTML snippet:', htmlSnippet);
+    const html = await fetchHtml(mediaUrl);
+    console.log('[DEBUG] HTML snippet:', html.slice(0, 1000));
 
     if (!directUrl) {
       console.error(`[ERROR] Could not find image URL on media page`);
