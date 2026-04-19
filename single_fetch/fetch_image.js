@@ -92,11 +92,15 @@ async function main() {
     const page = await browser.newPage();
     await page.goto(mediaUrl, { waitUntil: 'networkidle2', timeout: 60000 });
 
-    const directUrl = await page.evaluate(() => {
+    const { directUrl, htmlSnippet } = await page.evaluate(() => {
       const img = document.querySelector('.fullImageLink img, #file img');
-      console.log('HTML snippet:', document.body.innerHTML.slice(0, 500));
-      return img ? img.src : null;
+      return {
+        directUrl: img ? img.src : null,
+        htmlSnippet: document.body.innerHTML.slice(0, 1000)
+      };
     });
+
+console.log('[DEBUG] HTML snippet:', htmlSnippet);
 
     if (!directUrl) {
       console.error(`[ERROR] Could not find image URL on media page`);
