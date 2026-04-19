@@ -30,6 +30,10 @@ function buildCardLookup() {
             lookup[sub] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition };
           }
         }
+        if (card.paired_with) {
+          position++;
+          lookup[card.paired_with] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition };
+        }
         position++;
       }
     }
