@@ -1,10 +1,10 @@
-// fetch_all_raw.js
+// fetch_all_text.js
 const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer');
 
 const rawDir = path.join(__dirname, 'raw');
-const cardNamesPath = path.join(__dirname, 'card_names.json');
+const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'card_names.json'), 'utf-8'));
 
 async function fetchRaw(cardName, page) {
   const localPath = path.join(rawDir, `${cardName}.json`);
