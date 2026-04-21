@@ -17,6 +17,7 @@ function buildCardLookup() {
     let position = 1;
 
     for (const [, cards] of allSections) {
+      if (card.group && Array.isArray(card.group)) {
       if (!Array.isArray(cards)) continue;
       for (const card of cards) {
         const edition = !hasRemoved ? '10' : '11';
