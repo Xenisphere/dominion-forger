@@ -90,7 +90,7 @@ async function fetchImage(cardName, info) {
 
   const directUrl = match[1].replace('http://', 'https://');
   await downloadImage(directUrl, destPath);
-  console.log(`[DONE] ${cardName} → images/${boxName}/${filename}`);
+  //console.log(`[DONE] ${cardName} → images/${boxName}/${filename}`);
   return true;
 }
 
