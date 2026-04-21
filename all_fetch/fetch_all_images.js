@@ -79,7 +79,7 @@ async function fetchImage(cardName, info) {
 
   const destPath = path.join(outDir, filename);
   if (fs.existsSync(destPath)) {
-    console.log(`[SKIP] ${cardName}`);
+    //console.log(`[SKIP] ${cardName}`);
     return true;
   }
 
