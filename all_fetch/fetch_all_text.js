@@ -1,71 +1,74 @@
 // fetch_all_text.js
 const fs = require('fs');
 const path = require('path');
-const puppeteer = require('puppeteer');
-
-const rawDir = path.join(__dirname, 'raw');
-const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'card_names.json'), 'utf-8'));
-
-async function fetchRaw(cardName, page) {
-  const localPath = path.join(rawDir, `${cardName}.json`);
-  if (fs.existsSync(localPath)) {
-    console.log(`[SKIP] Already cached: ${cardName}`);
-    return;
-  }
-
-  const url = `https://wiki.dominionstrategy.com/api.php?action=parse&page=${encodeURIComponent(cardName.replace(/_/g, ' '))}&prop=wikitext&format=json`;
-
-  try {
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 100000 });
-    await page.waitForFunction(
-      () => document.body.innerText.trim().startsWith('{'),
-      { timeout: 100000 }
-    );
-    const data = await page.evaluate(() => document.body.innerText);
-    fs.writeFileSync(localPath, data, 'utf-8');
-    console.log(`[SAVED] ${cardName}`);
-  } catch (err) {
-    console.error(`[ERROR] Failed to fetch ${cardName}:`, err.message);
-  }
-}
 
 async function main() {
-  if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
+  const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'card_names.json'), 'utf-8'));
+  const rawDir = path.join(__dirname, '..', 'raw');
+  const textDir = path.join(__dirname, '..', 'text');
+  if (!fs.existsSync(textDir)) fs.mkdirSync(textDir);
 
-  const cardNames = JSON.parse(fs.readFileSync(cardNamesPath, 'utf-8'));
+  const boxes = Object.keys(cardNames).filter(k => k !== 'all_total');
+  const failed = [];
 
-  // Group cards by first letter
-  const batches = {};
-  for (const name of cardNames) {
-    const letter = name[0].toLowerCase();
-    if (!batches[letter]) batches[letter] = [];
-    batches[letter].push(name);
-  }
+  for (const boxName of boxes) {
+    const box = cardNames[boxName];
+    const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
+    const boxCards = [];
 
-  const letters = Object.keys(batches).sort();
-  console.log(`[INFO] ${cardNames.length} cards across ${letters.length} batches`);
+    for (const [, cards] of allSections) {
+      if (!Array.isArray(cards)) continue;
+      for (const card of cards) {
+        const names = [card.name];
+        if (card.group && Array.isArray(card.group)) names.push(...card.group);
+        if (card.paired_with) names.push(card.paired_with);
+        if (card.chain) names.push(...card.chain);
 
-  const browser = await puppeteer.launch({ headless: true });
-  const page = await browser.newPage();
+        for (const name of names) {
+          const safeName = name.replace(/'/g, '%27');
+          const localPath = path.join(rawDir, `${safeName}.json`);
 
-  try {
-    for (const letter of letters) {
-      const batch = batches[letter];
-      console.log(`\n[BATCH] Letter "${letter.toUpperCase()}" — ${batch.length} cards`);
+          if (!fs.existsSync(localPath)) {
+            console.error(`[FAIL] ${name} — no raw file found`);
+            failed.push(name);
+            continue;
+          }
 
-      for (const cardName of batch) {
-        await fetchRaw(cardName, page);
-        // Small delay between requests to avoid triggering rate limits
-        await new Promise(r => setTimeout(r, 1500));
+          const fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
+
+          // Reassemble text fields
+          const textFields = [];
+          let i = 1;
+          while (true) {
+            const key = i === 1 ? 'text' : `text${i}`;
+            if (!fileData[key]) break;
+            textFields.push(fileData[key]);
+            i++;
+          }
+
+          if (textFields.length === 0) {
+            console.error(`[FAIL] ${name} — no text fields in raw file`);
+            failed.push(name);
+            continue;
+          }
+
+          boxCards.push({ name, text: textFields.join(' | ') });
+          console.log(`[DONE] ${name}`);
+        }
       }
-
-      console.log(`[BATCH DONE] "${letter.toUpperCase()}"`);
     }
-  } finally {
-    await browser.close();
+
+    const outPath = path.join(textDir, `${boxName}.json`);
+    fs.writeFileSync(outPath, JSON.stringify(boxCards, null, 2), 'utf-8');
+    console.log(`[SAVED] text/${boxName}.json (${boxCards.length} cards)`);
   }
 
-  console.log('\n[DONE] All cards fetched.');
+  if (failed.length > 0) {
+    console.log(`\nFailed cards (${failed.length}):`);
+    for (const name of failed) console.log(`  - ${name}`);
+  } else {
+    console.log('\nAll text fetched successfully!');
+  }
 }
 
 main();
