@@ -1,4 +1,4 @@
-// fetch_card_wiki.js
+// fetch_card.js
 const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer');
