@@ -190,8 +190,6 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir) {
 
 async function main() {
   const expansionInput = process.argv[2];
-  const rawDir = path.join(__dirname, '..', 'raw', expansionName);
-  if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir, { recursive: true });
   if (!expansionInput) {
     console.error('Usage: node fetch_expansion_text.js "Expansion Name"');
     process.exit(1);
@@ -205,6 +203,8 @@ async function main() {
     console.error(`[ERROR] Expansion "${expansionInput}" not found in card_names.json`);
     process.exit(1);
   }
+  const rawDir = path.join(__dirname, '..', 'raw', expansionName);
+  if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir, { recursive: true });
 
   if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
   if (!fs.existsSync(rawTextDir)) fs.mkdirSync(rawTextDir);
