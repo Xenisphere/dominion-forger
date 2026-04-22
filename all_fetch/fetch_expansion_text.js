@@ -4,7 +4,6 @@ const path = require('path');
 const puppeteer = require('puppeteer');
 
 const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'storage/card_names.json'), 'utf-8'));
-const rawDir = path.join(__dirname, '..', 'raw');
 const rawTextDir = path.join(__dirname, '..', 'raw_text');
 
 const aliases = { 'Harem': 'Farm' };
@@ -63,7 +62,7 @@ function formatCost(raw, extra, isDebt) {
   return raw;
 }
 
-async function fetchAndParseCard(cardName, sharedPage) {
+async function fetchAndParseCard(cardName, sharedPage, rawDir) {
   cardName = aliases[cardName] || cardName;
   const safeFileName = cardName.replace(/'/g, '%27');
   const localPath = path.join(rawDir, `${safeFileName}.json`);
@@ -191,6 +190,8 @@ async function fetchAndParseCard(cardName, sharedPage) {
 
 async function main() {
   const expansionInput = process.argv[2];
+  const rawDir = path.join(__dirname, '..', 'raw', expansionName);
+  if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir, { recursive: true });
   if (!expansionInput) {
     console.error('Usage: node fetch_expansion_text.js "Expansion Name"');
     process.exit(1);
@@ -231,7 +232,7 @@ async function main() {
     const sharedPage = await browser.newPage();
     for (const cardName of toFetch) {
       try {
-        const card = await fetchAndParseCard(cardName, sharedPage);
+        const card = await fetchAndParseCard(cardName, sharedPage, rawDir);
         if (card) {
           results.push(card);
           console.log(`[DONE] ${cardName}`);
