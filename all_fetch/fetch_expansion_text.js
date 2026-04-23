@@ -57,22 +57,31 @@ function buildCardLookup() {
     const box = cardNames[boxName];
     const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
     let position = 1;
+    const box = cardNames[boxName];
+    const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
+
+    // Merge all card arrays and sort alphabetically
+    const allCards = [];
     for (const [, cards] of allSections) {
       if (!Array.isArray(cards)) continue;
-      for (const card of cards) {
-        lookup[card.name] = { boxNum, position: String(position).padStart(2, '0') };
-        if (card.group && Array.isArray(card.group)) {
-          for (const sub of card.group) {
-            position++;
-            lookup[sub] = { boxNum, position: String(position).padStart(2, '0') };
-          }
-        }
-        if (card.paired_with) {
+        for (const card of cards) allCards.push(card);
+    }
+    allCards.sort((a, b) => a.name.localeCompare(b.name));
+    
+    let position = 1;
+    for (const card of allCards) {
+      lookup[card.name] = { boxNum, position: String(position).padStart(2, '0') };
+      if (card.group && Array.isArray(card.group)) {
+        for (const sub of card.group) {
           position++;
-          lookup[card.paired_with] = { boxNum, position: String(position).padStart(2, '0') };
+          lookup[sub] = { boxNum, position: String(position).padStart(2, '0') };
         }
-        position++;
       }
+      if (card.paired_with) {
+        position++;
+        lookup[card.paired_with] = { boxNum, position: String(position).padStart(2, '0') };
+      }
+      position++;
     }
   });
   return lookup;
