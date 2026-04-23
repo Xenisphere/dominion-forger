@@ -49,6 +49,35 @@ function cleanText(text) {
     .trim();
 }
 
+function buildCardLookup() {
+  const lookup = {};
+  const boxes = Object.keys(cardNames).filter(k => k !== 'all_total');
+  boxes.forEach((boxName, boxIdx) => {
+    const boxNum = String(boxIdx + 1).padStart(2, '0');
+    const box = cardNames[boxName];
+    const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
+    let position = 1;
+    for (const [, cards] of allSections) {
+      if (!Array.isArray(cards)) continue;
+      for (const card of cards) {
+        lookup[card.name] = { boxNum, position: String(position).padStart(2, '0') };
+        if (card.group && Array.isArray(card.group)) {
+          for (const sub of card.group) {
+            position++;
+            lookup[sub] = { boxNum, position: String(position).padStart(2, '0') };
+          }
+        }
+        if (card.paired_with) {
+          position++;
+          lookup[card.paired_with] = { boxNum, position: String(position).padStart(2, '0') };
+        }
+        position++;
+      }
+    }
+  });
+  return lookup;
+}
+
 function formatCost(raw, extra, isDebt) {
   if (!raw) return null;
   raw = raw.trim();
@@ -172,9 +201,9 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   const cleanedText = rawText ? cleanText(rawText) : '';
 
   const lookupInfo = lookup[cardName];
-const editionRaw = editionMatch ? editionMatch[1].trim() : null;
-const editionCode = formatEdition(editionRaw);
-const id = lookupInfo
+  const editionRaw = editionMatch ? editionMatch[1].trim() : null;
+  const editionCode = formatEdition(editionRaw);
+  const id = lookupInfo
   ? `${lookupInfo.boxNum}${editionCode}${lookupInfo.position}`
   : null;
 
