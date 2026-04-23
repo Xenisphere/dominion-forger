@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'card_names.json'), 'utf-8'));
+const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'storage/card_names.json'), 'utf-8'));
 
 function buildCardLookup() {
   const lookup = {};
