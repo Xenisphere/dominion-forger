@@ -17,16 +17,16 @@ function buildCardLookup() {
     for (const [, cards] of allSections) {
       if (!Array.isArray(cards)) continue;
       for (const card of cards) {
-        lookup[card.name] = { boxNum, position: String(position).padStart(2, '0') };
+        lookup[card.name] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition: !hasRemoved ? '10' : '11' };
         if (card.group && Array.isArray(card.group)) {
           for (const sub of card.group) {
             position++;
-            lookup[sub] = { boxNum, position: String(position).padStart(2, '0') };
+            lookup[sub] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition: !hasRemoved ? '10' : '11' };
           }
         }
         if (card.paired_with) {
           position++;
-          lookup[card.paired_with] = { boxNum, position: String(position).padStart(2, '0') };
+          lookup[card.paired_with] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition: !hasRemoved ? '10' : '11' };
         }
         position++;
       }
