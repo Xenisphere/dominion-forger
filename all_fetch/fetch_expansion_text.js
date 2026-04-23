@@ -78,6 +78,14 @@ function buildCardLookup() {
   return lookup;
 }
 
+function formatEdition(raw) {
+  if (!raw) return '10';
+  raw = raw.trim();
+  if (raw === '1&2') return '11';
+  if (raw === '2') return '01';
+  return '10';
+}
+
 function formatCost(raw, extra, isDebt) {
   if (!raw) return null;
   raw = raw.trim();
