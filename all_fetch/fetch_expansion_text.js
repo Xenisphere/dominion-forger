@@ -56,9 +56,6 @@ function buildCardLookup() {
     const boxNum = String(boxIdx + 1).padStart(2, '0');
     const box = cardNames[boxName];
     const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
-    let position = 1;
-    const box = cardNames[boxName];
-    const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
 
     // Merge all card arrays and sort alphabetically
     const allCards = [];
