@@ -8,6 +8,40 @@ const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'card_na
 function buildCardLookup() {
   const lookup = {};
   const boxes = Object.keys(cardNames).filter(k => k !== 'all_total');
+  boxes.forEach((boxName, boxIdx) => {
+    const boxNum = String(boxIdx + 1).padStart(2, '0');
+    const box = cardNames[boxName];
+    const hasRemoved = !!box.Removed;
+    const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
+    let position = 1;
+    for (const [, cards] of allSections) {
+      if (!Array.isArray(cards)) continue;
+      for (const card of cards) {
+        lookup[card.name] = { boxNum, position: String(position).padStart(2, '0') };
+        if (card.group && Array.isArray(card.group)) {
+          for (const sub of card.group) {
+            position++;
+            lookup[sub] = { boxNum, position: String(position).padStart(2, '0') };
+          }
+        }
+        if (card.paired_with) {
+          position++;
+          lookup[card.paired_with] = { boxNum, position: String(position).padStart(2, '0') };
+        }
+        position++;
+      }
+    }
+  });
+  return lookup;
+}
+
+function formatEdition(raw) {
+  if (!raw) return '10';
+  raw = raw.trim();
+  if (raw === '1&2') return '11';
+  if (raw === '2') return '01';
+  return '10';
+}
   
   boxes.forEach((boxName, boxIdx) => {
     const boxNum = String(boxIdx + 1).padStart(2, '0');
