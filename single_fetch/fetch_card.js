@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer');
-const cardsFilePath = path.join(__dirname, 'storage', 'cards.json');
+const cardsFilePath = path.join(__dirname, '..', 'storage', 'cards.json');
 const rawDir = path.join(__dirname, '..', 'raw', 'single_raw');
 
 const aliases = {
