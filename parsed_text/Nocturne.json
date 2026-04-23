@@ -1,0 +1,849 @@
+[
+  {
+    "name": "Bard",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Fate"
+    ],
+    "text": "+(2) Receive a Boon."
+  },
+  {
+    "name": "Blessed Village",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Fate"
+    ],
+    "text": "+1 Card +2 Actions | When you gain this, take a Boon. Receive it now or at the start of your next turn."
+  },
+  {
+    "name": "Cemetery",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Victory"
+    ],
+    "text": "{2} | When you gain this, trash up to 4 cards from your hand. Heirloom: Haunted Mirror"
+  },
+  {
+    "name": "Haunted Mirror",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Treasure-Heirloom"
+    ],
+    "text": "(1) | When you trash this, you may discard an Action card, to gain a Ghost."
+  },
+  {
+    "name": "Changeling",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Night"
+    ],
+    "text": "Trash this. Gain a copy of a card you have in play. | In games using this, when you gain a card costing (3) or more, you may exchange it for a Changeling."
+  },
+  {
+    "name": "Cobbler",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Night-Duration"
+    ],
+    "text": "At the start of your next turn, gain a card to your hand costing up to (4)."
+  },
+  {
+    "name": "Conclave",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(2) You may play an Action card from your hand that you dont have a copy of in play. If you do, +1 Action."
+  },
+  {
+    "name": "Crypt",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Night-Duration"
+    ],
+    "text": "Set aside any number of nonDuration Treasures you have in play, face down (under this). While any remain, at the start of each of your turns, put one of them into your hand."
+  },
+  {
+    "name": "Cursed Village",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Doom"
+    ],
+    "text": "+2 Actions Draw until you have 6 cards in hand. | When you gain this, receive a Hex."
+  },
+  {
+    "name": "Den of Sin",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Night-Duration"
+    ],
+    "text": "At the start of your next turn, +2 Cards. | This is gained to your hand (instead of your discard pile)."
+  },
+  {
+    "name": "Devil's Workshop",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Night"
+    ],
+    "text": "If the number of cards youve gained this turn is: gain an Imp; gain a card costing up to (4); gain a Gold."
+  },
+  {
+    "name": "Druid",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Fate"
+    ],
+    "text": "+1 Buy Receive one of the setaside Boons (leaving it there). | Setup: Set aside the top 3 Boons face up."
+  },
+  {
+    "name": "Exorcist",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Night"
+    ],
+    "text": "Trash a card from your hand. Gain a cheaper Spirit from one of the Spirit piles."
+  },
+  {
+    "name": "Faithful Hound",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "+2 Cards | When you discard this other than during Cleanup, you may set it aside, and put it into your hand at end of turn."
+  },
+  {
+    "name": "Fool",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Fate"
+    ],
+    "text": "If you arent the player with Lost in the Woods: take it, take 3 Boons, and receive the Boons in any order. Heirloom: Lucky Coin"
+  },
+  {
+    "name": "Lost in the Woods",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "State"
+    ],
+    "text": "At the start of your turn, you may discard a card to receive a Boon."
+  },
+  {
+    "name": "Lucky Coin",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Treasure-Heirloom"
+    ],
+    "text": "(1) Gain a Silver."
+  },
+  {
+    "name": "Ghost",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Night-Duration-Spirit"
+    ],
+    "text": "Reveal cards from your deck until you reveal an Action. Discard the other cards and set aside the Action. At the start of your next turn, play it twice. (This is not in the Supply.)"
+  },
+  {
+    "name": "Ghost Town",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Night-Duration"
+    ],
+    "text": "At the start of your next turn, +1 Card and +1 Action. | This is gained to your hand (instead of your discard pile)."
+  },
+  {
+    "name": "Guardian",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Night-Duration"
+    ],
+    "text": "At the start of your next turn, +(1). Until then, when another player plays an Attack card, it doesnt affect you. | This is gained to your hand (instead of your discard pile)."
+  },
+  {
+    "name": "Idol",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Treasure-Attack-Fate"
+    ],
+    "text": "(2) If you have an odd number of Idols in play (counting this), receive a Boon; otherwise, each other player gains a Curse."
+  },
+  {
+    "name": "Imp",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Spirit"
+    ],
+    "text": "+2 Cards You may play an Action card from your hand that you dont have a copy of in play. (This is not in the Supply.)"
+  },
+  {
+    "name": "Leprechaun",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Doom"
+    ],
+    "text": "Gain a Gold. If you have exactly 7 cards in play, gain a Wish. Otherwise, receive a Hex."
+  },
+  {
+    "name": "Monastery",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Night"
+    ],
+    "text": "For each card youve gained this turn, you may trash a card from your hand or a Copper you have in play."
+  },
+  {
+    "name": "Necromancer",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "Choose a face up, nonDuration Action card in the trash. Turn it face down for the turn, and play it, leaving it there. | Setup: Put the 3 Zombies into the trash."
+  },
+  {
+    "name": "Zombie Apprentice",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Zombie"
+    ],
+    "text": "You may trash an Action card from your hand for +3 Cards and +1 Action."
+  },
+  {
+    "name": "Zombie Mason",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Zombie"
+    ],
+    "text": "Trash the top card of your deck. You may gain a card costing up to (1) more than it."
+  },
+  {
+    "name": "Zombie Spy",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Zombie"
+    ],
+    "text": "+1 Card +1 Action Look at the top card of your deck. Discard it or put it back."
+  },
+  {
+    "name": "Night Watchman",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Night"
+    ],
+    "text": "Look at the top 5 cards of your deck, discard any number, and put the rest back in any order. | This is gained to your hand (instead of your discard pile)."
+  },
+  {
+    "name": "Pixie",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Fate"
+    ],
+    "text": "+1 Card +1 Action Discard the top Boon. You may trash this to receive that Boon twice. Heirloom: Goat"
+  },
+  {
+    "name": "Goat",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Treasure-Heirloom"
+    ],
+    "text": "(1) You may trash a card from your hand."
+  },
+  {
+    "name": "Pooka",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "You may trash a Treasure other than Cursed Gold from your hand, for +4 Cards. Heirloom: Cursed Gold"
+  },
+  {
+    "name": "Cursed Gold",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Treasure-Heirloom"
+    ],
+    "text": "(3) Gain a Curse."
+  },
+  {
+    "name": "Raider",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(6)",
+    "types": [
+      "Night-Duration-Attack"
+    ],
+    "text": "Each other player with 5 or more cards in hand discards a copy of a card you have in play (or reveals they cant). At the start of your next turn, +(3)."
+  },
+  {
+    "name": "Sacred Grove",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Fate"
+    ],
+    "text": "+1 Buy +(3) Receive a Boon. If it doesnt give +(1), each other player may receive it."
+  },
+  {
+    "name": "Secret Cave",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Duration"
+    ],
+    "text": "+1 Card +1 Action You may discard 3 cards. If you did, then at the start of your next turn, +(3). Heirloom: Magic Lamp"
+  },
+  {
+    "name": "Magic Lamp",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Treasure-Heirloom"
+    ],
+    "text": "(1) If there are at least 6 cards that you have exactly 1 copy of in play (counting this), trash this. If you did, gain 3 Wishes."
+  },
+  {
+    "name": "Shepherd",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Discard any number of Victory cards, revealing them. +2 Cards per card discarded. Heirloom: Pasture"
+  },
+  {
+    "name": "Pasture",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Treasure-Victory-Heirloom"
+    ],
+    "text": "(1) | Worth {1} per Estate you have."
+  },
+  {
+    "name": "Skulk",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack-Doom"
+    ],
+    "text": "+1 Buy Each other player receives the next Hex. | When you gain this, gain a Gold."
+  },
+  {
+    "name": "Tormentor",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Doom"
+    ],
+    "text": "+(2) If you have no other cards in play, gain an Imp. Otherwise, each other player receives the next Hex."
+  },
+  {
+    "name": "Tracker",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Fate"
+    ],
+    "text": "+(1) This turn, when you gain a card, you may put it onto your deck. Receive a Boon. Heirloom: Pouch"
+  },
+  {
+    "name": "Pouch",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Treasure-Heirloom"
+    ],
+    "text": "(1) +1 Buy"
+  },
+  {
+    "name": "Tragic Hero",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+3 Cards +1 Buy If you have 8 or more cards in hand (after drawing), trash this and gain a Treasure."
+  },
+  {
+    "name": "Vampire",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Night-Attack-Doom"
+    ],
+    "text": "Each other player receives the next Hex. Gain a card costing up to (5) other than a Vampire. Exchange this for a Bat."
+  },
+  {
+    "name": "Bat",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Night"
+    ],
+    "text": "Trash up to 2 cards from your hand. If you trashed at least one, exchange this for a Vampire. (This is not in the Supply.)"
+  },
+  {
+    "name": "Werewolf",
+    "supply": "Kingdom Pile",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Night-Attack-Doom"
+    ],
+    "text": "If its your Night phase, each other player receives the next Hex. Otherwise, +3 Cards."
+  },
+  {
+    "name": "Will-o'-Wisp",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Spirit"
+    ],
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If it costs (2) or less, put it into your hand. (This is not in the Supply.)"
+  },
+  {
+    "name": "Wish",
+    "supply": "Non-Supply",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Return this to its pile. If you did, gain a card to your hand costing up to (6). (This is not in the Supply.)"
+  },
+  {
+    "name": "The Field's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "+1 Action +(1) (Keep this until Cleanup.)"
+  },
+  {
+    "name": "The Flame's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "You may trash a card from your hand."
+  },
+  {
+    "name": "The Forest's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "+1 Buy +(1) (Keep this until Cleanup.)"
+  },
+  {
+    "name": "The Moon's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "Look through your discard pile. You may put a card from it onto your deck."
+  },
+  {
+    "name": "The Mountain's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "Gain a Silver."
+  },
+  {
+    "name": "The River's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "+1 Card at the end of this turn. (Keep this until Cleanup.)"
+  },
+  {
+    "name": "The Sea's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "+1 Card"
+  },
+  {
+    "name": "The Sky's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "You may discard 3 cards to gain a Gold."
+  },
+  {
+    "name": "The Sun's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "Look at the top 4 cards of your deck. Discard any number of them and put the rest back in any order."
+  },
+  {
+    "name": "The Swamp's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "Gain a WilloWisp."
+  },
+  {
+    "name": "The Earth's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "You may discard a Treasure to gain a card costing up to (4)."
+  },
+  {
+    "name": "The Wind's Gift",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Boon"
+    ],
+    "text": "+2 Cards Discard 2 cards."
+  },
+  {
+    "name": "Bad Omens",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "Put your deck into your discard pile. Look through it and put 2 Coppers from it onto your deck (or reveal you cant)."
+  },
+  {
+    "name": "Delusion",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "If you dont have Deluded or Envious, take Deluded."
+  },
+  {
+    "name": "Deluded",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "State"
+    ],
+    "text": "At the start of your Buy phase, return this, and you cant buy Actions this turn."
+  },
+  {
+    "name": "Envy",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "If you dont have Deluded or Envious, take Envious."
+  },
+  {
+    "name": "Envious",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "State"
+    ],
+    "text": "At the start of your Buy phase, return this, and Silver and Gold make (1) this turn."
+  },
+  {
+    "name": "Famine",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "Reveal the top 3 cards of your deck. Discard the Actions. Shuffle the rest into your deck."
+  },
+  {
+    "name": "Fear",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "If you have at least 5 cards in hand, discard an Action or Treasure (or reveal you cant)."
+  },
+  {
+    "name": "Greed",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "Gain a Copper onto your deck."
+  },
+  {
+    "name": "Haunting",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "If you have at least 4 cards in hand, put one of them onto your deck."
+  },
+  {
+    "name": "Locusts",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "Trash the top card of your deck. If its Copper or Estate, gain a Curse. Otherwise, gain a cheaper card that shares a type with it."
+  },
+  {
+    "name": "Misery",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "If this is your first Misery this game, take Miserable. Otherwise, flip it over to Twice Miserable."
+  },
+  {
+    "name": "Miserable",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "State"
+    ],
+    "text": ""
+  },
+  {
+    "name": "Twice Miserable",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "State"
+    ],
+    "text": ""
+  },
+  {
+    "name": "Plague",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "Gain a Curse to your hand."
+  },
+  {
+    "name": "Poverty",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "Discard down to 3 cards in hand."
+  },
+  {
+    "name": "War",
+    "supply": "Status",
+    "set": "Nocturne",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Hex"
+    ],
+    "text": "Reveal cards from your deck until revealing one costing (3) or (4). Trash it and discard the rest."
+  }
+]
