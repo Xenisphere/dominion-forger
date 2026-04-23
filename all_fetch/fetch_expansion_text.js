@@ -171,21 +171,30 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir) {
   const rawText = textFields.join(' | ').trim();
   const cleanedText = rawText ? cleanText(rawText) : '';
 
-  return {
-    name: cardName,
-    supply,
-    set: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-    edition: editionMatch ? editionMatch[1].trim() : 'Unknown',
-    cost: costMatch || cost2Match || cost3Match ? (
-      costMatch && cost2Match
-        ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
-        : cost3Match
-        ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
-        : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch)
-    ) : null,
-    types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-    text: cleanedText
-  };
+  const lookup = buildCardLookup();
+const lookupInfo = lookup[cardName];
+const editionRaw = editionMatch ? editionMatch[1].trim() : null;
+const editionCode = formatEdition(editionRaw);
+const id = lookupInfo
+  ? `${lookupInfo.boxNum}${editionCode}${lookupInfo.position}`
+  : null;
+
+return {
+  id,
+  name: cardName,
+  supply,
+  set: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
+  edition: editionRaw || 'Unknown',
+  cost: costMatch || cost2Match || cost3Match ? (
+    costMatch && cost2Match
+      ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
+      : cost3Match
+      ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
+      : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch)
+  ) : null,
+  types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
+  text: cleanedText
+};
 }
 
 async function main() {
