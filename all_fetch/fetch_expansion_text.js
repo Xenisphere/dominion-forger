@@ -62,7 +62,7 @@ function formatCost(raw, extra, isDebt) {
   return raw;
 }
 
-async function fetchAndParseCard(cardName, sharedPage, rawDir) {
+async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   cardName = aliases[cardName] || cardName;
   const safeFileName = cardName.replace(/'/g, '%27');
   const localPath = path.join(rawDir, `${safeFileName}.json`);
@@ -171,30 +171,29 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir) {
   const rawText = textFields.join(' | ').trim();
   const cleanedText = rawText ? cleanText(rawText) : '';
 
-  const lookup = buildCardLookup();
-const lookupInfo = lookup[cardName];
+  const lookupInfo = lookup[cardName];
 const editionRaw = editionMatch ? editionMatch[1].trim() : null;
 const editionCode = formatEdition(editionRaw);
 const id = lookupInfo
   ? `${lookupInfo.boxNum}${editionCode}${lookupInfo.position}`
   : null;
 
-return {
-  id,
-  name: cardName,
-  supply,
-  set: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
-  edition: editionRaw || 'Unknown',
-  cost: costMatch || cost2Match || cost3Match ? (
-    costMatch && cost2Match
-      ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
-      : cost3Match
-      ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
-      : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch)
-  ) : null,
-  types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-  text: cleanedText
-};
+  return {
+    id,
+    name: cardName,
+    supply,
+    set: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
+    edition: editionRaw || 'Unknown',
+    cost: costMatch || cost2Match || cost3Match ? (
+      costMatch && cost2Match
+        ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
+        : cost3Match
+        ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
+        : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch)
+    ) : null,
+    types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
+    text: cleanedText
+  };
 }
 
 async function main() {
@@ -235,13 +234,14 @@ async function main() {
 
   const results = [];
   const failed = [];
+  const lookup = buildCardLookup();
 
   const browser = await puppeteer.launch({ headless: true });
   try {
     const sharedPage = await browser.newPage();
     for (const cardName of toFetch) {
       try {
-        const card = await fetchAndParseCard(cardName, sharedPage, rawDir);
+        const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup);
         if (card) {
           results.push(card);
           console.log(`[DONE] ${cardName}`);
