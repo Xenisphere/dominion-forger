@@ -42,35 +42,6 @@ function formatEdition(raw) {
   if (raw === '2') return '01';
   return '10';
 }
-  
-  boxes.forEach((boxName, boxIdx) => {
-    const boxNum = String(boxIdx + 1).padStart(2, '0');
-    const box = cardNames[boxName];
-    const hasRemoved = !!box.Removed;
-    const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
-    let position = 1;
-
-    for (const [, cards] of allSections) {
-      if (!Array.isArray(cards)) continue;
-      for (const card of cards) {
-        const edition = !hasRemoved ? '10' : '11';
-        lookup[card.name] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition };
-        if (card.group) {
-          for (const sub of card.group) {
-            position++;
-            lookup[sub] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition };
-          }
-        }
-        if (card.paired_with) {
-          position++;
-          lookup[card.paired_with] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition };
-        }
-        position++;
-      }
-    }
-  });
-  return lookup;
-}
 
 function downloadImage(url, destPath) {
   return new Promise((resolve, reject) => {
