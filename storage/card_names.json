@@ -6,12 +6,11 @@
       { "name": "Duchy" },
       { "name": "Estate" },
       { "name": "Gold" },
-      { "name": "Potion" },
       { "name": "Province" },
       { "name": "Silver" }
     ],
     "Card Count": {
-      "Kingdom": 8
+      "Kingdom": 10
     }
   },
   "Dominion": {
@@ -205,7 +204,7 @@
       { "name": "Venture" }
     ],
     "Card Count": {
-      "Kingdom": 27,
+      "Kingdom": 25,
       "Removed": 9
     }
   },

@@ -196,5 +196,27 @@
       "Action"
     ],
     "text": "+1 Card +2 Actions You may discard 2 cards for +(2). You may pay (2) for +2 Cards."
+  },
+  {
+    "name": "Colony",
+    "supply": "Basic",
+    "set": "Prosperity",
+    "edition": "1&2",
+    "cost": "(11)",
+    "types": [
+      "Victory"
+    ],
+    "text": "{10}"
+  },
+  {
+    "name": "Workshop",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "Gain a card costing up to (4)."
   }
 ]
