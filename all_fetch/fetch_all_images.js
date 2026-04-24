@@ -35,6 +35,19 @@ function buildCardLookup() {
   return lookup;
 }
 
+function buildEditionLookup() {
+  const editionLookup = {};
+  const parsedTextDir = path.join(__dirname, '..', 'parsed_text');
+  for (const file of fs.readdirSync(parsedTextDir)) {
+    if (!file.endsWith('.json')) continue;
+    const cards = JSON.parse(fs.readFileSync(path.join(parsedTextDir, file), 'utf-8'));
+    for (const card of cards) {
+      if (card.id) editionLookup[card.name] = card.id;
+    }
+  }
+  return editionLookup;
+}
+
 function formatEdition(raw) {
   if (!raw) return '10';
   raw = raw.trim();
@@ -73,9 +86,9 @@ function fetchHtml(url) {
   });
 }
 
-async function fetchImage(cardName, info) {
+async function fetchImage(cardName, info, editionLookup) {
   const { boxName, boxNum, position, edition } = info;
-  const id = `${boxNum}${edition}${position}`;
+  const id = editionLookup[cardName] || `${boxNum}10${position}`;
   const safeName = cardName.replace(/ /g, '_');
   const filename = `${safeName}_${id}.jpg`;
 
@@ -101,11 +114,12 @@ async function fetchImage(cardName, info) {
 
 async function main() {
   const lookup = buildCardLookup();
+  const editionLookup = buildEditionLookup();
   const failed = [];
 
   for (const [cardName, info] of Object.entries(lookup)) {
     try {
-      const success = await fetchImage(cardName, info);
+      const success = await fetchImage(cardName, info, editionLookup);
       if (!success) {
         console.error(`[FAIL] ${cardName} — could not find image URL`);
         failed.push(cardName);
