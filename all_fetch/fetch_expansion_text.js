@@ -109,7 +109,6 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   cardName = aliases[cardName] || cardName;
   const safeFileName = cardName.replace(/'/g, '%27');
   const localPath = path.join(rawDir, `${safeFileName}.json`);
-  console.log(`[DEBUG] Looking for cache at: ${localPath}`);
 
   let fileData = null;
   let wikitext = '';
