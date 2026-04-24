@@ -222,8 +222,8 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   : null;
 
   return {
-    id,
     name: cardName,
+    id,
     supply,
     set: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
     edition: editionRaw || 'Unknown',
