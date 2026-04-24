@@ -242,73 +242,72 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
 async function main() {
   const expansionInput = process.argv[2];
   if (!expansionInput) {
-    console.error('Usage: node fetch_expansion_text.js "Expansion Name"');
+    console.error('Usage: node fetch_expansion_text.js "Expansion Name" or "all"');
     process.exit(1);
   }
 
-  // Case-insensitive match against card_names.json keys
-  const expansionName = Object.keys(cardNames).find(
-    k => k.toLowerCase() === expansionInput.toLowerCase()
-  );
-  if (!expansionName || expansionName === 'all_total') {
-    console.error(`[ERROR] Expansion "${expansionInput}" not found in card_names.json`);
-    process.exit(1);
-  }
-  const rawDir = path.join(__dirname, '..', 'raw', expansionName);
-  if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir, { recursive: true });
+  const expansionNames = expansionInput.toLowerCase() === 'all'
+    ? Object.keys(cardNames).filter(k => k !== 'all_total')
+    : (() => {
+        const match = Object.keys(cardNames).find(k => k.toLowerCase() === expansionInput.toLowerCase());
+        if (!match) {
+          console.error(`[ERROR] Expansion "${expansionInput}" not found in card_names.json`);
+          process.exit(1);
+        }
+        return [match];
+      })();
 
-  if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
   if (!fs.existsSync(rawTextDir)) fs.mkdirSync(rawTextDir);
 
-  const box = cardNames[expansionName];
-  const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
-
-  // Collect all card names to fetch
-  const toFetch = [];
-  for (const [, cards] of allSections) {
-    if (!Array.isArray(cards)) continue;
-    for (const card of cards) {
-      toFetch.push(card.name);
-      if (card.group && Array.isArray(card.group)) toFetch.push(...card.group);
-      if (card.paired_with) toFetch.push(card.paired_with);
-      if (card.chain) toFetch.push(...card.chain);
-    }
-  }
-
-  const results = [];
-  const failed = [];
   const lookup = buildCardLookup();
-
   const browser = await puppeteer.launch({ headless: true });
   try {
     const sharedPage = await browser.newPage();
-    for (const cardName of toFetch) {
-      try {
-        const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup);
-        if (card) {
-          results.push(card);
-          console.log(`[DONE] ${cardName}`);
-        } else {
+    for (const expansionName of expansionNames) {
+      console.log(`\n[EXPANSION] ${expansionName}`);
+      const rawDir = path.join(__dirname, '..', 'raw', 'single_raw');
+
+      const box = cardNames[expansionName];
+      const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
+
+      const toFetch = [];
+      for (const [, cards] of allSections) {
+        if (!Array.isArray(cards)) continue;
+        for (const card of cards) {
+          toFetch.push(card.name);
+          if (card.group && Array.isArray(card.group)) toFetch.push(...card.group);
+          if (card.paired_with) toFetch.push(card.paired_with);
+          if (card.chain) toFetch.push(...card.chain);
+        }
+      }
+
+      const results = [];
+      const failed = [];
+      for (const cardName of toFetch) {
+        try {
+          const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup);
+          if (card) {
+            results.push(card);
+            console.log(`[DONE] ${cardName}`);
+          } else {
+            failed.push(cardName);
+          }
+        } catch (err) {
+          console.error(`[FAIL] ${cardName} — ${err.message}`);
           failed.push(cardName);
         }
-      } catch (err) {
-        console.error(`[FAIL] ${cardName} — ${err.message}`);
-        failed.push(cardName);
+      }
+
+      const outPath = path.join(rawTextDir, `${expansionName}.json`);
+      fs.writeFileSync(outPath, JSON.stringify(results, null, 2), 'utf-8');
+      console.log(`[SAVED] parsed_text/${expansionName}.json (${results.length} cards)`);
+
+      if (failed.length > 0) {
+        console.log(`Failed (${failed.length}): ${failed.join(', ')}`);
       }
     }
   } finally {
     await browser.close();
-  }
-
-  const outPath = path.join(rawTextDir, `${expansionName}.json`);
-  fs.writeFileSync(outPath, JSON.stringify(results, null, 2), 'utf-8');
-  console.log(`\n[SAVED] raw_text/${expansionName}.json (${results.length} cards)`);
-
-  if (failed.length > 0) {
-    console.log(`\nFailed cards (${failed.length}):`);
-    for (const name of failed) console.log(`  - ${name}`);
-  } else {
-    console.log('All cards fetched successfully!');
   }
 }
 
