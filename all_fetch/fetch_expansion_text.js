@@ -266,7 +266,7 @@ async function main() {
     const sharedPage = await browser.newPage();
     for (const expansionName of expansionNames) {
       console.log(`\n[EXPANSION] ${expansionName}`);
-      const rawDir = path.join(__dirname, '..', 'raw', 'single_raw');
+      const rawDir = path.join(__dirname, '..', 'raw');
 
       const box = cardNames[expansionName];
       const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
