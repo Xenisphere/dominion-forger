@@ -103,10 +103,13 @@ async function fetchImage(cardName, info, editionLookup) {
 
   const mediaUrl = `https://wiki.dominionstrategy.com/index.php/File:${safeName}.jpg`;
   const html = await fetchHtml(mediaUrl);
-  const match = html.match(/og:image" content="([^"]+\.jpg)"/);
+  const match = html.match(/og:image" content="([^"]+\.jpg)"/) ||
+                html.match(/href="(\/images\/[^"]+\.jpg)"/);
   if (!match) return false;
 
-  const directUrl = match[1].replace('http://', 'https://');
+  const directUrl = match[1].startsWith('http')
+    ? match[1].replace('http://', 'https://')
+    : `https://wiki.dominionstrategy.com${match[1]}`;
   await downloadImage(directUrl, destPath);
   //console.log(`[DONE] ${cardName} → images/${boxName}/${filename}`);
   return true;
