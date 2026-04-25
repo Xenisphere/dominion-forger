@@ -124,17 +124,19 @@ async function main() {
     try {
       const success = await fetchImage(cardName, info, editionLookup);
       if (!success) {
-        console.error(`[FAIL] ${cardName} — could not find image URL`);
-        failed.push(cardName);
+        const id = editionLookup[cardName] || `${info.boxNum}10${info.position}`;
+        console.error(`[FAIL] ${cardName} (${id}) — could not find image URL`);
+        failed.push(`${cardName} (${id})`);
       }
     } catch (err) {
-      console.error(`[FAIL] ${cardName} — ${err.message}`);
-      failed.push(cardName);
+      const id = editionLookup[cardName] || `${info.boxNum}10${info.position}`;
+      console.error(`[FAIL] ${cardName} (${id}) — ${err.message}`);
+      failed.push(`${cardName} (${id})`);
     }
   }
 
   if (failed.length > 0) {
-    console.log(`\nFailed cards (${failed.length}): (${card.id}):`);
+    console.log(`\nFailed cards (${failed.length}):`);
     for (const name of failed) console.log(`  - ${name}`);
   } else {
     console.log('\nAll images fetched successfully!');
