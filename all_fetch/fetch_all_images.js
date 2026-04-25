@@ -134,7 +134,7 @@ async function main() {
   }
 
   if (failed.length > 0) {
-    console.log(`\nFailed cards (${failed.length}):`);
+    console.log(`\nFailed cards (${failed.length}): (${card.id}):`);
     for (const name of failed) console.log(`  - ${name}`);
   } else {
     console.log('\nAll images fetched successfully!');
