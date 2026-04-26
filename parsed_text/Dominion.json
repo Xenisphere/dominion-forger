@@ -1,319 +1,7 @@
 [
   {
-    "id": "020102",
-    "name": "Artisan",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "2",
-    "cost": "(6)",
-    "types": [
-      "Action"
-    ],
-    "text": "Gain a card to your hand costing up to (5). Put a card from your hand onto your deck."
-  },
-  {
-    "id": "020103",
-    "name": "Bandit",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "2",
-    "cost": "(5)",
-    "types": [
-      "Action-Attack"
-    ],
-    "text": "Gain a Gold. Each other player reveals the top 2 cards of their deck, trashes a revealed Treasure other than Copper, and discards the rest."
-  },
-  {
-    "id": "021104",
-    "name": "Bureaucrat",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(4)",
-    "types": [
-      "Action-Attack"
-    ],
-    "text": "Gain a Silver onto your deck. Each other player reveals a Victory card from their hand and puts it onto their deck (or reveals a hand with no Victory cards)."
-  },
-  {
-    "id": "021105",
-    "name": "Cellar",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(2)",
-    "types": [
-      "Action"
-    ],
-    "text": "+1 Action Discard any number of cards. +1 Card per card discarded."
-  },
-  {
-    "id": "021107",
-    "name": "Chapel",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(2)",
-    "types": [
-      "Action"
-    ],
-    "text": "Trash up to 4 cards from your hand."
-  },
-  {
-    "id": "021108",
-    "name": "Council Room",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(5)",
-    "types": [
-      "Action"
-    ],
-    "text": "+4 Cards +1 Buy Each other player draws a card."
-  },
-  {
-    "id": "021110",
-    "name": "Festival",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(5)",
-    "types": [
-      "Action"
-    ],
-    "text": "+2 Actions +1 Buy +(2)"
-  },
-  {
-    "id": "021111",
-    "name": "Gardens",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(4)",
-    "types": [
-      "Victory"
-    ],
-    "text": "Worth {1} per 10 cards you have (round down)."
-  },
-  {
-    "id": "020112",
-    "name": "Harbinger",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "2",
-    "cost": "(3)",
-    "types": [
-      "Action"
-    ],
-    "text": "+1 Card +1 Action Look through your discard pile. You may put a card from it onto your deck."
-  },
-  {
-    "id": "021113",
-    "name": "Laboratory",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(5)",
-    "types": [
-      "Action"
-    ],
-    "text": "+2 Cards +1 Action"
-  },
-  {
-    "id": "021114",
-    "name": "Library",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(5)",
-    "types": [
-      "Action"
-    ],
-    "text": "Draw until you have 7 cards in hand, skipping any Action cards you choose to; set those aside, discarding them afterwards."
-  },
-  {
-    "id": "021115",
-    "name": "Market",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(5)",
-    "types": [
-      "Action"
-    ],
-    "text": "+1 Card +1 Action +1 Buy +(1)"
-  },
-  {
-    "id": "020116",
-    "name": "Merchant",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "2",
-    "cost": "(3)",
-    "types": [
-      "Action"
-    ],
-    "text": "+1 Card +1 Action The first time you play a Silver this turn, +(1)."
-  },
-  {
-    "id": "021117",
-    "name": "Militia",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(4)",
-    "types": [
-      "Action-Attack"
-    ],
-    "text": "+(2) Each other player discards down to 3 cards in hand."
-  },
-  {
-    "id": "021118",
-    "name": "Mine",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(5)",
-    "types": [
-      "Action"
-    ],
-    "text": "You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to (3) more than it."
-  },
-  {
-    "id": "021119",
-    "name": "Moat",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(2)",
-    "types": [
-      "Action-Reaction"
-    ],
-    "text": "+2 Cards | When another player plays an Attack card, you may first reveal this from your hand, to be unaffected it."
-  },
-  {
-    "id": "021120",
-    "name": "Moneylender",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(4)",
-    "types": [
-      "Action"
-    ],
-    "text": "You may trash a Copper from your hand for +(3)."
-  },
-  {
-    "id": "020121",
-    "name": "Poacher",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "2",
-    "cost": "(4)",
-    "types": [
-      "Action"
-    ],
-    "text": "+1 Card +1 Action +(1) Discard a card per empty Supply pile."
-  },
-  {
-    "id": "021122",
-    "name": "Remodel",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(4)",
-    "types": [
-      "Action"
-    ],
-    "text": "Trash a card from your hand. Gain a card costing up to (2) more than it."
-  },
-  {
-    "id": "020123",
-    "name": "Sentry",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "2",
-    "cost": "(5)",
-    "types": [
-      "Action"
-    ],
-    "text": "+1 Card +1 Action Look at the top 2 cards of your deck. Trash andor discard any number of them. Put the rest back on top in any order."
-  },
-  {
-    "id": "021124",
-    "name": "Smithy",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(4)",
-    "types": [
-      "Action"
-    ],
-    "text": "+3 Cards"
-  },
-  {
-    "id": "021127",
-    "name": "Throne Room",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(4)",
-    "types": [
-      "Action"
-    ],
-    "text": "You may play an Action card from your hand twice."
-  },
-  {
-    "id": "020128",
-    "name": "Vassal",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "2",
-    "cost": "(3)",
-    "types": [
-      "Action"
-    ],
-    "text": "+(2) Discard the top card of your deck. If its an Action card, you may play it."
-  },
-  {
-    "id": "021129",
-    "name": "Village",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(3)",
-    "types": [
-      "Action"
-    ],
-    "text": "+1 Card +2 Actions"
-  },
-  {
-    "id": "021130",
-    "name": "Witch",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(5)",
-    "types": [
-      "Action-Attack"
-    ],
-    "text": "+2 Cards Each other player gains a Curse."
-  },
-  {
-    "id": "021132",
-    "name": "Workshop",
-    "supply": "Kingdom Pile",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(3)",
-    "types": [
-      "Action"
-    ],
-    "text": "Gain a card costing up to (4)."
-  },
-  {
-    "id": "021001",
     "name": "Adventurer",
+    "id": "021001",
     "supply": "Kingdom Pile",
     "set": "Dominion",
     "edition": "1",
@@ -324,8 +12,56 @@
     "text": "Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards into your hand and discard the other revealed cards."
   },
   {
-    "id": "021006",
+    "name": "Artisan",
+    "id": "020102",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "2",
+    "cost": "(6)",
+    "types": [
+      "Action"
+    ],
+    "text": "Gain a card to your hand costing up to (5). Put a card from your hand onto your deck."
+  },
+  {
+    "name": "Bandit",
+    "id": "020103",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Gain a Gold. Each other player reveals the top 2 cards of their deck, trashes a revealed Treasure other than Copper, and discards the rest."
+  },
+  {
+    "name": "Bureaucrat",
+    "id": "021104",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Gain a Silver onto your deck. Each other player reveals a Victory card from their hand and puts it onto their deck (or reveals a hand with no Victory cards)."
+  },
+  {
+    "name": "Cellar",
+    "id": "021105",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Discard any number of cards. +1 Card per card discarded."
+  },
+  {
     "name": "Chancellor",
+    "id": "021006",
     "supply": "Kingdom Pile",
     "set": "Dominion",
     "edition": "1",
@@ -336,8 +72,44 @@
     "text": "+(2) You may immediately put your deck into your discard pile."
   },
   {
-    "id": "021009",
+    "name": "Chapel",
+    "id": "021107",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "Trash up to 4 cards from your hand."
+  },
+  {
+    "name": "Council Room",
+    "id": "021108",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+4 Cards +1 Buy Each other player draws a card."
+  },
+  {
+    "name": "Curse",
+    "id": "021109",
+    "supply": "Basic",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(0)",
+    "types": [
+      "Curse"
+    ],
+    "text": ""
+  },
+  {
     "name": "Feast",
+    "id": "021010",
     "supply": "Kingdom Pile",
     "set": "Dominion",
     "edition": "1",
@@ -348,8 +120,188 @@
     "text": "Trash this card. Gain a card costing up to (5)."
   },
   {
-    "id": "021025",
+    "name": "Festival",
+    "id": "021111",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Actions +1 Buy +(2)"
+  },
+  {
+    "name": "Gardens",
+    "id": "021112",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Victory"
+    ],
+    "text": "Worth {1} per 10 cards you have (round down)."
+  },
+  {
+    "name": "Harbinger",
+    "id": "020113",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Look through your discard pile. You may put a card from it onto your deck."
+  },
+  {
+    "name": "Laboratory",
+    "id": "021114",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +1 Action"
+  },
+  {
+    "name": "Library",
+    "id": "021115",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Draw until you have 7 cards in hand, skipping any Action cards you choose to; set those aside, discarding them afterwards."
+  },
+  {
+    "name": "Market",
+    "id": "021116",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +1 Buy +(1)"
+  },
+  {
+    "name": "Merchant",
+    "id": "020117",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action The first time you play a Silver this turn, +(1)."
+  },
+  {
+    "name": "Militia",
+    "id": "021118",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+(2) Each other player discards down to 3 cards in hand."
+  },
+  {
+    "name": "Mine",
+    "id": "021119",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to (3) more than it."
+  },
+  {
+    "name": "Moat",
+    "id": "021120",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "+2 Cards | When another player plays an Attack card, you may first reveal this from your hand, to be unaffected it."
+  },
+  {
+    "name": "Moneylender",
+    "id": "021121",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "You may trash a Copper from your hand for +(3)."
+  },
+  {
+    "name": "Poacher",
+    "id": "020122",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +(1) Discard a card per empty Supply pile."
+  },
+  {
+    "name": "Remodel",
+    "id": "021123",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "Trash a card from your hand. Gain a card costing up to (2) more than it."
+  },
+  {
+    "name": "Sentry",
+    "id": "020124",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Look at the top 2 cards of your deck. Trash andor discard any number of them. Put the rest back on top in any order."
+  },
+  {
+    "name": "Smithy",
+    "id": "021125",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+3 Cards"
+  },
+  {
     "name": "Spy",
+    "id": "021026",
     "supply": "Kingdom Pile",
     "set": "Dominion",
     "edition": "1",
@@ -360,8 +312,8 @@
     "text": "+1 Card +1 Action Each player (including you) reveals the top card of their deck and either discards it or puts it back, your choice."
   },
   {
-    "id": "021026",
     "name": "Thief",
+    "id": "021027",
     "supply": "Kingdom Pile",
     "set": "Dominion",
     "edition": "1",
@@ -372,8 +324,56 @@
     "text": "Each other player reveals the top 2 cards of their deck. If they revealed any Treasure cards, they trash one of them that you choose. You may gain any or all of these trashed cards. They discard the other revealed cards."
   },
   {
-    "id": "021031",
+    "name": "Throne Room",
+    "id": "021128",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "You may play an Action card from your hand twice."
+  },
+  {
+    "name": "Vassal",
+    "id": "020129",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(2) Discard the top card of your deck. If its an Action card, you may play it."
+  },
+  {
+    "name": "Village",
+    "id": "021130",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions"
+  },
+  {
+    "name": "Witch",
+    "id": "021131",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+2 Cards Each other player gains a Curse."
+  },
+  {
     "name": "Woodcutter",
+    "id": "021032",
     "supply": "Kingdom Pile",
     "set": "Dominion",
     "edition": "1",
@@ -382,5 +382,17 @@
       "Action"
     ],
     "text": "+1 Buy +(2)"
+  },
+  {
+    "name": "Workshop",
+    "id": "021133",
+    "supply": "Kingdom Pile",
+    "set": "Dominion",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "Gain a card costing up to (4)."
   }
 ]

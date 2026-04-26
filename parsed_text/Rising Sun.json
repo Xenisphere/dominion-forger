@@ -1,0 +1,602 @@
+[
+  {
+    "name": "Alley",
+    "id": "171001",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Shadow"
+    ],
+    "text": "+1 Card +1 Action Discard a card. | You can play this from your deck as if in your hand."
+  },
+  {
+    "name": "Aristocrat",
+    "id": "171004",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "If the number of Aristocrats you have in play is: 1 or +3 Actions; 2 or +3 Cards; 3 or +(3); 4 or +3 Buys."
+  },
+  {
+    "name": "Artist",
+    "id": "171005",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "<8>",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action +1 Card per card you have exactly one copy of in play."
+  },
+  {
+    "name": "Change",
+    "id": "171009",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "If you have any <_>, +(3). Otherwise, trash a card from your hand, and gain a card costing more (_) than it. +<_> equal to the difference in (_)."
+  },
+  {
+    "name": "Craftsman",
+    "id": "171011",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(2) Gain a card costing up to (5)."
+  },
+  {
+    "name": "Daimyo",
+    "id": "171013",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "<6>",
+    "types": [
+      "Action-Command"
+    ],
+    "text": "+1 Card +1 Action The next time you play a nonCommand Action card this turn, replay it afterwards."
+  },
+  {
+    "name": "Fishmonger",
+    "id": "171016",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Shadow"
+    ],
+    "text": "+1 Buy +(1) | You can play this from your deck as if in your hand."
+  },
+  {
+    "name": "Gold Mine",
+    "id": "171020",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +1 Buy You may gain a Gold and get +(4)."
+  },
+  {
+    "name": "Imperial Envoy",
+    "id": "171025",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+5 Cards +1 Buy +(2)"
+  },
+  {
+    "name": "Kitsune",
+    "id": "171028",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Omen"
+    ],
+    "text": "Choose two different options: +2 Actions; +(2); each other player gains a Curse; gain a Silver."
+  },
+  {
+    "name": "Litter",
+    "id": "171029",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +2 Actions +(1)"
+  },
+  {
+    "name": "Mountain Shrine",
+    "id": "171030",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "<5>",
+    "types": [
+      "Action-Omen"
+    ],
+    "text": "+(2) You may trash a card from your hand. Then if there are any Action cards in the trash, +2 Cards."
+  },
+  {
+    "name": "Ninja",
+    "id": "171031",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack-Shadow"
+    ],
+    "text": "+1 Card Each other player discards down to 3 cards in hand. | You can play this from your deck as if in your hand."
+  },
+  {
+    "name": "Poet",
+    "id": "171033",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Omen"
+    ],
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If it costs (3) or less, put it into your hand."
+  },
+  {
+    "name": "Rice",
+    "id": "171038",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(7)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "+1 Buy +(1) per different type among cards you have in play."
+  },
+  {
+    "name": "Rice Broker",
+    "id": "171039",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Trash a card from your hand. If its a Treasure, +2 Cards. If its an Action, +5 Cards."
+  },
+  {
+    "name": "River Shrine",
+    "id": "171040",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Omen"
+    ],
+    "text": "Trash up to 2 cards from your hand. At the start of Cleanup, if you didnt gain any cards in your Buy phase this turn, gain a card costing up to (4)."
+  },
+  {
+    "name": "Riverboat",
+    "id": "171041",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Duration"
+    ],
+    "text": "At the start of your next turn, play the set aside card, leaving it there. | Setup: Set aside an unused nonDuration Action card costing (5)."
+  },
+  {
+    "name": "Ronin",
+    "id": "171042",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Shadow"
+    ],
+    "text": "Draw until you have 7 cards in hand. | You can play this from your deck as if in your hand."
+  },
+  {
+    "name": "Root Cellar",
+    "id": "171043",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+3 Cards +1 Action +(3)"
+  },
+  {
+    "name": "Rustic Village",
+    "id": "171044",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Omen"
+    ],
+    "text": "+1 Card +2 Actions You may discard 2 cards for +1 Card."
+  },
+  {
+    "name": "Samurai",
+    "id": "171045",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(6)",
+    "types": [
+      "Action-Duration-Attack"
+    ],
+    "text": "Each other player discards down to 3 cards in hand (once). At the start of each of your turns this game, +(1). (This stays in play.)"
+  },
+  {
+    "name": "Snake Witch",
+    "id": "171048",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+1 Card +1 Action If your hand has no duplicate cards, you may reveal it and return this to its pile, to have each other player gain a Curse."
+  },
+  {
+    "name": "Tanuki",
+    "id": "171049",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Shadow"
+    ],
+    "text": "Trash a card from your hand. Gain a card costing up to (2) more than it. | You can play this from your deck as if in your hand."
+  },
+  {
+    "name": "Tea House",
+    "id": "171050",
+    "supply": "Kingdom Pile",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Omen"
+    ],
+    "text": "+1 Card +1 Action +(2)"
+  },
+  {
+    "name": "Amass",
+    "id": "171002",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Event"
+    ],
+    "text": "If you have no Action cards in play, gain an Action card costing up to (5)."
+  },
+  {
+    "name": "Asceticism",
+    "id": "171006",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Event"
+    ],
+    "text": "Pay any amount of (_) to trash that many cards from your hand."
+  },
+  {
+    "name": "Continue",
+    "id": "171010",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "<8>",
+    "types": [
+      "Event"
+    ],
+    "text": "Once per turn: Gain a nonAttack Action card costing up to (4). Return to your Action phase and play it. +1 Action and +1 Buy."
+  },
+  {
+    "name": "Credit",
+    "id": "171012",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Event"
+    ],
+    "text": "Gain an Action or Treasure costing up to (8). +<_> equal to its cost."
+  },
+  {
+    "name": "Foresight",
+    "id": "171018",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Event"
+    ],
+    "text": "Reveal cards from your deck until revealing an Action. Set it aside and discard the rest. Put it into your hand at end of turn."
+  },
+  {
+    "name": "Gather",
+    "id": "171019",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(7)",
+    "types": [
+      "Event"
+    ],
+    "text": "Gain a card costing exactly (3), a card costing exactly (4), and a card costing exactly (5)."
+  },
+  {
+    "name": "Kintsugi",
+    "id": "171027",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Event"
+    ],
+    "text": "Trash a card from your hand. If youve gained a Gold this game, gain a card costing up to (2) more than the trashed card."
+  },
+  {
+    "name": "Practice",
+    "id": "171034",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Event"
+    ],
+    "text": "You may play an Action card from your hand twice."
+  },
+  {
+    "name": "Receive Tribute",
+    "id": "171037",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Event"
+    ],
+    "text": "If youve gained at least 3 cards this turn, gain up to 3 differently named Action cards you dont have copies of in play."
+  },
+  {
+    "name": "Sea Trade",
+    "id": "171046",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Event"
+    ],
+    "text": "+1 Card per Action card you have in play. Trash up to that many cards from your hand."
+  },
+  {
+    "name": "Approaching Army",
+    "id": "171003",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "After you play an Attack card, +(1). | Setup: Add an Attack kingdom card pile to the Supply."
+  },
+  {
+    "name": "Biding Time",
+    "id": "171007",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "At the start of your Cleanup, set aside your hand face down. At the start of your next turn, put those cards into your hand."
+  },
+  {
+    "name": "Bureaucracy",
+    "id": "171008",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "When you gain a card that doesnt cost (0), gain a Copper."
+  },
+  {
+    "name": "Divine Wind",
+    "id": "171014",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "When you remove the last remove all Kingdom card piles from the Supply, and set up 10 new random piles."
+  },
+  {
+    "name": "Enlightenment",
+    "id": "171015",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "Treasures are also Actions. When you play a Treasure in an Action phase, instead of following its instructions, +1 Card and +1 Action."
+  },
+  {
+    "name": "Flourishing Trade",
+    "id": "171017",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "Cards cost (1) less. You may use Action plays as Buys."
+  },
+  {
+    "name": "Good Harvest",
+    "id": "171021",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "The first time you play each differently named Treasure each turn, first, +1 Buy and +(1)."
+  },
+  {
+    "name": "Great Leader",
+    "id": "171022",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "After each Action card you play, +1 Action."
+  },
+  {
+    "name": "Growth",
+    "id": "171023",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "When you gain a Treasure, gain a cheaper card."
+  },
+  {
+    "name": "Harsh Winter",
+    "id": "171024",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "When you gain a card on your turn, if theres <_> on its pile, take it; otherwise put on its pile."
+  },
+  {
+    "name": "Kind Emperor",
+    "id": "171026",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "At the start of your turn, and when you remove the last Gain an Action to your hand."
+  },
+  {
+    "name": "Panic",
+    "id": "171032",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "When you play a Treasure, +2 Buys, and when you discard one from play, return it to its pile."
+  },
+  {
+    "name": "Progress",
+    "id": "171035",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "When you gain a card, put it onto your deck."
+  },
+  {
+    "name": "Rapid Expansion",
+    "id": "171036",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "When you gain an Action or Treasure, set it aside, and play it at the start of your next turn."
+  },
+  {
+    "name": "Sickness",
+    "id": "171047",
+    "supply": "Landscape",
+    "set": "Rising Sun",
+    "edition": "1",
+    "cost": null,
+    "types": [
+      "Prophecy"
+    ],
+    "text": "At the start of your turn, choose one: Gain a Curse onto your deck; or discard 3 cards."
+  }
+]

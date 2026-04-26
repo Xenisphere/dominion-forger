@@ -1,0 +1,706 @@
+[
+  {
+    "name": "Altar",
+    "id": "091001",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(6)",
+    "types": [
+      "Action"
+    ],
+    "text": "Trash a card from your hand. Gain a card costing up to (5)."
+  },
+  {
+    "name": "Armory",
+    "id": "091002",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "Gain a card onto your deck costing up to (4)."
+  },
+  {
+    "name": "Band of Misfits",
+    "id": "091003",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Command"
+    ],
+    "text": "Play a nonCommand nonDuration Action card from the Supply that costs less than this, leaving it there."
+  },
+  {
+    "name": "Bandit Camp",
+    "id": "091004",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions Gain a Spoils."
+  },
+  {
+    "name": "Beggar",
+    "id": "091005",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "Gain 3 Coppers to your hand. | When another player plays an Attack card, you may first discard this to gain 2 Silvers, putting one onto your deck."
+  },
+  {
+    "name": "Catacombs",
+    "id": "091006",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Look at the top 3 cards of your deck. Choose one: Put them into your hand; or discard them and +3 Cards. | When you trash this, gain a cheaper card."
+  },
+  {
+    "name": "Count",
+    "id": "091007",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Choose one: Discard 2 cards; or put a card from your hand onto your deck; or gain a Copper. Choose one: +(3); or trash your hand; or gain a Duchy."
+  },
+  {
+    "name": "Counterfeit",
+    "id": "091008",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(1) +1 Buy You may play a nonDuration Treasure from your hand twice. Trash it."
+  },
+  {
+    "name": "Cultist",
+    "id": "091009",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Looter"
+    ],
+    "text": "+2 Cards Each other player gains a Ruins. You may play a Cultist from your hand. | When you trash this, +3 Cards."
+  },
+  {
+    "name": "Death Cart",
+    "id": "091010",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Looter"
+    ],
+    "text": "You may trash this or an Action card from your hand, for +(5). | When you gain this, gain 2 Ruins."
+  },
+  {
+    "name": "Silk Road",
+    "id": "091052",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Victory"
+    ],
+    "text": "Worth {1} for every 4 Victory cards you have (round down)."
+  },
+  {
+    "name": "Feodum",
+    "id": "091011",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Victory"
+    ],
+    "text": "Worth {1} per 3 Silvers you have (round down). | When you trash this, gain 3 Silvers."
+  },
+  {
+    "name": "Forager",
+    "id": "091012",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action +1 Buy Trash a card from your hand, then +(1) per differently named Treasure in the trash."
+  },
+  {
+    "name": "Fortress",
+    "id": "091013",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions | When you trash this, put it into your hand."
+  },
+  {
+    "name": "Graverobber",
+    "id": "091014",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Choose one: Gain a card from the trash costing from (3) to (6), onto your deck; or trash an Action card from your hand and gain a card costing up to (3) more than it."
+  },
+  {
+    "name": "Hermit",
+    "id": "091015",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "Look through your discard pile. You may trash a nonTreasure from it or from your hand. Gain a card costing up to (3). At the end of your Buy phase this turn, if you didnt gain any cards in it, exchange this for a Madman."
+  },
+  {
+    "name": "Madman",
+    "id": "091016",
+    "supply": "Non-Supply",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Actions Return this to the Madman pile. If you do, +1 Card per card in your hand. (This is not in the Supply.)"
+  },
+  {
+    "name": "Hunting Grounds",
+    "id": "091017",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(6)",
+    "types": [
+      "Action"
+    ],
+    "text": "+4 Cards | When you trash this, gain a Duchy or 3 Estates."
+  },
+  {
+    "name": "Ironmonger",
+    "id": "091018",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Reveal the top card of your deck; you may discard it. Either way, if it is an Action card, +1 Action Treasure card, +(1) Victory card, +1 Card"
+  },
+  {
+    "name": "Junk Dealer",
+    "id": "091019",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +(1) Trash a card from your hand."
+  },
+  {
+    "name": "Knights",
+    "id": "091020",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "Shuffle the Knights pile before each game with the Knights. Keep it face down except for the top card, which is the only one that can be bought or gained."
+  },
+  {
+    "name": "Dame Anna",
+    "id": "091021",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "You may trash up to 2 cards from your hand. Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Dame Josephine",
+    "id": "091022",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight-Victory"
+    ],
+    "text": "Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this. | {2}"
+  },
+  {
+    "name": "Dame Molly",
+    "id": "091023",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "+2 Actions Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Dame Natalie",
+    "id": "091024",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "You may gain a card costing up to (3). Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Dame Sylvia",
+    "id": "091025",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "+(2) Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Sir Bailey",
+    "id": "091026",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "+1 Card +1 Action Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Sir Destry",
+    "id": "091027",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "+2 Cards Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Sir Martin",
+    "id": "091028",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "+2 Buys Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Sir Michael",
+    "id": "091029",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "Each other player discards down to 3 cards in hand. Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this."
+  },
+  {
+    "name": "Sir Vander",
+    "id": "091030",
+    "supply": "Mixed Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack-Knight"
+    ],
+    "text": "Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed this, trash this. | When you trash this, gain a Gold."
+  },
+  {
+    "name": "Marauder",
+    "id": "091031",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack-Looter"
+    ],
+    "text": "Gain a Spoils. Each other player gains a Ruins."
+  },
+  {
+    "name": "Market Square",
+    "id": "091032",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "+1 Card +1 Action +1 Buy | When one of your cards is trashed, you may discard this from your hand to gain a Gold."
+  },
+  {
+    "name": "Mystic",
+    "id": "091033",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action +(2) Name a card, then reveal the top card of your deck. If you named it, put it into your hand."
+  },
+  {
+    "name": "Pillage",
+    "id": "091034",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose."
+  },
+  {
+    "name": "Poor House",
+    "id": "091035",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(1)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(4) Reveal your hand. per Treasure card in your hand. (You cant go below (0).)"
+  },
+  {
+    "name": "Procession",
+    "id": "091036",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "You may play a nonDuration Action card from your hand twice. Trash it. Gain an Action card costing exactly (1) more than it."
+  },
+  {
+    "name": "Rats",
+    "id": "091037",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Gain a Rats. Trash a card from your hand other than a Rats (or reveal a hand of all Rats). | When you trash this, +1 Card."
+  },
+  {
+    "name": "Rebuild",
+    "id": "091038",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Name a card. Reveal cards from your deck until you reveal a Victory card you did not name. Discard the rest, trash the Victory card, and gain a Victory card costing up to (3) more than it."
+  },
+  {
+    "name": "Rogue",
+    "id": "091039",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+(2) If there are any cards in the trash costing from (3) to (6), gain one of them. Otherwise, each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest."
+  },
+  {
+    "name": "Ruins",
+    "id": "091040",
+    "supply": "Unknown",
+    "set": "Unknown",
+    "edition": "Unknown",
+    "cost": null,
+    "types": [],
+    "text": ""
+  },
+  {
+    "name": "Abandoned Mine",
+    "id": "091041",
+    "supply": "Basic",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Ruins"
+    ],
+    "text": "+(1)"
+  },
+  {
+    "name": "Ruined Library",
+    "id": "091042",
+    "supply": "Basic",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Ruins"
+    ],
+    "text": "+1 Card"
+  },
+  {
+    "name": "Ruined Market",
+    "id": "091043",
+    "supply": "Basic",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Ruins"
+    ],
+    "text": "+1 Buy"
+  },
+  {
+    "name": "Ruined Village",
+    "id": "091044",
+    "supply": "Basic",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Ruins"
+    ],
+    "text": "+1 Action"
+  },
+  {
+    "name": "Survivors",
+    "id": "091045",
+    "supply": "Basic",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Ruins"
+    ],
+    "text": "Look at the top 2 cards of your deck. Discard them or put them back in any order."
+  },
+  {
+    "name": "Sage",
+    "id": "091046",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Reveal cards from the top of your deck until you reveal one costing (3) or more. Put that card into your hand and discard the rest."
+  },
+  {
+    "name": "Scavenger",
+    "id": "091047",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(2) You may put your deck into your discard pile. Put a card from your discard pile onto your deck."
+  },
+  {
+    "name": "Shelters",
+    "id": "091048",
+    "supply": "Unknown",
+    "set": "Unknown",
+    "edition": "Unknown",
+    "cost": null,
+    "types": [],
+    "text": ""
+  },
+  {
+    "name": "Hovel",
+    "id": "091049",
+    "supply": "Non-Supply",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(1)",
+    "types": [
+      "Reaction-Shelter"
+    ],
+    "text": "When you gain a Victory card, you may trash this from your hand."
+  },
+  {
+    "name": "Necropolis",
+    "id": "091050",
+    "supply": "Non-Supply",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(1)",
+    "types": [
+      "Action-Shelter"
+    ],
+    "text": "+2 Actions"
+  },
+  {
+    "name": "Overgrown Estate",
+    "id": "091051",
+    "supply": "Non-Supply",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(1)",
+    "types": [
+      "Victory-Shelter"
+    ],
+    "text": "{0} | When you trash this, +1 Card."
+  },
+  {
+    "name": "Spoils",
+    "id": "091053",
+    "supply": "Non-Supply",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(3) When you play this, return it to the Spoils pile. (This is not in the Supply.)"
+  },
+  {
+    "name": "Squire",
+    "id": "091054",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(1) Choose one: +2 Actions; or +2 Buys; or gain a Silver. | When you trash this, gain an Attack card."
+  },
+  {
+    "name": "Storeroom",
+    "id": "091055",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Buy Discard any number of cards, then draw that many. Then discard any number of cards for +(1) each."
+  },
+  {
+    "name": "Urchin",
+    "id": "091056",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+1 Card +1 Action Each other player discards down to 4 cards in hand. | When you play another Attack card with this in play, you may first trash this, to gain a Mercenary."
+  },
+  {
+    "name": "Mercenary",
+    "id": "091057",
+    "supply": "Non-Supply",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "You may trash 2 cards from your hand. If you did, +2 Cards, +(2), and each other player discards down to 3 cards in hand. (This is not in the Supply.)"
+  },
+  {
+    "name": "Vagrant",
+    "id": "091058",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If its a Curse, Ruins, Shelter, or Victory card, put it into your hand."
+  },
+  {
+    "name": "Wandering Minstrel",
+    "id": "091059",
+    "supply": "Kingdom Pile",
+    "set": "Dark Ages",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions Reveal the top 3 cards of your deck. Put the Action cards back in any order and discard the rest."
+  }
+]

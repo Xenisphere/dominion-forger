@@ -1,8 +1,7 @@
 {
-  "Base Cards": {
+  "Base": {
     "Kingdom": [
       { "name": "Copper" },
-      { "name": "Curse" },
       { "name": "Duchy" },
       { "name": "Estate" },
       { "name": "Gold" },
@@ -10,17 +9,22 @@
       { "name": "Silver" }
     ],
     "Card Count": {
-      "Kingdom": 10
+      "Kingdom": 6,
+      "Total": 6
     }
   },
   "Dominion": {
     "Kingdom": [
+      { "name": "Adventurer" },
       { "name": "Artisan" },
       { "name": "Bandit" },
       { "name": "Bureaucrat" },
       { "name": "Cellar" },
+      { "name": "Chancellor" },
       { "name": "Chapel" },
       { "name": "Council Room" },
+      { "name": "Curse" },
+      { "name": "Feast" },
       { "name": "Festival" },
       { "name": "Gardens" },
       { "name": "Harbinger" },
@@ -36,23 +40,18 @@
       { "name": "Remodel" },
       { "name": "Sentry" },
       { "name": "Smithy" },
+      { "name": "Spy" },
+      { "name": "Thief" },
       { "name": "Throne Room" },
       { "name": "Vassal" },
       { "name": "Village" },
       { "name": "Witch" },
+      { "name": "Woodcutter" },
       { "name": "Workshop" }
     ],
-    "Removed": [
-      { "name": "Adventurer" },
-      { "name": "Chancellor" },
-      { "name": "Feast" },
-      { "name": "Spy" },
-      { "name": "Thief" },
-      { "name": "Woodcutter" }
-    ],
     "Card Count": {
-      "Kingdom": 26,
-      "Removed": 6
+      "Kingdom": 33,
+      "Total": 33
     }
   },
   "Intrigue": {
@@ -60,11 +59,13 @@
       { "name": "Baron" },
       { "name": "Bridge" },
       { "name": "Conspirator" },
+      { "name": "Coppersmith" },
       { "name": "Courtier" },
       { "name": "Courtyard" },
       { "name": "Diplomat" },
       { "name": "Duke" },
       { "name": "Farm" },
+      { "name": "Great Hall" },
       { "name": "Ironworks" },
       { "name": "Lurker" },
       { "name": "Masquerade" },
@@ -75,37 +76,37 @@
       { "name": "Patrol" },
       { "name": "Pawn" },
       { "name": "Replace" },
+      { "name": "Saboteur" },
+      { "name": "Scout" },
+      { "name": "Secret Chamber" },
       { "name": "Secret Passage" },
       { "name": "Shanty Town" },
       { "name": "Steward" },
       { "name": "Swindler" },
       { "name": "Torturer" },
       { "name": "Trading Post" },
+      { "name": "Tribute" },
       { "name": "Upgrade" },
       { "name": "Wishing Well" }
     ],
-    "Removed": [
-      { "name": "Coppersmith" },
-      { "name": "Great Hall" },
-      { "name": "Saboteur" },
-      { "name": "Scout" },
-      { "name": "Secret Chamber" },
-      { "name": "Tribute" }
-    ],
     "Card Count": {
-      "Kingdom": 26,
-      "Removed": 6
+      "Kingdom": 32,
+      "Total": 32
     }
   },
   "Seaside": {
     "Kingdom": [
+      { "name": "Ambassador" },
       { "name": "Astrolabe" },
       { "name": "Bazaar" },
       { "name": "Blockade" },
       { "name": "Caravan" },
       { "name": "Corsair" },
       { "name": "Cutpurse" },
+      { "name": "Embargo" },
+      { "name": "Explorer" },
       { "name": "Fishing Village" },
+      { "name": "Ghost Ship" },
       { "name": "Haven" },
       { "name": "Island" },
       { "name": "Lighthouse" },
@@ -113,11 +114,15 @@
       { "name": "Merchant Ship" },
       { "name": "Monkey" },
       { "name": "Native Village" },
+      { "name": "Navigator" },
       { "name": "Outpost" },
+      { "name": "Pearl Diver" },
       { "name": "Pirate" },
+      { "name": "Pirate Ship" },
       { "name": "Sailor" },
       { "name": "Salvager" },
       { "name": "Sea Chart" },
+      { "name": "Sea Hag" },
       { "name": "Sea Witch" },
       { "name": "Smugglers" },
       { "name": "Tactician" },
@@ -127,19 +132,9 @@
       { "name": "Warehouse" },
       { "name": "Wharf" }
     ],
-    "Removed": [
-      { "name": "Ambassador" },
-      { "name": "Embargo" },
-      { "name": "Explorer" },
-      { "name": "Ghost Ship" },
-      { "name": "Navigator" },
-      { "name": "Pearl Diver" },
-      { "name": "Pirate Ship" },
-      { "name": "Sea Hag" }
-    ],
     "Card Count": {
-      "Kingdom": 27,
-      "Removed": 8
+      "Kingdom": 35,
+      "Total": 35
     }
   },
   "Alchemy": {
@@ -159,7 +154,8 @@
       { "name": "Vineyard" }
     ],
     "Card Count": {
-      "Kingdom": 13
+      "Kingdom": 13,
+      "Total": 13
     }
   },
   "Prosperity": {
@@ -172,40 +168,38 @@
       { "name": "Clerk" },
       { "name": "Collection" },
       { "name": "Colony" },
+      { "name": "Contraband" },
+      { "name": "Counting House" },
       { "name": "Crystal Ball" },
       { "name": "Expand" },
       { "name": "Forge" },
+      { "name": "Goons" },
       { "name": "Grand Market" },
       { "name": "Hoard" },
       { "name": "Investment" },
       { "name": "King's Court" },
+      { "name": "Loan" },
       { "name": "Magnate" },
       { "name": "Mint" },
+      { "name": "Mountebank" },
       { "name": "Monument" },
       { "name": "Peddler" },
       { "name": "Platinum" },
       { "name": "Quarry" },
       { "name": "Rabble" },
+      { "name": "Royal Seal" },
+      { "name": "Talisman" },
       { "name": "Tiara" },
+      { "name": "Trade Route" },
       { "name": "Vault" },
+      { "name": "Venture" },
       { "name": "War Chest" },
       { "name": "Watchtower" },
       { "name": "Worker's Village" }
     ],
-    "Removed": [
-      { "name": "Contraband" },
-      { "name": "Counting House" },
-      { "name": "Goons" },
-      { "name": "Loan" },
-      { "name": "Mountebank" },
-      { "name": "Royal Seal" },
-      { "name": "Talisman" },
-      { "name": "Trade Route" },
-      { "name": "Venture" }
-    ],
     "Card Count": {
-      "Kingdom": 25,
-      "Removed": 9
+      "Kingdom": 36,
+      "Total": 36
     }
   },
   "Cornucopia & Guilds": {
@@ -215,19 +209,28 @@
       { "name": "Butcher" },
       { "name": "Candlestick Maker" },
       { "name": "Carnival" },
+      { "name": "Doctor" },
       { "name": "Fairgrounds" },
       { "name": "Farmhands" },
+      { "name": "Farming Village" },
       { "name": "Farrier" },
       { "name": "Ferryman" },
       { "name": "Footpad" },
+      { "name": "Fortune Teller" },
       { "name": "Hamlet" },
+      { "name": "Harvest" },
       { "name": "Herald" },
+      { "name": "Horse Traders" },
       { "name": "Horn of Plenty" },
       { "name": "Hunting Party" },
       { "name": "Infirmary" },
       { "name": "Jester" },
       { "name": "Journeyman" },
-      { "name": "Joust", "group": [ "Coronet", "Courser", "Demesne", "Housecarl", "Huge Turnip", "Renown" ] },
+      {
+        "name": "Joust",
+        "group": [ "Coronet", "Courser", "Demesne", "Housecarl", "Huge Turnip", "Renown" ]
+      },
+      { "name": "Masterpiece" },
       { "name": "Menagerie" },
       { "name": "Merchant Guild" },
       { "name": "Plaza" },
@@ -235,42 +238,46 @@
       { "name": "Shop" },
       { "name": "Soothsayer" },
       { "name": "Stonemason" },
+      { "name": "Taxman" },
+      {
+        "name": "Tournament",
+        "group": [ "Bag of Gold", "Diadem", "Followers", "Princess", "Trusty Steed" ]
+      },
       { "name": "Young Witch" }
     ],
-    "Removed": [
-      { "name": "Doctor" },
-      { "name": "Farming Village" },
-      { "name": "Fortune Teller" },
-      { "name": "Harvest" },
-      { "name": "Horse Traders" },
-      { "name": "Masterpiece" },
-      { "name": "Taxman" },
-      { "name": "Tournament", "group": [ "Bag of Gold", "Diadem", "Followers", "Princess", "Trusty Steed" ] }
-    ],
     "Card Count": {
-      "Kingdom": 32,
-      "Removed": 13
+      "Kingdom": 45,
+      "Total": 45
     }
   },
   "Hinterlands": {
     "Kingdom": [
       { "name": "Berserker" },
       { "name": "Border Village" },
+      { "name": "Cache" },
       { "name": "Cartographer" },
       { "name": "Cauldron" },
       { "name": "Crossroads" },
       { "name": "Develop" },
+      { "name": "Duchess" },
+      { "name": "Embassy" },
       { "name": "Farmland" },
       { "name": "Fool's Gold" },
       { "name": "Guard Dog" },
       { "name": "Haggler" },
       { "name": "Highway" },
+      { "name": "Ill-Gotten Gains" },
       { "name": "Inn" },
       { "name": "Jack of All Trades" },
+      { "name": "Mandarin" },
       { "name": "Margrave" },
+      { "name": "Noble Brigand" },
+      { "name": "Nomad Camp" },
       { "name": "Nomads" },
       { "name": "Oasis" },
+      { "name": "Oracle" },
       { "name": "Scheme" },
+      { "name": "Silk Road" },
       { "name": "Souk" },
       { "name": "Spice Merchant" },
       { "name": "Stables" },
@@ -281,20 +288,9 @@
       { "name": "Wheelwright" },
       { "name": "Witch's Hut" }
     ],
-    "Removed": [
-      { "name": "Cache" },
-      { "name": "Duchess" },
-      { "name": "Embassy" },
-      { "name": "Ill-Gotten Gains" },
-      { "name": "Mandarin" },
-      { "name": "Noble Brigand" },
-      { "name": "Nomad Camp" },
-      { "name": "Oracle" },
-      { "name": "Silk Road" }
-    ],
     "Card Count": {
-      "Kingdom": 26,
-      "Removed": 9
+      "Kingdom": 35,
+      "Total": 35
     }
   },
   "Dark Ages": {
@@ -309,15 +305,22 @@
       { "name": "Counterfeit" },
       { "name": "Cultist" },
       { "name": "Death Cart" },
+      { "name": "Silk Road" },
       { "name": "Feodum" },
       { "name": "Forager" },
       { "name": "Fortress" },
       { "name": "Graverobber" },
-      { "name": "Hermit", "paired_with": "Madman" },
+      {
+        "name": "Hermit",
+        "paired_with": "Madman"
+      },
       { "name": "Hunting Grounds" },
       { "name": "Ironmonger" },
       { "name": "Junk Dealer" },
-      { "name": "Knights", "group": [ "Dame Anna", "Dame Josephine", "Dame Molly", "Dame Natalie", "Dame Sylvia", "Sir Bailey", "Sir Destry", "Sir Martin", "Sir Michael", "Sir Vander" ] },
+      {
+        "name": "Knights",
+        "group": [ "Dame Anna", "Dame Josephine", "Dame Molly", "Dame Natalie", "Dame Sylvia", "Sir Bailey", "Sir Destry", "Sir Martin", "Sir Michael", "Sir Vander" ]
+      },
       { "name": "Marauder" },
       { "name": "Market Square" },
       { "name": "Mystic" },
@@ -327,19 +330,29 @@
       { "name": "Rats" },
       { "name": "Rebuild" },
       { "name": "Rogue" },
-      { "name": "Ruins", "group": [ "Abandoned Mine", "Ruined Library", "Ruined Market", "Ruined Village", "Survivors" ] },
+      {
+        "name": "Ruins",
+        "group": [ "Abandoned Mine", "Ruined Library", "Ruined Market", "Ruined Village", "Survivors" ]
+      },
       { "name": "Sage" },
       { "name": "Scavenger" },
-      { "name": "Shelters", "group": [ "Hovel", "Necropolis", "Overgrown Estate" ] },
+      {
+        "name": "Shelters",
+        "group": [ "Hovel", "Necropolis", "Overgrown Estate" ]
+      },
       { "name": "Spoils" },
       { "name": "Squire" },
       { "name": "Storeroom" },
-      { "name": "Urchin", "paired_with": "Mercenary" },
+      {
+        "name": "Urchin",
+        "paired_with": "Mercenary"
+      },
       { "name": "Vagrant" },
       { "name": "Wandering Minstrel" }
     ],
     "Card Count": {
-      "Kingdom": 58
+      "Kingdom": 59,
+      "Total": 59
     }
   },
   "Adventures": {
@@ -361,8 +374,14 @@
       { "name": "Magpie" },
       { "name": "Messenger" },
       { "name": "Miser" },
-      { "name": "Page", "chain": [ "Page", "Treasure Hunter", "Warrior", "Hero", "Champion" ] },
-      { "name": "Peasant", "chain": [ "Peasant", "Soldier", "Fugitive", "Disciple", "Teacher" ] },
+      {
+        "name": "Page",
+        "chain": [ "Treasure Hunter", "Warrior", "Hero", "Champion" ]
+      },
+      {
+        "name": "Peasant",
+        "chain": [ "Soldier", "Fugitive", "Disciple", "Teacher" ]
+      },
       { "name": "Port" },
       { "name": "Ranger" },
       { "name": "Ratcatcher" },
@@ -399,32 +418,51 @@
     ],
     "Card Count": {
       "Kingdom": 38,
-      "Event": 20
+      "Event": 20,
+      "Total": 58
     }
   },
   "Empires": {
     "Kingdom": [
       { "name": "Archive" },
       { "name": "Capital" },
-      { "name": "Castles", "group": [ "Humble Castle", "Crumbling Castle", "Small Castle", "Haunted Castle", "Opulent Castle", "Sprawling Castle", "Grand Castle", "King's Castle" ] },
-      { "name": "Catapult", "paired_with": "Rocks" },
+      {
+        "name": "Castles",
+        "group": [ "Humble Castle", "Crumbling Castle", "Small Castle", "Haunted Castle", "Opulent Castle", "Sprawling Castle", "Grand Castle", "King's Castle" ]
+      },
+      {
+        "name": "Catapult",
+        "paired_with": "Rocks"
+      },
       { "name": "Chariot Race" },
       { "name": "Charm" },
       { "name": "City Quarter" },
       { "name": "Crown" },
-      { "name": "Encampment", "paired_with": "Plunder" },
+      {
+        "name": "Encampment",
+        "paired_with": "Plunder"
+      },
       { "name": "Enchantress" },
       { "name": "Engineer" },
       { "name": "Farmers' Market" },
       { "name": "Forum" },
-      { "name": "Gladiator", "paired_with": "Fortune" },
+      {
+        "name": "Gladiator",
+        "paired_with": "Fortune"
+      },
       { "name": "Groundskeeper" },
       { "name": "Legionary" },
       { "name": "Overlord" },
-      { "name": "Patrician", "paired_with": "Emporium" },
+      {
+        "name": "Patrician",
+        "paired_with": "Emporium"
+      },
       { "name": "Royal Blacksmith" },
       { "name": "Sacrifice" },
-      { "name": "Settlers", "paired_with": "Bustling Village" },
+      {
+        "name": "Settlers",
+        "paired_with": "Bustling Village"
+      },
       { "name": "Temple" },
       { "name": "Villa" },
       { "name": "Wild Hunt" }
@@ -470,14 +508,18 @@
     "Card Count": {
       "Kingdom": 37,
       "Event": 13,
-      "Landmark": 21
+      "Landmark": 21,
+      "Total": 71
     }
   },
   "Nocturne": {
     "Kingdom": [
       { "name": "Bard" },
       { "name": "Blessed Village" },
-      { "name": "Cemetery", "paired_with": "Haunted Mirror" },
+      {
+        "name": "Cemetery",
+        "paired_with": "Haunted Mirror"
+      },
       { "name": "Changeling" },
       { "name": "Cobbler" },
       { "name": "Conclave" },
@@ -488,7 +530,10 @@
       { "name": "Druid" },
       { "name": "Exorcist" },
       { "name": "Faithful Hound" },
-      { "name": "Fool", "group": [ "Lost in the Woods", "Lucky Coin" ] },
+      {
+        "name": "Fool",
+        "group": [ "Lost in the Woods", "Lucky Coin" ]
+      },
       { "name": "Ghost" },
       { "name": "Ghost Town" },
       { "name": "Guardian" },
@@ -496,19 +541,40 @@
       { "name": "Imp" },
       { "name": "Leprechaun" },
       { "name": "Monastery" },
-      { "name": "Necromancer", "group": [ "Zombie Apprentice", "Zombie Mason", "Zombie Spy" ] },
+      {
+        "name": "Necromancer",
+        "group": [ "Zombie Apprentice", "Zombie Mason", "Zombie Spy" ]
+      },
       { "name": "Night Watchman" },
-      { "name": "Pixie", "paired_with": "Goat" },
-      { "name": "Pooka", "paired_with": "Cursed Gold" },
+      {
+        "name": "Pixie",
+        "paired_with": "Goat"
+      },
+      {
+        "name": "Pooka",
+        "paired_with": "Cursed Gold"
+      },
       { "name": "Raider" },
       { "name": "Sacred Grove" },
-      { "name": "Secret Cave", "paired_with": "Magic Lamp" },
-      { "name": "Shepherd", "paired_with": "Pasture" },
+      {
+        "name": "Secret Cave",
+        "paired_with": "Magic Lamp"
+      },
+      {
+        "name": "Shepherd",
+        "paired_with": "Pasture"
+      },
       { "name": "Skulk" },
       { "name": "Tormentor" },
-      { "name": "Tracker", "paired_with": "Pouch" },
+      {
+        "name": "Tracker",
+        "paired_with": "Pouch"
+      },
       { "name": "Tragic Hero" },
-      { "name": "Vampire", "paired_with": "Bat" },
+      {
+        "name": "Vampire",
+        "paired_with": "Bat"
+      },
       { "name": "Werewolf" },
       { "name": "Will-o'-Wisp" },
       { "name": "Wish" }
@@ -529,14 +595,23 @@
     ],
     "Hex": [
       { "name": "Bad Omens" },
-      { "name": "Delusion", "group": [ "Deluded" ] },
-      { "name": "Envy", "group": [ "Envious" ] },
+      {
+        "name": "Delusion",
+        "group": [ "Deluded" ]
+      },
+      {
+        "name": "Envy",
+        "group": [ "Envious" ]
+      },
       { "name": "Famine" },
       { "name": "Fear" },
       { "name": "Greed" },
       { "name": "Haunting" },
       { "name": "Locusts" },
-      { "name": "Misery", "group": [ "Miserable", "Twice Miserable" ] },
+      {
+        "name": "Misery",
+        "group": [ "Miserable", "Twice Miserable" ]
+      },
       { "name": "Plague" },
       { "name": "Poverty" },
       { "name": "War" }
@@ -544,17 +619,24 @@
     "Card Count": {
       "Kingdom": 49,
       "Boon": 12,
-      "Hex": 16
+      "Hex": 16,
+      "Total": 77
     }
   },
   "Renaissance": {
     "Kingdom": [
       { "name": "Acting Troupe" },
-      { "name": "Border Guard", "group": [ "Horn", "Lantern" ] },
+      {
+        "name": "Border Guard",
+        "group": [ "Horn", "Lantern" ]
+      },
       { "name": "Cargo Ship" },
       { "name": "Ducat" },
       { "name": "Experiment" },
-      { "name": "Flag Bearer", "paired_with": "Flag" },
+      {
+        "name": "Flag Bearer",
+        "paired_with": "Flag"
+      },
       { "name": "Hideout" },
       { "name": "Improve" },
       { "name": "Inventor" },
@@ -571,8 +653,14 @@
       { "name": "Seer" },
       { "name": "Silk Merchant" },
       { "name": "Spices" },
-      { "name": "Swashbuckler", "paired_with": "Treasure Chest" },
-      { "name": "Treasurer", "paired_with": "Key" },
+      {
+        "name": "Swashbuckler",
+        "paired_with": "Treasure Chest"
+      },
+      {
+        "name": "Treasurer",
+        "paired_with": "Key"
+      },
       { "name": "Villain" }
     ],
     "Project": [
@@ -599,7 +687,8 @@
     ],
     "Card Count": {
       "Kingdom": 30,
-      "Project": 20
+      "Project": 20,
+      "Total": 50
     }
   },
   "Menagerie": {
@@ -683,22 +772,32 @@
     "Card Count": {
       "Kingdom": 31,
       "Event": 20,
-      "Way": 20
+      "Way": 20,
+      "Total": 71
     }
   },
   "Allies": {
     "Kingdom": [
-      { "name": "Augurs", "group": [ "Herb Gatherer", "Acolyte", "Sorceress", "Sibyl" ] },
+      {
+        "name": "Augurs",
+        "group": [ "Herb Gatherer", "Acolyte", "Sorceress", "Sibyl" ]
+      },
       { "name": "Barbarian" },
       { "name": "Bauble" },
       { "name": "Broker" },
       { "name": "Capital City" },
       { "name": "Carpenter" },
-      { "name": "Clashes", "group": [ "Battle Plan", "Archer", "Warlord", "Territory" ] },
+      {
+        "name": "Clashes",
+        "group": [ "Battle Plan", "Archer", "Warlord", "Territory" ]
+      },
       { "name": "Contract" },
       { "name": "Courier" },
       { "name": "Emissary" },
-      { "name": "Forts", "group": [ "Tent", "Garrison", "Hill Fort", "Stronghold" ] },
+      {
+        "name": "Forts",
+        "group": [ "Tent", "Garrison", "Hill Fort", "Stronghold" ]
+      },
       { "name": "Galleria" },
       { "name": "Guildmaster" },
       { "name": "Highwayman" },
@@ -708,7 +807,10 @@
       { "name": "Marquis" },
       { "name": "Merchant Camp" },
       { "name": "Modify" },
-      { "name": "Odysseys", "group": [ "Old Map", "Voyage", "Sunken Treasure", "Distant Shore" ] },
+      {
+        "name": "Odysseys",
+        "group": [ "Old Map", "Voyage", "Sunken Treasure", "Distant Shore" ]
+      },
       { "name": "Royal Galley" },
       { "name": "Sentinel" },
       { "name": "Skirmisher" },
@@ -716,9 +818,15 @@
       { "name": "Swap" },
       { "name": "Sycophant" },
       { "name": "Town" },
-      { "name": "Townsfolk", "group": [ "Town Crier", "Blacksmith", "Miller", "Elder" ] },
+      {
+        "name": "Townsfolk",
+        "group": [ "Town Crier", "Blacksmith", "Miller", "Elder" ]
+      },
       { "name": "Underling" },
-      { "name": "Wizards", "group": [ "Student", "Conjurer", "Sorcerer", "Lich" ] }
+      {
+        "name": "Wizards",
+        "group": [ "Student", "Conjurer", "Sorcerer", "Lich" ]
+      }
     ],
     "Ally": [
       { "name": "Architects' Guild" },
@@ -747,7 +855,8 @@
     ],
     "Card Count": {
       "Kingdom": 55,
-      "Ally": 23
+      "Ally": 23,
+      "Total": 78
     }
   },
   "Plunder": {
@@ -772,7 +881,10 @@
       { "name": "King's Cache" },
       { "name": "Landing Party" },
       { "name": "Longship" },
-      { "name": "Loot", "group": [ "Amphora", "Doubloons", "Endless Chalice", "Figurehead", "Hammer", "Insignia", "Jewels", "Orb", "Prize Goat", "Puzzle Box", "Sextant", "Shield", "Spell Scroll", "Staff", "Sword" ] },
+      {
+        "name": "Loot",
+        "group": [ "Amphora", "Doubloons", "Endless Chalice", "Figurehead", "Hammer", "Insignia", "Jewels", "Orb", "Prize Goat", "Puzzle Box", "Sextant", "Shield", "Spell Scroll", "Staff", "Sword" ]
+      },
       { "name": "Mapmaker" },
       { "name": "Maroon" },
       { "name": "Mining Road" },
@@ -831,7 +943,8 @@
     "Card Count": {
       "Kingdom": 56,
       "Event": 15,
-      "Trait": 15
+      "Trait": 15,
+      "Total": 86
     }
   },
   "Rising Sun": {
@@ -894,7 +1007,8 @@
     "Card Count": {
       "Kingdom": 25,
       "Event": 10,
-      "Prophecy": 15
+      "Prophecy": 15,
+      "Total": 50
     }
   },
   "Promo": {
@@ -907,7 +1021,10 @@
       { "name": "Governor" },
       { "name": "Marchland" },
       { "name": "Prince" },
-      { "name": "Sauna", "paired_with": "Avanto" },
+      {
+        "name": "Sauna",
+        "paired_with": "Avanto"
+      },
       { "name": "Stash" },
       { "name": "Walled Village" }
     ],
@@ -916,7 +1033,8 @@
     ],
     "Card Count": {
       "Kingdom": 12,
-      "Event": 1
+      "Event": 1,
+      "Total": 13
     }
   },
   "all_total": 848

@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Advisor",
+    "id": "071101",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Reveal the top 3 cards of your deck. The player to your left chooses one of them. Discard that card and put the rest into your hand."
+  },
+  {
+    "name": "Baker",
+    "id": "071102",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +1 Coffers | Setup: Each player gets +1 Coffers."
+  },
+  {
+    "name": "Butcher",
+    "id": "071103",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Coffers You may trash a card from your hand, to gain a card, costing up to (1) more than it per Coffers you spend."
+  },
+  {
+    "name": "Candlestick Maker",
+    "id": "071104",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action +1 Buy +1 Coffers"
+  },
+  {
+    "name": "Carnival",
+    "id": "070105",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Reveal the top 4 cards of your deck. Put one of each differently named card into your hand and discard the rest."
+  },
+  {
+    "name": "Doctor",
+    "id": "071006",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(3)+",
+    "types": [
+      "Action"
+    ],
+    "text": "Name a card. Reveal the top 3 cards of your deck. Trash the matches. Put the rest back in any order. | Overpay: Per (1) overpaid, look at the top card of your deck; trash it, discard it, or put it back."
+  },
+  {
+    "name": "Fairgrounds",
+    "id": "071107",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(6)",
+    "types": [
+      "Victory"
+    ],
+    "text": "Worth {2} per 5 differently named cards you have (round down)."
+  },
+  {
+    "name": "Farmhands",
+    "id": "070108",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions | When you gain this, you may set aside an Action or Treasure from your hand, and play it at the start of your next turn."
+  },
+  {
+    "name": "Farming Village",
+    "id": "071009",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Actions Reveal cards from your deck until you reveal a Treasure or Action card. Put that card into your hand and discard the rest."
+  },
+  {
+    "name": "Farrier",
+    "id": "070110",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(2)+",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +1 Buy | Overpay: +1 Card at the end of this turn per (1) overpaid."
+  },
+  {
+    "name": "Ferryman",
+    "id": "070111",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +1 Action Discard a card. | Setup: Choose an unused Kingdom card pile costing (3) or (4). Gain one when you gain a Ferryman."
+  },
+  {
+    "name": "Footpad",
+    "id": "070112",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+2 Coffers Each other player discards down to 3 cards in hand. | In games using this, when you gain a card in an Action phase, +1 Card."
+  },
+  {
+    "name": "Fortune Teller",
+    "id": "071013",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+(2) Each other player reveals cards from the top of their deck until they reveal a Victory card or a Curse. They put it on top and discard the rest."
+  },
+  {
+    "name": "Hamlet",
+    "id": "071114",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action You may discard a card for +1 Action. You may discard a card for +1 Buy."
+  },
+  {
+    "name": "Harvest",
+    "id": "071015",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Reveal the top 4 cards of your deck, then discard them. +(1) per differently named card revealed."
+  },
+  {
+    "name": "Herald",
+    "id": "071116",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(4)+",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If its an Action, play it. | Overpay: Per (1) overpaid, put any card from your discard pile onto your deck."
+  },
+  {
+    "name": "Horse Traders",
+    "id": "071018",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "+1 Buy +(3) Discard 2 cards. | When another player plays an Attack card, you may first set this aside from your hand. If you do, then at the start of your next turn, +1 Card and return this to your hand."
+  },
+  {
+    "name": "Horn of Plenty",
+    "id": "071117",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "Gain a card costing up to (1) per differently named card you have in play (counting this). If its a Victory card, trash this."
+  },
+  {
+    "name": "Hunting Party",
+    "id": "071119",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Reveal your hand. Reveal cards from your deck until you reveal a card that isnt a copy of one in your hand. Put it into your hand and discard the rest."
+  },
+  {
+    "name": "Infirmary",
+    "id": "070120",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(3)+",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card You may trash a card from your hand. | Overpay: Play this once per (1) overpaid."
+  },
+  {
+    "name": "Jester",
+    "id": "071121",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+(2) Each other player discards the top card of their deck. If its a Victory card they gain a Curse; otherwise they gain a copy of the discarded card or you do, your choice."
+  },
+  {
+    "name": "Journeyman",
+    "id": "071122",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Name a card. Reveal cards from your deck until you reveal 3 cards without that name. Put those cards into your hand and discard the rest."
+  },
+  {
+    "name": "Joust",
+    "id": "070123",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +(1) You may set aside a Province from your hand to gain any Reward to your hand. Discard the Province in Cleanup."
+  },
+  {
+    "name": "Coronet",
+    "id": "070124",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(0)",
+    "types": [
+      "Action-Treasure-Reward"
+    ],
+    "text": "You may play a nonReward Action from your hand twice. You may play a nonReward Treasure from your hand twice. (This is not in the Supply.)"
+  },
+  {
+    "name": "Courser",
+    "id": "070125",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(0)",
+    "types": [
+      "Action-Reward"
+    ],
+    "text": "Choose two different options: +2 Cards; +2 Actions; +(2); gain 4 Silvers. (This is not in the Supply.)"
+  },
+  {
+    "name": "Demesne",
+    "id": "070126",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(0)",
+    "types": [
+      "Action-Victory-Reward"
+    ],
+    "text": "+2 Actions +2 Buys Gain a Gold. | Worth {1} per Gold you have. (This is not in the Supply.)"
+  },
+  {
+    "name": "Housecarl",
+    "id": "070127",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(0)",
+    "types": [
+      "Action-Reward"
+    ],
+    "text": "+1 Card per differently named Action card you have in play. (This is not in the Supply.)"
+  },
+  {
+    "name": "Huge Turnip",
+    "id": "070128",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(0)",
+    "types": [
+      "Treasure-Reward"
+    ],
+    "text": "+2 Coffers +(1) per Coffers you have. (This is not in the Supply.)"
+  },
+  {
+    "name": "Renown",
+    "id": "070129",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(0)",
+    "types": [
+      "Action-Reward"
+    ],
+    "text": "+1 Buy This turn, cards cost (2) less. (This is not in the Supply.)"
+  },
+  {
+    "name": "Masterpiece",
+    "id": "071030",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(3)+",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(1) | Overpay: Gain a Silver per (1) overpaid."
+  },
+  {
+    "name": "Menagerie",
+    "id": "071131",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Reveal your hand. If the revealed cards all have different names, +3 Cards. Otherwise, +1 Card."
+  },
+  {
+    "name": "Merchant Guild",
+    "id": "071132",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Buy +(1) At the end of your Buy phase this turn, +1 Coffers per card you gained in it."
+  },
+  {
+    "name": "Plaza",
+    "id": "071133",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions You may discard a Treasure for +1 Coffers."
+  },
+  {
+    "name": "Remake",
+    "id": "071134",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "Do this twice: Trash a card from your hand, then gain a card costing exactly (1) more than it."
+  },
+  {
+    "name": "Shop",
+    "id": "070135",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +(1) You may play an Action card from your hand that you dont have a copy of in play."
+  },
+  {
+    "name": "Soothsayer",
+    "id": "071136",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Gain a Gold. Each other player gains a Curse, and if they did, draws a card."
+  },
+  {
+    "name": "Stonemason",
+    "id": "071137",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(2)+",
+    "types": [
+      "Action"
+    ],
+    "text": "Trash a card from your hand. Gain 2 cards each costing less than it. | Overpay: Gain 2 Action cards each costing the amount overpaid."
+  },
+  {
+    "name": "Taxman",
+    "id": "071038",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "You may trash a Treasure from your hand. Each other player with 5 or more cards in hand discards a copy of it (or reveals they cant). Gain a Treasure onto your deck costing up to (3) more than it."
+  },
+  {
+    "name": "Tournament",
+    "id": "071039",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Each player may reveal a Province from their hand. If you do, discard it and gain any Prize (from the Prize pile) or a Duchy, onto your deck. If noone else does, +1 Card and +(1)."
+  },
+  {
+    "name": "Bag of Gold",
+    "id": "071040",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Prize"
+    ],
+    "text": "+1 Action Gain a Gold onto your deck. (This is not in the Supply.)"
+  },
+  {
+    "name": "Diadem",
+    "id": "071041",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Treasure-Prize"
+    ],
+    "text": "(2) +(1) per unused Action you have (Action, not Action card). (This is not in the Supply.)"
+  },
+  {
+    "name": "Followers",
+    "id": "071042",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Attack-Prize"
+    ],
+    "text": "+2 Cards Gain an Estate. Each other player gains a Curse and discards down to 3 cards in hand. (This is not in the Supply.)"
+  },
+  {
+    "name": "Princess",
+    "id": "071043",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Prize"
+    ],
+    "text": "+1 Buy This turn, cards cost (2) less. (This is not in the Supply.)"
+  },
+  {
+    "name": "Trusty Steed",
+    "id": "071044",
+    "supply": "Non-Supply",
+    "set": "Cornucopia & Guilds",
+    "edition": "1",
+    "cost": "(0)",
+    "types": [
+      "Action-Prize"
+    ],
+    "text": "Choose two: +2 Cards; or +2 Actions; or +(2); or gain 4 Silvers and put your deck into your discard pile. The choices must be different. (This is not in the Supply.)"
+  },
+  {
+    "name": "Young Witch",
+    "id": "071145",
+    "supply": "Kingdom Pile",
+    "set": "Cornucopia & Guilds",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+2 Cards Discard 2 cards. Each other player gains a Curse unless they reveal a Bane from their hand. | Setup: Add an extra Kingdom card pile costing (2) or (3) to the Supply. Its cards are Banes."
+  }
+]

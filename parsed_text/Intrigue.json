@@ -1,0 +1,386 @@
+[
+  {
+    "name": "Baron",
+    "id": "031101",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Buy You may discard an Estate for +(4). If you dont, gain an Estate."
+  },
+  {
+    "name": "Bridge",
+    "id": "031102",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Buy +(1) This turn, cards (everywhere) cost (1) less."
+  },
+  {
+    "name": "Conspirator",
+    "id": "031103",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(2) If youve played 3 or more Actions this turn (counting this), +1 Card and +1 Action."
+  },
+  {
+    "name": "Coppersmith",
+    "id": "031004",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "Copper produces an extra (1) this turn."
+  },
+  {
+    "name": "Courtier",
+    "id": "030105",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Reveal a card from your hand. For each type it has (Action, Attack, etc.), choose one: +1 Action; or +1 Buy; or +(3); or gain a Gold. The choices must be different."
+  },
+  {
+    "name": "Courtyard",
+    "id": "031106",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+3 Cards Put a card from your hand onto your deck."
+  },
+  {
+    "name": "Diplomat",
+    "id": "030107",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "+2 Cards If you have 5 or fewer cards in hand (after drawing), +2 Actions. | When another player plays an Attack card, you may first reveal this from a hand of 5 or more cards, to draw 2 cards then discard"
+  },
+  {
+    "name": "Duke",
+    "id": "031108",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Victory"
+    ],
+    "text": "Worth per Duchy you have."
+  },
+  {
+    "name": "Farm",
+    "id": "031109",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(6)",
+    "types": [
+      "Treasure-Victory"
+    ],
+    "text": "(2) | {2}"
+  },
+  {
+    "name": "Great Hall",
+    "id": "031010",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Victory"
+    ],
+    "text": "+1 Card +1 Action | {1}"
+  },
+  {
+    "name": "Ironworks",
+    "id": "031111",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "Gain a card costing up to (4). If the gained card is an Action card, +1 Action Treasure card, +(1) Victory card, +1 Card"
+  },
+  {
+    "name": "Lurker",
+    "id": "030112",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Choose one: Trash an Action card from the Supply; or gain an Action card from the trash."
+  },
+  {
+    "name": "Masquerade",
+    "id": "031113",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards Each player with any cards in hand passes one to the next such player to their left, at once. Then you may trash a card from your hand."
+  },
+  {
+    "name": "Mill",
+    "id": "030114",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action-Victory"
+    ],
+    "text": "+1 Card +1 Action You may discard 2 cards. If you do, +(2). | {1}"
+  },
+  {
+    "name": "Mining Village",
+    "id": "031115",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions You may trash this for +(2)."
+  },
+  {
+    "name": "Minion",
+    "id": "031116",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+1 Action Choose one: +(2); or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards their hand and draws 4 cards."
+  },
+  {
+    "name": "Nobles",
+    "id": "031117",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(6)",
+    "types": [
+      "Action-Victory"
+    ],
+    "text": "Choose one: +3 Cards; or +2 Actions. | {2}"
+  },
+  {
+    "name": "Patrol",
+    "id": "030118",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+3 Cards Reveal the top 4 cards of your deck. Put the Victory cards and Curses into your hand. Put the rest back in any order."
+  },
+  {
+    "name": "Pawn",
+    "id": "031119",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "Choose two: +1 Card; +1 Action; +1 Buy; +(1). The choices must be different."
+  },
+  {
+    "name": "Replace",
+    "id": "030120",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Trash a card from your hand. Gain a card costing up to (2) more than it. If the gained card is an Action or Treasure, put it onto your deck; if its a Victory card, each other player gains a Curse."
+  },
+  {
+    "name": "Saboteur",
+    "id": "031021",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Each other player reveals cards from the top of their deck until revealing one costing (3) or more. They trash that card and may gain a card costing at most (2) less than it. They discard the other revealed cards."
+  },
+  {
+    "name": "Scout",
+    "id": "031022",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Action Reveal the top 4 cards of your deck. Put the revealed Victory cards into your hand. Put the other cards on top of your deck in any order."
+  },
+  {
+    "name": "Secret Chamber",
+    "id": "031023",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "Discard any number of cards. +(1) per card discarded. | When another player plays an Attack card, you may reveal this from your hand. If you do, +2 Cards, then put 2 cards from your hand on top of your deck."
+  },
+  {
+    "name": "Secret Passage",
+    "id": "030124",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +1 Action Take a card from your hand and put it anywhere in your deck."
+  },
+  {
+    "name": "Shanty Town",
+    "id": "031125",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Actions Reveal your hand. If you have no Action cards in hand, +2 Cards."
+  },
+  {
+    "name": "Steward",
+    "id": "031126",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "Choose one: +2 Cards; or +(2); or trash 2 cards from your hand."
+  },
+  {
+    "name": "Swindler",
+    "id": "031127",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+(2) Each other player trashes the top card of their deck and gains a card with the same cost that you choose."
+  },
+  {
+    "name": "Torturer",
+    "id": "031128",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+3 Cards Each other player either discards 2 cards or gains a Curse to their hand, their choice. (They may pick an option they cant do.)"
+  },
+  {
+    "name": "Trading Post",
+    "id": "031129",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "Trash 2 cards from your hand. If you did, gain a Silver to your hand."
+  },
+  {
+    "name": "Tribute",
+    "id": "031030",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "The player to your left reveals then discards the top 2 cards of their deck. For each differently named card revealed, if it is an Action Card, +2 Actions Treasure Card, +(2) Victory Card, +2 Cards"
+  },
+  {
+    "name": "Upgrade",
+    "id": "031131",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Trash a card from your hand. Gain a card costing exactly (1) more than it."
+  },
+  {
+    "name": "Wishing Well",
+    "id": "031132",
+    "supply": "Kingdom Pile",
+    "set": "Intrigue",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Name a card, then reveal the top card of your deck. If you named it, put it into your hand."
+  }
+]

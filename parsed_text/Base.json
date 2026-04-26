@@ -1,7 +1,7 @@
 [
   {
-    "id": "011101",
     "name": "Copper",
+    "id": "011101",
     "supply": "Basic",
     "set": "Dominion",
     "edition": "1&2",
@@ -12,20 +12,8 @@
     "text": "(1)"
   },
   {
-    "id": "011102",
-    "name": "Curse",
-    "supply": "Basic",
-    "set": "Dominion",
-    "edition": "1&2",
-    "cost": "(0)",
-    "types": [
-      "Curse"
-    ],
-    "text": ""
-  },
-  {
-    "id": "011103",
     "name": "Duchy",
+    "id": "011102",
     "supply": "Basic",
     "set": "Dominion",
     "edition": "1&2",
@@ -36,8 +24,8 @@
     "text": "{3}"
   },
   {
-    "id": "011104",
     "name": "Estate",
+    "id": "011103",
     "supply": "Basic",
     "set": "Dominion",
     "edition": "1&2",
@@ -48,8 +36,8 @@
     "text": "{1}"
   },
   {
-    "id": "011105",
     "name": "Gold",
+    "id": "011104",
     "supply": "Basic",
     "set": "Dominion",
     "edition": "1&2",
@@ -60,8 +48,8 @@
     "text": "(3)"
   },
   {
-    "id": "011106",
     "name": "Province",
+    "id": "011105",
     "supply": "Basic",
     "set": "Dominion",
     "edition": "1&2",
@@ -72,8 +60,8 @@
     "text": "{6}"
   },
   {
-    "id": "011107",
     "name": "Silver",
+    "id": "011106",
     "supply": "Basic",
     "set": "Dominion",
     "edition": "1&2",

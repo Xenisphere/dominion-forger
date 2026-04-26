@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Berserker",
+    "id": "080101",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Gain a card costing less than this. Each other player discards down to 3 cards in hand. | When you gain this, if you have an Action in play, play this."
+  },
+  {
+    "name": "Border Village",
+    "id": "081102",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(6)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +2 Actions | When you gain this, gain a cheaper card."
+  },
+  {
+    "name": "Cache",
+    "id": "081003",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(3) | When you gain this, gain 2 Coppers."
+  },
+  {
+    "name": "Cartographer",
+    "id": "081104",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action Look at the top 4 cards of your deck. Discard any number of them, then put the rest back in any order."
+  },
+  {
+    "name": "Cauldron",
+    "id": "080105",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Treasure-Attack"
+    ],
+    "text": "(2) +1 Buy The third time you gain an Action this turn, each other player gains a Curse."
+  },
+  {
+    "name": "Crossroads",
+    "id": "081106",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "Reveal your hand. +1 Card per Victory card revealed. If this is the first time you played a Crossroads this turn, +3 Actions."
+  },
+  {
+    "name": "Develop",
+    "id": "081107",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "Trash a card from your hand. Gain two cards onto your deck, with one costing exactly (1) more than it, and one costing exactly (1) less than it, in either order."
+  },
+  {
+    "name": "Duchess",
+    "id": "081008",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(2)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(2) Each player (including you) looks at the top card of their deck and may discard it. | In games using this, when you gain a Duchy, you may gain a Duchess."
+  },
+  {
+    "name": "Embassy",
+    "id": "081009",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+5 Cards Discard 3 cards. | When you gain this, each other player gains a Silver."
+  },
+  {
+    "name": "Farmland",
+    "id": "081110",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(6)",
+    "types": [
+      "Victory"
+    ],
+    "text": "{2} | When you gain this, trash a card from your hand and gain a nonFarmland card costing exactly (2) more than it."
+  },
+  {
+    "name": "Fool's Gold",
+    "id": "081111",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(2)",
+    "types": [
+      "Treasure-Reaction"
+    ],
+    "text": "If this is the first time you played a Fools Gold this turn, +(1), otherwise +(4). | When another player gains a Province, you may trash this from your hand, to gain a Gold onto your deck."
+  },
+  {
+    "name": "Guard Dog",
+    "id": "080112",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(3)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "+2 Cards If you have 5 or fewer cards in hand, +2 Cards. | When another player plays an Attack, you may first play this from your hand."
+  },
+  {
+    "name": "Haggler",
+    "id": "081113",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(2) This turn, when you gain a card, if you bought it, gain a cheaper nonVictory card."
+  },
+  {
+    "name": "Highway",
+    "id": "081114",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action This turn, cards cost (1) less."
+  },
+  {
+    "name": "Ill-Gotten Gains",
+    "id": "081015",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(1) You may gain a Copper to your hand. | When you gain this, each other player gains a Curse."
+  },
+  {
+    "name": "Inn",
+    "id": "081116",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+2 Cards +2 Actions Discard 2 cards. | When you gain this, reveal any number of Action cards from your discard pile and shuffle them into your deck."
+  },
+  {
+    "name": "Jack of All Trades",
+    "id": "081117",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "Gain a Silver. Look at the top card of your deck; you may discard it. Draw until you have 5 cards in hand. You may trash a nonTreasure card from your hand."
+  },
+  {
+    "name": "Mandarin",
+    "id": "081018",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+(3) Put a card from your hand onto your deck. | When you gain this, put all Treasures you have in play onto your deck in any order."
+  },
+  {
+    "name": "Margrave",
+    "id": "081119",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+3 Cards +1 Buy Each other player draws a card, then discards down to 3 cards in hand."
+  },
+  {
+    "name": "Noble Brigand",
+    "id": "081020",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+(1) Each other player reveals the top 2 cards of their deck, trashes a revealed Silver or Gold you choose, discards the rest, and gains a Copper if they didnt reveal a Treasure. You gain the trashed cards. | When you buy this, do its attack."
+  },
+  {
+    "name": "Nomad Camp",
+    "id": "081021",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Buy +(2) | This is gained onto your deck (instead of to your discard pile)."
+  },
+  {
+    "name": "Nomads",
+    "id": "080122",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Buy +(2) | When you gain or trash this, +(2)."
+  },
+  {
+    "name": "Oasis",
+    "id": "081123",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action +(1) Discard a card."
+  },
+  {
+    "name": "Oracle",
+    "id": "081024",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice (they choose the order). Then, +2 Cards."
+  },
+  {
+    "name": "Scheme",
+    "id": "081125",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action This turn, you may put one of your Action cards onto your deck when you discard it from play."
+  },
+  {
+    "name": "Silk Road",
+    "id": "091052",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1",
+    "cost": "(4)",
+    "types": [
+      "Victory"
+    ],
+    "text": "Worth {1} for every 4 Victory cards you have (round down)."
+  },
+  {
+    "name": "Souk",
+    "id": "080127",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Buy +(7) per card in your hand (you cant go below (0)). | When you gain this, trash up to 2 cards from your hand."
+  },
+  {
+    "name": "Spice Merchant",
+    "id": "081128",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action"
+    ],
+    "text": "You may trash a Treasure from your hand to choose one: +2 Cards and +1 Action; or +1 Buy and +(2)."
+  },
+  {
+    "name": "Stables",
+    "id": "081129",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "You may discard a Treasure, for +3 Cards and +1 Action."
+  },
+  {
+    "name": "Trader",
+    "id": "081130",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(4)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "Trash a card from your hand. Gain a Silver per (1) it costs. | When you gain a card, you may reveal this from your hand, to exchange the card for a Silver."
+  },
+  {
+    "name": "Trail",
+    "id": "080131",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "+1 Card +1 Action | When you gain, trash, or discard this, other than in Cleanup, you may play it."
+  },
+  {
+    "name": "Tunnel",
+    "id": "081132",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "1&2",
+    "cost": "(3)",
+    "types": [
+      "Victory-Reaction"
+    ],
+    "text": "{2} | When you discard this other than during Cleanup, you may reveal it to gain a Gold."
+  },
+  {
+    "name": "Weaver",
+    "id": "080133",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(4)",
+    "types": [
+      "Action-Reaction"
+    ],
+    "text": "Gain two Silvers or a card costing up to (4). | When you discard this other than in Cleanup, you may play it."
+  },
+  {
+    "name": "Wheelwright",
+    "id": "080134",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action"
+    ],
+    "text": "+1 Card +1 Action You may discard a card to gain an Action card costing as much as it or less."
+  },
+  {
+    "name": "Witch's Hut",
+    "id": "080135",
+    "supply": "Kingdom Pile",
+    "set": "Hinterlands",
+    "edition": "2",
+    "cost": "(5)",
+    "types": [
+      "Action-Attack"
+    ],
+    "text": "+4 Cards Discard 2 cards, revealed. If theyre both Actions, each other player gains a Curse."
+  }
+]
