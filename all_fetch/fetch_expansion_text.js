@@ -214,7 +214,11 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
 
   const rawText = textFields.join(' | ').trim();
   const cleanedText = rawText ? cleanText(rawText) : '';
-  
+  const types = typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [];
+  const gives_cards = /\+\d+ cards?/i.test(cleanedText);
+  const gives_actions = /\+\d+ actions?/i.test(cleanedText);
+  const gives_buys = /\+\d+ buys?/i.test(cleanedText);
+  const gives_coins = /\+\d*\s*\(\d+\)|\+\(?[0-9]+\)?/i.test(cleanedText);
   const lookupInfo = lookup[cardName];
   const boxName = lookupInfo ? lookupInfo.boxName : 'Unknown';
   const editionRaw = editionMatch ? editionMatch[1].trim() : null;
@@ -242,7 +246,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     cost_debt: cost2Match ? parseInt(cost2Match[1].trim()) : 0,
     cost_potion: !!cost3Match ? 1 : 0,
   
-    types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
+    types,
     subtypes: [],
   
     text: cleanedText,
@@ -252,11 +256,11 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     has_on_gain: /when you gain/i.test(cleanedText),
     has_on_buy: /when you buy/i.test(cleanedText),
   
-    gives_cards: /\+\d+ cards?/i.test(cleanedText),
-    gives_actions: /\+\d+ actions?/i.test(cleanedText),
-    gives_buys: /\+\d+ buys?/i.test(cleanedText),
-    gives_coins: /\+\d*\s*\(\d+\)|\+\(?[0-9]+\)?/i.test(cleanedText),
-  
+    gives_cards,
+    gives_actions,
+    gives_buys,
+    gives_coins,
+    
     needs_setup: false,
     dependencies: [],
   
