@@ -75,6 +75,7 @@ function buildCardLookup() {
     allCards.forEach((name, idx) => {
       lookup[name] = {
         boxNum,
+        boxName,
         position: String(idx + 1).padStart(2, '0'),
         total
       };
@@ -213,8 +214,9 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
 
   const rawText = textFields.join(' | ').trim();
   const cleanedText = rawText ? cleanText(rawText) : '';
-
+  
   const lookupInfo = lookup[cardName];
+  const boxName = lookupInfo ? lookupInfo.boxName : 'Unknown';
   const editionRaw = editionMatch ? editionMatch[1].trim() : null;
   const editionCode = formatEdition(editionRaw);
   const id = lookupInfo
@@ -239,7 +241,8 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     cost_debt: cost2Match ? parseInt(cost2Match[1].trim()) : null,
     potion: !!cost3Match,
     types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
-    text: cleanedText
+    text: cleanedText,
+    image: `images/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
   };
 }
 
