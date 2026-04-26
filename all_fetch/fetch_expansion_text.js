@@ -106,6 +106,72 @@ function formatCost(raw, extra, isDebt) {
   return raw;
 }
 
+function computeTags(text, types, gives_cards, gives_actions, gives_buys, gives_coins) {
+  const t = text.toLowerCase();
+  const tags = new Set();
+
+  // DRAW / HAND CONTROL
+  if (gives_cards || /\+\d+ cards?/i.test(text) || /draw\s+\d/i.test(t)) tags.add('draw');
+  if (gives_cards && gives_actions) tags.add('cantrip');
+  if (/discard/i.test(t)) tags.add('discard');
+  if (/reveal|look at the top|top \d+ cards|set aside.*deck/i.test(t)) tags.add('scry');
+  if (/onto your deck|top of.*deck|put.*on top/i.test(t)) tags.add('topdeck');
+
+  // ACTIONS / FLOW
+  if (gives_actions) tags.add('actions');
+  if (/\+2 actions|\+3 actions|\+4 actions/i.test(text)) tags.add('village');
+  const isAction = types.some(t => t.toLowerCase().includes('action'));
+  if (isAction && !gives_actions) tags.add('terminal');
+
+  // ECONOMY
+  if (gives_coins) tags.add('coin');
+  if (gives_buys) tags.add('buy');
+  if (gives_coins || gives_buys) tags.add('payload');
+  if (/cost[s]?\s+\(?[0-9]*\)?\s+less|cost[s]?\s+[0-9]*\s+more|reduce.*cost|increase.*cost/i.test(t)) tags.add('cost_control');
+
+  // GAIN
+  if (/gain a|gain an|gain up to|gains a/i.test(t)) tags.add('gain');
+
+  // TRASHING / DECK CONTROL
+  if (/trash/i.test(t)) tags.add('trash');
+  if (/trash this|return this to|trash it/i.test(t)) tags.add('self_trash');
+  if (tags.has('trash') && (gives_cards || gives_coins || gives_actions || tags.has('gain'))) tags.add('trash_benefit');
+  if (/look at.*choose|pick one|select|you may discard.*for/i.test(t)) tags.add('filtering');
+
+  // INTERACTION
+  if (/each other player|another player/i.test(t)) tags.add('attack');
+  if (/gain a curse|gain a ruins|gains a copper|gain copper/i.test(t)) tags.add('junking');
+  if (/discard down to|reveals? (?:their )?hand|discard.*each other player/i.test(t)) tags.add('hand_attack');
+  if (/top of their deck|top of (?:each )?other player|deck.*attack/i.test(t)) tags.add('deck_attack');
+
+  // TRIGGERS
+  if (/when you gain/i.test(t)) tags.add('on_gain');
+  if (/when you buy/i.test(t)) tags.add('on_buy');
+
+  // SPECIAL MECHANICS
+  if (types.some(t => t.toLowerCase().includes('duration'))) tags.add('duration');
+  if (/next turn|at the start of your next|each of your turns/i.test(t)) tags.add('multi_turn');
+  if (/victory token|\{[0-9]+\}/i.test(t) && !/^\{[0-9]+\}$/.test(t.trim())) tags.add('vp_tokens');
+  if (/\{[0-9]+\}|victory point|worth.*vp/i.test(t)) tags.add('alt_vp');
+
+  // SETUP / EXTRAS
+  if (/spoils|horse|will-o'-wisp|imp|ghost|wish|madman|mercenary|bat|pouch|cursed gold|magic lamp|pasture|goat|flag|key|treasure chest|loot/i.test(t)) tags.add('extra_cards');
+  if (/heirloom|bane|this is not in the supply|set aside.*before/i.test(t)) tags.add('setup');
+
+  // DERIVED
+  if (tags.has('draw') || tags.has('village') || tags.has('trash')) tags.add('engine_piece');
+  if (tags.has('coin') || tags.has('buy')) tags.add('payload_piece');
+  if (tags.has('draw') && !tags.has('actions')) tags.add('terminal_draw');
+  if (tags.has('draw') && tags.has('actions')) tags.add('non_terminal_draw');
+  if (tags.has('gain') && tags.has('actions')) tags.add('gain_engine');
+  if (tags.has('trash') && tags.has('actions')) tags.add('trash_engine');
+
+  // FALLBACK
+  if (tags.size === 0) tags.add('utility');
+
+  return [...tags];
+}
+
 async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   cardName = aliases[cardName] || cardName;
   const safeFileName = cardName.replace(/'/g, '%27');
@@ -227,9 +293,10 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     name: cardName,
     id,
     supply,
-    box: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
+    box: lookupInfo ? lookupInfo.boxName : 'Unknown',
     edition: editionRaw || 'Unknown',
-    removed: editionRaw === '1' ? true : false,
+    removed: editionRaw === '1',
+  
     cost: costMatch || cost2Match || cost3Match ? (
       costMatch && cost2Match
         ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
@@ -237,11 +304,28 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
         ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
         : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch)
     ) : null,
-    cost_coin: costMatch ? parseInt(costMatch[1].trim()) : null,
-    cost_debt: cost2Match ? parseInt(cost2Match[1].trim()) : null,
-    potion: !!cost3Match,
+    cost_coin: costMatch ? parseInt(costMatch[1].trim()) : 0,
+    cost_debt: cost2Match ? parseInt(cost2Match[1].trim()) : 0,
+    cost_potion: !!cost3Match ? 1 : 0,
+  
     types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
+    subtypes: [],
+  
     text: cleanedText,
+  
+    tags: [],
+  
+    has_on_gain: /when you gain/i.test(cleanedText),
+    has_on_buy: /when you buy/i.test(cleanedText),
+  
+    gives_cards: /\+\d+ cards?/i.test(cleanedText),
+    gives_actions: /\+\d+ actions?/i.test(cleanedText),
+    gives_buys: /\+\d+ buys?/i.test(cleanedText),
+    gives_coins: /\+\d*\s*\(\d+\)|\+\(?[0-9]+\)?/i.test(cleanedText),
+  
+    needs_setup: false,
+    dependencies: [],
+  
     image: `images/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
   };
 }
