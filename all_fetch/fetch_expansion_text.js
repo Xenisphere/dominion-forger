@@ -225,7 +225,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     name: cardName,
     id,
     supply,
-    set: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
+    box: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
     edition: editionRaw || 'Unknown',
     cost: costMatch || cost2Match || cost3Match ? (
       costMatch && cost2Match
@@ -234,6 +234,9 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
         ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
         : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch)
     ) : null,
+    cost_coin: costMatch,
+    cost_debt: cost2Match,
+    potion: cost3Match,
     types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
     text: cleanedText
   };
