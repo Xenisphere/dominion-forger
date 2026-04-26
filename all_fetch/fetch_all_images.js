@@ -9,6 +9,7 @@ function buildCardLookup() {
   const lookup = {};
   const boxes = Object.keys(cardNames).filter(k => k !== 'all_total');
   boxes.forEach((boxName, boxIdx) => {
+    console.log(`${boxName}`);
     const boxNum = String(boxIdx + 1).padStart(2, '0');
     const box = cardNames[boxName];
     const hasRemoved = !!box.Removed;
