@@ -48,14 +48,6 @@ function buildEditionLookup() {
   return editionLookup;
 }
 
-function formatEdition(raw) {
-  if (!raw) return '10';
-  raw = raw.trim();
-  if (raw === '1&2') return '11';
-  if (raw === '2') return '01';
-  return '10';
-}
-
 function downloadImage(url, destPath) {
   return new Promise((resolve, reject) => {
     const file = fs.createWriteStream(destPath);
@@ -88,9 +80,8 @@ function fetchHtml(url) {
 
 async function fetchImage(cardName, info, editionLookup) {
   const { boxName, boxNum, position, edition } = info;
-  const id = editionLookup[cardName] || `${boxNum}10${position}`;
   const safeName = cardName.replace(/ /g, '_');
-  const filename = `${safeName}_${id}.jpg`;
+  const filename = `${safeName}.jpg`;
 
   const outDir = path.join(__dirname, '..', 'images', boxName);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
@@ -124,7 +115,7 @@ async function main() {
     try {
       const success = await fetchImage(cardName, info, editionLookup);
       if (!success) {
-        const id = editionLookup[cardName] || `${info.boxNum}10${info.position}`;
+        const id = editionLookup[cardName] || `${boxNum}${position}${total}`;
         console.error(`[FAIL] ${cardName} (${id}) — could not find image URL`);
         failed.push(`${cardName} (${id})`);
       }
