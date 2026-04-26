@@ -9,13 +9,13 @@ function buildCardLookup() {
   const lookup = {};
   const boxes = Object.keys(cardNames).filter(k => k !== 'all_total');
   boxes.forEach((boxName, boxIdx) => {
-    console.log(`${boxName}`);
     const boxNum = String(boxIdx + 1).padStart(2, '0');
     const box = cardNames[boxName];
     const hasRemoved = !!box.Removed;
     const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
     let position = 1;
     for (const [, cards] of allSections) {
+      console.log(`${boxName}`);
       if (!Array.isArray(cards)) continue;
       for (const card of cards) {
         lookup[card.name] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition: !hasRemoved ? '10' : '11' };
