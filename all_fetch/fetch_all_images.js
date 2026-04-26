@@ -17,7 +17,6 @@ function buildCardLookup() {
     for (const [, cards] of allSections) {
       if (!Array.isArray(cards)) continue;
       for (const card of cards) {
-        console.log(`${boxName}`);
         lookup[card.name] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition: !hasRemoved ? '10' : '11' };
         if (card.group && Array.isArray(card.group)) {
           for (const sub of card.group) {
@@ -112,7 +111,12 @@ async function main() {
   const editionLookup = buildEditionLookup();
   const failed = [];
 
+  let currentBox = null;
   for (const [cardName, info] of Object.entries(lookup)) {
+    if (info.boxName !== currentBox) {
+      currentBox = info.boxName;
+      console.log(`\n[BOX] ${currentBox}`);
+    }
     try {
       const success = await fetchImage(cardName, info, editionLookup);
       if (!success) {
