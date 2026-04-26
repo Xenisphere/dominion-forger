@@ -15,9 +15,9 @@ function buildCardLookup() {
     const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
     let position = 1;
     for (const [, cards] of allSections) {
-      console.log(`${boxName}`);
       if (!Array.isArray(cards)) continue;
       for (const card of cards) {
+        console.log(`${boxName}`);
         lookup[card.name] = { boxName, boxNum, position: String(position).padStart(2, '0'), edition: !hasRemoved ? '10' : '11' };
         if (card.group && Array.isArray(card.group)) {
           for (const sub of card.group) {
