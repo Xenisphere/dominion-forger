@@ -52,35 +52,35 @@ function cleanText(text) {
 function buildCardLookup() {
   const lookup = {};
   const boxes = Object.keys(cardNames).filter(k => k !== 'all_total');
+
   boxes.forEach((boxName, boxIdx) => {
     const boxNum = String(boxIdx + 1).padStart(2, '0');
     const box = cardNames[boxName];
     const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
 
-    // Merge all card arrays and sort alphabetically
+    // Collect all cards including sub-cards
     const allCards = [];
     for (const [, cards] of allSections) {
       if (!Array.isArray(cards)) continue;
-        for (const card of cards) allCards.push(card);
-    }
-    allCards.sort((a, b) => a.name.localeCompare(b.name));
-    
-    let position = 1;
-    for (const card of allCards) {
-      lookup[card.name] = { boxNum, position: String(position).padStart(2, '0') };
-      if (card.group && Array.isArray(card.group)) {
-        for (const sub of card.group) {
-          position++;
-          lookup[sub] = { boxNum, position: String(position).padStart(2, '0') };
-        }
+      for (const card of cards) {
+        allCards.push(card.name);
+        if (card.group && Array.isArray(card.group)) allCards.push(...card.group);
+        if (card.paired_with) allCards.push(card.paired_with);
+        if (card.chain) allCards.push(...card.chain);
       }
-      if (card.paired_with) {
-        position++;
-        lookup[card.paired_with] = { boxNum, position: String(position).padStart(2, '0') };
-      }
-      position++;
     }
+    allCards.sort((a, b) => a.localeCompare(b));
+    const total = String(allCards.length).padStart(2, '0');
+
+    allCards.forEach((name, idx) => {
+      lookup[name] = {
+        boxNum,
+        position: String(idx + 1).padStart(2, '0'),
+        total
+      };
+    });
   });
+
   return lookup;
 }
 
@@ -218,7 +218,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   const editionRaw = editionMatch ? editionMatch[1].trim() : null;
   const editionCode = formatEdition(editionRaw);
   const id = lookupInfo
-  ? `${lookupInfo.boxNum}${editionCode}${lookupInfo.position}`
+  ? `${lookupInfo.boxNum}${lookupInfo.position}${lookupInfo.total}`
   : null;
 
   return {
@@ -227,6 +227,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     supply,
     box: kingdomMatch ? kingdomMatch[1].trim() : 'Unknown',
     edition: editionRaw || 'Unknown',
+    removed: editionRaw === '1' ? true : false,
     cost: costMatch || cost2Match || cost3Match ? (
       costMatch && cost2Match
         ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
@@ -234,9 +235,9 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
         ? formatCost(costMatch ? costMatch[1] : null, costExtra, false) + '[1]'
         : formatCost(costMatch ? costMatch[1] : cost2Match ? cost2Match[1] : null, costExtra, !!cost2Match && !costMatch)
     ) : null,
-    cost_coin: costMatch,
-    cost_debt: cost2Match,
-    potion: cost3Match,
+    cost_coin: costMatch ? parseInt(costMatch[1].trim()) : null,
+    cost_debt: cost2Match ? parseInt(cost2Match[1].trim()) : null,
+    potion: !!cost3Match,
     types: typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [],
     text: cleanedText
   };
