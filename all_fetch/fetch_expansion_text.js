@@ -313,7 +313,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   
     text: cleanedText,
   
-    tags: [],
+    tags: computeTags(cleanedText, types, gives_cards, gives_actions, gives_buys, gives_coins),
   
     has_on_gain: /when you gain/i.test(cleanedText),
     has_on_buy: /when you buy/i.test(cleanedText),
