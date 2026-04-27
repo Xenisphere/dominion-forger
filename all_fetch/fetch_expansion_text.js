@@ -219,6 +219,8 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   const types = typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [];
   const lookupInfo = lookup[cardName];
   const boxName = lookupInfo ? lookupInfo.boxName : 'Unknown';
+  const secondEditionBoxes = ['Dominion', 'Intrigue', 'Seaside', 'Prosperity', 'Hinterlands', 'Cornucopia & Guilds'];
+  const removed = secondEditionBoxes.includes(boxName) && editionRaw !== '2' && editionRaw !== '1&2';
   const editionRaw = editionMatch ? editionMatch[1].trim() : null;
   const editionCode = formatEdition(editionRaw);
   const id = lookupInfo
@@ -228,11 +230,10 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   return {
     name: cardName,
     id,
-    supply,
     box: lookupInfo ? lookupInfo.boxName : 'Unknown',
     edition: editionRaw || 'Unknown',
-    removed: editionRaw === '1',
-  
+    supply,
+    removed,
     cost: costMatch || cost2Match || cost3Match ? (
       costMatch && cost2Match
         ? formatCost(costMatch[1], costExtra, false) + formatCost(cost2Match[1], costExtra, true)
@@ -243,16 +244,11 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     cost_coin: costMatch ? parseInt(costMatch[1].trim()) : 0,
     cost_debt: cost2Match ? parseInt(cost2Match[1].trim()) : 0,
     cost_potion: !!cost3Match ? 1 : 0,
-  
+    text: cleanedText,
     types,
     subtypes: [],
-  
-    text: cleanedText,
-  
     tags: computeTags(cleanedText, types),
-    
     dependencies: [],
-  
     image: `images/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
   };
 }
