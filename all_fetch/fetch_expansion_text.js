@@ -115,7 +115,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   let wikitext = '';
 
   if (fs.existsSync(localPath)) {
-    console.log(`[CACHE] "${cardName}"`);
+    //console.log(`[CACHE] "${cardName}"`);
     fileData = JSON.parse(fs.readFileSync(localPath, 'utf-8'));
     wikitext = fileData.infobox || fileData.list || '';
     const textFields = [];
