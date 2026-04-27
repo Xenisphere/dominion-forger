@@ -219,10 +219,10 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   const types = typesMatch ? typesMatch[1].split(',').map(t => t.trim()) : [];
   const lookupInfo = lookup[cardName];
   const boxName = lookupInfo ? lookupInfo.boxName : 'Unknown';
-  const secondEditionBoxes = ['Dominion', 'Intrigue', 'Seaside', 'Prosperity', 'Hinterlands', 'Cornucopia & Guilds'];
-  const removed = secondEditionBoxes.includes(boxName) && editionRaw !== '2' && editionRaw !== '1&2';
   const editionRaw = editionMatch ? editionMatch[1].trim() : null;
   const editionCode = formatEdition(editionRaw);
+  const secondEditionBoxes = ['Dominion', 'Intrigue', 'Seaside', 'Prosperity', 'Hinterlands', 'Cornucopia & Guilds'];
+  const removed = secondEditionBoxes.includes(boxName) && editionRaw !== '2' && editionRaw !== '1&2';
   const id = lookupInfo
   ? `${lookupInfo.boxNum}${lookupInfo.position}${lookupInfo.total}`
   : null;
