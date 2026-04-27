@@ -261,9 +261,8 @@ function computeTags(text, types) {
   const opp_tags = new Set();
   const typeList = types.map(t => t.toLowerCase());
 
-  const oppSections = [...t.matchAll(/(?:each other player|another player|they)[^.]*\./g)].map(m => m[0]).join(' ');
-  const selfText = t.replace(/(?:each other player|another player|they)[^.]*\./g, '');
   const oppSections = [...t.matchAll(/(?:each other player|another player|they)[^.]*\.?/g)].map(m => m[0]).join(' ');
+  const selfText = t.replace(/(?:each other player|another player|they)[^.]*\./g, '');
 
   // CARD GIVES
   if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
