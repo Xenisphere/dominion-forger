@@ -263,6 +263,7 @@ function computeTags(text, types) {
 
   const oppSections = [...t.matchAll(/(?:each other player|another player|they)[^.]*\./g)].map(m => m[0]).join(' ');
   const selfText = t.replace(/(?:each other player|another player|they)[^.]*\./g, '');
+  const oppSections = [...t.matchAll(/(?:each other player|another player|they)[^.]*\.?/g)].map(m => m[0]).join(' ');
 
   // CARD GIVES
   if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
@@ -310,7 +311,7 @@ function computeTags(text, types) {
 
   // ATTACKS
   if (/each other player|another player|each player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
-  if (/gain a curse|gain a ruins|gains a copper/i.test(oppSections)) opp_tags.add('junking');
+  if (/gains a curse|gains a ruins|gains a copper/i.test(oppSections)) opp_tags.add('junking');
   if (/gain.*copper|gain.*curse|gain.*ruins/i.test(selfText)) tags.add('self_junk');
   if (/discard down to|discard.*each other player/i.test(oppSections)) tags.add('discard_attack');
   if (/\btrash\b/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
@@ -358,7 +359,7 @@ function computeTags(text, types) {
   const isAction = typeList.some(t => t.includes('action'));
   const hasActions = tags.has('+actions');
   const hasCards = tags.has('+cards') || /draw until|reveal.*put.*into your hand/i.test(selfText);
-  if (hasCards || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack'))) tags.add('engine_piece');
+  if (hasCards || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (isAction && !hasActions) tags.add('terminal');
   if (tags.has('+actions') && /\+[2-9] actions?/i.test(text)) tags.add('village');
