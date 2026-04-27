@@ -310,7 +310,7 @@ function computeTags(text, types) {
 
   // ATTACKS
   if (/each other player|another player|each player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
-  if (/gains a curse|gains a ruins|gains a copper/i.test(oppSections)) opp_tags.add('junking');
+  if (/gains a Curse|gains a ruins|gains a copper/i.test(oppSections)) opp_tags.add('junking');
   if (/gain.*copper|gain.*curse|gain.*ruins/i.test(selfText)) tags.add('self_junk');
   if (/discard down to|discard.*each other player/i.test(oppSections)) tags.add('discard_attack');
   if (/\btrash\b/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
