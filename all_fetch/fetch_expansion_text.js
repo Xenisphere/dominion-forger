@@ -408,7 +408,7 @@ async function main() {
           const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup);
           if (card) {
             results.push(card);
-            console.log(`[DONE] ${cardName}`);
+            //console.log(`[DONE] ${cardName}`);
           } else {
             failed.push(cardName);
           }
