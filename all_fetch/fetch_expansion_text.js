@@ -246,7 +246,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     cost_debt: cost2Match ? parseInt(cost2Match[1].trim()) : 0,
     cost_potion: !!cost3Match ? 1 : 0,
     text: cleanedText,
-    types,
+    types: typesMatch ? typesMatch[1].split('-').map(t => t.trim()) : [],
     subtypes: [],
     tags,
     opponent_tags,
@@ -261,7 +261,6 @@ function computeTags(text, types) {
   const opp_tags = new Set();
   const typeList = types.map(t => t.toLowerCase());
 
-  // Split self vs opponent text
   const oppSections = [...t.matchAll(/(?:each other player|another player|they)[^.]*\./g)].map(m => m[0]).join(' ');
   const selfText = t.replace(/(?:each other player|another player|they)[^.]*\./g, '');
 
@@ -282,7 +281,6 @@ function computeTags(text, types) {
   if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(selfText)) tags.add('cost_reduction');
 
   // CARD MOVEMENT (self)
-  if (tags.has('+cards') || /draw \d|draw until|reveal.*put.*into your hand/i.test(selfText)) tags.add('draw');
   if (/discard(?! pile| them afterwards)/i.test(selfText)) tags.add('discard');
   if (/\btrash\b/i.test(selfText)) tags.add('trash');
   if (/gain a|gain an|gain up to|gains a/i.test(selfText)) tags.add('gain');
@@ -293,26 +291,29 @@ function computeTags(text, types) {
 
   // CARD MOVEMENT (opponent)
   if (/discard/i.test(oppSections)) opp_tags.add('discard');
-  if (/trash/i.test(oppSections)) opp_tags.add('trash');
+  if (/\btrash\b/i.test(oppSections)) opp_tags.add('trash');
   if (/gain a|gain an/i.test(oppSections)) opp_tags.add('gain');
   if (/onto their deck|top of their deck/i.test(oppSections)) opp_tags.add('topdeck');
   if (/reveal/i.test(oppSections)) opp_tags.add('reveal');
-  if (/each other player draws|another player draws/i.test(oppSections)) opp_tags.add('draw');
+  if (/each other player draws|another player draws/i.test(oppSections)) opp_tags.add('+cards');
+  if (/each player.*discard|discard.*each player|including you.*discard/i.test(t)) opp_tags.add('discard');
+  if (/each player.*reveal|reveal.*each player|including you/i.test(t)) opp_tags.add('reveal');
 
   // TRIGGERS
   if (/when you gain/i.test(selfText)) tags.add('on_gain');
   if (/when you buy/i.test(selfText)) tags.add('on_buy');
   if (/when you trash/i.test(selfText)) tags.add('on_trash');
   if (/when you discard/i.test(selfText)) tags.add('on_discard');
-  if (/when another player plays an attack/i.test(t)) tags.add('on_attack');
-  if (typeList.includes('duration')) tags.add('duration');
+  if (/when another player plays an attack/i.test(t)) tags.add('reaction_attack');
+  if (typeList.some(t => t.includes('duration'))) tags.add('duration');
   if (/each of your turns|at the start of each/i.test(selfText)) tags.add('each_turn');
 
   // ATTACKS
   if (/each other player|another player|each player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
   if (/gain a curse|gain a ruins|gains a copper/i.test(oppSections)) opp_tags.add('junking');
+  if (/gain.*copper|gain.*curse|gain.*ruins/i.test(selfText)) tags.add('self_junk');
   if (/discard down to|discard.*each other player/i.test(oppSections)) tags.add('discard_attack');
-  if (/trash/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
+  if (/\btrash\b/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
   if (/top of their deck|top of (?:each )?other player/i.test(oppSections)) tags.add('deck_attack');
   if (/reveals? (?:their )?hand/i.test(oppSections)) tags.add('hand_reveal');
 
@@ -325,7 +326,6 @@ function computeTags(text, types) {
   if (/gain.*to your hand|gain.*into your hand/i.test(selfText)) tags.add('gain_to_hand');
   if (/gain.*onto your deck|gain.*to your deck/i.test(selfText)) tags.add('gain_to_deck');
   if (/not in the supply|non-supply/i.test(selfText)) tags.add('gain_non_supply');
-  if (/gain.*copper|gain.*curse|gain.*ruins/i.test(selfText)) tags.add('self_junk');
 
   // DECK CONTROL (self)
   if (/look at the top|reveal.*top|top \d+ cards of your deck|reveal.*until/i.test(selfText)) tags.add('scry');
@@ -333,7 +333,7 @@ function computeTags(text, types) {
   if (/search your deck|look through your deck/i.test(selfText)) tags.add('search_deck');
 
   // DECK CONTROL (opponent)
-  if (/each player.*reveal|reveal.*each player|including you.*reveal/i.test(t)) opp_tags.add('scry');
+  if (/look at the top|top \d+ cards of their deck/i.test(oppSections)) opp_tags.add('scry');
 
   // SPECIAL RESOURCES
   if (/spoils/i.test(t)) tags.add('uses_spoils');
@@ -348,23 +348,30 @@ function computeTags(text, types) {
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
   // REACTIONS
-  if (/when another player plays an attack/i.test(t) && typeList.some(t => t.includes('reaction'))) tags.add('reaction_attack');  if (/when.*gain/i.test(t) && typeList.includes('reaction')) tags.add('reaction_gain');
-  if (/when.*trash/i.test(t) && typeList.includes('reaction')) tags.add('reaction_trash');
+  if (/when.*gain/i.test(t) && typeList.some(t => t.includes('reaction'))) tags.add('reaction_gain');
+  if (/when.*trash/i.test(t) && typeList.some(t => t.includes('reaction'))) tags.add('reaction_trash');
 
   // RESERVE
-  if (/tavern mat|call.*from.*tavern/i.test(t) || typeList.includes('reserve')) tags.add('tavern_mat');
+  if (/tavern mat|call.*from.*tavern/i.test(t) || typeList.some(t => t.includes('reserve'))) tags.add('tavern_mat');
 
   // DERIVED
   const isAction = typeList.some(t => t.includes('action'));
   const hasActions = tags.has('+actions');
-  const hasCards = tags.has('+cards') || tags.has('draw');
-  if (tags.has('draw') || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
+  const hasCards = tags.has('+cards') || /draw until|reveal.*put.*into your hand/i.test(selfText);
+  if (hasCards || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack'))) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (isAction && !hasActions) tags.add('terminal');
   if (tags.has('+actions') && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (hasCards && hasActions) tags.add('cantrip');
   if (hasCards && !hasActions && isAction) tags.add('terminal_draw');
   if (hasCards && hasActions) tags.add('non_terminal_draw');
+
+  // Remove redundant tags
+  if (tags.has('terminal_draw')) tags.delete('terminal');
+  if (tags.has('non_terminal_draw')) tags.delete('terminal');
+  if (tags.has('non_terminal_draw') || tags.has('terminal_draw')) tags.delete('+cards');
+  if (tags.has('reaction_attack')) tags.delete('on_attack');
+  if (tags.has('village')) tags.delete('+actions');
 
   // FALLBACK
   if (tags.size === 0) tags.add('utility');
