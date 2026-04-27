@@ -354,7 +354,7 @@ function computeTags(text, types) {
   if (/tavern mat|call.*from.*tavern/i.test(t) || typeList.includes('reserve')) tags.add('tavern_mat');
 
   // DERIVED
-  const isAction = typeList.includes('action');
+  const isAction = typeList.some(t => t.includes('action'));
   const hasActions = tags.has('+actions');
   const hasCards = tags.has('+cards') || tags.has('draw');
   if (tags.has('draw') || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack'))) tags.add('engine_piece');
