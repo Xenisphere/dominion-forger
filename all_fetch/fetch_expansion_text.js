@@ -54,7 +54,7 @@ function buildCardLookup() {
   const boxes = Object.keys(cardNames).filter(k => k !== 'all_total');
 
   boxes.forEach((boxName, boxIdx) => {
-    const boxNum = String(boxIdx + 1).padStart(2, '0');
+    const boxNum = String(boxIdx).padStart(2, '0');
     const box = cardNames[boxName];
     const allSections = Object.entries(box).filter(([k]) => k !== 'Card Count');
 
