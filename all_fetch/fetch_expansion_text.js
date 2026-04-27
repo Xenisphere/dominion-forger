@@ -223,6 +223,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   const editionCode = formatEdition(editionRaw);
   const secondEditionBoxes = ['Dominion', 'Intrigue', 'Seaside', 'Prosperity', 'Hinterlands', 'Cornucopia & Guilds'];
   const removed = secondEditionBoxes.includes(boxName) && editionRaw !== '2' && editionRaw !== '1&2';
+  const { tags, opponent_tags } = computeTags(cleanedText, types);
   const id = lookupInfo
   ? `${lookupInfo.boxNum}${lookupInfo.position}${lookupInfo.total}`
   : null;
@@ -248,6 +249,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     types,
     subtypes: [],
     tags: computeTags(cleanedText, types),
+    opponent_tags,
     dependencies: [],
     image: `images/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
   };
@@ -256,65 +258,80 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
 function computeTags(text, types) {
   const t = text.toLowerCase();
   const tags = new Set();
+  const opp_tags = new Set();
   const typeList = types.map(t => t.toLowerCase());
+
+  // Split self vs opponent text
+  const oppSections = [...t.matchAll(/each other player[^.]*\.|another player[^.]*/g)].map(m => m[0]).join(' ');
+  const selfText = t.replace(/each other player[^.]*\.|another player[^.]*/g, '');
 
   // CARD GIVES
   if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
   if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
   if (/\+\d+ buys?/i.test(text)) tags.add('+buys');
   if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
-  if (/\+\d+ coffers?/i.test(t)) tags.add('+coffers');
-  if (/\+\d+ villagers?/i.test(t)) tags.add('+villagers');
-  if (/\+\d+ favors?/i.test(t)) tags.add('+favors');
-  if (/\+\d+ (?:victory token|\{)/i.test(t)) tags.add('+vp_tokens');
+  if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
+  if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
+  if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
+  if (/\+\d+ (?:victory token|\{)/i.test(selfText)) tags.add('+vp_tokens');
 
   // COST
   if (/\[1\]/.test(text)) tags.add('potion');
   if (/<\d+>/.test(text)) tags.add('debt');
-  if (/overpay|pay extra/i.test(t)) tags.add('overpay');
-  if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(t)) tags.add('cost_reduction');
+  if (/overpay|pay extra/i.test(selfText)) tags.add('overpay');
+  if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(selfText)) tags.add('cost_reduction');
 
-  // CARD MOVEMENT
-  if (tags.has('+cards') || /draw \d/i.test(t)) tags.add('draw');
-  if (/discard/i.test(t)) tags.add('discard');
-  if (/\btrash\b/i.test(t)) tags.add('trash');
-  if (/gain a|gain an|gain up to|gains a/i.test(t)) tags.add('gain');
-  if (/onto your deck|top of your deck|put.*on top/i.test(t)) tags.add('topdeck');
-  if (/\bexile\b/i.test(t)) tags.add('exile');
-  if (/set (it |this |them )?aside/i.test(t)) tags.add('set_aside');
-  if (/exchange/i.test(t)) tags.add('exchange');
+  // CARD MOVEMENT (self)
+  if (tags.has('+cards') || /draw \d/i.test(selfText)) tags.add('draw');
+  if (/discard/i.test(selfText)) tags.add('discard');
+  if (/\btrash\b/i.test(selfText)) tags.add('trash');
+  if (/gain a|gain an|gain up to|gains a/i.test(selfText)) tags.add('gain');
+  if (/onto your deck|top of your deck|put.*on top/i.test(selfText)) tags.add('topdeck');
+  if (/\bexile\b/i.test(selfText)) tags.add('exile');
+  if (/set (it |this |them )?aside/i.test(selfText)) tags.add('set_aside');
+  if (/exchange/i.test(selfText)) tags.add('exchange');
+
+  // CARD MOVEMENT (opponent)
+  if (/discard/i.test(oppSections)) opp_tags.add('discard');
+  if (/\btrash\b/i.test(oppSections)) opp_tags.add('trash');
+  if (/gain a|gain an/i.test(oppSections)) opp_tags.add('gain');
+  if (/onto their deck|top of their deck/i.test(oppSections)) opp_tags.add('topdeck');
+  if (/reveal/i.test(oppSections)) opp_tags.add('reveal');
 
   // TRIGGERS
-  if (/when you gain/i.test(t)) tags.add('on_gain');
-  if (/when you buy/i.test(t)) tags.add('on_buy');
-  if (/when you trash/i.test(t)) tags.add('on_trash');
-  if (/when you discard/i.test(t)) tags.add('on_discard');
+  if (/when you gain/i.test(selfText)) tags.add('on_gain');
+  if (/when you buy/i.test(selfText)) tags.add('on_buy');
+  if (/when you trash/i.test(selfText)) tags.add('on_trash');
+  if (/when you discard/i.test(selfText)) tags.add('on_discard');
   if (/when another player plays an attack/i.test(t)) tags.add('on_attack');
   if (typeList.includes('duration')) tags.add('duration');
-  if (/each of your turns|at the start of each/i.test(t)) tags.add('each_turn');
+  if (/each of your turns|at the start of each/i.test(selfText)) tags.add('each_turn');
 
   // ATTACKS
   if (/each other player|another player/i.test(t)) tags.add('attack');
-  if (/gain a curse|gain a ruins|gains a copper/i.test(t)) tags.add('junking');
-  if (/discard down to|discard.*each other player/i.test(t)) tags.add('discard_attack');
-  if (/trash.*each other player|each other player.*trash/i.test(t)) tags.add('trash_attack');
-  if (/top of their deck|top of each other player.*deck/i.test(t)) tags.add('deck_attack');
-  if (/reveals? (?:their )?hand/i.test(t)) tags.add('hand_reveal');
+  if (/gain a curse|gain a ruins|gains a copper/i.test(oppSections)) tags.add('junking');
+  if (/discard down to|discard.*each other player/i.test(oppSections)) tags.add('discard_attack');
+  if (/\btrash\b/i.test(oppSections)) tags.add('trash_attack');
+  if (/top of their deck|top of (?:each )?other player/i.test(oppSections)) tags.add('deck_attack');
+  if (/reveals? (?:their )?hand/i.test(oppSections)) tags.add('hand_reveal');
 
-  // TRASHING
-  if (/trash this|return this to its pile/i.test(t)) tags.add('trash_self');
+  // TRASHING (self)
+  if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
   if (tags.has('trash') && (tags.has('+cards') || tags.has('+coins') || tags.has('+actions') || tags.has('gain'))) tags.add('trash_for_benefit');
-  if (/trash.*gain|trash.*to gain/i.test(t)) tags.add('trash_to_gain');
+  if (/trash.*gain|trash.*to gain/i.test(selfText)) tags.add('trash_to_gain');
 
-  // GAINING
-  if (/gain.*to your hand|gain.*into your hand/i.test(t)) tags.add('gain_to_hand');
-  if (/gain.*onto your deck|gain.*to your deck/i.test(t)) tags.add('gain_to_deck');
-  if (/not in the supply|non-supply/i.test(t)) tags.add('gain_non_supply');
+  // GAINING (self)
+  if (/gain.*to your hand|gain.*into your hand/i.test(selfText)) tags.add('gain_to_hand');
+  if (/gain.*onto your deck|gain.*to your deck/i.test(selfText)) tags.add('gain_to_deck');
+  if (/not in the supply|non-supply/i.test(selfText)) tags.add('gain_non_supply');
 
-  // DECK CONTROL
-  if (/look at the top|reveal.*top|top \d+ cards of your deck/i.test(t)) tags.add('scry');
-  if (/reorder|in any order|rearrange/i.test(t)) tags.add('reorder');
-  if (/search your deck|look through your deck/i.test(t)) tags.add('search_deck');
+  // DECK CONTROL (self)
+  if (/look at the top|reveal.*top|top \d+ cards of your deck/i.test(selfText)) tags.add('scry');
+  if (/reorder|in any order|rearrange/i.test(selfText)) tags.add('reorder');
+  if (/search your deck|look through your deck/i.test(selfText)) tags.add('search_deck');
+
+  // DECK CONTROL (opponent)
+  if (/look at the top|top \d+ cards of their deck/i.test(oppSections)) opp_tags.add('scry');
 
   // SPECIAL RESOURCES
   if (/spoils/i.test(t)) tags.add('uses_spoils');
@@ -324,9 +341,8 @@ function computeTags(text, types) {
   if (/\bhex\b/i.test(t)) tags.add('uses_hexes');
 
   // RULE MODIFIERS
-  if (/take an extra turn|extra turn/i.test(t)) tags.add('extra_turn');
-  if (/extra buy phase/i.test(t)) tags.add('extra_buy_phase');
-  if (/at the start of your next turn|next turn/i.test(t) && typeList.includes('duration')) tags.add('persistent');
+  if (/take an extra turn|extra turn/i.test(selfText)) tags.add('extra_turn');
+  if (/each of your turns/i.test(selfText)) tags.add('extra_buy_phase');
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
   // REACTIONS
@@ -341,7 +357,7 @@ function computeTags(text, types) {
   const isAction = typeList.includes('action');
   const hasActions = tags.has('+actions');
   const hasCards = tags.has('+cards') || tags.has('draw');
-  if (tags.has('draw') || tags.has('+actions') || tags.has('trash')) tags.add('engine_piece');
+  if (tags.has('draw') || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack'))) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (isAction && !hasActions) tags.add('terminal');
   if (tags.has('+actions') && /\+[2-9] actions?/i.test(text)) tags.add('village');
@@ -352,7 +368,7 @@ function computeTags(text, types) {
   // FALLBACK
   if (tags.size === 0) tags.add('utility');
 
-  return [...tags];
+  return { tags: [...tags], opponent_tags: [...opp_tags] };
 }
 
 async function main() {
