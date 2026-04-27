@@ -282,8 +282,8 @@ function computeTags(text, types) {
   if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(selfText)) tags.add('cost_reduction');
 
   // CARD MOVEMENT (self)
-  if (tags.has('+cards') || /draw \d/i.test(selfText)) tags.add('draw');
-  if (/discard/i.test(selfText)) tags.add('discard');
+  if (tags.has('+cards') || /draw \d|draw until|reveal.*put.*into your hand/i.test(selfText)) tags.add('draw');
+  if (/discard(?! pile| them afterwards)/i.test(selfText)) tags.add('discard');
   if (/\btrash\b/i.test(selfText)) tags.add('trash');
   if (/gain a|gain an|gain up to|gains a/i.test(selfText)) tags.add('gain');
   if (/onto your deck|top of your deck|put.*on top/i.test(selfText)) tags.add('topdeck');
@@ -308,8 +308,8 @@ function computeTags(text, types) {
   if (/each of your turns|at the start of each/i.test(selfText)) tags.add('each_turn');
 
   // ATTACKS
-  if (/each other player|another player/i.test(t)) tags.add('attack');
-  if (/gain a curse|gain a ruins|gains a copper/i.test(oppSections)) tags.add('junking');
+  if (/each other player|another player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
+  if (/gain a curse|gain a ruins|gains a copper|gains a curse/i.test(oppSections)) tags.add('junking');
   if (/discard down to|discard.*each other player/i.test(oppSections)) tags.add('discard_attack');
   if (/\btrash\b/i.test(oppSections)) tags.add('trash_attack');
   if (/top of their deck|top of (?:each )?other player/i.test(oppSections)) tags.add('deck_attack');
@@ -331,7 +331,7 @@ function computeTags(text, types) {
   if (/search your deck|look through your deck/i.test(selfText)) tags.add('search_deck');
 
   // DECK CONTROL (opponent)
-  if (/look at the top|top \d+ cards of their deck/i.test(oppSections)) opp_tags.add('scry');
+  if (/each player.*reveal|reveal.*each player|including you.*reveal/i.test(t)) opp_tags.add('scry');
 
   // SPECIAL RESOURCES
   if (/spoils/i.test(t)) tags.add('uses_spoils');
@@ -346,8 +346,7 @@ function computeTags(text, types) {
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
   // REACTIONS
-  if (/when another player plays an attack/i.test(t) && typeList.includes('reaction')) tags.add('reaction_attack');
-  if (/when.*gain/i.test(t) && typeList.includes('reaction')) tags.add('reaction_gain');
+  if (/when another player plays an attack/i.test(t) && typeList.some(t => t.includes('reaction'))) tags.add('reaction_attack');  if (/when.*gain/i.test(t) && typeList.includes('reaction')) tags.add('reaction_gain');
   if (/when.*trash/i.test(t) && typeList.includes('reaction')) tags.add('reaction_trash');
 
   // RESERVE
