@@ -153,7 +153,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
 
     let saveData = {};
     if (infoboxMatch) {
-      saveData.infobox = infoboxMatch[0].replace(/\|\s*text\s*=[\s\S]+?(?=\n\s*[|}])/, '');
+      const fullInfobox = infoboxMatch[0];
       const textFields = [];
       const baseText = wikiRaw.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
       if (baseText) textFields.push(baseText[1]);
@@ -164,6 +164,8 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
         textFields.push(match[1]);
         i++;
       }
+
+      saveData.infobox = fullInfobox.replace(/\|\s*text\d*\s*=[\s\S]+?(?=\n\s*[|}])/gi, '');
       textFields.forEach((t, idx) => {
         saveData[idx === 0 ? 'text' : `text${idx + 1}`] = t;
       });
