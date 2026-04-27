@@ -293,10 +293,11 @@ function computeTags(text, types) {
 
   // CARD MOVEMENT (opponent)
   if (/discard/i.test(oppSections)) opp_tags.add('discard');
-  if (/\btrash\b/i.test(oppSections)) opp_tags.add('trash');
+  if (/trash/i.test(oppSections)) opp_tags.add('trash');
   if (/gain a|gain an/i.test(oppSections)) opp_tags.add('gain');
   if (/onto their deck|top of their deck/i.test(oppSections)) opp_tags.add('topdeck');
   if (/reveal/i.test(oppSections)) opp_tags.add('reveal');
+  if (/each other player draws|another player draws/i.test(oppSections)) opp_tags.add('draw');
 
   // TRIGGERS
   if (/when you gain/i.test(selfText)) tags.add('on_gain');
@@ -308,10 +309,10 @@ function computeTags(text, types) {
   if (/each of your turns|at the start of each/i.test(selfText)) tags.add('each_turn');
 
   // ATTACKS
-  if (/each other player|another player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
-  if (/gain a curse|gain a ruins|gains a copper|gains a curse/i.test(oppSections)) tags.add('junking');
+  if (/each other player|another player|each player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
+  if (/gain a curse|gain a ruins|gains a copper/i.test(oppSections)) opp_tags.add('junking');
   if (/discard down to|discard.*each other player/i.test(oppSections)) tags.add('discard_attack');
-  if (/\btrash\b/i.test(oppSections)) tags.add('trash_attack');
+  if (/trash/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
   if (/top of their deck|top of (?:each )?other player/i.test(oppSections)) tags.add('deck_attack');
   if (/reveals? (?:their )?hand/i.test(oppSections)) tags.add('hand_reveal');
 
@@ -324,9 +325,10 @@ function computeTags(text, types) {
   if (/gain.*to your hand|gain.*into your hand/i.test(selfText)) tags.add('gain_to_hand');
   if (/gain.*onto your deck|gain.*to your deck/i.test(selfText)) tags.add('gain_to_deck');
   if (/not in the supply|non-supply/i.test(selfText)) tags.add('gain_non_supply');
+  if (/gain.*copper|gain.*curse|gain.*ruins/i.test(selfText)) tags.add('self_junk');
 
   // DECK CONTROL (self)
-  if (/look at the top|reveal.*top|top \d+ cards of your deck/i.test(selfText)) tags.add('scry');
+  if (/look at the top|reveal.*top|top \d+ cards of your deck|reveal.*until/i.test(selfText)) tags.add('scry');
   if (/reorder|in any order|rearrange/i.test(selfText)) tags.add('reorder');
   if (/search your deck|look through your deck/i.test(selfText)) tags.add('search_deck');
 
@@ -356,7 +358,7 @@ function computeTags(text, types) {
   const isAction = typeList.some(t => t.includes('action'));
   const hasActions = tags.has('+actions');
   const hasCards = tags.has('+cards') || tags.has('draw');
-  if (tags.has('draw') || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack'))) tags.add('engine_piece');
+  if (tags.has('draw') || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (isAction && !hasActions) tags.add('terminal');
   if (tags.has('+actions') && /\+[2-9] actions?/i.test(text)) tags.add('village');
