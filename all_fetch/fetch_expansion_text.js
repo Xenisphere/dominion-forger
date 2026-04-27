@@ -248,7 +248,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     text: cleanedText,
     types,
     subtypes: [],
-    tags: computeTags(cleanedText, types),
+    tags,
     opponent_tags,
     dependencies: [],
     image: `images/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
