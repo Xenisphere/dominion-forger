@@ -153,7 +153,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
 
     let saveData = {};
     if (infoboxMatch) {
-      saveData.infobox = infoboxMatch[0];
+      saveData.infobox = infoboxMatch[0].replace(/\|\s*text\s*=[\s\S]+?(?=\n\s*[|}])/, '');
       const textFields = [];
       const baseText = wikiRaw.match(/\|\s*text\s*=\s*([\s\S]+?)(?=\n\s*[|}])/i);
       if (baseText) textFields.push(baseText[1]);
