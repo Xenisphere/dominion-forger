@@ -282,7 +282,7 @@ function computeTags(text, types) {
 
   // CARD MOVEMENT (self)
   if (/discard(?! pile| them afterwards)/i.test(selfText)) tags.add('discard');
-  if (/\btrash\b/i.test(selfText)) tags.add('trash');
+  if (/\btrash(es)?\b/i.test(selfText)) tags.add('trash');
   if (/gain a|gain an|gain up to|gains a/i.test(selfText)) tags.add('gain');
   if (/onto your deck|top of your deck|put.*on top/i.test(selfText)) tags.add('topdeck');
   if (/\bexile\b/i.test(selfText)) tags.add('exile');
@@ -291,7 +291,7 @@ function computeTags(text, types) {
 
   // CARD MOVEMENT (opponent)
   if (/discard/i.test(oppSections)) opp_tags.add('discard');
-  if (/\btrash\b/i.test(oppSections)) opp_tags.add('trash');
+  if (/\btrash(es)?\b/i.test(oppSections)) opp_tags.add('trash');
   if (/gain a|gain an/i.test(oppSections)) opp_tags.add('gain');
   if (/onto their deck|top of their deck/i.test(oppSections)) opp_tags.add('topdeck');
   if (/reveal/i.test(oppSections)) opp_tags.add('reveal');
@@ -313,7 +313,7 @@ function computeTags(text, types) {
   if (/gains a Curse|gains a Ruins|gains a Copper/i.test(oppSections)) opp_tags.add('junking');
   if (/gain.*Copper|gain.*Curse|gain.*Ruins/i.test(selfText)) tags.add('self_junk');
   if (/discard down to|discard.*each other player/i.test(oppSections)) tags.add('discard_attack');
-  if (/\btrash\b/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
+  if (/\btrash(es)?\b/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
   if (/top of their deck|top of (?:each )?other player/i.test(oppSections)) tags.add('deck_attack');
   if (/reveals? (?:their )?hand/i.test(oppSections)) tags.add('hand_reveal');
 
