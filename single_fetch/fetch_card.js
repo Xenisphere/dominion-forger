@@ -219,7 +219,7 @@ async function fetchCard(cardName, sharedPage = null) {
     const browser = await puppeteer.launch({
       headless: true,
       executablePath: isTermux ? '/data/data/com.termux/files/usr/bin/chromium-browser' : undefined,
-      args: isTermux ? ['--no-sandbox', '--disable-setuid-sandbox'] : []
+      args: isTermux ? ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--single-process'] : []
     });
     try {
       const sharedPage = await browser.newPage();
