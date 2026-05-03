@@ -400,7 +400,12 @@ async function main() {
   if (!fs.existsSync(rawTextDir)) fs.mkdirSync(rawTextDir);
 
   const lookup = buildCardLookup();
-  const browser = await puppeteer.launch({ headless: true });
+  const isTermux = process.env.TERMUX_VERSION !== undefined;
+  const browser = await puppeteer.launch({
+    headless: true,
+    executablePath: isTermux ? '/data/data/com.termux/files/usr/bin/chromium-browser' : undefined,
+    args: isTermux ? ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu'] : []
+  });
   try {
     const sharedPage = await browser.newPage();
     for (const expansionName of expansionNames) {
