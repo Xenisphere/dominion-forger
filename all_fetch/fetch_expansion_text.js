@@ -367,6 +367,7 @@ function computeTags(text, types) {
   if (hasCards && hasActions) tags.add('cantrip');
 
   // Remove redundant tags
+  if (tags.has('attack') && opp_tags.has('discard')) { opp_tags.delete('discard'); tags.add('discard_attack'); }
   if (tags.has('non_terminal_draw') || tags.has('terminal_draw')) tags.delete('+cards');
   if (tags.has('non_terminal_draw')) tags.delete('terminal');
   if (tags.has('reaction_attack')) tags.delete('on_attack');
