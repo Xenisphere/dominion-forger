@@ -269,8 +269,10 @@ function computeTags(text, types) {
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
-  if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
+  if (/\+1 action/i.test(text)) tags.add('+action');
+  else (/\+\d+ actions?/i.test(text)) tags.add('+actions');
   if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
+  if (/\+1 card/i.test(text)) tags.add('+card');
   if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
   if (/\+\d+ buys?/i.test(text)) tags.add('+buys');
 
@@ -358,12 +360,12 @@ function computeTags(text, types) {
   const isAction = typeList.some(t => t.includes('action'));
   const hasActions = tags.has('+actions');
   const hasCards = tags.has('+cards') || /draw until|reveal.*put.*into your hand/i.test(selfText);
-  if (hasCards || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
+  if (hasCards || tags.has('+actions') || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice|play/i.test(selfText)) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (tags.has('+actions') && /\+[2-9] actions?/i.test(text)) tags.add('village');
+  if (isAction && !hasActions && !/play/i.test(selfText)) tags.add('terminal');
   if (hasCards && !hasActions && isAction) tags.add('terminal_draw');
   if (hasCards && hasActions) tags.add('non_terminal_draw');
-  if (isAction && !hasActions) tags.add('terminal');
   if (hasCards && hasActions) tags.add('cantrip');
 
   // Remove redundant tags
@@ -371,8 +373,9 @@ function computeTags(text, types) {
   if (tags.has('non_terminal_draw') || tags.has('terminal_draw')) tags.delete('+cards');
   if (tags.has('non_terminal_draw')) tags.delete('terminal');
   if (tags.has('reaction_attack')) tags.delete('on_attack');
-  if (tags.has('terminal_draw')) tags.delete('terminal');
-  if (tags.has('village')) tags.delete('+actions');
+  if (tags.has('_draw')) tags.delete('terminal');
+  if (tags.has('village')) (tags.delete('+actions') && tags.delete('cantrip'));
+  if (tags.has('+cards') || tags.has('draw')) tags.delete('cantrip');
 
   // FALLBACK
   if (tags.size === 0) tags.add('utility');
