@@ -1,0 +1,1019 @@
+[
+  {
+    "name": "Berserker",
+    "id": "070135",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card costing less than this. Each other player discards down to 3 cards in hand. | When you gain this, if you have an Action in play, play this.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction",
+      "gain",
+      "on_gain",
+      "attack",
+      "engine_piece",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Berserker.jpg"
+  },
+  {
+    "name": "Border Village",
+    "id": "070235",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions | When you gain this, gain a cheaper card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "gain",
+      "on_gain",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Border_Village.jpg"
+  },
+  {
+    "name": "Cache",
+    "id": "070335",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) | When you gain this, gain 2 Coppers.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "on_gain",
+      "self_junk"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Cache.jpg"
+  },
+  {
+    "name": "Cartographer",
+    "id": "070435",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Look at the top 4 cards of your deck. Discard any number of them, then put the rest back in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "scry",
+      "reorder",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Cartographer.jpg"
+  },
+  {
+    "name": "Cauldron",
+    "id": "070535",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2) +1 Buy The third time you gain an Action this turn, each other player gains a Curse.",
+    "types": [
+      "Treasure",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "attack",
+      "payload_piece"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Cauldron.jpg"
+  },
+  {
+    "name": "Crossroads",
+    "id": "070635",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Reveal your hand. +1 Card per Victory card revealed. If this is the first time you played a Crossroads this turn, +3 Actions.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Crossroads.jpg"
+  },
+  {
+    "name": "Develop",
+    "id": "070735",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Gain two cards onto your deck, with one costing exactly (1) more than it, and one costing exactly (1) less than it, in either order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction",
+      "topdeck",
+      "trash",
+      "trash_to_gain",
+      "gain_to_deck",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Develop.jpg"
+  },
+  {
+    "name": "Duchess",
+    "id": "070835",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Each player (including you) looks at the top card of their deck and may discard it. | In games using this, when you gain a Duchy, you may gain a Duchess.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "discard",
+      "gain",
+      "on_gain",
+      "global_effect",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [
+      "discard",
+      "reveal"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Duchess.jpg"
+  },
+  {
+    "name": "Embassy",
+    "id": "070935",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+5 Cards Discard 3 cards. | When you gain this, each other player gains a Silver.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "on_gain",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Embassy.jpg"
+  },
+  {
+    "name": "Farmland",
+    "id": "071035",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "{2} | When you gain this, trash a card from your hand and gain a nonFarmland card costing exactly (2) more than it.",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Farmland.jpg"
+  },
+  {
+    "name": "Fool's Gold",
+    "id": "071135",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If this is the first time you played a Fools Gold this turn, +(1), otherwise +(4). | When another player gains a Province, you may trash this from your hand, to gain a Gold onto your deck.",
+    "types": [
+      "Treasure",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "reaction_trash",
+      "reaction_gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [
+      "trash",
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Fool's_Gold.jpg"
+  },
+  {
+    "name": "Guard Dog",
+    "id": "071235",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards If you have 5 or fewer cards in hand, +2 Cards. | When another player plays an Attack, you may first play this from your hand.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "reaction_attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Guard_Dog.jpg"
+  },
+  {
+    "name": "Haggler",
+    "id": "071335",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) This turn, when you gain a card, if you bought it, gain a cheaper nonVictory card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "on_gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Haggler.jpg"
+  },
+  {
+    "name": "Highway",
+    "id": "071435",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action This turn, cards cost (1) less.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "cost_reduction",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Highway.jpg"
+  },
+  {
+    "name": "Ill-Gotten Gains",
+    "id": "071535",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) You may gain a Copper to your hand. | When you gain this, each other player gains a Curse.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain",
+      "self_junk",
+      "gain_to_hand"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Ill-Gotten_Gains.jpg"
+  },
+  {
+    "name": "Inn",
+    "id": "071635",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +2 Actions Discard 2 cards. | When you gain this, reveal any number of Action cards from your discard pile and shuffle them into your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "on_gain",
+      "gain_to_deck",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Inn.jpg"
+  },
+  {
+    "name": "Jack of All Trades",
+    "id": "071735",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Silver. Look at the top card of your deck; you may discard it. Draw until you have 5 cards in hand. You may trash a nonTreasure card from your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Jack_of_All_Trades.jpg"
+  },
+  {
+    "name": "Mandarin",
+    "id": "071835",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(3) Put a card from your hand onto your deck. | When you gain this, put all Treasures you have in play onto your deck in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "topdeck",
+      "on_gain",
+      "gain_to_deck",
+      "reorder",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Mandarin.jpg"
+  },
+  {
+    "name": "Margrave",
+    "id": "071935",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards +1 Buy Each other player draws a card, then discards down to 3 cards in hand.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "attack",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "+cards"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Margrave.jpg"
+  },
+  {
+    "name": "Noble Brigand",
+    "id": "072035",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(1) Each other player reveals the top 2 cards of their deck, trashes a revealed Silver or Gold you choose, discards the rest, and gains a Copper if they didnt reveal a Treasure. You gain the trashed cards. | When you buy this, do its attack.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "reveal",
+      "on_buy",
+      "attack",
+      "trash_attack",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "junking",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Noble_Brigand.jpg"
+  },
+  {
+    "name": "Nomad Camp",
+    "id": "072135",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(2) | This is gained onto your deck (instead of to your discard pile).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "topdeck",
+      "gain_to_deck",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Nomad_Camp.jpg"
+  },
+  {
+    "name": "Nomads",
+    "id": "072235",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(2) | When you gain or trash this, +(2).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Nomads.jpg"
+  },
+  {
+    "name": "Oasis",
+    "id": "072335",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +(1) Discard a card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "discard",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Oasis.jpg"
+  },
+  {
+    "name": "Oracle",
+    "id": "072435",
+    "box": "Hinterlands",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each player (including you) reveals the top 2 cards of their deck, and discards them or puts them back, your choice (they choose the order). Then, +2 Cards.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "attack",
+      "scry",
+      "global_effect",
+      "engine_piece",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "reveal"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Oracle.jpg"
+  },
+  {
+    "name": "Scheme",
+    "id": "072535",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action This turn, you may put one of your Action cards onto your deck when you discard it from play.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "topdeck",
+      "discard",
+      "on_discard",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Scheme.jpg"
+  },
+  {
+    "name": "Silk Road",
+    "id": "084759",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Worth {1} for every 4 Victory cards you have (round down).",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Silk_Road.jpg"
+  },
+  {
+    "name": "Souk",
+    "id": "072735",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(7) per card in your hand (you cant go below (0)). | When you gain this, trash up to 2 cards from your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Souk.jpg"
+  },
+  {
+    "name": "Spice Merchant",
+    "id": "072835",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash a Treasure from your hand to choose one: +2 Cards and +1 Action; or +1 Buy and +(2).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+buys",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Spice_Merchant.jpg"
+  },
+  {
+    "name": "Stables",
+    "id": "072935",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may discard a Treasure, for +3 Cards and +1 Action.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Stables.jpg"
+  },
+  {
+    "name": "Trader",
+    "id": "073035",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Gain a Silver per (1) it costs. | When you gain a card, you may reveal this from your hand, to exchange the card for a Silver.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "exchange",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "reaction_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Trader.jpg"
+  },
+  {
+    "name": "Trail",
+    "id": "073135",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action | When you gain, trash, or discard this, other than in Cleanup, you may play it.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "reaction_trash",
+      "reaction_gain",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Trail.jpg"
+  },
+  {
+    "name": "Tunnel",
+    "id": "073235",
+    "box": "Hinterlands",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "{2} | When you discard this other than during Cleanup, you may reveal it to gain a Gold.",
+    "types": [
+      "Victory",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain",
+      "on_discard",
+      "reaction_gain",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Tunnel.jpg"
+  },
+  {
+    "name": "Weaver",
+    "id": "073335",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain two Silvers or a card costing up to (4). | When you discard this other than in Cleanup, you may play it.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "on_discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Weaver.jpg"
+  },
+  {
+    "name": "Wheelwright",
+    "id": "073435",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action You may discard a card to gain an Action card costing as much as it or less.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "cost_reduction",
+      "discard",
+      "gain",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Hinterlands/Wheelwright.jpg"
+  },
+  {
+    "name": "Witch's Hut",
+    "id": "073535",
+    "box": "Hinterlands",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+4 Cards Discard 2 cards, revealed. If theyre both Actions, each other player gains a Curse.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Hinterlands/Witch's_Hut.jpg"
+  }
+]

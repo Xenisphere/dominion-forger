@@ -1,0 +1,2134 @@
+[
+  {
+    "name": "Augurs",
+    "id": "140478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "This pile starts the game with 4 copies each of Herb Gatherer, Acolyte, Sorceress, and Sibyl, in that order. Only the top card can be gained or bought.",
+    "types": [
+      "Action",
+      "Augur"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Augurs.jpg"
+  },
+  {
+    "name": "Herb Gatherer",
+    "id": "143478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Put your deck into your discard pile. Look through it and you may play a Treasure from it. You may rotate the Augurs.",
+    "types": [
+      "Action",
+      "Augur"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Herb_Gatherer.jpg"
+  },
+  {
+    "name": "Acolyte",
+    "id": "140178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash an Action or Victory card from your hand to gain a Gold. You may trash this to gain an Augur.",
+    "types": [
+      "Action",
+      "Augur"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Acolyte.jpg"
+  },
+  {
+    "name": "Sorceress",
+    "id": "146178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Name a card. Reveal the top card of your deck and put it into your hand. If its the named card, each other player gains a Curse.",
+    "types": [
+      "Action",
+      "Attack",
+      "Augur"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "attack",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Allies/Sorceress.jpg"
+  },
+  {
+    "name": "Sibyl",
+    "id": "145878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+4 Cards +1 Action Put a card from your hand on top of your deck, and another on the bottom.",
+    "types": [
+      "Action",
+      "Augur"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "topdeck",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Sibyl.jpg"
+  },
+  {
+    "name": "Barbarian",
+    "id": "140678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Each other player trashes the top card of their deck. If it costs (3) or more they gain a cheaper card sharing a type with it; otherwise they gain a Curse.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "attack",
+      "trash_attack",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [
+      "trash",
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Allies/Barbarian.jpg"
+  },
+  {
+    "name": "Bauble",
+    "id": "140878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose two different options: +1 Buy; +(1); +1 Favor; this turn, when you gain a card, you may put it onto your deck.",
+    "types": [
+      "Treasure",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "+coins",
+      "+buys",
+      "topdeck",
+      "gain",
+      "on_gain",
+      "gain_to_deck",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Bauble.jpg"
+  },
+  {
+    "name": "Broker",
+    "id": "141078",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand and choose one: +1 Card per (1) it costs; or +1 Action per (1) it costs; or +(1) per (1) it costs; or +1 Favor per (1) it costs.",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "+action",
+      "+coins",
+      "+card",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Broker.jpg"
+  },
+  {
+    "name": "Capital City",
+    "id": "141178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions You may discard 2 cards for +(2). You may pay (2) for +2 Cards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+card",
+      "discard",
+      "engine_piece",
+      "payload_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Capital_City.jpg"
+  },
+  {
+    "name": "Carpenter",
+    "id": "141278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If no Supply piles are empty, +1 Action and gain a card costing up to (4). Otherwise, trash a card from your hand and gain a card costing up to (2) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Carpenter.jpg"
+  },
+  {
+    "name": "Clashes",
+    "id": "141678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "This pile starts the game with 4 copies each of Battle Plan, Archer, Warlord, and Territory, in that order. Only the top card can be gained or bought.",
+    "types": [
+      "Action",
+      "Clash"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Clashes.jpg"
+  },
+  {
+    "name": "Battle Plan",
+    "id": "140778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action You may reveal an Attack card from your hand for +1 Card. You may rotate any Supply pile.",
+    "types": [
+      "Action",
+      "Clash"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Battle_Plan.jpg"
+  },
+  {
+    "name": "Archer",
+    "id": "140278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Each other player with 5 or more cards in hand reveals all but one, and discards one of those you choose.",
+    "types": [
+      "Action",
+      "Attack",
+      "Clash"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "reveal",
+      "attack",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Archer.jpg"
+  },
+  {
+    "name": "Warlord",
+    "id": "147678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action At the start of your next turn, +2 Cards. Until then, other players cant play an Action from their hand that they have 2 or more copies of in play.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack",
+      "Clash"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "duration",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Warlord.jpg"
+  },
+  {
+    "name": "Territory",
+    "id": "146978",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Worth {1} per differently named Victory card you have. | When you gain this, gain a Gold per empty Supply pile.",
+    "types": [
+      "Victory",
+      "Clash"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Territory.jpg"
+  },
+  {
+    "name": "Contract",
+    "id": "141978",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2) +1 Favor You may set aside an Action from your hand to play it at the start of your next turn.",
+    "types": [
+      "Treasure",
+      "Duration",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "set_aside",
+      "duration",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Contract.jpg"
+  },
+  {
+    "name": "Courier",
+    "id": "142078",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(1) Discard the top card of your deck. Look through your discard pile; you may play an Action or Treasure from it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "discard",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Courier.jpg"
+  },
+  {
+    "name": "Emissary",
+    "id": "142578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards If this made you shuffle (at least one card), +1 Action and +2 Favors.",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "+action",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Emissary.jpg"
+  },
+  {
+    "name": "Forts",
+    "id": "142978",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "This pile starts the game with 4 copies each of Tent, Garrison, Hill Fort, and Stronghold, in that order. Only the top card can be gained or bought.",
+    "types": [
+      "Action",
+      "Fort"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Forts.jpg"
+  },
+  {
+    "name": "Tent",
+    "id": "146878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) You may rotate the Forts. | When you discard this from play, you may put it onto your deck.",
+    "types": [
+      "Action",
+      "Fort"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "topdeck",
+      "discard",
+      "on_discard",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Tent.jpg"
+  },
+  {
+    "name": "Garrison",
+    "id": "143278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) This turn, when you gain a card, add a token here. At the start of your next turn, remove them for +1 Card each.",
+    "types": [
+      "Action",
+      "Duration",
+      "Fort"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+card",
+      "gain",
+      "duration",
+      "on_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Garrison.jpg"
+  },
+  {
+    "name": "Hill Fort",
+    "id": "143678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card costing up to (4). Choose one: Put it into your hand; or +1 Card and +1 Action.",
+    "types": [
+      "Action",
+      "Fort"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "gain",
+      "gain_to_hand",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Hill_Fort.jpg"
+  },
+  {
+    "name": "Stronghold",
+    "id": "146378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: +(3); or at the start of your next turn, +3 Cards. | {2}",
+    "types": [
+      "Action",
+      "Victory",
+      "Duration",
+      "Fort"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "duration",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Stronghold.jpg"
+  },
+  {
+    "name": "Galleria",
+    "id": "143078",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(3) This turn, when you gain a card costing (3) or (4), +1 Buy.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "gain",
+      "on_gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Galleria.jpg"
+  },
+  {
+    "name": "Guildmaster",
+    "id": "143378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(3) This turn, when you gain a card, +1 Favor.",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "+coins",
+      "gain",
+      "on_gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Guildmaster.jpg"
+  },
+  {
+    "name": "Highwayman",
+    "id": "143578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, discard this from play and +3 Cards. Until then, the first Treasure each other player plays each turn does nothing.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "duration",
+      "attack",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Highwayman.jpg"
+  },
+  {
+    "name": "Hunter",
+    "id": "143778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Reveal the top 3 cards of your deck. From those cards, put an Action, a Treasure, and a Victory card into your hand. Discard the rest.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Hunter.jpg"
+  },
+  {
+    "name": "Importer",
+    "id": "143878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, gain a card costing up to (5). | Setup: Each player gets +4 Favors.",
+    "types": [
+      "Action",
+      "Duration",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "gain",
+      "duration",
+      "global_effect",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Importer.jpg"
+  },
+  {
+    "name": "Innkeeper",
+    "id": "143978",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Choose one: +1 Card; or +3 Cards, then discard 3 cards; or +5 Cards, then discard 6 cards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Innkeeper.jpg"
+  },
+  {
+    "name": "Marquis",
+    "id": "144578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +1 Card per card in your hand. Discard down to 10 cards in hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+buys",
+      "discard",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Marquis.jpg"
+  },
+  {
+    "name": "Merchant Camp",
+    "id": "144678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions +(1) | When you discard this from play, you may put it onto your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "topdeck",
+      "discard",
+      "on_discard",
+      "engine_piece",
+      "payload_piece",
+      "village"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Merchant_Camp.jpg"
+  },
+  {
+    "name": "Modify",
+    "id": "144878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Choose one: +1 Card and +1 Action; or gain a card costing up to (2) more than the trashed card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Modify.jpg"
+  },
+  {
+    "name": "Odysseys",
+    "id": "145078",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "This pile starts the game with 4 copies each of Old Map, Voyage, Sunken Treasure, and Distant Shore, in that order. Only the top card can be gained or bought.",
+    "types": [
+      "Action",
+      "Odyssey"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Odysseys.jpg"
+  },
+  {
+    "name": "Old Map",
+    "id": "145178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Discard a card. +1 Card. You may rotate the Odysseys.",
+    "types": [
+      "Action",
+      "Odyssey"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Old_Map.jpg"
+  },
+  {
+    "name": "Voyage",
+    "id": "147578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Take an extra turn after this one (but not a turn in a row), during which you can only play 3 cards from your hand.",
+    "types": [
+      "Action",
+      "Duration",
+      "Odyssey"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "duration",
+      "extra_turn",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Voyage.jpg"
+  },
+  {
+    "name": "Sunken Treasure",
+    "id": "146578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain an Action card you dont have a copy of in play.",
+    "types": [
+      "Treasure",
+      "Odyssey"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Sunken_Treasure.jpg"
+  },
+  {
+    "name": "Distant Shore",
+    "id": "142378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +1 Action Gain an Estate. | {2}",
+    "types": [
+      "Action",
+      "Victory",
+      "Odyssey"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "gain",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Distant_Shore.jpg"
+  },
+  {
+    "name": "Royal Galley",
+    "id": "145678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card You may play a nonDuration Action card from your hand. Set it aside; if you did, then at the start of your next turn, play it.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "set_aside",
+      "duration",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Royal_Galley.jpg"
+  },
+  {
+    "name": "Sentinel",
+    "id": "145778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look at the top 5 cards of your deck. You may trash up to 2 of them. Put the rest back in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "scry",
+      "reorder",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Sentinel.jpg"
+  },
+  {
+    "name": "Skirmisher",
+    "id": "145978",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +(1) This turn, when you gain an Attack card, each other player discards down to 3 cards in hand.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "gain",
+      "on_gain",
+      "attack",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Skirmisher.jpg"
+  },
+  {
+    "name": "Specialist",
+    "id": "146278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may play an Action or Treasure from your hand. Choose one: Play it again; or gain a copy of it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Specialist.jpg"
+  },
+  {
+    "name": "Swap",
+    "id": "146678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action You may return an Action from your hand to its pile, to gain to your hand a different Action costing up to (5).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "gain_to_hand",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Swap.jpg"
+  },
+  {
+    "name": "Sycophant",
+    "id": "146778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Discard 3 cards. If you discarded at least one, +(3). | When you gain or trash this, +2 Favors.",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "+action",
+      "+coins",
+      "discard",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Sycophant.jpg"
+  },
+  {
+    "name": "Town",
+    "id": "147078",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: +1 Card and +2 Actions; or +1 Buy and +(2).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+card",
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Town.jpg"
+  },
+  {
+    "name": "Townsfolk",
+    "id": "147278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "This pile starts the game with 4 copies each of Town Crier, Blacksmith, Miller, and Elder, in that order. Only the top card can be gained or bought.",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Townsfolk.jpg"
+  },
+  {
+    "name": "Town Crier",
+    "id": "147178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: +(2); or gain a Silver; or +1 Card and +1 Action. You may rotate the Townsfolk.",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Town_Crier.jpg"
+  },
+  {
+    "name": "Blacksmith",
+    "id": "140978",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: Draw until you have 6 cards in hand; or +2 Cards; or +1 Card and +1 Action.",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Blacksmith.jpg"
+  },
+  {
+    "name": "Miller",
+    "id": "144778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Look at the top 4 cards of your deck. Put one into your hand and discard the rest.",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "scry",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Miller.jpg"
+  },
+  {
+    "name": "Elder",
+    "id": "142478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) You may play an Action card from your hand. When it gives you a choice of abilities (with choose) this turn, you may choose an extra (different) option.",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Elder.jpg"
+  },
+  {
+    "name": "Underling",
+    "id": "147478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +1 Favor",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "+action",
+      "+card",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Underling.jpg"
+  },
+  {
+    "name": "Wizards",
+    "id": "147778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "This pile starts the game with 4 copies each of Student, Conjurer, Sorcerer, and Lich, in that order. Only the top card can be gained or bought.",
+    "types": [
+      "Action",
+      "Wizard",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Wizards.jpg"
+  },
+  {
+    "name": "Student",
+    "id": "146478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action You may rotate the Wizards. Trash a card from your hand. If its a Treasure, +1 Favor and put this onto your deck.",
+    "types": [
+      "Action",
+      "Wizard",
+      "Liaison"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+favors",
+      "+action",
+      "topdeck",
+      "trash",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Student.jpg"
+  },
+  {
+    "name": "Conjurer",
+    "id": "141878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card costing up to (4). At the start of your next turn, put this into your hand.",
+    "types": [
+      "Action",
+      "Duration",
+      "Wizard"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "duration",
+      "gain_to_hand",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Conjurer.jpg"
+  },
+  {
+    "name": "Sorcerer",
+    "id": "146078",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Each other player names a card, then reveals the top card of their deck. If wrong, they gain a Curse.",
+    "types": [
+      "Action",
+      "Attack",
+      "Wizard"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "reveal",
+      "attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Allies/Sorcerer.jpg"
+  },
+  {
+    "name": "Lich",
+    "id": "144378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+6 Cards +2 Actions Skip a turn. | When you trash this, discard it and gain a cheaper card from the trash.",
+    "types": [
+      "Action",
+      "Wizard"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Lich.jpg"
+  },
+  {
+    "name": "Architects' Guild",
+    "id": "140378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a card, you may spend 2 Favors to gain a cheaper nonVictory card.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Architects'_Guild.jpg"
+  },
+  {
+    "name": "Band of Nomads",
+    "id": "140578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a card costing (3) or more, you may spend a Favor, for +1 Card, or +1 Action, or +1 Buy.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "+cards",
+      "+buys",
+      "gain",
+      "on_gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Band_of_Nomads.jpg"
+  },
+  {
+    "name": "Cave Dwellers",
+    "id": "141378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may spend a Favor, to discard a card then draw a card. Repeat as desired.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Cave_Dwellers.jpg"
+  },
+  {
+    "name": "Circle of Witches",
+    "id": "141478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "After playing a Liaison, you may spend 3 Favors to have each other player gain a Curse.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece"
+    ],
+    "opponent_tags": [
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Allies/Circle_of_Witches.jpg"
+  },
+  {
+    "name": "City-state",
+    "id": "141578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain an Action card during your turn, you may spend 2 Favors to play it.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/City-state.jpg"
+  },
+  {
+    "name": "Coastal Haven",
+    "id": "141778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When discarding your hand in Cleanup, you may spend any number of Favors to keep that many cards in hand for next turn (you still draw",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Coastal_Haven.jpg"
+  },
+  {
+    "name": "Crafters' Guild",
+    "id": "142178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may spend 2 Favors to gain a card costing up to (4) onto your deck.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "gain_to_deck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Crafters'_Guild.jpg"
+  },
+  {
+    "name": "Desert Guides",
+    "id": "142278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may spend a Favor to discard your hand and draw 5 cards. Repeat as desired.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Desert_Guides.jpg"
+  },
+  {
+    "name": "Family of Inventors",
+    "id": "142678",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, you may put a Favor token you have on a nonVictory Supply pile. Cards cost (1) less per Favor token on their piles.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Family_of_Inventors.jpg"
+  },
+  {
+    "name": "Fellowship of Scribes",
+    "id": "142778",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "After playing an Action, if you have 4 or fewer cards in hand, you may spend a Favor for +1 Card.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Fellowship_of_Scribes.jpg"
+  },
+  {
+    "name": "Forest Dwellers",
+    "id": "142878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may spend a Favor to look at the top 3 cards of your deck, discard any number and put the rest back in any order.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "scry",
+      "reorder"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Forest_Dwellers.jpg"
+  },
+  {
+    "name": "Gang of Pickpockets",
+    "id": "143178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, discard down to 4 cards in hand unless you spend a Favor.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Gang_of_Pickpockets.jpg"
+  },
+  {
+    "name": "Island Folk",
+    "id": "144078",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the end of your turn, you may spend 5 Favors to take an extra turn after this one (but not a turn in a row).",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "extra_turn"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Island_Folk.jpg"
+  },
+  {
+    "name": "League of Bankers",
+    "id": "144178",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, +(1) per 4 Favors you have (round down).",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/League_of_Bankers.jpg"
+  },
+  {
+    "name": "League of Shopkeepers",
+    "id": "144278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "After playing a Liaison, if you have 5 or more Favors, +(1), and if 10 or more, +1 Action and +1 Buy.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/League_of_Shopkeepers.jpg"
+  },
+  {
+    "name": "Market Towns",
+    "id": "144478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, you may spend a Favor to play an Action card from your hand. Repeat as desired.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Market_Towns.jpg"
+  },
+  {
+    "name": "Mountain Folk",
+    "id": "144978",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may spend 5 Favors for +3 Cards.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Mountain_Folk.jpg"
+  },
+  {
+    "name": "Order of Astrologers",
+    "id": "145278",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When shuffling, you may pick one card per Favor you spend to go on top.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Order_of_Astrologers.jpg"
+  },
+  {
+    "name": "Order of Masons",
+    "id": "145378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When shuffling, you may pick up to 2 cards per Favor you spend to put into your discard pile.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Order_of_Masons.jpg"
+  },
+  {
+    "name": "Peaceful Cult",
+    "id": "145478",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, you may spend any number of Favors to trash that many cards from your hand.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Peaceful_Cult.jpg"
+  },
+  {
+    "name": "Plateau Shepherds",
+    "id": "145578",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When scoring, pair up your Favors with cards you have costing (2), for {2} per pair.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Plateau_Shepherds.jpg"
+  },
+  {
+    "name": "Trappers' Lodge",
+    "id": "147378",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a card, you may spend a Favor to put it onto your deck.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "on_gain",
+      "gain_to_deck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Trappers'_Lodge.jpg"
+  },
+  {
+    "name": "Woodworkers' Guild",
+    "id": "147878",
+    "box": "Allies",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, you may spend a Favor to trash an Action card from your hand. If you did, gain an Action card.",
+    "types": [
+      "Ally"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Allies/Woodworkers'_Guild.jpg"
+  }
+]

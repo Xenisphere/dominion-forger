@@ -1,0 +1,1605 @@
+[
+  {
+    "name": "Amulet",
+    "id": "090258",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Now and at the start of your next turn, choose one: +(1); or trash a card from your hand; or gain a Silver.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "trash",
+      "duration",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Amulet.jpg"
+  },
+  {
+    "name": "Artificer",
+    "id": "090358",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +(1) Discard any number of cards. You may gain a card onto your deck, costing exactly (1) per card discarded.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "topdeck",
+      "discard",
+      "gain",
+      "gain_to_deck",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Artificer.jpg"
+  },
+  {
+    "name": "Bridge Troll",
+    "id": "090758",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player takes their On this turn and your next turn, cards cost (1) less. Now and at the start of your next turn: +1 Buy.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "duration",
+      "attack",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Bridge_Troll.jpg"
+  },
+  {
+    "name": "Caravan Guard",
+    "id": "090858",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action At the start of your next turn, +(1). | When another player plays an Attack card, you may first play this from your hand.",
+    "types": [
+      "Action",
+      "Duration",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "reaction_attack",
+      "duration",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Caravan_Guard.jpg"
+  },
+  {
+    "name": "Coin of the Realm",
+    "id": "091058",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) Put this on your Tavern mat. | After you play an Action card, you may call this, for +2 Actions.",
+    "types": [
+      "Treasure",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "tavern_mat",
+      "engine_piece",
+      "village"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Coin_of_the_Realm.jpg"
+  },
+  {
+    "name": "Distant Lands",
+    "id": "091258",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Put this on your Tavern mat. | Worth {4} if on your Tavern mat at the end of the game (otherwise worth {0}).",
+    "types": [
+      "Action",
+      "Reserve",
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "tavern_mat",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Distant_Lands.jpg"
+  },
+  {
+    "name": "Dungeon",
+    "id": "091358",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Now and at the start of your next turn: +2 Cards, then discard 2 Cards.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "duration",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Dungeon.jpg"
+  },
+  {
+    "name": "Duplicate",
+    "id": "091458",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Put this on your Tavern mat. | When you gain a card costing up to (6), you may call this, to gain a copy of that card.",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain",
+      "tavern_mat",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Duplicate.jpg"
+  },
+  {
+    "name": "Gear",
+    "id": "091858",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards Set aside up to 2 cards from your hand face down (under this). At the start of your next turn, put them into your hand.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "duration",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Gear.jpg"
+  },
+  {
+    "name": "Giant",
+    "id": "091958",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Turn your Journey token over (it starts face up). Then if its face down, +(1). If its face up, +(5), and each other player reveals the top card of their deck, trashes it if it costs from (3) to (6), and otherwise discards it and gains a Curse.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Adventures/Giant.jpg"
+  },
+  {
+    "name": "Guide",
+    "id": "092058",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Put this on your Tavern mat. | At the start of your turn, you may call this, to discard your hand and draw 5 cards.",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "tavern_mat",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Guide.jpg"
+  },
+  {
+    "name": "Haunted Woods",
+    "id": "092158",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn: +3 Cards. Until then, when any other player gains a card they bought, they put their hand onto their deck in any order.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "duration",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "topdeck"
+    ],
+    "dependencies": [],
+    "image": "images/Adventures/Haunted_Woods.jpg"
+  },
+  {
+    "name": "Hireling",
+    "id": "092358",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of each of your turns for the rest of the game: +1 Card.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "each_turn",
+      "duration",
+      "extra_buy_phase",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Hireling.jpg"
+  },
+  {
+    "name": "Lost City",
+    "id": "092658",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +2 Actions | When you gain this, each other player draws a card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "on_gain",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [
+      "+cards"
+    ],
+    "dependencies": [],
+    "image": "images/Adventures/Lost_City.jpg"
+  },
+  {
+    "name": "Magpie",
+    "id": "092758",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If its a Treasure, put it into your hand. If its an Action or Victory card, gain a Magpie.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "gain",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Magpie.jpg"
+  },
+  {
+    "name": "Messenger",
+    "id": "092858",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(2) You may put your deck into your discard pile. | When this is the first card you gain in your Buy phase, gain a card costing up and each other player gains a copy of it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Messenger.jpg"
+  },
+  {
+    "name": "Miser",
+    "id": "092958",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: Put a Copper from your hand onto your Tavern mat; or +(1) per Copper on your Tavern mat.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "tavern_mat",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Miser.jpg"
+  },
+  {
+    "name": "Page",
+    "id": "093158",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action | When you discard this from play, you may exchange it for a Treasure Hunter.",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "exchange",
+      "on_discard",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Page.jpg"
+  },
+  {
+    "name": "Treasure Hunter",
+    "id": "095558",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action +(1) Gain a Silver per card the player to your right gained on their last turn. | When you discard this from play, you may exchange it for a Warrior. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "discard",
+      "gain",
+      "exchange",
+      "on_discard",
+      "gain_non_supply",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Treasure_Hunter.jpg"
+  },
+  {
+    "name": "Warrior",
+    "id": "095758",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards For each Traveller you have in play (including this), each other player discards the top card of their deck and trashes it if it costs (3) or (4). | When you discard this from play, you may exchange it for a Hero. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Attack",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "exchange",
+      "on_discard",
+      "attack",
+      "trash_attack",
+      "gain_non_supply",
+      "engine_piece",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash"
+    ],
+    "dependencies": [],
+    "image": "images/Adventures/Warrior.jpg"
+  },
+  {
+    "name": "Hero",
+    "id": "092258",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Gain a Treasure.",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Hero.jpg"
+  },
+  {
+    "name": "Champion",
+    "id": "090958",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action For the rest of the game, when another player plays an Attack, it doesnt affect you, and when you play an Action card, you first get +1 Action. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "reaction_attack",
+      "duration",
+      "gain_non_supply",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Champion.jpg"
+  },
+  {
+    "name": "Peasant",
+    "id": "093358",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(1) | When you discard this from play, you may exchange it for a Soldier.",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "discard",
+      "exchange",
+      "on_discard",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Peasant.jpg"
+  },
+  {
+    "name": "Soldier",
+    "id": "094758",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) +(1) per other Attack you have in play. Each other player with 4 or more cards in hand discards a card. | When you discard this from play, you may exchange it for a Fugitive. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Attack",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "discard",
+      "exchange",
+      "on_discard",
+      "attack",
+      "gain_non_supply",
+      "engine_piece",
+      "payload_piece",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Soldier.jpg"
+  },
+  {
+    "name": "Fugitive",
+    "id": "091758",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +1 Action Discard a card.",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Fugitive.jpg"
+  },
+  {
+    "name": "Disciple",
+    "id": "091158",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may play an Action card from your hand twice. Gain a copy of it. | When you discard this from play, you may exchange it for a Teacher. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Traveller"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain",
+      "exchange",
+      "on_discard",
+      "gain_non_supply",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Disciple.jpg"
+  },
+  {
+    "name": "Teacher",
+    "id": "095058",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Put this on your Tavern mat. | At the start of your turn, you may call this, to move your +1 Card, +1 Action, +1 Buy, or +(1) token to an Action Supply pile you have no tokens on. (When you play a card from that pile, you first get that bonus.) (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "+buys",
+      "gain_non_supply",
+      "tavern_mat",
+      "engine_piece",
+      "payload_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Teacher.jpg"
+  },
+  {
+    "name": "Port",
+    "id": "093658",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions | When you gain this, gain another Port (that doesnt come with another).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "gain",
+      "on_gain",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Port.jpg"
+  },
+  {
+    "name": "Ranger",
+    "id": "093958",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Turn your Journey token over (it starts face up). Then if its face up, +5 Cards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Ranger.jpg"
+  },
+  {
+    "name": "Ratcatcher",
+    "id": "094058",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Put this on your Tavern mat. | At the start of your turn, you may call this, to trash a card from your hand.",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "trash",
+      "trash_for_benefit",
+      "tavern_mat",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Ratcatcher.jpg"
+  },
+  {
+    "name": "Raze",
+    "id": "094158",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Trash this or a card from your hand. Look at one card from the top of your deck per (1) the trashed card costs. Put one of them into your hand and discard the rest.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "topdeck",
+      "discard",
+      "trash",
+      "trash_self",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Raze.jpg"
+  },
+  {
+    "name": "Relic",
+    "id": "094258",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2) Each other player puts their token on their deck.",
+    "types": [
+      "Treasure",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Relic.jpg"
+  },
+  {
+    "name": "Royal Carriage",
+    "id": "094358",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Put this on your Tavern mat. | After you play an Action card, if its still in play, you may call this, to replay that Action.",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "tavern_mat",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Royal_Carriage.jpg"
+  },
+  {
+    "name": "Storyteller",
+    "id": "094858",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Play up to 3 Treasures from your hand. Then, +1 Card, and pay all of your (_) for +1 Card per (1) you paid.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Storyteller.jpg"
+  },
+  {
+    "name": "Swamp Hag",
+    "id": "094958",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn: +(3). Until then, when any other player gains a card they bought, they gain a Curse.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "duration",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Adventures/Swamp_Hag.jpg"
+  },
+  {
+    "name": "Transmogrify",
+    "id": "095358",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Put this on your Tavern mat. | At the start of your turn, you may call this, to trash a card from your hand, and gain a card to your hand costing up to (1) more than it.",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "gain_to_hand",
+      "tavern_mat",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Transmogrify.jpg"
+  },
+  {
+    "name": "Treasure Trove",
+    "id": "095658",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2) Gain a Gold and a Copper.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "self_junk"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Treasure_Trove.jpg"
+  },
+  {
+    "name": "Wine Merchant",
+    "id": "095858",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(4) Put this on your Tavern mat. | At the end of your Buy phase, if you have at least (2) unspent, you may discard this from your Tavern mat.",
+    "types": [
+      "Action",
+      "Reserve"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "discard",
+      "tavern_mat",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Wine_Merchant.jpg"
+  },
+  {
+    "name": "Alms",
+    "id": "090158",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per turn: If you have no Treasures in play, gain a card costing up to (4).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Alms.jpg"
+  },
+  {
+    "name": "Ball",
+    "id": "090458",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Take your (1) token. Gain 2 cards each costing up to (4).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Ball.jpg"
+  },
+  {
+    "name": "Bonfire",
+    "id": "090558",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash up to 2 Coppers you have in play.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Bonfire.jpg"
+  },
+  {
+    "name": "Borrow",
+    "id": "090658",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per turn: +1 Buy. If your Card token isnt on your deck, put it there and +(1).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Borrow.jpg"
+  },
+  {
+    "name": "Expedition",
+    "id": "091558",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Draw 2 extra cards for your next hand.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Expedition.jpg"
+  },
+  {
+    "name": "Ferry",
+    "id": "091658",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Move your token to an Action Supply pile. (Cards from that pile cost (2) less on your turns.)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Ferry.jpg"
+  },
+  {
+    "name": "Inheritance",
+    "id": "092458",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per game: Set aside a nonCommand nonDuration Action card from the Supply costing up to (4). Move your Estate token to it. (During your turns, Estates are also Command Actions with Play the card with your Estate token, leaving it there.)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Inheritance.jpg"
+  },
+  {
+    "name": "Lost Arts",
+    "id": "092558",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Move your +1 Action token to an Action Supply pile. (When you play a card from that pile, you first get +1 Action.)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Lost_Arts.jpg"
+  },
+  {
+    "name": "Mission",
+    "id": "093058",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Take an extra turn after this one (but not a turn in a row), during which you cant buy cards. (You can still buy Events.)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "extra_turn"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Mission.jpg"
+  },
+  {
+    "name": "Pathfinding",
+    "id": "093258",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(8)",
+    "cost_coin": 8,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Move your +1 Card token to an Action Supply pile. (When you play a card from that pile, you first get +1 Card.)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Pathfinding.jpg"
+  },
+  {
+    "name": "Pilgrimage",
+    "id": "093458",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per turn: Turn your Journey token over (it starts face up); then if its face up, choose up to 3 differently named cards you have in play and gain a copy of each.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Pilgrimage.jpg"
+  },
+  {
+    "name": "Plan",
+    "id": "093558",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Move your Trashing token to an Action Supply pile. (When you gain a card from that pile, you may trash a card from your hand.)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Plan.jpg"
+  },
+  {
+    "name": "Quest",
+    "id": "093758",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may discard an Attack, two Curses, or six cards. If you do, gain a Gold.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Quest.jpg"
+  },
+  {
+    "name": "Raid",
+    "id": "093858",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Silver per Silver you have in play. Each other player puts their token on their deck.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Raid.jpg"
+  },
+  {
+    "name": "Save",
+    "id": "094458",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(1)",
+    "cost_coin": 1,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per turn: +1 Buy. Set aside a card from your hand, and put it into your hand at end of turn (after drawing).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "set_aside",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Save.jpg"
+  },
+  {
+    "name": "Scouting Party",
+    "id": "094558",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Look at the top 5 cards of your deck. Discard 3 and put the rest back in any order.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "discard",
+      "scry",
+      "reorder",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Scouting_Party.jpg"
+  },
+  {
+    "name": "Seaway",
+    "id": "094658",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain an Action card costing up to (4). Move your +1 Buy token to its pile. (When you play a card from that pile, you first get +1 Buy.)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Seaway.jpg"
+  },
+  {
+    "name": "Trade",
+    "id": "095158",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash up to 2 cards from your hand. Gain a Silver per card you trashed.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Trade.jpg"
+  },
+  {
+    "name": "Training",
+    "id": "095258",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Move your +(1) token to an Action Supply pile. (When you play a card from that pile, you first get +(1).)",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Training.jpg"
+  },
+  {
+    "name": "Travelling Fair",
+    "id": "095458",
+    "box": "Adventures",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Buys When you gain a card this turn, you may put it onto your deck.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "topdeck",
+      "gain",
+      "on_gain",
+      "gain_to_deck",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Adventures/Travelling_Fair.jpg"
+  }
+]

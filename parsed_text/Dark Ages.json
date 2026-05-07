@@ -1,0 +1,1775 @@
+[
+  {
+    "name": "Altar",
+    "id": "080259",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Gain a card costing up to (5).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Altar.jpg"
+  },
+  {
+    "name": "Armory",
+    "id": "080359",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card onto your deck costing up to (4).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "gain_to_deck",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Armory.jpg"
+  },
+  {
+    "name": "Band of Misfits",
+    "id": "080459",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Play a nonCommand nonDuration Action card from the Supply that costs less than this, leaving it there.",
+    "types": [
+      "Action",
+      "Command"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Band_of_Misfits.jpg"
+  },
+  {
+    "name": "Bandit Camp",
+    "id": "080559",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions Gain a Spoils.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "gain",
+      "uses_spoils",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Bandit_Camp.jpg"
+  },
+  {
+    "name": "Beggar",
+    "id": "080659",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain 3 Coppers to your hand. | When another player plays an Attack card, you may first discard this to gain 2 Silvers, putting one onto your deck.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "reaction_attack",
+      "self_junk",
+      "gain_to_hand",
+      "reaction_gain",
+      "terminal"
+    ],
+    "opponent_tags": [
+      "discard"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Beggar.jpg"
+  },
+  {
+    "name": "Catacombs",
+    "id": "080759",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look at the top 3 cards of your deck. Choose one: Put them into your hand; or discard them and +3 Cards. | When you trash this, gain a cheaper card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Catacombs.jpg"
+  },
+  {
+    "name": "Count",
+    "id": "080859",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: Discard 2 cards; or put a card from your hand onto your deck; or gain a Copper. Choose one: +(3); or trash your hand; or gain a Duchy.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "topdeck",
+      "discard",
+      "gain",
+      "trash",
+      "self_junk",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Count.jpg"
+  },
+  {
+    "name": "Counterfeit",
+    "id": "080959",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) +1 Buy You may play a nonDuration Treasure from your hand twice. Trash it.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "trash",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Counterfeit.jpg"
+  },
+  {
+    "name": "Cultist",
+    "id": "081059",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards Each other player gains a Ruins. You may play a Cultist from your hand. | When you trash this, +3 Cards.",
+    "types": [
+      "Action",
+      "Attack",
+      "Looter"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "on_trash",
+      "attack",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Cultist.jpg"
+  },
+  {
+    "name": "Death Cart",
+    "id": "081659",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash this or an Action card from your hand, for +(5). | When you gain this, gain 2 Ruins.",
+    "types": [
+      "Action",
+      "Looter"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "on_gain",
+      "self_junk",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Death_Cart.jpg"
+  },
+  {
+    "name": "Silk Road",
+    "id": "084759",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Worth {1} for every 4 Victory cards you have (round down).",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Silk_Road.jpg"
+  },
+  {
+    "name": "Feodum",
+    "id": "081759",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Worth {1} per 3 Silvers you have (round down). | When you trash this, gain 3 Silvers.",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "on_trash",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Feodum.jpg"
+  },
+  {
+    "name": "Forager",
+    "id": "081859",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action +1 Buy Trash a card from your hand, then +(1) per differently named Treasure in the trash.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+buys",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Forager.jpg"
+  },
+  {
+    "name": "Fortress",
+    "id": "081959",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions | When you trash this, put it into your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Fortress.jpg"
+  },
+  {
+    "name": "Graverobber",
+    "id": "082059",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: Gain a card from the trash costing from (3) to (6), onto your deck; or trash an Action card from your hand and gain a card costing up to (3) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "gain_to_deck",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Graverobber.jpg"
+  },
+  {
+    "name": "Hermit",
+    "id": "082159",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look through your discard pile. You may trash a nonTreasure from it or from your hand. Gain a card costing up to (3). At the end of your Buy phase this turn, if you didnt gain any cards in it, exchange this for a Madman.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "exchange",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Hermit.jpg"
+  },
+  {
+    "name": "Madman",
+    "id": "082759",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions Return this to the Madman pile. If you do, +1 Card per card in your hand. (This is not in the Supply.)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "gain_non_supply",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Madman.jpg"
+  },
+  {
+    "name": "Hunting Grounds",
+    "id": "082359",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+4 Cards | When you trash this, gain a Duchy or 3 Estates.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Hunting_Grounds.jpg"
+  },
+  {
+    "name": "Ironmonger",
+    "id": "082459",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Reveal the top card of your deck; you may discard it. Either way, if it is an Action card, +1 Action Treasure card, +(1) Victory card, +1 Card",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "discard",
+      "scry",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Ironmonger.jpg"
+  },
+  {
+    "name": "Junk Dealer",
+    "id": "082559",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +(1) Trash a card from your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Junk_Dealer.jpg"
+  },
+  {
+    "name": "Knights",
+    "id": "082659",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Shuffle the Knights pile before each game with the Knights. Keep it face down except for the top card, which is the only one that can be bought or gained.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Knights.jpg"
+  },
+  {
+    "name": "Dame Anna",
+    "id": "081159",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash up to 2 cards from your hand. Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_self",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Dame_Anna.jpg"
+  },
+  {
+    "name": "Dame Josephine",
+    "id": "081259",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this. | {2}",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight",
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_self",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Dame_Josephine.jpg"
+  },
+  {
+    "name": "Dame Molly",
+    "id": "081359",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "village",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Dame_Molly.jpg"
+  },
+  {
+    "name": "Dame Natalie",
+    "id": "081459",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may gain a card costing up to (3). Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_for_benefit",
+      "trash_self",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Dame_Natalie.jpg"
+  },
+  {
+    "name": "Dame Sylvia",
+    "id": "081559",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_for_benefit",
+      "trash_self",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Dame_Sylvia.jpg"
+  },
+  {
+    "name": "Sir Bailey",
+    "id": "084859",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "terminal",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Sir_Bailey.jpg"
+  },
+  {
+    "name": "Sir Destry",
+    "id": "084959",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "terminal",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Sir_Destry.jpg"
+  },
+  {
+    "name": "Sir Martin",
+    "id": "085059",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Buys Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_self",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Sir_Martin.jpg"
+  },
+  {
+    "name": "Sir Michael",
+    "id": "085159",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player discards down to 3 cards in hand. Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "discard_attack",
+      "trash_self",
+      "terminal"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Sir_Michael.jpg"
+  },
+  {
+    "name": "Sir Vander",
+    "id": "085259",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Mixed Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest. If a Knight is trashed by this, trash this. | When you trash this, gain a Gold.",
+    "types": [
+      "Action",
+      "Attack",
+      "Knight"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "reveal",
+      "on_trash",
+      "attack",
+      "trash_attack",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Sir_Vander.jpg"
+  },
+  {
+    "name": "Marauder",
+    "id": "082859",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Spoils. Each other player gains a Ruins.",
+    "types": [
+      "Action",
+      "Attack",
+      "Looter"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "attack",
+      "uses_spoils",
+      "terminal"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Marauder.jpg"
+  },
+  {
+    "name": "Market Square",
+    "id": "082959",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +1 Buy | When one of your cards is trashed, you may discard this from your hand to gain a Gold.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "+buys",
+      "discard",
+      "gain",
+      "trash_to_gain",
+      "reaction_trash",
+      "reaction_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Market_Square.jpg"
+  },
+  {
+    "name": "Mystic",
+    "id": "083159",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action +(2) Name a card, then reveal the top card of your deck. If you named it, put it into your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "scry",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Mystic.jpg"
+  },
+  {
+    "name": "Pillage",
+    "id": "083459",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash this. If you did, gain 2 Spoils, and each other player with 5 or more cards in hand reveals their hand and discards a card that you choose.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "reveal",
+      "attack",
+      "hand_reveal",
+      "trash_self",
+      "trash_to_gain",
+      "uses_spoils",
+      "engine_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Pillage.jpg"
+  },
+  {
+    "name": "Poor House",
+    "id": "083559",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(1)",
+    "cost_coin": 1,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(4) Reveal your hand. per Treasure card in your hand. (You cant go below (0).)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Poor_House.jpg"
+  },
+  {
+    "name": "Procession",
+    "id": "083659",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may play a nonDuration Action card from your hand twice. Trash it. Gain an Action card costing exactly (1) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Procession.jpg"
+  },
+  {
+    "name": "Rats",
+    "id": "083759",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Gain a Rats. Trash a card from your hand other than a Rats (or reveal a hand of all Rats). | When you trash this, +1 Card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "gain",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Rats.jpg"
+  },
+  {
+    "name": "Rebuild",
+    "id": "083859",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Name a card. Reveal cards from your deck until you reveal a Victory card you did not name. Discard the rest, trash the Victory card, and gain a Victory card costing up to (3) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "scry",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Rebuild.jpg"
+  },
+  {
+    "name": "Rogue",
+    "id": "083959",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) If there are any cards in the trash costing from (3) to (6), gain one of them. Otherwise, each other player reveals the top 2 cards of their deck, trashes one of them costing from (3) to (6), and discards the rest.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dark Ages/Rogue.jpg"
+  },
+  {
+    "name": "Ruins",
+    "id": "084359",
+    "box": "Dark Ages",
+    "edition": "Unknown",
+    "supply": "Unknown",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "",
+    "types": [],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Ruins.jpg"
+  },
+  {
+    "name": "Abandoned Mine",
+    "id": "080159",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(1)",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Abandoned_Mine.jpg"
+  },
+  {
+    "name": "Ruined Library",
+    "id": "084059",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Ruined_Library.jpg"
+  },
+  {
+    "name": "Ruined Market",
+    "id": "084159",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Ruined_Market.jpg"
+  },
+  {
+    "name": "Ruined Village",
+    "id": "084259",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Ruined_Village.jpg"
+  },
+  {
+    "name": "Survivors",
+    "id": "085659",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look at the top 2 cards of your deck. Discard them or put them back in any order.",
+    "types": [
+      "Action",
+      "Ruins"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "scry",
+      "reorder",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Survivors.jpg"
+  },
+  {
+    "name": "Sage",
+    "id": "084459",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Reveal cards from the top of your deck until you reveal one costing (3) or more. Put that card into your hand and discard the rest.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "topdeck",
+      "discard",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Sage.jpg"
+  },
+  {
+    "name": "Scavenger",
+    "id": "084559",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) You may put your deck into your discard pile. Put a card from your discard pile onto your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "topdeck",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Scavenger.jpg"
+  },
+  {
+    "name": "Shelters",
+    "id": "084659",
+    "box": "Dark Ages",
+    "edition": "Unknown",
+    "supply": "Unknown",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "",
+    "types": [],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Shelters.jpg"
+  },
+  {
+    "name": "Hovel",
+    "id": "082259",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(1)",
+    "cost_coin": 1,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Victory card, you may trash this from your hand.",
+    "types": [
+      "Reaction",
+      "Shelter"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_self",
+      "reaction_trash",
+      "reaction_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Hovel.jpg"
+  },
+  {
+    "name": "Necropolis",
+    "id": "083259",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(1)",
+    "cost_coin": 1,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions",
+    "types": [
+      "Action",
+      "Shelter"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece",
+      "village"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Necropolis.jpg"
+  },
+  {
+    "name": "Overgrown Estate",
+    "id": "083359",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(1)",
+    "cost_coin": 1,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "{0} | When you trash this, +1 Card.",
+    "types": [
+      "Victory",
+      "Shelter"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Overgrown_Estate.jpg"
+  },
+  {
+    "name": "Spoils",
+    "id": "085359",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) When you play this, return it to the Spoils pile. (This is not in the Supply.)",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain_non_supply",
+      "uses_spoils",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Spoils.jpg"
+  },
+  {
+    "name": "Squire",
+    "id": "085459",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(1) Choose one: +2 Actions; or +2 Buys; or gain a Silver. | When you trash this, gain an Attack card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "gain",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "village"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Squire.jpg"
+  },
+  {
+    "name": "Storeroom",
+    "id": "085559",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Discard any number of cards, then draw that many. Then discard any number of cards for +(1) each.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "discard",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Storeroom.jpg"
+  },
+  {
+    "name": "Urchin",
+    "id": "085759",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Each other player discards down to 4 cards in hand. | When you play another Attack card with this in play, you may first trash this, to gain a Mercenary.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "gain",
+      "trash",
+      "attack",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Urchin.jpg"
+  },
+  {
+    "name": "Mercenary",
+    "id": "083059",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash 2 cards from your hand. If you did, +2 Cards, +(2), and each other player discards down to 3 cards in hand. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "attack",
+      "trash_for_benefit",
+      "gain_non_supply",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Mercenary.jpg"
+  },
+  {
+    "name": "Vagrant",
+    "id": "085859",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If its a Curse, Ruins, Shelter, or Victory card, put it into your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Vagrant.jpg"
+  },
+  {
+    "name": "Wandering Minstrel",
+    "id": "085959",
+    "box": "Dark Ages",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions Reveal the top 3 cards of your deck. Put the Action cards back in any order and discard the rest.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "discard",
+      "scry",
+      "reorder",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dark Ages/Wandering_Minstrel.jpg"
+  }
+]

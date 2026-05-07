@@ -1,0 +1,2326 @@
+[
+  {
+    "name": "Abundance",
+    "id": "150186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "The next time you gain an Action card: +1 Buy and +(3).",
+    "types": [
+      "Treasure",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "gain",
+      "duration",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Abundance.jpg"
+  },
+  {
+    "name": "Buried Treasure",
+    "id": "150486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, +1 Buy and +(3). | When you gain this, play it.",
+    "types": [
+      "Treasure",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "duration",
+      "on_gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Buried_Treasure.jpg"
+  },
+  {
+    "name": "Cabin Boy",
+    "id": "150686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action At the start of your next turn, choose one: +(2); or trash this to gain a Duration card.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "gain",
+      "trash",
+      "duration",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Cabin_Boy.jpg"
+  },
+  {
+    "name": "Cage",
+    "id": "150786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Set aside up to 4 cards from your hand face down (on this). The next time you gain a Victory card, trash this, and put the set aside cards into your hand at end of turn.",
+    "types": [
+      "Treasure",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "gain",
+      "trash",
+      "duration",
+      "trash_for_benefit",
+      "trash_self",
+      "gain_to_hand",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Cage.jpg"
+  },
+  {
+    "name": "Crew",
+    "id": "150986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards At the start of your next turn, put this onto your deck.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "duration",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Crew.jpg"
+  },
+  {
+    "name": "Crucible",
+    "id": "151086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. +(1) per (1) it costs.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Crucible.jpg"
+  },
+  {
+    "name": "Cutthroat",
+    "id": "151286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player discards down to 3 cards in hand. The next time anyone gains a Treasure costing (5) or more, gain a Loot.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "duration",
+      "attack",
+      "uses_loot",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Cutthroat.jpg"
+  },
+  {
+    "name": "Enlarge",
+    "id": "151686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Now and at the start of your next turn: Trash a card from your hand, and gain one costing up to (2) more.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "duration",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Enlarge.jpg"
+  },
+  {
+    "name": "Figurine",
+    "id": "152086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards You may discard an Action card for +1 Buy and +(1).",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+cards",
+      "+buys",
+      "discard",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Figurine.jpg"
+  },
+  {
+    "name": "First Mate",
+    "id": "152186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Play any number of Action cards with the same name from your hand, then draw until you have 6 cards in hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/First_Mate.jpg"
+  },
+  {
+    "name": "Flagship",
+    "id": "152286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) The next time you play a nonCommand Action card, replay it.",
+    "types": [
+      "Action",
+      "Duration",
+      "Command"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "duration",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Flagship.jpg"
+  },
+  {
+    "name": "Fortune Hunter",
+    "id": "152486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Look at the top 3 cards of your deck. You may play a Treasure from them. Put the rest back in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "scry",
+      "reorder",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Fortune_Hunter.jpg"
+  },
+  {
+    "name": "Frigate",
+    "id": "152686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(3) Until the start of your next turn, each time another player plays an Action card, they discard down to 4 cards in hand afterwards.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "duration",
+      "attack",
+      "discard_attack",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Frigate.jpg"
+  },
+  {
+    "name": "Gondola",
+    "id": "152786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Either now or at the start of your next turn: +(2). | When you gain this, you may play an Action card from your hand.",
+    "types": [
+      "Treasure",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "duration",
+      "on_gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Gondola.jpg"
+  },
+  {
+    "name": "Grotto",
+    "id": "152886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Set aside up to 4 cards from your hand face down (on this). At the start of your next turn, discard them, then draw as many.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "set_aside",
+      "duration",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Grotto.jpg"
+  },
+  {
+    "name": "Harbor Village",
+    "id": "153086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions After the next Action you play this turn, if it gave you +(_), +(1).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+card",
+      "engine_piece",
+      "payload_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Harbor_Village.jpg"
+  },
+  {
+    "name": "Jewelled Egg",
+    "id": "153686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) +1 Buy | When you trash this, gain a Loot.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "uses_loot",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Jewelled_Egg.jpg"
+  },
+  {
+    "name": "King's Cache",
+    "id": "153986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may play a Treasure from your hand 3 times.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/King's_Cache.jpg"
+  },
+  {
+    "name": "Landing Party",
+    "id": "154086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +2 Actions The next time the first card you play on a turn is a Treasure, put this onto your deck afterwards.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "duration",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Landing_Party.jpg"
+  },
+  {
+    "name": "Longship",
+    "id": "154286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions At the start of your next turn, +2 Cards.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "duration",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Longship.jpg"
+  },
+  {
+    "name": "Loot",
+    "id": "154386",
+    "box": "Plunder",
+    "edition": "Unknown",
+    "supply": "Unknown",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "",
+    "types": [],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Loot.jpg"
+  },
+  {
+    "name": "Amphora",
+    "id": "150286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Either now or at the start of your next turn: +1 Buy and +(3).",
+    "types": [
+      "Treasure",
+      "Duration",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "duration",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Amphora.jpg"
+  },
+  {
+    "name": "Doubloons",
+    "id": "151486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) | When you gain this, gain a Gold.",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Doubloons.jpg"
+  },
+  {
+    "name": "Endless Chalice",
+    "id": "151586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Now and at the start of each of your turns for the rest of the game: (1) +1 Buy",
+    "types": [
+      "Treasure",
+      "Duration",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "each_turn",
+      "duration",
+      "extra_buy_phase",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Endless_Chalice.jpg"
+  },
+  {
+    "name": "Figurehead",
+    "id": "151986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) At the start of your next turn, +2 Cards.",
+    "types": [
+      "Treasure",
+      "Duration",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+cards",
+      "duration",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Figurehead.jpg"
+  },
+  {
+    "name": "Hammer",
+    "id": "152986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) Gain a card costing up to (4).",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Hammer.jpg"
+  },
+  {
+    "name": "Insignia",
+    "id": "153386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) This turn, when you gain a card, you may put it onto your deck.",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "on_gain",
+      "gain_to_deck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Insignia.jpg"
+  },
+  {
+    "name": "Jewels",
+    "id": "153786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) +1 Buy At the start of your next turn, put this on the bottom of your deck.",
+    "types": [
+      "Treasure",
+      "Duration",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "duration",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Jewels.jpg"
+  },
+  {
+    "name": "Orb",
+    "id": "155186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look through your discard pile. Choose one: Play an Action or Treasure from it; or +1 Buy and +(3).",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Orb.jpg"
+  },
+  {
+    "name": "Prize Goat",
+    "id": "155986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) +1 Buy You may trash a card from your hand.",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "trash",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Prize_Goat.jpg"
+  },
+  {
+    "name": "Puzzle Box",
+    "id": "156186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) +1 Buy You may set aside a card from your hand face down. Put it into your hand at end of turn.",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "set_aside",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Puzzle_Box.jpg"
+  },
+  {
+    "name": "Sextant",
+    "id": "157186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) +1 Buy Look at the top 5 cards of your deck. Discard any number. Put the rest back in any order.",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "discard",
+      "scry",
+      "reorder",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Sextant.jpg"
+  },
+  {
+    "name": "Shield",
+    "id": "157386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) +1 Buy | When another player plays an Attack, you may first reveal this from your hand to be unaffected.",
+    "types": [
+      "Treasure",
+      "Reaction",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "reveal",
+      "reaction_attack",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Shield.jpg"
+  },
+  {
+    "name": "Spell Scroll",
+    "id": "157786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash this to gain a cheaper card. If its an Action or Treasure, you may play it.",
+    "types": [
+      "Action",
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Spell_Scroll.jpg"
+  },
+  {
+    "name": "Staff",
+    "id": "157886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) +1 Buy You may play an Action from your hand.",
+    "types": [
+      "Treasure",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Staff.jpg"
+  },
+  {
+    "name": "Sword",
+    "id": "158186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) +1 Buy Each other player discards down to 4 cards in hand.",
+    "types": [
+      "Treasure",
+      "Attack",
+      "Loot"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "attack",
+      "payload_piece",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Sword.jpg"
+  },
+  {
+    "name": "Mapmaker",
+    "id": "154686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look at the top 4 cards of your deck. Put 2 into your hand and discard the rest. | When any player gains a Victory card, you may play this from your hand.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain",
+      "scry",
+      "reaction_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Mapmaker.jpg"
+  },
+  {
+    "name": "Maroon",
+    "id": "154786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. +2 Cards per type it has (Action, Attack, etc.).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Maroon.jpg"
+  },
+  {
+    "name": "Mining Road",
+    "id": "154886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action +1 Buy +(2) Once this turn, when you gain a Treasure, you may play it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+buys",
+      "gain",
+      "on_gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Mining_Road.jpg"
+  },
+  {
+    "name": "Pendant",
+    "id": "155386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(1) per differently named Treasure you have in play.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Pendant.jpg"
+  },
+  {
+    "name": "Pickaxe",
+    "id": "155586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) Trash a card from your hand. If it costs (3) or more, gain a Loot to your hand.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "gain_to_hand",
+      "uses_loot",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Pickaxe.jpg"
+  },
+  {
+    "name": "Pilgrim",
+    "id": "155686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+4 Cards Put a card from your hand onto your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Pilgrim.jpg"
+  },
+  {
+    "name": "Quartermaster",
+    "id": "156286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of each of your turns for the rest of the game, choose one: Gain a card costing up to (4), setting it aside on this; or put a card from this into your hand.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "each_turn",
+      "duration",
+      "gain_to_hand",
+      "extra_buy_phase",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Quartermaster.jpg"
+  },
+  {
+    "name": "Rope",
+    "id": "156586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) +1 Buy At the start of your next turn, +1 Card and you may trash a card from your hand.",
+    "types": [
+      "Treasure",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "+buys",
+      "trash",
+      "duration",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Rope.jpg"
+  },
+  {
+    "name": "Sack of Loot",
+    "id": "156786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) +1 Buy Gain a Loot.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "uses_loot",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Sack_of_Loot.jpg"
+  },
+  {
+    "name": "Search",
+    "id": "156986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) The next time a Supply pile empties, trash this and gain a Loot.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "trash",
+      "duration",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "uses_loot",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Search.jpg"
+  },
+  {
+    "name": "Secluded Shrine",
+    "id": "157086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(1) The next time you gain a Treasure, trash up to 2 cards from your hand.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "trash",
+      "duration",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Secluded_Shrine.jpg"
+  },
+  {
+    "name": "Shaman",
+    "id": "157286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action +(1) You may trash a card from your hand. | In games using this, at the start of your turn, gain a card from the trash costing up to (6).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Shaman.jpg"
+  },
+  {
+    "name": "Silver Mine",
+    "id": "157586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Treasure costing less than this to your hand.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction",
+      "gain",
+      "gain_to_hand"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Silver_Mine.jpg"
+  },
+  {
+    "name": "Siren",
+    "id": "157686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player gains a Curse. At the start of your next turn, draw until you have 8 cards in hand. | When you gain this, trash it unless you trash an Action from your hand.",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "duration",
+      "on_gain",
+      "attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Plunder/Siren.jpg"
+  },
+  {
+    "name": "Stowaway",
+    "id": "157986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, +2 Cards. | When anyone gains a Duration card, you may play this from your hand.",
+    "types": [
+      "Action",
+      "Duration",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "duration",
+      "reaction_gain",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Stowaway.jpg"
+  },
+  {
+    "name": "Swamp Shacks",
+    "id": "158086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions +1 Card per 3 cards you have in play (round down).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Swamp_Shacks.jpg"
+  },
+  {
+    "name": "Taskmaster",
+    "id": "158286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action, +(1), and if you gain a card costing exactly (5) this turn, then at the start of your next turn, repeat this ability.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "gain",
+      "duration",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Taskmaster.jpg"
+  },
+  {
+    "name": "Tools",
+    "id": "158486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a copy of a card anyone has in play.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Tools.jpg"
+  },
+  {
+    "name": "Trickster",
+    "id": "158586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player gains a Curse. Once this turn, when you discard a Treasure from play, you may set it aside. Put it in your hand at end of turn.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "set_aside",
+      "on_discard",
+      "attack",
+      "engine_piece"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Plunder/Trickster.jpg"
+  },
+  {
+    "name": "Wealthy Village",
+    "id": "158686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions | When you gain this, if you have at least 3 differently named Treasures in play, gain a Loot.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "gain",
+      "on_gain",
+      "uses_loot",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Wealthy_Village.jpg"
+  },
+  {
+    "name": "Avoid",
+    "id": "150386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy The next time you shuffle this turn, pick up to 3 of those cards to put into your discard pile.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Avoid.jpg"
+  },
+  {
+    "name": "Bury",
+    "id": "150586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(1)",
+    "cost_coin": 1,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Put any card from your discard pile on the bottom of your deck.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Bury.jpg"
+  },
+  {
+    "name": "Deliver",
+    "id": "151386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy This turn, each time you gain a card, set it aside, and put it into your hand at end of turn.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "set_aside",
+      "gain",
+      "gain_to_hand",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Deliver.jpg"
+  },
+  {
+    "name": "Foray",
+    "id": "152386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Discard 3 cards, revealing them. If they have 3 different names, gain a Loot.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "uses_loot"
+    ],
+    "opponent_tags": [
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Plunder/Foray.jpg"
+  },
+  {
+    "name": "Invasion",
+    "id": "153586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(10)",
+    "cost_coin": 10,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may play an Attack from your hand. Gain a Duchy. Gain an Action onto your deck. Gain a Loot; play it.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "gain_to_deck",
+      "uses_loot",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Invasion.jpg"
+  },
+  {
+    "name": "Journey",
+    "id": "153886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You dont discard cards from play in Cleanup this turn. Take an extra turn after this one (but not a turn in a row).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "extra_turn",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Journey.jpg"
+  },
+  {
+    "name": "Launch",
+    "id": "154186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per turn: Return to your Action phase. +1 Card, +1 Action, and +1 Buy.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "+cards",
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Launch.jpg"
+  },
+  {
+    "name": "Looting",
+    "id": "154486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Loot.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "uses_loot"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Looting.jpg"
+  },
+  {
+    "name": "Maelstrom",
+    "id": "154586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash 3 cards from your hand. Each other player with 5 or more cards in hand trashes one of them.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [
+      "trash"
+    ],
+    "dependencies": [],
+    "image": "images/Plunder/Maelstrom.jpg"
+  },
+  {
+    "name": "Mirror",
+    "id": "154986",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy The next time you gain an Action card this turn, gain a copy of it.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Mirror.jpg"
+  },
+  {
+    "name": "Peril",
+    "id": "155486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash an Action card from your hand to gain a Loot.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "uses_loot",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Peril.jpg"
+  },
+  {
+    "name": "Prepare",
+    "id": "155886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Set aside your hand face up. At the start of your next turn, play those Actions and Treasures in any order, then discard the rest.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "set_aside",
+      "reorder",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Prepare.jpg"
+  },
+  {
+    "name": "Prosper",
+    "id": "156086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(10)",
+    "cost_coin": 10,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Loot, plus any number of differently named Treasures.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "uses_loot"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Prosper.jpg"
+  },
+  {
+    "name": "Rush",
+    "id": "156686",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy The next time you gain an Action card this turn, play it.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Rush.jpg"
+  },
+  {
+    "name": "Scrounge",
+    "id": "156886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: Trash a card from your hand; or gain an Estate from the trash, and if you did, gain a card costing up to (5).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Scrounge.jpg"
+  },
+  {
+    "name": "Cheap",
+    "id": "150886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Cheap cards cost (1) less.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Cheap.jpg"
+  },
+  {
+    "name": "Cursed",
+    "id": "151186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Cursed card, gain a Loot and a Curse.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain",
+      "self_junk",
+      "uses_loot"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Cursed.jpg"
+  },
+  {
+    "name": "Fated",
+    "id": "151786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When shuffling, you may look through the cards and reveal Fated cards to put them on the top or bottom.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "scry"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Fated.jpg"
+  },
+  {
+    "name": "Fawning",
+    "id": "151886",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Province, gain a Fawning card.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Fawning.jpg"
+  },
+  {
+    "name": "Friendly",
+    "id": "152586",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Cleanup phase, you may discard a Friendly card to gain a Friendly card.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Friendly.jpg"
+  },
+  {
+    "name": "Hasty",
+    "id": "153186",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Hasty card, set it aside, and play it at the start of your next turn.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "gain",
+      "on_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Hasty.jpg"
+  },
+  {
+    "name": "Inherited",
+    "id": "153286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Setup: You start the game with an Inherited card in place of a starting card you choose.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Inherited.jpg"
+  },
+  {
+    "name": "Inspiring",
+    "id": "153486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "After playing an Inspiring card on your turn, you may play an Action from your hand that you dont have a copy of in play.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Inspiring.jpg"
+  },
+  {
+    "name": "Nearby",
+    "id": "155086",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Nearby card, +1 Buy.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "on_gain",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Nearby.jpg"
+  },
+  {
+    "name": "Patient",
+    "id": "155286",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Cleanup phase, you may set aside Patient cards from your hand to play them at the start of your next turn.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Patient.jpg"
+  },
+  {
+    "name": "Pious",
+    "id": "155786",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Pious card, you may trash a card from your hand.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Pious.jpg"
+  },
+  {
+    "name": "Reckless",
+    "id": "156386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Follow the instructions of played Reckless cards twice. When discarding one from play, return it to its pile.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Reckless.jpg"
+  },
+  {
+    "name": "Rich",
+    "id": "156486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Rich card, gain a Silver.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Rich.jpg"
+  },
+  {
+    "name": "Shy",
+    "id": "157486",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may discard one Shy card for +2 Cards.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+cards",
+      "discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Shy.jpg"
+  },
+  {
+    "name": "Tireless",
+    "id": "158386",
+    "box": "Plunder",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you discard a Tireless card from play, set it aside, and put it onto your deck at end of turn.",
+    "types": [
+      "Trait"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "discard",
+      "set_aside",
+      "on_discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Plunder/Tireless.jpg"
+  }
+]

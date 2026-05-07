@@ -1,0 +1,916 @@
+[
+  {
+    "name": "Baron",
+    "id": "020132",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy You may discard an Estate for +(4). If you dont, gain an Estate.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "discard",
+      "gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Baron.jpg"
+  },
+  {
+    "name": "Bridge",
+    "id": "020232",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(1) This turn, cards (everywhere) cost (1) less.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "cost_reduction",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Bridge.jpg"
+  },
+  {
+    "name": "Conspirator",
+    "id": "020332",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) If youve played 3 or more Actions this turn (counting this), +1 Card and +1 Action.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "engine_piece",
+      "payload_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Conspirator.jpg"
+  },
+  {
+    "name": "Coppersmith",
+    "id": "020432",
+    "box": "Intrigue",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Copper produces an extra (1) this turn.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Coppersmith.jpg"
+  },
+  {
+    "name": "Courtier",
+    "id": "020532",
+    "box": "Intrigue",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Reveal a card from your hand. For each type it has (Action, Attack, etc.), choose one: +1 Action; or +1 Buy; or +(3); or gain a Gold. The choices must be different.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+buys",
+      "gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Courtier.jpg"
+  },
+  {
+    "name": "Courtyard",
+    "id": "020632",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards Put a card from your hand onto your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Courtyard.jpg"
+  },
+  {
+    "name": "Diplomat",
+    "id": "020732",
+    "box": "Intrigue",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards If you have 5 or fewer cards in hand (after drawing), +2 Actions. | When another player plays an Attack card, you may first reveal this from a hand of 5 or more cards, to draw 2 cards then discard",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "reveal",
+      "reaction_attack",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [
+      "discard"
+    ],
+    "dependencies": [],
+    "image": "images/Intrigue/Diplomat.jpg"
+  },
+  {
+    "name": "Duke",
+    "id": "020832",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Worth per Duchy you have.",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Duke.jpg"
+  },
+  {
+    "name": "Farm",
+    "id": "020932",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2) | {2}",
+    "types": [
+      "Treasure",
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Farm.jpg"
+  },
+  {
+    "name": "Great Hall",
+    "id": "021032",
+    "box": "Intrigue",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action | {1}",
+    "types": [
+      "Action",
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Great_Hall.jpg"
+  },
+  {
+    "name": "Ironworks",
+    "id": "021132",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card costing up to (4). If the gained card is an Action card, +1 Action Treasure card, +(1) Victory card, +1 Card",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Ironworks.jpg"
+  },
+  {
+    "name": "Lurker",
+    "id": "021232",
+    "box": "Intrigue",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Choose one: Trash an Action card from the Supply; or gain an Action card from the trash.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Lurker.jpg"
+  },
+  {
+    "name": "Masquerade",
+    "id": "021332",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards Each player with any cards in hand passes one to the next such player to their left, at once. Then you may trash a card from your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "trash_for_benefit",
+      "global_effect",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Masquerade.jpg"
+  },
+  {
+    "name": "Mill",
+    "id": "021432",
+    "box": "Intrigue",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action You may discard 2 cards. If you do, +(2). | {1}",
+    "types": [
+      "Action",
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "discard",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Mill.jpg"
+  },
+  {
+    "name": "Mining Village",
+    "id": "021532",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions You may trash this for +(2).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+card",
+      "trash",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "payload_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Mining_Village.jpg"
+  },
+  {
+    "name": "Minion",
+    "id": "021632",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Choose one: +(2); or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards their hand and draws 4 cards.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "discard",
+      "attack",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Minion.jpg"
+  },
+  {
+    "name": "Nobles",
+    "id": "021732",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: +3 Cards; or +2 Actions. | {2}",
+    "types": [
+      "Action",
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Nobles.jpg"
+  },
+  {
+    "name": "Patrol",
+    "id": "021832",
+    "box": "Intrigue",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards Reveal the top 4 cards of your deck. Put the Victory cards and Curses into your hand. Put the rest back in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "scry",
+      "reorder",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Patrol.jpg"
+  },
+  {
+    "name": "Pawn",
+    "id": "021932",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose two: +1 Card; +1 Action; +1 Buy; +(1). The choices must be different.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Pawn.jpg"
+  },
+  {
+    "name": "Replace",
+    "id": "022032",
+    "box": "Intrigue",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Gain a card costing up to (2) more than it. If the gained card is an Action or Treasure, put it onto your deck; if its a Victory card, each other player gains a Curse.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "trash",
+      "attack",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "gain_to_deck",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Intrigue/Replace.jpg"
+  },
+  {
+    "name": "Saboteur",
+    "id": "022132",
+    "box": "Intrigue",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player reveals cards from the top of their deck until revealing one costing (3) or more. They trash that card and may gain a card costing at most (2) less than it. They discard the other revealed cards.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "reveal",
+      "attack",
+      "trash_attack",
+      "deck_attack",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "topdeck",
+      "trash",
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Intrigue/Saboteur.jpg"
+  },
+  {
+    "name": "Scout",
+    "id": "022232",
+    "box": "Intrigue",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Reveal the top 4 cards of your deck. Put the revealed Victory cards into your hand. Put the other cards on top of your deck in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "topdeck",
+      "scry",
+      "reorder",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Scout.jpg"
+  },
+  {
+    "name": "Secret Chamber",
+    "id": "022332",
+    "box": "Intrigue",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Discard any number of cards. +(1) per card discarded. | When another player plays an Attack card, you may reveal this from your hand. If you do, +2 Cards, then put 2 cards from your hand on top of your deck.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "topdeck",
+      "discard",
+      "reveal",
+      "reaction_attack",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Secret_Chamber.jpg"
+  },
+  {
+    "name": "Secret Passage",
+    "id": "022432",
+    "box": "Intrigue",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +1 Action Take a card from your hand and put it anywhere in your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Secret_Passage.jpg"
+  },
+  {
+    "name": "Shanty Town",
+    "id": "022532",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions Reveal your hand. If you have no Action cards in hand, +2 Cards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Shanty_Town.jpg"
+  },
+  {
+    "name": "Steward",
+    "id": "022632",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: +2 Cards; or +(2); or trash 2 cards from your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Steward.jpg"
+  },
+  {
+    "name": "Swindler",
+    "id": "022732",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Each other player trashes the top card of their deck and gains a card with the same cost that you choose.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "attack",
+      "trash_attack",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [
+      "trash"
+    ],
+    "dependencies": [],
+    "image": "images/Intrigue/Swindler.jpg"
+  },
+  {
+    "name": "Torturer",
+    "id": "022832",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards Each other player either discards 2 cards or gains a Curse to their hand, their choice. (They may pick an option they cant do.)",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Intrigue/Torturer.jpg"
+  },
+  {
+    "name": "Trading Post",
+    "id": "022932",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash 2 cards from your hand. If you did, gain a Silver to your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "gain_to_hand",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Trading_Post.jpg"
+  },
+  {
+    "name": "Tribute",
+    "id": "023032",
+    "box": "Intrigue",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "The player to your left reveals then discards the top 2 cards of their deck. For each differently named card revealed, if it is an Action Card, +2 Actions Treasure Card, +(2) Victory Card, +2 Cards",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "discard",
+      "scry",
+      "engine_piece",
+      "payload_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Tribute.jpg"
+  },
+  {
+    "name": "Upgrade",
+    "id": "023132",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Trash a card from your hand. Gain a card costing exactly (1) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Upgrade.jpg"
+  },
+  {
+    "name": "Wishing Well",
+    "id": "023232",
+    "box": "Intrigue",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Name a card, then reveal the top card of your deck. If you named it, put it into your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Intrigue/Wishing_Well.jpg"
+  }
+]

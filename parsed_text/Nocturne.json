@@ -1,0 +1,2033 @@
+[
+  {
+    "name": "Bard",
+    "id": "110277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Receive a Boon.",
+    "types": [
+      "Action",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "uses_boons",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Bard.jpg"
+  },
+  {
+    "name": "Blessed Village",
+    "id": "110477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions | When you gain this, take a Boon. Receive it now or at the start of your next turn.",
+    "types": [
+      "Action",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "on_gain",
+      "uses_boons",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Blessed_Village.jpg"
+  },
+  {
+    "name": "Cemetery",
+    "id": "110577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "{2} | When you gain this, trash up to 4 cards from your hand. Heirloom: Haunted Mirror",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "on_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Cemetery.jpg"
+  },
+  {
+    "name": "Haunted Mirror",
+    "id": "112977",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) | When you trash this, you may discard an Action card, to gain a Ghost.",
+    "types": [
+      "Treasure",
+      "Heirloom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Haunted_Mirror.jpg"
+  },
+  {
+    "name": "Changeling",
+    "id": "110677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash this. Gain a copy of a card you have in play. | In games using this, when you gain a card costing (3) or more, you may exchange it for a Changeling.",
+    "types": [
+      "Night"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "exchange",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Changeling.jpg"
+  },
+  {
+    "name": "Cobbler",
+    "id": "110777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, gain a card to your hand costing up to (4).",
+    "types": [
+      "Night",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "duration",
+      "gain_to_hand"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Cobbler.jpg"
+  },
+  {
+    "name": "Conclave",
+    "id": "110877",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) You may play an Action card from your hand that you dont have a copy of in play. If you do, +1 Action.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Conclave.jpg"
+  },
+  {
+    "name": "Crypt",
+    "id": "110977",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Set aside any number of nonDuration Treasures you have in play, face down (under this). While any remain, at the start of each of your turns, put one of them into your hand.",
+    "types": [
+      "Night",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "each_turn",
+      "duration",
+      "extra_buy_phase",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Crypt.jpg"
+  },
+  {
+    "name": "Cursed Village",
+    "id": "111177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions Draw until you have 6 cards in hand. | When you gain this, receive a Hex.",
+    "types": [
+      "Action",
+      "Doom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "on_gain",
+      "uses_hexes",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Cursed_Village.jpg"
+  },
+  {
+    "name": "Den of Sin",
+    "id": "111477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, +2 Cards. | This is gained to your hand (instead of your discard pile).",
+    "types": [
+      "Night",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+cards",
+      "duration",
+      "gain_to_hand",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Den_of_Sin.jpg"
+  },
+  {
+    "name": "Devil's Workshop",
+    "id": "111577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If the number of cards youve gained this turn is: gain an Imp; gain a card costing up to (4); gain a Gold.",
+    "types": [
+      "Night"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Devil's_Workshop.jpg"
+  },
+  {
+    "name": "Druid",
+    "id": "111677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Receive one of the setaside Boons (leaving it there). | Setup: Set aside the top 3 Boons face up.",
+    "types": [
+      "Action",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "set_aside",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Druid.jpg"
+  },
+  {
+    "name": "Exorcist",
+    "id": "111977",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Gain a cheaper Spirit from one of the Spirit piles.",
+    "types": [
+      "Night"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Exorcist.jpg"
+  },
+  {
+    "name": "Faithful Hound",
+    "id": "112077",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards | When you discard this other than during Cleanup, you may set it aside, and put it into your hand at end of turn.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "set_aside",
+      "on_discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Faithful_Hound.jpg"
+  },
+  {
+    "name": "Fool",
+    "id": "112377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you arent the player with Lost in the Woods: take it, take 3 Boons, and receive the Boons in any order. Heirloom: Lucky Coin",
+    "types": [
+      "Action",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "reorder",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Fool.jpg"
+  },
+  {
+    "name": "Lost in the Woods",
+    "id": "113577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may discard a card to receive a Boon.",
+    "types": [
+      "State"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "uses_boons"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Lost_in_the_Woods.jpg"
+  },
+  {
+    "name": "Lucky Coin",
+    "id": "113677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) Gain a Silver.",
+    "types": [
+      "Treasure",
+      "Heirloom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Lucky_Coin.jpg"
+  },
+  {
+    "name": "Ghost",
+    "id": "112477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Reveal cards from your deck until you reveal an Action. Discard the other cards and set aside the Action. At the start of your next turn, play it twice. (This is not in the Supply.)",
+    "types": [
+      "Night",
+      "Duration",
+      "Spirit"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "set_aside",
+      "duration",
+      "gain_non_supply",
+      "scry",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Ghost.jpg"
+  },
+  {
+    "name": "Ghost Town",
+    "id": "112577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, +1 Card and +1 Action. | This is gained to your hand (instead of your discard pile).",
+    "types": [
+      "Night",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "+cards",
+      "duration",
+      "gain_to_hand",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Ghost_Town.jpg"
+  },
+  {
+    "name": "Guardian",
+    "id": "112877",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, +(1). Until then, when another player plays an Attack card, it doesnt affect you. | This is gained to your hand (instead of your discard pile).",
+    "types": [
+      "Night",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "reaction_attack",
+      "duration",
+      "gain_to_hand",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Guardian.jpg"
+  },
+  {
+    "name": "Idol",
+    "id": "113177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2) If you have an odd number of Idols in play (counting this), receive a Boon; otherwise, each other player gains a Curse.",
+    "types": [
+      "Treasure",
+      "Attack",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "attack",
+      "uses_boons",
+      "engine_piece"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Nocturne/Idol.jpg"
+  },
+  {
+    "name": "Imp",
+    "id": "113277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards You may play an Action card from your hand that you dont have a copy of in play. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Spirit"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain_non_supply",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Imp.jpg"
+  },
+  {
+    "name": "Leprechaun",
+    "id": "113377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Gold. If you have exactly 7 cards in play, gain a Wish. Otherwise, receive a Hex.",
+    "types": [
+      "Action",
+      "Doom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "uses_hexes",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Leprechaun.jpg"
+  },
+  {
+    "name": "Monastery",
+    "id": "114077",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "For each card youve gained this turn, you may trash a card from your hand or a Copper you have in play.",
+    "types": [
+      "Night"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "self_junk",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Monastery.jpg"
+  },
+  {
+    "name": "Necromancer",
+    "id": "114177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose a face up, nonDuration Action card in the trash. Turn it face down for the turn, and play it, leaving it there. | Setup: Put the 3 Zombies into the trash.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Necromancer.jpg"
+  },
+  {
+    "name": "Zombie Apprentice",
+    "id": "117577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash an Action card from your hand for +3 Cards and +1 Action.",
+    "types": [
+      "Action",
+      "Zombie"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Zombie_Apprentice.jpg"
+  },
+  {
+    "name": "Zombie Mason",
+    "id": "117677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash the top card of your deck. You may gain a card costing up to (1) more than it.",
+    "types": [
+      "Action",
+      "Zombie"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Zombie_Mason.jpg"
+  },
+  {
+    "name": "Zombie Spy",
+    "id": "117777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Look at the top card of your deck. Discard it or put it back.",
+    "types": [
+      "Action",
+      "Zombie"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Zombie_Spy.jpg"
+  },
+  {
+    "name": "Night Watchman",
+    "id": "114277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look at the top 5 cards of your deck, discard any number, and put the rest back in any order. | This is gained to your hand (instead of your discard pile).",
+    "types": [
+      "Night"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain_to_hand",
+      "scry",
+      "reorder"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Night_Watchman.jpg"
+  },
+  {
+    "name": "Pixie",
+    "id": "114477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Discard the top Boon. You may trash this to receive that Boon twice. Heirloom: Goat",
+    "types": [
+      "Action",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "trash",
+      "trash_for_benefit",
+      "trash_self",
+      "uses_boons",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Pixie.jpg"
+  },
+  {
+    "name": "Goat",
+    "id": "112677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) You may trash a card from your hand.",
+    "types": [
+      "Treasure",
+      "Heirloom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Goat.jpg"
+  },
+  {
+    "name": "Pooka",
+    "id": "114677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash a Treasure other than Cursed Gold from your hand, for +4 Cards. Heirloom: Cursed Gold",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Pooka.jpg"
+  },
+  {
+    "name": "Cursed Gold",
+    "id": "111077",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3) Gain a Curse.",
+    "types": [
+      "Treasure",
+      "Heirloom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "self_junk"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Cursed_Gold.jpg"
+  },
+  {
+    "name": "Raider",
+    "id": "114977",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player with 5 or more cards in hand discards a copy of a card you have in play (or reveals they cant). At the start of your next turn, +(3).",
+    "types": [
+      "Night",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "reveal",
+      "duration",
+      "attack",
+      "payload_piece",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Raider.jpg"
+  },
+  {
+    "name": "Sacred Grove",
+    "id": "115077",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(3) Receive a Boon. If it doesnt give +(1), each other player may receive it.",
+    "types": [
+      "Action",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "uses_boons",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Sacred_Grove.jpg"
+  },
+  {
+    "name": "Secret Cave",
+    "id": "115177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action You may discard 3 cards. If you did, then at the start of your next turn, +(3). Heirloom: Magic Lamp",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "discard",
+      "duration",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Secret_Cave.jpg"
+  },
+  {
+    "name": "Magic Lamp",
+    "id": "113777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) If there are at least 6 cards that you have exactly 1 copy of in play (counting this), trash this. If you did, gain 3 Wishes.",
+    "types": [
+      "Treasure",
+      "Heirloom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Magic_Lamp.jpg"
+  },
+  {
+    "name": "Shepherd",
+    "id": "115277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Discard any number of Victory cards, revealing them. +2 Cards per card discarded. Heirloom: Pasture",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Shepherd.jpg"
+  },
+  {
+    "name": "Pasture",
+    "id": "114377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) | Worth {1} per Estate you have.",
+    "types": [
+      "Treasure",
+      "Victory",
+      "Heirloom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Pasture.jpg"
+  },
+  {
+    "name": "Skulk",
+    "id": "115377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Each other player receives the next Hex. | When you gain this, gain a Gold.",
+    "types": [
+      "Action",
+      "Attack",
+      "Doom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "on_gain",
+      "attack",
+      "uses_hexes",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Skulk.jpg"
+  },
+  {
+    "name": "Tormentor",
+    "id": "116677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) If you have no other cards in play, gain an Imp. Otherwise, each other player receives the next Hex.",
+    "types": [
+      "Action",
+      "Attack",
+      "Doom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "attack",
+      "uses_hexes",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Tormentor.jpg"
+  },
+  {
+    "name": "Tracker",
+    "id": "116777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(1) This turn, when you gain a card, you may put it onto your deck. Receive a Boon. Heirloom: Pouch",
+    "types": [
+      "Action",
+      "Fate"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "topdeck",
+      "gain",
+      "on_gain",
+      "gain_to_deck",
+      "uses_boons",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Tracker.jpg"
+  },
+  {
+    "name": "Pouch",
+    "id": "114777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1) +1 Buy",
+    "types": [
+      "Treasure",
+      "Heirloom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Pouch.jpg"
+  },
+  {
+    "name": "Tragic Hero",
+    "id": "116877",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards +1 Buy If you have 8 or more cards in hand (after drawing), trash this and gain a Treasure.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Tragic_Hero.jpg"
+  },
+  {
+    "name": "Vampire",
+    "id": "117077",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player receives the next Hex. Gain a card costing up to (5) other than a Vampire. Exchange this for a Bat.",
+    "types": [
+      "Night",
+      "Attack",
+      "Doom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "exchange",
+      "attack",
+      "uses_hexes"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Vampire.jpg"
+  },
+  {
+    "name": "Bat",
+    "id": "110377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash up to 2 cards from your hand. If you trashed at least one, exchange this for a Vampire. (This is not in the Supply.)",
+    "types": [
+      "Night"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "exchange",
+      "gain_non_supply",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Bat.jpg"
+  },
+  {
+    "name": "Werewolf",
+    "id": "117277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If its your Night phase, each other player receives the next Hex. Otherwise, +3 Cards.",
+    "types": [
+      "Action",
+      "Night",
+      "Attack",
+      "Doom"
+    ],
+    "subtypes": [],
+    "tags": [
+      "attack",
+      "uses_hexes",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Werewolf.jpg"
+  },
+  {
+    "name": "Will-o'-Wisp",
+    "id": "117377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If it costs (2) or less, put it into your hand. (This is not in the Supply.)",
+    "types": [
+      "Action",
+      "Spirit"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "cost_reduction",
+      "gain_non_supply",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Will-o'-Wisp.jpg"
+  },
+  {
+    "name": "Wish",
+    "id": "117477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Non-Supply",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Return this to its pile. If you did, gain a card to your hand costing up to (6). (This is not in the Supply.)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "gain",
+      "trash_self",
+      "gain_to_hand",
+      "gain_non_supply",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Wish.jpg"
+  },
+  {
+    "name": "The Field's Gift",
+    "id": "115577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action +(1) (Keep this until Cleanup.)",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Field's_Gift.jpg"
+  },
+  {
+    "name": "The Flame's Gift",
+    "id": "115677",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash a card from your hand.",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Flame's_Gift.jpg"
+  },
+  {
+    "name": "The Forest's Gift",
+    "id": "115777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(1) (Keep this until Cleanup.)",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Forest's_Gift.jpg"
+  },
+  {
+    "name": "The Moon's Gift",
+    "id": "115877",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look through your discard pile. You may put a card from it onto your deck.",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Moon's_Gift.jpg"
+  },
+  {
+    "name": "The Mountain's Gift",
+    "id": "115977",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Silver.",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Mountain's_Gift.jpg"
+  },
+  {
+    "name": "The River's Gift",
+    "id": "116077",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card at the end of this turn. (Keep this until Cleanup.)",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_River's_Gift.jpg"
+  },
+  {
+    "name": "The Sea's Gift",
+    "id": "116177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Sea's_Gift.jpg"
+  },
+  {
+    "name": "The Sky's Gift",
+    "id": "116277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may discard 3 cards to gain a Gold.",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Sky's_Gift.jpg"
+  },
+  {
+    "name": "The Sun's Gift",
+    "id": "116377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look at the top 4 cards of your deck. Discard any number of them and put the rest back in any order.",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "scry",
+      "reorder"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Sun's_Gift.jpg"
+  },
+  {
+    "name": "The Swamp's Gift",
+    "id": "116477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a WilloWisp.",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Swamp's_Gift.jpg"
+  },
+  {
+    "name": "The Earth's Gift",
+    "id": "115477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may discard a Treasure to gain a card costing up to (4).",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Earth's_Gift.jpg"
+  },
+  {
+    "name": "The Wind's Gift",
+    "id": "116577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards Discard 2 cards.",
+    "types": [
+      "Boon"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+cards",
+      "discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/The_Wind's_Gift.jpg"
+  },
+  {
+    "name": "Bad Omens",
+    "id": "110177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Put your deck into your discard pile. Look through it and put 2 Coppers from it onto your deck (or reveal you cant).",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Bad_Omens.jpg"
+  },
+  {
+    "name": "Delusion",
+    "id": "111377",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you dont have Deluded or Envious, take Deluded.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Delusion.jpg"
+  },
+  {
+    "name": "Deluded",
+    "id": "111277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, return this, and you cant buy Actions this turn.",
+    "types": [
+      "State"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Deluded.jpg"
+  },
+  {
+    "name": "Envy",
+    "id": "111877",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you dont have Deluded or Envious, take Envious.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Envy.jpg"
+  },
+  {
+    "name": "Envious",
+    "id": "111777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, return this, and Silver and Gold make (1) this turn.",
+    "types": [
+      "State"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Envious.jpg"
+  },
+  {
+    "name": "Famine",
+    "id": "112177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Reveal the top 3 cards of your deck. Discard the Actions. Shuffle the rest into your deck.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "scry"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Famine.jpg"
+  },
+  {
+    "name": "Fear",
+    "id": "112277",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you have at least 5 cards in hand, discard an Action or Treasure (or reveal you cant).",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Fear.jpg"
+  },
+  {
+    "name": "Greed",
+    "id": "112777",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Copper onto your deck.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "self_junk",
+      "gain_to_deck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Greed.jpg"
+  },
+  {
+    "name": "Haunting",
+    "id": "113077",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you have at least 4 cards in hand, put one of them onto your deck.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Haunting.jpg"
+  },
+  {
+    "name": "Locusts",
+    "id": "113477",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash the top card of your deck. If its Copper or Estate, gain a Curse. Otherwise, gain a cheaper card that shares a type with it.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "self_junk",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Locusts.jpg"
+  },
+  {
+    "name": "Misery",
+    "id": "113977",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If this is your first Misery this game, take Miserable. Otherwise, flip it over to Twice Miserable.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Misery.jpg"
+  },
+  {
+    "name": "Miserable",
+    "id": "113877",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "",
+    "types": [
+      "State"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Miserable.jpg"
+  },
+  {
+    "name": "Twice Miserable",
+    "id": "116977",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "",
+    "types": [
+      "State"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Twice_Miserable.jpg"
+  },
+  {
+    "name": "Plague",
+    "id": "114577",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Curse to your hand.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "self_junk",
+      "gain_to_hand"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Plague.jpg"
+  },
+  {
+    "name": "Poverty",
+    "id": "114877",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Discard down to 3 cards in hand.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/Poverty.jpg"
+  },
+  {
+    "name": "War",
+    "id": "117177",
+    "box": "Nocturne",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Reveal cards from your deck until revealing one costing (3) or (4). Trash it and discard the rest.",
+    "types": [
+      "Hex"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "trash",
+      "scry",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Nocturne/War.jpg"
+  }
+]

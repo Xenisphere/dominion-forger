@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Copper",
+    "id": "000106",
+    "box": "Base",
+    "edition": "1&2",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(1)",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Base/Copper.jpg"
+  },
+  {
+    "name": "Duchy",
+    "id": "000206",
+    "box": "Base",
+    "edition": "1&2",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "{3}",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Base/Duchy.jpg"
+  },
+  {
+    "name": "Estate",
+    "id": "000306",
+    "box": "Base",
+    "edition": "1&2",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "{1}",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Base/Estate.jpg"
+  },
+  {
+    "name": "Gold",
+    "id": "000406",
+    "box": "Base",
+    "edition": "1&2",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(3)",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Base/Gold.jpg"
+  },
+  {
+    "name": "Province",
+    "id": "000506",
+    "box": "Base",
+    "edition": "1&2",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(8)",
+    "cost_coin": 8,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "{6}",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Base/Province.jpg"
+  },
+  {
+    "name": "Silver",
+    "id": "000606",
+    "box": "Base",
+    "edition": "1&2",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2)",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Base/Silver.jpg"
+  }
+]

@@ -1,0 +1,1335 @@
+[
+  {
+    "name": "Alley",
+    "id": "160150",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Discard a card. | You can play this from your deck as if in your hand.",
+    "types": [
+      "Action",
+      "Shadow"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Alley.jpg"
+  },
+  {
+    "name": "Aristocrat",
+    "id": "160450",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If the number of Aristocrats you have in play is: 1 or +3 Actions; 2 or +3 Cards; 3 or +(3); 4 or +3 Buys.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Aristocrat.jpg"
+  },
+  {
+    "name": "Artist",
+    "id": "160550",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "<8>",
+    "cost_coin": 0,
+    "cost_debt": 8,
+    "cost_potion": 0,
+    "text": "+1 Action +1 Card per card you have exactly one copy of in play.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Artist.jpg"
+  },
+  {
+    "name": "Change",
+    "id": "160950",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you have any <_>, +(3). Otherwise, trash a card from your hand, and gain a card costing more (_) than it. +<_> equal to the difference in (_).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Change.jpg"
+  },
+  {
+    "name": "Craftsman",
+    "id": "161150",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Gain a card costing up to (5).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Craftsman.jpg"
+  },
+  {
+    "name": "Daimyo",
+    "id": "161350",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "<6>",
+    "cost_coin": 0,
+    "cost_debt": 6,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action The next time you play a nonCommand Action card this turn, replay it afterwards.",
+    "types": [
+      "Action",
+      "Command"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Daimyo.jpg"
+  },
+  {
+    "name": "Fishmonger",
+    "id": "161650",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(1) | You can play this from your deck as if in your hand.",
+    "types": [
+      "Action",
+      "Shadow"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Fishmonger.jpg"
+  },
+  {
+    "name": "Gold Mine",
+    "id": "162050",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +1 Buy You may gain a Gold and get +(4).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "+buys",
+      "gain",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Gold_Mine.jpg"
+  },
+  {
+    "name": "Imperial Envoy",
+    "id": "162550",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+5 Cards +1 Buy +(2)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Imperial_Envoy.jpg"
+  },
+  {
+    "name": "Kitsune",
+    "id": "162850",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose two different options: +2 Actions; +(2); each other player gains a Curse; gain a Silver.",
+    "types": [
+      "Action",
+      "Attack",
+      "Omen"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "attack",
+      "engine_piece",
+      "payload_piece",
+      "village"
+    ],
+    "opponent_tags": [
+      "gain",
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Rising Sun/Kitsune.jpg"
+  },
+  {
+    "name": "Litter",
+    "id": "162950",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +2 Actions +(1)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "engine_piece",
+      "payload_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Litter.jpg"
+  },
+  {
+    "name": "Mountain Shrine",
+    "id": "163050",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "<5>",
+    "cost_coin": 0,
+    "cost_debt": 5,
+    "cost_potion": 0,
+    "text": "+(2) You may trash a card from your hand. Then if there are any Action cards in the trash, +2 Cards.",
+    "types": [
+      "Action",
+      "Omen"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Mountain_Shrine.jpg"
+  },
+  {
+    "name": "Ninja",
+    "id": "163150",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card Each other player discards down to 3 cards in hand. | You can play this from your deck as if in your hand.",
+    "types": [
+      "Action",
+      "Attack",
+      "Shadow"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "attack",
+      "engine_piece",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Ninja.jpg"
+  },
+  {
+    "name": "Poet",
+    "id": "163350",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Reveal the top card of your deck. If it costs (3) or less, put it into your hand.",
+    "types": [
+      "Action",
+      "Omen"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "cost_reduction",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Poet.jpg"
+  },
+  {
+    "name": "Rice",
+    "id": "163850",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(1) per different type among cards you have in play.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Rice.jpg"
+  },
+  {
+    "name": "Rice Broker",
+    "id": "163950",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Trash a card from your hand. If its a Treasure, +2 Cards. If its an Action, +5 Cards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Rice_Broker.jpg"
+  },
+  {
+    "name": "River Shrine",
+    "id": "164050",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash up to 2 cards from your hand. At the start of Cleanup, if you didnt gain any cards in your Buy phase this turn, gain a card costing up to (4).",
+    "types": [
+      "Action",
+      "Omen"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/River_Shrine.jpg"
+  },
+  {
+    "name": "Riverboat",
+    "id": "164150",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your next turn, play the set aside card, leaving it there. | Setup: Set aside an unused nonDuration Action card costing (5).",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "duration",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Riverboat.jpg"
+  },
+  {
+    "name": "Ronin",
+    "id": "164250",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Draw until you have 7 cards in hand. | You can play this from your deck as if in your hand.",
+    "types": [
+      "Action",
+      "Shadow"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Ronin.jpg"
+  },
+  {
+    "name": "Root Cellar",
+    "id": "164350",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards +1 Action +(3)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Root_Cellar.jpg"
+  },
+  {
+    "name": "Rustic Village",
+    "id": "164450",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions You may discard 2 cards for +1 Card.",
+    "types": [
+      "Action",
+      "Omen"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "discard",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Rustic_Village.jpg"
+  },
+  {
+    "name": "Samurai",
+    "id": "164550",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player discards down to 3 cards in hand (once). At the start of each of your turns this game, +(1). (This stays in play.)",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "each_turn",
+      "duration",
+      "attack",
+      "extra_buy_phase",
+      "engine_piece",
+      "payload_piece",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Samurai.jpg"
+  },
+  {
+    "name": "Snake Witch",
+    "id": "164850",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action If your hand has no duplicate cards, you may reveal it and return this to its pile, to have each other player gain a Curse.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "attack",
+      "trash_self",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "gain"
+    ],
+    "dependencies": [],
+    "image": "images/Rising Sun/Snake_Witch.jpg"
+  },
+  {
+    "name": "Tanuki",
+    "id": "164950",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Gain a card costing up to (2) more than it. | You can play this from your deck as if in your hand.",
+    "types": [
+      "Action",
+      "Shadow"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Tanuki.jpg"
+  },
+  {
+    "name": "Tea House",
+    "id": "165050",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +(2)",
+    "types": [
+      "Action",
+      "Omen"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Tea_House.jpg"
+  },
+  {
+    "name": "Amass",
+    "id": "160250",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you have no Action cards in play, gain an Action card costing up to (5).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Amass.jpg"
+  },
+  {
+    "name": "Asceticism",
+    "id": "160650",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Pay any amount of (_) to trash that many cards from your hand.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Asceticism.jpg"
+  },
+  {
+    "name": "Continue",
+    "id": "161050",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "<8>",
+    "cost_coin": 0,
+    "cost_debt": 8,
+    "cost_potion": 0,
+    "text": "Once per turn: Gain a nonAttack Action card costing up to (4). Return to your Action phase and play it. +1 Action and +1 Buy.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+buys",
+      "gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Continue.jpg"
+  },
+  {
+    "name": "Credit",
+    "id": "161250",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain an Action or Treasure costing up to (8). +<_> equal to its cost.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Credit.jpg"
+  },
+  {
+    "name": "Foresight",
+    "id": "161850",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Reveal cards from your deck until revealing an Action. Set it aside and discard the rest. Put it into your hand at end of turn.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "set_aside",
+      "scry",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Foresight.jpg"
+  },
+  {
+    "name": "Gather",
+    "id": "161950",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card costing exactly (3), a card costing exactly (4), and a card costing exactly (5).",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Gather.jpg"
+  },
+  {
+    "name": "Kintsugi",
+    "id": "162750",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. If youve gained a Gold this game, gain a card costing up to (2) more than the trashed card.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Kintsugi.jpg"
+  },
+  {
+    "name": "Practice",
+    "id": "163450",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may play an Action card from your hand twice.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Practice.jpg"
+  },
+  {
+    "name": "Receive Tribute",
+    "id": "163750",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If youve gained at least 3 cards this turn, gain up to 3 differently named Action cards you dont have copies of in play.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Receive_Tribute.jpg"
+  },
+  {
+    "name": "Sea Trade",
+    "id": "164650",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card per Action card you have in play. Trash up to that many cards from your hand.",
+    "types": [
+      "Event"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Sea_Trade.jpg"
+  },
+  {
+    "name": "Approaching Army",
+    "id": "160350",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "After you play an Attack card, +(1). | Setup: Add an Attack kingdom card pile to the Supply.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Approaching_Army.jpg"
+  },
+  {
+    "name": "Biding Time",
+    "id": "160750",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Cleanup, set aside your hand face down. At the start of your next turn, put those cards into your hand.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Biding_Time.jpg"
+  },
+  {
+    "name": "Bureaucracy",
+    "id": "160850",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a card that doesnt cost (0), gain a Copper.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain",
+      "self_junk"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Bureaucracy.jpg"
+  },
+  {
+    "name": "Divine Wind",
+    "id": "161450",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you remove the last remove all Kingdom card piles from the Supply, and set up 10 new random piles.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Divine_Wind.jpg"
+  },
+  {
+    "name": "Enlightenment",
+    "id": "161550",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Treasures are also Actions. When you play a Treasure in an Action phase, instead of following its instructions, +1 Card and +1 Action.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Enlightenment.jpg"
+  },
+  {
+    "name": "Flourishing Trade",
+    "id": "161750",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Cards cost (1) less. You may use Action plays as Buys.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Flourishing_Trade.jpg"
+  },
+  {
+    "name": "Good Harvest",
+    "id": "162150",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "The first time you play each differently named Treasure each turn, first, +1 Buy and +(1).",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Good_Harvest.jpg"
+  },
+  {
+    "name": "Great Leader",
+    "id": "162250",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "After each Action card you play, +1 Action.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Great_Leader.jpg"
+  },
+  {
+    "name": "Growth",
+    "id": "162350",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Treasure, gain a cheaper card.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Growth.jpg"
+  },
+  {
+    "name": "Harsh Winter",
+    "id": "162450",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a card on your turn, if theres <_> on its pile, take it; otherwise put on its pile.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Harsh_Winter.jpg"
+  },
+  {
+    "name": "Kind Emperor",
+    "id": "162650",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, and when you remove the last Gain an Action to your hand.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "gain_to_hand"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Kind_Emperor.jpg"
+  },
+  {
+    "name": "Panic",
+    "id": "163250",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you play a Treasure, +2 Buys, and when you discard one from play, return it to its pile.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "discard",
+      "on_discard",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Panic.jpg"
+  },
+  {
+    "name": "Progress",
+    "id": "163550",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a card, put it onto your deck.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "on_gain",
+      "gain_to_deck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Progress.jpg"
+  },
+  {
+    "name": "Rapid Expansion",
+    "id": "163650",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain an Action or Treasure, set it aside, and play it at the start of your next turn.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "set_aside",
+      "gain",
+      "on_gain",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Rapid_Expansion.jpg"
+  },
+  {
+    "name": "Sickness",
+    "id": "164750",
+    "box": "Rising Sun",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, choose one: Gain a Curse onto your deck; or discard 3 cards.",
+    "types": [
+      "Prophecy"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "discard",
+      "gain",
+      "self_junk",
+      "gain_to_deck"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Rising Sun/Sickness.jpg"
+  }
+]

@@ -1,0 +1,915 @@
+[
+  {
+    "name": "Adventurer",
+    "id": "010133",
+    "box": "Dominion",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards into your hand and discard the other revealed cards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Adventurer.jpg"
+  },
+  {
+    "name": "Artisan",
+    "id": "010233",
+    "box": "Dominion",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card to your hand costing up to (5). Put a card from your hand onto your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "gain_to_hand",
+      "gain_to_deck",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Artisan.jpg"
+  },
+  {
+    "name": "Bandit",
+    "id": "010333",
+    "box": "Dominion",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Gold. Each other player reveals the top 2 cards of their deck, trashes a revealed Treasure other than Copper, and discards the rest.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dominion/Bandit.jpg"
+  },
+  {
+    "name": "Bureaucrat",
+    "id": "010433",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Silver onto your deck. Each other player reveals a Victory card from their hand and puts it onto their deck (or reveals a hand with no Victory cards).",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "gain",
+      "reveal",
+      "attack",
+      "gain_to_deck",
+      "terminal"
+    ],
+    "opponent_tags": [
+      "topdeck"
+    ],
+    "dependencies": [],
+    "image": "images/Dominion/Bureaucrat.jpg"
+  },
+  {
+    "name": "Cellar",
+    "id": "010533",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Discard any number of cards. +1 Card per card discarded.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Cellar.jpg"
+  },
+  {
+    "name": "Chancellor",
+    "id": "010633",
+    "box": "Dominion",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) You may immediately put your deck into your discard pile.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Chancellor.jpg"
+  },
+  {
+    "name": "Chapel",
+    "id": "010733",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash up to 4 cards from your hand.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Chapel.jpg"
+  },
+  {
+    "name": "Council Room",
+    "id": "010833",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+4 Cards +1 Buy Each other player draws a card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "+cards"
+    ],
+    "dependencies": [],
+    "image": "images/Dominion/Council_Room.jpg"
+  },
+  {
+    "name": "Curse",
+    "id": "010933",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Basic",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "",
+    "types": [
+      "Curse"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Curse.jpg"
+  },
+  {
+    "name": "Feast",
+    "id": "011033",
+    "box": "Dominion",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash this card. Gain a card costing up to (5).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_self",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Feast.jpg"
+  },
+  {
+    "name": "Festival",
+    "id": "011133",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions +1 Buy +(2)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "village"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Festival.jpg"
+  },
+  {
+    "name": "Gardens",
+    "id": "011233",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Worth {1} per 10 cards you have (round down).",
+    "types": [
+      "Victory"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Gardens.jpg"
+  },
+  {
+    "name": "Harbinger",
+    "id": "011333",
+    "box": "Dominion",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Look through your discard pile. You may put a card from it onto your deck.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "topdeck",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Harbinger.jpg"
+  },
+  {
+    "name": "Laboratory",
+    "id": "011433",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +1 Action",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Laboratory.jpg"
+  },
+  {
+    "name": "Library",
+    "id": "011533",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Draw until you have 7 cards in hand, skipping any Action cards you choose to; set those aside, discarding them afterwards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Library.jpg"
+  },
+  {
+    "name": "Market",
+    "id": "011633",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +1 Buy +(1)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "+buys",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Market.jpg"
+  },
+  {
+    "name": "Merchant",
+    "id": "011733",
+    "box": "Dominion",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action The first time you play a Silver this turn, +(1).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "engine_piece",
+      "payload_piece",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Merchant.jpg"
+  },
+  {
+    "name": "Militia",
+    "id": "011833",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Each other player discards down to 3 cards in hand.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "attack",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Militia.jpg"
+  },
+  {
+    "name": "Mine",
+    "id": "011933",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to (3) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "gain_to_hand",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Mine.jpg"
+  },
+  {
+    "name": "Moat",
+    "id": "012033",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards | When another player plays an Attack card, you may first reveal this from your hand, to be unaffected by it.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "reveal",
+      "reaction_attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Moat.jpg"
+  },
+  {
+    "name": "Moneylender",
+    "id": "012133",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash a Copper from your hand for +(3).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Moneylender.jpg"
+  },
+  {
+    "name": "Poacher",
+    "id": "012233",
+    "box": "Dominion",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action +(1) Discard a card per empty Supply pile.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+coins",
+      "+card",
+      "discard",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Poacher.jpg"
+  },
+  {
+    "name": "Remodel",
+    "id": "012333",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Trash a card from your hand. Gain a card costing up to (2) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Remodel.jpg"
+  },
+  {
+    "name": "Sentry",
+    "id": "012433",
+    "box": "Dominion",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Look at the top 2 cards of your deck. Trash andor discard any number of them. Put the rest back on top in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "topdeck",
+      "discard",
+      "trash",
+      "trash_for_benefit",
+      "scry",
+      "reorder",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Sentry.jpg"
+  },
+  {
+    "name": "Smithy",
+    "id": "012533",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Smithy.jpg"
+  },
+  {
+    "name": "Spy",
+    "id": "012633",
+    "box": "Dominion",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Each player (including you) reveals the top card of their deck and either discards it or puts it back, your choice.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "discard",
+      "attack",
+      "scry",
+      "global_effect",
+      "engine_piece",
+      "terminal_draw",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "reveal"
+    ],
+    "dependencies": [],
+    "image": "images/Dominion/Spy.jpg"
+  },
+  {
+    "name": "Thief",
+    "id": "012733",
+    "box": "Dominion",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Each other player reveals the top 2 cards of their deck. If they revealed any Treasure cards, they trash one of them that you choose. You may gain any or all of these trashed cards. They discard the other revealed cards.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "reveal",
+      "attack",
+      "trash_attack",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [
+      "trash",
+      "scry"
+    ],
+    "dependencies": [],
+    "image": "images/Dominion/Thief.jpg"
+  },
+  {
+    "name": "Throne Room",
+    "id": "012833",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may play an Action card from your hand twice.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Throne_Room.jpg"
+  },
+  {
+    "name": "Vassal",
+    "id": "012933",
+    "box": "Dominion",
+    "edition": "2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Discard the top card of your deck. If its an Action card, you may play it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "discard",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Vassal.jpg"
+  },
+  {
+    "name": "Village",
+    "id": "013033",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Village.jpg"
+  },
+  {
+    "name": "Witch",
+    "id": "013133",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards Each other player gains a Curse.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Dominion/Witch.jpg"
+  },
+  {
+    "name": "Woodcutter",
+    "id": "013233",
+    "box": "Dominion",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": true,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy +(2)",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "+buys",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Woodcutter.jpg"
+  },
+  {
+    "name": "Workshop",
+    "id": "013333",
+    "box": "Dominion",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card costing up to (4).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Dominion/Workshop.jpg"
+  }
+]

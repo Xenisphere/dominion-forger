@@ -1,0 +1,1324 @@
+[
+  {
+    "name": "Acting Troupe",
+    "id": "120250",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+4 Villagers Trash this.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "trash",
+      "trash_self",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Acting_Troupe.jpg"
+  },
+  {
+    "name": "Border Guard",
+    "id": "120450",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Reveal the top 2 cards of your deck. Put one into your hand and discard the other. If both were Actions, take the Lantern or Horn.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "discard",
+      "scry",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Border_Guard.jpg"
+  },
+  {
+    "name": "Horn",
+    "id": "122150",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per turn, when you discard a Border Guard from play, you may put it onto your deck.",
+    "types": [
+      "Artifact"
+    ],
+    "subtypes": [],
+    "tags": [
+      "topdeck",
+      "discard",
+      "on_discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Horn.jpg"
+  },
+  {
+    "name": "Lantern",
+    "id": "122750",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Border Guards you play reveal 3 cards and discard (It takes all 3 being Actions to take the Horn.)",
+    "types": [
+      "Artifact"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Lantern.jpg"
+  },
+  {
+    "name": "Cargo Ship",
+    "id": "120750",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Once this turn, when you gain a card, you may set it aside face up (on this). At the start of your next turn, put it into your hand.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "set_aside",
+      "gain",
+      "duration",
+      "on_gain",
+      "gain_to_hand",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Cargo_Ship.jpg"
+  },
+  {
+    "name": "Ducat",
+    "id": "121250",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Coffers +1 Buy | When you gain this, you may trash a Copper from your hand.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coffers",
+      "+buys",
+      "trash",
+      "on_gain",
+      "self_junk",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Ducat.jpg"
+  },
+  {
+    "name": "Experiment",
+    "id": "121350",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +1 Action Return this to its pile. | When you gain this, gain another Experiment (that doesnt come with another).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "gain",
+      "on_gain",
+      "trash_self",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Experiment.jpg"
+  },
+  {
+    "name": "Flag Bearer",
+    "id": "121750",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) | When you gain or trash this, take the Flag.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Flag_Bearer.jpg"
+  },
+  {
+    "name": "Flag",
+    "id": "121650",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When drawing your hand, +1 Card.",
+    "types": [
+      "Artifact"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Flag.jpg"
+  },
+  {
+    "name": "Hideout",
+    "id": "122050",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +2 Actions Trash a card from your hand. If its a Victory card, gain a Curse.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "gain",
+      "trash",
+      "self_junk",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Hideout.jpg"
+  },
+  {
+    "name": "Improve",
+    "id": "122250",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) At the start of Cleanup, you may trash an Action card you would discard from play this turn, to gain a card costing exactly (1) more than it.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "discard",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Improve.jpg"
+  },
+  {
+    "name": "Inventor",
+    "id": "122450",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card costing up to (4), then cards cost (1) less this turn.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction",
+      "gain",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Inventor.jpg"
+  },
+  {
+    "name": "Lackeys",
+    "id": "122650",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards | When you gain this, +2 Villagers.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "on_gain",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Lackeys.jpg"
+  },
+  {
+    "name": "Mountain Village",
+    "id": "122850",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Actions Look through your discard pile and put a card from it into your hand; if you cant, +1 Card.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "engine_piece",
+      "village",
+      "non_terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Mountain_Village.jpg"
+  },
+  {
+    "name": "Old Witch",
+    "id": "122950",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards Each other player gains a Curse and may trash a Curse from their hand.",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "attack",
+      "trash_attack",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [
+      "trash",
+      "junking"
+    ],
+    "dependencies": [],
+    "image": "images/Renaissance/Old_Witch.jpg"
+  },
+  {
+    "name": "Patron",
+    "id": "123150",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Villager +(2) | When something causes you to reveal this (using the word reveal) in an Action phase, +1 Coffers.",
+    "types": [
+      "Action",
+      "Reaction"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "+coffers",
+      "+coins",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Patron.jpg"
+  },
+  {
+    "name": "Priest",
+    "id": "123350",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) Trash a card from your hand. For the rest of this turn, when you trash a card, +(2).",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "trash",
+      "on_trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Priest.jpg"
+  },
+  {
+    "name": "Recruiter",
+    "id": "123450",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards Trash a card from your hand. +1 Villager per (1) it costs.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "trash",
+      "trash_for_benefit",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Recruiter.jpg"
+  },
+  {
+    "name": "Research",
+    "id": "123550",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Action Trash a card from your hand. Per (1) it costs, set aside a card from your deck face down (on this). At the start of your next turn, put those cards into your hand.",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "set_aside",
+      "trash",
+      "duration",
+      "engine_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Research.jpg"
+  },
+  {
+    "name": "Scepter",
+    "id": "123750",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: +(2); or replay a nonCommand Action card you played this turn thats still in play.",
+    "types": [
+      "Treasure",
+      "Command"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "engine_piece",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Scepter.jpg"
+  },
+  {
+    "name": "Scholar",
+    "id": "123850",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Discard your hand. +7 Cards.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Scholar.jpg"
+  },
+  {
+    "name": "Sculptor",
+    "id": "123950",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a card to your hand costing up to (4). If its a Treasure, +1 Villager.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "gain",
+      "gain_to_hand",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Sculptor.jpg"
+  },
+  {
+    "name": "Seer",
+    "id": "124050",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Card +1 Action Reveal the top 3 cards of your deck. Put the ones costing from (2) to (4) into your hand. Put the rest back in any order.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action",
+      "+card",
+      "scry",
+      "reorder",
+      "engine_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Seer.jpg"
+  },
+  {
+    "name": "Silk Merchant",
+    "id": "124250",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Cards +1 Buy | When you gain or trash this, +1 Coffers and +1 Villager.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "+coffers",
+      "+buys",
+      "trash",
+      "on_gain",
+      "trash_for_benefit",
+      "trash_self",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Silk_Merchant.jpg"
+  },
+  {
+    "name": "Spices",
+    "id": "124550",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "(2) +1 Buy | When you gain this, +2 Coffers.",
+    "types": [
+      "Treasure"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coffers",
+      "+buys",
+      "on_gain",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Spices.jpg"
+  },
+  {
+    "name": "Swashbuckler",
+    "id": "124750",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards If your discard pile has any cards in it: +1 Coffers, then if you have at least 4 Coffers tokens, take the Treasure Chest.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coffers",
+      "engine_piece",
+      "payload_piece",
+      "terminal",
+      "terminal_draw"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Swashbuckler.jpg"
+  },
+  {
+    "name": "Treasure Chest",
+    "id": "124850",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your Buy phase, gain a Gold.",
+    "types": [
+      "Artifact"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Treasure_Chest.jpg"
+  },
+  {
+    "name": "Treasurer",
+    "id": "124950",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(3) Choose one: Trash a Treasure from your hand; or gain a Treasure from the trash to your hand; or take the Key.",
+    "types": [
+      "Action"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "gain",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain",
+      "gain_to_hand",
+      "engine_piece",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Treasurer.jpg"
+  },
+  {
+    "name": "Key",
+    "id": "122550",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Status",
+    "removed": false,
+    "cost": null,
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, +(1).",
+    "types": [
+      "Artifact"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coins",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Key.jpg"
+  },
+  {
+    "name": "Villain",
+    "id": "125050",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+2 Coffers Each other player with 5 or more cards in hand discards one costing (2) or more (or reveals they cant).",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coffers",
+      "reveal",
+      "attack",
+      "payload_piece",
+      "terminal",
+      "discard_attack"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Villain.jpg"
+  },
+  {
+    "name": "Academy",
+    "id": "120150",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain an Action card, +1 Villager.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "gain",
+      "on_gain"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Academy.jpg"
+  },
+  {
+    "name": "Barracks",
+    "id": "120350",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, +1 Action.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+action"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Barracks.jpg"
+  },
+  {
+    "name": "Canal",
+    "id": "120550",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "During your turns, cards cost (1) less.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "cost_reduction"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Canal.jpg"
+  },
+  {
+    "name": "Capitalism",
+    "id": "120650",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "During your turns, Actions with +(_) amounts in their text are also Treasures.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Capitalism.jpg"
+  },
+  {
+    "name": "Cathedral",
+    "id": "120850",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, trash a card from your hand.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Cathedral.jpg"
+  },
+  {
+    "name": "Citadel",
+    "id": "120950",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(8)",
+    "cost_coin": 8,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "The first time you play an Action card during each of your turns, replay it afterwards.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "each_turn",
+      "extra_buy_phase",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Citadel.jpg"
+  },
+  {
+    "name": "City Gate",
+    "id": "121050",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, +1 Card, then put a card from your hand onto your deck.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "topdeck",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/City_Gate.jpg"
+  },
+  {
+    "name": "Crop Rotation",
+    "id": "121150",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, you may discard a Victory card for +2 Cards.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+cards",
+      "discard",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Crop_Rotation.jpg"
+  },
+  {
+    "name": "Exploration",
+    "id": "121450",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the end of your Buy phase, if you didnt gain any cards during it, +1 Coffers and +1 Villager.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+villagers",
+      "+coffers",
+      "gain",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Exploration.jpg"
+  },
+  {
+    "name": "Fair",
+    "id": "121550",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, +1 Buy.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+buys",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Fair.jpg"
+  },
+  {
+    "name": "Fleet",
+    "id": "121850",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "After the game ends, theres an extra round of turns just for players with this.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Fleet.jpg"
+  },
+  {
+    "name": "Guildhall",
+    "id": "121950",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you gain a Treasure, +1 Coffers.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coffers",
+      "gain",
+      "on_gain",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Guildhall.jpg"
+  },
+  {
+    "name": "Innovation",
+    "id": "122350",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once during each of your turns, when you gain an Action card, you may play it.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "gain",
+      "each_turn",
+      "on_gain",
+      "extra_buy_phase",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Innovation.jpg"
+  },
+  {
+    "name": "Pageant",
+    "id": "123050",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the end of your Buy phase, you may pay (1) for +1 Coffers.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+coffers",
+      "payload_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Pageant.jpg"
+  },
+  {
+    "name": "Piazza",
+    "id": "123250",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, reveal the top card of your deck. If its an Action, play it.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "scry",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Piazza.jpg"
+  },
+  {
+    "name": "Road Network",
+    "id": "123650",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When another player gains a Victory card, +1 Card.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Road_Network.jpg"
+  },
+  {
+    "name": "Sewers",
+    "id": "124150",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When you trash a card other than with this, you may trash a card from your hand.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "trash",
+      "on_trash",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Sewers.jpg"
+  },
+  {
+    "name": "Silos",
+    "id": "124350",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, discard any number of Coppers, revealed, and draw that many cards.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "discard"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Silos.jpg"
+  },
+  {
+    "name": "Sinister Plot",
+    "id": "124450",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "At the start of your turn, add a token here, or remove your tokens here for +1 Card each.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "+card",
+      "+cards",
+      "engine_piece"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Sinister_Plot.jpg"
+  },
+  {
+    "name": "Star Chart",
+    "id": "124650",
+    "box": "Renaissance",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "When shuffling, you may pick one of the cards to go on top.",
+    "types": [
+      "Project"
+    ],
+    "subtypes": [],
+    "tags": [
+      "utility"
+    ],
+    "opponent_tags": [],
+    "dependencies": [],
+    "image": "images/Renaissance/Star_Chart.jpg"
+  }
+]
