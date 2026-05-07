@@ -1,0 +1,55 @@
+# DRAW / HAND CONTROL
+draw            - gives +Cards or otherwise increases hand size
+cantrip         - gives at least +1 Card AND +1 Action
+discard         - discards cards from hand (self or others)
+scry            - looks at/reorders top of deck
+topdeck         - gains or places cards onto top of deck
+
+# ACTIONS / FLOW
+actions         - gives +Actions
+village         - gives +2 or more Actions
+terminal        - Action card that does NOT give +Actions
+
+# ECONOMY
+coin            - gives +Coin
+buy             - gives +Buy
+payload         - produces money or buys (coin OR buy)
+gain            - gains cards
+cost_control    - modifies costs (reduce or increase)
+
+# TRASHING / DECK CONTROL
+trash           - trashes cards
+self_trash      - trashes itself
+trash_benefit   - trashes for a benefit (gain, draw, coin, etc.)
+filtering       - lets you choose from cards (look at, pick, etc.)
+
+# INTERACTION
+attack          - affects other players (any "each other player")
+junking         - gives bad cards (Curse, Ruins, Copper)
+hand_attack     - disrupts hand (discard down, reveal hand, etc.)
+deck_attack     - affects top of opponent deck
+
+# TRIGGERS
+on_gain         - has "when you gain" effect
+on_buy          - has "when you buy" effect
+
+# SPECIAL MECHANICS
+duration        - effect persists to next turn
+multi_turn      - explicitly affects multiple turns
+vp_tokens       - gives victory tokens
+alt_vp          - grants or modifies victory points
+
+# SETUP / EXTRAS
+extra_cards     - uses non-supply cards (Spoils, Horses, etc.)
+setup           - requires special setup beyond normal kingdom
+
+# DERIVED (COMPUTED)
+engine_piece    - contributes to engine building (draw OR village OR trash)
+payload_piece   - provides scoring/output (coin OR buy)
+terminal_draw   - has draw but is terminal (draw AND NOT actions)
+non_terminal_draw - has draw AND actions
+gain_engine     - gains cards AND supports engine (gain AND actions)
+trash_engine    - trashes AND supports engine (trash AND actions)
+
+# FALLBACK
+utility         - assigned if no other tags apply
