@@ -258,7 +258,6 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -526,7 +525,6 @@
     "tags": [
       "+card",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -711,7 +709,6 @@
       "reveal",
       "attack",
       "engine_piece",
-      "terminal",
       "terminal_draw",
       "discard_attack"
     ],
@@ -854,7 +851,6 @@
       "discard",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [
@@ -939,7 +935,6 @@
       "reaction_trash",
       "reaction_gain",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],

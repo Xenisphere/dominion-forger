@@ -215,7 +215,6 @@
       "gain",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -243,7 +242,6 @@
       "+buys",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -332,7 +330,6 @@
       "trash_for_benefit",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -391,7 +388,6 @@
       "cost_reduction",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -445,7 +441,6 @@
       "trash",
       "trash_for_benefit",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -553,7 +548,6 @@
       "+coins",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -643,7 +637,6 @@
       "attack",
       "trash_self",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [
@@ -703,7 +696,6 @@
       "+card",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],

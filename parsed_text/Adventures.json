@@ -57,7 +57,6 @@
       "gain_to_deck",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -119,7 +118,6 @@
       "duration",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -200,7 +198,6 @@
       "discard",
       "duration",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -255,7 +252,6 @@
       "set_aside",
       "duration",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -318,7 +314,6 @@
       "discard",
       "tavern_mat",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -378,7 +373,6 @@
       "duration",
       "extra_buy_phase",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -435,7 +429,6 @@
       "gain",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -731,7 +724,6 @@
       "+action",
       "discard",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -847,7 +839,6 @@
       "+buys",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -878,7 +869,6 @@
       "trash_for_benefit",
       "tavern_mat",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],

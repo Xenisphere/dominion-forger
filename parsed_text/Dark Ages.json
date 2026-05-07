@@ -162,7 +162,6 @@
       "trash_to_gain",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -514,7 +513,6 @@
       "trash_self",
       "trash_to_gain",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -545,7 +543,6 @@
       "scry",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -576,7 +573,6 @@
       "trash_for_benefit",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -814,7 +810,6 @@
       "trash_for_benefit",
       "trash_self",
       "engine_piece",
-      "terminal",
       "terminal_draw",
       "discard_attack"
     ],
@@ -851,7 +846,6 @@
       "trash_for_benefit",
       "trash_self",
       "engine_piece",
-      "terminal",
       "terminal_draw",
       "discard_attack"
     ],
@@ -1028,7 +1022,6 @@
       "reaction_gain",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1057,7 +1050,6 @@
       "scry",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1174,7 +1166,6 @@
       "trash_for_benefit",
       "trash_self",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1315,7 +1306,6 @@
     "tags": [
       "+card",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1422,7 +1412,6 @@
       "discard",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1707,7 +1696,6 @@
       "gain_non_supply",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw",
       "discard_attack"
     ],
@@ -1736,7 +1724,6 @@
       "+card",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],

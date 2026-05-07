@@ -103,7 +103,6 @@
       "scry",
       "reorder",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -246,7 +245,6 @@
       "discard",
       "on_gain",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -332,7 +330,6 @@
     "tags": [
       "reaction_attack",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -387,7 +384,6 @@
       "+card",
       "cost_reduction",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -473,7 +469,6 @@
       "trash_for_benefit",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -531,7 +526,6 @@
       "attack",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw",
       "discard_attack"
     ],
@@ -658,7 +652,6 @@
       "discard",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -803,7 +796,6 @@
       "trash_for_benefit",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -830,7 +822,6 @@
       "+action",
       "discard",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -979,7 +970,6 @@
       "discard",
       "gain",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1007,7 +997,6 @@
       "discard",
       "attack",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [

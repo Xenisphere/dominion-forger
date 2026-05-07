@@ -47,7 +47,6 @@
       "discard",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -186,7 +185,6 @@
       "on_gain",
       "trash_self",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -354,7 +352,6 @@
       "+villagers",
       "on_gain",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -408,7 +405,6 @@
       "attack",
       "trash_attack",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [
@@ -496,7 +492,6 @@
       "trash",
       "trash_for_benefit",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -577,7 +572,6 @@
     "tags": [
       "discard",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -632,7 +626,6 @@
       "scry",
       "reorder",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -665,7 +658,6 @@
       "trash_self",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -718,7 +710,6 @@
       "+coffers",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],

@@ -375,7 +375,6 @@
       "set_aside",
       "on_discard",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -694,7 +693,6 @@
       "trash",
       "trash_for_benefit",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -753,7 +751,6 @@
       "discard",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -812,7 +809,6 @@
       "trash_self",
       "uses_boons",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -864,7 +860,6 @@
       "trash",
       "trash_for_benefit",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -979,7 +974,6 @@
       "duration",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1033,7 +1027,6 @@
       "+action",
       "discard",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1207,7 +1200,6 @@
       "trash_to_gain",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1291,7 +1283,6 @@
       "attack",
       "uses_hexes",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -1322,7 +1313,6 @@
       "gain_non_supply",
       "scry",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],

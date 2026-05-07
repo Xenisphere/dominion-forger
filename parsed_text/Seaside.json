@@ -132,7 +132,6 @@
       "+card",
       "duration",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -165,7 +164,6 @@
       "trash_attack",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [
@@ -306,7 +304,6 @@
     "tags": [
       "attack",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [
@@ -338,7 +335,6 @@
       "set_aside",
       "duration",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -581,7 +577,6 @@
       "+card",
       "topdeck",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -790,7 +785,6 @@
       "duration",
       "attack",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [
@@ -847,7 +841,6 @@
       "duration",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -876,7 +869,6 @@
       "discard",
       "duration",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -965,7 +957,6 @@
       "+action",
       "discard",
       "engine_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
@@ -994,7 +985,6 @@
       "duration",
       "engine_piece",
       "payload_piece",
-      "terminal",
       "terminal_draw"
     ],
     "opponent_tags": [],
