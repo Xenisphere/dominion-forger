@@ -270,7 +270,7 @@ function computeTags(text, types) {
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
   if (/\+1 action/i.test(text)) tags.add('+action');
-  else (/\+\d+ actions?/i.test(text)) tags.add('+actions');
+  else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
   if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
   if (/\+1 card/i.test(text)) tags.add('+card');
   if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
