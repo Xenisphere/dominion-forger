@@ -371,11 +371,12 @@ function computeTags(text, types) {
   // Remove redundant tags
   if (tags.has('attack') && opp_tags.has('discard')) { opp_tags.delete('discard'); tags.add('discard_attack'); }
   if (tags.has('non_terminal_draw') || tags.has('terminal_draw')) tags.delete('+cards');
+  if (tags.has('terminal_draw') { tags.delete('terminal'); tags.delete('draw'); }
+  if (tags.has('village')) (tags.delete('+actions') && tags.delete('cantrip'));
+  if (tags.has('+cards') || tags.has('draw')) tags.delete('cantrip');
   if (tags.has('non_terminal_draw')) tags.delete('terminal');
   if (tags.has('reaction_attack')) tags.delete('on_attack');
   if (tags.has('_draw')) tags.delete('terminal');
-  if (tags.has('village')) (tags.delete('+actions') && tags.delete('cantrip'));
-  if (tags.has('+cards') || tags.has('draw')) tags.delete('cantrip');
 
   // FALLBACK
   if (tags.size === 0) tags.add('utility');
