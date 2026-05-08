@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 
 const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'storage', 'card_names.json'), 'utf-8'));
 const rawTextDir = path.join(__dirname, '..', 'parsed_text');
-const computeTags = require('../file_manip/computeTags');
+const computeTags = require('../file_manip/compute_tags.js');
 
 const aliases = { 'Harem': 'Farm' };
 
