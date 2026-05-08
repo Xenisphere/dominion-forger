@@ -34,11 +34,11 @@ function computeTags(text, types) {
   if (/set (it |this |them )?aside/i.test(selfText))                  tags.add('set_aside');
   if (/gain a|gain an|gain up to|gains a/i.test(selfText))            tags.add('gain');
   if (/\btrash(es)?\b/i.test(selfText))                               tags.add('trash');
-  if (/exchange/i.test(selfText))                                      tags.add('exchange');
-  if (/\bexile\b/i.test(selfText))                                     tags.add('exile');
+  if (/exchange/i.test(selfText))                                     tags.add('exchange');
+  if (/\bexile\b/i.test(selfText))                                    tags.add('exile');
 
   // CARD MOVEMENT (opponent)
-  if (/each other player draws|another player draws/i.test(oppSections))    opp_tags.add('+cards');
+  if (/each other player draws|another player draws/i.test(oppSections))    opp_tags.add('draw');
   if (/onto their deck|top of their deck/i.test(oppSections))               opp_tags.add('topdeck');
   if (/\btrash(es)?\b/i.test(oppSections))                                  opp_tags.add('trash');
   if (/gain a|gain an/i.test(oppSections))                                  opp_tags.add('gain');
@@ -118,12 +118,17 @@ function computeTags(text, types) {
   // CLEANUP
   if (tags.has('attack') && opp_tags.has('discard')) {
     opp_tags.delete('discard');
+    opp.delete('attack');
     tags.add('discard_attack');
   }
   if (tags.has('village')) {
     tags.delete('+actions');
     tags.delete('cantrip');
-    tags.delete('draw');
+  }
+  if (tags.has('+action') && tags.has('+card') {
+    tags.delete('+action');
+    tags.delete('+card');
+    tags.add('cantrip');
   }
   if (tags.has('reaction_attack')) tags.delete('on_attack');
 
