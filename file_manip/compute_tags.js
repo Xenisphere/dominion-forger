@@ -133,3 +133,5 @@ function computeTags(text, types) {
 
   return { tags: [...tags], opponent_tags: [...opp_tags] };
 }
+
+module.exports = compute_tags;
