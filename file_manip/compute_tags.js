@@ -125,7 +125,7 @@ function computeTags(text, types) {
     tags.delete('+actions');
     tags.delete('cantrip');
   }
-  if (tags.has('+action') && tags.has('+card') {
+  if (tags.has('+action') && tags.has('+card')) {
     tags.delete('+action');
     tags.delete('+card');
     tags.add('cantrip');
