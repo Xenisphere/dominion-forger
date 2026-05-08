@@ -256,8 +256,6 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   };
 }
 
-module.exports = compute_tags;
-
 async function main() {
   const expansionInput = process.argv[2];
   if (!expansionInput) {
