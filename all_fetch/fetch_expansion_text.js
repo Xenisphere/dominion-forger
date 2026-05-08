@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 
 const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'storage', 'card_names.json'), 'utf-8'));
 const rawTextDir = path.join(__dirname, '..', 'parsed_text');
-const compute_tags = require('../file_manip/compute_tags');
+const computeTags = require('../file_manip/compute_tags');
 
 const aliases = { 'Harem': 'Farm' };
 
@@ -224,7 +224,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
   const editionCode = formatEdition(editionRaw);
   const secondEditionBoxes = ['Dominion', 'Intrigue', 'Seaside', 'Prosperity', 'Hinterlands', 'Cornucopia & Guilds'];
   const removed = secondEditionBoxes.includes(boxName) && editionRaw !== '2' && editionRaw !== '1&2';
-  const { tags, opponent_tags } = compute_tags(cleanedText, types);
+  const { tags, opponent_tags } = computeTags(cleanedText, types);
   const id = lookupInfo
   ? `${lookupInfo.boxNum}${lookupInfo.position}${lookupInfo.total}`
   : null;
