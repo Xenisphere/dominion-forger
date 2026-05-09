@@ -110,7 +110,7 @@ function computeTags(text, types) {
 
   if (hasAnyDraw || hasAnyAction || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
-  else if (/\bplay(?:s|ed|ing)?\b/i.test(selfText)) tags.add('plays_actions');
+  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText)) tags.add('plays_actions');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (/draw/i.test(selfText)) tags.add('draw');
