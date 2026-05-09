@@ -119,7 +119,7 @@ function computeTags(text, types) {
   // CLEANUP
   if (tags.has('attack') && (opp_tags.has('discard') || (tags.has('discard') && tags.has('global_effect')))) {
     opp_tags.delete('discard');
-    opp.delete('discard');
+    tags.delete('discard');
     tags.delete('attack');
     tags.add('discard_attack');
   }
