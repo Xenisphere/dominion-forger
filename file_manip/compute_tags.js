@@ -122,10 +122,6 @@ function computeTags(text, types) {
     tags.delete('attack');
     tags.add('discard_attack');
   }
-  if (tags.has('village')) {
-    tags.delete('+actions');
-    tags.delete('cantrip');
-  }
   if (tags.has('+action') && tags.has('+card')) {
     tags.delete('+action');
     tags.delete('+card');
@@ -139,6 +135,10 @@ function computeTags(text, types) {
     tags.delete('+action');
     tags.delete('+card');
     tags.add('cantrip');
+  }
+  if (tags.has('village')) {
+    tags.delete('+actions');
+    tags.delete('cantrip');
   }
   if (tags.has('reaction_attack')) tags.delete('on_attack');
 
