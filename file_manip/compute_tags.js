@@ -13,14 +13,14 @@ function computeTags(text, types) {
   // CARD GIVES
   if (/\+\d+ (?:victory token|\{)/i.test(selfText)) tags.add('+vp_tokens');
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
-  else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
+  if (/\+1 cards?/i.test(text)) tags.add('+card');
   else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
   if (/\+1 actions?/i.test(text)) tags.add('+action');
+  else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
   if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
   if (/\+\d+ buys?/i.test(text)) tags.add('+buys');
-  if (/\+1 cards?/i.test(text)) tags.add('+card');
 
   // COST
   if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(selfText)) tags.add('cost_reduction');
