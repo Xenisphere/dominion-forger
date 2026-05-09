@@ -113,7 +113,6 @@ function computeTags(text, types) {
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
   if (hasAnyDraw) tags.add('draw');
-  if (hasAnyDraw && hasAction && !hasCards) tags.add('cantrip');
 
   // CLEANUP
   if (tags.has('attack') && (opp_tags.has('discard') || (tags.has('discard') && tags.has('global_effect')))) {
