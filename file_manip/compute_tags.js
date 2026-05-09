@@ -143,6 +143,9 @@ function computeTags(text, types) {
   // FALLBACK
   if (tags.size === 0) tags.add('utility');
 
+  //Sort tags
+  return { tags: [...tags].sort(), opponent_tags: [...opp_tags].sort() };
+
   return { tags: [...tags], opponent_tags: [...opp_tags] };
 }
 
