@@ -106,20 +106,29 @@ function computeTags(text, types) {
   const hasAnyAction = hasAction || hasActions;
   const hasCard  = tags.has('+card');
   const hasCards = tags.has('+cards');
-  const hasAnyDraw = hasCard || hasCards || /draw until|reveal.*put.*into your hand|draw/i.test(selfText);
+  const hasAnyDraw = hasCard || hasCards || /draw until|reveal.*put.*into your hand/i.test(selfText);
 
   if (hasAnyDraw || hasAnyAction || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
-  if (/draw/i.test(selfText)) tags.add('draw');
+  if (hasAnyDraw && hasAnyAction) tags.add('draw');
   if (hasAnyDraw && hasAction && !hasCards) tags.add('cantrip');
 
   // CLEANUP
-  if (tags.has('attack') && opp_tags.has('discard')) {
+  if (tags.has('attack') && (opp_tags.has('discard') || (tags.has('discard') && tags.has('global_effect')))) {
     opp_tags.delete('discard');
-    opp.delete('attack');
+    tags.delete('attack');
     tags.add('discard_attack');
+  }
+  if (tags.has('village')) {
+    tags.delete('+actions');
+    tags.delete('cantrip');
+  }
+  if (tags.has('+action') && tags.has('+card')) {
+    tags.delete('+action');
+    tags.delete('+card');
+    tags.add('cantrip');
   }
   if (tags.has('village')) {
     tags.delete('+actions');
