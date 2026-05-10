@@ -15,12 +15,12 @@ function computeTags(text, types) {
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
-  if (/\+1 cards?/i.test(text)) tags.add('+card');
+  if (/\+1 cards?/i.test(text) && !/card.*token/i.test(selfText)) tags.add('+card');
   else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
-  if (/\+1 actions?/i.test(text)) tags.add('+action');
+  if (/\+1 actions?/i.test(text) && !/action.*token/i.test(selfText)) tags.add('+action');
   else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
-  if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
-  if (/\+\d+ buys?/i.test(text)) tags.add('+buys');
+  if (/\+\s*\(\d+\)/i.test(text) && !/(1).*token/i.test(selfText)) tags.add('+coins');
+  if (/\+\d+ buys?/i.test(text) && !/buy.*token/i.test(selfText)) tags.add('+buys');
 
   // COST
   if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(selfText)) tags.add('cost_reduction');
@@ -29,9 +29,9 @@ function computeTags(text, types) {
   if (/<\d+>/.test(text)) tags.add('debt');
 
   // CARD MOVEMENT (self)
+  if (/gain a|gain an|gain up to|gains a|gain.*card/i.test(selfText) && !/other player gains/i.test(selfText)) tags.add('gain');
   if (/onto your deck|top of your deck|put.*on top/i.test(selfText))  tags.add('topdeck');
   if (/discard(?! pile| them afterwards)/i.test(selfText)) tags.add('discard');
-  if (/gain a|gain an|gain up to|gains a/i.test(selfText)) tags.add('gain');
   if (/set (it |this |them )?aside/i.test(selfText)) tags.add('set_aside');
   if (/\btrash(es)?\b/i.test(selfText)) tags.add('trash');
   if (/exchange/i.test(selfText)) tags.add('exchange');
@@ -110,7 +110,7 @@ function computeTags(text, types) {
 
   if (hasAnyDraw || hasAnyAction || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
-  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText)) tags.add('plays_actions');
+  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from play\b|when.*play|after.*play/i.test(selfText)) tags.add('plays_actions');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (/draw/i.test(selfText)) tags.add('draw');
