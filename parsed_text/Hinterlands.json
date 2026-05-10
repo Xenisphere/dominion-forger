@@ -17,12 +17,12 @@
     ],
     "subtypes": [],
     "tags": [
+      "attack",
       "cost_reduction",
+      "discard_attack",
       "gain",
       "on_gain",
-      "attack",
-      "engine_piece",
-      "discard_attack"
+      "terminal"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -46,11 +46,10 @@
     "subtypes": [],
     "tags": [
       "+card",
+      "engine_piece",
       "gain",
       "on_gain",
-      "engine_piece",
-      "village",
-      "non_terminal_draw"
+      "village"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -97,13 +96,11 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
-      "+card",
+      "cantrip",
       "discard",
-      "scry",
-      "reorder",
       "engine_piece",
-      "terminal_draw"
+      "reorder",
+      "scry"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -128,8 +125,8 @@
     "subtypes": [],
     "tags": [
       "+buys",
-      "gain",
       "attack",
+      "gain",
       "payload_piece"
     ],
     "opponent_tags": [
@@ -157,8 +154,8 @@
     "tags": [
       "+card",
       "engine_piece",
-      "village",
-      "non_terminal_draw"
+      "reveal",
+      "village"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -182,12 +179,14 @@
     "subtypes": [],
     "tags": [
       "cost_reduction",
+      "engine_piece",
+      "gain",
+      "gain_to_deck",
+      "terminal",
       "topdeck",
       "trash",
-      "trash_to_gain",
-      "gain_to_deck",
-      "engine_piece",
-      "terminal"
+      "trash_for_benefit",
+      "trash_to_gain"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -213,13 +212,12 @@
       "+coins",
       "discard",
       "gain",
-      "on_gain",
       "global_effect",
-      "engine_piece",
-      "payload_piece"
+      "on_gain",
+      "payload_piece",
+      "terminal"
     ],
     "opponent_tags": [
-      "discard",
       "reveal"
     ],
     "dependencies": [],
@@ -242,10 +240,11 @@
     ],
     "subtypes": [],
     "tags": [
+      "+cards",
       "discard",
-      "on_gain",
       "engine_piece",
-      "terminal_draw"
+      "on_gain",
+      "terminal"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -268,12 +267,12 @@
     ],
     "subtypes": [],
     "tags": [
+      "engine_piece",
       "gain",
-      "trash",
       "on_gain",
+      "trash",
       "trash_for_benefit",
-      "trash_to_gain",
-      "engine_piece"
+      "trash_to_gain"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -298,14 +297,14 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "reaction_trash",
+      "payload_piece",
       "reaction_gain",
-      "engine_piece",
-      "payload_piece"
+      "reaction_trash",
+      "terminal"
     ],
     "opponent_tags": [
-      "trash",
-      "gain"
+      "gain",
+      "trash"
     ],
     "dependencies": [],
     "image": "images/Hinterlands/Fool's_Gold.jpg"
@@ -328,9 +327,10 @@
     ],
     "subtypes": [],
     "tags": [
-      "reaction_attack",
+      "+cards",
       "engine_piece",
-      "terminal_draw"
+      "reaction_attack",
+      "terminal"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -380,11 +380,9 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
-      "+card",
+      "cantrip",
       "cost_reduction",
-      "engine_piece",
-      "terminal_draw"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -408,9 +406,9 @@
     "subtypes": [],
     "tags": [
       "gain",
+      "gain_to_hand",
       "on_gain",
-      "self_junk",
-      "gain_to_hand"
+      "self_junk"
     ],
     "opponent_tags": [
       "junking"
@@ -435,12 +433,14 @@
     ],
     "subtypes": [],
     "tags": [
+      "+cards",
       "discard",
-      "on_gain",
-      "gain_to_deck",
       "engine_piece",
-      "village",
-      "non_terminal_draw"
+      "gain",
+      "gain_to_deck",
+      "on_gain",
+      "reveal",
+      "village"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -464,12 +464,13 @@
     "subtypes": [],
     "tags": [
       "discard",
-      "gain",
-      "trash",
-      "trash_for_benefit",
-      "scry",
+      "draw",
       "engine_piece",
-      "terminal_draw"
+      "gain",
+      "scry",
+      "terminal",
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -493,12 +494,12 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "topdeck",
-      "on_gain",
       "gain_to_deck",
+      "on_gain",
+      "payload_piece",
       "reorder",
-      "engine_piece",
-      "payload_piece"
+      "terminal",
+      "topdeck"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -523,14 +524,15 @@
     "subtypes": [],
     "tags": [
       "+buys",
+      "+cards",
       "attack",
+      "discard_attack",
       "engine_piece",
       "payload_piece",
-      "terminal_draw",
-      "discard_attack"
+      "terminal"
     ],
     "opponent_tags": [
-      "+cards"
+      "draw"
     ],
     "dependencies": [],
     "image": "images/Hinterlands/Margrave.jpg"
@@ -554,18 +556,18 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "reveal",
-      "on_buy",
       "attack",
-      "trash_attack",
+      "discard_attack",
+      "gain",
+      "on_buy",
       "payload_piece",
       "terminal",
-      "discard_attack"
+      "trash_attack"
     ],
     "opponent_tags": [
-      "trash",
       "junking",
-      "scry"
+      "scry",
+      "trash"
     ],
     "dependencies": [],
     "image": "images/Hinterlands/Noble_Brigand.jpg"
@@ -587,12 +589,13 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "+buys",
-      "topdeck",
+      "+coins",
+      "gain",
       "gain_to_deck",
       "payload_piece",
-      "terminal"
+      "terminal",
+      "topdeck"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -615,15 +618,15 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "+buys",
-      "trash",
-      "on_gain",
-      "trash_for_benefit",
-      "trash_self",
+      "+coins",
       "engine_piece",
+      "on_gain",
       "payload_piece",
-      "terminal"
+      "terminal",
+      "trash",
+      "trash_for_benefit",
+      "trash_self"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -646,13 +649,11 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
       "+coins",
-      "+card",
+      "cantrip",
       "discard",
       "engine_piece",
-      "payload_piece",
-      "terminal_draw"
+      "payload_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -676,13 +677,14 @@
     ],
     "subtypes": [],
     "tags": [
-      "discard",
+      "+cards",
       "attack",
-      "scry",
-      "global_effect",
+      "discard_attack",
       "engine_piece",
-      "terminal_draw",
-      "discard_attack"
+      "global_effect",
+      "reveal",
+      "scry",
+      "terminal"
     ],
     "opponent_tags": [
       "reveal"
@@ -707,13 +709,11 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
-      "+card",
-      "topdeck",
+      "cantrip",
       "discard",
-      "on_discard",
       "engine_piece",
-      "terminal_draw"
+      "on_discard",
+      "topdeck"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -759,14 +759,15 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "+buys",
-      "trash",
-      "on_gain",
-      "trash_for_benefit",
+      "+coins",
       "engine_piece",
+      "gain",
+      "on_gain",
       "payload_piece",
-      "terminal"
+      "terminal",
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -790,13 +791,13 @@
     "subtypes": [],
     "tags": [
       "+action",
-      "+coins",
       "+buys",
-      "trash",
-      "trash_for_benefit",
+      "+cards",
+      "+coins",
       "engine_piece",
       "payload_piece",
-      "terminal_draw"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -820,9 +821,9 @@
     "subtypes": [],
     "tags": [
       "+action",
+      "+cards",
       "discard",
-      "engine_piece",
-      "terminal_draw"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -846,15 +847,16 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
-      "trash",
-      "exchange",
-      "on_gain",
-      "trash_for_benefit",
-      "trash_to_gain",
-      "reaction_gain",
       "engine_piece",
-      "terminal"
+      "exchange",
+      "gain",
+      "on_gain",
+      "reaction_gain",
+      "reveal",
+      "terminal",
+      "trash",
+      "trash_for_benefit",
+      "trash_to_gain"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -878,16 +880,15 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
-      "+card",
+      "cantrip",
       "discard",
-      "trash",
-      "on_gain",
-      "trash_for_benefit",
-      "reaction_trash",
-      "reaction_gain",
       "engine_piece",
-      "terminal_draw"
+      "gain",
+      "on_gain",
+      "reaction_gain",
+      "reaction_trash",
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -915,6 +916,7 @@
       "gain",
       "on_discard",
       "reaction_gain",
+      "reveal",
       "terminal"
     ],
     "opponent_tags": [],
@@ -940,8 +942,8 @@
     "subtypes": [],
     "tags": [
       "discard",
-      "on_discard",
-      "engine_piece"
+      "gain",
+      "on_discard"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -964,13 +966,11 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
-      "+card",
+      "cantrip",
       "cost_reduction",
       "discard",
-      "gain",
       "engine_piece",
-      "terminal_draw"
+      "gain"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -994,10 +994,12 @@
     ],
     "subtypes": [],
     "tags": [
-      "discard",
+      "+cards",
       "attack",
+      "discard",
       "engine_piece",
-      "terminal_draw"
+      "reveal",
+      "terminal"
     ],
     "opponent_tags": [
       "junking"
