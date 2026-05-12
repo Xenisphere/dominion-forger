@@ -70,7 +70,6 @@ function buildCardLookup() {
         if (card.chain) allCards.push(...card.chain);
       }
     }
-    allCards.sort((a, b) => a.localeCompare(b));
     const total = String(allCards.length).padStart(2, '0');
 
     allCards.forEach((name, idx) => {
