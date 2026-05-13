@@ -26,13 +26,16 @@ function computeTags(text, types) {
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
+  
+  /*
   if (/\+1 card/i.test(text) && /card(?! token)/i.test(selfText)) tags.add('+card');
   else if (/\+\d+ cards/i.test(text)) tags.add('+cards');
   if (/\+1 action/i.test(text) && /action(?! token)/i.test(selfText)) tags.add('+action');
   else if (/\+\d+ actions/i.test(text)) tags.add('+actions');
   if (/\+\s*\(\d+\)/i.test(text) && /\+\s*\(\d+\)(?! token)/i.test(selfText)) tags.add('+coins');
   if (/\+\d+ buys?/i.test(text) && /buys?(?! token)/i.test(selfText)) tags.add('+buys');
-
+  */
+  
   // COST
   if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(t)) tags.add('cost_reduction');
   if (/overpay|pay extra/i.test(selfText))  tags.add('overpay');
