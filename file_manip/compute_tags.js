@@ -16,9 +16,9 @@ function computeTags(text, types) {
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
   if (/\+1 card/i.test(text) && !/card(?! token)/i.test(selfText)) tags.add('+card');
-  else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
+  else if (/\+\d+ cards/i.test(text)) tags.add('+cards');
   if (/\+1 action/i.test(text) && !/action(?! token)/i.test(selfText)) tags.add('+action');
-  else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
+  else if (/\+\d+ actions/i.test(text)) tags.add('+actions');
   if (/\+\s*\(\d+\)/i.test(text) && !/\(1\)(?! token)/i.test(selfText)) tags.add('+coins');
   if (/\+\d+ buys?/i.test(text) && !/buys?(?! token)/i.test(selfText)) tags.add('+buys');
 
