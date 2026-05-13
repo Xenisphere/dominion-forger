@@ -40,8 +40,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
-      "payload_piece"
+      "utility"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -64,12 +63,9 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "engine_piece",
-      "payload_piece",
       "terminal",
-      "trash",
-      "trash_for_benefit"
+      "trash"
     ],
     "opponent_tags": [
       "trash"
@@ -95,9 +91,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "attack",
-      "payload_piece",
       "terminal"
     ],
     "opponent_tags": [
@@ -123,11 +117,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "+card",
-      "+coins",
+      "+cards",
       "engine_piece",
-      "payload_piece",
       "village"
     ],
     "opponent_tags": [],
@@ -181,10 +172,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "gain",
-      "on_gain",
-      "payload_piece"
+      "on_gain"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -230,8 +219,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "payload_piece"
+      "utility"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -363,7 +351,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "+coins",
       "attack",
       "discard_attack",
@@ -392,9 +379,9 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
+      "+actions",
+      "+cards",
       "+coins",
-      "cantrip",
       "engine_piece",
       "payload_piece"
     ],
@@ -443,12 +430,9 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "engine_piece",
-      "payload_piece",
       "reveal",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -522,7 +506,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+card",
+      "+cards",
       "engine_piece",
       "reveal",
       "terminal"
@@ -585,7 +569,8 @@
       "terminal"
     ],
     "opponent_tags": [
-      "gain"
+      "gain",
+      "junking"
     ],
     "dependencies": [],
     "image": "images/Prosperity/Mountebank.jpg"
@@ -632,11 +617,10 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
-      "cantrip",
+      "+actions",
+      "+cards",
       "cost_reduction",
-      "engine_piece",
-      "payload_piece"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -787,12 +771,10 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "engine_piece",
       "gain",
       "gain_to_deck",
       "on_gain",
-      "payload_piece",
       "topdeck"
     ],
     "opponent_tags": [],
@@ -818,8 +800,7 @@
     "tags": [
       "engine_piece",
       "terminal",
-      "trash",
-      "trash_to_gain"
+      "trash"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -843,10 +824,8 @@
     "subtypes": [],
     "tags": [
       "+cards",
-      "+coins",
       "discard",
       "engine_piece",
-      "payload_piece",
       "terminal"
     ],
     "opponent_tags": [
@@ -955,10 +934,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "+card",
+      "+cards",
       "engine_piece",
-      "payload_piece",
       "village"
     ],
     "opponent_tags": [],

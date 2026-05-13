@@ -16,7 +16,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "+coins",
       "engine_piece",
       "payload_piece",
@@ -46,11 +45,9 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "+cards",
       "duration",
       "engine_piece",
-      "payload_piece",
       "terminal"
     ],
     "opponent_tags": [],
@@ -105,7 +102,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "+coins",
       "engine_piece",
       "exile",
@@ -187,12 +184,10 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "+cards",
       "engine_piece",
       "gain",
       "on_gain",
-      "payload_piece",
       "terminal"
     ],
     "opponent_tags": [],
@@ -217,7 +212,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "+coins",
       "attack",
       "discard_attack",
@@ -245,7 +240,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "+cards",
       "cost_reduction",
       "engine_piece"
@@ -324,11 +319,10 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
-      "cantrip",
+      "+actions",
+      "+cards",
       "cost_reduction",
-      "engine_piece",
-      "payload_piece"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -380,7 +374,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "cantrip",
+      "+actions",
+      "+cards",
       "engine_piece",
       "trash",
       "trash_for_benefit"
@@ -406,7 +401,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "cantrip",
+      "+actions",
+      "+cards",
       "engine_piece",
       "gain",
       "uses_horses"
@@ -432,7 +428,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "+cards",
       "engine_piece",
       "gain_non_supply",
@@ -459,7 +455,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+card",
+      "+cards",
       "discard",
       "engine_piece",
       "gain",
@@ -488,7 +484,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+card",
+      "+cards",
       "discard",
       "engine_piece",
       "village"
@@ -593,7 +589,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "+coins",
       "engine_piece",
       "payload_piece"
@@ -619,11 +615,10 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "cantrip",
+      "+actions",
+      "+cards",
       "engine_piece",
-      "exile",
-      "payload_piece"
+      "exile"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -646,12 +641,10 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "+coins",
-      "cantrip",
+      "+actions",
+      "+cards",
       "engine_piece",
       "gain",
-      "payload_piece",
       "trash",
       "trash_for_benefit",
       "trash_to_gain",
@@ -738,10 +731,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "+card",
+      "+cards",
       "engine_piece",
-      "payload_piece",
       "village"
     ],
     "opponent_tags": [],
@@ -765,9 +756,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "exile",
-      "payload_piece"
+      "exile"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -818,7 +807,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+card",
+      "+cards",
       "discard",
       "duration",
       "engine_piece",
@@ -1016,7 +1005,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "+coins",
       "gain",
       "payload_piece",
@@ -1070,8 +1058,7 @@
       "engine_piece",
       "gain",
       "trash",
-      "trash_for_benefit",
-      "trash_to_gain"
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1094,9 +1081,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "discard",
-      "payload_piece",
       "plays_actions"
     ],
     "opponent_tags": [],
@@ -1191,9 +1176,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "discard",
-      "payload_piece",
       "reveal",
       "scry"
     ],
@@ -1313,8 +1296,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "payload_piece",
       "plays_actions"
     ],
     "opponent_tags": [],
@@ -1432,7 +1413,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "discard",
       "engine_piece",
       "on_discard",
@@ -1483,7 +1464,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "+cards",
       "engine_piece",
       "trash_self"
@@ -1509,7 +1490,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
+      "+actions",
       "+cards",
       "discard",
       "engine_piece"
@@ -1535,9 +1516,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
-      "+coins",
-      "payload_piece"
+      "utility"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1584,10 +1563,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "+action",
-      "+coins",
-      "engine_piece",
-      "payload_piece"
+      "+actions",
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1682,7 +1659,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "cantrip",
+      "+actions",
+      "+cards",
       "engine_piece"
     ],
     "opponent_tags": [],
@@ -1730,11 +1708,9 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "gain",
       "gain_to_deck",
       "on_gain",
-      "payload_piece",
       "topdeck"
     ],
     "opponent_tags": [],
