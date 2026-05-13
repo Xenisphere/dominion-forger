@@ -10,10 +10,16 @@ function computeTags(text, types) {
 
   const isAction = typeList.some(t => t.includes('action'));
 
-  const hasRealCard = /\+1 cards?(?! token)/i.test(text) && !/\+1 card token/i.test(text);
-  const hasRealAction = /\+1 actions?(?! token)/i.test(text) && !/\+1 action token/i.test(text);
-  const hasRealCoins = /\+\s*\(\d+\)(?! token)/i.test(text) && !/\+\(\d+\) token/i.test(text);
-  const hasRealBuys = /\+\d+ buys?(?! token)/i.test(text) && !/\+1 buy token/i.test(text);
+  const isTokenList = /move your.*token|your \+1 card.*\+1 action.*token|\+1 card,.*\+1 action.*token/i.test(text);
+  
+  if (!isTokenList) {
+    if (/\+1 card(?!\s*token)/i.test(text)) tags.add('+card');
+    else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
+    if (/\+1 action(?!\s*token)/i.test(text)) tags.add('+action');
+    else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
+    if (/\+\s*\(\d+\)(?!\s*token)/i.test(text)) tags.add('+coins');
+    if (/\+\d+ buys?(?!\s*token)/i.test(text)) tags.add('+buys');
+  }
 
   // CARD GIVES
   if (/\+\d+ (?:victory token|\{)/i.test(selfText)) tags.add('+vp_tokens');
