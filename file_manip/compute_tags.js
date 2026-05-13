@@ -43,7 +43,7 @@ function computeTags(text, types) {
   if (/look at the top|top \d+ cards of their deck/i.test(oppSections)) opp_tags.add('scry');
   if (/onto their deck|top of their deck/i.test(oppSections)) opp_tags.add('topdeck');
   if (/\btrash(es)?\b/i.test(oppSections)) opp_tags.add('trash');
-  if (/gain a|gain an/i.test(oppSections) && !/when) opp_tags.add('gain');
+  if (/gain a|gain an/i.test(oppSections)) opp_tags.add('gain');
   if (/discard/i.test(oppSections)) opp_tags.add('discard');
 
   // SELF REVEAL (only if selfText contains reveal, not just oppSections)
