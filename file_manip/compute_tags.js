@@ -10,6 +10,11 @@ function computeTags(text, types) {
 
   const isAction = typeList.some(t => t.includes('action'));
 
+  const hasRealCard = /\+1 cards?(?! token)/i.test(text) && !/\+1 card token/i.test(text);
+  const hasRealAction = /\+1 actions?(?! token)/i.test(text) && !/\+1 action token/i.test(text);
+  const hasRealCoins = /\+\s*\(\d+\)(?! token)/i.test(text) && !/\+\(\d+\) token/i.test(text);
+  const hasRealBuys = /\+\d+ buys?(?! token)/i.test(text) && !/\+1 buy token/i.test(text);
+
   // CARD GIVES
   if (/\+\d+ (?:victory token|\{)/i.test(selfText)) tags.add('+vp_tokens');
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
@@ -20,7 +25,7 @@ function computeTags(text, types) {
   if (/\+1 action/i.test(text) && /action(?! token)/i.test(selfText)) tags.add('+action');
   else if (/\+\d+ actions/i.test(text)) tags.add('+actions');
   if (/\+\s*\(\d+\)/i.test(text) && /\+\s*\(\d+\)(?! token)/i.test(selfText)) tags.add('+coins');
-  if (/\+\d+ buys?/i.test(text) && /buys?(?!\s*token)/i.test(selfText)) tags.add('+buys');
+  if (/\+\d+ buys?/i.test(text) && /buys?(?! token)/i.test(selfText)) tags.add('+buys');
 
   // COST
   if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(t)) tags.add('cost_reduction');
