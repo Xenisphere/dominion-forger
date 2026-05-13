@@ -1,7 +1,7 @@
 [
   {
     "name": "Acting Troupe",
-    "id": "120250",
+    "id": "120150",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Border Guard",
-    "id": "120450",
+    "id": "120250",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Horn",
-    "id": "122150",
+    "id": "120350",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Status",
@@ -80,7 +80,7 @@
   },
   {
     "name": "Lantern",
-    "id": "122750",
+    "id": "120450",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Status",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Cargo Ship",
-    "id": "120750",
+    "id": "120550",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -136,7 +136,7 @@
   },
   {
     "name": "Ducat",
-    "id": "121250",
+    "id": "120650",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -165,7 +165,7 @@
   },
   {
     "name": "Experiment",
-    "id": "121350",
+    "id": "120750",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -193,7 +193,7 @@
   },
   {
     "name": "Flag Bearer",
-    "id": "121750",
+    "id": "120850",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -214,7 +214,6 @@
       "payload_piece",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -223,7 +222,7 @@
   },
   {
     "name": "Flag",
-    "id": "121650",
+    "id": "120950",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Status",
@@ -248,7 +247,7 @@
   },
   {
     "name": "Hideout",
-    "id": "122050",
+    "id": "121050",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -278,7 +277,7 @@
   },
   {
     "name": "Improve",
-    "id": "122250",
+    "id": "121150",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -309,7 +308,7 @@
   },
   {
     "name": "Inventor",
-    "id": "122450",
+    "id": "121250",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -334,7 +333,7 @@
   },
   {
     "name": "Lackeys",
-    "id": "122650",
+    "id": "121350",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -361,7 +360,7 @@
   },
   {
     "name": "Mountain Village",
-    "id": "122850",
+    "id": "121450",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -386,7 +385,7 @@
   },
   {
     "name": "Old Witch",
-    "id": "122950",
+    "id": "121550",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -417,7 +416,7 @@
   },
   {
     "name": "Patron",
-    "id": "123150",
+    "id": "121650",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -446,7 +445,7 @@
   },
   {
     "name": "Priest",
-    "id": "123350",
+    "id": "121750",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -466,8 +465,7 @@
       "on_trash",
       "payload_piece",
       "terminal",
-      "trash",
-      "trash_for_benefit"
+      "trash"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -475,7 +473,7 @@
   },
   {
     "name": "Recruiter",
-    "id": "123450",
+    "id": "121850",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -503,7 +501,7 @@
   },
   {
     "name": "Research",
-    "id": "123550",
+    "id": "121950",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -532,7 +530,7 @@
   },
   {
     "name": "Scepter",
-    "id": "123750",
+    "id": "122050",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -557,7 +555,7 @@
   },
   {
     "name": "Scholar",
-    "id": "123850",
+    "id": "122150",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -583,7 +581,7 @@
   },
   {
     "name": "Sculptor",
-    "id": "123950",
+    "id": "122250",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -609,7 +607,7 @@
   },
   {
     "name": "Seer",
-    "id": "124050",
+    "id": "122350",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -636,7 +634,7 @@
   },
   {
     "name": "Silk Merchant",
-    "id": "124250",
+    "id": "122450",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -660,7 +658,6 @@
       "payload_piece",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -669,7 +666,7 @@
   },
   {
     "name": "Spices",
-    "id": "124550",
+    "id": "122550",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -695,7 +692,7 @@
   },
   {
     "name": "Swashbuckler",
-    "id": "124750",
+    "id": "122650",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -722,7 +719,7 @@
   },
   {
     "name": "Treasure Chest",
-    "id": "124850",
+    "id": "122750",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Status",
@@ -745,7 +742,7 @@
   },
   {
     "name": "Treasurer",
-    "id": "124950",
+    "id": "122850",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -767,7 +764,6 @@
       "payload_piece",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -776,7 +772,7 @@
   },
   {
     "name": "Key",
-    "id": "122550",
+    "id": "122950",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Status",
@@ -800,7 +796,7 @@
   },
   {
     "name": "Villain",
-    "id": "125050",
+    "id": "123050",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -828,7 +824,7 @@
   },
   {
     "name": "Academy",
-    "id": "120150",
+    "id": "123150",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -853,7 +849,7 @@
   },
   {
     "name": "Barracks",
-    "id": "120350",
+    "id": "123250",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -877,7 +873,7 @@
   },
   {
     "name": "Canal",
-    "id": "120550",
+    "id": "123350",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -900,7 +896,7 @@
   },
   {
     "name": "Capitalism",
-    "id": "120650",
+    "id": "123450",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -923,7 +919,7 @@
   },
   {
     "name": "Cathedral",
-    "id": "120850",
+    "id": "123550",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -947,7 +943,7 @@
   },
   {
     "name": "Citadel",
-    "id": "120950",
+    "id": "123650",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -972,7 +968,7 @@
   },
   {
     "name": "City Gate",
-    "id": "121050",
+    "id": "123750",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -997,7 +993,7 @@
   },
   {
     "name": "Crop Rotation",
-    "id": "121150",
+    "id": "123850",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1022,7 +1018,7 @@
   },
   {
     "name": "Exploration",
-    "id": "121450",
+    "id": "123950",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1048,7 +1044,7 @@
   },
   {
     "name": "Fair",
-    "id": "121550",
+    "id": "124050",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1072,7 +1068,7 @@
   },
   {
     "name": "Fleet",
-    "id": "121850",
+    "id": "124150",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1095,7 +1091,7 @@
   },
   {
     "name": "Guildhall",
-    "id": "121950",
+    "id": "124250",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1121,7 +1117,7 @@
   },
   {
     "name": "Innovation",
-    "id": "122350",
+    "id": "124350",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1147,7 +1143,7 @@
   },
   {
     "name": "Pageant",
-    "id": "123050",
+    "id": "124450",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1171,7 +1167,7 @@
   },
   {
     "name": "Piazza",
-    "id": "123250",
+    "id": "124550",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1196,7 +1192,7 @@
   },
   {
     "name": "Road Network",
-    "id": "123650",
+    "id": "124650",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1220,7 +1216,7 @@
   },
   {
     "name": "Sewers",
-    "id": "124150",
+    "id": "124750",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1245,7 +1241,7 @@
   },
   {
     "name": "Silos",
-    "id": "124350",
+    "id": "124850",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1270,7 +1266,7 @@
   },
   {
     "name": "Sinister Plot",
-    "id": "124450",
+    "id": "124950",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",
@@ -1294,7 +1290,7 @@
   },
   {
     "name": "Star Chart",
-    "id": "124650",
+    "id": "125050",
     "box": "Renaissance",
     "edition": "1",
     "supply": "Landscape",

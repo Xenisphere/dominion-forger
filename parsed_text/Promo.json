@@ -1,7 +1,7 @@
 [
   {
     "name": "Black Market",
-    "id": "170213",
+    "id": "170113",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Captain",
-    "id": "170313",
+    "id": "170213",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Church",
-    "id": "170413",
+    "id": "170313",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -84,7 +84,7 @@
   },
   {
     "name": "Dismantle",
-    "id": "170513",
+    "id": "170413",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -112,7 +112,7 @@
   },
   {
     "name": "Envoy",
-    "id": "170613",
+    "id": "170513",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -139,7 +139,7 @@
   },
   {
     "name": "Governor",
-    "id": "170713",
+    "id": "170613",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -159,7 +159,6 @@
       "gain",
       "global_effect",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -168,7 +167,7 @@
   },
   {
     "name": "Marchland",
-    "id": "170813",
+    "id": "170713",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -196,7 +195,7 @@
   },
   {
     "name": "Prince",
-    "id": "170913",
+    "id": "170813",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -225,7 +224,7 @@
   },
   {
     "name": "Sauna",
-    "id": "171013",
+    "id": "170913",
     "box": "Promo",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -251,7 +250,7 @@
   },
   {
     "name": "Avanto",
-    "id": "170113",
+    "id": "171013",
     "box": "Promo",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -299,7 +298,7 @@
   },
   {
     "name": "Walled Village",
-    "id": "171313",
+    "id": "171213",
     "box": "Promo",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -325,7 +324,7 @@
   },
   {
     "name": "Summon",
-    "id": "171213",
+    "id": "171313",
     "box": "Promo",
     "edition": "1",
     "supply": "Landscape",

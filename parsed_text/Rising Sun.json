@@ -27,7 +27,7 @@
   },
   {
     "name": "Aristocrat",
-    "id": "160450",
+    "id": "160250",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Artist",
-    "id": "160550",
+    "id": "160350",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -80,7 +80,7 @@
   },
   {
     "name": "Change",
-    "id": "160950",
+    "id": "160450",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -110,7 +110,7 @@
   },
   {
     "name": "Craftsman",
-    "id": "161150",
+    "id": "160550",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -136,7 +136,7 @@
   },
   {
     "name": "Daimyo",
-    "id": "161350",
+    "id": "160650",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -162,7 +162,7 @@
   },
   {
     "name": "Fishmonger",
-    "id": "161650",
+    "id": "160750",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -189,7 +189,7 @@
   },
   {
     "name": "Gold Mine",
-    "id": "162050",
+    "id": "160850",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Imperial Envoy",
-    "id": "162550",
+    "id": "160950",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -245,7 +245,7 @@
   },
   {
     "name": "Kitsune",
-    "id": "162850",
+    "id": "161050",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -277,7 +277,7 @@
   },
   {
     "name": "Litter",
-    "id": "162950",
+    "id": "161150",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -304,7 +304,7 @@
   },
   {
     "name": "Mountain Shrine",
-    "id": "163050",
+    "id": "161250",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -334,7 +334,7 @@
   },
   {
     "name": "Ninja",
-    "id": "163150",
+    "id": "161350",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -363,7 +363,7 @@
   },
   {
     "name": "Poet",
-    "id": "163350",
+    "id": "161450",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -391,7 +391,7 @@
   },
   {
     "name": "Rice",
-    "id": "163850",
+    "id": "161550",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -416,7 +416,7 @@
   },
   {
     "name": "Rice Broker",
-    "id": "163950",
+    "id": "161650",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -443,7 +443,7 @@
   },
   {
     "name": "River Shrine",
-    "id": "164050",
+    "id": "161750",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -472,7 +472,7 @@
   },
   {
     "name": "Riverboat",
-    "id": "164150",
+    "id": "161850",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -498,7 +498,7 @@
   },
   {
     "name": "Ronin",
-    "id": "164250",
+    "id": "161950",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -524,7 +524,7 @@
   },
   {
     "name": "Root Cellar",
-    "id": "164350",
+    "id": "162050",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -551,7 +551,7 @@
   },
   {
     "name": "Rustic Village",
-    "id": "164450",
+    "id": "162150",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -578,7 +578,7 @@
   },
   {
     "name": "Samurai",
-    "id": "164550",
+    "id": "162250",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -610,7 +610,7 @@
   },
   {
     "name": "Snake Witch",
-    "id": "164850",
+    "id": "162350",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -640,7 +640,7 @@
   },
   {
     "name": "Tanuki",
-    "id": "164950",
+    "id": "162450",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -669,7 +669,7 @@
   },
   {
     "name": "Tea House",
-    "id": "165050",
+    "id": "162550",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -696,7 +696,7 @@
   },
   {
     "name": "Amass",
-    "id": "160250",
+    "id": "162650",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -720,7 +720,7 @@
   },
   {
     "name": "Asceticism",
-    "id": "160650",
+    "id": "162750",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -744,7 +744,7 @@
   },
   {
     "name": "Continue",
-    "id": "161050",
+    "id": "162850",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -772,7 +772,7 @@
   },
   {
     "name": "Credit",
-    "id": "161250",
+    "id": "162950",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -795,7 +795,7 @@
   },
   {
     "name": "Foresight",
-    "id": "161850",
+    "id": "163050",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -822,7 +822,7 @@
   },
   {
     "name": "Gather",
-    "id": "161950",
+    "id": "163150",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -845,7 +845,7 @@
   },
   {
     "name": "Kintsugi",
-    "id": "162750",
+    "id": "163250",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -863,7 +863,6 @@
       "engine_piece",
       "gain",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -872,7 +871,7 @@
   },
   {
     "name": "Practice",
-    "id": "163450",
+    "id": "163350",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -896,7 +895,7 @@
   },
   {
     "name": "Receive Tribute",
-    "id": "163750",
+    "id": "163450",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -919,7 +918,7 @@
   },
   {
     "name": "Sea Trade",
-    "id": "164650",
+    "id": "163550",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -945,7 +944,7 @@
   },
   {
     "name": "Approaching Army",
-    "id": "160350",
+    "id": "163650",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -969,7 +968,7 @@
   },
   {
     "name": "Biding Time",
-    "id": "160750",
+    "id": "163750",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -992,7 +991,7 @@
   },
   {
     "name": "Bureaucracy",
-    "id": "160850",
+    "id": "163850",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1017,7 +1016,7 @@
   },
   {
     "name": "Divine Wind",
-    "id": "161450",
+    "id": "163950",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1040,7 +1039,7 @@
   },
   {
     "name": "Enlightenment",
-    "id": "161550",
+    "id": "164050",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1064,7 +1063,7 @@
   },
   {
     "name": "Flourishing Trade",
-    "id": "161750",
+    "id": "164150",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1087,7 +1086,7 @@
   },
   {
     "name": "Good Harvest",
-    "id": "162150",
+    "id": "164250",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1112,7 +1111,7 @@
   },
   {
     "name": "Great Leader",
-    "id": "162250",
+    "id": "164350",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1136,7 +1135,7 @@
   },
   {
     "name": "Growth",
-    "id": "162350",
+    "id": "164450",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1160,7 +1159,7 @@
   },
   {
     "name": "Harsh Winter",
-    "id": "162450",
+    "id": "164550",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1184,7 +1183,7 @@
   },
   {
     "name": "Kind Emperor",
-    "id": "162650",
+    "id": "164650",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1208,7 +1207,7 @@
   },
   {
     "name": "Panic",
-    "id": "163250",
+    "id": "164750",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1234,7 +1233,7 @@
   },
   {
     "name": "Progress",
-    "id": "163550",
+    "id": "164850",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1260,7 +1259,7 @@
   },
   {
     "name": "Rapid Expansion",
-    "id": "163650",
+    "id": "164950",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",
@@ -1285,7 +1284,7 @@
   },
   {
     "name": "Sickness",
-    "id": "164750",
+    "id": "165050",
     "box": "Rising Sun",
     "edition": "1",
     "supply": "Landscape",

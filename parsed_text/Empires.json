@@ -1,7 +1,7 @@
 [
   {
     "name": "Archive",
-    "id": "100471",
+    "id": "100171",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Capital",
-    "id": "101271",
+    "id": "100271",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Castles",
-    "id": "101371",
+    "id": "100371",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -80,7 +80,7 @@
   },
   {
     "name": "Humble Castle",
-    "id": "103871",
+    "id": "100471",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Crumbling Castle",
-    "id": "102171",
+    "id": "100571",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -125,7 +125,6 @@
       "gain",
       "on_gain",
       "trash",
-      "trash_for_benefit",
       "trash_self",
       "trash_to_gain"
     ],
@@ -135,7 +134,7 @@
   },
   {
     "name": "Small Castle",
-    "id": "105871",
+    "id": "100671",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -166,7 +165,7 @@
   },
   {
     "name": "Haunted Castle",
-    "id": "103771",
+    "id": "100771",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -193,7 +192,7 @@
   },
   {
     "name": "Opulent Castle",
-    "id": "104671",
+    "id": "100871",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -222,7 +221,7 @@
   },
   {
     "name": "Sprawling Castle",
-    "id": "105971",
+    "id": "100971",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -247,7 +246,7 @@
   },
   {
     "name": "Grand Castle",
-    "id": "103571",
+    "id": "101071",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -273,7 +272,7 @@
   },
   {
     "name": "King's Castle",
-    "id": "104071",
+    "id": "101171",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -297,7 +296,7 @@
   },
   {
     "name": "Catapult",
-    "id": "101471",
+    "id": "101271",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -330,7 +329,7 @@
   },
   {
     "name": "Rocks",
-    "id": "105371",
+    "id": "101371",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -352,7 +351,6 @@
       "on_gain",
       "topdeck",
       "trash",
-      "trash_for_benefit",
       "trash_self",
       "trash_to_gain"
     ],
@@ -362,7 +360,7 @@
   },
   {
     "name": "Chariot Race",
-    "id": "101571",
+    "id": "101471",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -390,7 +388,7 @@
   },
   {
     "name": "Charm",
-    "id": "101671",
+    "id": "101571",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -416,7 +414,7 @@
   },
   {
     "name": "City Quarter",
-    "id": "101771",
+    "id": "101671",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -442,7 +440,7 @@
   },
   {
     "name": "Crown",
-    "id": "102071",
+    "id": "101771",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -467,7 +465,7 @@
   },
   {
     "name": "Encampment",
-    "id": "102771",
+    "id": "101871",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -494,7 +492,7 @@
   },
   {
     "name": "Plunder",
-    "id": "105171",
+    "id": "101971",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -517,7 +515,7 @@
   },
   {
     "name": "Enchantress",
-    "id": "102871",
+    "id": "102071",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -545,7 +543,7 @@
   },
   {
     "name": "Engineer",
-    "id": "102971",
+    "id": "102171",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -574,7 +572,7 @@
   },
   {
     "name": "Farmers' Market",
-    "id": "103071",
+    "id": "102271",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -596,7 +594,6 @@
       "payload_piece",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -605,7 +602,7 @@
   },
   {
     "name": "Forum",
-    "id": "103271",
+    "id": "102371",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -634,7 +631,7 @@
   },
   {
     "name": "Gladiator",
-    "id": "103471",
+    "id": "102471",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -662,7 +659,7 @@
   },
   {
     "name": "Fortune",
-    "id": "103171",
+    "id": "102571",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -688,7 +685,7 @@
   },
   {
     "name": "Groundskeeper",
-    "id": "103671",
+    "id": "102671",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -714,7 +711,7 @@
   },
   {
     "name": "Legionary",
-    "id": "104271",
+    "id": "102771",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -743,7 +740,7 @@
   },
   {
     "name": "Overlord",
-    "id": "104871",
+    "id": "102871",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -767,7 +764,7 @@
   },
   {
     "name": "Patrician",
-    "id": "105071",
+    "id": "102971",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -793,7 +790,7 @@
   },
   {
     "name": "Emporium",
-    "id": "102671",
+    "id": "103071",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -821,7 +818,7 @@
   },
   {
     "name": "Royal Blacksmith",
-    "id": "105471",
+    "id": "103171",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -848,7 +845,7 @@
   },
   {
     "name": "Sacrifice",
-    "id": "105571",
+    "id": "103271",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -877,7 +874,7 @@
   },
   {
     "name": "Settlers",
-    "id": "105771",
+    "id": "103371",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -902,7 +899,7 @@
   },
   {
     "name": "Bustling Village",
-    "id": "101171",
+    "id": "103471",
     "box": "Empires",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -928,7 +925,7 @@
   },
   {
     "name": "Temple",
-    "id": "106171",
+    "id": "103571",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -956,7 +953,7 @@
   },
   {
     "name": "Villa",
-    "id": "106671",
+    "id": "103671",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -985,7 +982,7 @@
   },
   {
     "name": "Wild Hunt",
-    "id": "106971",
+    "id": "103771",
     "box": "Empires",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1012,7 +1009,7 @@
   },
   {
     "name": "Advance",
-    "id": "100171",
+    "id": "103871",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1039,7 +1036,7 @@
   },
   {
     "name": "Annex",
-    "id": "100271",
+    "id": "103971",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1062,7 +1059,7 @@
   },
   {
     "name": "Banquet",
-    "id": "100771",
+    "id": "104071",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1086,7 +1083,7 @@
   },
   {
     "name": "Conquest",
-    "id": "101971",
+    "id": "104171",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1109,7 +1106,7 @@
   },
   {
     "name": "Delve",
-    "id": "102371",
+    "id": "104271",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1134,7 +1131,7 @@
   },
   {
     "name": "Dominate",
-    "id": "102471",
+    "id": "104371",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1157,7 +1154,7 @@
   },
   {
     "name": "Donate",
-    "id": "102571",
+    "id": "104471",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1182,7 +1179,7 @@
   },
   {
     "name": "Ritual",
-    "id": "105271",
+    "id": "104571",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1209,7 +1206,7 @@
   },
   {
     "name": "Salt the Earth",
-    "id": "105671",
+    "id": "104671",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1233,7 +1230,7 @@
   },
   {
     "name": "Tax",
-    "id": "106071",
+    "id": "104771",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1257,7 +1254,7 @@
   },
   {
     "name": "Triumph",
-    "id": "106471",
+    "id": "104871",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1280,7 +1277,7 @@
   },
   {
     "name": "Wedding",
-    "id": "106871",
+    "id": "104971",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1303,7 +1300,7 @@
   },
   {
     "name": "Windfall",
-    "id": "107071",
+    "id": "105071",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1326,7 +1323,7 @@
   },
   {
     "name": "Aqueduct",
-    "id": "100371",
+    "id": "105171",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1350,7 +1347,7 @@
   },
   {
     "name": "Arena",
-    "id": "100571",
+    "id": "105271",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1373,7 +1370,7 @@
   },
   {
     "name": "Bandit Fort",
-    "id": "100671",
+    "id": "105371",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1396,7 +1393,7 @@
   },
   {
     "name": "Basilica",
-    "id": "100871",
+    "id": "105471",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1420,7 +1417,7 @@
   },
   {
     "name": "Baths",
-    "id": "100971",
+    "id": "105571",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1443,7 +1440,7 @@
   },
   {
     "name": "Battlefield",
-    "id": "101071",
+    "id": "105671",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1467,7 +1464,7 @@
   },
   {
     "name": "Colonnade",
-    "id": "101871",
+    "id": "105771",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1491,7 +1488,7 @@
   },
   {
     "name": "Defiled Shrine",
-    "id": "102271",
+    "id": "105871",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1516,7 +1513,7 @@
   },
   {
     "name": "Fountain",
-    "id": "103371",
+    "id": "105971",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1539,7 +1536,7 @@
   },
   {
     "name": "Keep",
-    "id": "103971",
+    "id": "106071",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1562,7 +1559,7 @@
   },
   {
     "name": "Labyrinth",
-    "id": "104171",
+    "id": "106171",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1586,7 +1583,7 @@
   },
   {
     "name": "Mountain Pass",
-    "id": "104371",
+    "id": "106271",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1611,7 +1608,7 @@
   },
   {
     "name": "Museum",
-    "id": "104471",
+    "id": "106371",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1634,7 +1631,7 @@
   },
   {
     "name": "Obelisk",
-    "id": "104571",
+    "id": "106471",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1657,7 +1654,7 @@
   },
   {
     "name": "Orchard",
-    "id": "104771",
+    "id": "106571",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1680,7 +1677,7 @@
   },
   {
     "name": "Palace",
-    "id": "104971",
+    "id": "106671",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1703,7 +1700,7 @@
   },
   {
     "name": "Tomb",
-    "id": "106271",
+    "id": "106771",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1728,7 +1725,7 @@
   },
   {
     "name": "Tower",
-    "id": "106371",
+    "id": "106871",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1751,7 +1748,7 @@
   },
   {
     "name": "Triumphal Arch",
-    "id": "106571",
+    "id": "106971",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",
@@ -1774,7 +1771,7 @@
   },
   {
     "name": "Wall",
-    "id": "106771",
+    "id": "107071",
     "box": "Empires",
     "edition": "1",
     "supply": "Landscape",

@@ -1,7 +1,7 @@
 [
   {
     "name": "Bard",
-    "id": "110277",
+    "id": "110177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Blessed Village",
-    "id": "110477",
+    "id": "110277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Cemetery",
-    "id": "110577",
+    "id": "110377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -83,7 +83,7 @@
   },
   {
     "name": "Haunted Mirror",
-    "id": "112977",
+    "id": "110477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -114,7 +114,7 @@
   },
   {
     "name": "Changeling",
-    "id": "110677",
+    "id": "110577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Cobbler",
-    "id": "110777",
+    "id": "110677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -171,7 +171,7 @@
   },
   {
     "name": "Conclave",
-    "id": "110877",
+    "id": "110777",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -198,7 +198,7 @@
   },
   {
     "name": "Crypt",
-    "id": "110977",
+    "id": "110877",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -225,7 +225,7 @@
   },
   {
     "name": "Cursed Village",
-    "id": "111177",
+    "id": "110977",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -253,7 +253,7 @@
   },
   {
     "name": "Den of Sin",
-    "id": "111477",
+    "id": "111077",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -281,7 +281,7 @@
   },
   {
     "name": "Devil's Workshop",
-    "id": "111577",
+    "id": "111177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -304,7 +304,7 @@
   },
   {
     "name": "Druid",
-    "id": "111677",
+    "id": "111277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -331,7 +331,7 @@
   },
   {
     "name": "Exorcist",
-    "id": "111977",
+    "id": "111377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -358,7 +358,7 @@
   },
   {
     "name": "Faithful Hound",
-    "id": "112077",
+    "id": "111477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -387,7 +387,7 @@
   },
   {
     "name": "Fool",
-    "id": "112377",
+    "id": "111577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -412,7 +412,7 @@
   },
   {
     "name": "Lost in the Woods",
-    "id": "113577",
+    "id": "111677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -436,7 +436,7 @@
   },
   {
     "name": "Lucky Coin",
-    "id": "113677",
+    "id": "111777",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -460,7 +460,7 @@
   },
   {
     "name": "Ghost",
-    "id": "112477",
+    "id": "111877",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -492,7 +492,7 @@
   },
   {
     "name": "Ghost Town",
-    "id": "112577",
+    "id": "111977",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -520,7 +520,7 @@
   },
   {
     "name": "Guardian",
-    "id": "112877",
+    "id": "112077",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -549,7 +549,7 @@
   },
   {
     "name": "Idol",
-    "id": "113177",
+    "id": "112177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -577,7 +577,7 @@
   },
   {
     "name": "Imp",
-    "id": "113277",
+    "id": "112277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -604,7 +604,7 @@
   },
   {
     "name": "Leprechaun",
-    "id": "113377",
+    "id": "112377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -630,7 +630,7 @@
   },
   {
     "name": "Monastery",
-    "id": "114077",
+    "id": "112477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -648,8 +648,7 @@
       "engine_piece",
       "gain",
       "self_junk",
-      "trash",
-      "trash_for_benefit"
+      "trash"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -657,7 +656,7 @@
   },
   {
     "name": "Necromancer",
-    "id": "114177",
+    "id": "112577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -682,7 +681,7 @@
   },
   {
     "name": "Zombie Apprentice",
-    "id": "117577",
+    "id": "112677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -710,7 +709,7 @@
   },
   {
     "name": "Zombie Mason",
-    "id": "117677",
+    "id": "112777",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -739,7 +738,7 @@
   },
   {
     "name": "Zombie Spy",
-    "id": "117777",
+    "id": "112877",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -766,7 +765,7 @@
   },
   {
     "name": "Night Watchman",
-    "id": "114277",
+    "id": "112977",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -793,7 +792,7 @@
   },
   {
     "name": "Pixie",
-    "id": "114477",
+    "id": "113077",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -823,7 +822,7 @@
   },
   {
     "name": "Goat",
-    "id": "112677",
+    "id": "113177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -848,7 +847,7 @@
   },
   {
     "name": "Pooka",
-    "id": "114677",
+    "id": "113277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -875,7 +874,7 @@
   },
   {
     "name": "Cursed Gold",
-    "id": "111077",
+    "id": "113377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -900,7 +899,7 @@
   },
   {
     "name": "Raider",
-    "id": "114977",
+    "id": "113477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -929,7 +928,7 @@
   },
   {
     "name": "Sacred Grove",
-    "id": "115077",
+    "id": "113577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -957,7 +956,7 @@
   },
   {
     "name": "Secret Cave",
-    "id": "115177",
+    "id": "113677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1013,7 +1012,7 @@
   },
   {
     "name": "Shepherd",
-    "id": "115277",
+    "id": "113877",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1040,7 +1039,7 @@
   },
   {
     "name": "Pasture",
-    "id": "114377",
+    "id": "113977",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1065,7 +1064,7 @@
   },
   {
     "name": "Skulk",
-    "id": "115377",
+    "id": "114077",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1096,7 +1095,7 @@
   },
   {
     "name": "Tormentor",
-    "id": "116677",
+    "id": "114177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1126,7 +1125,7 @@
   },
   {
     "name": "Tracker",
-    "id": "116777",
+    "id": "114277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1157,7 +1156,7 @@
   },
   {
     "name": "Pouch",
-    "id": "114777",
+    "id": "114377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1182,7 +1181,7 @@
   },
   {
     "name": "Tragic Hero",
-    "id": "116877",
+    "id": "114477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1205,7 +1204,6 @@
       "payload_piece",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self",
       "trash_to_gain"
     ],
@@ -1215,7 +1213,7 @@
   },
   {
     "name": "Vampire",
-    "id": "117077",
+    "id": "114577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1243,7 +1241,7 @@
   },
   {
     "name": "Bat",
-    "id": "110377",
+    "id": "114677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1269,7 +1267,7 @@
   },
   {
     "name": "Werewolf",
-    "id": "117277",
+    "id": "114777",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1299,7 +1297,7 @@
   },
   {
     "name": "Will-o'-Wisp",
-    "id": "117377",
+    "id": "114877",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1328,7 +1326,7 @@
   },
   {
     "name": "Wish",
-    "id": "117477",
+    "id": "114977",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1356,7 +1354,7 @@
   },
   {
     "name": "The Field's Gift",
-    "id": "115577",
+    "id": "115077",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1382,7 +1380,7 @@
   },
   {
     "name": "The Flame's Gift",
-    "id": "115677",
+    "id": "115177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1406,7 +1404,7 @@
   },
   {
     "name": "The Forest's Gift",
-    "id": "115777",
+    "id": "115277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1431,7 +1429,7 @@
   },
   {
     "name": "The Moon's Gift",
-    "id": "115877",
+    "id": "115377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1454,7 +1452,7 @@
   },
   {
     "name": "The Mountain's Gift",
-    "id": "115977",
+    "id": "115477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1477,7 +1475,7 @@
   },
   {
     "name": "The River's Gift",
-    "id": "116077",
+    "id": "115577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1501,7 +1499,7 @@
   },
   {
     "name": "The Sea's Gift",
-    "id": "116177",
+    "id": "115677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1525,7 +1523,7 @@
   },
   {
     "name": "The Sky's Gift",
-    "id": "116277",
+    "id": "115777",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1549,7 +1547,7 @@
   },
   {
     "name": "The Sun's Gift",
-    "id": "116377",
+    "id": "115877",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1574,7 +1572,7 @@
   },
   {
     "name": "The Swamp's Gift",
-    "id": "116477",
+    "id": "115977",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1597,7 +1595,7 @@
   },
   {
     "name": "The Earth's Gift",
-    "id": "115477",
+    "id": "116077",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1621,7 +1619,7 @@
   },
   {
     "name": "The Wind's Gift",
-    "id": "116577",
+    "id": "116177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1646,7 +1644,7 @@
   },
   {
     "name": "Bad Omens",
-    "id": "110177",
+    "id": "116277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1670,7 +1668,7 @@
   },
   {
     "name": "Delusion",
-    "id": "111377",
+    "id": "116377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1693,7 +1691,7 @@
   },
   {
     "name": "Deluded",
-    "id": "111277",
+    "id": "116477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1716,7 +1714,7 @@
   },
   {
     "name": "Envy",
-    "id": "111877",
+    "id": "116577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1739,7 +1737,7 @@
   },
   {
     "name": "Envious",
-    "id": "111777",
+    "id": "116677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1762,7 +1760,7 @@
   },
   {
     "name": "Famine",
-    "id": "112177",
+    "id": "116777",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1787,7 +1785,7 @@
   },
   {
     "name": "Fear",
-    "id": "112277",
+    "id": "116877",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1811,7 +1809,7 @@
   },
   {
     "name": "Greed",
-    "id": "112777",
+    "id": "116977",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1837,7 +1835,7 @@
   },
   {
     "name": "Haunting",
-    "id": "113077",
+    "id": "117077",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1860,7 +1858,7 @@
   },
   {
     "name": "Locusts",
-    "id": "113477",
+    "id": "117177",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1888,7 +1886,7 @@
   },
   {
     "name": "Misery",
-    "id": "113977",
+    "id": "117277",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1911,7 +1909,7 @@
   },
   {
     "name": "Miserable",
-    "id": "113877",
+    "id": "117377",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1934,7 +1932,7 @@
   },
   {
     "name": "Twice Miserable",
-    "id": "116977",
+    "id": "117477",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1957,7 +1955,7 @@
   },
   {
     "name": "Plague",
-    "id": "114577",
+    "id": "117577",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -1982,7 +1980,7 @@
   },
   {
     "name": "Poverty",
-    "id": "114877",
+    "id": "117677",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",
@@ -2005,7 +2003,7 @@
   },
   {
     "name": "War",
-    "id": "117177",
+    "id": "117777",
     "box": "Nocturne",
     "edition": "1",
     "supply": "Status",

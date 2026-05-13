@@ -1,7 +1,7 @@
 [
   {
     "name": "Augurs",
-    "id": "140478",
+    "id": "140178",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Herb Gatherer",
-    "id": "143478",
+    "id": "140278",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -51,7 +51,7 @@
   },
   {
     "name": "Acolyte",
-    "id": "140178",
+    "id": "140378",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -71,7 +71,6 @@
       "gain",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self",
       "trash_to_gain"
     ],
@@ -81,7 +80,7 @@
   },
   {
     "name": "Sorceress",
-    "id": "146178",
+    "id": "140478",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -112,7 +111,7 @@
   },
   {
     "name": "Sibyl",
-    "id": "145878",
+    "id": "140578",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -170,7 +169,7 @@
   },
   {
     "name": "Bauble",
-    "id": "140878",
+    "id": "140778",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -201,7 +200,7 @@
   },
   {
     "name": "Broker",
-    "id": "141078",
+    "id": "140878",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -231,7 +230,7 @@
   },
   {
     "name": "Capital City",
-    "id": "141178",
+    "id": "140978",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -259,7 +258,7 @@
   },
   {
     "name": "Carpenter",
-    "id": "141278",
+    "id": "141078",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -287,7 +286,7 @@
   },
   {
     "name": "Clashes",
-    "id": "141678",
+    "id": "141178",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -311,7 +310,7 @@
   },
   {
     "name": "Battle Plan",
-    "id": "140778",
+    "id": "141278",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -337,7 +336,7 @@
   },
   {
     "name": "Archer",
-    "id": "140278",
+    "id": "141378",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -366,7 +365,7 @@
   },
   {
     "name": "Warlord",
-    "id": "147678",
+    "id": "141478",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -396,7 +395,7 @@
   },
   {
     "name": "Territory",
-    "id": "146978",
+    "id": "141578",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -421,7 +420,7 @@
   },
   {
     "name": "Contract",
-    "id": "141978",
+    "id": "141678",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -449,7 +448,7 @@
   },
   {
     "name": "Courier",
-    "id": "142078",
+    "id": "141778",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -475,7 +474,7 @@
   },
   {
     "name": "Emissary",
-    "id": "142578",
+    "id": "141878",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -502,7 +501,7 @@
   },
   {
     "name": "Forts",
-    "id": "142978",
+    "id": "141978",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -526,7 +525,7 @@
   },
   {
     "name": "Tent",
-    "id": "146878",
+    "id": "142078",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -555,7 +554,7 @@
   },
   {
     "name": "Garrison",
-    "id": "143278",
+    "id": "142178",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -587,7 +586,7 @@
   },
   {
     "name": "Hill Fort",
-    "id": "143678",
+    "id": "142278",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -614,7 +613,7 @@
   },
   {
     "name": "Stronghold",
-    "id": "146378",
+    "id": "142378",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -645,7 +644,7 @@
   },
   {
     "name": "Galleria",
-    "id": "143078",
+    "id": "142478",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -673,7 +672,7 @@
   },
   {
     "name": "Guildmaster",
-    "id": "143378",
+    "id": "142578",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -702,7 +701,7 @@
   },
   {
     "name": "Highwayman",
-    "id": "143578",
+    "id": "142678",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -732,7 +731,7 @@
   },
   {
     "name": "Hunter",
-    "id": "143778",
+    "id": "142778",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -759,7 +758,7 @@
   },
   {
     "name": "Importer",
-    "id": "143878",
+    "id": "142878",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -788,7 +787,7 @@
   },
   {
     "name": "Innkeeper",
-    "id": "143978",
+    "id": "142978",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -813,7 +812,7 @@
   },
   {
     "name": "Marquis",
-    "id": "144578",
+    "id": "143078",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -841,7 +840,7 @@
   },
   {
     "name": "Merchant Camp",
-    "id": "144678",
+    "id": "143178",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -870,7 +869,7 @@
   },
   {
     "name": "Modify",
-    "id": "144878",
+    "id": "143278",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -898,7 +897,7 @@
   },
   {
     "name": "Odysseys",
-    "id": "145078",
+    "id": "143378",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -922,7 +921,7 @@
   },
   {
     "name": "Old Map",
-    "id": "145178",
+    "id": "143478",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -948,7 +947,7 @@
   },
   {
     "name": "Voyage",
-    "id": "147578",
+    "id": "143578",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -976,7 +975,7 @@
   },
   {
     "name": "Sunken Treasure",
-    "id": "146578",
+    "id": "143678",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1000,7 +999,7 @@
   },
   {
     "name": "Distant Shore",
-    "id": "142378",
+    "id": "143778",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1028,7 +1027,7 @@
   },
   {
     "name": "Royal Galley",
-    "id": "145678",
+    "id": "143878",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1056,7 +1055,7 @@
   },
   {
     "name": "Sentinel",
-    "id": "145778",
+    "id": "143978",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1083,7 +1082,7 @@
   },
   {
     "name": "Skirmisher",
-    "id": "145978",
+    "id": "144078",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1114,7 +1113,7 @@
   },
   {
     "name": "Specialist",
-    "id": "146278",
+    "id": "144178",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1138,7 +1137,7 @@
   },
   {
     "name": "Swap",
-    "id": "146678",
+    "id": "144278",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1163,7 +1162,7 @@
   },
   {
     "name": "Sycophant",
-    "id": "146778",
+    "id": "144378",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1187,7 +1186,6 @@
       "on_gain",
       "payload_piece",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -1196,7 +1194,7 @@
   },
   {
     "name": "Town",
-    "id": "147078",
+    "id": "144478",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1224,7 +1222,7 @@
   },
   {
     "name": "Townsfolk",
-    "id": "147278",
+    "id": "144578",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1248,7 +1246,7 @@
   },
   {
     "name": "Town Crier",
-    "id": "147178",
+    "id": "144678",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1276,7 +1274,7 @@
   },
   {
     "name": "Blacksmith",
-    "id": "140978",
+    "id": "144778",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1302,7 +1300,7 @@
   },
   {
     "name": "Miller",
-    "id": "144778",
+    "id": "144878",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1329,7 +1327,7 @@
   },
   {
     "name": "Elder",
-    "id": "142478",
+    "id": "144978",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1355,7 +1353,7 @@
   },
   {
     "name": "Underling",
-    "id": "147478",
+    "id": "145078",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1381,7 +1379,7 @@
   },
   {
     "name": "Wizards",
-    "id": "147778",
+    "id": "145178",
     "box": "Allies",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1406,7 +1404,7 @@
   },
   {
     "name": "Student",
-    "id": "146478",
+    "id": "145278",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1436,7 +1434,7 @@
   },
   {
     "name": "Conjurer",
-    "id": "141878",
+    "id": "145378",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1464,7 +1462,7 @@
   },
   {
     "name": "Sorcerer",
-    "id": "146078",
+    "id": "145478",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1493,7 +1491,7 @@
   },
   {
     "name": "Lich",
-    "id": "144378",
+    "id": "145578",
     "box": "Allies",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -1526,7 +1524,7 @@
   },
   {
     "name": "Architects' Guild",
-    "id": "140378",
+    "id": "145678",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1550,7 +1548,7 @@
   },
   {
     "name": "Band of Nomads",
-    "id": "140578",
+    "id": "145778",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1578,7 +1576,7 @@
   },
   {
     "name": "Cave Dwellers",
-    "id": "141378",
+    "id": "145878",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1602,7 +1600,7 @@
   },
   {
     "name": "Circle of Witches",
-    "id": "141478",
+    "id": "145978",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1627,7 +1625,7 @@
   },
   {
     "name": "City-state",
-    "id": "141578",
+    "id": "146078",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1651,7 +1649,7 @@
   },
   {
     "name": "Coastal Haven",
-    "id": "141778",
+    "id": "146178",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1675,7 +1673,7 @@
   },
   {
     "name": "Crafters' Guild",
-    "id": "142178",
+    "id": "146278",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1700,7 +1698,7 @@
   },
   {
     "name": "Desert Guides",
-    "id": "142278",
+    "id": "146378",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1724,7 +1722,7 @@
   },
   {
     "name": "Family of Inventors",
-    "id": "142678",
+    "id": "146478",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1747,7 +1745,7 @@
   },
   {
     "name": "Fellowship of Scribes",
-    "id": "142778",
+    "id": "146578",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1771,7 +1769,7 @@
   },
   {
     "name": "Forest Dwellers",
-    "id": "142878",
+    "id": "146678",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1796,7 +1794,7 @@
   },
   {
     "name": "Gang of Pickpockets",
-    "id": "143178",
+    "id": "146778",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1819,7 +1817,7 @@
   },
   {
     "name": "Island Folk",
-    "id": "144078",
+    "id": "146878",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1842,7 +1840,7 @@
   },
   {
     "name": "League of Bankers",
-    "id": "144178",
+    "id": "146978",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1866,7 +1864,7 @@
   },
   {
     "name": "League of Shopkeepers",
-    "id": "144278",
+    "id": "147078",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1893,7 +1891,7 @@
   },
   {
     "name": "Market Towns",
-    "id": "144478",
+    "id": "147178",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1916,7 +1914,7 @@
   },
   {
     "name": "Mountain Folk",
-    "id": "144978",
+    "id": "147278",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1940,7 +1938,7 @@
   },
   {
     "name": "Order of Astrologers",
-    "id": "145278",
+    "id": "147378",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1963,7 +1961,7 @@
   },
   {
     "name": "Order of Masons",
-    "id": "145378",
+    "id": "147478",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -1986,7 +1984,7 @@
   },
   {
     "name": "Peaceful Cult",
-    "id": "145478",
+    "id": "147578",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -2010,7 +2008,7 @@
   },
   {
     "name": "Plateau Shepherds",
-    "id": "145578",
+    "id": "147678",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -2033,7 +2031,7 @@
   },
   {
     "name": "Trappers' Lodge",
-    "id": "147378",
+    "id": "147778",
     "box": "Allies",
     "edition": "1",
     "supply": "Landscape",
@@ -2077,7 +2075,6 @@
       "engine_piece",
       "gain",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],

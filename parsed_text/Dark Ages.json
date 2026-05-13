@@ -1,7 +1,7 @@
 [
   {
     "name": "Altar",
-    "id": "080259",
+    "id": "080159",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Armory",
-    "id": "080359",
+    "id": "080259",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Band of Misfits",
-    "id": "080459",
+    "id": "080359",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -80,7 +80,7 @@
   },
   {
     "name": "Bandit Camp",
-    "id": "080559",
+    "id": "080459",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -107,7 +107,7 @@
   },
   {
     "name": "Beggar",
-    "id": "080659",
+    "id": "080559",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -137,7 +137,7 @@
   },
   {
     "name": "Catacombs",
-    "id": "080759",
+    "id": "080659",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -160,7 +160,6 @@
       "scry",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self",
       "trash_to_gain"
     ],
@@ -170,7 +169,7 @@
   },
   {
     "name": "Count",
-    "id": "080859",
+    "id": "080759",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -194,7 +193,6 @@
       "terminal",
       "topdeck",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -203,7 +201,7 @@
   },
   {
     "name": "Counterfeit",
-    "id": "080959",
+    "id": "080859",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -230,7 +228,7 @@
   },
   {
     "name": "Cultist",
-    "id": "081059",
+    "id": "080959",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -264,7 +262,7 @@
   },
   {
     "name": "Death Cart",
-    "id": "081659",
+    "id": "081059",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -297,7 +295,7 @@
   },
   {
     "name": "Silk Road",
-    "id": "084759",
+    "id": "081159",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -320,7 +318,7 @@
   },
   {
     "name": "Feodum",
-    "id": "081759",
+    "id": "081259",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -347,7 +345,7 @@
   },
   {
     "name": "Forager",
-    "id": "081859",
+    "id": "081359",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -376,7 +374,7 @@
   },
   {
     "name": "Fortress",
-    "id": "081959",
+    "id": "081459",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -405,7 +403,7 @@
   },
   {
     "name": "Graverobber",
-    "id": "082059",
+    "id": "081559",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -426,7 +424,6 @@
       "terminal",
       "topdeck",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -435,7 +432,7 @@
   },
   {
     "name": "Hermit",
-    "id": "082159",
+    "id": "081659",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -464,7 +461,7 @@
   },
   {
     "name": "Madman",
-    "id": "082759",
+    "id": "081759",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Non-Supply",
@@ -490,7 +487,7 @@
   },
   {
     "name": "Hunting Grounds",
-    "id": "082359",
+    "id": "081859",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -521,7 +518,7 @@
   },
   {
     "name": "Ironmonger",
-    "id": "082459",
+    "id": "081959",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -550,7 +547,7 @@
   },
   {
     "name": "Junk Dealer",
-    "id": "082559",
+    "id": "082059",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -578,7 +575,7 @@
   },
   {
     "name": "Knights",
-    "id": "082659",
+    "id": "082159",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -603,7 +600,7 @@
   },
   {
     "name": "Dame Anna",
-    "id": "081159",
+    "id": "082259",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -636,7 +633,7 @@
   },
   {
     "name": "Dame Josephine",
-    "id": "081259",
+    "id": "082359",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -670,7 +667,7 @@
   },
   {
     "name": "Dame Molly",
-    "id": "081359",
+    "id": "082459",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -705,7 +702,7 @@
   },
   {
     "name": "Dame Natalie",
-    "id": "081459",
+    "id": "082559",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -740,7 +737,7 @@
   },
   {
     "name": "Dame Sylvia",
-    "id": "081559",
+    "id": "082659",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -776,7 +773,7 @@
   },
   {
     "name": "Sir Bailey",
-    "id": "084859",
+    "id": "082759",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -811,7 +808,7 @@
   },
   {
     "name": "Sir Destry",
-    "id": "084959",
+    "id": "082859",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -847,7 +844,7 @@
   },
   {
     "name": "Sir Martin",
-    "id": "085059",
+    "id": "082959",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -882,7 +879,7 @@
   },
   {
     "name": "Sir Michael",
-    "id": "085159",
+    "id": "083059",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -915,7 +912,7 @@
   },
   {
     "name": "Sir Vander",
-    "id": "085259",
+    "id": "083159",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Mixed Pile",
@@ -952,7 +949,7 @@
   },
   {
     "name": "Marauder",
-    "id": "082859",
+    "id": "083259",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -982,7 +979,7 @@
   },
   {
     "name": "Market Square",
-    "id": "082959",
+    "id": "083359",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1014,7 +1011,7 @@
   },
   {
     "name": "Mystic",
-    "id": "083159",
+    "id": "083459",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1042,7 +1039,7 @@
   },
   {
     "name": "Pillage",
-    "id": "083459",
+    "id": "083559",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1074,7 +1071,7 @@
   },
   {
     "name": "Poor House",
-    "id": "083559",
+    "id": "083659",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1100,7 +1097,7 @@
   },
   {
     "name": "Procession",
-    "id": "083659",
+    "id": "083759",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1128,7 +1125,7 @@
   },
   {
     "name": "Rats",
-    "id": "083759",
+    "id": "083859",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1149,7 +1146,6 @@
       "on_trash",
       "reveal",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -1158,7 +1154,7 @@
   },
   {
     "name": "Rebuild",
-    "id": "083859",
+    "id": "083959",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1180,7 +1176,6 @@
       "reveal",
       "scry",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -1189,7 +1184,7 @@
   },
   {
     "name": "Rogue",
-    "id": "083959",
+    "id": "084059",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1224,7 +1219,7 @@
   },
   {
     "name": "Ruins",
-    "id": "084359",
+    "id": "084159",
     "box": "Dark Ages",
     "edition": "Unknown",
     "supply": "Unknown",
@@ -1245,7 +1240,7 @@
   },
   {
     "name": "Abandoned Mine",
-    "id": "080159",
+    "id": "084259",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Basic",
@@ -1271,7 +1266,7 @@
   },
   {
     "name": "Ruined Library",
-    "id": "084059",
+    "id": "084359",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Basic",
@@ -1297,7 +1292,7 @@
   },
   {
     "name": "Ruined Market",
-    "id": "084159",
+    "id": "084459",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Basic",
@@ -1323,7 +1318,7 @@
   },
   {
     "name": "Ruined Village",
-    "id": "084259",
+    "id": "084559",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Basic",
@@ -1348,7 +1343,7 @@
   },
   {
     "name": "Survivors",
-    "id": "085659",
+    "id": "084659",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Basic",
@@ -1375,7 +1370,7 @@
   },
   {
     "name": "Sage",
-    "id": "084459",
+    "id": "084759",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1403,7 +1398,7 @@
   },
   {
     "name": "Scavenger",
-    "id": "084559",
+    "id": "084859",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1429,7 +1424,7 @@
   },
   {
     "name": "Shelters",
-    "id": "084659",
+    "id": "084959",
     "box": "Dark Ages",
     "edition": "Unknown",
     "supply": "Unknown",
@@ -1450,7 +1445,7 @@
   },
   {
     "name": "Hovel",
-    "id": "082259",
+    "id": "085059",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1473,7 +1468,6 @@
       "reaction_trash",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -1482,7 +1476,7 @@
   },
   {
     "name": "Necropolis",
-    "id": "083259",
+    "id": "085159",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1507,7 +1501,7 @@
   },
   {
     "name": "Overgrown Estate",
-    "id": "083359",
+    "id": "085259",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1582,7 +1576,6 @@
       "on_trash",
       "payload_piece",
       "trash",
-      "trash_for_benefit",
       "trash_self",
       "trash_to_gain",
       "village"
@@ -1621,7 +1614,7 @@
   },
   {
     "name": "Urchin",
-    "id": "085759",
+    "id": "085659",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1653,7 +1646,7 @@
   },
   {
     "name": "Mercenary",
-    "id": "083059",
+    "id": "085759",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Non-Supply",

@@ -625,7 +625,6 @@
       "payload_piece",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -721,7 +720,7 @@
   },
   {
     "name": "Silk Road",
-    "id": "084759",
+    "id": "081159",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",

@@ -28,7 +28,7 @@
   },
   {
     "name": "Baker",
-    "id": "060345",
+    "id": "060245",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Butcher",
-    "id": "060445",
+    "id": "060345",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -85,7 +85,7 @@
   },
   {
     "name": "Candlestick Maker",
-    "id": "060545",
+    "id": "060445",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -112,7 +112,7 @@
   },
   {
     "name": "Carnival",
-    "id": "060645",
+    "id": "060545",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -139,7 +139,7 @@
   },
   {
     "name": "Doctor",
-    "id": "061145",
+    "id": "060645",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -169,7 +169,7 @@
   },
   {
     "name": "Fairgrounds",
-    "id": "061245",
+    "id": "060745",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -192,7 +192,7 @@
   },
   {
     "name": "Farmhands",
-    "id": "061345",
+    "id": "060845",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -219,7 +219,7 @@
   },
   {
     "name": "Farming Village",
-    "id": "061445",
+    "id": "060945",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -246,7 +246,7 @@
   },
   {
     "name": "Farrier",
-    "id": "061545",
+    "id": "061045",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -273,7 +273,7 @@
   },
   {
     "name": "Ferryman",
-    "id": "061645",
+    "id": "061145",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -301,7 +301,7 @@
   },
   {
     "name": "Footpad",
-    "id": "061845",
+    "id": "061245",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -333,7 +333,7 @@
   },
   {
     "name": "Fortune Teller",
-    "id": "061945",
+    "id": "061345",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -364,7 +364,7 @@
   },
   {
     "name": "Hamlet",
-    "id": "062045",
+    "id": "061445",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -391,7 +391,7 @@
   },
   {
     "name": "Harvest",
-    "id": "062145",
+    "id": "061545",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -419,7 +419,7 @@
   },
   {
     "name": "Herald",
-    "id": "062245",
+    "id": "061645",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -448,7 +448,7 @@
   },
   {
     "name": "Horse Traders",
-    "id": "062445",
+    "id": "061745",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -479,7 +479,7 @@
   },
   {
     "name": "Horn of Plenty",
-    "id": "062345",
+    "id": "061845",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -498,7 +498,6 @@
       "gain",
       "plays_actions",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -507,7 +506,7 @@
   },
   {
     "name": "Hunting Party",
-    "id": "062745",
+    "id": "061945",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -534,7 +533,7 @@
   },
   {
     "name": "Infirmary",
-    "id": "062845",
+    "id": "062045",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -562,7 +561,7 @@
   },
   {
     "name": "Jester",
-    "id": "062945",
+    "id": "062145",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -592,7 +591,7 @@
   },
   {
     "name": "Journeyman",
-    "id": "063045",
+    "id": "062245",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -619,7 +618,7 @@
   },
   {
     "name": "Joust",
-    "id": "063145",
+    "id": "062345",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -649,7 +648,7 @@
   },
   {
     "name": "Coronet",
-    "id": "060745",
+    "id": "062445",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Non-Supply",
@@ -676,7 +675,7 @@
   },
   {
     "name": "Courser",
-    "id": "060845",
+    "id": "062545",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Non-Supply",
@@ -705,7 +704,7 @@
   },
   {
     "name": "Demesne",
-    "id": "060945",
+    "id": "062645",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Non-Supply",
@@ -735,7 +734,7 @@
   },
   {
     "name": "Housecarl",
-    "id": "062545",
+    "id": "062745",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Non-Supply",
@@ -762,7 +761,7 @@
   },
   {
     "name": "Huge Turnip",
-    "id": "062645",
+    "id": "062845",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Non-Supply",
@@ -789,7 +788,7 @@
   },
   {
     "name": "Renown",
-    "id": "063845",
+    "id": "062945",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Non-Supply",
@@ -817,7 +816,7 @@
   },
   {
     "name": "Masterpiece",
-    "id": "063245",
+    "id": "063045",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -841,7 +840,7 @@
   },
   {
     "name": "Menagerie",
-    "id": "063345",
+    "id": "063145",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -866,7 +865,7 @@
   },
   {
     "name": "Merchant Guild",
-    "id": "063445",
+    "id": "063245",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -893,7 +892,7 @@
   },
   {
     "name": "Plaza",
-    "id": "063545",
+    "id": "063345",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -921,7 +920,7 @@
   },
   {
     "name": "Remake",
-    "id": "063745",
+    "id": "063445",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -949,7 +948,7 @@
   },
   {
     "name": "Shop",
-    "id": "063945",
+    "id": "063545",
     "box": "Cornucopia & Guilds",
     "edition": "2",
     "supply": "Kingdom Pile",
@@ -976,7 +975,7 @@
   },
   {
     "name": "Soothsayer",
-    "id": "064045",
+    "id": "063645",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -1004,7 +1003,7 @@
   },
   {
     "name": "Stonemason",
-    "id": "064145",
+    "id": "063745",
     "box": "Cornucopia & Guilds",
     "edition": "1&2",
     "supply": "Kingdom Pile",
@@ -1034,7 +1033,7 @@
   },
   {
     "name": "Taxman",
-    "id": "064245",
+    "id": "063845",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1067,7 +1066,7 @@
   },
   {
     "name": "Tournament",
-    "id": "064345",
+    "id": "063945",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1101,7 +1100,7 @@
   },
   {
     "name": "Bag of Gold",
-    "id": "060245",
+    "id": "064045",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1130,7 +1129,7 @@
   },
   {
     "name": "Diadem",
-    "id": "061045",
+    "id": "064145",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1156,7 +1155,7 @@
   },
   {
     "name": "Followers",
-    "id": "061745",
+    "id": "064245",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Non-Supply",
@@ -1189,7 +1188,7 @@
   },
   {
     "name": "Princess",
-    "id": "063645",
+    "id": "064345",
     "box": "Cornucopia & Guilds",
     "edition": "1",
     "supply": "Non-Supply",

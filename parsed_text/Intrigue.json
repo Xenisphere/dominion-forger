@@ -309,7 +309,6 @@
       "engine_piece",
       "gain",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -711,8 +710,7 @@
       "engine_piece",
       "payload_piece",
       "terminal",
-      "trash",
-      "trash_for_benefit"
+      "trash"
     ],
     "opponent_tags": [],
     "dependencies": [],

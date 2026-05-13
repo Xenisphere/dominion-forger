@@ -1,7 +1,7 @@
 [
   {
     "name": "Amulet",
-    "id": "090258",
+    "id": "090158",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -24,7 +24,6 @@
       "payload_piece",
       "terminal",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -33,7 +32,7 @@
   },
   {
     "name": "Artificer",
-    "id": "090358",
+    "id": "090258",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -63,7 +62,7 @@
   },
   {
     "name": "Bridge Troll",
-    "id": "090758",
+    "id": "090358",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -92,7 +91,7 @@
   },
   {
     "name": "Caravan Guard",
-    "id": "090858",
+    "id": "090458",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -122,7 +121,7 @@
   },
   {
     "name": "Coin of the Realm",
-    "id": "091058",
+    "id": "090558",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -148,7 +147,7 @@
   },
   {
     "name": "Distant Lands",
-    "id": "091258",
+    "id": "090658",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -174,7 +173,7 @@
   },
   {
     "name": "Dungeon",
-    "id": "091358",
+    "id": "090758",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -202,7 +201,7 @@
   },
   {
     "name": "Duplicate",
-    "id": "091458",
+    "id": "090858",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -229,7 +228,7 @@
   },
   {
     "name": "Gear",
-    "id": "091858",
+    "id": "090958",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -257,7 +256,7 @@
   },
   {
     "name": "Giant",
-    "id": "091958",
+    "id": "091058",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -289,7 +288,7 @@
   },
   {
     "name": "Guide",
-    "id": "092058",
+    "id": "091158",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -317,7 +316,7 @@
   },
   {
     "name": "Haunted Woods",
-    "id": "092158",
+    "id": "091258",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -347,7 +346,7 @@
   },
   {
     "name": "Hireling",
-    "id": "092358",
+    "id": "091358",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -376,7 +375,7 @@
   },
   {
     "name": "Lost City",
-    "id": "092658",
+    "id": "091458",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -404,7 +403,7 @@
   },
   {
     "name": "Magpie",
-    "id": "092758",
+    "id": "091558",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -431,7 +430,7 @@
   },
   {
     "name": "Messenger",
-    "id": "092858",
+    "id": "091658",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -458,7 +457,7 @@
   },
   {
     "name": "Miser",
-    "id": "092958",
+    "id": "091758",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -484,7 +483,7 @@
   },
   {
     "name": "Page",
-    "id": "093158",
+    "id": "091858",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -512,7 +511,7 @@
   },
   {
     "name": "Treasure Hunter",
-    "id": "095558",
+    "id": "091958",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -544,7 +543,7 @@
   },
   {
     "name": "Warrior",
-    "id": "095758",
+    "id": "092058",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -579,7 +578,7 @@
   },
   {
     "name": "Hero",
-    "id": "092258",
+    "id": "092158",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -606,7 +605,7 @@
   },
   {
     "name": "Champion",
-    "id": "090958",
+    "id": "092258",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -634,7 +633,7 @@
   },
   {
     "name": "Peasant",
-    "id": "093358",
+    "id": "092358",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -664,7 +663,7 @@
   },
   {
     "name": "Soldier",
-    "id": "094758",
+    "id": "092458",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -696,7 +695,7 @@
   },
   {
     "name": "Fugitive",
-    "id": "091758",
+    "id": "092558",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -723,7 +722,7 @@
   },
   {
     "name": "Disciple",
-    "id": "091158",
+    "id": "092658",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -752,7 +751,7 @@
   },
   {
     "name": "Teacher",
-    "id": "095058",
+    "id": "092758",
     "box": "Adventures",
     "edition": "1",
     "supply": "Non-Supply",
@@ -780,7 +779,7 @@
   },
   {
     "name": "Port",
-    "id": "093658",
+    "id": "092858",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -807,7 +806,7 @@
   },
   {
     "name": "Ranger",
-    "id": "093958",
+    "id": "092958",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -832,7 +831,7 @@
   },
   {
     "name": "Ratcatcher",
-    "id": "094058",
+    "id": "093058",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -860,7 +859,7 @@
   },
   {
     "name": "Raze",
-    "id": "094158",
+    "id": "093158",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -880,7 +879,6 @@
       "engine_piece",
       "topdeck",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -889,7 +887,7 @@
   },
   {
     "name": "Relic",
-    "id": "094258",
+    "id": "093258",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -913,7 +911,7 @@
   },
   {
     "name": "Royal Carriage",
-    "id": "094358",
+    "id": "093358",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -939,7 +937,7 @@
   },
   {
     "name": "Storyteller",
-    "id": "094858",
+    "id": "093458",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -963,7 +961,7 @@
   },
   {
     "name": "Swamp Hag",
-    "id": "094958",
+    "id": "093558",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -993,7 +991,7 @@
   },
   {
     "name": "Transmogrify",
-    "id": "095358",
+    "id": "093658",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1024,7 +1022,7 @@
   },
   {
     "name": "Treasure Trove",
-    "id": "095658",
+    "id": "093758",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1048,7 +1046,7 @@
   },
   {
     "name": "Wine Merchant",
-    "id": "095858",
+    "id": "093858",
     "box": "Adventures",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1077,7 +1075,7 @@
   },
   {
     "name": "Alms",
-    "id": "090158",
+    "id": "093958",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1100,7 +1098,7 @@
   },
   {
     "name": "Ball",
-    "id": "090458",
+    "id": "094058",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1123,7 +1121,7 @@
   },
   {
     "name": "Bonfire",
-    "id": "090558",
+    "id": "094158",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1147,7 +1145,7 @@
   },
   {
     "name": "Borrow",
-    "id": "090658",
+    "id": "094258",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1170,7 +1168,7 @@
   },
   {
     "name": "Expedition",
-    "id": "091558",
+    "id": "094358",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1193,7 +1191,7 @@
   },
   {
     "name": "Ferry",
-    "id": "091658",
+    "id": "094458",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1216,7 +1214,7 @@
   },
   {
     "name": "Inheritance",
-    "id": "092458",
+    "id": "094558",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1240,7 +1238,7 @@
   },
   {
     "name": "Lost Arts",
-    "id": "092558",
+    "id": "094658",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1264,7 +1262,7 @@
   },
   {
     "name": "Mission",
-    "id": "093058",
+    "id": "094758",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1287,7 +1285,7 @@
   },
   {
     "name": "Pathfinding",
-    "id": "093258",
+    "id": "094858",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1311,7 +1309,7 @@
   },
   {
     "name": "Pilgrimage",
-    "id": "093458",
+    "id": "094958",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1334,7 +1332,7 @@
   },
   {
     "name": "Plan",
-    "id": "093558",
+    "id": "095058",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1362,7 +1360,7 @@
   },
   {
     "name": "Quest",
-    "id": "093758",
+    "id": "095158",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1386,7 +1384,7 @@
   },
   {
     "name": "Raid",
-    "id": "093858",
+    "id": "095258",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1409,7 +1407,7 @@
   },
   {
     "name": "Save",
-    "id": "094458",
+    "id": "095358",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1435,7 +1433,7 @@
   },
   {
     "name": "Scouting Party",
-    "id": "094558",
+    "id": "095458",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1462,7 +1460,7 @@
   },
   {
     "name": "Seaway",
-    "id": "094658",
+    "id": "095558",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1485,7 +1483,7 @@
   },
   {
     "name": "Trade",
-    "id": "095158",
+    "id": "095658",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1512,7 +1510,7 @@
   },
   {
     "name": "Training",
-    "id": "095258",
+    "id": "095758",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",
@@ -1535,7 +1533,7 @@
   },
   {
     "name": "Travelling Fair",
-    "id": "095458",
+    "id": "095858",
     "box": "Adventures",
     "edition": "1",
     "supply": "Landscape",

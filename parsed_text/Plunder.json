@@ -29,7 +29,7 @@
   },
   {
     "name": "Buried Treasure",
-    "id": "150486",
+    "id": "150286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Cabin Boy",
-    "id": "150686",
+    "id": "150386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -80,7 +80,6 @@
       "gain",
       "payload_piece",
       "trash",
-      "trash_for_benefit",
       "trash_self",
       "trash_to_gain"
     ],
@@ -90,7 +89,7 @@
   },
   {
     "name": "Cage",
-    "id": "150786",
+    "id": "150486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -112,7 +111,6 @@
       "gain_to_hand",
       "set_aside",
       "trash",
-      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -121,7 +119,7 @@
   },
   {
     "name": "Crew",
-    "id": "150986",
+    "id": "150586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -149,7 +147,7 @@
   },
   {
     "name": "Crucible",
-    "id": "151086",
+    "id": "150686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -176,7 +174,7 @@
   },
   {
     "name": "Cutthroat",
-    "id": "151286",
+    "id": "150786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -206,7 +204,7 @@
   },
   {
     "name": "Enlarge",
-    "id": "151686",
+    "id": "150886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -234,7 +232,7 @@
   },
   {
     "name": "Figurine",
-    "id": "152086",
+    "id": "150986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -262,7 +260,7 @@
   },
   {
     "name": "First Mate",
-    "id": "152186",
+    "id": "151086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -287,7 +285,7 @@
   },
   {
     "name": "Flagship",
-    "id": "152286",
+    "id": "151186",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -315,7 +313,7 @@
   },
   {
     "name": "Fortune Hunter",
-    "id": "152486",
+    "id": "151286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -342,7 +340,7 @@
   },
   {
     "name": "Frigate",
-    "id": "152686",
+    "id": "151386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -372,7 +370,7 @@
   },
   {
     "name": "Gondola",
-    "id": "152786",
+    "id": "151486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -400,7 +398,7 @@
   },
   {
     "name": "Grotto",
-    "id": "152886",
+    "id": "151586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -429,7 +427,7 @@
   },
   {
     "name": "Harbor Village",
-    "id": "153086",
+    "id": "151686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -456,7 +454,7 @@
   },
   {
     "name": "Jewelled Egg",
-    "id": "153686",
+    "id": "151786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -488,7 +486,7 @@
   },
   {
     "name": "King's Cache",
-    "id": "153986",
+    "id": "151886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -511,7 +509,7 @@
   },
   {
     "name": "Landing Party",
-    "id": "154086",
+    "id": "151986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -539,7 +537,7 @@
   },
   {
     "name": "Longship",
-    "id": "154286",
+    "id": "152086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -566,7 +564,7 @@
   },
   {
     "name": "Loot",
-    "id": "154386",
+    "id": "152186",
     "box": "Plunder",
     "edition": "Unknown",
     "supply": "Unknown",
@@ -587,7 +585,7 @@
   },
   {
     "name": "Amphora",
-    "id": "150286",
+    "id": "152286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -615,7 +613,7 @@
   },
   {
     "name": "Doubloons",
-    "id": "151486",
+    "id": "152386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -640,7 +638,7 @@
   },
   {
     "name": "Endless Chalice",
-    "id": "151586",
+    "id": "152486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -669,7 +667,7 @@
   },
   {
     "name": "Figurehead",
-    "id": "151986",
+    "id": "152586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -696,7 +694,7 @@
   },
   {
     "name": "Hammer",
-    "id": "152986",
+    "id": "152686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -720,7 +718,7 @@
   },
   {
     "name": "Insignia",
-    "id": "153386",
+    "id": "152786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -747,7 +745,7 @@
   },
   {
     "name": "Jewels",
-    "id": "153786",
+    "id": "152886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -774,7 +772,7 @@
   },
   {
     "name": "Orb",
-    "id": "155186",
+    "id": "152986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -801,7 +799,7 @@
   },
   {
     "name": "Prize Goat",
-    "id": "155986",
+    "id": "153086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -828,7 +826,7 @@
   },
   {
     "name": "Puzzle Box",
-    "id": "156186",
+    "id": "153186",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -854,7 +852,7 @@
   },
   {
     "name": "Sextant",
-    "id": "157186",
+    "id": "153286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -882,7 +880,7 @@
   },
   {
     "name": "Shield",
-    "id": "157386",
+    "id": "153386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -910,7 +908,7 @@
   },
   {
     "name": "Spell Scroll",
-    "id": "157786",
+    "id": "153486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -941,7 +939,7 @@
   },
   {
     "name": "Staff",
-    "id": "157886",
+    "id": "153586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -967,7 +965,7 @@
   },
   {
     "name": "Sword",
-    "id": "158186",
+    "id": "153686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Non-Supply",
@@ -995,7 +993,7 @@
   },
   {
     "name": "Mapmaker",
-    "id": "154686",
+    "id": "153786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1023,7 +1021,7 @@
   },
   {
     "name": "Maroon",
-    "id": "154786",
+    "id": "153886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1050,7 +1048,7 @@
   },
   {
     "name": "Mining Road",
-    "id": "154886",
+    "id": "153986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1079,7 +1077,7 @@
   },
   {
     "name": "Pendant",
-    "id": "155386",
+    "id": "154086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1103,7 +1101,7 @@
   },
   {
     "name": "Pickaxe",
-    "id": "155586",
+    "id": "154186",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1132,7 +1130,7 @@
   },
   {
     "name": "Pilgrim",
-    "id": "155686",
+    "id": "154286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1158,7 +1156,7 @@
   },
   {
     "name": "Quartermaster",
-    "id": "156286",
+    "id": "154386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1187,7 +1185,7 @@
   },
   {
     "name": "Rope",
-    "id": "156586",
+    "id": "154486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1217,7 +1215,7 @@
   },
   {
     "name": "Sack of Loot",
-    "id": "156786",
+    "id": "154586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1243,7 +1241,7 @@
   },
   {
     "name": "Search",
-    "id": "156986",
+    "id": "154686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1277,7 +1275,7 @@
   },
   {
     "name": "Secluded Shrine",
-    "id": "157086",
+    "id": "154786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1308,7 +1306,7 @@
   },
   {
     "name": "Shaman",
-    "id": "157286",
+    "id": "154886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1338,7 +1336,7 @@
   },
   {
     "name": "Silver Mine",
-    "id": "157586",
+    "id": "154986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1363,7 +1361,7 @@
   },
   {
     "name": "Siren",
-    "id": "157686",
+    "id": "155086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1396,7 +1394,7 @@
   },
   {
     "name": "Stowaway",
-    "id": "157986",
+    "id": "155186",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1426,7 +1424,7 @@
   },
   {
     "name": "Swamp Shacks",
-    "id": "158086",
+    "id": "155286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1451,7 +1449,7 @@
   },
   {
     "name": "Taskmaster",
-    "id": "158286",
+    "id": "155386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1480,7 +1478,7 @@
   },
   {
     "name": "Tools",
-    "id": "158486",
+    "id": "155486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1503,7 +1501,7 @@
   },
   {
     "name": "Trickster",
-    "id": "158586",
+    "id": "155586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1533,7 +1531,7 @@
   },
   {
     "name": "Wealthy Village",
-    "id": "158686",
+    "id": "155686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -1561,7 +1559,7 @@
   },
   {
     "name": "Avoid",
-    "id": "150386",
+    "id": "155786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1585,7 +1583,7 @@
   },
   {
     "name": "Bury",
-    "id": "150586",
+    "id": "155886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1609,7 +1607,7 @@
   },
   {
     "name": "Deliver",
-    "id": "151386",
+    "id": "155986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1636,7 +1634,7 @@
   },
   {
     "name": "Foray",
-    "id": "152386",
+    "id": "156086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1663,7 +1661,7 @@
   },
   {
     "name": "Invasion",
-    "id": "153586",
+    "id": "156186",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1690,7 +1688,7 @@
   },
   {
     "name": "Journey",
-    "id": "153886",
+    "id": "156286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1714,7 +1712,7 @@
   },
   {
     "name": "Launch",
-    "id": "154186",
+    "id": "156386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1740,7 +1738,7 @@
   },
   {
     "name": "Looting",
-    "id": "154486",
+    "id": "156486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1764,7 +1762,7 @@
   },
   {
     "name": "Maelstrom",
-    "id": "154586",
+    "id": "156586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1790,7 +1788,7 @@
   },
   {
     "name": "Mirror",
-    "id": "154986",
+    "id": "156686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1815,7 +1813,7 @@
   },
   {
     "name": "Peril",
-    "id": "155486",
+    "id": "156786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1843,7 +1841,7 @@
   },
   {
     "name": "Prepare",
-    "id": "155886",
+    "id": "156886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1869,7 +1867,7 @@
   },
   {
     "name": "Prosper",
-    "id": "156086",
+    "id": "156986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1893,7 +1891,7 @@
   },
   {
     "name": "Rush",
-    "id": "156686",
+    "id": "157086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1919,7 +1917,7 @@
   },
   {
     "name": "Scrounge",
-    "id": "156886",
+    "id": "157186",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1937,7 +1935,6 @@
       "engine_piece",
       "gain",
       "trash",
-      "trash_for_benefit",
       "trash_to_gain"
     ],
     "opponent_tags": [],
@@ -1946,7 +1943,7 @@
   },
   {
     "name": "Cheap",
-    "id": "150886",
+    "id": "157286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1969,7 +1966,7 @@
   },
   {
     "name": "Cursed",
-    "id": "151186",
+    "id": "157386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -1995,7 +1992,7 @@
   },
   {
     "name": "Fated",
-    "id": "151786",
+    "id": "157486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2019,7 +2016,7 @@
   },
   {
     "name": "Fawning",
-    "id": "151886",
+    "id": "157586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2043,7 +2040,7 @@
   },
   {
     "name": "Friendly",
-    "id": "152586",
+    "id": "157686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2067,7 +2064,7 @@
   },
   {
     "name": "Hasty",
-    "id": "153186",
+    "id": "157786",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2092,7 +2089,7 @@
   },
   {
     "name": "Inherited",
-    "id": "153286",
+    "id": "157886",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2115,7 +2112,7 @@
   },
   {
     "name": "Inspiring",
-    "id": "153486",
+    "id": "157986",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2138,7 +2135,7 @@
   },
   {
     "name": "Nearby",
-    "id": "155086",
+    "id": "158086",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2164,7 +2161,7 @@
   },
   {
     "name": "Patient",
-    "id": "155286",
+    "id": "158186",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2187,7 +2184,7 @@
   },
   {
     "name": "Pious",
-    "id": "155786",
+    "id": "158286",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2214,7 +2211,7 @@
   },
   {
     "name": "Reckless",
-    "id": "156386",
+    "id": "158386",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2238,7 +2235,7 @@
   },
   {
     "name": "Rich",
-    "id": "156486",
+    "id": "158486",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2262,7 +2259,7 @@
   },
   {
     "name": "Shy",
-    "id": "157486",
+    "id": "158586",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
@@ -2287,7 +2284,7 @@
   },
   {
     "name": "Tireless",
-    "id": "158386",
+    "id": "158686",
     "box": "Plunder",
     "edition": "1",
     "supply": "Landscape",
