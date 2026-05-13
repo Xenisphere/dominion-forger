@@ -15,12 +15,12 @@ function computeTags(text, types) {
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
-  if (/\+1 cards?/i.test(text) && !/card.*token/i.test(selfText)) tags.add('+card');
+  if (/\+1 cards?/i.test(text) && !/card(?! token)i.test(selfText)) tags.add('+card');
   else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
-  if (/\+1 actions?/i.test(text) && !/action.*token/i.test(selfText)) tags.add('+action');
+  if (/\+1 actions?/i.test(text) && !/action(?! token)/i.test(selfText)) tags.add('+action');
   else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
-  if (/\+\s*\(\d+\)/i.test(text) && !/(1).*token/i.test(selfText)) tags.add('+coins');
-  if (/\+\d+ buys?/i.test(text) && !/buy.*token/i.test(selfText)) tags.add('+buys');
+  if (/\+\s*\(\d+\)/i.test(text) && !/\(1\)(?! token)/i.test(selfText)) tags.add('+coins');
+  if (/\+\d+ buys?/i.test(text) && !/buys?(?! token)/i.test(selfText)) tags.add('+buys');
 
   // COST
   if (/cost.*less|costs? \(?[0-9]+\)? less|reduce.*cost/i.test(selfText)) tags.add('cost_reduction');
@@ -62,15 +62,15 @@ function computeTags(text, types) {
   if (/each other player|another player|each player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
   if (/\btrash(es)?\b/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
   if (/top of their deck|top of (?:each )?other player/i.test(oppSections)) tags.add('deck_attack');
-  if (/gains a Curse|gains a Ruins|gains a Copper/i.test(oppSections)) opp_tags.add('junking');
+  if (/gains? a Curse|gains? a Ruins|gains? a Copper/i.test(oppSections)) opp_tags.add('junking');
   if (/gain.*Copper|gain.*Curse|gain.*Ruins/i.test(selfText)) tags.add('self_junk');
   if (/reveals? (?:their )?hand/i.test(oppSections))  tags.add('hand_reveal');
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
   // TRASHING (self)
-  if (((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash *or/i.test(selfText)) || /trash.*choose.*:/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain'))) tags.add('trash_for_benefit');
+  if (((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash *or/i.test(selfText)) || /trash.*choose\s*:/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain'))) tags.add('trash_for_benefit');
   if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
-  if (/trash.*gain|trash.*to gain/i.test(selfText)) tags.add('trash_to_gain');
+  if (/trash.*gain|trash.*to gain/i.test(selfText) && !/trash.*or.*gain/i.test(selfText)) tags.add('trash_to_gain');
 
   // GAINING (self)
   if (/gain.*to your hand|gain.*into your hand/i.test(selfText)) tags.add('gain_to_hand');
