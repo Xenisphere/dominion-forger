@@ -15,7 +15,7 @@ function computeTags(text, types) {
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
-  if (/\+1 cards?/i.test(text) && !/card(?! token)i.test(selfText)) tags.add('+card');
+  if (/\+1 cards?/i.test(text) && !/card(?! token)/i.test(selfText)) tags.add('+card');
   else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
   if (/\+1 actions?/i.test(text) && !/action(?! token)/i.test(selfText)) tags.add('+action');
   else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
