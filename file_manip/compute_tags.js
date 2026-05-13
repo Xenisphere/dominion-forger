@@ -43,7 +43,7 @@ function computeTags(text, types) {
   if (/look at the top|top \d+ cards of their deck/i.test(oppSections)) opp_tags.add('scry');
   if (/onto their deck|top of their deck/i.test(oppSections)) opp_tags.add('topdeck');
   if (/\btrash(es)?\b/i.test(oppSections)) opp_tags.add('trash');
-  if (/gain a|gain an/i.test(oppSections)) opp_tags.add('gain');
+  if (/gain a|gain an/i.test(oppSections) && !/when) opp_tags.add('gain');
   if (/discard/i.test(oppSections)) opp_tags.add('discard');
 
   // SELF REVEAL (only if selfText contains reveal, not just oppSections)
@@ -68,7 +68,7 @@ function computeTags(text, types) {
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
   // TRASHING (self)
-  if ((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash *or/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain'))) tags.add('trash_for_benefit');
+  if (((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash *or/i.test(selfText)) || /trash.*choose.*:/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain'))) tags.add('trash_for_benefit');
   if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
   if (/trash.*gain|trash.*to gain/i.test(selfText)) tags.add('trash_to_gain');
 
