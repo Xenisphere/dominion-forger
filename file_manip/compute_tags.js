@@ -10,10 +10,10 @@ function computeTags(text, types) {
 
   const isAction = typeList.some(t => t.includes('action'));
 
-  const hasRealCard = /\+1 cards?(?! token)/i.test(text) && !/\+1 card token/i.test(text);
-  const hasRealAction = /\+1 actions?(?! token)/i.test(text) && !/\+1 action token/i.test(text);
-  const hasRealCoins = /\+\s*\(\d+\)(?! token)/i.test(text) && !/\+\(\d+\) token/i.test(text);
-  const hasRealBuys = /\+\d+ buys?(?! token)/i.test(text) && !/\+1 buy token/i.test(text);
+  const hasRealCoins = /\+\s*\(\d+\)(?!\s*token)/i.test(text);
+  const hasRealCard = /\+1 card(?!\s*token)/i.test(text);
+  const hasRealAction = /\+1 action(?!\s*token)/i.test(text);
+  const hasRealBuys = /\+\d+ buy(?!\s*token)/i.test(text);
 
   // CARD GIVES
   if (/\+\d+ (?:victory token|\{)/i.test(selfText)) tags.add('+vp_tokens');
