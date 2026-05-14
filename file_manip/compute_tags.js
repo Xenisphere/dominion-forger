@@ -81,8 +81,30 @@ function computeTags(text, types) {
   if (/reveals? (?:their )?hand/i.test(oppSections))  tags.add('hand_reveal');
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
-  // TRASHING (self)
-  if (((tags.has('trash') && !/trashing token/i.test(selfText) && !/or trash/i.test(selfText) /*&& !/trash.*;.*or/i.test(selfText)*/) || /trash.*choose/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain') || /trash.*into your hand/i.test(selfText))) tags.add('trash_for_benefit');
+  // TRASHING (self) tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain')
+  if (
+    (
+      (
+        tags.has('trash') 
+        && !/trashing token/i.test(selfText) 
+        && !/or trash/i.test(selfText) 
+        /*&& !/trash.*;.*or/i.test(selfText)*/
+      ) || /trash.*choose/i.test(selfText)
+    ) && 
+    (
+      /trash.*\+\d+ card/i.test(selfText) 
+      || /trash.*\+\d+ action/i.test(selfText) 
+      || /trash.*\+\d+ buy/i.test(selfText) 
+      || /trash.*\+\(\d+\)/i.test(selfText) 
+      || /trash.*\+\d+ coffer/i.test(selfText) 
+      || /trash.*\+\d+ villager/i.test(selfText) 
+      || /trash.*\+\{\d+\}/i.test(selfText) 
+      || /trash.*\+\d+ favor/i.test(selfText) 
+      || /trash.*gain/i.test(selfText) 
+      || /trash.*into your hand/i.test(selfText)
+    )
+  ) tags.add('trash_for_benefit');
+  
   if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
   if (/trash.*gain|trash.*to gain/i.test(selfText) && !/trash.*or.*gain/i.test(selfText)) tags.add('trash_to_gain');
 
