@@ -82,7 +82,7 @@ function computeTags(text, types) {
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
   // TRASHING (self)
-  if (((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash.*or/i.test(selfText)) || /trash.*choose\s*:/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain') || /trash.*into your hand/i.test(selfText))) tags.add('trash_for_benefit');
+  if (((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash.*;.*or/i.test(selfText)) || /trash.*choose\s*:/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain') || /trash.*into your hand/i.test(selfText))) tags.add('trash_for_benefit');
   if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
   if (/trash.*gain|trash.*to gain/i.test(selfText) && !/trash.*or.*gain/i.test(selfText)) tags.add('trash_to_gain');
 
