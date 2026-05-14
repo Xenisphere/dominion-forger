@@ -143,9 +143,11 @@ function computeTags(text, types) {
   const hasCards = tags.has('+cards');
   const hasCard  = tags.has('+card');
   const hasAnyDraw = hasCard || hasCards || /draw until|reveal.*put.*into your hand/i.test(selfText);
-  
+
+  if (hasAnyDraw || hasAnyAction || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
   if (/move your \+1 action token/i.test(text)) tags.add('engine_piece');
   if (/move your \+1 card token/i.test(text)) tags.add('engine_piece');
+  if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (/move your.*\+\(\d+\) token/i.test(text)) { tags.add('+coins'); tags.add('payload_piece'); }
   if (/move your \+1 buy token/i.test(text)) { tags.add('+buys'); tags.add('payload_piece'); }
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
