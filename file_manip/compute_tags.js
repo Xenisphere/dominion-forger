@@ -13,20 +13,12 @@ function computeTags(text, types) {
   const isTokenList = /move your.*token|your \+1 card.*\+1 action.*token|\+1 card,.*\+1 action.*token/i.test(text);
   
   if (!isTokenList) {
-    /*
     if (/\+1 card(?!\s*token)/i.test(text)) tags.add('+card');
     else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
     if (/\+1 action(?!\s*token)/i.test(text)) tags.add('+action');
     else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
     if (/\+\s*\(\d+\)(?!\s*token)/i.test(text)) tags.add('+coins');
     if (/\+\d+ buys?(?!\s*token)/i.test(text)) tags.add('+buys');
-    */
-    if (/\+1 card/i.test(text)) tags.add('+card');
-    else if (/\+\d+ cards/i.test(text)) tags.add('+cards');
-    if (/\+1 action/i.test(text)) tags.add('+action');
-    else if (/\+\d+ actions/i.test(text)) tags.add('+actions');
-    if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
-    if (/\+\d+ buys?/i.test(text)) tags.add('+buys');
   }
 
   // CARD GIVES
@@ -36,6 +28,12 @@ function computeTags(text, types) {
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
   
   /*
+    if (/\+1 card/i.test(text)) tags.add('+card');
+    else if (/\+\d+ cards/i.test(text)) tags.add('+cards');
+    if (/\+1 action/i.test(text)) tags.add('+action');
+    else if (/\+\d+ actions/i.test(text)) tags.add('+actions');
+    if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
+    if (/\+\d+ buys?/i.test(text)) tags.add('+buys');
   */
   
   // COST
@@ -123,11 +121,13 @@ function computeTags(text, types) {
   const hasCards = tags.has('+cards');
   const hasCard  = tags.has('+card');
   const hasAnyDraw = hasCard || hasCards || /draw until|reveal.*put.*into your hand/i.test(selfText);
-
-  if (hasAnyDraw || hasAnyAction || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
+  
+  if (/move your \+1 action token/i.test(text)) tags.add('engine_piece');
+  if (/move your \+1 card token/i.test(text)) tags.add('engine_piece');
+  if (/move your.*\+\(\d+\) token/i.test(text)) { tags.add('+coins'); tags.add('payload_piece'); }
+  if (/move your \+1 buy token/i.test(text)) { tags.add('+buys'); tags.add('payload_piece'); }
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
-  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from play\b|when.*play|after.*play/i.test(selfText)) tags.add('plays_actions');
-  if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
+  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText)) tags.add('plays_actions');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (/draw/i.test(selfText)) tags.add('draw');
 
