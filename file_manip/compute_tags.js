@@ -73,7 +73,7 @@ function computeTags(text, types) {
   if (/when you buy/i.test(selfText)) tags.add('on_buy');
 
   // ATTACKS
-  if (/each other player|another player|each player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
+  if (/each other player|another player|each player|any other player/i.test(t) && typeList.some(t => t.includes('attack'))) tags.add('attack');
   if (/\btrash(es)?\b/i.test(oppSections) && typeList.some(t => t.includes('attack'))) tags.add('trash_attack');
   if (/top of their deck|top of (?:each )?other player/i.test(oppSections)) tags.add('deck_attack');
   if (/gains? a Curse|gains? a Ruins|gains? a Copper/i.test(oppSections)) opp_tags.add('junking');
@@ -82,7 +82,7 @@ function computeTags(text, types) {
   if (/all players|everyone|each player/i.test(t)) tags.add('global_effect');
 
   // TRASHING (self)
-  if (((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash *or/i.test(selfText)) || /trash.*choose\s*:/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain'))) tags.add('trash_for_benefit');
+  if (((tags.has('trash') && !/or.*trash/i.test(selfText) && !/trash.*or/i.test(selfText)) || /trash.*choose\s*:/i.test(selfText)) && (tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain'))) tags.add('trash_for_benefit');
   if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
   if (/trash.*gain|trash.*to gain/i.test(selfText) && !/trash.*or.*gain/i.test(selfText)) tags.add('trash_to_gain');
 
