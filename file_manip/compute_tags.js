@@ -13,12 +13,20 @@ function computeTags(text, types) {
   const isTokenList = /move your.*token|your \+1 card.*\+1 action.*token|\+1 card,.*\+1 action.*token/i.test(text);
   
   if (!isTokenList) {
+    /*
     if (/\+1 card(?!\s*token)/i.test(text)) tags.add('+card');
     else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
     if (/\+1 action(?!\s*token)/i.test(text)) tags.add('+action');
     else if (/\+\d+ actions?/i.test(text)) tags.add('+actions');
     if (/\+\s*\(\d+\)(?!\s*token)/i.test(text)) tags.add('+coins');
     if (/\+\d+ buys?(?!\s*token)/i.test(text)) tags.add('+buys');
+    */
+    if (/\+1 card/i.test(text)) tags.add('+card');
+    else if (/\+\d+ cards/i.test(text)) tags.add('+cards');
+    if (/\+1 action/i.test(text)) tags.add('+action');
+    else if (/\+\d+ actions/i.test(text)) tags.add('+actions');
+    if (/\+\s*\(\d+\)/i.test(text)) tags.add('+coins');
+    if (/\+\d+ buys?/i.test(text)) tags.add('+buys');
   }
 
   // CARD GIVES
@@ -28,12 +36,6 @@ function computeTags(text, types) {
   if (/\+\d+ favors?/i.test(selfText)) tags.add('+favors');
   
   /*
-  if (/\+1 card/i.test(text) && /card(?! token)/i.test(selfText)) tags.add('+card');
-  else if (/\+\d+ cards/i.test(text)) tags.add('+cards');
-  if (/\+1 action/i.test(text) && /action(?! token)/i.test(selfText)) tags.add('+action');
-  else if (/\+\d+ actions/i.test(text)) tags.add('+actions');
-  if (/\+\s*\(\d+\)/i.test(text) && /\+\s*\(\d+\)(?! token)/i.test(selfText)) tags.add('+coins');
-  if (/\+\d+ buys?/i.test(text) && /buys?(?! token)/i.test(selfText)) tags.add('+buys');
   */
   
   // COST
