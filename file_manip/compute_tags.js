@@ -105,7 +105,7 @@ function computeTags(text, types) {
 
   // RULE MODIFIERS
   if (/take an extra turn|extra turn/i.test(selfText)) tags.add('extra_turn');
-  if (/each of your turns/i.test(selfText)) tags.add('extra_buy_phase');
+  //if (/each of your turns/i.test(selfText)) tags.add('extra_buy_phase');
 
   // REACTIONS
   if (/when.*trash/i.test(t) && typeList.some(t => t.includes('reaction'))) tags.add('reaction_trash');
