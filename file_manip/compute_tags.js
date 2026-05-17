@@ -149,7 +149,7 @@ function computeTags(text, types) {
   if (/move your \+1 card token/i.test(text)) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
   if (/move your.*\+\(\d+\) token/i.test(text)) tags.add('payload_piece');
-  if (/move your \+1 buy token/i.test(text)) { tags.add('+buys'); tags.add('payload_piece'); }
+  if (/move your \+1 buy token/i.test(text)) tags.add('payload_piece');
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
   else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText) && !/after.*play/i.test(selfText)) tags.add('plays_actions');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
