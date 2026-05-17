@@ -114,7 +114,7 @@ function computeTags(text, types) {
   if (/gain\b.*(?:not in the supply|non-supply)|(?:not in the supply|non-supply).*\bgain/i.test(selfText)) tags.add('gain_non_supply');
 
   // DECK CONTROL (self)
-  if (/look at the top|reveal.*top|top \d+ cards of your deck|reveal.*until/i.test(selfText)) tags.add('scry');
+  if (/look.*the top|reveal.*top|top \d+ cards of your deck|reveal.*until/i.test(selfText)) tags.add('scry');
   if (/search your deck|look through your deck/i.test(selfText)) tags.add('search_deck');
   if (/reorder|in any order|rearrange/i.test(selfText)) tags.add('reorder');
 
@@ -153,7 +153,7 @@ function computeTags(text, types) {
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
   else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText) && !/after you play/i.test(selfText) && !/when.*play/i.test(selfText)) tags.add('plays_actions');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
-  if (/draw/i.test(selfText)) tags.add('draw');
+  if (/draw/i.test(selfText) && ! /after drawing/i.test(selfText)) tags.add('draw');
   if (/\(This is not in the Supply.\)/i.test(selfText)) tags.add('non_supply');
 
   // CLEANUP
