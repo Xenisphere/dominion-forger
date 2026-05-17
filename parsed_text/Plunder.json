@@ -450,7 +450,6 @@
       "+coins",
       "engine_piece",
       "payload_piece",
-      "plays_actions",
       "village"
     ],
     "opponent_tags": [],
@@ -2129,7 +2128,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "plays_actions"
+      "utility"
     ],
     "opponent_tags": [],
     "dependencies": [],

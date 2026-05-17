@@ -1128,8 +1128,7 @@
     "subtypes": [],
     "tags": [
       "+action",
-      "engine_piece",
-      "plays_actions"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],

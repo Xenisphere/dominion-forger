@@ -138,7 +138,6 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "plays_actions",
       "tavern_mat",
       "village"
     ],
@@ -768,7 +767,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "gain_non_supply",
       "payload_piece",
       "tavern_mat",
@@ -932,7 +930,6 @@
     "tags": [
       "+action",
       "engine_piece",
-      "plays_actions",
       "tavern_mat"
     ],
     "opponent_tags": [],
@@ -1481,7 +1478,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "+buys",
       "gain",
       "payload_piece"
     ],
@@ -1533,7 +1529,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
       "payload_piece"
     ],
     "opponent_tags": [],
