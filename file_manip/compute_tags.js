@@ -12,6 +12,7 @@ function computeTags(text, types) {
 
   const isTokenList = /move your.*token|your \+1 card.*\+1 action.*token|\+1 card,.*\+1 action.*token/i.test(text);
   
+  // CARD GIVES
   if (!isTokenList) {
     if (/\+1 card(?!\s*token)/i.test(text)) tags.add('+card');
     else if (/\+\d+ cards?/i.test(text)) tags.add('+cards');
@@ -21,7 +22,6 @@ function computeTags(text, types) {
     if (/\+\d+ buys?(?!\s*token)/i.test(text)) tags.add('+buys');
   }
 
-  // CARD GIVES
   if (/\+\d+ (?:victory token|\{)/i.test(selfText)) tags.add('+vp_tokens');
   if (/\+\d+ villagers?/i.test(selfText)) tags.add('+villagers');
   if (/\+\d+ coffers?/i.test(selfText)) tags.add('+coffers');
@@ -45,7 +45,7 @@ function computeTags(text, types) {
   // CARD MOVEMENT (self)
   if (/gain a|gain an|gain up to|gains a|gain.*card/i.test(selfText) && !/other player gains/i.test(selfText)) tags.add('gain');
   if (/onto your deck|top of your deck|put.*on top/i.test(selfText))  tags.add('topdeck');
-  if (/discard(?! pile| them afterwards)/i.test(selfText)) tags.add('discard');
+  if (/discard(?! pile| them afterwards)/i.test(selfText) && !/when you discard/i.test(selfText)) tags.add('discard');
   if (/set (it |this |them )?aside/i.test(selfText)) tags.add('set_aside');
   if (/\btrash(es)?\b/i.test(selfText)) tags.add('trash');
   if (/exchange/i.test(selfText)) tags.add('exchange');
@@ -85,23 +85,23 @@ function computeTags(text, types) {
   if (
     (
       (
-        tags.has('trash') 
-        && !/trashing token/i.test(selfText) 
-        && !/or trash/i.test(selfText) 
-        /*&& !/trash.*;.*or/i.test(selfText)*/
+        tags.has('trash')
+        && !/trashing token/i.test(selfText)
       ) || /trash.*choose/i.test(selfText)
-    ) && 
+    ) &&
     (
-      /trash.*\+\d+ card/i.test(selfText) 
-      || /trash.*\+\d+ action/i.test(selfText) 
-      || /trash.*\+\d+ buy/i.test(selfText) 
-      || /trash.*\+\(\d+\)/i.test(selfText) 
-      || /trash.*\+\d+ coffer/i.test(selfText) 
-      || /trash.*\+\d+ villager/i.test(selfText) 
-      || /trash.*\+\{\d+\}/i.test(selfText) 
-      || /trash.*\+\d+ favor/i.test(selfText) 
-      || /trash.*gain/i.test(selfText) 
+      /trash.*\+\d+ card/i.test(selfText)
+      || /trash.*\+\d+ action/i.test(selfText)
+      || /trash.*\+\d+ buy/i.test(selfText)
+      || /trash.*\+\(\d+\)/i.test(selfText)
+      || /trash.*\+\d+ coffer/i.test(selfText)
+      || /trash.*\+\d+ villager/i.test(selfText)
+      || /trash.*\+\{\d+\}/i.test(selfText)
+      || /trash.*\+\d+ favor/i.test(selfText)
+      || /trash.*gain/i.test(selfText)
       || /trash.*into your hand/i.test(selfText)
+      || /when you gain.*trash|gain.*may trash/i.test(selfText)
+      || /choose one.*trash|or trash a/i.test(selfText)
     )
   ) tags.add('trash_for_benefit');
   
@@ -111,7 +111,7 @@ function computeTags(text, types) {
   // GAINING (self)
   if (/gain.*to your hand|gain.*into your hand/i.test(selfText)) tags.add('gain_to_hand');
   if (/gain.*onto your deck|gain.*to your deck/i.test(selfText)) tags.add('gain_to_deck');
-  if (/not in the supply|non-supply/i.test(selfText)) tags.add('gain_non_supply');
+  if (/gain\b.*(?:not in the supply|non-supply)|(?:not in the supply|non-supply).*\bgain/i.test(selfText)) tags.add('gain_non_supply');
 
   // DECK CONTROL (self)
   if (/look at the top|reveal.*top|top \d+ cards of your deck|reveal.*until/i.test(selfText)) tags.add('scry');
@@ -151,9 +151,10 @@ function computeTags(text, types) {
   if (/move your.*\+\(\d+\) token/i.test(text)) tags.add('payload_piece');
   if (/move your \+1 buy token/i.test(text)) tags.add('payload_piece');
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
-  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText) && !/after.*play/i.test(selfText)) tags.add('plays_actions');
+  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText) && !/after you play/i.test(selfText) && !/when.*play/i.test(selfText)) tags.add('plays_actions');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (/draw/i.test(selfText)) tags.add('draw');
+  if (/\(This is not in the Supply.\)/i.test(selfText)) tags.add('non_supply');
 
   // CLEANUP
   if (tags.has('attack') && (opp_tags.has('discard') || (tags.has('discard') && tags.has('global_effect')))) {
