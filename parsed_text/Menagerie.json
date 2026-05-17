@@ -434,7 +434,7 @@
       "+action",
       "+cards",
       "engine_piece",
-      "gain_non_supply",
+      "non_supply",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -818,11 +818,9 @@
     "subtypes": [],
     "tags": [
       "+card",
-      "discard",
       "duration",
       "engine_piece",
       "on_discard",
-      "plays_actions",
       "village"
     ],
     "opponent_tags": [],
@@ -1432,7 +1430,6 @@
     "subtypes": [],
     "tags": [
       "+action",
-      "discard",
       "engine_piece",
       "on_discard",
       "topdeck"

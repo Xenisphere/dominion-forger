@@ -23,7 +23,8 @@
       "gain",
       "payload_piece",
       "terminal",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -500,7 +501,6 @@
     "subtypes": [],
     "tags": [
       "cantrip",
-      "discard",
       "engine_piece",
       "exchange",
       "on_discard"
@@ -529,11 +529,11 @@
     "tags": [
       "+action",
       "+coins",
-      "discard",
       "engine_piece",
       "exchange",
       "gain",
       "gain_non_supply",
+      "non_supply",
       "on_discard",
       "payload_piece"
     ],
@@ -565,7 +565,7 @@
       "discard_attack",
       "engine_piece",
       "exchange",
-      "gain_non_supply",
+      "non_supply",
       "on_discard",
       "terminal",
       "trash_attack"
@@ -624,7 +624,7 @@
       "+action",
       "duration",
       "engine_piece",
-      "gain_non_supply",
+      "non_supply",
       "reaction_attack"
     ],
     "opponent_tags": [],
@@ -651,7 +651,6 @@
     "tags": [
       "+buys",
       "+coins",
-      "discard",
       "exchange",
       "on_discard",
       "payload_piece",
@@ -684,7 +683,7 @@
       "attack",
       "discard_attack",
       "exchange",
-      "gain_non_supply",
+      "non_supply",
       "on_discard",
       "payload_piece",
       "terminal"
@@ -738,11 +737,11 @@
     ],
     "subtypes": [],
     "tags": [
-      "discard",
       "engine_piece",
       "exchange",
       "gain",
       "gain_non_supply",
+      "non_supply",
       "on_discard"
     ],
     "opponent_tags": [],
@@ -767,7 +766,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain_non_supply",
+      "non_supply",
       "payload_piece",
       "tavern_mat",
       "terminal"
@@ -877,6 +876,7 @@
       "+action",
       "discard",
       "engine_piece",
+      "scry",
       "topdeck",
       "trash",
       "trash_for_benefit",
@@ -1258,8 +1258,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "engine_piece",
-      "plays_actions"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1426,7 +1425,6 @@
     "subtypes": [],
     "tags": [
       "+buys",
-      "draw",
       "payload_piece",
       "set_aside"
     ],

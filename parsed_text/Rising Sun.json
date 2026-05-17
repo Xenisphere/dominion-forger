@@ -1055,8 +1055,7 @@
     "subtypes": [],
     "tags": [
       "cantrip",
-      "engine_piece",
-      "plays_actions"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1128,7 +1127,8 @@
     "subtypes": [],
     "tags": [
       "+action",
-      "engine_piece"
+      "engine_piece",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1224,7 +1224,6 @@
     "subtypes": [],
     "tags": [
       "+buys",
-      "discard",
       "on_discard",
       "payload_piece"
     ],
@@ -1277,7 +1276,6 @@
     "tags": [
       "gain",
       "on_gain",
-      "plays_actions",
       "set_aside"
     ],
     "opponent_tags": [],

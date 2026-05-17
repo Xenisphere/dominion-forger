@@ -193,7 +193,8 @@
       "self_junk",
       "terminal",
       "topdeck",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -423,7 +424,8 @@
       "gain_to_deck",
       "terminal",
       "topdeck",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -476,7 +478,7 @@
     "tags": [
       "+card",
       "engine_piece",
-      "gain_non_supply",
+      "non_supply",
       "village"
     ],
     "opponent_tags": [],
@@ -1462,6 +1464,7 @@
       "reaction_trash",
       "terminal",
       "trash",
+      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -1539,8 +1542,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain_non_supply",
-      "plays_actions",
+      "non_supply",
       "uses_spoils"
     ],
     "opponent_tags": [],
@@ -1631,7 +1633,6 @@
       "discard_attack",
       "engine_piece",
       "gain",
-      "plays_actions",
       "trash",
       "trash_for_benefit",
       "trash_self",
@@ -1664,7 +1665,7 @@
       "attack",
       "discard_attack",
       "engine_piece",
-      "gain_non_supply",
+      "non_supply",
       "payload_piece",
       "terminal",
       "trash",

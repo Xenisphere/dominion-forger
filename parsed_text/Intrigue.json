@@ -178,7 +178,6 @@
     "tags": [
       "+cards",
       "discard",
-      "draw",
       "engine_piece",
       "reaction_attack",
       "village"
@@ -709,7 +708,8 @@
       "engine_piece",
       "payload_piece",
       "terminal",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],

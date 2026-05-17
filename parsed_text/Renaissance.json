@@ -70,7 +70,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "discard",
       "on_discard",
       "topdeck"
     ],
@@ -157,7 +156,8 @@
       "on_gain",
       "payload_piece",
       "self_junk",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -214,6 +214,7 @@
       "payload_piece",
       "terminal",
       "trash",
+      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -658,6 +659,7 @@
       "payload_piece",
       "terminal",
       "trash",
+      "trash_for_benefit",
       "trash_self"
     ],
     "opponent_tags": [],
@@ -1133,8 +1135,7 @@
     "tags": [
       "each_turn",
       "gain",
-      "on_gain",
-      "plays_actions"
+      "on_gain"
     ],
     "opponent_tags": [],
     "dependencies": [],

@@ -553,7 +553,8 @@
       "on_gain",
       "reveal",
       "terminal",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -934,7 +935,8 @@
       "reveal",
       "terminal",
       "topdeck",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],

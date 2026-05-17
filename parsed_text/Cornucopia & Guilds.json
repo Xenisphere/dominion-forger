@@ -210,7 +210,6 @@
       "+card",
       "engine_piece",
       "on_gain",
-      "plays_actions",
       "set_aside",
       "village"
     ],
@@ -667,7 +666,7 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "gain_non_supply",
+      "non_supply",
       "plays_actions"
     ],
     "opponent_tags": [],
@@ -696,6 +695,7 @@
       "+coins",
       "engine_piece",
       "gain_non_supply",
+      "non_supply",
       "payload_piece",
       "village"
     ],
@@ -726,6 +726,7 @@
       "engine_piece",
       "gain",
       "gain_non_supply",
+      "non_supply",
       "payload_piece",
       "village"
     ],
@@ -753,7 +754,7 @@
     "tags": [
       "+card",
       "engine_piece",
-      "gain_non_supply",
+      "non_supply",
       "terminal"
     ],
     "opponent_tags": [],
@@ -780,7 +781,7 @@
     "tags": [
       "+coffers",
       "+coins",
-      "gain_non_supply",
+      "non_supply",
       "payload_piece"
     ],
     "opponent_tags": [],
@@ -807,7 +808,7 @@
     "tags": [
       "+buys",
       "cost_reduction",
-      "gain_non_supply",
+      "non_supply",
       "payload_piece",
       "terminal"
     ],
@@ -1122,6 +1123,7 @@
       "gain",
       "gain_non_supply",
       "gain_to_deck",
+      "non_supply",
       "topdeck"
     ],
     "opponent_tags": [],
@@ -1147,7 +1149,7 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "gain_non_supply",
+      "non_supply",
       "payload_piece"
     ],
     "opponent_tags": [],
@@ -1179,6 +1181,7 @@
       "engine_piece",
       "gain",
       "gain_non_supply",
+      "non_supply",
       "terminal"
     ],
     "opponent_tags": [
@@ -1207,7 +1210,7 @@
     "tags": [
       "+buys",
       "cost_reduction",
-      "gain_non_supply",
+      "non_supply",
       "payload_piece",
       "terminal"
     ],
@@ -1238,6 +1241,7 @@
       "engine_piece",
       "gain",
       "gain_non_supply",
+      "non_supply",
       "payload_piece",
       "village"
     ],

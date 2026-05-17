@@ -666,8 +666,8 @@
       "gain",
       "on_gain",
       "payload_piece",
-      "plays_actions",
-      "trash"
+      "trash",
+      "trash_for_benefit"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -921,7 +921,6 @@
     "tags": [
       "+coins",
       "cantrip",
-      "discard",
       "engine_piece",
       "gain",
       "gain_to_deck",
