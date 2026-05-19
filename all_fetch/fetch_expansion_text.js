@@ -325,6 +325,22 @@ async function main() {
       fs.writeFileSync(outPath, JSON.stringify(results, null, 2), 'utf-8');
       console.log(`[SAVED] parsed_text/${expansionName}.json (${results.length} cards)`);
 
+      // After all cards in expansion are parsed into results[]
+const nonSupplyNames = new Set(results.filter(c => c.supply === 'Non-Supply').map(c => c.name));
+
+for (const card of results) {
+  const gainNonSupply = [...nonSupplyNames].some(name => {
+    const pattern = new RegExp(`gain a ${name}|gain an ${name}|gain.*${name}`, 'i');
+    return pattern.test(card.text) && !/exchange.*${name}/i.test(card.text);
+  });
+  if (gainNonSupply) {
+    if (!card.tags.includes('gain_non_supply')) card.tags.push('gain_non_supply');
+  } else {
+    card.tags = card.tags.filter(t => t !== 'gain_non_supply');
+  }
+  card.tags.sort();
+}
+
       if (failed.length > 0) {
         console.log(`Failed (${failed.length}): ${failed.join(', ')}`);
       }
