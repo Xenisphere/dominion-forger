@@ -31,6 +31,8 @@ function cleanText(text) {
     .replace(/<\/p\s*>/gi, ' ')
     .replace(/<p\s*\/?>/gi, ' ')
     .replace(/<\/?[a-zA-Z][^>]*>/g, ' ')
+    .replace(/[–\-]1\s+card/gi, '-1card')
+    if (word === '-1card') return '-1card';
     .split(/\s+/)
     .map(word => {
       if (word === '|') return word;
