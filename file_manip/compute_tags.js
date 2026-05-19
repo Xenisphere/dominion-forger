@@ -57,7 +57,7 @@ function computeTags(text, types) {
   if (/look at the top|top \d+ cards of their deck/i.test(oppSections)) opp_tags.add('scry');
   if (/onto their deck|top of their deck/i.test(oppSections)) opp_tags.add('topdeck');
   if (/\btrash(es)?\b/i.test(oppSections)) opp_tags.add('trash');
-  if (/gain a|gain an/i.test(oppSections)) opp_tags.add('gain');
+  if (/gain a|gain an|gain up to|gains a|gain.*card/i.test(selfText) && !/other player gains/i.test(selfText) && !/\(when you gain/i.test(selfText)) tags.add('gain');
   if (/discard/i.test(oppSections)) opp_tags.add('discard');
 
   // SELF REVEAL (only if selfText contains reveal, not just oppSections)
@@ -151,7 +151,7 @@ function computeTags(text, types) {
   if (/move your.*\+\(\d+\) token/i.test(text)) tags.add('payload_piece');
   if (/move your \+1 buy token/i.test(text)) tags.add('payload_piece');
   if (isAction && !hasAnyAction && !/play.*action.*twice|play.*twice|play it/i.test(selfText)) tags.add('terminal');
-  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText) && !/after you play/i.test(selfText) && !/when.*play/i.test(selfText)) tags.add('plays_actions');
+  else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText) && !/after you play/i.test(selfText) && !/when you discard.*from play/i.test(selfText)) tags.add('plays_actions');
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (/draw/i.test(selfText) && ! /after drawing/i.test(selfText)) tags.add('draw');
   if (/\(This is not in the Supply.\)/i.test(selfText)) tags.add('non_supply');
