@@ -32,9 +32,9 @@ function cleanText(text) {
     .replace(/<p\s*\/?>/gi, ' ')
     .replace(/<\/?[a-zA-Z][^>]*>/g, ' ')
     .replace(/{{nowrap|–1 Card}}/gi, '-1 Card')
-    if (word === '-1 Card') return '-1 Card';
     .split(/\s+/)
     .map(word => {
+      if (word === '-1 Card') return '-1 Card';
       if (word === '|') return word;
       if (/^\d+$/.test(word)) return word;
       word = word.replace(/^[^a-zA-Z0-9;:.,!?()\[\]{}<>+_]+|[^a-zA-Z0-9;:.,!?()\[\]{}<>_]+$/g, '');
