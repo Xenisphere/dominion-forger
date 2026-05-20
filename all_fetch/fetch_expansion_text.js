@@ -31,7 +31,7 @@ function cleanText(text) {
     .replace(/<\/p\s*>/gi, ' ')
     .replace(/<p\s*\/?>/gi, ' ')
     .replace(/<\/?[a-zA-Z][^>]*>/g, ' ')
-    .replace(/{{nowrap|–1 Card}}/gi, '-1 Card')
+    .replace(/[–\-]1\s+card/gi, '-1card')
     .split(/\s+/)
     .map(word => {
       if (word === '-1 Card') return '-1 Card';
