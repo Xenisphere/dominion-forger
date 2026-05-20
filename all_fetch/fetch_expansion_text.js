@@ -13,7 +13,7 @@ function cleanText(text) {
   return text
     .replace(/{{VP\|'{0,3}(\+?\d+)'{0,3}[^}]*}}/gi, (_, n) => n.startsWith('+') ? `+{${n.slice(1)}}` : `{${n}}`)
     .replace(/{{Costplus\|(\d+)[^}]*}}/gi, '+($1)')
-    .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+($1)')
+    .replace(/{{Debtplus\|(\d+)[^}]*}}/gi, '+<$1>')
     .replace(/{{Cost\|(\d+)D[^}]*}}/gi, '<$1>')
     .replace(/{{Cost\|(\d+)P[^}]*}}/gi, '[$1]')
     .replace(/{{Cost\|(\d+)[^}]*}}/gi, '($1)')
@@ -31,7 +31,7 @@ function cleanText(text) {
     .replace(/<\/p\s*>/gi, ' ')
     .replace(/<p\s*\/?>/gi, ' ')
     .replace(/<\/?[a-zA-Z][^>]*>/g, ' ')
-    .replace(/[–\-]1\s+card/gi, '-1card')
+    .replace(/{{nowrap\|\–1 Card}}/gi, '-1card')
     .split(/\s+/)
     .map(word => {
       if (word === '-1 Card') return '-1 Card';
