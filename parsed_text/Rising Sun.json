@@ -119,15 +119,14 @@
     "cost_coin": 3,
     "cost_debt": 0,
     "cost_potion": 0,
-    "text": "+(2) Gain a card costing up to (5).",
+    "text": "+<2> Gain a card costing up to (5).",
     "types": [
       "Action"
     ],
     "subtypes": [],
     "tags": [
-      "+coins",
+      "debt",
       "gain",
-      "payload_piece",
       "terminal"
     ],
     "opponent_tags": [],
@@ -198,15 +197,15 @@
     "cost_coin": 5,
     "cost_debt": 0,
     "cost_potion": 0,
-    "text": "+1 Card +1 Action +1 Buy You may gain a Gold and get +(4).",
+    "text": "+1 Card +1 Action +1 Buy You may gain a Gold and get +<4>.",
     "types": [
       "Action"
     ],
     "subtypes": [],
     "tags": [
       "+buys",
-      "+coins",
       "cantrip",
+      "debt",
       "engine_piece",
       "gain",
       "payload_piece"
@@ -226,7 +225,7 @@
     "cost_coin": 5,
     "cost_debt": 0,
     "cost_potion": 0,
-    "text": "+5 Cards +1 Buy +(2)",
+    "text": "+5 Cards +1 Buy +<2>",
     "types": [
       "Action"
     ],
@@ -234,7 +233,7 @@
     "tags": [
       "+buys",
       "+cards",
-      "+coins",
+      "debt",
       "engine_piece",
       "payload_piece",
       "terminal"
@@ -285,16 +284,15 @@
     "cost_coin": 5,
     "cost_debt": 0,
     "cost_potion": 0,
-    "text": "+2 Cards +2 Actions +(1)",
+    "text": "+2 Cards +2 Actions +<1>",
     "types": [
       "Action"
     ],
     "subtypes": [],
     "tags": [
       "+cards",
-      "+coins",
+      "debt",
       "engine_piece",
-      "payload_piece",
       "village"
     ],
     "opponent_tags": [],
@@ -532,7 +530,7 @@
     "cost_coin": 3,
     "cost_debt": 0,
     "cost_potion": 0,
-    "text": "+3 Cards +1 Action +(3)",
+    "text": "+3 Cards +1 Action +<3>",
     "types": [
       "Action"
     ],
@@ -540,9 +538,8 @@
     "tags": [
       "+action",
       "+cards",
-      "+coins",
-      "engine_piece",
-      "payload_piece"
+      "debt",
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],

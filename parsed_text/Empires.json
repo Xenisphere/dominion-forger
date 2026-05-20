@@ -38,14 +38,14 @@
     "cost_coin": 5,
     "cost_debt": 0,
     "cost_potion": 0,
-    "text": "(6) +1 Buy | When you discard this from play, +(6).",
+    "text": "(6) +1 Buy | When you discard this from play, +<6>.",
     "types": [
       "Treasure"
     ],
     "subtypes": [],
     "tags": [
       "+buys",
-      "+coins",
+      "debt",
       "on_discard",
       "payload_piece"
     ],

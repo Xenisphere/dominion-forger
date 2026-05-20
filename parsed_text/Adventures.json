@@ -1156,7 +1156,7 @@
     "cost_coin": 0,
     "cost_debt": 0,
     "cost_potion": 0,
-    "text": "Once per turn: +1 Buy. If your Card token isnt on your deck, put it there and +(1).",
+    "text": "Once per turn: +1 Buy. If your -1 Card token isnt on your deck, put it there and +(1).",
     "types": [
       "Event"
     ],
