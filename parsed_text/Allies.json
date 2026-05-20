@@ -161,7 +161,6 @@
       "trash_attack"
     ],
     "opponent_tags": [
-      "gain",
       "junking",
       "trash"
     ],
@@ -1483,7 +1482,6 @@
       "engine_piece"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],
@@ -1618,7 +1616,6 @@
       "utility"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],
@@ -1642,7 +1639,8 @@
     "subtypes": [],
     "tags": [
       "gain",
-      "on_gain"
+      "on_gain",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],

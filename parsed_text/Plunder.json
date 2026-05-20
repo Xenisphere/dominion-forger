@@ -49,7 +49,8 @@
       "+coins",
       "duration",
       "on_gain",
-      "payload_piece"
+      "payload_piece",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -393,7 +394,8 @@
       "duration",
       "gain",
       "on_gain",
-      "payload_piece"
+      "payload_piece",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1072,7 +1074,8 @@
       "engine_piece",
       "gain",
       "on_gain",
-      "payload_piece"
+      "payload_piece",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1652,9 +1655,7 @@
       "reveal",
       "uses_loot"
     ],
-    "opponent_tags": [
-      "gain"
-    ],
+    "opponent_tags": [],
     "dependencies": [],
     "image": "images/Plunder/Foray.jpg"
   },
@@ -2080,6 +2081,7 @@
     "tags": [
       "gain",
       "on_gain",
+      "plays_actions",
       "set_aside"
     ],
     "opponent_tags": [],

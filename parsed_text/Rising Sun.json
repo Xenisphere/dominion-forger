@@ -269,7 +269,6 @@
       "village"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],
@@ -632,7 +631,6 @@
       "trash_self"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],
@@ -1055,7 +1053,8 @@
     "subtypes": [],
     "tags": [
       "cantrip",
-      "engine_piece"
+      "engine_piece",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1276,6 +1275,7 @@
     "tags": [
       "gain",
       "on_gain",
+      "plays_actions",
       "set_aside"
     ],
     "opponent_tags": [],

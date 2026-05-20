@@ -304,7 +304,6 @@
       "terminal"
     ],
     "opponent_tags": [
-      "gain",
       "trash"
     ],
     "dependencies": [],
@@ -885,6 +884,7 @@
       "engine_piece",
       "gain",
       "on_gain",
+      "plays_actions",
       "reaction_gain",
       "reaction_trash",
       "trash",
@@ -941,7 +941,8 @@
     "subtypes": [],
     "tags": [
       "gain",
-      "on_discard"
+      "on_discard",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],

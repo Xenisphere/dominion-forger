@@ -210,6 +210,7 @@
       "+card",
       "engine_piece",
       "on_gain",
+      "plays_actions",
       "set_aside",
       "village"
     ],
@@ -583,7 +584,6 @@
       "terminal"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],

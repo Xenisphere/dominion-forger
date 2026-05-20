@@ -986,7 +986,6 @@
       "terminal"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],
@@ -1258,7 +1257,8 @@
     ],
     "subtypes": [],
     "tags": [
-      "engine_piece"
+      "engine_piece",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],

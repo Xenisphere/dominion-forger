@@ -1135,7 +1135,8 @@
     "tags": [
       "each_turn",
       "gain",
-      "on_gain"
+      "on_gain",
+      "plays_actions"
     ],
     "opponent_tags": [],
     "dependencies": [],

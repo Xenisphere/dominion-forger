@@ -1543,6 +1543,7 @@
     "subtypes": [],
     "tags": [
       "non_supply",
+      "plays_actions",
       "uses_spoils"
     ],
     "opponent_tags": [],
@@ -1633,6 +1634,7 @@
       "discard_attack",
       "engine_piece",
       "gain",
+      "plays_actions",
       "trash",
       "trash_for_benefit",
       "trash_self",

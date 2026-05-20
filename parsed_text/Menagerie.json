@@ -821,6 +821,7 @@
       "duration",
       "engine_piece",
       "on_discard",
+      "plays_actions",
       "village"
     ],
     "opponent_tags": [],

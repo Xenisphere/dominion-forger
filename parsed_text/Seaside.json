@@ -105,7 +105,6 @@
       "terminal"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],
@@ -224,7 +223,6 @@
       "trash_self"
     ],
     "opponent_tags": [
-      "gain",
       "junking"
     ],
     "dependencies": [],
@@ -666,6 +664,7 @@
       "gain",
       "on_gain",
       "payload_piece",
+      "plays_actions",
       "trash",
       "trash_for_benefit"
     ],
