@@ -84,9 +84,8 @@ function computeTags(text, types) {
   // TRASHING (self) tags.has('+cards') || tags.has('+card') || tags.has('+coins') || tags.has('+action') || tags.has('+actions') || tags.has('gain')
   if (
     (
-      (
-        tags.has('trash')
-        && !/trashing token/i.test(selfText)
+      tags.has('trash')
+      && !/trashing token/i.test(selfText)
     ) &&
     (
       /when you gain.*trash|gain.*may trash/i.test(selfText)
