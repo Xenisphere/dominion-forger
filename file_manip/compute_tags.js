@@ -44,7 +44,7 @@ function computeTags(text, types) {
 
   // CARD MOVEMENT (self)
   if (/gain a|gain an|gain up to|gains a|gain.*card/i.test(selfText) && !/other player gains/i.test(selfText)) tags.add('gain');
-  if (/discard(?! pile| them afterwards)/i.test(selfText) && !/when you discard/i.test(selfText)) tags.add('discard');
+  if (/discard(?! pile| them afterwards| this from play)/i.test(selfText)) tags.add('discard');
   if (/onto your deck|top of your deck|put.*on top/i.test(selfText))  tags.add('topdeck');
   if (/set (it |this |them )?aside/i.test(selfText)) tags.add('set_aside');
   if (/\btrash(es)?\b/i.test(selfText)) tags.add('trash');
@@ -149,7 +149,7 @@ function computeTags(text, types) {
   else if (/\bplay\b.*action|\bplay\b.*it/i.test(selfText) && !/from\s+play\b/i.test(selfText) && !/after you play/i.test(selfText) && !/when you discard.*from play/i.test(selfText) && !/play a card from/i.test(selfText)) tags.add('plays_actions');
   if (hasAnyDraw || hasAnyAction || (tags.has('trash') && !tags.has('trash_attack')) || /play.*action.*twice|play.*twice/i.test(selfText)) tags.add('engine_piece');
   if (tags.has('+coins') || tags.has('+buys') || tags.has('+coffers')) tags.add('payload_piece');
-  if (/draw/i.test(selfText) && ! /after drawing/i.test(selfText)) tags.add('draw');
+  if (/draw/i.test(selfText) && !/after drawing/i.test(selfText)) tags.add('draw');
   if (/\(This is not in the Supply.\)/i.test(selfText)) tags.add('non_supply');
   if (/move your.*\+\(\d+\) token/i.test(text)) tags.add('payload_piece');
   if (/move your \+1 action token/i.test(text)) tags.add('engine_piece');
