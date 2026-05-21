@@ -109,12 +109,12 @@ function computeTags(text, types) {
   if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
 
   // GAINING (self)
-  if (/gain\b.*(?:not in the supply|non-supply)|(?:not in the supply|non-supply).*\bgain/i.test(selfText)) tags.add('gain_non_supply');
+  if (/gain\b.*(?:not in the supply|non-supply)|(?:not in the supply|non-supply).*\bgain/i.test(selfText) && !/gain.*.(?:not in the supply|non-supply)/i.text(selftText)) tags.add('gain_non_supply');
   if (/gain.*to your hand|gain.*into your hand/i.test(selfText)) tags.add('gain_to_hand');
   if (/gain.*onto your deck|gain.*to your deck/i.test(selfText)) tags.add('gain_to_deck');
 
   // DECK CONTROL (self)
-  if (/look.*the top|reveal.*top|top \d+ cards of your deck|reveal.*until/i.test(selfText)) tags.add('scry');
+  if (/look.*the top|reveal.*top|top \d+ cards of your deck|reveal.*until/i.test(selfText) && !/look.*top card.*hand/i.test(selfText)) tags.add('scry');
   if (/search your deck|look through your deck/i.test(selfText)) tags.add('search_deck');
   if (/reorder|in any order|rearrange/i.test(selfText)) tags.add('reorder');
 
