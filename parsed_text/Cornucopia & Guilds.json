@@ -324,7 +324,6 @@
       "discard_attack",
       "engine_piece",
       "gain",
-      "on_gain",
       "payload_piece",
       "terminal"
     ],

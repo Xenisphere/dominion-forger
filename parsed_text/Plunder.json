@@ -741,7 +741,6 @@
     "tags": [
       "gain",
       "gain_to_deck",
-      "on_gain",
       "topdeck"
     ],
     "opponent_tags": [],
@@ -1521,6 +1520,7 @@
     "subtypes": [],
     "tags": [
       "attack",
+      "discard",
       "on_discard",
       "set_aside",
       "terminal"
@@ -2300,6 +2300,7 @@
     ],
     "subtypes": [],
     "tags": [
+      "discard",
       "on_discard",
       "set_aside",
       "topdeck"

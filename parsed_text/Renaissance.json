@@ -70,6 +70,7 @@
     ],
     "subtypes": [],
     "tags": [
+      "discard",
       "on_discard",
       "topdeck"
     ],
@@ -124,7 +125,6 @@
       "duration",
       "gain",
       "gain_to_hand",
-      "on_gain",
       "payload_piece",
       "set_aside",
       "terminal"

@@ -541,7 +541,6 @@
     "tags": [
       "+coins",
       "gain",
-      "on_gain",
       "payload_piece",
       "terminal",
       "uses_horses"
@@ -681,7 +680,6 @@
       "+cards",
       "engine_piece",
       "gain",
-      "on_gain",
       "reaction_gain",
       "terminal"
     ],
@@ -711,7 +709,6 @@
       "gain",
       "gain_to_deck",
       "gain_to_hand",
-      "on_gain",
       "reaction_gain",
       "terminal",
       "topdeck"
@@ -818,6 +815,7 @@
     "subtypes": [],
     "tags": [
       "+card",
+      "discard",
       "duration",
       "engine_piece",
       "on_discard",
@@ -1730,7 +1728,6 @@
       "+coins",
       "gain",
       "gain_to_deck",
-      "on_gain",
       "payload_piece",
       "topdeck"
     ],

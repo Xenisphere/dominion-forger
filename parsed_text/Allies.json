@@ -190,7 +190,6 @@
       "+favors",
       "gain",
       "gain_to_deck",
-      "on_gain",
       "payload_piece",
       "topdeck"
     ],
@@ -575,7 +574,6 @@
       "duration",
       "engine_piece",
       "gain",
-      "on_gain",
       "payload_piece",
       "terminal"
     ],
@@ -661,7 +659,6 @@
       "+buys",
       "+coins",
       "gain",
-      "on_gain",
       "payload_piece",
       "terminal"
     ],
@@ -690,7 +687,6 @@
       "+coins",
       "+favors",
       "gain",
-      "on_gain",
       "payload_piece",
       "terminal"
     ],
@@ -719,7 +715,6 @@
     "tags": [
       "+cards",
       "attack",
-      "discard",
       "duration",
       "engine_piece",
       "terminal"
@@ -1537,8 +1532,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
-      "on_gain"
+      "gain"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1565,7 +1559,6 @@
       "cantrip",
       "engine_piece",
       "gain",
-      "on_gain",
       "payload_piece"
     ],
     "opponent_tags": [],
@@ -2047,7 +2040,6 @@
     "tags": [
       "gain",
       "gain_to_deck",
-      "on_gain",
       "topdeck"
     ],
     "opponent_tags": [],

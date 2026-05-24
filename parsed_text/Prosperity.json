@@ -737,7 +737,6 @@
     "tags": [
       "gain",
       "gain_to_deck",
-      "on_gain",
       "topdeck"
     ],
     "opponent_tags": [],
@@ -791,7 +790,6 @@
       "engine_piece",
       "gain",
       "gain_to_deck",
-      "on_gain",
       "payload_piece",
       "topdeck"
     ],
@@ -928,7 +926,6 @@
       "engine_piece",
       "gain",
       "gain_to_deck",
-      "on_gain",
       "reaction_gain",
       "reaction_trash",
       "reveal",

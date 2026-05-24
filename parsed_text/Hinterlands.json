@@ -355,7 +355,6 @@
     "tags": [
       "+coins",
       "gain",
-      "on_gain",
       "payload_piece",
       "terminal"
     ],
@@ -467,7 +466,6 @@
       "draw",
       "engine_piece",
       "gain",
-      "scry",
       "terminal",
       "trash",
       "trash_for_benefit"
@@ -710,6 +708,7 @@
     "subtypes": [],
     "tags": [
       "cantrip",
+      "discard",
       "engine_piece",
       "on_discard",
       "topdeck"
@@ -849,7 +848,6 @@
       "engine_piece",
       "exchange",
       "gain",
-      "on_gain",
       "reaction_gain",
       "reveal",
       "terminal",
@@ -912,6 +910,7 @@
     ],
     "subtypes": [],
     "tags": [
+      "discard",
       "gain",
       "on_discard",
       "reaction_gain",
@@ -940,6 +939,7 @@
     ],
     "subtypes": [],
     "tags": [
+      "discard",
       "gain",
       "on_discard",
       "plays_actions"

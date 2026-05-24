@@ -219,7 +219,6 @@
     "subtypes": [],
     "tags": [
       "gain",
-      "on_gain",
       "tavern_mat",
       "terminal"
     ],
@@ -1257,8 +1256,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "engine_piece",
-      "plays_actions"
+      "engine_piece"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1351,10 +1349,7 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "gain",
-      "on_gain",
-      "trash",
-      "trash_to_gain"
+      "trash"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1553,7 +1548,6 @@
       "+buys",
       "gain",
       "gain_to_deck",
-      "on_gain",
       "payload_piece",
       "topdeck"
     ],

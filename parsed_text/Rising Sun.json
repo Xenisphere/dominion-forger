@@ -1002,7 +1002,6 @@
     "subtypes": [],
     "tags": [
       "gain",
-      "on_gain",
       "self_junk"
     ],
     "opponent_tags": [],
@@ -1171,8 +1170,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
-      "on_gain"
+      "gain"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1220,6 +1218,7 @@
     "subtypes": [],
     "tags": [
       "+buys",
+      "discard",
       "on_discard",
       "payload_piece"
     ],
@@ -1246,7 +1245,6 @@
     "tags": [
       "gain",
       "gain_to_deck",
-      "on_gain",
       "topdeck"
     ],
     "opponent_tags": [],
