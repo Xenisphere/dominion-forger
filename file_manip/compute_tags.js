@@ -52,7 +52,6 @@ function computeTags(text, types) {
   if (/\bexile\b/i.test(selfText)) tags.add('exile');
 
   // CARD MOVEMENT (opponent)
-  if (/gain a|gain an|gain up to|gains a|gain.*card/i.test(selfText) && !/other player gains/i.test(selfText) && !/\(when you gain/i.test(selfText)) tags.add('gain');
   if (/each player.*reveal|reveal.*each player|including you/i.test(t)) opp_tags.add('reveal');
   if (/each other player draws|another player draws/i.test(oppSections)) opp_tags.add('draw');
   if (/look at the top|top \d+ cards of their deck/i.test(oppSections)) opp_tags.add('scry');
