@@ -43,7 +43,7 @@ function computeTags(text, types) {
   if (/<\d+>/.test(text)) tags.add('debt');
 
   // CARD MOVEMENT (self)
-  if (/gain a|gain an|gain up to|gains a|gain.*card/i.test(selfText) && !/other player gains/i.test(selfText)) tags.add('gain');
+  if (/gain a|gain an|gain up to|gains a|gain.*card/i.test(selfText) && !(/other player gains/i.test(selfText) || /when you gain/i.test(selfText))) tags.add('gain');
   if (/discard(?! pile| them afterwards| this from play)/i.test(selfText)) tags.add('discard');
   if (/onto your deck|top of your deck|put.*on top/i.test(selfText))  tags.add('topdeck');
   if (/set (it |this |them )?aside/i.test(selfText)) tags.add('set_aside');
@@ -69,7 +69,7 @@ function computeTags(text, types) {
   if (typeList.some(t => t.includes('duration'))) tags.add('duration');
   if (/when you discard/i.test(selfText))  tags.add('on_discard');
   if (/when you trash/i.test(selfText)) tags.add('on_trash');
-  if (/when you gain/i.test(selfText)) tags.add('on_gain');
+  if (/when you gain/i.test(selfText) && !/when you gain a card/i.test(selfText)) tags.add('on_gain');
   if (/when you buy/i.test(selfText)) tags.add('on_buy');
 
   // ATTACKS
@@ -105,7 +105,7 @@ function computeTags(text, types) {
     ) 
   ) tags.add('trash_for_benefit');
   
-  if (/trash.*gain|trash.*to gain/i.test(selfText) && !/trash.*or.*gain/i.test(selfText)) tags.add('trash_to_gain');
+  if (/trash\b.*gain|trash.*to gain/i.test(selfText) && !/trash.*or.*gain/i.test(selfText)) tags.add('trash_to_gain');
   if (/trash this|return this to its pile/i.test(selfText)) tags.add('trash_self');
 
   // GAINING (self)
