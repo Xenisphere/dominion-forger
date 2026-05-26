@@ -661,7 +661,6 @@
       "+coins",
       "duration",
       "engine_piece",
-      "gain",
       "on_gain",
       "payload_piece",
       "plays_actions",

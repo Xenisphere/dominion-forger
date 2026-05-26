@@ -72,7 +72,6 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "gain",
       "on_gain",
       "trash",
       "trash_for_benefit"
@@ -131,7 +130,6 @@
     "tags": [
       "engine_piece",
       "exchange",
-      "gain",
       "plays_actions",
       "trash",
       "trash_for_benefit",
@@ -373,7 +371,6 @@
     "subtypes": [],
     "tags": [
       "+cards",
-      "discard",
       "engine_piece",
       "on_discard",
       "set_aside",
@@ -1082,7 +1079,6 @@
     "tags": [
       "+buys",
       "attack",
-      "gain",
       "on_gain",
       "payload_piece",
       "terminal",
@@ -1141,7 +1137,6 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "gain",
       "gain_to_deck",
       "payload_piece",
       "terminal",

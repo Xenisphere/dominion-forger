@@ -20,7 +20,6 @@
       "attack",
       "cost_reduction",
       "discard_attack",
-      "gain",
       "on_gain",
       "terminal"
     ],
@@ -47,7 +46,6 @@
     "tags": [
       "+card",
       "engine_piece",
-      "gain",
       "on_gain",
       "village"
     ],
@@ -211,7 +209,6 @@
     "tags": [
       "+coins",
       "discard",
-      "gain",
       "global_effect",
       "on_gain",
       "payload_piece",
@@ -269,7 +266,6 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "gain",
       "on_gain",
       "trash",
       "trash_for_benefit",
@@ -354,7 +350,6 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "gain",
       "payload_piece",
       "terminal"
     ],
@@ -404,7 +399,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "gain_to_hand",
       "on_gain",
       "self_junk"
@@ -435,7 +429,6 @@
       "+cards",
       "discard",
       "engine_piece",
-      "gain",
       "gain_to_deck",
       "on_gain",
       "reveal",
@@ -708,7 +701,6 @@
     "subtypes": [],
     "tags": [
       "cantrip",
-      "discard",
       "engine_piece",
       "on_discard",
       "topdeck"
@@ -760,7 +752,6 @@
       "+buys",
       "+coins",
       "engine_piece",
-      "gain",
       "on_gain",
       "payload_piece",
       "terminal",
@@ -847,7 +838,6 @@
     "tags": [
       "engine_piece",
       "exchange",
-      "gain",
       "reaction_gain",
       "reveal",
       "terminal",
@@ -880,7 +870,6 @@
       "cantrip",
       "discard",
       "engine_piece",
-      "gain",
       "on_gain",
       "plays_actions",
       "reaction_gain",
@@ -910,7 +899,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "discard",
       "gain",
       "on_discard",
       "reaction_gain",
@@ -939,7 +927,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "discard",
       "gain",
       "on_discard",
       "plays_actions"

@@ -189,7 +189,6 @@
       "+buys",
       "+cards",
       "engine_piece",
-      "gain",
       "on_gain",
       "payload_piece",
       "terminal"
@@ -461,7 +460,6 @@
       "+card",
       "discard",
       "engine_piece",
-      "gain",
       "on_gain",
       "reveal",
       "village"
@@ -540,7 +538,6 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "gain",
       "payload_piece",
       "terminal",
       "uses_horses"
@@ -679,7 +676,6 @@
     "tags": [
       "+cards",
       "engine_piece",
-      "gain",
       "reaction_gain",
       "terminal"
     ],
@@ -706,7 +702,6 @@
     "subtypes": [],
     "tags": [
       "discard",
-      "gain",
       "gain_to_deck",
       "gain_to_hand",
       "reaction_gain",
@@ -815,7 +810,6 @@
     "subtypes": [],
     "tags": [
       "+card",
-      "discard",
       "duration",
       "engine_piece",
       "on_discard",
@@ -1726,7 +1720,6 @@
     "subtypes": [],
     "tags": [
       "+coins",
-      "gain",
       "gain_to_deck",
       "payload_piece",
       "topdeck"

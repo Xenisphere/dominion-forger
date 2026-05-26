@@ -70,7 +70,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "discard",
       "on_discard",
       "topdeck"
     ],
@@ -123,7 +122,6 @@
     "tags": [
       "+coins",
       "duration",
-      "gain",
       "gain_to_hand",
       "payload_piece",
       "set_aside",
@@ -183,7 +181,6 @@
       "+action",
       "+cards",
       "engine_piece",
-      "gain",
       "on_gain",
       "trash_self"
     ],
@@ -842,7 +839,6 @@
     "subtypes": [],
     "tags": [
       "+villagers",
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -1108,7 +1104,6 @@
     "subtypes": [],
     "tags": [
       "+coffers",
-      "gain",
       "on_gain",
       "payload_piece"
     ],
@@ -1134,7 +1129,6 @@
     "subtypes": [],
     "tags": [
       "each_turn",
-      "gain",
       "on_gain",
       "plays_actions"
     ],

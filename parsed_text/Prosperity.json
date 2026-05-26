@@ -182,7 +182,6 @@
     "subtypes": [],
     "tags": [
       "+buys",
-      "gain",
       "on_gain",
       "payload_piece"
     ],
@@ -419,7 +418,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -549,7 +547,6 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "gain",
       "on_gain",
       "reveal",
       "terminal",
@@ -735,7 +732,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "gain_to_deck",
       "topdeck"
     ],
@@ -788,7 +784,6 @@
     "tags": [
       "+buys",
       "engine_piece",
-      "gain",
       "gain_to_deck",
       "payload_piece",
       "topdeck"
@@ -924,7 +919,6 @@
     "tags": [
       "draw",
       "engine_piece",
-      "gain",
       "gain_to_deck",
       "reaction_gain",
       "reaction_trash",

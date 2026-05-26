@@ -184,7 +184,6 @@
       "+buys",
       "+coins",
       "discard",
-      "gain",
       "on_gain",
       "payload_piece"
     ],

@@ -218,7 +218,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "tavern_mat",
       "terminal"
     ],
@@ -793,7 +792,6 @@
     "tags": [
       "+card",
       "engine_piece",
-      "gain",
       "on_gain",
       "village"
     ],
@@ -1546,7 +1544,6 @@
     "subtypes": [],
     "tags": [
       "+buys",
-      "gain",
       "gain_to_deck",
       "payload_piece",
       "topdeck"

@@ -293,7 +293,6 @@
       "+cards",
       "discard",
       "engine_piece",
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -323,7 +322,6 @@
       "attack",
       "discard_attack",
       "engine_piece",
-      "gain",
       "payload_piece",
       "terminal"
     ],

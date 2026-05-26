@@ -151,7 +151,6 @@
     "tags": [
       "+buys",
       "+coins",
-      "discard",
       "on_discard",
       "payload_piece",
       "terminal",

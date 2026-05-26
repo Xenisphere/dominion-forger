@@ -121,7 +121,6 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "gain",
       "on_gain",
       "trash",
       "trash_for_benefit",
@@ -180,7 +179,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [
@@ -236,7 +234,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -261,7 +258,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain",
       "reveal"
     ],
@@ -343,7 +339,6 @@
     "subtypes": [],
     "tags": [
       "engine_piece",
-      "gain",
       "gain_to_deck",
       "gain_to_hand",
       "on_gain",
@@ -675,7 +670,6 @@
     "subtypes": [],
     "tags": [
       "+buys",
-      "gain",
       "on_gain",
       "payload_piece"
     ],
@@ -702,7 +696,6 @@
     "tags": [
       "cantrip",
       "engine_piece",
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -808,7 +801,6 @@
       "+coins",
       "cantrip",
       "engine_piece",
-      "gain",
       "on_gain",
       "payload_piece"
     ],
@@ -1339,7 +1331,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -1409,7 +1400,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain"
+      "utility"
     ],
     "opponent_tags": [],
     "dependencies": [],
@@ -1455,7 +1446,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -1479,7 +1469,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain"
     ],
     "opponent_tags": [],
@@ -1503,7 +1492,6 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain",
       "on_gain",
       "self_junk"
     ],
@@ -1574,7 +1562,7 @@
     ],
     "subtypes": [],
     "tags": [
-      "gain"
+      "utility"
     ],
     "opponent_tags": [],
     "dependencies": [],
