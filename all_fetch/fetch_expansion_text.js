@@ -66,11 +66,11 @@ function buildCardLookup() {
     for (const [, cards] of allSections) {
       if (!Array.isArray(cards)) continue;
       const sorted = [...cards].sort((a, b) => a.name.localeCompare(b.name));
-      for (const card of sorted) {
-        toFetch.push(card.name);
-        if (card.group && Array.isArray(card.group)) toFetch.push(...card.group);
-        if (card.paired_with) toFetch.push(card.paired_with);
-        if (card.chain) toFetch.push(...card.chain);
+      for (const card of cards) {
+        allCards.push(card.name);
+        if (card.group && Array.isArray(card.group)) allCards.push(...card.group);
+        if (card.paired_with) allCards.push(card.paired_with);
+        if (card.chain) allCards.push(...card.chain);
       }
     }
     const total = String(allCards.length).padStart(2, '0');
