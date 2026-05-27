@@ -65,14 +65,15 @@ function buildCardLookup() {
     const allCards = [];
     for (const [, cards] of allSections) {
       if (!Array.isArray(cards)) continue;
-      const sorted = [...cards].sort((a, b) => a.name.localeCompare(b.name));
-      for (const card of sorted) {
+      for (const card of cards) {
         allCards.push(card.name);
         if (card.group && Array.isArray(card.group)) allCards.push(...card.group);
         if (card.paired_with) allCards.push(card.paired_with);
         if (card.chain) allCards.push(...card.chain);
       }
     }
+    allCards.sort((a, b) => a.localeCompare(b));
+    
     const total = String(allCards.length).padStart(2, '0');
 
     allCards.forEach((name, idx) => {
@@ -330,15 +331,15 @@ async function main() {
 
       const toFetch = [];
       for (const [, cards] of allSections) {
-  if (!Array.isArray(cards)) continue;
-  const sorted = [...cards].sort((a, b) => a.name.localeCompare(b.name));
-  for (const card of sorted) {
-    toFetch.push(card.name);
-    if (card.group && Array.isArray(card.group)) toFetch.push(...card.group);
-    if (card.paired_with) toFetch.push(card.paired_with);
-    if (card.chain) toFetch.push(...card.chain);
-  }
-}
+        if (!Array.isArray(cards)) continue;
+        for (const card of cards) {
+          toFetch.push(card.name);
+          if (card.group && Array.isArray(card.group)) toFetch.push(...card.group);
+          if (card.paired_with) toFetch.push(card.paired_with);
+          if (card.chain) toFetch.push(...card.chain);
+        }
+      }
+      toFetch.sort((a, b) => a.localeCompare(b));
 
       const results = [];
       const failed = [];
