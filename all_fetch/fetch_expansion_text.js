@@ -66,7 +66,7 @@ function buildCardLookup() {
     for (const [, cards] of allSections) {
       if (!Array.isArray(cards)) continue;
       const sorted = [...cards].sort((a, b) => a.name.localeCompare(b.name));
-      for (const card of cards) {
+      for (const card of sorted) {
         allCards.push(card.name);
         if (card.group && Array.isArray(card.group)) allCards.push(...card.group);
         if (card.paired_with) allCards.push(card.paired_with);
