@@ -264,6 +264,40 @@ async function main() {
     process.exit(1);
   }
 
+  if (expansionInput === '--card') {
+    let cardName = process.argv[3];
+    if (!cardName) {
+      console.error('Usage: node fetch_expansion_text.js --card "Card Name"');
+      process.exit(1);
+    }
+    cardName = cardName.replace(/_/g, ' ').replace(/(?:^|\s)\S/g, c => c.toUpperCase());
+    cardName = aliases[cardName] || cardName;
+
+    const lookup = buildCardLookup();
+    const lookupInfo = lookup[cardName];
+    if (!lookupInfo) {
+      console.error(`[ERROR] "${cardName}" not found in card_names.json`);
+      process.exit(1);
+    }
+    const rawDir = path.join(__dirname, '..', 'raw', lookupInfo.boxName);
+
+    const isTermux = process.env.TERMUX_VERSION !== undefined;
+    const browser = await puppeteer.launch({
+      headless: true,
+      executablePath: isTermux ? '/data/data/com.termux/files/usr/bin/chromium-browser' : undefined,
+      args: isTermux ? ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu'] : []
+    });
+    try {
+      const sharedPage = await browser.newPage();
+      const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup);
+      if (card) console.log('[RESULT]', JSON.stringify(card, null, 2));
+      else console.error(`[FAIL] Could not parse "${cardName}"`);
+    } finally {
+      await browser.close();
+    }
+    return;
+  }
+
   const expansionNames = expansionInput.toLowerCase() === 'all'
     ? Object.keys(cardNames).filter(k => k !== 'all_total')
     : (() => {
