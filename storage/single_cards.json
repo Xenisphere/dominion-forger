@@ -218,5 +218,16 @@
       "Action"
     ],
     "text": "Gain a card costing up to (4)."
+  },
+  {
+    "name": "Loan",
+    "supply": "Kingdom Pile",
+    "set": "Prosperity",
+    "edition": "1",
+    "cost": "(3)",
+    "types": [
+      "Treasure"
+    ],
+    "text": "(1) Reveal cards from your deck until you reveal a Treasure. Discard it or trash it. Discard the other cards."
   }
 ]
