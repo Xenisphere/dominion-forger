@@ -68,7 +68,7 @@ function computeTags(text, types) {
   if (typeList.some(t => t.includes('duration'))) tags.add('duration');
   if (/when you discard/i.test(selfText))  tags.add('on_discard');
   if (/when you trash/i.test(selfText)) tags.add('on_trash');
-  if (/when you gain this/i.test(selfText) && !/when you gain a card/i.test(selfText)) tags.add('on_gain');
+  if (/when you gain.*this/i.test(selfText) && !/when you gain a card/i.test(selfText)) tags.add('on_gain');
   if (/when you buy/i.test(selfText)) tags.add('on_buy');
 
   // ATTACKS
