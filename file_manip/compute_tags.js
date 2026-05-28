@@ -154,7 +154,7 @@ function computeTags(text, types) {
   if (hasActions && /\+[2-9] actions?/i.test(text)) tags.add('village');
   if (/move your \+1 card token/i.test(text)) tags.add('engine_piece');
   if (/move your \+1 buy token/i.test(text)) tags.add('payload_piece');
-  if (/setup:/i.test(selfText)) tags.add('setup');
+  if (/Setup:/i.test(selfText)) tags.add('setup');
 
   // CLEANUP
   if (tags.has('attack') && (opp_tags.has('discard') || (tags.has('discard') && tags.has('global_effect')))) {
