@@ -119,5 +119,5 @@ function main() {
   }
 }
 
-module.exports = computeDepen;
+module.exports = { computeDepen, buildStructure };
 main();
