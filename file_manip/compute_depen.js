@@ -119,4 +119,5 @@ function main() {
   }
 }
 
+module.exports = computeDepen;
 main();
