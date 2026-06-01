@@ -112,7 +112,6 @@ function formatCost(raw, extra, isDebt) {
 }
 
 async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup, structure) {
-  const { dependencies, parent } = computeDepen(cardName, cleanedText, structure);
   cardName = aliases[cardName] || cardName;
   const safeFileName = cardName.replace(/'/g, '%27');
   const localPath = path.join(rawDir, `${safeFileName}.json`);
