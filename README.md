@@ -1,14 +1,372 @@
-# dominion-forger
-Dominion Forger is a customizable kingdom generator and card browser for Dominion. It allows players to search, filter, and explore the full card pool while generating kingdoms that match specific rules and preferences.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dominion Forger</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-Features include:
+    :root {
+      --parchment:     #f2e8d0;
+      --parchment-dark:#e0ceab;
+      --ink:           #2b1d0e;
+      --ink-light:     #4a3520;
+      --red:           #7a1c1c;
+      --gold:          #b8860b;
+      --gold-light:    #d4a017;
+      --shadow:        rgba(43,29,14,0.35);
+    }
 
-   1. Advanced card filtering by type, mechanics, and attributes
-   2. Text search for card abilities and keywords
-   3. Customizable kingdom randomization rules
-   4. Card rating with adjustable bias (love / like / dislike / hate)
-   5. Locked cards for partial rerolls
-   6. Automatic setup reminders for tokens, landscapes, and non-supply piles
-   7. Local storage for ratings, preferences, and owned cards
+    html, body {
+      min-height: 100%;
+      font-family: 'IM Fell English', serif;
+      background-color: var(--ink);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
 
-Instead of relying on pure randomness, Dominion Forger lets you shape the probability space and forge kingdoms that fit your play style.
+    /* ── Noise/texture overlay ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* ── Hamburger ── */
+    #menu-toggle { display: none; }
+
+    .hamburger {
+      position: fixed; top: 1.1rem; left: 1.2rem; z-index: 1000;
+      width: 2.4rem; height: 2.4rem;
+      cursor: pointer;
+      display: flex; flex-direction: column; justify-content: center; gap: 5px;
+      background: var(--parchment-dark);
+      border: 2px solid var(--gold);
+      border-radius: 3px;
+      padding: 6px;
+      box-shadow: 2px 2px 8px var(--shadow);
+      transition: background 0.2s;
+    }
+    .hamburger:hover { background: var(--parchment); }
+    .hamburger span {
+      display: block; height: 2px;
+      background: var(--ink);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    #menu-toggle:checked ~ .hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #menu-toggle:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
+    #menu-toggle:checked ~ .hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ── Side Nav ── */
+    .sidenav {
+      position: fixed; top: 0; left: -280px; z-index: 900;
+      width: 260px; height: 100%;
+      background: var(--parchment-dark);
+      border-right: 3px solid var(--gold);
+      padding: 5rem 1.5rem 2rem;
+      transition: left 0.35s cubic-bezier(.77,0,.18,1);
+      box-shadow: 4px 0 24px var(--shadow);
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 28px,
+          rgba(43,29,14,0.06) 28px,
+          rgba(43,29,14,0.06) 29px
+        );
+    }
+    #menu-toggle:checked ~ .sidenav { left: 0; }
+
+    .sidenav-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 0.5rem;
+    }
+
+    .sidenav a {
+      display: flex; align-items: center; gap: 0.7rem;
+      padding: 0.65rem 0.5rem;
+      color: var(--ink-light);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid rgba(43,29,14,0.12);
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    .sidenav a:hover { color: var(--red); padding-left: 1rem; }
+    .sidenav a .nav-icon { font-size: 1rem; width: 1.2rem; text-align: center; }
+
+    /* overlay to close menu */
+    .nav-overlay {
+      display: none;
+      position: fixed; inset: 0; z-index: 800;
+      background: rgba(0,0,0,0.4);
+    }
+    #menu-toggle:checked ~ .nav-overlay { display: block; }
+
+    /* ── Main parchment scroll ── */
+    .page-wrap {
+      position: relative; z-index: 1;
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .scroll-container {
+      width: 100%; max-width: 720px;
+      background: var(--parchment);
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+      box-shadow:
+        0 0 0 6px var(--parchment-dark),
+        0 0 0 8px var(--gold),
+        0 12px 48px var(--shadow),
+        inset 0 0 80px rgba(43,29,14,0.06);
+      padding: 3.5rem 3rem 3rem;
+      position: relative;
+      animation: unfurl 0.9s cubic-bezier(.22,1,.36,1) both;
+    }
+
+    @keyframes unfurl {
+      from { opacity: 0; transform: scaleY(0.88) translateY(24px); }
+      to   { opacity: 1; transform: scaleY(1) translateY(0); }
+    }
+
+    /* scroll curl decorations */
+    .scroll-container::before,
+    .scroll-container::after {
+      content: '';
+      display: block;
+      height: 18px;
+      background: linear-gradient(to bottom, var(--parchment-dark), var(--parchment));
+      border: 2px solid var(--gold);
+      border-radius: 2px;
+      margin: 0 -3rem;
+      box-shadow: 0 3px 10px var(--shadow);
+    }
+    .scroll-container::before { margin-bottom: 2.5rem; margin-top: -3.5rem; }
+    .scroll-container::after  { margin-top: 2.5rem; margin-bottom: -3rem; }
+
+    /* ── Header ── */
+    .site-header {
+      text-align: center;
+      margin-bottom: 2.2rem;
+    }
+
+    .crest {
+      font-size: 2.6rem;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      filter: sepia(1) saturate(1.5);
+      animation: fadein 1.2s 0.3s both;
+    }
+
+    .site-title {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: clamp(1.7rem, 5vw, 2.8rem);
+      color: var(--ink);
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      animation: fadein 1s 0.5s both;
+    }
+
+    .site-title span {
+      color: var(--red);
+    }
+
+    .divider {
+      display: flex; align-items: center; gap: 0.8rem;
+      margin: 1rem 0;
+      animation: fadein 1s 0.7s both;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .divider-ornament {
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+
+    .tagline {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--ink-light);
+      animation: fadein 1s 0.9s both;
+    }
+
+    /* ── Intro text ── */
+    .intro {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--ink-light);
+      text-align: center;
+      margin-bottom: 2.5rem;
+      animation: fadein 1s 1s both;
+    }
+
+    .intro strong {
+      color: var(--red);
+      font-style: italic;
+    }
+
+    /* ── Nav cards grid ── */
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      animation: fadein 1s 1.1s both;
+    }
+
+    .nav-card {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 0.5rem;
+      padding: 1.3rem 1rem;
+      background: var(--parchment-dark);
+      border: 1.5px solid var(--gold);
+      border-radius: 3px;
+      text-decoration: none;
+      color: var(--ink);
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      box-shadow: 2px 2px 10px var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .nav-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent);
+      pointer-events: none;
+    }
+    .nav-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 4px 6px 18px var(--shadow);
+      background: var(--parchment);
+    }
+    .nav-card .card-icon { font-size: 1.8rem; }
+    .nav-card .card-label { color: var(--ink); }
+    .nav-card .card-desc {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 0.75rem;
+      color: var(--ink-light);
+      font-weight: normal;
+      letter-spacing: 0;
+    }
+
+    /* ── Footer ── */
+    .scroll-footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      opacity: 0.6;
+      animation: fadein 1s 1.3s both;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 500px) {
+      .scroll-container { padding: 2.5rem 1.5rem 2rem; }
+      .scroll-container::before,
+      .scroll-container::after { margin-left: -1.5rem; margin-right: -1.5rem; }
+      .nav-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="menu-toggle" hidden />
+
+  <label class="hamburger" for="menu-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav class="sidenav" aria-label="Main navigation">
+    <div class="sidenav-title">Navigate</div>
+    <a href="index.html"><span class="nav-icon">🏰</span> Home</a>
+    <a href="cards.html"><span class="nav-icon">🃏</span> Card Browser</a>
+    <a href="decks.html"><span class="nav-icon">📜</span> Deck History</a>
+    <a href="expansions.html"><span class="nav-icon">📦</span> Box Ratings</a>
+    <a href="ratings.html"><span class="nav-icon">⭐</span> Card Ratings</a>
+    <a href="stats.html"><span class="nav-icon">📊</span> Stats</a>
+  </nav>
+
+  <label class="nav-overlay" for="menu-toggle" aria-hidden="true"></label>
+
+  <main class="page-wrap">
+    <div class="scroll-container">
+
+      <header class="site-header">
+        <div class="crest">⚔️</div>
+        <h1 class="site-title">Dominion <span>Forger</span></h1>
+        <div class="divider"><span class="divider-ornament">✦</span></div>
+        <p class="tagline">Your kingdom. Your cards. Your chronicle.</p>
+      </header>
+
+      <p class="intro">
+        Welcome, strategist. <strong>Dominion Forger</strong> is your personal companion
+        for tracking the cards you've played, the decks you've built, and the kingdoms
+        you've conquered. Browse every card across all expansions, rate your favourites,
+        and chronicle your history — all stored right here on your device.
+      </p>
+
+      <nav class="nav-grid" aria-label="Page links">
+        <a class="nav-card" href="cards.html">
+          <span class="card-icon">🃏</span>
+          <span class="card-label">Card Browser</span>
+          <span class="card-desc">Explore all 800+ cards</span>
+        </a>
+        <a class="nav-card" href="decks.html">
+          <span class="card-icon">📜</span>
+          <span class="card-label">Deck History</span>
+          <span class="card-desc">Log & revisit your kingdoms</span>
+        </a>
+        <a class="nav-card" href="expansions.html">
+          <span class="card-icon">📦</span>
+          <span class="card-label">Box Ratings</span>
+          <span class="card-desc">Rate your expansions</span>
+        </a>
+        <a class="nav-card" href="ratings.html">
+          <span class="card-icon">⭐</span>
+          <span class="card-label">Card Ratings</span>
+          <span class="card-desc">Love it or loathe it?</span>
+        </a>
+        <a class="nav-card" href="stats.html">
+          <span class="card-icon">📊</span>
+          <span class="card-label">Stats</span>
+          <span class="card-desc">Your play by the numbers</span>
+        </a>
+      </nav>
+
+      <p class="scroll-footer">All data is stored locally on your device &mdash; your kingdom, your privacy.</p>
+
+    </div>
+  </main>
+
+</body>
+</html>
+```
