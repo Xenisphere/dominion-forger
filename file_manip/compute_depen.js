@@ -64,6 +64,7 @@ function buildStructure() {
 const BASE_CARDS = new Set(['Copper', 'Silver', 'Gold', 'Estate', 'Duchy', 'Province']);
 
 function computeDepen(cardName, text, { parentMap, chainMap, pairedMap, allNames }) {
+  console.log(`[DEPEN] ${cardName} | allNames size: ${allNames.size}`);
   const dependencies = new Set();
   const parent = [];
 
