@@ -7,7 +7,6 @@ const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'storage
 const rawTextDir = path.join(__dirname, '..', 'parsed_text');
 const computeTags = require('../file_manip/compute_tags');
 const computeDepen = require('../file_manip/compute_depen');
-const { dependencies, parent } = computeDepen(cardName, cleanedText, structure);
 
 const aliases = { 'Harem': 'Farm' };
 
@@ -113,6 +112,7 @@ function formatCost(raw, extra, isDebt) {
 }
 
 async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup, structure) {
+  const { dependencies, parent } = computeDepen(cardName, cleanedText, structure);
   cardName = aliases[cardName] || cardName;
   const safeFileName = cardName.replace(/'/g, '%27');
   const localPath = path.join(rawDir, `${safeFileName}.json`);
