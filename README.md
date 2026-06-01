@@ -1,268 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dominion Forger</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dominion Forger</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<style>
-:root {
-  --bg: #1e1f24;
-  --panel: #2a2c33;
-  --border: #3a3d46;
-  --text: #e6e6e6;
+    :root {
+      --parchment:     #f2e8d0;
+      --parchment-dark:#e0ceab;
+      --ink:           #2b1d0e;
+      --ink-light:     #4a3520;
+      --red:           #7a1c1c;
+      --gold:          #b8860b;
+      --gold-light:    #d4a017;
+      --shadow:        rgba(43,29,14,0.35);
+    }
 
-  --coin: #d4af37;
-  --action: #4aa3ff;
-  --buy: #7ed957;
-}
+    html, body {
+      min-height: 100%;
+      font-family: 'IM Fell English', serif;
+      background-color: var(--ink);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-}
+    /* ── Noise/texture overlay ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-}
+    /* ── Hamburger ── */
+    #menu-toggle { display: none; }
 
-/* HEADER */
-.header {
-  display: flex;
-  align-items: center;
-  padding: 16px;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  background: var(--bg);
-  z-index: 10;
-}
+    .hamburger {
+      position: fixed; top: 1.1rem; left: 1.2rem; z-index: 1000;
+      width: 2.4rem; height: 2.4rem;
+      cursor: pointer;
+      display: flex; flex-direction: column; justify-content: center; gap: 5px;
+      background: var(--parchment-dark);
+      border: 2px solid var(--gold);
+      border-radius: 3px;
+      padding: 6px;
+      box-shadow: 2px 2px 8px var(--shadow);
+      transition: background 0.2s;
+    }
+    .hamburger:hover { background: var(--parchment); }
+    .hamburger span {
+      display: block; height: 2px;
+      background: var(--ink);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    #menu-toggle:checked ~ .hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #menu-toggle:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
+    #menu-toggle:checked ~ .hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-.menu-btn {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  margin-right: 12px;
-  transition: transform 0.2s;
-}
+    /* ── Side Nav ── */
+    .sidenav {
+      position: fixed; top: 0; left: -280px; z-index: 900;
+      width: 260px; height: 100%;
+      background: var(--parchment-dark);
+      border-right: 3px solid var(--gold);
+      padding: 5rem 1.5rem 2rem;
+      transition: left 0.35s cubic-bezier(.77,0,.18,1);
+      box-shadow: 4px 0 24px var(--shadow);
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 28px,
+          rgba(43,29,14,0.06) 28px,
+          rgba(43,29,14,0.06) 29px
+        );
+    }
+    #menu-toggle:checked ~ .sidenav { left: 0; }
 
-.menu-btn:hover {
-  transform: scale(1.1);
-}
+    .sidenav-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 0.5rem;
+    }
 
-.title {
-  font-size: 20px;
-  font-weight: bold;
-}
+    .sidenav a {
+      display: flex; align-items: center; gap: 0.7rem;
+      padding: 0.65rem 0.5rem;
+      color: var(--ink-light);
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid rgba(43,29,14,0.12);
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    .sidenav a:hover { color: var(--red); padding-left: 1rem; }
+    .sidenav a .nav-icon { font-size: 1rem; width: 1.2rem; text-align: center; }
 
-/* SIDEBAR */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -260px;
-  width: 260px;
-  height: 100%;
-  background: var(--panel);
-  border-right: 1px solid var(--border);
-  padding: 20px;
-  transition: left 0.3s ease;
-  z-index: 20;
-}
+    /* overlay to close menu */
+    .nav-overlay {
+      display: none;
+      position: fixed; inset: 0; z-index: 800;
+      background: rgba(0,0,0,0.4);
+    }
+    #menu-toggle:checked ~ .nav-overlay { display: block; }
 
-.sidebar.open {
-  left: 0;
-}
+    /* ── Main parchment scroll ── */
+    .page-wrap {
+      position: relative; z-index: 1;
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 3rem 1.5rem 4rem;
+    }
 
-.sidebar h2 {
-  margin-bottom: 20px;
-}
+    .scroll-container {
+      width: 100%; max-width: 720px;
+      background: var(--parchment);
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+      box-shadow:
+        0 0 0 6px var(--parchment-dark),
+        0 0 0 8px var(--gold),
+        0 12px 48px var(--shadow),
+        inset 0 0 80px rgba(43,29,14,0.06);
+      padding: 3.5rem 3rem 3rem;
+      position: relative;
+      animation: unfurl 0.9s cubic-bezier(.22,1,.36,1) both;
+    }
 
-.sidebar a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  margin-bottom: 8px;
-  color: var(--text);
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.2s;
-}
+    @keyframes unfurl {
+      from { opacity: 0; transform: scaleY(0.88) translateY(24px); }
+      to   { opacity: 1; transform: scaleY(1) translateY(0); }
+    }
 
-.sidebar a img {
-  width: 18px;
-  height: 18px;
-  opacity: 0.8;
-}
+    /* scroll curl decorations */
+    .scroll-container::before,
+    .scroll-container::after {
+      content: '';
+      display: block;
+      height: 18px;
+      background: linear-gradient(to bottom, var(--parchment-dark), var(--parchment));
+      border: 2px solid var(--gold);
+      border-radius: 2px;
+      margin: 0 -3rem;
+      box-shadow: 0 3px 10px var(--shadow);
+    }
+    .scroll-container::before { margin-bottom: 2.5rem; margin-top: -3.5rem; }
+    .scroll-container::after  { margin-top: 2.5rem; margin-bottom: -3rem; }
 
-.sidebar a:hover {
-  background: var(--border);
-}
+    /* ── Header ── */
+    .site-header {
+      text-align: center;
+      margin-bottom: 2.2rem;
+    }
 
-/* OVERLAY */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-  z-index: 15;
-}
+    .crest {
+      font-size: 2.6rem;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      filter: sepia(1) saturate(1.5);
+      animation: fadein 1.2s 0.3s both;
+    }
 
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
+    .site-title {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: clamp(1.7rem, 5vw, 2.8rem);
+      color: var(--ink);
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      animation: fadein 1s 0.5s both;
+    }
 
-/* MAIN */
-.main {
-  padding: 40px 20px;
-  text-align: center;
-}
+    .site-title span {
+      color: var(--red);
+    }
 
-.hero {
-  margin-bottom: 40px;
-}
+    .divider {
+      display: flex; align-items: center; gap: 0.8rem;
+      margin: 1rem 0;
+      animation: fadein 1s 0.7s both;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .divider-ornament {
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
 
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
+    .tagline {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--ink-light);
+      animation: fadein 1s 0.9s both;
+    }
 
-.hero p {
-  color: #aaa;
-}
+    /* ── Intro text ── */
+    .intro {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--ink-light);
+      text-align: center;
+      margin-bottom: 2.5rem;
+      animation: fadein 1s 1s both;
+    }
 
-/* BUTTON GRID */
-.actions {
-  display: grid;
-  gap: 16px;
-  max-width: 420px;
-  margin: auto;
-}
+    .intro strong {
+      color: var(--red);
+      font-style: italic;
+    }
 
-.button {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 16px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  cursor: pointer;
-  transition: transform 0.15s, background 0.2s;
-  font-size: 16px;
-  text-align: left;
-}
+    /* ── Nav cards grid ── */
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      animation: fadein 1s 1.1s both;
+    }
 
-.button img {
-  width: 28px;
-  height: 28px;
-  opacity: 0.9;
-}
+    .nav-card {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 0.5rem;
+      padding: 1.3rem 1rem;
+      background: var(--parchment-dark);
+      border: 1.5px solid var(--gold);
+      border-radius: 3px;
+      text-decoration: none;
+      color: var(--ink);
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      box-shadow: 2px 2px 10px var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .nav-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent);
+      pointer-events: none;
+    }
+    .nav-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 4px 6px 18px var(--shadow);
+      background: var(--parchment);
+    }
+    .nav-card .card-icon { font-size: 1.8rem; }
+    .nav-card .card-label { color: var(--ink); }
+    .nav-card .card-desc {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 0.75rem;
+      color: var(--ink-light);
+      font-weight: normal;
+      letter-spacing: 0;
+    }
 
-.button:hover {
-  transform: translateY(-3px);
-}
+    /* ── Footer ── */
+    .scroll-footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      opacity: 0.6;
+      animation: fadein 1s 1.3s both;
+    }
 
-.button.random { border-left: 4px solid var(--coin); }
-.button.browse { border-left: 4px solid var(--action); }
-.button.saved  { border-left: 4px solid var(--buy); }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
-/* FOOTER */
-.footer {
-  margin-top: 60px;
-  font-size: 12px;
-  color: #777;
-}
-</style>
+    /* ── Responsive ── */
+    @media (max-width: 500px) {
+      .scroll-container { padding: 2.5rem 1.5rem 2rem; }
+      .scroll-container::before,
+      .scroll-container::after { margin-left: -1.5rem; margin-right: -1.5rem; }
+      .nav-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- SIDEBAR -->
-<div class="sidebar" id="sidebar">
-  <h2>Menu</h2>
+  <input type="checkbox" id="menu-toggle" hidden />
 
-  <a href="#"><img src="assets/icons/home.svg"> Home</a>
-  <a href="#"><img src="assets/icons/random.svg"> Randomizer</a>
-  <a href="#"><img src="assets/icons/cards.svg"> Card Browser</a>
-  <a href="#"><img src="assets/icons/filter.svg"> Filters</a>
-  <a href="#"><img src="assets/icons/save.svg"> Saved Decks</a>
-  <a href="#"><img src="assets/icons/stats.svg"> Stats</a>
-  <a href="#"><img src="assets/icons/settings.svg"> Settings</a>
-</div>
+  <label class="hamburger" for="menu-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </label>
 
-<div class="overlay" id="overlay"></div>
+  <nav class="sidenav" aria-label="Main navigation">
+    <div class="sidenav-title">Navigate</div>
+    <a href="index.html"><span class="nav-icon">🏰</span> Home</a>
+    <a href="cards.html"><span class="nav-icon">🃏</span> Card Browser</a>
+    <a href="decks.html"><span class="nav-icon">📜</span> Deck History</a>
+    <a href="expansions.html"><span class="nav-icon">📦</span> Box Ratings</a>
+    <a href="ratings.html"><span class="nav-icon">⭐</span> Card Ratings</a>
+    <a href="stats.html"><span class="nav-icon">📊</span> Stats</a>
+  </nav>
 
-<!-- HEADER -->
-<div class="header">
-  <img src="assets/icons/menu.svg" class="menu-btn" onclick="toggleMenu()">
-  <div class="title">Dominion Forger</div>
-</div>
+  <label class="nav-overlay" for="menu-toggle" aria-hidden="true"></label>
 
-<!-- MAIN -->
-<div class="main">
+  <main class="page-wrap">
+    <div class="scroll-container">
 
-  <div class="hero">
-    <h1>Forge Better Kingdoms</h1>
-    <p>Smarter randomization. Deeper strategy.</p>
-  </div>
+      <header class="site-header">
+        <div class="crest">⚔️</div>
+        <h1 class="site-title">Dominion <span>Forger</span></h1>
+        <div class="divider"><span class="divider-ornament">✦</span></div>
+        <p class="tagline">Your kingdom. Your cards. Your chronicle.</p>
+      </header>
 
-  <div class="actions">
+      <p class="intro">
+        Welcome, strategist. <strong>Dominion Forger</strong> is your personal companion
+        for tracking the cards you've played, the decks you've built, and the kingdoms
+        you've conquered. Browse every card across all expansions, rate your favourites,
+        and chronicle your history — all stored right here on your device.
+      </p>
 
-    <div class="button random" onclick="press(this)">
-      <img src="assets/icons/random.svg">
-      <div>
-        <div>Generate Kingdom</div>
-        <small>Build a balanced set with synergy</small>
-      </div>
+      <nav class="nav-grid" aria-label="Page links">
+        <a class="nav-card" href="cards.html">
+          <span class="card-icon">🃏</span>
+          <span class="card-label">Card Browser</span>
+          <span class="card-desc">Explore all 800+ cards</span>
+        </a>
+        <a class="nav-card" href="decks.html">
+          <span class="card-icon">📜</span>
+          <span class="card-label">Deck History</span>
+          <span class="card-desc">Log & revisit your kingdoms</span>
+        </a>
+        <a class="nav-card" href="expansions.html">
+          <span class="card-icon">📦</span>
+          <span class="card-label">Box Ratings</span>
+          <span class="card-desc">Rate your expansions</span>
+        </a>
+        <a class="nav-card" href="ratings.html">
+          <span class="card-icon">⭐</span>
+          <span class="card-label">Card Ratings</span>
+          <span class="card-desc">Love it or loathe it?</span>
+        </a>
+        <a class="nav-card" href="stats.html">
+          <span class="card-icon">📊</span>
+          <span class="card-label">Stats</span>
+          <span class="card-desc">Your play by the numbers</span>
+        </a>
+      </nav>
+
+      <p class="scroll-footer">All data is stored locally on your device &mdash; your kingdom, your privacy.</p>
+
     </div>
-
-    <div class="button browse" onclick="press(this)">
-      <img src="assets/icons/cards.svg">
-      <div>
-        <div>Browse Cards</div>
-        <small>Explore all Dominion cards</small>
-      </div>
-    </div>
-
-    <div class="button saved" onclick="press(this)">
-      <img src="assets/icons/save.svg">
-      <div>
-        <div>Saved Decks</div>
-        <small>View and manage saved kingdoms</small>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    Dominion Forger © 2026
-  </div>
-
-</div>
-
-<script>
-function toggleMenu() {
-  document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('overlay').classList.toggle('active');
-}
-
-document.getElementById('overlay').onclick = toggleMenu;
-
-function press(el) {
-  el.style.transform = "scale(0.97)";
-  setTimeout(() => el.style.transform = "", 100);
-}
-</script>
+  </main>
 
 </body>
 </html>
+```
