@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
 const cardNames = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'storage', 'card_names.json'), 'utf-8'));
 const rawTextDir = path.join(__dirname, '..', 'parsed_text');
 const computeTags = require('../file_manip/compute_tags');
-const { computeDepen, buildStructure } = require('../file_manip/compute_depen');
+const { dependencies, parent } = computeDepen(cardName, cleanedText, structure);
 
 const aliases = { 'Harem': 'Farm' };
 
@@ -111,7 +111,7 @@ function formatCost(raw, extra, isDebt) {
   return raw;
 }
 
-async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
+async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup, structure) {
   cardName = aliases[cardName] || cardName;
   const safeFileName = cardName.replace(/'/g, '%27');
   const localPath = path.join(rawDir, `${safeFileName}.json`);
@@ -293,7 +293,7 @@ async function main() {
     });
     try {
       const sharedPage = await browser.newPage();
-      const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup);
+      const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup, structure);
       if (card) console.log('[RESULT]', JSON.stringify(card, null, 2));
       else console.error(`[FAIL] Could not parse "${cardName}"`);
     } finally {
@@ -316,6 +316,8 @@ async function main() {
   if (!fs.existsSync(rawTextDir)) fs.mkdirSync(rawTextDir);
 
   const lookup = buildCardLookup();
+  const structure = buildStructure();
+  
   const isTermux = process.env.TERMUX_VERSION !== undefined;
   const browser = await puppeteer.launch({
     headless: true,
@@ -347,7 +349,7 @@ async function main() {
       const failed = [];
       for (const cardName of toFetch) {
         try {
-          const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup);
+          const card = await fetchAndParseCard(cardName, sharedPage, rawDir, lookup, structure);
           if (card) {
             results.push(card);
             //console.log(`[DONE] ${cardName}`);
