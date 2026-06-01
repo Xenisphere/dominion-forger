@@ -253,11 +253,11 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup) {
     cost_potion: !!cost3Match ? 1 : 0,
     text: cleanedText,
     types: typesMatch ? typesMatch[1].split('-').map(t => t.trim()) : [],
-    subtypes: [],
+    subtypes,
     tags,
     opponent_tags,
-    parent: [],
-    dependencies: [],
+    parent,
+    dependencies,
     image: `images/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
   };
 }
