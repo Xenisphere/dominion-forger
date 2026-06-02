@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    // Convert /dominion-forger/card → index.html#/card
+    const repo = '/dominion-forger';
+    const path = location.pathname.replace(repo, '') || '/';
+    const route = path === '/' ? '' : '#' + path;
+    location.replace(repo + '/' + route);
+  </script>
+</head>
+<body></body>
+</html>
