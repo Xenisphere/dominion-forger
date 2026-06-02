@@ -135,6 +135,30 @@ footer {
   justify-content: space-between;
 }
 
+/* ── ABOUT ── */
+.about-intro {
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.about-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.about-body {
+  color: var(--ink-light);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
 /* ── MOBILE ── */
 @media (max-width: 640px) {
   header { flex-direction: column; align-items: flex-start; padding: 1rem 1.2rem 0.8rem; }
