@@ -1,47 +1,79 @@
 // js/router.js
-const ROUTES = {
-  home:        { label: 'Home',             page: homePage },
-  randomizer:  { label: 'Randomizer',       page: randomizerPage },
-  browse:      { label: 'Browse Cards',     page: browsePage },
-  card:        { label: 'Card Page',        page: cardPage },
-  expansions:  { label: 'Owned Expansions', page: expansionsPage },
-  kingdoms:    { label: 'Saved Kingdoms',   page: kingdomsPage },
-  statistics:  { label: 'Statistics',       page: statisticsPage },
-  about:       { label: 'About',            page: aboutPage },
-};
+document.addEventListener('DOMContentLoaded', () => {
 
-const nav  = document.getElementById('nav');
-const main = document.getElementById('main');
+  const ROUTES = {
+    '':           { label: 'Home',             page: homePage },
+    'randomizer': { label: 'Randomizer',       page: randomizerPage },
+    'browse':     { label: 'Browse Cards',     page: browsePage },
+    'card':       { label: 'Card Page',        page: cardPage },
+    'expansions': { label: 'Owned Expansions', page: expansionsPage },
+    'kingdoms':   { label: 'Saved Kingdoms',   page: kingdomsPage },
+    'statistics': { label: 'Statistics',       page: statisticsPage },
+    'about':      { label: 'About',            page: aboutPage },
+  };
 
-// Build nav links once
-Object.entries(ROUTES).forEach(([key, { label }]) => {
-  const a = document.createElement('a');
-  a.href = `#${key}`;
-  a.textContent = label;
-  a.dataset.route = key;
-  nav.appendChild(a);
-});
+  const BASE = '/dominion-forger';
+  const main        = document.getElementById('main');
+  const drawerLinks = document.getElementById('drawer-links');
+  const drawer      = document.getElementById('drawer');
+  const overlay     = document.getElementById('drawer-overlay');
+  const hamburger   = document.getElementById('hamburger');
+  const drawerClose = document.getElementById('drawer-close');
 
-function currentRoute() {
-  const hash = location.hash.slice(1);
-  return ROUTES[hash] ? hash : 'home';
-}
-
-function navigate() {
-  const route = currentRoute();
-
-  // Update active link
-  nav.querySelectorAll('a').forEach(a => {
-    a.classList.toggle('active', a.dataset.route === route);
+  // Build drawer nav links
+  Object.entries(ROUTES).forEach(([key, { label }]) => {
+    const a = document.createElement('a');
+    a.href = key === '' ? `${BASE}/` : `${BASE}/${key}`;
+    a.textContent = label;
+    a.dataset.route = key;
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      closeDrawer();
+      navigateTo(key, true);
+    });
+    drawerLinks.appendChild(a);
   });
 
-  // Update page title
-  document.title = `${ROUTES[route].label} — Dominion Forger`;
+  // Drawer
+  function openDrawer()  { drawer.classList.add('open'); overlay.classList.add('open'); }
+  function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('open'); }
+  hamburger.addEventListener('click', openDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', closeDrawer);
 
-  // Render page content
-  main.innerHTML = '';
-  ROUTES[route].page(main);
-}
+  // Determine route from hash (404 redirect), path, or sessionStorage
+  function currentRoute() {
+    const hash = location.hash.replace('#/', '').replace('#', '');
+    if (hash && ROUTES[hash] !== undefined) return hash;
+    const path = location.pathname.replace(BASE, '').replace(/^\//, '').replace(/\/$/, '');
+    if (path && ROUTES[path] !== undefined) return path;
+    return sessionStorage.getItem('df_route') || '';
+  }
 
-window.addEventListener('hashchange', navigate);
-navigate();
+  function navigateTo(key, push = false) {
+    if (ROUTES[key] === undefined) key = '';
+
+    // Update active link
+    drawerLinks.querySelectorAll('a').forEach(a => {
+      a.classList.toggle('active', a.dataset.route === key);
+    });
+
+    document.title = key === '' ? 'Dominion Forger' : `${ROUTES[key].label} — Dominion Forger`;
+
+    // Persist route and clean URL
+    sessionStorage.setItem('df_route', key);
+    const cleanUrl = key === '' ? `${BASE}/` : `${BASE}/${key}`;
+    if (push) history.pushState({ route: key }, '', cleanUrl);
+    else history.replaceState({ route: key }, '', cleanUrl);
+
+    main.innerHTML = '';
+    ROUTES[key].page(main);
+  }
+
+  window.addEventListener('popstate', e => {
+    const key = e.state?.route ?? currentRoute();
+    navigateTo(key, false);
+  });
+
+  navigateTo(currentRoute(), false);
+});
