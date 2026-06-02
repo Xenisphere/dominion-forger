@@ -14,7 +14,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -22,7 +21,10 @@
       "topdeck"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Potion"
+    ],
     "image": "images/Alchemy/Alchemist.jpg"
   },
   {
@@ -40,7 +42,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -49,6 +50,7 @@
       "scry"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Apothecary.jpg"
   },
@@ -67,7 +69,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -75,6 +76,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Apprentice.jpg"
   },
@@ -94,7 +96,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "cantrip",
@@ -103,7 +104,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Alchemy/Familiar.jpg"
   },
   {
@@ -121,7 +125,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "reveal",
@@ -129,6 +132,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Golem.jpg"
   },
@@ -147,7 +151,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -157,6 +160,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Herbalist.jpg"
   },
@@ -175,13 +179,15 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "payload_piece"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Count"
+    ],
     "image": "images/Alchemy/Philosopher's_Stone.jpg"
   },
   {
@@ -199,7 +205,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "extra_turn",
       "terminal"
@@ -207,6 +212,7 @@
     "opponent_tags": [
       "discard"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Possession.jpg"
   },
@@ -225,11 +231,11 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Potion.jpg"
   },
@@ -249,7 +255,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "attack",
@@ -262,6 +267,7 @@
     "opponent_tags": [
       "reveal"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Scrying_Pool.jpg"
   },
@@ -280,7 +286,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
@@ -289,6 +294,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Transmute.jpg"
   },
@@ -307,13 +313,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/University.jpg"
   },
@@ -332,11 +338,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Alchemy/Vineyard.jpg"
   }

@@ -14,7 +14,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -24,6 +23,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Baron.jpg"
   },
@@ -42,7 +42,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -51,6 +50,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Bridge.jpg"
   },
@@ -69,7 +69,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -77,6 +76,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Conspirator.jpg"
   },
@@ -95,11 +95,11 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Coppersmith.jpg"
   },
@@ -118,7 +118,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+buys",
@@ -129,6 +128,7 @@
       "reveal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Courtier.jpg"
   },
@@ -147,7 +147,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
@@ -155,6 +154,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Courtyard.jpg"
   },
@@ -174,7 +174,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "discard",
@@ -185,6 +184,7 @@
     "opponent_tags": [
       "discard"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Diplomat.jpg"
   },
@@ -203,11 +203,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Duke.jpg"
   },
@@ -227,11 +227,11 @@
       "Treasure",
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Farm.jpg"
   },
@@ -251,12 +251,12 @@
       "Action",
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Great_Hall.jpg"
   },
@@ -275,7 +275,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -284,6 +283,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Ironworks.jpg"
   },
@@ -302,7 +302,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "engine_piece",
@@ -311,6 +310,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Lurker.jpg"
   },
@@ -329,7 +329,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
@@ -338,6 +337,7 @@
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Masquerade.jpg"
   },
@@ -357,7 +357,6 @@
       "Action",
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -366,6 +365,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Mill.jpg"
   },
@@ -384,7 +384,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "+coins",
@@ -396,6 +395,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Mining_Village.jpg"
   },
@@ -415,7 +415,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -426,6 +425,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Minion.jpg"
   },
@@ -445,13 +445,13 @@
       "Action",
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Nobles.jpg"
   },
@@ -470,7 +470,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
@@ -480,6 +479,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Patrol.jpg"
   },
@@ -498,7 +498,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -507,6 +506,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Pawn.jpg"
   },
@@ -526,7 +526,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "engine_piece",
@@ -540,7 +539,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Intrigue/Replace.jpg"
   },
   {
@@ -559,7 +561,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "cost_reduction",
@@ -572,6 +573,7 @@
       "topdeck",
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Saboteur.jpg"
   },
@@ -590,7 +592,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "engine_piece",
@@ -600,6 +601,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Scout.jpg"
   },
@@ -619,7 +621,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "+coins",
@@ -631,6 +632,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Secret_Chamber.jpg"
   },
@@ -649,13 +651,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Secret_Passage.jpg"
   },
@@ -674,7 +676,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
@@ -682,6 +683,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Shanty_Town.jpg"
   },
@@ -700,7 +702,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "+coins",
@@ -711,6 +712,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Steward.jpg"
   },
@@ -730,7 +732,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -741,6 +742,7 @@
     "opponent_tags": [
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Swindler.jpg"
   },
@@ -760,7 +762,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -771,7 +772,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Intrigue/Torturer.jpg"
   },
   {
@@ -789,7 +793,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
@@ -800,6 +803,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Trading_Post.jpg"
   },
@@ -818,7 +822,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "+coins",
@@ -830,6 +833,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Tribute.jpg"
   },
@@ -848,7 +852,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -858,6 +861,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Upgrade.jpg"
   },
@@ -876,7 +880,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -884,6 +887,7 @@
       "scry"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Intrigue/Wishing_Well.jpg"
   }

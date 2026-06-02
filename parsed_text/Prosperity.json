@@ -14,12 +14,12 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Anvil.jpg"
   },
@@ -38,12 +38,12 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Bank.jpg"
   },
@@ -62,7 +62,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "engine_piece",
@@ -74,6 +73,7 @@
     "opponent_tags": [
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Bishop.jpg"
   },
@@ -93,7 +93,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -103,7 +102,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Prosperity/Charlatan.jpg"
   },
   {
@@ -121,7 +123,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+card",
@@ -131,6 +132,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/City.jpg"
   },
@@ -151,7 +153,6 @@
       "Reaction",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -161,6 +162,7 @@
     "opponent_tags": [
       "topdeck"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Clerk.jpg"
   },
@@ -179,13 +181,12 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
-      "on_gain",
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Collection.jpg"
   },
@@ -204,11 +205,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Colony.jpg"
   },
@@ -227,12 +228,12 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Contraband.jpg"
   },
@@ -251,13 +252,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "reveal",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Counting_House.jpg"
   },
@@ -276,7 +277,6 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "engine_piece",
@@ -285,6 +285,7 @@
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Crystal_Ball.jpg"
   },
@@ -303,7 +304,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
@@ -313,6 +313,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Expand.jpg"
   },
@@ -331,7 +332,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
@@ -341,6 +341,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Forge.jpg"
   },
@@ -360,7 +361,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -371,6 +371,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Goons.jpg"
   },
@@ -389,7 +390,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -398,6 +398,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Grand_Market.jpg"
   },
@@ -416,11 +417,11 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
-      "on_gain"
+      "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Hoard.jpg"
   },
@@ -439,7 +440,6 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "engine_piece",
@@ -450,6 +450,7 @@
       "trash_self"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Investment.jpg"
   },
@@ -468,11 +469,11 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/King's_Court.jpg"
   },
@@ -491,7 +492,6 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "engine_piece",
@@ -500,6 +500,7 @@
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Loan.jpg"
   },
@@ -518,7 +519,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "engine_piece",
@@ -526,6 +526,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Magnate.jpg"
   },
@@ -544,7 +545,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "on_gain",
@@ -554,12 +554,38 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Mint.jpg"
   },
   {
-    "name": "Mountebank",
+    "name": "Monument",
     "id": "052236",
+    "box": "Prosperity",
+    "edition": "1&2",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+(2) +{1}",
+    "types": [
+      "Action"
+    ],
+    "tags": [
+      "+coins",
+      "payload_piece",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Prosperity/Monument.jpg"
+  },
+  {
+    "name": "Mountebank",
+    "id": "052336",
     "box": "Prosperity",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -573,7 +599,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -584,33 +609,11 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Prosperity/Mountebank.jpg"
-  },
-  {
-    "name": "Monument",
-    "id": "052336",
-    "box": "Prosperity",
-    "edition": "1&2",
-    "supply": "Kingdom Pile",
-    "removed": false,
-    "cost": "(4)",
-    "cost_coin": 4,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "+(2) +{1}",
-    "types": [
-      "Action"
-    ],
-    "subtypes": [],
-    "tags": [
-      "+coins",
-      "payload_piece",
-      "terminal"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Prosperity/Monument.jpg"
   },
   {
     "name": "Peddler",
@@ -627,7 +630,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -636,6 +638,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Peddler.jpg"
   },
@@ -654,11 +657,11 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Platinum.jpg"
   },
@@ -677,11 +680,11 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "cost_reduction"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Quarry.jpg"
   },
@@ -701,7 +704,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -712,6 +714,7 @@
     "opponent_tags": [
       "scry"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Rabble.jpg"
   },
@@ -730,12 +733,12 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "gain_to_deck",
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Royal_Seal.jpg"
   },
@@ -754,7 +757,6 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "cost_reduction",
       "gain",
@@ -762,6 +764,7 @@
       "plays_actions"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Talisman.jpg"
   },
@@ -780,7 +783,6 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "engine_piece",
@@ -789,6 +791,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Tiara.jpg"
   },
@@ -807,18 +810,21 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
       "engine_piece",
       "payload_piece",
+      "setup",
       "terminal",
       "trash",
       "trash_for_benefit"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Trade"
+    ],
     "image": "images/Prosperity/Trade_Route.jpg"
   },
   {
@@ -836,7 +842,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "+coins",
@@ -848,6 +853,7 @@
     "opponent_tags": [
       "discard"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Vault.jpg"
   },
@@ -866,13 +872,13 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "reveal",
       "scry"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Venture.jpg"
   },
@@ -891,12 +897,14 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "gain"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "War"
+    ],
     "image": "images/Prosperity/War_Chest.jpg"
   },
   {
@@ -915,7 +923,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "draw",
       "engine_piece",
@@ -929,6 +936,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Watchtower.jpg"
   },
@@ -947,7 +955,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+card",
@@ -956,6 +963,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Prosperity/Worker's_Village.jpg"
   }

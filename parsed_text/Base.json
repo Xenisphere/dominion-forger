@@ -14,11 +14,11 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Base/Copper.jpg"
   },
@@ -37,11 +37,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Base/Duchy.jpg"
   },
@@ -60,11 +60,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Base/Estate.jpg"
   },
@@ -83,11 +83,11 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Base/Gold.jpg"
   },
@@ -106,11 +106,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Base/Province.jpg"
   },
@@ -129,11 +129,11 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Base/Silver.jpg"
   }

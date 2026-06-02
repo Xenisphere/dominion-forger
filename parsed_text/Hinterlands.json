@@ -15,7 +15,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "cost_reduction",
@@ -24,6 +23,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Berserker.jpg"
   },
@@ -42,7 +42,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "engine_piece",
@@ -50,6 +49,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Border_Village.jpg"
   },
@@ -68,12 +68,12 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "on_gain",
       "self_junk"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Cache.jpg"
   },
@@ -92,7 +92,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "discard",
@@ -101,6 +100,7 @@
       "scry"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Cartographer.jpg"
   },
@@ -120,7 +120,6 @@
       "Treasure",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "attack",
@@ -130,7 +129,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Hinterlands/Cauldron.jpg"
   },
   {
@@ -148,7 +150,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "engine_piece",
@@ -156,6 +157,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Crossroads.jpg"
   },
@@ -174,7 +176,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cost_reduction",
       "engine_piece",
@@ -187,6 +188,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Develop.jpg"
   },
@@ -205,12 +207,10 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "discard",
       "global_effect",
-      "on_gain",
       "payload_piece",
       "scry",
       "terminal"
@@ -218,6 +218,7 @@
     "opponent_tags": [
       "reveal"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Duchess.jpg"
   },
@@ -236,7 +237,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "discard",
@@ -245,6 +245,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Embassy.jpg"
   },
@@ -263,7 +264,6 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "on_gain",
@@ -272,6 +272,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Farmland.jpg"
   },
@@ -291,7 +292,6 @@
       "Treasure",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "payload_piece",
@@ -302,6 +302,7 @@
     "opponent_tags": [
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Fool's_Gold.jpg"
   },
@@ -321,7 +322,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
@@ -329,6 +329,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Guard_Dog.jpg"
   },
@@ -347,13 +348,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "payload_piece",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Haggler.jpg"
   },
@@ -372,13 +373,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "cost_reduction",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Highway.jpg"
   },
@@ -397,7 +398,6 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "gain_to_hand",
       "on_gain",
@@ -406,7 +406,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Hinterlands/Ill-Gotten_Gains.jpg"
   },
   {
@@ -424,7 +427,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "discard",
@@ -435,6 +437,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Inn.jpg"
   },
@@ -453,7 +456,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "draw",
@@ -464,6 +466,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Jack_of_All_Trades.jpg"
   },
@@ -482,7 +485,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "gain_to_deck",
@@ -493,6 +495,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Mandarin.jpg"
   },
@@ -512,7 +515,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+cards",
@@ -525,6 +527,7 @@
     "opponent_tags": [
       "draw"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Margrave.jpg"
   },
@@ -544,7 +547,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -560,6 +562,7 @@
       "scry",
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Noble_Brigand.jpg"
   },
@@ -578,7 +581,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -589,6 +591,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Nomad_Camp.jpg"
   },
@@ -607,7 +610,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -620,6 +622,7 @@
       "trash_self"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Nomads.jpg"
   },
@@ -638,7 +641,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -647,6 +649,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Oasis.jpg"
   },
@@ -666,7 +669,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -680,6 +682,7 @@
     "opponent_tags": [
       "reveal"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Oracle.jpg"
   },
@@ -698,7 +701,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -706,12 +708,13 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Scheme.jpg"
   },
   {
     "name": "Silk Road",
-    "id": "081159",
+    "id": "084759",
     "box": "Dark Ages",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -724,11 +727,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dark Ages/Silk_Road.jpg"
   },
@@ -747,7 +750,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -759,6 +761,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Souk.jpg"
   },
@@ -777,7 +780,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+buys",
@@ -789,6 +791,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Spice_Merchant.jpg"
   },
@@ -807,7 +810,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -815,6 +817,7 @@
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Stables.jpg"
   },
@@ -834,7 +837,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "exchange",
@@ -846,6 +848,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Trader.jpg"
   },
@@ -865,7 +868,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "discard",
@@ -878,6 +880,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Trail.jpg"
   },
@@ -897,7 +900,6 @@
       "Victory",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "on_discard",
@@ -906,6 +908,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Tunnel.jpg"
   },
@@ -925,13 +928,13 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "on_discard",
       "plays_actions"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Weaver.jpg"
   },
@@ -950,7 +953,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "cost_reduction",
@@ -959,6 +961,7 @@
       "gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Hinterlands/Wheelwright.jpg"
   },
@@ -978,7 +981,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -990,7 +992,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Hinterlands/Witch's_Hut.jpg"
   }
 ]

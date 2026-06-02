@@ -15,13 +15,13 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "reveal",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Ambassador.jpg"
   },
@@ -41,13 +41,13 @@
       "Treasure",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "duration",
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Astrolabe.jpg"
   },
@@ -66,7 +66,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "+coins",
@@ -75,6 +74,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Bazaar.jpg"
   },
@@ -95,7 +95,6 @@
       "Duration",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "duration",
@@ -107,7 +106,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Seaside/Blockade.jpg"
   },
   {
@@ -126,13 +128,13 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "duration",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Caravan.jpg"
   },
@@ -153,7 +155,6 @@
       "Duration",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "+coins",
@@ -167,6 +168,7 @@
     "opponent_tags": [
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Corsair.jpg"
   },
@@ -186,7 +188,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -195,6 +196,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Cutpurse.jpg"
   },
@@ -213,7 +215,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "engine_piece",
@@ -225,7 +226,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Seaside/Embargo.jpg"
   },
   {
@@ -243,7 +247,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "gain_to_hand",
@@ -251,6 +254,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Explorer.jpg"
   },
@@ -270,7 +274,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+coins",
@@ -279,6 +282,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Fishing_Village.jpg"
   },
@@ -298,7 +302,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -308,6 +311,7 @@
     "opponent_tags": [
       "topdeck"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Ghost_Ship.jpg"
   },
@@ -327,7 +331,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "duration",
@@ -335,6 +338,7 @@
       "set_aside"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Haven.jpg"
   },
@@ -354,11 +358,11 @@
       "Action",
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Island.jpg"
   },
@@ -378,7 +382,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+coins",
@@ -388,6 +391,7 @@
       "reaction_attack"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Lighthouse.jpg"
   },
@@ -406,7 +410,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "discard",
@@ -416,6 +419,7 @@
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Lookout.jpg"
   },
@@ -435,7 +439,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "duration",
@@ -443,6 +446,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Merchant_Ship.jpg"
   },
@@ -462,7 +466,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "duration",
@@ -471,6 +474,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Monkey.jpg"
   },
@@ -489,13 +493,15 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "village"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Village"
+    ],
     "image": "images/Seaside/Native_Village.jpg"
   },
   {
@@ -513,7 +519,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "discard",
@@ -523,6 +528,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Navigator.jpg"
   },
@@ -542,7 +548,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "draw",
       "duration",
@@ -550,6 +555,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Outpost.jpg"
   },
@@ -568,13 +574,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Pearl_Diver.jpg"
   },
@@ -595,7 +601,6 @@
       "Duration",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "duration",
       "gain",
@@ -604,6 +609,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Pirate.jpg"
   },
@@ -623,7 +629,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -636,7 +641,10 @@
       "scry",
       "trash"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Pirate"
+    ],
     "image": "images/Seaside/Pirate_Ship.jpg"
   },
   {
@@ -655,19 +663,18 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+coins",
       "duration",
       "engine_piece",
-      "on_gain",
       "payload_piece",
       "plays_actions",
       "trash",
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Sailor.jpg"
   },
@@ -686,7 +693,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -697,6 +703,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Salvager.jpg"
   },
@@ -715,7 +722,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -724,6 +730,7 @@
       "scry"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Sea_Chart.jpg"
   },
@@ -743,7 +750,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "discard_attack",
@@ -753,7 +759,10 @@
       "junking",
       "topdeck"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Seaside/Sea_Hag.jpg"
   },
   {
@@ -773,7 +782,6 @@
       "Duration",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -785,7 +793,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Seaside/Sea_Witch.jpg"
   },
   {
@@ -803,12 +814,12 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Smugglers.jpg"
   },
@@ -828,7 +839,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+buys",
@@ -839,6 +849,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Tactician.jpg"
   },
@@ -858,7 +869,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -867,6 +877,7 @@
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Tide_Pools.jpg"
   },
@@ -885,7 +896,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain_to_deck",
@@ -897,6 +907,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Treasure_Map.jpg"
   },
@@ -915,7 +926,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -927,6 +937,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Treasury.jpg"
   },
@@ -945,7 +956,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -953,6 +963,7 @@
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Warehouse.jpg"
   },
@@ -972,7 +983,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+cards",
@@ -982,6 +992,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Seaside/Wharf.jpg"
   }

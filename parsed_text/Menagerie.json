@@ -1,7 +1,31 @@
 [
   {
-    "name": "Animal Fair",
+    "name": "Alliance",
     "id": "130171",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(10)",
+    "cost_coin": 10,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Province, a Duchy, an Estate, a Gold, a Silver, and a Copper.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain",
+      "self_junk"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Alliance.jpg"
+  },
+  {
+    "name": "Animal Fair",
+    "id": "130271",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -14,7 +38,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -24,12 +47,62 @@
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Animal_Fair.jpg"
   },
   {
+    "name": "Banish",
+    "id": "130371",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Exile any number of cards with the same name from your hand.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "exile"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Banish.jpg"
+  },
+  {
+    "name": "Bargain",
+    "id": "130471",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a nonVictory card costing up to (5). Each other player gains a Horse.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain",
+      "uses_horses"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [
+      "Horse"
+    ],
+    "image": "images/Menagerie/Bargain.jpg"
+  },
+  {
     "name": "Barge",
-    "id": "130271",
+    "id": "130571",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -43,7 +116,6 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+cards",
@@ -53,12 +125,13 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Barge.jpg"
   },
   {
     "name": "Black Cat",
-    "id": "130371",
+    "id": "130671",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -73,7 +146,6 @@
       "Attack",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -84,12 +156,15 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Menagerie/Black_Cat.jpg"
   },
   {
     "name": "Bounty Hunter",
-    "id": "130471",
+    "id": "130771",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -102,7 +177,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+coins",
@@ -111,12 +185,13 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Bounty_Hunter.jpg"
   },
   {
     "name": "Camel Train",
-    "id": "130571",
+    "id": "130871",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -129,19 +204,19 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "exile",
       "on_gain",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Camel_Train.jpg"
   },
   {
     "name": "Cardinal",
-    "id": "130671",
+    "id": "130971",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -155,7 +230,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -166,12 +240,13 @@
     "opponent_tags": [
       "scry"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Cardinal.jpg"
   },
   {
     "name": "Cavalry",
-    "id": "130771",
+    "id": "131071",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -184,7 +259,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+cards",
@@ -194,12 +268,36 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Cavalry.jpg"
   },
   {
+    "name": "Commerce",
+    "id": "131171",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Gold per differently named card youve gained this turn.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Commerce.jpg"
+  },
+  {
     "name": "Coven",
-    "id": "130871",
+    "id": "131271",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -213,7 +311,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+coins",
@@ -223,12 +320,96 @@
       "payload_piece"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Menagerie/Coven.jpg"
   },
   {
+    "name": "Delay",
+    "id": "131371",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may set aside an Action card from your hand. At the start of your next turn, play it.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "plays_actions",
+      "set_aside"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Delay.jpg"
+  },
+  {
+    "name": "Demand",
+    "id": "131471",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Horse and a card costing up to (4), both onto your deck.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain",
+      "gain_to_deck",
+      "topdeck",
+      "uses_horses"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [
+      "Horse"
+    ],
+    "image": "images/Menagerie/Demand.jpg"
+  },
+  {
+    "name": "Desperation",
+    "id": "131571",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(0)",
+    "cost_coin": 0,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per turn: You may gain a Curse. If you do, +1 Buy and +(2).",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "+buys",
+      "+coins",
+      "gain",
+      "payload_piece",
+      "self_junk"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
+    "image": "images/Menagerie/Desperation.jpg"
+  },
+  {
     "name": "Destrier",
-    "id": "130971",
+    "id": "131671",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -241,7 +422,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -249,12 +429,13 @@
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Destrier.jpg"
   },
   {
     "name": "Displace",
-    "id": "131071",
+    "id": "131771",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -267,19 +448,69 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "exile",
       "gain",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Displace.jpg"
   },
   {
+    "name": "Enclave",
+    "id": "131871",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(8)",
+    "cost_coin": 8,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Gold. Exile a Duchy from the Supply.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "exile",
+      "gain"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Enclave.jpg"
+  },
+  {
+    "name": "Enhance",
+    "id": "131971",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "You may trash a nonVictory card from your hand, to gain a card costing up to (2) more than it.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "engine_piece",
+      "gain",
+      "trash",
+      "trash_for_benefit"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Enhance.jpg"
+  },
+  {
     "name": "Falconer",
-    "id": "131171",
+    "id": "132071",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -293,7 +524,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "cost_reduction",
       "gain",
@@ -302,12 +532,13 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Falconer.jpg"
   },
   {
     "name": "Fisherman",
-    "id": "131271",
+    "id": "132171",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -320,7 +551,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -329,12 +559,39 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Fisherman.jpg"
   },
   {
+    "name": "Gamble",
+    "id": "132271",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Discard the top card of your deck. If its an Action or Treasure, you may play it.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "+buys",
+      "discard",
+      "payload_piece",
+      "plays_actions"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Gamble.jpg"
+  },
+  {
     "name": "Gatekeeper",
-    "id": "131371",
+    "id": "132371",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -349,7 +606,6 @@
       "Duration",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -358,12 +614,13 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Gatekeeper.jpg"
   },
   {
     "name": "Goatherd",
-    "id": "131471",
+    "id": "132471",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -376,7 +633,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -384,12 +640,13 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Goatherd.jpg"
   },
   {
     "name": "Groom",
-    "id": "131571",
+    "id": "132571",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -402,7 +659,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
@@ -410,12 +666,15 @@
       "uses_horses"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Horse"
+    ],
     "image": "images/Menagerie/Groom.jpg"
   },
   {
     "name": "Horse",
-    "id": "131671",
+    "id": "132671",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Non-Supply",
@@ -428,7 +687,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -437,12 +695,13 @@
       "trash_self"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Horse.jpg"
   },
   {
     "name": "Hostelry",
-    "id": "131771",
+    "id": "132771",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -455,7 +714,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "discard",
@@ -465,12 +723,13 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Hostelry.jpg"
   },
   {
     "name": "Hunting Lodge",
-    "id": "131871",
+    "id": "132871",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -483,7 +742,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "discard",
@@ -491,12 +749,38 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Hunting_Lodge.jpg"
   },
   {
+    "name": "Invest",
+    "id": "132971",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Exile an Action card from the Supply. While its in Exile, when another player gains or Invests in a copy of it, +2 Cards.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "+cards",
+      "engine_piece",
+      "exile"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Invest.jpg"
+  },
+  {
     "name": "Kiln",
-    "id": "131971",
+    "id": "133071",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -509,7 +793,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "gain",
@@ -517,12 +800,13 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Kiln.jpg"
   },
   {
     "name": "Livery",
-    "id": "132071",
+    "id": "133171",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -535,7 +819,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "payload_piece",
@@ -543,12 +826,38 @@
       "uses_horses"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Horse"
+    ],
     "image": "images/Menagerie/Livery.jpg"
   },
   {
+    "name": "March",
+    "id": "133271",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Look through your discard pile. You may play an Action card from it.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "plays_actions"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/March.jpg"
+  },
+  {
     "name": "Mastermind",
-    "id": "132171",
+    "id": "133371",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -562,18 +871,18 @@
       "Action",
       "Duration"
     ],
-    "subtypes": [],
     "tags": [
       "duration",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Mastermind.jpg"
   },
   {
     "name": "Paddock",
-    "id": "132271",
+    "id": "133471",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -586,7 +895,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+coins",
@@ -594,12 +902,113 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Paddock.jpg"
   },
   {
+    "name": "Populate",
+    "id": "133571",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(10)",
+    "cost_coin": 10,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain one card from each Action Supply pile.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Populate.jpg"
+  },
+  {
+    "name": "Pursue",
+    "id": "133671",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy Name a card. Reveal the top 4 cards from your deck. Put the matches back and discard the rest.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "+buys",
+      "discard",
+      "payload_piece",
+      "reveal",
+      "scry"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Pursue.jpg"
+  },
+  {
+    "name": "Reap",
+    "id": "133771",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(7)",
+    "cost_coin": 7,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Gold, setting it aside. At the start of your next turn, play it.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain",
+      "plays_actions"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Reap.jpg"
+  },
+  {
+    "name": "Ride",
+    "id": "133871",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Gain a Horse.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain",
+      "uses_horses"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [
+      "Horse"
+    ],
+    "image": "images/Menagerie/Ride.jpg"
+  },
+  {
     "name": "Sanctuary",
-    "id": "132371",
+    "id": "133971",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -612,7 +1021,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "cantrip",
@@ -621,12 +1029,13 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Sanctuary.jpg"
   },
   {
     "name": "Scrap",
-    "id": "132471",
+    "id": "134071",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -639,7 +1048,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -653,12 +1061,38 @@
       "uses_horses"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Horse"
+    ],
     "image": "images/Menagerie/Scrap.jpg"
   },
   {
+    "name": "Seize the Day",
+    "id": "134171",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(4)",
+    "cost_coin": 4,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Once per game: Take an extra turn after this one.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "extra_turn"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Seize_the_Day.jpg"
+  },
+  {
     "name": "Sheepdog",
-    "id": "132571",
+    "id": "134271",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -672,7 +1106,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
@@ -680,12 +1113,13 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Sheepdog.jpg"
   },
   {
     "name": "Sleigh",
-    "id": "132671",
+    "id": "134371",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -699,7 +1133,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "gain_to_deck",
@@ -709,12 +1142,13 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Sleigh.jpg"
   },
   {
     "name": "Snowy Village",
-    "id": "132771",
+    "id": "134471",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -727,7 +1161,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+card",
@@ -736,12 +1169,37 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Snowy_Village.jpg"
   },
   {
+    "name": "Stampede",
+    "id": "134571",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(5)",
+    "cost_coin": 5,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "If you have 5 or fewer cards in play, gain 5 Horses onto your deck.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "gain_to_deck",
+      "topdeck"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Stampede.jpg"
+  },
+  {
     "name": "Stockpile",
-    "id": "132871",
+    "id": "134671",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -754,19 +1212,19 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "exile",
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Stockpile.jpg"
   },
   {
     "name": "Supplies",
-    "id": "132971",
+    "id": "134771",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -779,7 +1237,6 @@
     "types": [
       "Treasure"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "gain_to_deck",
@@ -787,12 +1244,64 @@
       "uses_horses"
     ],
     "opponent_tags": [],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Horse"
+    ],
     "image": "images/Menagerie/Supplies.jpg"
   },
   {
+    "name": "Toil",
+    "id": "134871",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(2)",
+    "cost_coin": 2,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+1 Buy You may play an Action card from your hand.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "+buys",
+      "payload_piece",
+      "plays_actions"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Toil.jpg"
+  },
+  {
+    "name": "Transport",
+    "id": "134971",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Landscape",
+    "removed": false,
+    "cost": "(3)",
+    "cost_coin": 3,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "Choose one: Exile an Action card from the Supply; or put an Action card you have in Exile onto your deck.",
+    "types": [
+      "Event"
+    ],
+    "tags": [
+      "exile",
+      "topdeck"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Transport.jpg"
+  },
+  {
     "name": "Village Green",
-    "id": "133071",
+    "id": "135071",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Kingdom Pile",
@@ -807,7 +1316,6 @@
       "Duration",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "duration",
@@ -817,527 +1325,13 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Village_Green.jpg"
   },
   {
-    "name": "Wayfarer",
-    "id": "133171",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Kingdom Pile",
-    "removed": false,
-    "cost": "(6)",
-    "cost_coin": 6,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "+3 Cards You may gain a Silver. | This has the same cost as the last other card gained this turn, if any.",
-    "types": [
-      "Action"
-    ],
-    "subtypes": [],
-    "tags": [
-      "+cards",
-      "engine_piece",
-      "gain",
-      "terminal"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Wayfarer.jpg"
-  },
-  {
-    "name": "Alliance",
-    "id": "133271",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(10)",
-    "cost_coin": 10,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain a Province, a Duchy, an Estate, a Gold, a Silver, and a Copper.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain",
-      "self_junk"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Alliance.jpg"
-  },
-  {
-    "name": "Banish",
-    "id": "133371",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(4)",
-    "cost_coin": 4,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Exile any number of cards with the same name from your hand.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "exile"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Banish.jpg"
-  },
-  {
-    "name": "Bargain",
-    "id": "133471",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(4)",
-    "cost_coin": 4,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain a nonVictory card costing up to (5). Each other player gains a Horse.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain",
-      "uses_horses"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Bargain.jpg"
-  },
-  {
-    "name": "Commerce",
-    "id": "133571",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(5)",
-    "cost_coin": 5,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain a Gold per differently named card youve gained this turn.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Commerce.jpg"
-  },
-  {
-    "name": "Delay",
-    "id": "133671",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(0)",
-    "cost_coin": 0,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "You may set aside an Action card from your hand. At the start of your next turn, play it.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "plays_actions",
-      "set_aside"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Delay.jpg"
-  },
-  {
-    "name": "Demand",
-    "id": "133771",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(5)",
-    "cost_coin": 5,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain a Horse and a card costing up to (4), both onto your deck.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain",
-      "gain_to_deck",
-      "topdeck",
-      "uses_horses"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Demand.jpg"
-  },
-  {
-    "name": "Desperation",
-    "id": "133871",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(0)",
-    "cost_coin": 0,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Once per turn: You may gain a Curse. If you do, +1 Buy and +(2).",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "+buys",
-      "+coins",
-      "gain",
-      "payload_piece",
-      "self_junk"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Desperation.jpg"
-  },
-  {
-    "name": "Enclave",
-    "id": "133971",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(8)",
-    "cost_coin": 8,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain a Gold. Exile a Duchy from the Supply.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "exile",
-      "gain"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Enclave.jpg"
-  },
-  {
-    "name": "Enhance",
-    "id": "134071",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(3)",
-    "cost_coin": 3,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "You may trash a nonVictory card from your hand, to gain a card costing up to (2) more than it.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "engine_piece",
-      "gain",
-      "trash",
-      "trash_for_benefit"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Enhance.jpg"
-  },
-  {
-    "name": "Gamble",
-    "id": "134171",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(2)",
-    "cost_coin": 2,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "+1 Buy Discard the top card of your deck. If its an Action or Treasure, you may play it.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "+buys",
-      "discard",
-      "payload_piece",
-      "plays_actions"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Gamble.jpg"
-  },
-  {
-    "name": "Invest",
-    "id": "134271",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(4)",
-    "cost_coin": 4,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Exile an Action card from the Supply. While its in Exile, when another player gains or Invests in a copy of it, +2 Cards.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "+cards",
-      "engine_piece",
-      "exile"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Invest.jpg"
-  },
-  {
-    "name": "March",
-    "id": "134371",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(3)",
-    "cost_coin": 3,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Look through your discard pile. You may play an Action card from it.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "plays_actions"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/March.jpg"
-  },
-  {
-    "name": "Populate",
-    "id": "134471",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(10)",
-    "cost_coin": 10,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain one card from each Action Supply pile.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Populate.jpg"
-  },
-  {
-    "name": "Pursue",
-    "id": "134571",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(2)",
-    "cost_coin": 2,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "+1 Buy Name a card. Reveal the top 4 cards from your deck. Put the matches back and discard the rest.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "+buys",
-      "discard",
-      "payload_piece",
-      "reveal",
-      "scry"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Pursue.jpg"
-  },
-  {
-    "name": "Reap",
-    "id": "134671",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(7)",
-    "cost_coin": 7,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain a Gold, setting it aside. At the start of your next turn, play it.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain",
-      "plays_actions"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Reap.jpg"
-  },
-  {
-    "name": "Ride",
-    "id": "134771",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(2)",
-    "cost_coin": 2,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Gain a Horse.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain",
-      "uses_horses"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Ride.jpg"
-  },
-  {
-    "name": "Seize the Day",
-    "id": "134871",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(4)",
-    "cost_coin": 4,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Once per game: Take an extra turn after this one.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "extra_turn"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Seize_the_Day.jpg"
-  },
-  {
-    "name": "Stampede",
-    "id": "134971",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(5)",
-    "cost_coin": 5,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "If you have 5 or fewer cards in play, gain 5 Horses onto your deck.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "gain_to_deck",
-      "topdeck"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Stampede.jpg"
-  },
-  {
-    "name": "Toil",
-    "id": "135071",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(2)",
-    "cost_coin": 2,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "+1 Buy You may play an Action card from your hand.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "+buys",
-      "payload_piece",
-      "plays_actions"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Toil.jpg"
-  },
-  {
-    "name": "Transport",
-    "id": "135171",
-    "box": "Menagerie",
-    "edition": "1",
-    "supply": "Landscape",
-    "removed": false,
-    "cost": "(3)",
-    "cost_coin": 3,
-    "cost_debt": 0,
-    "cost_potion": 0,
-    "text": "Choose one: Exile an Action card from the Supply; or put an Action card you have in Exile onto your deck.",
-    "types": [
-      "Event"
-    ],
-    "subtypes": [],
-    "tags": [
-      "exile",
-      "topdeck"
-    ],
-    "opponent_tags": [],
-    "dependencies": [],
-    "image": "images/Menagerie/Transport.jpg"
-  },
-  {
     "name": "Way of the Butterfly",
-    "id": "135271",
+    "id": "135171",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1350,18 +1344,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "trash_self"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Butterfly.jpg"
   },
   {
     "name": "Way of the Camel",
-    "id": "135371",
+    "id": "135271",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1374,17 +1368,17 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "exile"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Camel.jpg"
   },
   {
     "name": "Way of the Chameleon",
-    "id": "135471",
+    "id": "135371",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1397,17 +1391,17 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Chameleon.jpg"
   },
   {
     "name": "Way of the Frog",
-    "id": "135571",
+    "id": "135471",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1420,7 +1414,6 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "engine_piece",
@@ -1428,12 +1421,13 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Frog.jpg"
   },
   {
     "name": "Way of the Goat",
-    "id": "135671",
+    "id": "135571",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1446,18 +1440,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Goat.jpg"
   },
   {
     "name": "Way of the Horse",
-    "id": "135771",
+    "id": "135671",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1470,7 +1464,6 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -1478,12 +1471,13 @@
       "trash_self"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Horse.jpg"
   },
   {
     "name": "Way of the Mole",
-    "id": "135871",
+    "id": "135771",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1496,7 +1490,6 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
@@ -1504,12 +1497,13 @@
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Mole.jpg"
   },
   {
     "name": "Way of the Monkey",
-    "id": "135971",
+    "id": "135871",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1522,19 +1516,19 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Monkey.jpg"
   },
   {
     "name": "Way of the Mouse",
-    "id": "136071",
+    "id": "135971",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1547,18 +1541,19 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "plays_actions",
-      "set_aside"
+      "set_aside",
+      "setup"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Mouse.jpg"
   },
   {
     "name": "Way of the Mule",
-    "id": "136171",
+    "id": "136071",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1571,7 +1566,6 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+coins",
@@ -1579,12 +1573,13 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Mule.jpg"
   },
   {
     "name": "Way of the Otter",
-    "id": "136271",
+    "id": "136171",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1597,18 +1592,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Otter.jpg"
   },
   {
     "name": "Way of the Owl",
-    "id": "136371",
+    "id": "136271",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1621,18 +1616,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "draw",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Owl.jpg"
   },
   {
     "name": "Way of the Ox",
-    "id": "136471",
+    "id": "136371",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1645,18 +1640,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Ox.jpg"
   },
   {
     "name": "Way of the Pig",
-    "id": "136571",
+    "id": "136471",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1669,18 +1664,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Pig.jpg"
   },
   {
     "name": "Way of the Rat",
-    "id": "136671",
+    "id": "136571",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1693,18 +1688,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Rat.jpg"
   },
   {
     "name": "Way of the Seal",
-    "id": "136771",
+    "id": "136671",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1717,7 +1712,6 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "gain_to_deck",
@@ -1725,12 +1719,13 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Seal.jpg"
   },
   {
     "name": "Way of the Sheep",
-    "id": "136871",
+    "id": "136771",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1743,18 +1738,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Sheep.jpg"
   },
   {
     "name": "Way of the Squirrel",
-    "id": "136971",
+    "id": "136871",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1767,18 +1762,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Squirrel.jpg"
   },
   {
     "name": "Way of the Turtle",
-    "id": "137071",
+    "id": "136971",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1791,18 +1786,18 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "plays_actions",
       "set_aside"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Turtle.jpg"
   },
   {
     "name": "Way of the Worm",
-    "id": "137171",
+    "id": "137071",
     "box": "Menagerie",
     "edition": "1",
     "supply": "Landscape",
@@ -1815,12 +1810,38 @@
     "types": [
       "Way"
     ],
-    "subtypes": [],
     "tags": [
       "exile"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Menagerie/Way_of_the_Worm.jpg"
+  },
+  {
+    "name": "Wayfarer",
+    "id": "137171",
+    "box": "Menagerie",
+    "edition": "1",
+    "supply": "Kingdom Pile",
+    "removed": false,
+    "cost": "(6)",
+    "cost_coin": 6,
+    "cost_debt": 0,
+    "cost_potion": 0,
+    "text": "+3 Cards You may gain a Silver. | This has the same cost as the last other card gained this turn, if any.",
+    "types": [
+      "Action"
+    ],
+    "tags": [
+      "+cards",
+      "engine_piece",
+      "gain",
+      "terminal"
+    ],
+    "opponent_tags": [],
+    "parent": [],
+    "dependencies": [],
+    "image": "images/Menagerie/Wayfarer.jpg"
   }
 ]

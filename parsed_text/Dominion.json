@@ -14,7 +14,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "engine_piece",
@@ -23,6 +22,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Adventurer.jpg"
   },
@@ -41,7 +41,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "gain_to_deck",
@@ -50,6 +49,7 @@
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Artisan.jpg"
   },
@@ -69,7 +69,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "discard_attack",
@@ -81,6 +80,7 @@
       "scry",
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Bandit.jpg"
   },
@@ -100,7 +100,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "gain",
@@ -111,6 +110,7 @@
     "opponent_tags": [
       "topdeck"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Bureaucrat.jpg"
   },
@@ -129,13 +129,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "discard",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Cellar.jpg"
   },
@@ -154,13 +154,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "payload_piece",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Chancellor.jpg"
   },
@@ -179,13 +179,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "terminal",
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Chapel.jpg"
   },
@@ -204,7 +204,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+cards",
@@ -215,6 +214,7 @@
     "opponent_tags": [
       "draw"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Council_Room.jpg"
   },
@@ -233,11 +233,11 @@
     "types": [
       "Curse"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Curse.jpg"
   },
@@ -256,7 +256,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
@@ -267,6 +266,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Feast.jpg"
   },
@@ -285,7 +285,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -294,6 +293,7 @@
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Festival.jpg"
   },
@@ -312,11 +312,11 @@
     "types": [
       "Victory"
     ],
-    "subtypes": [],
     "tags": [
       "utility"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Gardens.jpg"
   },
@@ -335,13 +335,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "engine_piece",
       "topdeck"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Harbinger.jpg"
   },
@@ -360,13 +360,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+action",
       "+cards",
       "engine_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Laboratory.jpg"
   },
@@ -385,7 +385,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "discard",
       "draw",
@@ -393,6 +392,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Library.jpg"
   },
@@ -411,7 +411,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -420,6 +419,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Market.jpg"
   },
@@ -438,7 +438,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -446,6 +445,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Merchant.jpg"
   },
@@ -465,7 +465,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "attack",
@@ -474,6 +473,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Militia.jpg"
   },
@@ -492,7 +492,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
@@ -503,6 +502,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Mine.jpg"
   },
@@ -522,7 +522,6 @@
       "Action",
       "Reaction"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
@@ -530,6 +529,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Moat.jpg"
   },
@@ -548,7 +548,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "engine_piece",
@@ -558,6 +557,7 @@
       "trash_for_benefit"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Moneylender.jpg"
   },
@@ -576,7 +576,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "cantrip",
@@ -585,6 +584,7 @@
       "payload_piece"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Poacher.jpg"
   },
@@ -603,7 +603,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "gain",
@@ -613,6 +612,7 @@
       "trash_to_gain"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Remodel.jpg"
   },
@@ -631,7 +631,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "cantrip",
       "discard",
@@ -642,6 +641,7 @@
       "trash"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Sentry.jpg"
   },
@@ -660,13 +660,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "engine_piece",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Smithy.jpg"
   },
@@ -686,7 +686,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "cantrip",
@@ -699,6 +698,7 @@
     "opponent_tags": [
       "reveal"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Spy.jpg"
   },
@@ -718,7 +718,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "attack",
       "discard_attack",
@@ -730,6 +729,7 @@
       "scry",
       "trash"
     ],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Thief.jpg"
   },
@@ -748,12 +748,12 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "engine_piece",
       "plays_actions"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Throne_Room.jpg"
   },
@@ -772,7 +772,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+coins",
       "discard",
@@ -780,6 +779,7 @@
       "plays_actions"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Vassal.jpg"
   },
@@ -798,13 +798,13 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+card",
       "engine_piece",
       "village"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Village.jpg"
   },
@@ -824,7 +824,6 @@
       "Action",
       "Attack"
     ],
-    "subtypes": [],
     "tags": [
       "+cards",
       "attack",
@@ -834,7 +833,10 @@
     "opponent_tags": [
       "junking"
     ],
-    "dependencies": [],
+    "parent": [],
+    "dependencies": [
+      "Curse"
+    ],
     "image": "images/Dominion/Witch.jpg"
   },
   {
@@ -852,7 +854,6 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "+buys",
       "+coins",
@@ -860,6 +861,7 @@
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Woodcutter.jpg"
   },
@@ -878,12 +880,12 @@
     "types": [
       "Action"
     ],
-    "subtypes": [],
     "tags": [
       "gain",
       "terminal"
     ],
     "opponent_tags": [],
+    "parent": [],
     "dependencies": [],
     "image": "images/Dominion/Workshop.jpg"
   }
