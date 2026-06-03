@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'kingdoms':   { label: 'Saved Kingdoms',   page: kingdomsPage },
     'statistics': { label: 'Statistics',       page: statisticsPage },
     'about':      { label: 'About',            page: aboutPage },
+    'help':      { label: 'Help',            page: helpPage },
   };
 
   const BASE = '/dominion-forger';
