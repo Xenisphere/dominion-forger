@@ -38,7 +38,7 @@ header {
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 0.2rem;
   background: var(--parchment);
   z-index: 50;
 }
