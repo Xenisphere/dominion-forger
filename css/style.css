@@ -65,8 +65,8 @@ header {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 4px;
+  gap: 24x;
+  padding: 1px;
   flex-shrink: 0;
 }
 
