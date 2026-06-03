@@ -163,11 +163,8 @@ main {
   max-width: 860px;
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 2rem;
-  margin-top: var(--header-h);
-  margin-bottom: var(--footer-h);
-  min-height: 0;
-  height: calc(100vh - var(--header-h) - var(--footer-h));
+  min-height: 0;height: calc(100vh - var(--header-h) - var(--footer-h));
+  padding: 2rem;
   overflow-y: auto;
 }
 
