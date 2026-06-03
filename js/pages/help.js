@@ -1,5 +1,5 @@
 // js/pages/help.js
-function HelpPage(main) {
+function helpPage(main) {
   const h1 = document.createElement('h1');
   h1.className = 'page-heading';
   h1.textContent = 'Help & Feedback';
