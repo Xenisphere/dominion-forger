@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'help':      { label: 'Help',            page: helpPage },
   };
 
-  const BASE = location.hostname === 'localhost' ? '' : '/dominion-forger';
+  const BASE = '/dominion-forger';
   const main        = document.getElementById('main');
   const drawerLinks = document.getElementById('drawer-links');
   const drawer      = document.getElementById('drawer');
