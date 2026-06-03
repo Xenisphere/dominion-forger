@@ -112,10 +112,16 @@ header {
 
 #drawer-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 1.2rem 1.2rem 1rem;
   border-bottom: 1px solid var(--rule);
+}
+
+#drawer-title {
+  white-space: normal;
+  line-height: 1.2;
+  font-size: 1.3rem;
 }
 
 #drawer-close {
@@ -160,7 +166,9 @@ main {
   padding: 4rem 2rem;
   margin-top: var(--header-h);
   margin-bottom: var(--footer-h);
-  min-height: calc(100vh - var(--header-h) - var(--footer-h));
+  min-height: 0;
+  height: calc(100vh - var(--header-h) - var(--footer-h));
+  overflow-y: auto;
 }
 
 /* ── PAGE TEMPLATE ── */
@@ -191,8 +199,6 @@ footer {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.05em;
   z-index: 50;
-  footer span { white-space: nowrap; }
-  footer span:last-child { margin-left: auto; }
 }
 
 /* ── MOBILE ── */
