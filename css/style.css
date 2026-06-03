@@ -191,6 +191,8 @@ footer {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.05em;
   z-index: 50;
+  footer span { white-space: nowrap; }
+  footer span:last-child { margin-left: auto; }
 }
 
 /* ── MOBILE ── */
