@@ -35,7 +35,7 @@ header {
   top: 0; left: 0; right: 0;
   height: var(--header-h);
   border-bottom: 2px solid var(--rule);
-  padding: 0 2rem;
+  padding: 0 2rem 0 0.8rem;
   display: flex;
   align-items: center;
   gap: 0.2rem;
@@ -115,7 +115,7 @@ header {
   align-items: flex-start;
   justify-content: space-between;
   padding: 1.2rem 1.2rem 1rem;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 2px solid var(--rule);
 }
 
 #drawer-title {
