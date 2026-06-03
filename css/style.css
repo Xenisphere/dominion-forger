@@ -65,7 +65,7 @@ header {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 4x;
+  gap: 5px;
   padding: 4px;
   flex-shrink: 0;
 }
@@ -199,8 +199,6 @@ footer {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.05em;
   z-index: 50;
-  footer span { white-space: nowrap; }
-  footer span:last-child { margin-left: auto; }
 }
 
 /* ── MOBILE ── */
