@@ -60,20 +60,21 @@ header {
 
 /* ── HAMBURGER ── */
 #hamburger {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 4px;
-  flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    flex-shrink: 0;
+    margin-bottom: 3px;
 }
 
 #hamburger span {
   display: block;
   width: 24px;
-  height: 2px;
+  height: 2.5px;
   background: var(--ink-light);
   border-radius: 2px;
   transition: background 0.2s;
@@ -147,7 +148,7 @@ header {
 #drawer-links a {
   font-family: 'Cinzel', serif;
   font-size: 0.85rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06rem;
   color: var(--ink-light);
   text-decoration: none;
   padding: 0.7rem 1.5rem;
@@ -160,13 +161,13 @@ header {
 
 /* ── MAIN ── */
 main {
-  max-width: 860px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: var(--header-h);
-  min-height: 0;height: calc(100vh - var(--header-h) - var(--footer-h));
-  padding: 2rem;
-  overflow-y: auto;
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: var(--header-h);
+    padding: 2rem;
+    min-height: calc(100vh - var(--header-h) - var(--footer-h));
+    padding-bottom: calc(var(--footer-h) + 2rem);
 }
 
 /* ── PAGE TEMPLATE ── */
