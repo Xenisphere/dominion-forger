@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <script>
     // Convert /dominion-forger/card → index.html#/card
-    const repo = '/dominion-forger';
+    const repo = location.hostname === 'localhost' ? '' : '/dominion-forger';
     const path = location.pathname.replace(repo, '') || '/';
     const route = path === '/' ? '' : '#' + path;
     location.replace(repo + '/' + route);
