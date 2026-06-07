@@ -2,24 +2,29 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const ROUTES = {
-    '':           { label: 'Home',             page: homePage },
-    'randomizer': { label: 'Randomizer',       page: randomizerPage },
-    'browse':     { label: 'Browse Cards',     page: browsePage },
-    'card':       { label: 'Card Page',        page: cardPage },
-    'expansions': { label: 'Owned Expansions', page: expansionsPage },
-    'kingdoms':   { label: 'Saved Kingdoms',   page: kingdomsPage },
-    'statistics': { label: 'Statistics',       page: statisticsPage },
-    'about':      { label: 'About',            page: aboutPage },
-    'help':      { label: 'Help',            page: helpPage },
+      '': { label: 'Home', page: homePage },
+      'randomizer': { label: 'Randomizer', page: randomizerPage },
+      'browse': { label: 'Browse Cards', page: browsePage },
+      'expansions': { label: 'Owned Expansions', page: expansionsPage },
+      'kingdoms': { label: 'Saved Kingdoms', page: kingdomsPage },
+      'statistics': { label: 'Statistics', page: statisticsPage },
+      'help': { label: 'Help', page: helpPage },
+      'feedback': { label: 'Feedback', page: feedbackPage },
+      'about': { label: 'About', page: aboutPage },
   };
 
-  const BASE = location.hostname === 'localhost' ? '' : '/dominion-forger';
-  const main        = document.getElementById('main');
-  const drawerLinks = document.getElementById('drawer-links');
-  const drawer      = document.getElementById('drawer');
-  const overlay     = document.getElementById('drawer-overlay');
-  const hamburger   = document.getElementById('hamburger');
-  const drawerClose = document.getElementById('drawer-close');
+    const BASE = location.hostname === 'localhost' ? '' : '/dominion-forger';
+    const main        = document.getElementById('main');
+    const drawerLinks = document.getElementById('drawer-links');
+    const drawer      = document.getElementById('drawer');
+    const overlay     = document.getElementById('drawer-overlay');
+    const hamburger   = document.getElementById('hamburger');
+    const drawerClose = document.getElementById('drawer-close');
+    const bottomPages = [
+        'about',
+        'help',
+        'feedback'
+    ];
 
   // Build drawer nav links
   Object.entries(ROUTES).forEach(([key, { label }]) => {
@@ -36,11 +41,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Drawer
-  function openDrawer()  { drawer.classList.add('open'); overlay.classList.add('open'); }
-  function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('open'); }
-  hamburger.addEventListener('click', openDrawer);
-  drawerClose.addEventListener('click', closeDrawer);
-  overlay.addEventListener('click', closeDrawer);
+    function openDrawer() { drawer.classList.add('open'); overlay.classList.add('open'); }
+    function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('open'); }
+    hamburger.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
+
+    //Search Bar
+    document
+        .getElementById('header-search')
+        .addEventListener('submit', e => {
+
+            e.preventDefault();
+
+            const value =
+                document
+                    .getElementById('search-input')
+                    .value
+                    .trim();
+
+            if (!value) return;
+
+            navigateTo(`search?q=${encodeURIComponent(value)}`, true);
+
+        });
 
   // Determine route from hash (404 redirect), path, or sessionStorage
   function currentRoute() {
