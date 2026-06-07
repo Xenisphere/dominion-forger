@@ -1,0 +1,23 @@
+{
+  "name": "Dominion Forger",
+  "short_name": "DF",
+  "description": "A comprehensive Dominion companion for kingdom generation, card discovery, and analysis.",
+  "start_url": "/dominion-forger/",
+  "scope": "/dominion-forger/",
+  "display": "standalone",
+  "background_color": "#f2e8d5",
+  "theme_color": "#7a2e0e",
+  "icons": [
+    {
+      "src": "images/website/DFlogo-192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "images/website/DFlogo-512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
+
