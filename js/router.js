@@ -96,5 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navigateTo(key, false);
     });
 
+    window.navigateTo = navigateTo;
+
     navigateTo(currentRoute(), false);
 });
