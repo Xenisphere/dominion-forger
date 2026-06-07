@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dominion Forger</title>
+  <link rel="manifest" href="/dominion-forger/manifest.json">
+  <meta name="theme-color" content="#7a2e0e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Dominion Forger">
+  <link rel="apple-touch-icon" href="/dominion-forger/images/website/DFlogo-192.jpg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="app">
-
-  <!-- Overlay -->
   <div id="drawer-overlay"></div>
 
-  <!-- Drawer -->
   <nav id="drawer">
     <div id="drawer-header">
       <a class="site-title" id="drawer-title" href="/dominion-forger/">Dominion <span>Forger</span></a>
@@ -21,7 +24,6 @@
     <div id="drawer-links"></div>
   </nav>
 
-  <!-- Header -->
   <header>
     <button id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -44,7 +46,15 @@
 <script src="js/pages/kingdoms.js"></script>
 <script src="js/pages/statistics.js"></script>
 <script src="js/pages/about.js"></script>
-<script src="js/pages/help.js"></script>
 <script src="js/router.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/dominion-forger/sw.js')
+        .then(() => navigator.storage.persist())
+        .catch(err => console.warn('SW registration failed:', err));
+    });
+  }
+</script>
 </body>
 </html>
