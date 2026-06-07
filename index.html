@@ -2,64 +2,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dominion Forger</title>
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dominion Forger</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="app">
+	<div id="app">
 
-    <!-- Overlay -->
-    <div id="drawer-overlay"></div>
+		<!-- Overlay -->
+		<div id="drawer-overlay"></div>
 
-    <!-- Drawer -->
-    <nav id="drawer">
-      <div id="drawer-header">
-        <a class="site-title" id="drawer-title" href="/dominion-forger/">Dominion <span>Forger</span></a>
-        <button id="drawer-close" aria-label="Close menu">✕</button>
-      </div>
-      <div id="drawer-links"></div>
-      <div id="drawer-footer-links"></div>
-    </nav>
+		<!-- Drawer -->
+		<nav id="drawer">
+			<div id="drawer-header">
+				<a class="site-title" id="drawer-title" href="/dominion-forger/">Dominion <span>Forger</span></a>
+				<button id="drawer-close" aria-label="Close menu">✕</button>
+			</div>
+			<div id="drawer-links"></div>
+			<div id="drawer-footer-links"></div>
+		</nav>
 
-    <!-- Header -->
-    <header>
-      <button id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+		<!-- Header -->
+		<header>
+			<button id="hamburger" aria-label="Open menu">
+				<span></span><span></span><span></span>
+			</button>
 
-      <a class="site-title" href="/dominion-forger/">Dominion <span>Forger</span></a>
+			<a class="site-title" href="/dominion-forger/">Dominion <span>Forger</span></a>
 
-      <form id="header-search">
+			<form id="header-search">
 
-        <input id="search-input"
-               placeholder="Search cards...">
+				<input id="search-input"
+					   placeholder="Search cards...">
 
-      </form>
+			</form>
 
-    </header>
+		</header>
 
-    <main id="main"></main>
+		<main id="main"></main>
 
-    <footer>
-      <span>Dominion Forger</span>
-      <span>
-        Dominion is a trademark of Rio Grande Games. Dominion Forger is an independent fan-created tool.
-      </span>
-    </footer>
-  </div>
-  <script src="js/pages/home.js"></script>
-  <script src="js/pages/randomizer.js"></script>
-  <script src="js/pages/browse.js"></script>
-  <script src="js/pages/expansions.js"></script>
-  <script src="js/pages/kingdoms.js"></script>
-  <script src="js/pages/statistics.js"></script>
-  <script src="js/pages/help.js"></script>
-  <script src="js/pages/feedback.js"></script>
-  <script src="js/pages/about.js"></script>
-  <script src="js/pages/search.js"></script>
-  <script src="js/pages/card.js"></script>
-  <script src="js/router.js"></script>
+		<footer>
+			<span>Dominion Forger</span>
+			<span>
+				Dominion is a trademark of Rio Grande Games. Dominion Forger is an independent fan-created tool.
+			</span>
+		</footer>
+	</div>
+	<script src="js/pages/home.js"></script>
+	<script src="js/pages/randomizer.js"></script>
+	<script src="js/pages/browse.js"></script>
+	<script src="js/pages/expansions.js"></script>
+	<script src="js/pages/kingdoms.js"></script>
+	<script src="js/pages/statistics.js"></script>
+	<script src="js/pages/help.js"></script>
+	<script src="js/pages/feedback.js"></script>
+	<script src="js/pages/about.js"></script>
+	<script src="js/pages/search.js"></script>
+	<script src="js/pages/card.js"></script>
+	<script src="js/router.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/dominion-forger/sw.js')
+					.then(() => navigator.storage.persist())
+					.catch(err => console.warn('SW registration failed:', err));
+			});
+		}
+	</script>
 </body>
 </html>

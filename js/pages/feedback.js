@@ -9,7 +9,7 @@ function feedbackPage(main) {
 
     const p = document.createElement('p');
     p.className = 'page-body';
-    p.textContent = 'Submit any bugs, issues, or tips on how to improve this tool.';
+    p.textContent = 'Share your thoughts and report issues.';
 
     main.appendChild(h1);
     main.appendChild(rule);

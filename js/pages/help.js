@@ -9,7 +9,7 @@ function helpPage(main) {
 
     const p = document.createElement('p');
     p.className = 'page-body';
-    p.textContent = 'Search for keywords, and get some guidance.';
+    p.textContent = 'Guides and documentation.';
 
     main.appendChild(h1);
     main.appendChild(rule);
