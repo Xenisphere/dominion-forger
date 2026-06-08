@@ -1,5 +1,5 @@
 // js/pages/home.js
-function homePage(main, params = {}) {
+async function homePage(main, params = {}) {
 
     // -- HERO --
     const hero = document.createElement('section');
@@ -124,7 +124,7 @@ function homePage(main, params = {}) {
                 .then(r => r.json())
                 .then(cards => ({ card: cards.find(c => c.name === picked.name), expansion }));
         })
-        .then(({ card, expansion }) => {
+        .then(async ({ card, expansion }) => {
             if (!card) { panel.textContent = 'Could not load featured card.'; return; }
 
             panel.textContent = '';
@@ -155,10 +155,10 @@ function homePage(main, params = {}) {
 
             const text = document.createElement('p');
             text.className = 'featured-text';
-            card.text.split(' | ').forEach((segment, i) => {
-                if (i > 0) text.appendChild(document.createElement('br'));
-                text.appendChild(document.createTextNode(segment));
-            });
+            await renderCardText(card.text, text, card.name);
+
+            const p = document.createElement('p');
+            await renderCardText(card.text, p, card.name);
 
             const link = document.createElement('a');
             link.className = 'featured-link';

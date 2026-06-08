@@ -314,6 +314,24 @@ footer {
 	z-index: 50;
 }
 
+/* ── RENDERER ── */
+.render-icon {
+	height: 1em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.render-card-img {
+	height: 80px;
+	border: 1px solid var(--rule);
+	vertical-align: middle;
+}
+
+.render-card-link {
+	display: inline-block;
+	margin: 0 2px;
+}
+
 /* ── MOBILE ── */
 @media (max-width: 640px) {
 	main {
