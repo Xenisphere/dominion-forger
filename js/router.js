@@ -57,12 +57,29 @@ document.addEventListener('DOMContentLoaded', () => {
     drawerClose.addEventListener('click', closeDrawer);
     overlay.addEventListener('click', closeDrawer);
 
-    //Search Bar
-    document
-    document.getElementById('header-search').addEventListener('submit', e => {
+    // Mobile search
+    const searchToggle = document.getElementById('search-toggle');
+    const mobileSearchBar = document.getElementById('mobile-search-bar');
+    const mobileSearchInput = document.getElementById('mobile-search-input');
+
+    searchToggle.addEventListener('click', () => {
+        const isOpen = mobileSearchBar.classList.toggle('open');
+        if (isOpen) mobileSearchInput.focus();
+    });
+
+    // Close on click outside
+    document.addEventListener('click', e => {
+        if (!mobileSearchBar.contains(e.target) && e.target !== searchToggle) {
+            mobileSearchBar.classList.remove('open');
+        }
+    });
+
+    document.getElementById('mobile-search-form').addEventListener('submit', e => {
         e.preventDefault();
-        const value = document.getElementById('search-input').value.trim();
+        const value = mobileSearchInput.value.trim();
         if (!value) return;
+        mobileSearchBar.classList.remove('open');
+        mobileSearchInput.value = '';
         navigateTo('search', true, { q: value });
     });
 
