@@ -403,6 +403,14 @@ footer {
 		font-size: 0.7rem;
 		gap: 0.5rem;
 	}
+	
+	.featured-image {
+		margin: auto;
+	}
+
+	.featured-name {
+		text-align: center;
+	}
 }
 
 /* -- HOME -- */
