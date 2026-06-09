@@ -300,7 +300,7 @@ main {
 	margin: 0 auto;
 	margin-top: var(--header-h);
 	padding: 2rem;
-	padding-bottom: calc(var(--footer-h) + 2rem);
+	padding-bottom: calc(var(--footer-h) + 4rem);
 }
 
 /* -- PAGE TEMPLATE -- */
