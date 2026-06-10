@@ -78,7 +78,6 @@ async function homePage(main, params = {}) {
 
     const panel = document.createElement('div');
     panel.className = 'feature-panel';
-    exp.className = 'featured-expansion-large';
     panel.textContent = 'Loading...';
     featSection.appendChild(panel);
     main.appendChild(featSection);
@@ -143,7 +142,7 @@ async function homePage(main, params = {}) {
             name.textContent = card.name;
 
             const exp = document.createElement('p');
-            exp.className = 'featured-expansion';
+            exp.className = 'featured-expansion-large';
             exp.textContent = expansion;
 
             const cost = document.createElement('p');
