@@ -412,6 +412,10 @@ footer {
 	.featured-name {
 		text-align: center;
 	}
+	
+	.featured-expansion {
+		text-align: center;
+	}
 }
 
 /* -- HOME -- */
@@ -533,8 +537,8 @@ footer {
 	margin-bottom: 0.2rem;
 }
 
-.featured-expansion-large {
-  font-size: 1.8rem;
+.featured-expansion {
+  font-size: 1.3rem;
   color: var(--ink-light);
   font-style: italic;
   margin-bottom: 0.5rem;
