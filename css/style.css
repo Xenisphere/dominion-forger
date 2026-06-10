@@ -533,6 +533,13 @@ footer {
 	margin-bottom: 0.2rem;
 }
 
+.featured-expansion {
+	font-size: 0.9rem;
+	color: var(--ink-light);
+	font-style: italic;
+	margin-bottom: 0.5rem;
+}
+
 .featured-expansion-large {
   font-size: 1.8rem;
   color: var(--ink-light);
