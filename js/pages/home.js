@@ -142,7 +142,7 @@ async function homePage(main, params = {}) {
             name.textContent = card.name;
 
             const exp = document.createElement('p');
-            exp.className = 'featured-expansion-large';
+            exp.className = 'featured-expansion';
             exp.textContent = expansion;
 
             const cost = document.createElement('p');
