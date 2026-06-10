@@ -1,0 +1,29 @@
+name: Daily Featured Card
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Midnight UTC every day
+  workflow_dispatch:       # Allow manual trigger from GitHub Actions tab
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate featured card
+        run: node file_manip/generate_featured.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add storage/featured_pool.json storage/featured_history.json
+          git diff --staged --quiet || git commit -m "Daily featured card $(date -u +%Y-%m-%d)"
+          git push
