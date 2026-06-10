@@ -78,11 +78,12 @@ async function homePage(main, params = {}) {
 
     const panel = document.createElement('div');
     panel.className = 'feature-panel';
+    exp.className = 'featured-expansion-large';
     panel.textContent = 'Loading...';
     featSection.appendChild(panel);
     main.appendChild(featSection);
 
-    // Daily seed — consistent for the day
+    // Daily seed â€” consistent for the day
     function dailySeed() {
         const d = new Date();
         return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
@@ -147,7 +148,7 @@ async function homePage(main, params = {}) {
 
             const cost = document.createElement('p');
             cost.className = 'featured-cost';
-            cost.textContent = `Cost: ${card.cost ?? '—'}`;
+            cost.textContent = `Cost: ${card.cost ?? 'â€”'}`;
 
             const types = document.createElement('p');
             types.className = 'featured-types';
