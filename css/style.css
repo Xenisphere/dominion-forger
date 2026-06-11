@@ -415,11 +415,7 @@ footer {
 		gap: 0.5rem;
 	}
 
-	.featured-name {
-		text-align: center;
-	}
-	
-	.featured-expansion {
+	.featured-name .featured-expansion .featured-text .featured-link .featured-link:hover {
 		text-align: center;
 	}
 }
