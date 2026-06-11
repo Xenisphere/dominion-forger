@@ -415,7 +415,10 @@ footer {
 		gap: 0.5rem;
 	}
 
-	.featured-name, .featured-expansion, .featured-cost, .featured-types, .featured-text, .featured-link {
+	.featured-name, .featured-expansion, .featured-cost, .featured-types, .featured-text {
+		text-align: center;
+	}
+	.featured-link {
 		display: block;
 		text-align: center;
 	}
