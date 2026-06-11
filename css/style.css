@@ -1,5 +1,39 @@
 /* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+@font-face {
+	font-family: 'Cinzel';
+	src: url('../fonts/Cinzel-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cinzel';
+	src: url('../fonts/Cinzel-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EB Garamond';
+	src: url('../fonts/EBGaramond-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'EB Garamond';
+	src: url('../fonts/EBGaramond-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EB Garamond';
+	src: url('../fonts/EBGaramond-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
 
 *, *::before, *::after {
 	box-sizing: border-box;

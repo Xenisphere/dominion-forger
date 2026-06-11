@@ -27,6 +27,8 @@ const SHELL_FILES = [
     `${BASE}/images/website_icons/DFlogo.jpg`,
     `${BASE}/images/website_icons/DFlogo-192.jpg`,
     `${BASE}/images/website_icons/DFlogo-512.jpg`,
+    `${BASE}/fonts/EBGaramond.woff2`,
+    `${BASE}/Cinzel.woff2`
 ];
 
 const DATA_FILES = [
