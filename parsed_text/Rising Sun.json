@@ -23,7 +23,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Alley.jpg"
+    "image": "images/expansions/Rising Sun/Alley.jpg"
   },
   {
     "name": "Amass",
@@ -47,7 +47,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Amass.jpg"
+    "image": "images/expansions/Rising Sun/Amass.jpg"
   },
   {
     "name": "Approaching Army",
@@ -72,7 +72,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Approaching_Army.jpg"
+    "image": "images/expansions/Rising Sun/Approaching_Army.jpg"
   },
   {
     "name": "Aristocrat",
@@ -101,7 +101,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Aristocrat.jpg"
+    "image": "images/expansions/Rising Sun/Aristocrat.jpg"
   },
   {
     "name": "Artist",
@@ -125,7 +125,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Artist.jpg"
+    "image": "images/expansions/Rising Sun/Artist.jpg"
   },
   {
     "name": "Asceticism",
@@ -149,7 +149,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Asceticism.jpg"
+    "image": "images/expansions/Rising Sun/Asceticism.jpg"
   },
   {
     "name": "Biding Time",
@@ -172,7 +172,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Biding_Time.jpg"
+    "image": "images/expansions/Rising Sun/Biding_Time.jpg"
   },
   {
     "name": "Bureaucracy",
@@ -195,7 +195,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Bureaucracy.jpg"
+    "image": "images/expansions/Rising Sun/Bureaucracy.jpg"
   },
   {
     "name": "Change",
@@ -225,7 +225,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Change.jpg"
+    "image": "images/expansions/Rising Sun/Change.jpg"
   },
   {
     "name": "Continue",
@@ -253,7 +253,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Continue.jpg"
+    "image": "images/expansions/Rising Sun/Continue.jpg"
   },
   {
     "name": "Craftsman",
@@ -278,7 +278,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Craftsman.jpg"
+    "image": "images/expansions/Rising Sun/Craftsman.jpg"
   },
   {
     "name": "Credit",
@@ -301,7 +301,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Credit.jpg"
+    "image": "images/expansions/Rising Sun/Credit.jpg"
   },
   {
     "name": "Daimyo",
@@ -327,7 +327,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Daimyo.jpg"
+    "image": "images/expansions/Rising Sun/Daimyo.jpg"
   },
   {
     "name": "Divine Wind",
@@ -350,7 +350,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Divine_Wind.jpg"
+    "image": "images/expansions/Rising Sun/Divine_Wind.jpg"
   },
   {
     "name": "Enlightenment",
@@ -375,7 +375,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Enlightenment.jpg"
+    "image": "images/expansions/Rising Sun/Enlightenment.jpg"
   },
   {
     "name": "Fishmonger",
@@ -402,7 +402,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Fishmonger.jpg"
+    "image": "images/expansions/Rising Sun/Fishmonger.jpg"
   },
   {
     "name": "Flourishing Trade",
@@ -425,7 +425,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Flourishing_Trade.jpg"
+    "image": "images/expansions/Rising Sun/Flourishing_Trade.jpg"
   },
   {
     "name": "Foresight",
@@ -452,7 +452,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Foresight.jpg"
+    "image": "images/expansions/Rising Sun/Foresight.jpg"
   },
   {
     "name": "Gather",
@@ -475,7 +475,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Gather.jpg"
+    "image": "images/expansions/Rising Sun/Gather.jpg"
   },
   {
     "name": "Gold Mine",
@@ -503,7 +503,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Gold_Mine.jpg"
+    "image": "images/expansions/Rising Sun/Gold_Mine.jpg"
   },
   {
     "name": "Good Harvest",
@@ -528,7 +528,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Good_Harvest.jpg"
+    "image": "images/expansions/Rising Sun/Good_Harvest.jpg"
   },
   {
     "name": "Great Leader",
@@ -553,7 +553,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Great_Leader.jpg"
+    "image": "images/expansions/Rising Sun/Great_Leader.jpg"
   },
   {
     "name": "Growth",
@@ -576,7 +576,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Growth.jpg"
+    "image": "images/expansions/Rising Sun/Growth.jpg"
   },
   {
     "name": "Harsh Winter",
@@ -599,7 +599,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Harsh_Winter.jpg"
+    "image": "images/expansions/Rising Sun/Harsh_Winter.jpg"
   },
   {
     "name": "Imperial Envoy",
@@ -627,7 +627,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Imperial_Envoy.jpg"
+    "image": "images/expansions/Rising Sun/Imperial_Envoy.jpg"
   },
   {
     "name": "Kind Emperor",
@@ -651,7 +651,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Kind_Emperor.jpg"
+    "image": "images/expansions/Rising Sun/Kind_Emperor.jpg"
   },
   {
     "name": "Kintsugi",
@@ -678,7 +678,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Kintsugi.jpg"
+    "image": "images/expansions/Rising Sun/Kintsugi.jpg"
   },
   {
     "name": "Kitsune",
@@ -711,7 +711,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Rising Sun/Kitsune.jpg"
+    "image": "images/expansions/Rising Sun/Kitsune.jpg"
   },
   {
     "name": "Litter",
@@ -737,7 +737,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Litter.jpg"
+    "image": "images/expansions/Rising Sun/Litter.jpg"
   },
   {
     "name": "Mountain Shrine",
@@ -767,7 +767,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Mountain_Shrine.jpg"
+    "image": "images/expansions/Rising Sun/Mountain_Shrine.jpg"
   },
   {
     "name": "Ninja",
@@ -796,7 +796,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Ninja.jpg"
+    "image": "images/expansions/Rising Sun/Ninja.jpg"
   },
   {
     "name": "Panic",
@@ -821,7 +821,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Panic.jpg"
+    "image": "images/expansions/Rising Sun/Panic.jpg"
   },
   {
     "name": "Poet",
@@ -849,7 +849,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Poet.jpg"
+    "image": "images/expansions/Rising Sun/Poet.jpg"
   },
   {
     "name": "Practice",
@@ -873,7 +873,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Practice.jpg"
+    "image": "images/expansions/Rising Sun/Practice.jpg"
   },
   {
     "name": "Progress",
@@ -897,7 +897,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Progress.jpg"
+    "image": "images/expansions/Rising Sun/Progress.jpg"
   },
   {
     "name": "Rapid Expansion",
@@ -921,7 +921,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Rapid_Expansion.jpg"
+    "image": "images/expansions/Rising Sun/Rapid_Expansion.jpg"
   },
   {
     "name": "Receive Tribute",
@@ -944,7 +944,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Receive_Tribute.jpg"
+    "image": "images/expansions/Rising Sun/Receive_Tribute.jpg"
   },
   {
     "name": "Rice",
@@ -969,7 +969,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Rice.jpg"
+    "image": "images/expansions/Rising Sun/Rice.jpg"
   },
   {
     "name": "Rice Broker",
@@ -996,7 +996,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Rice_Broker.jpg"
+    "image": "images/expansions/Rising Sun/Rice_Broker.jpg"
   },
   {
     "name": "River Shrine",
@@ -1025,7 +1025,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/River_Shrine.jpg"
+    "image": "images/expansions/Rising Sun/River_Shrine.jpg"
   },
   {
     "name": "Riverboat",
@@ -1052,7 +1052,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Riverboat.jpg"
+    "image": "images/expansions/Rising Sun/Riverboat.jpg"
   },
   {
     "name": "Ronin",
@@ -1078,7 +1078,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Ronin.jpg"
+    "image": "images/expansions/Rising Sun/Ronin.jpg"
   },
   {
     "name": "Root Cellar",
@@ -1104,7 +1104,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Root_Cellar.jpg"
+    "image": "images/expansions/Rising Sun/Root_Cellar.jpg"
   },
   {
     "name": "Rustic Village",
@@ -1131,7 +1131,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Rustic_Village.jpg"
+    "image": "images/expansions/Rising Sun/Rustic_Village.jpg"
   },
   {
     "name": "Samurai",
@@ -1162,7 +1162,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Samurai.jpg"
+    "image": "images/expansions/Rising Sun/Samurai.jpg"
   },
   {
     "name": "Sea Trade",
@@ -1187,7 +1187,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Sea_Trade.jpg"
+    "image": "images/expansions/Rising Sun/Sea_Trade.jpg"
   },
   {
     "name": "Sickness",
@@ -1216,7 +1216,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Rising Sun/Sickness.jpg"
+    "image": "images/expansions/Rising Sun/Sickness.jpg"
   },
   {
     "name": "Snake Witch",
@@ -1249,7 +1249,7 @@
       "Curse",
       "Duplicate"
     ],
-    "image": "images/Rising Sun/Snake_Witch.jpg"
+    "image": "images/expansions/Rising Sun/Snake_Witch.jpg"
   },
   {
     "name": "Tanuki",
@@ -1278,7 +1278,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Tanuki.jpg"
+    "image": "images/expansions/Rising Sun/Tanuki.jpg"
   },
   {
     "name": "Tea House",
@@ -1305,6 +1305,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Rising Sun/Tea_House.jpg"
+    "image": "images/expansions/Rising Sun/Tea_House.jpg"
   }
 ]

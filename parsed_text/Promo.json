@@ -24,7 +24,7 @@
     "dependencies": [
       "Sauna"
     ],
-    "image": "images/Promo/Avanto.jpg"
+    "image": "images/expansions/Promo/Avanto.jpg"
   },
   {
     "name": "Black Market",
@@ -55,7 +55,7 @@
     "dependencies": [
       "Market"
     ],
-    "image": "images/Promo/Black_Market.jpg"
+    "image": "images/expansions/Promo/Black_Market.jpg"
   },
   {
     "name": "Captain",
@@ -81,7 +81,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Captain.jpg"
+    "image": "images/expansions/Promo/Captain.jpg"
   },
   {
     "name": "Church",
@@ -109,7 +109,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Church.jpg"
+    "image": "images/expansions/Promo/Church.jpg"
   },
   {
     "name": "Dismantle",
@@ -136,7 +136,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Dismantle.jpg"
+    "image": "images/expansions/Promo/Dismantle.jpg"
   },
   {
     "name": "Envoy",
@@ -163,7 +163,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Envoy.jpg"
+    "image": "images/expansions/Promo/Envoy.jpg"
   },
   {
     "name": "Governor",
@@ -192,7 +192,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Governor.jpg"
+    "image": "images/expansions/Promo/Governor.jpg"
   },
   {
     "name": "Marchland",
@@ -219,7 +219,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Marchland.jpg"
+    "image": "images/expansions/Promo/Marchland.jpg"
   },
   {
     "name": "Prince",
@@ -247,7 +247,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Prince.jpg"
+    "image": "images/expansions/Promo/Prince.jpg"
   },
   {
     "name": "Sauna",
@@ -274,7 +274,7 @@
     "dependencies": [
       "Avanto"
     ],
-    "image": "images/Promo/Sauna.jpg"
+    "image": "images/expansions/Promo/Sauna.jpg"
   },
   {
     "name": "Stash",
@@ -297,7 +297,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Stash.jpg"
+    "image": "images/expansions/Promo/Stash.jpg"
   },
   {
     "name": "Summon",
@@ -322,7 +322,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Summon.jpg"
+    "image": "images/expansions/Promo/Summon.jpg"
   },
   {
     "name": "Walled Village",
@@ -348,6 +348,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Promo/Walled_Village.jpg"
+    "image": "images/expansions/Promo/Walled_Village.jpg"
   }
 ]

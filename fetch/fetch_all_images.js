@@ -83,7 +83,7 @@ async function fetchImage(cardName, info, editionLookup) {
     const safeName = cardName.replace(/ /g, '_');
     const filename = `${safeName}.jpg`;
 
-    const outDir = path.join(__dirname, '..', 'images', boxName);
+    const outDir = path.join(__dirname, '..', 'images', 'expansions', boxName);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
     const destPath = path.join(outDir, filename);
@@ -102,49 +102,49 @@ async function fetchImage(cardName, info, editionLookup) {
         ? match[1].replace('http://', 'https://')
         : `https://wiki.dominionstrategy.com${match[1]}`;
     await downloadImage(directUrl, destPath);
-    //console.log(`[DONE] ${cardName} → images/${boxName}/${filename}`);
+    //console.log(`[DONE] ${cardName} → images/expansions/${boxName}/${filename}`);
     return true;
 }
 
 const ICONS = {
-    'Coin0': 'https://wiki.dominionstrategy.com/images/thumb/5/5d/Coin0.png/24px-Coin0.png',
-    'Coin1': 'https://wiki.dominionstrategy.com/images/thumb/f/f7/Coin1.png/24px-Coin1.png',
-    'Coin2': 'https://wiki.dominionstrategy.com/images/thumb/3/3d/Coin2.png/24px-Coin2.png',
-    'Coin3': 'https://wiki.dominionstrategy.com/images/thumb/3/32/Coin3.png/24px-Coin3.png',
-    'Coin4': 'https://wiki.dominionstrategy.com/images/thumb/2/2a/Coin4.png/24px-Coin4.png',
-    'Coin5': 'https://wiki.dominionstrategy.com/images/thumb/7/7d/Coin5.png/24px-Coin5.png',
-    'Coin6': 'https://wiki.dominionstrategy.com/images/thumb/6/6f/Coin6.png/24px-Coin6.png',
-    'Coin7': 'https://wiki.dominionstrategy.com/images/thumb/b/bc/Coin7.png/24px-Coin7.png',
-    'Coin8': 'https://wiki.dominionstrategy.com/images/thumb/4/47/Coin8.png/24px-Coin8.png',
-    'Coin9': 'https://wiki.dominionstrategy.com/images/thumb/9/9d/Coin9.png/24px-Coin9.png',
-    'Coin10': 'https://wiki.dominionstrategy.com/images/thumb/c/cc/Coin10.png/24px-Coin10.png',
-    'Coin11': 'https://wiki.dominionstrategy.com/images/thumb/d/df/Coin11.png/24px-Coin11.png',
-    'Coin14': 'https://wiki.dominionstrategy.com/images/thumb/0/02/Coin14.png/24px-Coin14.png',
-    'Coin': 'https://wiki.dominionstrategy.com/images/thumb/6/6d/Coin.png/24px-Coin.png',
-    'Coin2plus': 'https://wiki.dominionstrategy.com/images/thumb/7/79/Coin2plus.png/24px-Coin2plus.png',
-    'Coin3plus': 'https://wiki.dominionstrategy.com/images/thumb/1/16/Coin3plus.png/24px-Coin3plus.png',
-    'Coin0star': 'https://wiki.dominionstrategy.com/images/thumb/a/ae/Coin0star.png/24px-Coin0star.png',
-    'Coin2star': 'https://wiki.dominionstrategy.com/images/thumb/0/00/Coin2star.png/24px-Coin2star.png',
-    'Coin3star': 'https://wiki.dominionstrategy.com/images/thumb/a/a9/Coin3star.png/24px-Coin3star.png',
-    'Coin4star': 'https://wiki.dominionstrategy.com/images/thumb/5/54/Coin4star.png/24px-Coin4star.png',
-    'Coin5star': 'https://wiki.dominionstrategy.com/images/thumb/8/86/Coin5star.png/24px-Coin5star.png',
-    'Coin6star': 'https://wiki.dominionstrategy.com/images/thumb/6/60/Coin6star.png/24px-Coin6star.png',
-    'Coin7star': 'https://wiki.dominionstrategy.com/images/thumb/f/fa/Coin7star.png/24px-Coin7star.png',
-    'Potion': 'https://wiki.dominionstrategy.com/images/thumb/7/7a/Potion.png/15px-Potion.png',
-    'Debt': 'https://wiki.dominionstrategy.com/images/thumb/8/81/Debt.png/27px-Debt.png',
-    'Debt1': 'https://wiki.dominionstrategy.com/images/thumb/4/43/Debt1.png/27px-Debt1.png',
-    'Debt2': 'https://wiki.dominionstrategy.com/images/thumb/c/c6/Debt2.png/27px-Debt2.png',
-    'Debt3': 'https://wiki.dominionstrategy.com/images/thumb/f/f5/Debt3.png/27px-Debt3.png',
-    'Debt4': 'https://wiki.dominionstrategy.com/images/thumb/9/90/Debt4.png/27px-Debt4.png',
-    'Debt5': 'https://wiki.dominionstrategy.com/images/thumb/2/21/Debt5.png/27px-Debt5.png',
-    'Debt6': 'https://wiki.dominionstrategy.com/images/thumb/1/17/Debt6.png/27px-Debt6.png',
-    'Debt8': 'https://wiki.dominionstrategy.com/images/thumb/d/d4/Debt8.png/27px-Debt8.png',
-    'Debt40': 'https://wiki.dominionstrategy.com/images/thumb/9/98/Debt40.png/27px-Debt40.png',
-    'VP': 'https://wiki.dominionstrategy.com/images/thumb/9/92/VP.png/21px-VP.png',
+    'Coin0': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/5/5d/Coin0.png/24px-Coin0.png',
+    'Coin1': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/f/f7/Coin1.png/24px-Coin1.png',
+    'Coin2': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/3/3d/Coin2.png/24px-Coin2.png',
+    'Coin3': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/3/32/Coin3.png/24px-Coin3.png',
+    'Coin4': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/2/2a/Coin4.png/24px-Coin4.png',
+    'Coin5': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/7/7d/Coin5.png/24px-Coin5.png',
+    'Coin6': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/6/6f/Coin6.png/24px-Coin6.png',
+    'Coin7': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/b/bc/Coin7.png/24px-Coin7.png',
+    'Coin8': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/4/47/Coin8.png/24px-Coin8.png',
+    'Coin9': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/9/9d/Coin9.png/24px-Coin9.png',
+    'Coin10': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/c/cc/Coin10.png/24px-Coin10.png',
+    'Coin11': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/d/df/Coin11.png/24px-Coin11.png',
+    'Coin14': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/0/02/Coin14.png/24px-Coin14.png',
+    'Coin': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/6/6d/Coin.png/24px-Coin.png',
+    'Coin2plus': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/7/79/Coin2plus.png/24px-Coin2plus.png',
+    'Coin3plus': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/1/16/Coin3plus.png/24px-Coin3plus.png',
+    'Coin0star': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/a/ae/Coin0star.png/24px-Coin0star.png',
+    'Coin2star': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/0/00/Coin2star.png/24px-Coin2star.png',
+    'Coin3star': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/a/a9/Coin3star.png/24px-Coin3star.png',
+    'Coin4star': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/5/54/Coin4star.png/24px-Coin4star.png',
+    'Coin5star': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/8/86/Coin5star.png/24px-Coin5star.png',
+    'Coin6star': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/6/60/Coin6star.png/24px-Coin6star.png',
+    'Coin7star': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/f/fa/Coin7star.png/24px-Coin7star.png',
+    'Potion': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/7/7a/Potion.png/15px-Potion.png',
+    'Debt': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/8/81/Debt.png/27px-Debt.png',
+    'Debt1': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/4/43/Debt1.png/27px-Debt1.png',
+    'Debt2': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/c/c6/Debt2.png/27px-Debt2.png',
+    'Debt3': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/f/f5/Debt3.png/27px-Debt3.png',
+    'Debt4': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/9/90/Debt4.png/27px-Debt4.png',
+    'Debt5': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/2/21/Debt5.png/27px-Debt5.png',
+    'Debt6': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/1/17/Debt6.png/27px-Debt6.png',
+    'Debt8': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/d/d4/Debt8.png/27px-Debt8.png',
+    'Debt40': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/9/98/Debt40.png/27px-Debt40.png',
+    'VP': 'https://wiki.dominionstrategy.com/images/card_icons/thumb/9/92/VP.png/21px-VP.png',
 };
 
 async function fetchIcons() {
-    const outDir = path.join(__dirname, '..', 'images', 'icons');
+    const outDir = path.join(__dirname, '..', 'images', 'card_icons', 'icons');
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
     for (const [name, url] of Object.entries(ICONS)) {

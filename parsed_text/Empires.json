@@ -24,7 +24,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Advance.jpg"
+    "image": "images/expansions/Empires/Advance.jpg"
   },
   {
     "name": "Annex",
@@ -47,7 +47,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Annex.jpg"
+    "image": "images/expansions/Empires/Annex.jpg"
   },
   {
     "name": "Aqueduct",
@@ -71,7 +71,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Aqueduct.jpg"
+    "image": "images/expansions/Empires/Aqueduct.jpg"
   },
   {
     "name": "Archive",
@@ -99,7 +99,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Archive.jpg"
+    "image": "images/expansions/Empires/Archive.jpg"
   },
   {
     "name": "Arena",
@@ -123,7 +123,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Arena.jpg"
+    "image": "images/expansions/Empires/Arena.jpg"
   },
   {
     "name": "Bandit Fort",
@@ -146,7 +146,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Bandit_Fort.jpg"
+    "image": "images/expansions/Empires/Bandit_Fort.jpg"
   },
   {
     "name": "Banquet",
@@ -170,7 +170,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Banquet.jpg"
+    "image": "images/expansions/Empires/Banquet.jpg"
   },
   {
     "name": "Basilica",
@@ -193,7 +193,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Basilica.jpg"
+    "image": "images/expansions/Empires/Basilica.jpg"
   },
   {
     "name": "Baths",
@@ -217,7 +217,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Baths.jpg"
+    "image": "images/expansions/Empires/Baths.jpg"
   },
   {
     "name": "Battlefield",
@@ -240,7 +240,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Battlefield.jpg"
+    "image": "images/expansions/Empires/Battlefield.jpg"
   },
   {
     "name": "Bustling Village",
@@ -268,7 +268,7 @@
     "dependencies": [
       "Settlers"
     ],
-    "image": "images/Empires/Bustling_Village.jpg"
+    "image": "images/expansions/Empires/Bustling_Village.jpg"
   },
   {
     "name": "Capital",
@@ -294,7 +294,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Capital.jpg"
+    "image": "images/expansions/Empires/Capital.jpg"
   },
   {
     "name": "Castles",
@@ -318,7 +318,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Castles.jpg"
+    "image": "images/expansions/Empires/Castles.jpg"
   },
   {
     "name": "Catapult",
@@ -353,7 +353,7 @@
       "Curse",
       "Rocks"
     ],
-    "image": "images/Empires/Catapult.jpg"
+    "image": "images/expansions/Empires/Catapult.jpg"
   },
   {
     "name": "Chariot Race",
@@ -381,7 +381,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Chariot_Race.jpg"
+    "image": "images/expansions/Empires/Chariot_Race.jpg"
   },
   {
     "name": "Charm",
@@ -407,7 +407,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Charm.jpg"
+    "image": "images/expansions/Empires/Charm.jpg"
   },
   {
     "name": "City Quarter",
@@ -433,7 +433,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/City_Quarter.jpg"
+    "image": "images/expansions/Empires/City_Quarter.jpg"
   },
   {
     "name": "Colonnade",
@@ -456,7 +456,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Colonnade.jpg"
+    "image": "images/expansions/Empires/Colonnade.jpg"
   },
   {
     "name": "Conquest",
@@ -479,7 +479,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Conquest.jpg"
+    "image": "images/expansions/Empires/Conquest.jpg"
   },
   {
     "name": "Crown",
@@ -504,7 +504,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Crown.jpg"
+    "image": "images/expansions/Empires/Crown.jpg"
   },
   {
     "name": "Crumbling Castle",
@@ -535,7 +535,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/Crumbling_Castle.jpg"
+    "image": "images/expansions/Empires/Crumbling_Castle.jpg"
   },
   {
     "name": "Defiled Shrine",
@@ -562,7 +562,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Empires/Defiled_Shrine.jpg"
+    "image": "images/expansions/Empires/Defiled_Shrine.jpg"
   },
   {
     "name": "Delve",
@@ -587,7 +587,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Delve.jpg"
+    "image": "images/expansions/Empires/Delve.jpg"
   },
   {
     "name": "Dominate",
@@ -610,7 +610,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Dominate.jpg"
+    "image": "images/expansions/Empires/Dominate.jpg"
   },
   {
     "name": "Donate",
@@ -635,7 +635,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Donate.jpg"
+    "image": "images/expansions/Empires/Donate.jpg"
   },
   {
     "name": "Emporium",
@@ -664,7 +664,7 @@
     "dependencies": [
       "Patrician"
     ],
-    "image": "images/Empires/Emporium.jpg"
+    "image": "images/expansions/Empires/Emporium.jpg"
   },
   {
     "name": "Encampment",
@@ -693,7 +693,7 @@
     "dependencies": [
       "Plunder"
     ],
-    "image": "images/Empires/Encampment.jpg"
+    "image": "images/expansions/Empires/Encampment.jpg"
   },
   {
     "name": "Enchantress",
@@ -721,7 +721,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Enchantress.jpg"
+    "image": "images/expansions/Empires/Enchantress.jpg"
   },
   {
     "name": "Engineer",
@@ -750,7 +750,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Engineer.jpg"
+    "image": "images/expansions/Empires/Engineer.jpg"
   },
   {
     "name": "Farmers' Market",
@@ -783,7 +783,7 @@
     "dependencies": [
       "Market"
     ],
-    "image": "images/Empires/Farmers'_Market.jpg"
+    "image": "images/expansions/Empires/Farmers'_Market.jpg"
   },
   {
     "name": "Fortune",
@@ -810,7 +810,7 @@
     "dependencies": [
       "Gladiator"
     ],
-    "image": "images/Empires/Fortune.jpg"
+    "image": "images/expansions/Empires/Fortune.jpg"
   },
   {
     "name": "Forum",
@@ -839,7 +839,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Forum.jpg"
+    "image": "images/expansions/Empires/Forum.jpg"
   },
   {
     "name": "Fountain",
@@ -862,7 +862,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Fountain.jpg"
+    "image": "images/expansions/Empires/Fountain.jpg"
   },
   {
     "name": "Gladiator",
@@ -892,7 +892,7 @@
     "dependencies": [
       "Fortune"
     ],
-    "image": "images/Empires/Gladiator.jpg"
+    "image": "images/expansions/Empires/Gladiator.jpg"
   },
   {
     "name": "Grand Castle",
@@ -919,7 +919,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/Grand_Castle.jpg"
+    "image": "images/expansions/Empires/Grand_Castle.jpg"
   },
   {
     "name": "Groundskeeper",
@@ -943,7 +943,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Groundskeeper.jpg"
+    "image": "images/expansions/Empires/Groundskeeper.jpg"
   },
   {
     "name": "Haunted Castle",
@@ -971,7 +971,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/Haunted_Castle.jpg"
+    "image": "images/expansions/Empires/Haunted_Castle.jpg"
   },
   {
     "name": "Humble Castle",
@@ -998,7 +998,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/Humble_Castle.jpg"
+    "image": "images/expansions/Empires/Humble_Castle.jpg"
   },
   {
     "name": "Keep",
@@ -1021,7 +1021,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Keep.jpg"
+    "image": "images/expansions/Empires/Keep.jpg"
   },
   {
     "name": "King's Castle",
@@ -1047,7 +1047,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/King's_Castle.jpg"
+    "image": "images/expansions/Empires/King's_Castle.jpg"
   },
   {
     "name": "Labyrinth",
@@ -1070,7 +1070,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Labyrinth.jpg"
+    "image": "images/expansions/Empires/Labyrinth.jpg"
   },
   {
     "name": "Legionary",
@@ -1099,7 +1099,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Legionary.jpg"
+    "image": "images/expansions/Empires/Legionary.jpg"
   },
   {
     "name": "Mountain Pass",
@@ -1124,7 +1124,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Mountain_Pass.jpg"
+    "image": "images/expansions/Empires/Mountain_Pass.jpg"
   },
   {
     "name": "Museum",
@@ -1147,7 +1147,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Museum.jpg"
+    "image": "images/expansions/Empires/Museum.jpg"
   },
   {
     "name": "Obelisk",
@@ -1170,7 +1170,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Obelisk.jpg"
+    "image": "images/expansions/Empires/Obelisk.jpg"
   },
   {
     "name": "Opulent Castle",
@@ -1201,7 +1201,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/Opulent_Castle.jpg"
+    "image": "images/expansions/Empires/Opulent_Castle.jpg"
   },
   {
     "name": "Orchard",
@@ -1224,7 +1224,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Orchard.jpg"
+    "image": "images/expansions/Empires/Orchard.jpg"
   },
   {
     "name": "Overlord",
@@ -1248,7 +1248,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Overlord.jpg"
+    "image": "images/expansions/Empires/Overlord.jpg"
   },
   {
     "name": "Palace",
@@ -1271,7 +1271,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Palace.jpg"
+    "image": "images/expansions/Empires/Palace.jpg"
   },
   {
     "name": "Patrician",
@@ -1299,7 +1299,7 @@
     "dependencies": [
       "Emporium"
     ],
-    "image": "images/Empires/Patrician.jpg"
+    "image": "images/expansions/Empires/Patrician.jpg"
   },
   {
     "name": "Plunder",
@@ -1324,7 +1324,7 @@
     "dependencies": [
       "Encampment"
     ],
-    "image": "images/Empires/Plunder.jpg"
+    "image": "images/expansions/Empires/Plunder.jpg"
   },
   {
     "name": "Ritual",
@@ -1353,7 +1353,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Empires/Ritual.jpg"
+    "image": "images/expansions/Empires/Ritual.jpg"
   },
   {
     "name": "Rocks",
@@ -1386,7 +1386,7 @@
     "dependencies": [
       "Catapult"
     ],
-    "image": "images/Empires/Rocks.jpg"
+    "image": "images/expansions/Empires/Rocks.jpg"
   },
   {
     "name": "Royal Blacksmith",
@@ -1413,7 +1413,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Royal_Blacksmith.jpg"
+    "image": "images/expansions/Empires/Royal_Blacksmith.jpg"
   },
   {
     "name": "Sacrifice",
@@ -1442,7 +1442,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Sacrifice.jpg"
+    "image": "images/expansions/Empires/Sacrifice.jpg"
   },
   {
     "name": "Salt the Earth",
@@ -1466,7 +1466,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Salt_the_Earth.jpg"
+    "image": "images/expansions/Empires/Salt_the_Earth.jpg"
   },
   {
     "name": "Settlers",
@@ -1493,7 +1493,7 @@
     "dependencies": [
       "Bustling Village"
     ],
-    "image": "images/Empires/Settlers.jpg"
+    "image": "images/expansions/Empires/Settlers.jpg"
   },
   {
     "name": "Small Castle",
@@ -1525,7 +1525,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/Small_Castle.jpg"
+    "image": "images/expansions/Empires/Small_Castle.jpg"
   },
   {
     "name": "Sprawling Castle",
@@ -1551,7 +1551,7 @@
       "Castles"
     ],
     "dependencies": [],
-    "image": "images/Empires/Sprawling_Castle.jpg"
+    "image": "images/expansions/Empires/Sprawling_Castle.jpg"
   },
   {
     "name": "Tax",
@@ -1575,7 +1575,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Tax.jpg"
+    "image": "images/expansions/Empires/Tax.jpg"
   },
   {
     "name": "Temple",
@@ -1604,7 +1604,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Temple.jpg"
+    "image": "images/expansions/Empires/Temple.jpg"
   },
   {
     "name": "Tomb",
@@ -1630,7 +1630,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Tomb.jpg"
+    "image": "images/expansions/Empires/Tomb.jpg"
   },
   {
     "name": "Tower",
@@ -1653,7 +1653,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Tower.jpg"
+    "image": "images/expansions/Empires/Tower.jpg"
   },
   {
     "name": "Triumph",
@@ -1676,7 +1676,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Triumph.jpg"
+    "image": "images/expansions/Empires/Triumph.jpg"
   },
   {
     "name": "Triumphal Arch",
@@ -1701,7 +1701,7 @@
     "dependencies": [
       "Count"
     ],
-    "image": "images/Empires/Triumphal_Arch.jpg"
+    "image": "images/expansions/Empires/Triumphal_Arch.jpg"
   },
   {
     "name": "Villa",
@@ -1730,7 +1730,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Villa.jpg"
+    "image": "images/expansions/Empires/Villa.jpg"
   },
   {
     "name": "Wall",
@@ -1753,7 +1753,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Wall.jpg"
+    "image": "images/expansions/Empires/Wall.jpg"
   },
   {
     "name": "Wedding",
@@ -1776,7 +1776,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Wedding.jpg"
+    "image": "images/expansions/Empires/Wedding.jpg"
   },
   {
     "name": "Wild Hunt",
@@ -1803,7 +1803,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Wild_Hunt.jpg"
+    "image": "images/expansions/Empires/Wild_Hunt.jpg"
   },
   {
     "name": "Windfall",
@@ -1826,7 +1826,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Windfall.jpg"
+    "image": "images/expansions/Empires/Windfall.jpg"
   },
   {
     "name": "Wolf Den",
@@ -1849,6 +1849,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Empires/Wolf_Den.jpg"
+    "image": "images/expansions/Empires/Wolf_Den.jpg"
   }
 ]

@@ -25,7 +25,7 @@
       "Ruins"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Abandoned_Mine.jpg"
+    "image": "images/expansions/Dark Ages/Abandoned_Mine.jpg"
   },
   {
     "name": "Altar",
@@ -53,7 +53,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Altar.jpg"
+    "image": "images/expansions/Dark Ages/Altar.jpg"
   },
   {
     "name": "Armory",
@@ -79,7 +79,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Armory.jpg"
+    "image": "images/expansions/Dark Ages/Armory.jpg"
   },
   {
     "name": "Band of Misfits",
@@ -104,7 +104,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Band_of_Misfits.jpg"
+    "image": "images/expansions/Dark Ages/Band_of_Misfits.jpg"
   },
   {
     "name": "Bandit Camp",
@@ -133,7 +133,7 @@
     "dependencies": [
       "Spoils"
     ],
-    "image": "images/Dark Ages/Bandit_Camp.jpg"
+    "image": "images/expansions/Dark Ages/Bandit_Camp.jpg"
   },
   {
     "name": "Beggar",
@@ -163,7 +163,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Beggar.jpg"
+    "image": "images/expansions/Dark Ages/Beggar.jpg"
   },
   {
     "name": "Catacombs",
@@ -196,7 +196,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Catacombs.jpg"
+    "image": "images/expansions/Dark Ages/Catacombs.jpg"
   },
   {
     "name": "Count",
@@ -228,7 +228,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Count.jpg"
+    "image": "images/expansions/Dark Ages/Count.jpg"
   },
   {
     "name": "Counterfeit",
@@ -255,7 +255,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Counterfeit.jpg"
+    "image": "images/expansions/Dark Ages/Counterfeit.jpg"
   },
   {
     "name": "Cultist",
@@ -291,7 +291,7 @@
     "dependencies": [
       "Ruins"
     ],
-    "image": "images/Dark Ages/Cultist.jpg"
+    "image": "images/expansions/Dark Ages/Cultist.jpg"
   },
   {
     "name": "Dame Anna",
@@ -326,7 +326,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Dame_Anna.jpg"
+    "image": "images/expansions/Dark Ages/Dame_Anna.jpg"
   },
   {
     "name": "Dame Josephine",
@@ -362,7 +362,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Dame_Josephine.jpg"
+    "image": "images/expansions/Dark Ages/Dame_Josephine.jpg"
   },
   {
     "name": "Dame Molly",
@@ -398,7 +398,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Dame_Molly.jpg"
+    "image": "images/expansions/Dark Ages/Dame_Molly.jpg"
   },
   {
     "name": "Dame Natalie",
@@ -434,7 +434,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Dame_Natalie.jpg"
+    "image": "images/expansions/Dark Ages/Dame_Natalie.jpg"
   },
   {
     "name": "Dame Sylvia",
@@ -471,7 +471,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Dame_Sylvia.jpg"
+    "image": "images/expansions/Dark Ages/Dame_Sylvia.jpg"
   },
   {
     "name": "Death Cart",
@@ -505,7 +505,7 @@
     "dependencies": [
       "Ruins"
     ],
-    "image": "images/Dark Ages/Death_Cart.jpg"
+    "image": "images/expansions/Dark Ages/Death_Cart.jpg"
   },
   {
     "name": "Feodum",
@@ -533,7 +533,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Feodum.jpg"
+    "image": "images/expansions/Dark Ages/Feodum.jpg"
   },
   {
     "name": "Forager",
@@ -562,7 +562,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Forager.jpg"
+    "image": "images/expansions/Dark Ages/Forager.jpg"
   },
   {
     "name": "Fortress",
@@ -591,7 +591,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Fortress.jpg"
+    "image": "images/expansions/Dark Ages/Fortress.jpg"
   },
   {
     "name": "Graverobber",
@@ -620,7 +620,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Graverobber.jpg"
+    "image": "images/expansions/Dark Ages/Graverobber.jpg"
   },
   {
     "name": "Hermit",
@@ -650,7 +650,7 @@
     "dependencies": [
       "Madman"
     ],
-    "image": "images/Dark Ages/Hermit.jpg"
+    "image": "images/expansions/Dark Ages/Hermit.jpg"
   },
   {
     "name": "Hovel",
@@ -683,7 +683,7 @@
       "Shelters"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Hovel.jpg"
+    "image": "images/expansions/Dark Ages/Hovel.jpg"
   },
   {
     "name": "Hunting Grounds",
@@ -714,7 +714,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Hunting_Grounds.jpg"
+    "image": "images/expansions/Dark Ages/Hunting_Grounds.jpg"
   },
   {
     "name": "Ironmonger",
@@ -743,7 +743,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Ironmonger.jpg"
+    "image": "images/expansions/Dark Ages/Ironmonger.jpg"
   },
   {
     "name": "Junk Dealer",
@@ -770,7 +770,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Junk_Dealer.jpg"
+    "image": "images/expansions/Dark Ages/Junk_Dealer.jpg"
   },
   {
     "name": "Knights",
@@ -797,7 +797,7 @@
     "dependencies": [
       "Keep"
     ],
-    "image": "images/Dark Ages/Knights.jpg"
+    "image": "images/expansions/Dark Ages/Knights.jpg"
   },
   {
     "name": "Madman",
@@ -825,7 +825,7 @@
     "dependencies": [
       "Hermit"
     ],
-    "image": "images/Dark Ages/Madman.jpg"
+    "image": "images/expansions/Dark Ages/Madman.jpg"
   },
   {
     "name": "Marauder",
@@ -858,7 +858,7 @@
       "Ruins",
       "Spoils"
     ],
-    "image": "images/Dark Ages/Marauder.jpg"
+    "image": "images/expansions/Dark Ages/Marauder.jpg"
   },
   {
     "name": "Market Square",
@@ -890,7 +890,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Market_Square.jpg"
+    "image": "images/expansions/Dark Ages/Market_Square.jpg"
   },
   {
     "name": "Mercenary",
@@ -925,7 +925,7 @@
     "dependencies": [
       "Urchin"
     ],
-    "image": "images/Dark Ages/Mercenary.jpg"
+    "image": "images/expansions/Dark Ages/Mercenary.jpg"
   },
   {
     "name": "Mystic",
@@ -953,7 +953,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Mystic.jpg"
+    "image": "images/expansions/Dark Ages/Mystic.jpg"
   },
   {
     "name": "Necropolis",
@@ -980,7 +980,7 @@
       "Shelters"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Necropolis.jpg"
+    "image": "images/expansions/Dark Ages/Necropolis.jpg"
   },
   {
     "name": "Overgrown Estate",
@@ -1011,7 +1011,7 @@
       "Shelters"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Overgrown_Estate.jpg"
+    "image": "images/expansions/Dark Ages/Overgrown_Estate.jpg"
   },
   {
     "name": "Pillage",
@@ -1046,7 +1046,7 @@
     "dependencies": [
       "Spoils"
     ],
-    "image": "images/Dark Ages/Pillage.jpg"
+    "image": "images/expansions/Dark Ages/Pillage.jpg"
   },
   {
     "name": "Poor House",
@@ -1072,7 +1072,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Poor_House.jpg"
+    "image": "images/expansions/Dark Ages/Poor_House.jpg"
   },
   {
     "name": "Procession",
@@ -1100,7 +1100,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Procession.jpg"
+    "image": "images/expansions/Dark Ages/Procession.jpg"
   },
   {
     "name": "Rats",
@@ -1130,7 +1130,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Rats.jpg"
+    "image": "images/expansions/Dark Ages/Rats.jpg"
   },
   {
     "name": "Rebuild",
@@ -1160,7 +1160,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Rebuild.jpg"
+    "image": "images/expansions/Dark Ages/Rebuild.jpg"
   },
   {
     "name": "Rogue",
@@ -1195,7 +1195,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Rogue.jpg"
+    "image": "images/expansions/Dark Ages/Rogue.jpg"
   },
   {
     "name": "Ruined Library",
@@ -1223,7 +1223,7 @@
       "Ruins"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Ruined_Library.jpg"
+    "image": "images/expansions/Dark Ages/Ruined_Library.jpg"
   },
   {
     "name": "Ruined Market",
@@ -1251,7 +1251,7 @@
       "Ruins"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Ruined_Market.jpg"
+    "image": "images/expansions/Dark Ages/Ruined_Market.jpg"
   },
   {
     "name": "Ruined Village",
@@ -1278,7 +1278,7 @@
       "Ruins"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Ruined_Village.jpg"
+    "image": "images/expansions/Dark Ages/Ruined_Village.jpg"
   },
   {
     "name": "Ruins",
@@ -1299,7 +1299,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Ruins.jpg"
+    "image": "images/expansions/Dark Ages/Ruins.jpg"
   },
   {
     "name": "Sage",
@@ -1327,7 +1327,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Sage.jpg"
+    "image": "images/expansions/Dark Ages/Sage.jpg"
   },
   {
     "name": "Scavenger",
@@ -1353,7 +1353,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Scavenger.jpg"
+    "image": "images/expansions/Dark Ages/Scavenger.jpg"
   },
   {
     "name": "Shelters",
@@ -1374,7 +1374,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Shelters.jpg"
+    "image": "images/expansions/Dark Ages/Shelters.jpg"
   },
   {
     "name": "Silk Road",
@@ -1397,7 +1397,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Silk_Road.jpg"
+    "image": "images/expansions/Dark Ages/Silk_Road.jpg"
   },
   {
     "name": "Sir Bailey",
@@ -1433,7 +1433,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Sir_Bailey.jpg"
+    "image": "images/expansions/Dark Ages/Sir_Bailey.jpg"
   },
   {
     "name": "Sir Destry",
@@ -1470,7 +1470,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Sir_Destry.jpg"
+    "image": "images/expansions/Dark Ages/Sir_Destry.jpg"
   },
   {
     "name": "Sir Martin",
@@ -1507,7 +1507,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Sir_Martin.jpg"
+    "image": "images/expansions/Dark Ages/Sir_Martin.jpg"
   },
   {
     "name": "Sir Michael",
@@ -1542,7 +1542,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Sir_Michael.jpg"
+    "image": "images/expansions/Dark Ages/Sir_Michael.jpg"
   },
   {
     "name": "Sir Vander",
@@ -1581,7 +1581,7 @@
       "Knights"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Sir_Vander.jpg"
+    "image": "images/expansions/Dark Ages/Sir_Vander.jpg"
   },
   {
     "name": "Spoils",
@@ -1606,7 +1606,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Spoils.jpg"
+    "image": "images/expansions/Dark Ages/Spoils.jpg"
   },
   {
     "name": "Squire",
@@ -1639,7 +1639,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Squire.jpg"
+    "image": "images/expansions/Dark Ages/Squire.jpg"
   },
   {
     "name": "Storeroom",
@@ -1667,7 +1667,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Storeroom.jpg"
+    "image": "images/expansions/Dark Ages/Storeroom.jpg"
   },
   {
     "name": "Survivors",
@@ -1696,7 +1696,7 @@
       "Ruins"
     ],
     "dependencies": [],
-    "image": "images/Dark Ages/Survivors.jpg"
+    "image": "images/expansions/Dark Ages/Survivors.jpg"
   },
   {
     "name": "Urchin",
@@ -1731,7 +1731,7 @@
     "dependencies": [
       "Mercenary"
     ],
-    "image": "images/Dark Ages/Urchin.jpg"
+    "image": "images/expansions/Dark Ages/Urchin.jpg"
   },
   {
     "name": "Vagrant",
@@ -1760,7 +1760,7 @@
       "Curse",
       "Ruins"
     ],
-    "image": "images/Dark Ages/Vagrant.jpg"
+    "image": "images/expansions/Dark Ages/Vagrant.jpg"
   },
   {
     "name": "Wandering Minstrel",
@@ -1789,6 +1789,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Wandering_Minstrel.jpg"
+    "image": "images/expansions/Dark Ages/Wandering_Minstrel.jpg"
   }
 ]

@@ -257,7 +257,7 @@ async function fetchAndParseCard(cardName, sharedPage, rawDir, lookup, structure
     opponent_tags,
     parent,
     dependencies,
-    image: `images/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
+    image: `images/expansions/${boxName}/${cardName.replace(/ /g, '_')}.jpg`
   };
 }
 

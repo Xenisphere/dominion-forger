@@ -24,7 +24,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Adventurer.jpg"
+    "image": "images/expansions/Dominion/Adventurer.jpg"
   },
   {
     "name": "Artisan",
@@ -51,7 +51,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Artisan.jpg"
+    "image": "images/expansions/Dominion/Artisan.jpg"
   },
   {
     "name": "Bandit",
@@ -82,7 +82,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Bandit.jpg"
+    "image": "images/expansions/Dominion/Bandit.jpg"
   },
   {
     "name": "Bureaucrat",
@@ -112,7 +112,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Bureaucrat.jpg"
+    "image": "images/expansions/Dominion/Bureaucrat.jpg"
   },
   {
     "name": "Cellar",
@@ -137,7 +137,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Cellar.jpg"
+    "image": "images/expansions/Dominion/Cellar.jpg"
   },
   {
     "name": "Chancellor",
@@ -162,7 +162,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Chancellor.jpg"
+    "image": "images/expansions/Dominion/Chancellor.jpg"
   },
   {
     "name": "Chapel",
@@ -187,7 +187,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Chapel.jpg"
+    "image": "images/expansions/Dominion/Chapel.jpg"
   },
   {
     "name": "Council Room",
@@ -216,7 +216,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Council_Room.jpg"
+    "image": "images/expansions/Dominion/Council_Room.jpg"
   },
   {
     "name": "Curse",
@@ -239,7 +239,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Curse.jpg"
+    "image": "images/expansions/Dominion/Curse.jpg"
   },
   {
     "name": "Feast",
@@ -268,7 +268,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Feast.jpg"
+    "image": "images/expansions/Dominion/Feast.jpg"
   },
   {
     "name": "Festival",
@@ -295,7 +295,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Festival.jpg"
+    "image": "images/expansions/Dominion/Festival.jpg"
   },
   {
     "name": "Gardens",
@@ -318,7 +318,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Gardens.jpg"
+    "image": "images/expansions/Dominion/Gardens.jpg"
   },
   {
     "name": "Harbinger",
@@ -343,7 +343,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Harbinger.jpg"
+    "image": "images/expansions/Dominion/Harbinger.jpg"
   },
   {
     "name": "Laboratory",
@@ -368,7 +368,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Laboratory.jpg"
+    "image": "images/expansions/Dominion/Laboratory.jpg"
   },
   {
     "name": "Library",
@@ -394,7 +394,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Library.jpg"
+    "image": "images/expansions/Dominion/Library.jpg"
   },
   {
     "name": "Market",
@@ -421,7 +421,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Market.jpg"
+    "image": "images/expansions/Dominion/Market.jpg"
   },
   {
     "name": "Merchant",
@@ -447,7 +447,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Merchant.jpg"
+    "image": "images/expansions/Dominion/Merchant.jpg"
   },
   {
     "name": "Militia",
@@ -475,7 +475,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Militia.jpg"
+    "image": "images/expansions/Dominion/Militia.jpg"
   },
   {
     "name": "Mine",
@@ -504,7 +504,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Mine.jpg"
+    "image": "images/expansions/Dominion/Mine.jpg"
   },
   {
     "name": "Moat",
@@ -531,7 +531,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Moat.jpg"
+    "image": "images/expansions/Dominion/Moat.jpg"
   },
   {
     "name": "Moneylender",
@@ -559,7 +559,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Moneylender.jpg"
+    "image": "images/expansions/Dominion/Moneylender.jpg"
   },
   {
     "name": "Poacher",
@@ -586,7 +586,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Poacher.jpg"
+    "image": "images/expansions/Dominion/Poacher.jpg"
   },
   {
     "name": "Remodel",
@@ -614,7 +614,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Remodel.jpg"
+    "image": "images/expansions/Dominion/Remodel.jpg"
   },
   {
     "name": "Sentry",
@@ -643,7 +643,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Sentry.jpg"
+    "image": "images/expansions/Dominion/Sentry.jpg"
   },
   {
     "name": "Smithy",
@@ -668,7 +668,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Smithy.jpg"
+    "image": "images/expansions/Dominion/Smithy.jpg"
   },
   {
     "name": "Spy",
@@ -700,7 +700,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Spy.jpg"
+    "image": "images/expansions/Dominion/Spy.jpg"
   },
   {
     "name": "Thief",
@@ -731,7 +731,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Thief.jpg"
+    "image": "images/expansions/Dominion/Thief.jpg"
   },
   {
     "name": "Throne Room",
@@ -755,7 +755,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Throne_Room.jpg"
+    "image": "images/expansions/Dominion/Throne_Room.jpg"
   },
   {
     "name": "Vassal",
@@ -781,7 +781,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Vassal.jpg"
+    "image": "images/expansions/Dominion/Vassal.jpg"
   },
   {
     "name": "Village",
@@ -806,7 +806,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Village.jpg"
+    "image": "images/expansions/Dominion/Village.jpg"
   },
   {
     "name": "Witch",
@@ -837,7 +837,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Dominion/Witch.jpg"
+    "image": "images/expansions/Dominion/Witch.jpg"
   },
   {
     "name": "Woodcutter",
@@ -863,7 +863,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Woodcutter.jpg"
+    "image": "images/expansions/Dominion/Woodcutter.jpg"
   },
   {
     "name": "Workshop",
@@ -887,6 +887,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dominion/Workshop.jpg"
+    "image": "images/expansions/Dominion/Workshop.jpg"
   }
 ]

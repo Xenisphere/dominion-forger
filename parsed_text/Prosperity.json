@@ -21,7 +21,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Anvil.jpg"
+    "image": "images/expansions/Prosperity/Anvil.jpg"
   },
   {
     "name": "Bank",
@@ -45,7 +45,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Bank.jpg"
+    "image": "images/expansions/Prosperity/Bank.jpg"
   },
   {
     "name": "Bishop",
@@ -75,7 +75,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Bishop.jpg"
+    "image": "images/expansions/Prosperity/Bishop.jpg"
   },
   {
     "name": "Charlatan",
@@ -106,7 +106,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Prosperity/Charlatan.jpg"
+    "image": "images/expansions/Prosperity/Charlatan.jpg"
   },
   {
     "name": "City",
@@ -134,7 +134,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/City.jpg"
+    "image": "images/expansions/Prosperity/City.jpg"
   },
   {
     "name": "Clerk",
@@ -164,7 +164,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Clerk.jpg"
+    "image": "images/expansions/Prosperity/Clerk.jpg"
   },
   {
     "name": "Collection",
@@ -188,7 +188,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Collection.jpg"
+    "image": "images/expansions/Prosperity/Collection.jpg"
   },
   {
     "name": "Colony",
@@ -211,7 +211,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Colony.jpg"
+    "image": "images/expansions/Prosperity/Colony.jpg"
   },
   {
     "name": "Contraband",
@@ -235,7 +235,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Contraband.jpg"
+    "image": "images/expansions/Prosperity/Contraband.jpg"
   },
   {
     "name": "Counting House",
@@ -260,7 +260,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Counting_House.jpg"
+    "image": "images/expansions/Prosperity/Counting_House.jpg"
   },
   {
     "name": "Crystal Ball",
@@ -287,7 +287,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Crystal_Ball.jpg"
+    "image": "images/expansions/Prosperity/Crystal_Ball.jpg"
   },
   {
     "name": "Expand",
@@ -315,7 +315,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Expand.jpg"
+    "image": "images/expansions/Prosperity/Expand.jpg"
   },
   {
     "name": "Forge",
@@ -343,7 +343,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Forge.jpg"
+    "image": "images/expansions/Prosperity/Forge.jpg"
   },
   {
     "name": "Goons",
@@ -373,7 +373,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Goons.jpg"
+    "image": "images/expansions/Prosperity/Goons.jpg"
   },
   {
     "name": "Grand Market",
@@ -400,7 +400,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Grand_Market.jpg"
+    "image": "images/expansions/Prosperity/Grand_Market.jpg"
   },
   {
     "name": "Hoard",
@@ -423,7 +423,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Hoard.jpg"
+    "image": "images/expansions/Prosperity/Hoard.jpg"
   },
   {
     "name": "Investment",
@@ -452,7 +452,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Investment.jpg"
+    "image": "images/expansions/Prosperity/Investment.jpg"
   },
   {
     "name": "King's Court",
@@ -475,7 +475,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/King's_Court.jpg"
+    "image": "images/expansions/Prosperity/King's_Court.jpg"
   },
   {
     "name": "Loan",
@@ -502,7 +502,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Loan.jpg"
+    "image": "images/expansions/Prosperity/Loan.jpg"
   },
   {
     "name": "Magnate",
@@ -528,7 +528,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Magnate.jpg"
+    "image": "images/expansions/Prosperity/Magnate.jpg"
   },
   {
     "name": "Mint",
@@ -556,7 +556,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Mint.jpg"
+    "image": "images/expansions/Prosperity/Mint.jpg"
   },
   {
     "name": "Monument",
@@ -581,7 +581,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Monument.jpg"
+    "image": "images/expansions/Prosperity/Monument.jpg"
   },
   {
     "name": "Mountebank",
@@ -613,7 +613,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Prosperity/Mountebank.jpg"
+    "image": "images/expansions/Prosperity/Mountebank.jpg"
   },
   {
     "name": "Peddler",
@@ -640,7 +640,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Peddler.jpg"
+    "image": "images/expansions/Prosperity/Peddler.jpg"
   },
   {
     "name": "Platinum",
@@ -663,7 +663,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Platinum.jpg"
+    "image": "images/expansions/Prosperity/Platinum.jpg"
   },
   {
     "name": "Quarry",
@@ -686,7 +686,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Quarry.jpg"
+    "image": "images/expansions/Prosperity/Quarry.jpg"
   },
   {
     "name": "Rabble",
@@ -716,7 +716,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Rabble.jpg"
+    "image": "images/expansions/Prosperity/Rabble.jpg"
   },
   {
     "name": "Royal Seal",
@@ -740,7 +740,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Royal_Seal.jpg"
+    "image": "images/expansions/Prosperity/Royal_Seal.jpg"
   },
   {
     "name": "Talisman",
@@ -766,7 +766,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Talisman.jpg"
+    "image": "images/expansions/Prosperity/Talisman.jpg"
   },
   {
     "name": "Tiara",
@@ -793,7 +793,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Tiara.jpg"
+    "image": "images/expansions/Prosperity/Tiara.jpg"
   },
   {
     "name": "Trade Route",
@@ -825,7 +825,7 @@
     "dependencies": [
       "Trade"
     ],
-    "image": "images/Prosperity/Trade_Route.jpg"
+    "image": "images/expansions/Prosperity/Trade_Route.jpg"
   },
   {
     "name": "Vault",
@@ -855,7 +855,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Vault.jpg"
+    "image": "images/expansions/Prosperity/Vault.jpg"
   },
   {
     "name": "Venture",
@@ -880,7 +880,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Venture.jpg"
+    "image": "images/expansions/Prosperity/Venture.jpg"
   },
   {
     "name": "War Chest",
@@ -905,7 +905,7 @@
     "dependencies": [
       "War"
     ],
-    "image": "images/Prosperity/War_Chest.jpg"
+    "image": "images/expansions/Prosperity/War_Chest.jpg"
   },
   {
     "name": "Watchtower",
@@ -938,7 +938,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Watchtower.jpg"
+    "image": "images/expansions/Prosperity/Watchtower.jpg"
   },
   {
     "name": "Worker's Village",
@@ -965,6 +965,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Prosperity/Worker's_Village.jpg"
+    "image": "images/expansions/Prosperity/Worker's_Village.jpg"
   }
 ]

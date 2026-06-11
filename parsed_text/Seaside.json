@@ -23,7 +23,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Ambassador.jpg"
+    "image": "images/expansions/Seaside/Ambassador.jpg"
   },
   {
     "name": "Astrolabe",
@@ -49,7 +49,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Astrolabe.jpg"
+    "image": "images/expansions/Seaside/Astrolabe.jpg"
   },
   {
     "name": "Bazaar",
@@ -76,7 +76,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Bazaar.jpg"
+    "image": "images/expansions/Seaside/Bazaar.jpg"
   },
   {
     "name": "Blockade",
@@ -110,7 +110,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Seaside/Blockade.jpg"
+    "image": "images/expansions/Seaside/Blockade.jpg"
   },
   {
     "name": "Caravan",
@@ -136,7 +136,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Caravan.jpg"
+    "image": "images/expansions/Seaside/Caravan.jpg"
   },
   {
     "name": "Corsair",
@@ -170,7 +170,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Corsair.jpg"
+    "image": "images/expansions/Seaside/Corsair.jpg"
   },
   {
     "name": "Cutpurse",
@@ -198,7 +198,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Cutpurse.jpg"
+    "image": "images/expansions/Seaside/Cutpurse.jpg"
   },
   {
     "name": "Embargo",
@@ -230,7 +230,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Seaside/Embargo.jpg"
+    "image": "images/expansions/Seaside/Embargo.jpg"
   },
   {
     "name": "Explorer",
@@ -256,7 +256,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Explorer.jpg"
+    "image": "images/expansions/Seaside/Explorer.jpg"
   },
   {
     "name": "Fishing Village",
@@ -284,7 +284,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Fishing_Village.jpg"
+    "image": "images/expansions/Seaside/Fishing_Village.jpg"
   },
   {
     "name": "Ghost Ship",
@@ -313,7 +313,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Ghost_Ship.jpg"
+    "image": "images/expansions/Seaside/Ghost_Ship.jpg"
   },
   {
     "name": "Haven",
@@ -340,7 +340,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Haven.jpg"
+    "image": "images/expansions/Seaside/Haven.jpg"
   },
   {
     "name": "Island",
@@ -364,7 +364,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Island.jpg"
+    "image": "images/expansions/Seaside/Island.jpg"
   },
   {
     "name": "Lighthouse",
@@ -393,7 +393,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Lighthouse.jpg"
+    "image": "images/expansions/Seaside/Lighthouse.jpg"
   },
   {
     "name": "Lookout",
@@ -421,7 +421,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Lookout.jpg"
+    "image": "images/expansions/Seaside/Lookout.jpg"
   },
   {
     "name": "Merchant Ship",
@@ -448,7 +448,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Merchant_Ship.jpg"
+    "image": "images/expansions/Seaside/Merchant_Ship.jpg"
   },
   {
     "name": "Monkey",
@@ -476,7 +476,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Monkey.jpg"
+    "image": "images/expansions/Seaside/Monkey.jpg"
   },
   {
     "name": "Native Village",
@@ -502,7 +502,7 @@
     "dependencies": [
       "Village"
     ],
-    "image": "images/Seaside/Native_Village.jpg"
+    "image": "images/expansions/Seaside/Native_Village.jpg"
   },
   {
     "name": "Navigator",
@@ -530,7 +530,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Navigator.jpg"
+    "image": "images/expansions/Seaside/Navigator.jpg"
   },
   {
     "name": "Outpost",
@@ -557,7 +557,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Outpost.jpg"
+    "image": "images/expansions/Seaside/Outpost.jpg"
   },
   {
     "name": "Pearl Diver",
@@ -582,7 +582,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Pearl_Diver.jpg"
+    "image": "images/expansions/Seaside/Pearl_Diver.jpg"
   },
   {
     "name": "Pirate",
@@ -611,7 +611,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Pirate.jpg"
+    "image": "images/expansions/Seaside/Pirate.jpg"
   },
   {
     "name": "Pirate Ship",
@@ -645,7 +645,7 @@
     "dependencies": [
       "Pirate"
     ],
-    "image": "images/Seaside/Pirate_Ship.jpg"
+    "image": "images/expansions/Seaside/Pirate_Ship.jpg"
   },
   {
     "name": "Sailor",
@@ -676,7 +676,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Sailor.jpg"
+    "image": "images/expansions/Seaside/Sailor.jpg"
   },
   {
     "name": "Salvager",
@@ -705,7 +705,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Salvager.jpg"
+    "image": "images/expansions/Seaside/Salvager.jpg"
   },
   {
     "name": "Sea Chart",
@@ -732,7 +732,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Sea_Chart.jpg"
+    "image": "images/expansions/Seaside/Sea_Chart.jpg"
   },
   {
     "name": "Sea Hag",
@@ -763,7 +763,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Seaside/Sea_Hag.jpg"
+    "image": "images/expansions/Seaside/Sea_Hag.jpg"
   },
   {
     "name": "Sea Witch",
@@ -797,7 +797,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Seaside/Sea_Witch.jpg"
+    "image": "images/expansions/Seaside/Sea_Witch.jpg"
   },
   {
     "name": "Smugglers",
@@ -821,7 +821,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Smugglers.jpg"
+    "image": "images/expansions/Seaside/Smugglers.jpg"
   },
   {
     "name": "Tactician",
@@ -851,7 +851,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Tactician.jpg"
+    "image": "images/expansions/Seaside/Tactician.jpg"
   },
   {
     "name": "Tide Pools",
@@ -879,7 +879,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Tide_Pools.jpg"
+    "image": "images/expansions/Seaside/Tide_Pools.jpg"
   },
   {
     "name": "Treasure Map",
@@ -909,7 +909,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Treasure_Map.jpg"
+    "image": "images/expansions/Seaside/Treasure_Map.jpg"
   },
   {
     "name": "Treasury",
@@ -939,7 +939,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Treasury.jpg"
+    "image": "images/expansions/Seaside/Treasury.jpg"
   },
   {
     "name": "Warehouse",
@@ -965,7 +965,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Warehouse.jpg"
+    "image": "images/expansions/Seaside/Warehouse.jpg"
   },
   {
     "name": "Wharf",
@@ -994,6 +994,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Seaside/Wharf.jpg"
+    "image": "images/expansions/Seaside/Wharf.jpg"
   }
 ]

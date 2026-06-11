@@ -25,7 +25,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Baron.jpg"
+    "image": "images/expansions/Intrigue/Baron.jpg"
   },
   {
     "name": "Bridge",
@@ -52,7 +52,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Bridge.jpg"
+    "image": "images/expansions/Intrigue/Bridge.jpg"
   },
   {
     "name": "Conspirator",
@@ -78,7 +78,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Conspirator.jpg"
+    "image": "images/expansions/Intrigue/Conspirator.jpg"
   },
   {
     "name": "Coppersmith",
@@ -101,7 +101,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Coppersmith.jpg"
+    "image": "images/expansions/Intrigue/Coppersmith.jpg"
   },
   {
     "name": "Courtier",
@@ -130,7 +130,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Courtier.jpg"
+    "image": "images/expansions/Intrigue/Courtier.jpg"
   },
   {
     "name": "Courtyard",
@@ -156,7 +156,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Courtyard.jpg"
+    "image": "images/expansions/Intrigue/Courtyard.jpg"
   },
   {
     "name": "Diplomat",
@@ -186,7 +186,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Diplomat.jpg"
+    "image": "images/expansions/Intrigue/Diplomat.jpg"
   },
   {
     "name": "Duke",
@@ -209,7 +209,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Duke.jpg"
+    "image": "images/expansions/Intrigue/Duke.jpg"
   },
   {
     "name": "Farm",
@@ -233,7 +233,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Farm.jpg"
+    "image": "images/expansions/Intrigue/Farm.jpg"
   },
   {
     "name": "Great Hall",
@@ -258,7 +258,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Great_Hall.jpg"
+    "image": "images/expansions/Intrigue/Great_Hall.jpg"
   },
   {
     "name": "Ironworks",
@@ -285,7 +285,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Ironworks.jpg"
+    "image": "images/expansions/Intrigue/Ironworks.jpg"
   },
   {
     "name": "Lurker",
@@ -312,7 +312,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Lurker.jpg"
+    "image": "images/expansions/Intrigue/Lurker.jpg"
   },
   {
     "name": "Masquerade",
@@ -339,7 +339,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Masquerade.jpg"
+    "image": "images/expansions/Intrigue/Masquerade.jpg"
   },
   {
     "name": "Mill",
@@ -367,7 +367,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Mill.jpg"
+    "image": "images/expansions/Intrigue/Mill.jpg"
   },
   {
     "name": "Mining Village",
@@ -397,7 +397,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Mining_Village.jpg"
+    "image": "images/expansions/Intrigue/Mining_Village.jpg"
   },
   {
     "name": "Minion",
@@ -427,7 +427,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Minion.jpg"
+    "image": "images/expansions/Intrigue/Minion.jpg"
   },
   {
     "name": "Nobles",
@@ -453,7 +453,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Nobles.jpg"
+    "image": "images/expansions/Intrigue/Nobles.jpg"
   },
   {
     "name": "Patrol",
@@ -481,7 +481,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Patrol.jpg"
+    "image": "images/expansions/Intrigue/Patrol.jpg"
   },
   {
     "name": "Pawn",
@@ -508,7 +508,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Pawn.jpg"
+    "image": "images/expansions/Intrigue/Pawn.jpg"
   },
   {
     "name": "Replace",
@@ -543,7 +543,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Intrigue/Replace.jpg"
+    "image": "images/expansions/Intrigue/Replace.jpg"
   },
   {
     "name": "Saboteur",
@@ -575,7 +575,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Saboteur.jpg"
+    "image": "images/expansions/Intrigue/Saboteur.jpg"
   },
   {
     "name": "Scout",
@@ -603,7 +603,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Scout.jpg"
+    "image": "images/expansions/Intrigue/Scout.jpg"
   },
   {
     "name": "Secret Chamber",
@@ -634,7 +634,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Secret_Chamber.jpg"
+    "image": "images/expansions/Intrigue/Secret_Chamber.jpg"
   },
   {
     "name": "Secret Passage",
@@ -659,7 +659,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Secret_Passage.jpg"
+    "image": "images/expansions/Intrigue/Secret_Passage.jpg"
   },
   {
     "name": "Shanty Town",
@@ -685,7 +685,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Shanty_Town.jpg"
+    "image": "images/expansions/Intrigue/Shanty_Town.jpg"
   },
   {
     "name": "Steward",
@@ -714,7 +714,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Steward.jpg"
+    "image": "images/expansions/Intrigue/Steward.jpg"
   },
   {
     "name": "Swindler",
@@ -744,7 +744,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Swindler.jpg"
+    "image": "images/expansions/Intrigue/Swindler.jpg"
   },
   {
     "name": "Torturer",
@@ -776,7 +776,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Intrigue/Torturer.jpg"
+    "image": "images/expansions/Intrigue/Torturer.jpg"
   },
   {
     "name": "Trading Post",
@@ -805,7 +805,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Trading_Post.jpg"
+    "image": "images/expansions/Intrigue/Trading_Post.jpg"
   },
   {
     "name": "Tribute",
@@ -835,7 +835,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Tribute.jpg"
+    "image": "images/expansions/Intrigue/Tribute.jpg"
   },
   {
     "name": "Upgrade",
@@ -863,7 +863,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Upgrade.jpg"
+    "image": "images/expansions/Intrigue/Upgrade.jpg"
   },
   {
     "name": "Wishing Well",
@@ -889,6 +889,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Intrigue/Wishing_Well.jpg"
+    "image": "images/expansions/Intrigue/Wishing_Well.jpg"
   }
 ]

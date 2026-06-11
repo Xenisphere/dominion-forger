@@ -45,10 +45,8 @@ async function homePage(main, params = {}) {
     const stats = [
         { label: 'Total Games Played', value: 'Placeholder' },
         { label: 'Most Played Card', value: 'Placeholder' },
+        { label: 'Highest Rated Card', value: 'Placeholder' },
         { label: 'Most Played Expansion', value: 'Placeholder' },
-        { label: 'Cards Indexed', value: 'Placeholder' },
-        { label: 'Top Rated Card', value: 'Placeholder' },
-        { label: 'Most Saved Kingdom', value: 'Placeholder' },
     ];
 
     stats.forEach(({ label, value }) => {
@@ -133,6 +131,12 @@ async function homePage(main, params = {}) {
             img.src = `${BASE}/${card.image}`;
             img.alt = card.name;
             img.className = 'featured-image';
+
+            img.onload = () => {
+                if (img.naturalWidth > img.naturalHeight) {
+                    img.classList.add('featured-image--landscape');
+                }
+            };
 
             const info = document.createElement('div');
             info.className = 'featured-info';

@@ -20,7 +20,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Base/Copper.jpg"
+    "image": "images/expansions/Base/Copper.jpg"
   },
   {
     "name": "Duchy",
@@ -43,7 +43,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Base/Duchy.jpg"
+    "image": "images/expansions/Base/Duchy.jpg"
   },
   {
     "name": "Estate",
@@ -66,7 +66,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Base/Estate.jpg"
+    "image": "images/expansions/Base/Estate.jpg"
   },
   {
     "name": "Gold",
@@ -89,7 +89,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Base/Gold.jpg"
+    "image": "images/expansions/Base/Gold.jpg"
   },
   {
     "name": "Province",
@@ -112,7 +112,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Base/Province.jpg"
+    "image": "images/expansions/Base/Province.jpg"
   },
   {
     "name": "Silver",
@@ -135,6 +135,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Base/Silver.jpg"
+    "image": "images/expansions/Base/Silver.jpg"
   }
 ]

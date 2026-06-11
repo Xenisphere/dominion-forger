@@ -25,7 +25,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Abundance.jpg"
+    "image": "images/expansions/Plunder/Abundance.jpg"
   },
   {
     "name": "Amphora",
@@ -55,7 +55,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Amphora.jpg"
+    "image": "images/expansions/Plunder/Amphora.jpg"
   },
   {
     "name": "Avoid",
@@ -79,7 +79,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Avoid.jpg"
+    "image": "images/expansions/Plunder/Avoid.jpg"
   },
   {
     "name": "Buried Treasure",
@@ -108,7 +108,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Buried_Treasure.jpg"
+    "image": "images/expansions/Plunder/Buried_Treasure.jpg"
   },
   {
     "name": "Bury",
@@ -132,7 +132,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Bury.jpg"
+    "image": "images/expansions/Plunder/Bury.jpg"
   },
   {
     "name": "Cabin Boy",
@@ -165,7 +165,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Cabin_Boy.jpg"
+    "image": "images/expansions/Plunder/Cabin_Boy.jpg"
   },
   {
     "name": "Cage",
@@ -196,7 +196,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Cage.jpg"
+    "image": "images/expansions/Plunder/Cage.jpg"
   },
   {
     "name": "Cheap",
@@ -219,7 +219,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Cheap.jpg"
+    "image": "images/expansions/Plunder/Cheap.jpg"
   },
   {
     "name": "Crew",
@@ -247,7 +247,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Crew.jpg"
+    "image": "images/expansions/Plunder/Crew.jpg"
   },
   {
     "name": "Crucible",
@@ -274,7 +274,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Crucible.jpg"
+    "image": "images/expansions/Plunder/Crucible.jpg"
   },
   {
     "name": "Cursed",
@@ -301,7 +301,7 @@
       "Curse",
       "Loot"
     ],
-    "image": "images/Plunder/Cursed.jpg"
+    "image": "images/expansions/Plunder/Cursed.jpg"
   },
   {
     "name": "Cutthroat",
@@ -333,7 +333,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Cutthroat.jpg"
+    "image": "images/expansions/Plunder/Cutthroat.jpg"
   },
   {
     "name": "Deliver",
@@ -360,7 +360,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Deliver.jpg"
+    "image": "images/expansions/Plunder/Deliver.jpg"
   },
   {
     "name": "Doubloons",
@@ -386,7 +386,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Doubloons.jpg"
+    "image": "images/expansions/Plunder/Doubloons.jpg"
   },
   {
     "name": "Endless Chalice",
@@ -416,7 +416,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Endless_Chalice.jpg"
+    "image": "images/expansions/Plunder/Endless_Chalice.jpg"
   },
   {
     "name": "Enlarge",
@@ -445,7 +445,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Enlarge.jpg"
+    "image": "images/expansions/Plunder/Enlarge.jpg"
   },
   {
     "name": "Fated",
@@ -469,7 +469,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Fated.jpg"
+    "image": "images/expansions/Plunder/Fated.jpg"
   },
   {
     "name": "Fawning",
@@ -492,7 +492,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Fawning.jpg"
+    "image": "images/expansions/Plunder/Fawning.jpg"
   },
   {
     "name": "Figurehead",
@@ -521,7 +521,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Figurehead.jpg"
+    "image": "images/expansions/Plunder/Figurehead.jpg"
   },
   {
     "name": "Figurine",
@@ -549,7 +549,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Figurine.jpg"
+    "image": "images/expansions/Plunder/Figurine.jpg"
   },
   {
     "name": "First Mate",
@@ -574,7 +574,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/First_Mate.jpg"
+    "image": "images/expansions/Plunder/First_Mate.jpg"
   },
   {
     "name": "Flagship",
@@ -602,7 +602,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Flagship.jpg"
+    "image": "images/expansions/Plunder/Flagship.jpg"
   },
   {
     "name": "Foray",
@@ -629,7 +629,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Foray.jpg"
+    "image": "images/expansions/Plunder/Foray.jpg"
   },
   {
     "name": "Fortune Hunter",
@@ -656,7 +656,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Fortune_Hunter.jpg"
+    "image": "images/expansions/Plunder/Fortune_Hunter.jpg"
   },
   {
     "name": "Friendly",
@@ -680,7 +680,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Friendly.jpg"
+    "image": "images/expansions/Plunder/Friendly.jpg"
   },
   {
     "name": "Frigate",
@@ -710,7 +710,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Frigate.jpg"
+    "image": "images/expansions/Plunder/Frigate.jpg"
   },
   {
     "name": "Gondola",
@@ -738,7 +738,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Gondola.jpg"
+    "image": "images/expansions/Plunder/Gondola.jpg"
   },
   {
     "name": "Grotto",
@@ -767,7 +767,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Grotto.jpg"
+    "image": "images/expansions/Plunder/Grotto.jpg"
   },
   {
     "name": "Hammer",
@@ -793,7 +793,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Hammer.jpg"
+    "image": "images/expansions/Plunder/Hammer.jpg"
   },
   {
     "name": "Harbor Village",
@@ -821,7 +821,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Harbor_Village.jpg"
+    "image": "images/expansions/Plunder/Harbor_Village.jpg"
   },
   {
     "name": "Hasty",
@@ -845,7 +845,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Hasty.jpg"
+    "image": "images/expansions/Plunder/Hasty.jpg"
   },
   {
     "name": "Inherited",
@@ -868,7 +868,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Inherited.jpg"
+    "image": "images/expansions/Plunder/Inherited.jpg"
   },
   {
     "name": "Insignia",
@@ -895,7 +895,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Insignia.jpg"
+    "image": "images/expansions/Plunder/Insignia.jpg"
   },
   {
     "name": "Inspiring",
@@ -918,7 +918,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Inspiring.jpg"
+    "image": "images/expansions/Plunder/Inspiring.jpg"
   },
   {
     "name": "Invasion",
@@ -947,7 +947,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Invasion.jpg"
+    "image": "images/expansions/Plunder/Invasion.jpg"
   },
   {
     "name": "Jewelled Egg",
@@ -981,7 +981,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Jewelled_Egg.jpg"
+    "image": "images/expansions/Plunder/Jewelled_Egg.jpg"
   },
   {
     "name": "Jewels",
@@ -1010,7 +1010,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Jewels.jpg"
+    "image": "images/expansions/Plunder/Jewels.jpg"
   },
   {
     "name": "Journey",
@@ -1034,7 +1034,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Journey.jpg"
+    "image": "images/expansions/Plunder/Journey.jpg"
   },
   {
     "name": "King's Cache",
@@ -1057,7 +1057,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/King's_Cache.jpg"
+    "image": "images/expansions/Plunder/King's_Cache.jpg"
   },
   {
     "name": "Landing Party",
@@ -1085,7 +1085,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Landing_Party.jpg"
+    "image": "images/expansions/Plunder/Landing_Party.jpg"
   },
   {
     "name": "Launch",
@@ -1111,7 +1111,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Launch.jpg"
+    "image": "images/expansions/Plunder/Launch.jpg"
   },
   {
     "name": "Longship",
@@ -1138,7 +1138,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Longship.jpg"
+    "image": "images/expansions/Plunder/Longship.jpg"
   },
   {
     "name": "Loot",
@@ -1159,7 +1159,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Loot.jpg"
+    "image": "images/expansions/Plunder/Loot.jpg"
   },
   {
     "name": "Looting",
@@ -1185,7 +1185,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Looting.jpg"
+    "image": "images/expansions/Plunder/Looting.jpg"
   },
   {
     "name": "Maelstrom",
@@ -1211,7 +1211,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Maelstrom.jpg"
+    "image": "images/expansions/Plunder/Maelstrom.jpg"
   },
   {
     "name": "Mapmaker",
@@ -1239,7 +1239,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Mapmaker.jpg"
+    "image": "images/expansions/Plunder/Mapmaker.jpg"
   },
   {
     "name": "Maroon",
@@ -1266,7 +1266,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Maroon.jpg"
+    "image": "images/expansions/Plunder/Maroon.jpg"
   },
   {
     "name": "Mining Road",
@@ -1294,7 +1294,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Mining_Road.jpg"
+    "image": "images/expansions/Plunder/Mining_Road.jpg"
   },
   {
     "name": "Mirror",
@@ -1319,7 +1319,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Mirror.jpg"
+    "image": "images/expansions/Plunder/Mirror.jpg"
   },
   {
     "name": "Nearby",
@@ -1343,7 +1343,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Nearby.jpg"
+    "image": "images/expansions/Plunder/Nearby.jpg"
   },
   {
     "name": "Orb",
@@ -1372,7 +1372,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Orb.jpg"
+    "image": "images/expansions/Plunder/Orb.jpg"
   },
   {
     "name": "Patient",
@@ -1395,7 +1395,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Patient.jpg"
+    "image": "images/expansions/Plunder/Patient.jpg"
   },
   {
     "name": "Pendant",
@@ -1419,7 +1419,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Pendant.jpg"
+    "image": "images/expansions/Plunder/Pendant.jpg"
   },
   {
     "name": "Peril",
@@ -1449,7 +1449,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Peril.jpg"
+    "image": "images/expansions/Plunder/Peril.jpg"
   },
   {
     "name": "Pickaxe",
@@ -1479,7 +1479,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Pickaxe.jpg"
+    "image": "images/expansions/Plunder/Pickaxe.jpg"
   },
   {
     "name": "Pilgrim",
@@ -1505,7 +1505,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Pilgrim.jpg"
+    "image": "images/expansions/Plunder/Pilgrim.jpg"
   },
   {
     "name": "Pious",
@@ -1530,7 +1530,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Pious.jpg"
+    "image": "images/expansions/Plunder/Pious.jpg"
   },
   {
     "name": "Prepare",
@@ -1556,7 +1556,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Prepare.jpg"
+    "image": "images/expansions/Plunder/Prepare.jpg"
   },
   {
     "name": "Prize Goat",
@@ -1585,7 +1585,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Prize_Goat.jpg"
+    "image": "images/expansions/Plunder/Prize_Goat.jpg"
   },
   {
     "name": "Prosper",
@@ -1611,7 +1611,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Prosper.jpg"
+    "image": "images/expansions/Plunder/Prosper.jpg"
   },
   {
     "name": "Puzzle Box",
@@ -1639,7 +1639,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Puzzle_Box.jpg"
+    "image": "images/expansions/Plunder/Puzzle_Box.jpg"
   },
   {
     "name": "Quartermaster",
@@ -1667,7 +1667,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Quartermaster.jpg"
+    "image": "images/expansions/Plunder/Quartermaster.jpg"
   },
   {
     "name": "Reckless",
@@ -1691,7 +1691,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Reckless.jpg"
+    "image": "images/expansions/Plunder/Reckless.jpg"
   },
   {
     "name": "Rich",
@@ -1714,7 +1714,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Rich.jpg"
+    "image": "images/expansions/Plunder/Rich.jpg"
   },
   {
     "name": "Rope",
@@ -1743,7 +1743,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Rope.jpg"
+    "image": "images/expansions/Plunder/Rope.jpg"
   },
   {
     "name": "Rush",
@@ -1769,7 +1769,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Rush.jpg"
+    "image": "images/expansions/Plunder/Rush.jpg"
   },
   {
     "name": "Sack of Loot",
@@ -1797,7 +1797,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Sack_of_Loot.jpg"
+    "image": "images/expansions/Plunder/Sack_of_Loot.jpg"
   },
   {
     "name": "Scrounge",
@@ -1823,7 +1823,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Scrounge.jpg"
+    "image": "images/expansions/Plunder/Scrounge.jpg"
   },
   {
     "name": "Search",
@@ -1859,7 +1859,7 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Search.jpg"
+    "image": "images/expansions/Plunder/Search.jpg"
   },
   {
     "name": "Secluded Shrine",
@@ -1889,7 +1889,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Secluded_Shrine.jpg"
+    "image": "images/expansions/Plunder/Secluded_Shrine.jpg"
   },
   {
     "name": "Sextant",
@@ -1919,7 +1919,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Sextant.jpg"
+    "image": "images/expansions/Plunder/Sextant.jpg"
   },
   {
     "name": "Shaman",
@@ -1949,7 +1949,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Shaman.jpg"
+    "image": "images/expansions/Plunder/Shaman.jpg"
   },
   {
     "name": "Shield",
@@ -1979,7 +1979,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Shield.jpg"
+    "image": "images/expansions/Plunder/Shield.jpg"
   },
   {
     "name": "Shy",
@@ -2004,7 +2004,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Shy.jpg"
+    "image": "images/expansions/Plunder/Shy.jpg"
   },
   {
     "name": "Silver Mine",
@@ -2029,7 +2029,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Silver_Mine.jpg"
+    "image": "images/expansions/Plunder/Silver_Mine.jpg"
   },
   {
     "name": "Siren",
@@ -2065,7 +2065,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Plunder/Siren.jpg"
+    "image": "images/expansions/Plunder/Siren.jpg"
   },
   {
     "name": "Spell Scroll",
@@ -2098,7 +2098,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Spell_Scroll.jpg"
+    "image": "images/expansions/Plunder/Spell_Scroll.jpg"
   },
   {
     "name": "Staff",
@@ -2126,7 +2126,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Staff.jpg"
+    "image": "images/expansions/Plunder/Staff.jpg"
   },
   {
     "name": "Stowaway",
@@ -2156,7 +2156,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Stowaway.jpg"
+    "image": "images/expansions/Plunder/Stowaway.jpg"
   },
   {
     "name": "Swamp Shacks",
@@ -2181,7 +2181,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Swamp_Shacks.jpg"
+    "image": "images/expansions/Plunder/Swamp_Shacks.jpg"
   },
   {
     "name": "Sword",
@@ -2211,7 +2211,7 @@
       "Loot"
     ],
     "dependencies": [],
-    "image": "images/Plunder/Sword.jpg"
+    "image": "images/expansions/Plunder/Sword.jpg"
   },
   {
     "name": "Taskmaster",
@@ -2240,7 +2240,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Taskmaster.jpg"
+    "image": "images/expansions/Plunder/Taskmaster.jpg"
   },
   {
     "name": "Tireless",
@@ -2265,7 +2265,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Tireless.jpg"
+    "image": "images/expansions/Plunder/Tireless.jpg"
   },
   {
     "name": "Tools",
@@ -2288,7 +2288,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Plunder/Tools.jpg"
+    "image": "images/expansions/Plunder/Tools.jpg"
   },
   {
     "name": "Trickster",
@@ -2319,7 +2319,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Plunder/Trickster.jpg"
+    "image": "images/expansions/Plunder/Trickster.jpg"
   },
   {
     "name": "Wealthy Village",
@@ -2348,6 +2348,6 @@
     "dependencies": [
       "Loot"
     ],
-    "image": "images/Plunder/Wealthy_Village.jpg"
+    "image": "images/expansions/Plunder/Wealthy_Village.jpg"
   }
 ]

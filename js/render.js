@@ -27,7 +27,7 @@ async function loadCardData() {
 
 function iconImg(filename, alt) {
     const img = document.createElement('img');
-    img.src = `${BASE}/images/icons/${filename}`;
+    img.src = `${BASE}/images/card_icons/${filename}`;
     img.alt = alt;
     img.className = 'render-icon';
     return img;
@@ -43,7 +43,7 @@ function cardImg(cardName, expansion) {
         navigateTo('card', true, { name: cardName });
     });
     const img = document.createElement('img');
-    img.src = `${BASE}/images/${expansion}/${safeName}.jpg`;
+    img.src = `${BASE}/images/expansions/${expansion}/${safeName}.jpg`;
     img.alt = cardName;
     img.className = 'render-card-img';
     a.appendChild(img);

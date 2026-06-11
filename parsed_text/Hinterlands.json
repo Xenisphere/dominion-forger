@@ -25,7 +25,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Berserker.jpg"
+    "image": "images/expansions/Hinterlands/Berserker.jpg"
   },
   {
     "name": "Border Village",
@@ -51,7 +51,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Border_Village.jpg"
+    "image": "images/expansions/Hinterlands/Border_Village.jpg"
   },
   {
     "name": "Cache",
@@ -75,7 +75,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Cache.jpg"
+    "image": "images/expansions/Hinterlands/Cache.jpg"
   },
   {
     "name": "Cartographer",
@@ -102,7 +102,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Cartographer.jpg"
+    "image": "images/expansions/Hinterlands/Cartographer.jpg"
   },
   {
     "name": "Cauldron",
@@ -133,7 +133,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Hinterlands/Cauldron.jpg"
+    "image": "images/expansions/Hinterlands/Cauldron.jpg"
   },
   {
     "name": "Crossroads",
@@ -159,7 +159,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Crossroads.jpg"
+    "image": "images/expansions/Hinterlands/Crossroads.jpg"
   },
   {
     "name": "Develop",
@@ -190,7 +190,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Develop.jpg"
+    "image": "images/expansions/Hinterlands/Develop.jpg"
   },
   {
     "name": "Duchess",
@@ -220,7 +220,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Duchess.jpg"
+    "image": "images/expansions/Hinterlands/Duchess.jpg"
   },
   {
     "name": "Embassy",
@@ -247,7 +247,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Embassy.jpg"
+    "image": "images/expansions/Hinterlands/Embassy.jpg"
   },
   {
     "name": "Farmland",
@@ -274,7 +274,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Farmland.jpg"
+    "image": "images/expansions/Hinterlands/Farmland.jpg"
   },
   {
     "name": "Fool's Gold",
@@ -304,7 +304,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Fool's_Gold.jpg"
+    "image": "images/expansions/Hinterlands/Fool's_Gold.jpg"
   },
   {
     "name": "Guard Dog",
@@ -331,7 +331,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Guard_Dog.jpg"
+    "image": "images/expansions/Hinterlands/Guard_Dog.jpg"
   },
   {
     "name": "Haggler",
@@ -356,7 +356,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Haggler.jpg"
+    "image": "images/expansions/Hinterlands/Haggler.jpg"
   },
   {
     "name": "Highway",
@@ -381,7 +381,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Highway.jpg"
+    "image": "images/expansions/Hinterlands/Highway.jpg"
   },
   {
     "name": "Ill-Gotten Gains",
@@ -410,7 +410,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Hinterlands/Ill-Gotten_Gains.jpg"
+    "image": "images/expansions/Hinterlands/Ill-Gotten_Gains.jpg"
   },
   {
     "name": "Inn",
@@ -439,7 +439,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Inn.jpg"
+    "image": "images/expansions/Hinterlands/Inn.jpg"
   },
   {
     "name": "Jack of All Trades",
@@ -468,7 +468,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Jack_of_All_Trades.jpg"
+    "image": "images/expansions/Hinterlands/Jack_of_All_Trades.jpg"
   },
   {
     "name": "Mandarin",
@@ -497,7 +497,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Mandarin.jpg"
+    "image": "images/expansions/Hinterlands/Mandarin.jpg"
   },
   {
     "name": "Margrave",
@@ -529,7 +529,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Margrave.jpg"
+    "image": "images/expansions/Hinterlands/Margrave.jpg"
   },
   {
     "name": "Noble Brigand",
@@ -564,7 +564,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Noble_Brigand.jpg"
+    "image": "images/expansions/Hinterlands/Noble_Brigand.jpg"
   },
   {
     "name": "Nomad Camp",
@@ -593,7 +593,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Nomad_Camp.jpg"
+    "image": "images/expansions/Hinterlands/Nomad_Camp.jpg"
   },
   {
     "name": "Nomads",
@@ -624,7 +624,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Nomads.jpg"
+    "image": "images/expansions/Hinterlands/Nomads.jpg"
   },
   {
     "name": "Oasis",
@@ -651,7 +651,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Oasis.jpg"
+    "image": "images/expansions/Hinterlands/Oasis.jpg"
   },
   {
     "name": "Oracle",
@@ -684,7 +684,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Oracle.jpg"
+    "image": "images/expansions/Hinterlands/Oracle.jpg"
   },
   {
     "name": "Scheme",
@@ -710,7 +710,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Scheme.jpg"
+    "image": "images/expansions/Hinterlands/Scheme.jpg"
   },
   {
     "name": "Silk Road",
@@ -733,7 +733,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Dark Ages/Silk_Road.jpg"
+    "image": "images/expansions/Dark Ages/Silk_Road.jpg"
   },
   {
     "name": "Souk",
@@ -763,7 +763,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Souk.jpg"
+    "image": "images/expansions/Hinterlands/Souk.jpg"
   },
   {
     "name": "Spice Merchant",
@@ -793,7 +793,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Spice_Merchant.jpg"
+    "image": "images/expansions/Hinterlands/Spice_Merchant.jpg"
   },
   {
     "name": "Stables",
@@ -819,7 +819,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Stables.jpg"
+    "image": "images/expansions/Hinterlands/Stables.jpg"
   },
   {
     "name": "Trader",
@@ -850,7 +850,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Trader.jpg"
+    "image": "images/expansions/Hinterlands/Trader.jpg"
   },
   {
     "name": "Trail",
@@ -882,7 +882,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Trail.jpg"
+    "image": "images/expansions/Hinterlands/Trail.jpg"
   },
   {
     "name": "Tunnel",
@@ -910,7 +910,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Tunnel.jpg"
+    "image": "images/expansions/Hinterlands/Tunnel.jpg"
   },
   {
     "name": "Weaver",
@@ -936,7 +936,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Weaver.jpg"
+    "image": "images/expansions/Hinterlands/Weaver.jpg"
   },
   {
     "name": "Wheelwright",
@@ -963,7 +963,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Hinterlands/Wheelwright.jpg"
+    "image": "images/expansions/Hinterlands/Wheelwright.jpg"
   },
   {
     "name": "Witch's Hut",
@@ -996,6 +996,6 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Hinterlands/Witch's_Hut.jpg"
+    "image": "images/expansions/Hinterlands/Witch's_Hut.jpg"
   }
 ]

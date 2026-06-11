@@ -97,7 +97,7 @@ async function main() {
   const safeName = cardName.replace(/ /g, '_');
   const filename = `${safeName}_${id}.jpg`;
 
-  const outDir = path.join(__dirname, '..', 'images', boxName);
+  const outDir = path.join(__dirname, '..', 'images', 'expansions', boxName);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
   const destPath = path.join(outDir, filename);
@@ -121,7 +121,7 @@ async function main() {
   const directUrl = match[1].replace('http://', 'https://');
   console.log(`[DEBUG] Found image URL: ${directUrl}`);
   await downloadImage(directUrl, destPath);
-  console.log(`[DEBUG] Saved to images/${boxName}/${filename}`);
+  console.log(`[DEBUG] Saved to images/expansions/${boxName}/${filename}`);
 }
 
 main();

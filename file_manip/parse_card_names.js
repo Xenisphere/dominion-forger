@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const raw = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'storage', 'card_names_raw.json'), 'utf-8'));
+const raw = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'raw', 'card_names_raw.json'), 'utf-8'));
 
 function cleanName(name) {
   // Split into words and reject any word containing non-letter, non-' non-- characters
@@ -290,8 +290,8 @@ const json = JSON.stringify(output, null, 2).replace(
   (match) => match.replace(/\s+/g, ' ')
 );
 
-fs.writeFileSync(path.join(__dirname, 'card_names.json'), '', 'utf-8');
+fs.writeFileSync(path.join(__dirname, '..', 'storage', 'card_names.json'), '', 'utf-8');
 console.log('[DEBUG] Cleared card_names.json');
 
-fs.writeFileSync(path.join(__dirname, 'card_names.json'), json, 'utf-8');
+fs.writeFileSync(path.join(__dirname, '..', 'storage', 'card_names.json'), json, 'utf-8');
 console.log(`[DEBUG] Saved card_names.json with ${Object.keys(output).length} expansions`);

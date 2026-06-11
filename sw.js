@@ -24,9 +24,9 @@ const SHELL_FILES = [
     `${BASE}/js/pages/about.js`,
     `${BASE}/js/pages/search.js`,
     `${BASE}/manifest.json`,
-    `${BASE}/images/icons/DFlogo.jpg`,
-    `${BASE}/images/icons/DFlogo-192.jpg`,
-    `${BASE}/images/icons/DFlogo-512.jpg`,
+    `${BASE}/images/website_icons/DFlogo.jpg`,
+    `${BASE}/images/website_icons/DFlogo-192.jpg`,
+    `${BASE}/images/website_icons/DFlogo-512.jpg`,
 ];
 
 const DATA_FILES = [
@@ -84,7 +84,7 @@ self.addEventListener('fetch', e => {
     const path = url.pathname;
 
     // Card images — cache on demand (only if user has opted in via cacheExpansionImages)
-    if (path.includes(`${BASE}/images/`)) {
+    if (path.includes(`${BASE}/images/expansions/`)) {
         e.respondWith((async () => {
             const imgCache = await caches.open(IMG_CACHE);
             const cached = await imgCache.match(e.request);
@@ -113,17 +113,16 @@ self.addEventListener('fetch', e => {
         return;
     }
 
-    // App shell — cache first
+    // App shell — network first, cache fallback
     e.respondWith((async () => {
         const shellCache = await caches.open(SHELL_CACHE);
-        const cached = await shellCache.match(e.request);
-        if (cached) return cached;
         try {
             const response = await fetch(e.request);
             if (response.ok) shellCache.put(e.request, response.clone());
             return response;
         } catch {
-            // Offline fallback to index.html for navigation
+            const cached = await shellCache.match(e.request);
+            if (cached) return cached;
             if (e.request.mode === 'navigate') {
                 return shellCache.match(`${BASE}/index.html`);
             }

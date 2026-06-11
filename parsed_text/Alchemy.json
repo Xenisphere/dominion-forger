@@ -25,7 +25,7 @@
     "dependencies": [
       "Potion"
     ],
-    "image": "images/Alchemy/Alchemist.jpg"
+    "image": "images/expansions/Alchemy/Alchemist.jpg"
   },
   {
     "name": "Apothecary",
@@ -52,7 +52,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Apothecary.jpg"
+    "image": "images/expansions/Alchemy/Apothecary.jpg"
   },
   {
     "name": "Apprentice",
@@ -78,7 +78,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Apprentice.jpg"
+    "image": "images/expansions/Alchemy/Apprentice.jpg"
   },
   {
     "name": "Familiar",
@@ -108,7 +108,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Alchemy/Familiar.jpg"
+    "image": "images/expansions/Alchemy/Familiar.jpg"
   },
   {
     "name": "Golem",
@@ -134,7 +134,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Golem.jpg"
+    "image": "images/expansions/Alchemy/Golem.jpg"
   },
   {
     "name": "Herbalist",
@@ -162,7 +162,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Herbalist.jpg"
+    "image": "images/expansions/Alchemy/Herbalist.jpg"
   },
   {
     "name": "Philosopher's Stone",
@@ -188,7 +188,7 @@
     "dependencies": [
       "Count"
     ],
-    "image": "images/Alchemy/Philosopher's_Stone.jpg"
+    "image": "images/expansions/Alchemy/Philosopher's_Stone.jpg"
   },
   {
     "name": "Possession",
@@ -214,7 +214,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Possession.jpg"
+    "image": "images/expansions/Alchemy/Possession.jpg"
   },
   {
     "name": "Potion",
@@ -237,7 +237,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Potion.jpg"
+    "image": "images/expansions/Alchemy/Potion.jpg"
   },
   {
     "name": "Scrying Pool",
@@ -269,7 +269,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Scrying_Pool.jpg"
+    "image": "images/expansions/Alchemy/Scrying_Pool.jpg"
   },
   {
     "name": "Transmute",
@@ -296,7 +296,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Transmute.jpg"
+    "image": "images/expansions/Alchemy/Transmute.jpg"
   },
   {
     "name": "University",
@@ -321,7 +321,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/University.jpg"
+    "image": "images/expansions/Alchemy/University.jpg"
   },
   {
     "name": "Vineyard",
@@ -344,6 +344,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Alchemy/Vineyard.jpg"
+    "image": "images/expansions/Alchemy/Vineyard.jpg"
   }
 ]

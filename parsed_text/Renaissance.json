@@ -20,7 +20,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Academy.jpg"
+    "image": "images/expansions/Renaissance/Academy.jpg"
   },
   {
     "name": "Acting Troupe",
@@ -47,7 +47,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Acting_Troupe.jpg"
+    "image": "images/expansions/Renaissance/Acting_Troupe.jpg"
   },
   {
     "name": "Barracks",
@@ -71,7 +71,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Barracks.jpg"
+    "image": "images/expansions/Renaissance/Barracks.jpg"
   },
   {
     "name": "Border Guard",
@@ -101,7 +101,7 @@
       "Horn",
       "Lantern"
     ],
-    "image": "images/Renaissance/Border_Guard.jpg"
+    "image": "images/expansions/Renaissance/Border_Guard.jpg"
   },
   {
     "name": "Canal",
@@ -124,7 +124,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Canal.jpg"
+    "image": "images/expansions/Renaissance/Canal.jpg"
   },
   {
     "name": "Capitalism",
@@ -147,7 +147,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Capitalism.jpg"
+    "image": "images/expansions/Renaissance/Capitalism.jpg"
   },
   {
     "name": "Cargo Ship",
@@ -176,7 +176,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Cargo_Ship.jpg"
+    "image": "images/expansions/Renaissance/Cargo_Ship.jpg"
   },
   {
     "name": "Cathedral",
@@ -200,7 +200,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Cathedral.jpg"
+    "image": "images/expansions/Renaissance/Cathedral.jpg"
   },
   {
     "name": "Citadel",
@@ -224,7 +224,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Citadel.jpg"
+    "image": "images/expansions/Renaissance/Citadel.jpg"
   },
   {
     "name": "City Gate",
@@ -249,7 +249,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/City_Gate.jpg"
+    "image": "images/expansions/Renaissance/City_Gate.jpg"
   },
   {
     "name": "Crop Rotation",
@@ -274,7 +274,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Crop_Rotation.jpg"
+    "image": "images/expansions/Renaissance/Crop_Rotation.jpg"
   },
   {
     "name": "Ducat",
@@ -304,7 +304,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Ducat.jpg"
+    "image": "images/expansions/Renaissance/Ducat.jpg"
   },
   {
     "name": "Experiment",
@@ -331,7 +331,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Experiment.jpg"
+    "image": "images/expansions/Renaissance/Experiment.jpg"
   },
   {
     "name": "Exploration",
@@ -357,7 +357,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Exploration.jpg"
+    "image": "images/expansions/Renaissance/Exploration.jpg"
   },
   {
     "name": "Fair",
@@ -381,7 +381,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Fair.jpg"
+    "image": "images/expansions/Renaissance/Fair.jpg"
   },
   {
     "name": "Flag",
@@ -408,7 +408,7 @@
     "dependencies": [
       "Flag Bearer"
     ],
-    "image": "images/Renaissance/Flag.jpg"
+    "image": "images/expansions/Renaissance/Flag.jpg"
   },
   {
     "name": "Flag Bearer",
@@ -440,7 +440,7 @@
     "dependencies": [
       "Flag"
     ],
-    "image": "images/Renaissance/Flag_Bearer.jpg"
+    "image": "images/expansions/Renaissance/Flag_Bearer.jpg"
   },
   {
     "name": "Fleet",
@@ -463,7 +463,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Fleet.jpg"
+    "image": "images/expansions/Renaissance/Fleet.jpg"
   },
   {
     "name": "Guildhall",
@@ -487,7 +487,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Guildhall.jpg"
+    "image": "images/expansions/Renaissance/Guildhall.jpg"
   },
   {
     "name": "Hideout",
@@ -518,7 +518,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Renaissance/Hideout.jpg"
+    "image": "images/expansions/Renaissance/Hideout.jpg"
   },
   {
     "name": "Horn",
@@ -546,7 +546,7 @@
     "dependencies": [
       "Border Guard"
     ],
-    "image": "images/Renaissance/Horn.jpg"
+    "image": "images/expansions/Renaissance/Horn.jpg"
   },
   {
     "name": "Improve",
@@ -577,7 +577,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Improve.jpg"
+    "image": "images/expansions/Renaissance/Improve.jpg"
   },
   {
     "name": "Innovation",
@@ -601,7 +601,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Innovation.jpg"
+    "image": "images/expansions/Renaissance/Innovation.jpg"
   },
   {
     "name": "Inventor",
@@ -626,7 +626,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Inventor.jpg"
+    "image": "images/expansions/Renaissance/Inventor.jpg"
   },
   {
     "name": "Key",
@@ -652,7 +652,7 @@
     "dependencies": [
       "Treasurer"
     ],
-    "image": "images/Renaissance/Key.jpg"
+    "image": "images/expansions/Renaissance/Key.jpg"
   },
   {
     "name": "Lackeys",
@@ -679,7 +679,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Lackeys.jpg"
+    "image": "images/expansions/Renaissance/Lackeys.jpg"
   },
   {
     "name": "Lantern",
@@ -708,7 +708,7 @@
     "dependencies": [
       "Horn"
     ],
-    "image": "images/Renaissance/Lantern.jpg"
+    "image": "images/expansions/Renaissance/Lantern.jpg"
   },
   {
     "name": "Mountain Village",
@@ -733,7 +733,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Mountain_Village.jpg"
+    "image": "images/expansions/Renaissance/Mountain_Village.jpg"
   },
   {
     "name": "Old Witch",
@@ -766,7 +766,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Renaissance/Old_Witch.jpg"
+    "image": "images/expansions/Renaissance/Old_Witch.jpg"
   },
   {
     "name": "Pageant",
@@ -790,7 +790,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Pageant.jpg"
+    "image": "images/expansions/Renaissance/Pageant.jpg"
   },
   {
     "name": "Patron",
@@ -819,7 +819,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Patron.jpg"
+    "image": "images/expansions/Renaissance/Patron.jpg"
   },
   {
     "name": "Piazza",
@@ -844,7 +844,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Piazza.jpg"
+    "image": "images/expansions/Renaissance/Piazza.jpg"
   },
   {
     "name": "Priest",
@@ -873,7 +873,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Priest.jpg"
+    "image": "images/expansions/Renaissance/Priest.jpg"
   },
   {
     "name": "Recruiter",
@@ -901,7 +901,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Recruiter.jpg"
+    "image": "images/expansions/Renaissance/Recruiter.jpg"
   },
   {
     "name": "Research",
@@ -930,7 +930,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Research.jpg"
+    "image": "images/expansions/Renaissance/Research.jpg"
   },
   {
     "name": "Road Network",
@@ -954,7 +954,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Road_Network.jpg"
+    "image": "images/expansions/Renaissance/Road_Network.jpg"
   },
   {
     "name": "Scepter",
@@ -979,7 +979,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Scepter.jpg"
+    "image": "images/expansions/Renaissance/Scepter.jpg"
   },
   {
     "name": "Scholar",
@@ -1005,7 +1005,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Scholar.jpg"
+    "image": "images/expansions/Renaissance/Scholar.jpg"
   },
   {
     "name": "Sculptor",
@@ -1031,7 +1031,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Sculptor.jpg"
+    "image": "images/expansions/Renaissance/Sculptor.jpg"
   },
   {
     "name": "Seer",
@@ -1058,7 +1058,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Seer.jpg"
+    "image": "images/expansions/Renaissance/Seer.jpg"
   },
   {
     "name": "Sewers",
@@ -1083,7 +1083,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Sewers.jpg"
+    "image": "images/expansions/Renaissance/Sewers.jpg"
   },
   {
     "name": "Silk Merchant",
@@ -1116,7 +1116,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Silk_Merchant.jpg"
+    "image": "images/expansions/Renaissance/Silk_Merchant.jpg"
   },
   {
     "name": "Silos",
@@ -1141,7 +1141,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Silos.jpg"
+    "image": "images/expansions/Renaissance/Silos.jpg"
   },
   {
     "name": "Sinister Plot",
@@ -1164,7 +1164,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Sinister_Plot.jpg"
+    "image": "images/expansions/Renaissance/Sinister_Plot.jpg"
   },
   {
     "name": "Spices",
@@ -1190,7 +1190,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Spices.jpg"
+    "image": "images/expansions/Renaissance/Spices.jpg"
   },
   {
     "name": "Star Chart",
@@ -1213,7 +1213,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Star_Chart.jpg"
+    "image": "images/expansions/Renaissance/Star_Chart.jpg"
   },
   {
     "name": "Swashbuckler",
@@ -1242,7 +1242,7 @@
     "dependencies": [
       "Treasure Chest"
     ],
-    "image": "images/Renaissance/Swashbuckler.jpg"
+    "image": "images/expansions/Renaissance/Swashbuckler.jpg"
   },
   {
     "name": "Treasure Chest",
@@ -1267,7 +1267,7 @@
     "dependencies": [
       "Swashbuckler"
     ],
-    "image": "images/Renaissance/Treasure_Chest.jpg"
+    "image": "images/expansions/Renaissance/Treasure_Chest.jpg"
   },
   {
     "name": "Treasurer",
@@ -1299,7 +1299,7 @@
     "dependencies": [
       "Key"
     ],
-    "image": "images/Renaissance/Treasurer.jpg"
+    "image": "images/expansions/Renaissance/Treasurer.jpg"
   },
   {
     "name": "Villain",
@@ -1327,6 +1327,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Renaissance/Villain.jpg"
+    "image": "images/expansions/Renaissance/Villain.jpg"
   }
 ]

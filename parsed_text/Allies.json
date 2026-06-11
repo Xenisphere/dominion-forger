@@ -28,7 +28,7 @@
       "Augurs"
     ],
     "dependencies": [],
-    "image": "images/Allies/Acolyte.jpg"
+    "image": "images/expansions/Allies/Acolyte.jpg"
   },
   {
     "name": "Archer",
@@ -59,7 +59,7 @@
       "Clashes"
     ],
     "dependencies": [],
-    "image": "images/Allies/Archer.jpg"
+    "image": "images/expansions/Allies/Archer.jpg"
   },
   {
     "name": "Architects' Guild",
@@ -82,7 +82,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Architects'_Guild.jpg"
+    "image": "images/expansions/Allies/Architects'_Guild.jpg"
   },
   {
     "name": "Augurs",
@@ -111,7 +111,7 @@
       "Sibyl",
       "Sorceress"
     ],
-    "image": "images/Allies/Augurs.jpg"
+    "image": "images/expansions/Allies/Augurs.jpg"
   },
   {
     "name": "Band of Nomads",
@@ -137,7 +137,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Band_of_Nomads.jpg"
+    "image": "images/expansions/Allies/Band_of_Nomads.jpg"
   },
   {
     "name": "Barbarian",
@@ -170,7 +170,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Allies/Barbarian.jpg"
+    "image": "images/expansions/Allies/Barbarian.jpg"
   },
   {
     "name": "Battle Plan",
@@ -198,7 +198,7 @@
       "Clashes"
     ],
     "dependencies": [],
-    "image": "images/Allies/Battle_Plan.jpg"
+    "image": "images/expansions/Allies/Battle_Plan.jpg"
   },
   {
     "name": "Bauble",
@@ -227,7 +227,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Bauble.jpg"
+    "image": "images/expansions/Allies/Bauble.jpg"
   },
   {
     "name": "Blacksmith",
@@ -255,7 +255,7 @@
       "Townsfolk"
     ],
     "dependencies": [],
-    "image": "images/Allies/Blacksmith.jpg"
+    "image": "images/expansions/Allies/Blacksmith.jpg"
   },
   {
     "name": "Broker",
@@ -285,7 +285,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Broker.jpg"
+    "image": "images/expansions/Allies/Broker.jpg"
   },
   {
     "name": "Capital City",
@@ -313,7 +313,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Capital_City.jpg"
+    "image": "images/expansions/Allies/Capital_City.jpg"
   },
   {
     "name": "Carpenter",
@@ -341,7 +341,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Carpenter.jpg"
+    "image": "images/expansions/Allies/Carpenter.jpg"
   },
   {
     "name": "Cave Dwellers",
@@ -365,7 +365,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Cave_Dwellers.jpg"
+    "image": "images/expansions/Allies/Cave_Dwellers.jpg"
   },
   {
     "name": "Circle of Witches",
@@ -392,7 +392,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Allies/Circle_of_Witches.jpg"
+    "image": "images/expansions/Allies/Circle_of_Witches.jpg"
   },
   {
     "name": "City-state",
@@ -415,7 +415,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/City-state.jpg"
+    "image": "images/expansions/Allies/City-state.jpg"
   },
   {
     "name": "Clashes",
@@ -445,7 +445,7 @@
       "Territory",
       "Warlord"
     ],
-    "image": "images/Allies/Clashes.jpg"
+    "image": "images/expansions/Allies/Clashes.jpg"
   },
   {
     "name": "Coastal Haven",
@@ -471,7 +471,7 @@
     "dependencies": [
       "Keep"
     ],
-    "image": "images/Allies/Coastal_Haven.jpg"
+    "image": "images/expansions/Allies/Coastal_Haven.jpg"
   },
   {
     "name": "Conjurer",
@@ -501,7 +501,7 @@
       "Wizards"
     ],
     "dependencies": [],
-    "image": "images/Allies/Conjurer.jpg"
+    "image": "images/expansions/Allies/Conjurer.jpg"
   },
   {
     "name": "Contract",
@@ -529,7 +529,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Contract.jpg"
+    "image": "images/expansions/Allies/Contract.jpg"
   },
   {
     "name": "Courier",
@@ -555,7 +555,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Courier.jpg"
+    "image": "images/expansions/Allies/Courier.jpg"
   },
   {
     "name": "Crafters' Guild",
@@ -580,7 +580,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Crafters'_Guild.jpg"
+    "image": "images/expansions/Allies/Crafters'_Guild.jpg"
   },
   {
     "name": "Desert Guides",
@@ -604,7 +604,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Desert_Guides.jpg"
+    "image": "images/expansions/Allies/Desert_Guides.jpg"
   },
   {
     "name": "Distant Shore",
@@ -634,7 +634,7 @@
       "Odysseys"
     ],
     "dependencies": [],
-    "image": "images/Allies/Distant_Shore.jpg"
+    "image": "images/expansions/Allies/Distant_Shore.jpg"
   },
   {
     "name": "Elder",
@@ -662,7 +662,7 @@
       "Townsfolk"
     ],
     "dependencies": [],
-    "image": "images/Allies/Elder.jpg"
+    "image": "images/expansions/Allies/Elder.jpg"
   },
   {
     "name": "Emissary",
@@ -689,7 +689,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Emissary.jpg"
+    "image": "images/expansions/Allies/Emissary.jpg"
   },
   {
     "name": "Family of Inventors",
@@ -712,7 +712,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Family_of_Inventors.jpg"
+    "image": "images/expansions/Allies/Family_of_Inventors.jpg"
   },
   {
     "name": "Fellowship of Scribes",
@@ -736,7 +736,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Fellowship_of_Scribes.jpg"
+    "image": "images/expansions/Allies/Fellowship_of_Scribes.jpg"
   },
   {
     "name": "Forest Dwellers",
@@ -761,7 +761,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Forest_Dwellers.jpg"
+    "image": "images/expansions/Allies/Forest_Dwellers.jpg"
   },
   {
     "name": "Forts",
@@ -790,7 +790,7 @@
       "Stronghold",
       "Tent"
     ],
-    "image": "images/Allies/Forts.jpg"
+    "image": "images/expansions/Allies/Forts.jpg"
   },
   {
     "name": "Galleria",
@@ -816,7 +816,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Galleria.jpg"
+    "image": "images/expansions/Allies/Galleria.jpg"
   },
   {
     "name": "Gang of Pickpockets",
@@ -839,7 +839,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Gang_of_Pickpockets.jpg"
+    "image": "images/expansions/Allies/Gang_of_Pickpockets.jpg"
   },
   {
     "name": "Garrison",
@@ -871,7 +871,7 @@
       "Forts"
     ],
     "dependencies": [],
-    "image": "images/Allies/Garrison.jpg"
+    "image": "images/expansions/Allies/Garrison.jpg"
   },
   {
     "name": "Guildmaster",
@@ -898,7 +898,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Guildmaster.jpg"
+    "image": "images/expansions/Allies/Guildmaster.jpg"
   },
   {
     "name": "Herb Gatherer",
@@ -928,7 +928,7 @@
     "dependencies": [
       "Augurs"
     ],
-    "image": "images/Allies/Herb_Gatherer.jpg"
+    "image": "images/expansions/Allies/Herb_Gatherer.jpg"
   },
   {
     "name": "Highwayman",
@@ -957,7 +957,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Highwayman.jpg"
+    "image": "images/expansions/Allies/Highwayman.jpg"
   },
   {
     "name": "Hill Fort",
@@ -986,7 +986,7 @@
       "Forts"
     ],
     "dependencies": [],
-    "image": "images/Allies/Hill_Fort.jpg"
+    "image": "images/expansions/Allies/Hill_Fort.jpg"
   },
   {
     "name": "Hunter",
@@ -1013,7 +1013,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Hunter.jpg"
+    "image": "images/expansions/Allies/Hunter.jpg"
   },
   {
     "name": "Importer",
@@ -1043,7 +1043,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Importer.jpg"
+    "image": "images/expansions/Allies/Importer.jpg"
   },
   {
     "name": "Innkeeper",
@@ -1068,7 +1068,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Innkeeper.jpg"
+    "image": "images/expansions/Allies/Innkeeper.jpg"
   },
   {
     "name": "Island Folk",
@@ -1091,7 +1091,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Island_Folk.jpg"
+    "image": "images/expansions/Allies/Island_Folk.jpg"
   },
   {
     "name": "League of Bankers",
@@ -1115,7 +1115,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/League_of_Bankers.jpg"
+    "image": "images/expansions/Allies/League_of_Bankers.jpg"
   },
   {
     "name": "League of Shopkeepers",
@@ -1142,7 +1142,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/League_of_Shopkeepers.jpg"
+    "image": "images/expansions/Allies/League_of_Shopkeepers.jpg"
   },
   {
     "name": "Lich",
@@ -1177,7 +1177,7 @@
       "Wizards"
     ],
     "dependencies": [],
-    "image": "images/Allies/Lich.jpg"
+    "image": "images/expansions/Allies/Lich.jpg"
   },
   {
     "name": "Market Towns",
@@ -1200,7 +1200,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Market_Towns.jpg"
+    "image": "images/expansions/Allies/Market_Towns.jpg"
   },
   {
     "name": "Marquis",
@@ -1228,7 +1228,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Marquis.jpg"
+    "image": "images/expansions/Allies/Marquis.jpg"
   },
   {
     "name": "Merchant Camp",
@@ -1256,7 +1256,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Merchant_Camp.jpg"
+    "image": "images/expansions/Allies/Merchant_Camp.jpg"
   },
   {
     "name": "Miller",
@@ -1285,7 +1285,7 @@
       "Townsfolk"
     ],
     "dependencies": [],
-    "image": "images/Allies/Miller.jpg"
+    "image": "images/expansions/Allies/Miller.jpg"
   },
   {
     "name": "Modify",
@@ -1312,7 +1312,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Modify.jpg"
+    "image": "images/expansions/Allies/Modify.jpg"
   },
   {
     "name": "Mountain Folk",
@@ -1336,7 +1336,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Mountain_Folk.jpg"
+    "image": "images/expansions/Allies/Mountain_Folk.jpg"
   },
   {
     "name": "Odysseys",
@@ -1365,7 +1365,7 @@
       "Sunken Treasure",
       "Voyage"
     ],
-    "image": "images/Allies/Odysseys.jpg"
+    "image": "images/expansions/Allies/Odysseys.jpg"
   },
   {
     "name": "Old Map",
@@ -1395,7 +1395,7 @@
     "dependencies": [
       "Odysseys"
     ],
-    "image": "images/Allies/Old_Map.jpg"
+    "image": "images/expansions/Allies/Old_Map.jpg"
   },
   {
     "name": "Order of Astrologers",
@@ -1418,7 +1418,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Order_of_Astrologers.jpg"
+    "image": "images/expansions/Allies/Order_of_Astrologers.jpg"
   },
   {
     "name": "Order of Masons",
@@ -1441,7 +1441,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Order_of_Masons.jpg"
+    "image": "images/expansions/Allies/Order_of_Masons.jpg"
   },
   {
     "name": "Peaceful Cult",
@@ -1465,7 +1465,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Peaceful_Cult.jpg"
+    "image": "images/expansions/Allies/Peaceful_Cult.jpg"
   },
   {
     "name": "Plateau Shepherds",
@@ -1488,7 +1488,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Plateau_Shepherds.jpg"
+    "image": "images/expansions/Allies/Plateau_Shepherds.jpg"
   },
   {
     "name": "Royal Galley",
@@ -1516,7 +1516,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Royal_Galley.jpg"
+    "image": "images/expansions/Allies/Royal_Galley.jpg"
   },
   {
     "name": "Sentinel",
@@ -1543,7 +1543,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Sentinel.jpg"
+    "image": "images/expansions/Allies/Sentinel.jpg"
   },
   {
     "name": "Sibyl",
@@ -1572,7 +1572,7 @@
       "Augurs"
     ],
     "dependencies": [],
-    "image": "images/Allies/Sibyl.jpg"
+    "image": "images/expansions/Allies/Sibyl.jpg"
   },
   {
     "name": "Skirmisher",
@@ -1601,7 +1601,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Skirmisher.jpg"
+    "image": "images/expansions/Allies/Skirmisher.jpg"
   },
   {
     "name": "Sorcerer",
@@ -1634,7 +1634,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Allies/Sorcerer.jpg"
+    "image": "images/expansions/Allies/Sorcerer.jpg"
   },
   {
     "name": "Sorceress",
@@ -1669,7 +1669,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Allies/Sorceress.jpg"
+    "image": "images/expansions/Allies/Sorceress.jpg"
   },
   {
     "name": "Specialist",
@@ -1693,7 +1693,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Specialist.jpg"
+    "image": "images/expansions/Allies/Specialist.jpg"
   },
   {
     "name": "Stronghold",
@@ -1726,7 +1726,7 @@
       "Forts"
     ],
     "dependencies": [],
-    "image": "images/Allies/Stronghold.jpg"
+    "image": "images/expansions/Allies/Stronghold.jpg"
   },
   {
     "name": "Student",
@@ -1760,7 +1760,7 @@
     "dependencies": [
       "Wizards"
     ],
-    "image": "images/Allies/Student.jpg"
+    "image": "images/expansions/Allies/Student.jpg"
   },
   {
     "name": "Sunken Treasure",
@@ -1786,7 +1786,7 @@
       "Odysseys"
     ],
     "dependencies": [],
-    "image": "images/Allies/Sunken_Treasure.jpg"
+    "image": "images/expansions/Allies/Sunken_Treasure.jpg"
   },
   {
     "name": "Swap",
@@ -1811,7 +1811,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Swap.jpg"
+    "image": "images/expansions/Allies/Swap.jpg"
   },
   {
     "name": "Sycophant",
@@ -1844,7 +1844,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Sycophant.jpg"
+    "image": "images/expansions/Allies/Sycophant.jpg"
   },
   {
     "name": "Tent",
@@ -1876,7 +1876,7 @@
     "dependencies": [
       "Forts"
     ],
-    "image": "images/Allies/Tent.jpg"
+    "image": "images/expansions/Allies/Tent.jpg"
   },
   {
     "name": "Territory",
@@ -1902,7 +1902,7 @@
       "Clashes"
     ],
     "dependencies": [],
-    "image": "images/Allies/Territory.jpg"
+    "image": "images/expansions/Allies/Territory.jpg"
   },
   {
     "name": "Town",
@@ -1930,7 +1930,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Town.jpg"
+    "image": "images/expansions/Allies/Town.jpg"
   },
   {
     "name": "Town Crier",
@@ -1962,7 +1962,7 @@
     "dependencies": [
       "Townsfolk"
     ],
-    "image": "images/Allies/Town_Crier.jpg"
+    "image": "images/expansions/Allies/Town_Crier.jpg"
   },
   {
     "name": "Townsfolk",
@@ -1992,7 +1992,7 @@
       "Town",
       "Town Crier"
     ],
-    "image": "images/Allies/Townsfolk.jpg"
+    "image": "images/expansions/Allies/Townsfolk.jpg"
   },
   {
     "name": "Trappers' Lodge",
@@ -2016,7 +2016,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Trappers'_Lodge.jpg"
+    "image": "images/expansions/Allies/Trappers'_Lodge.jpg"
   },
   {
     "name": "Underling",
@@ -2042,7 +2042,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Underling.jpg"
+    "image": "images/expansions/Allies/Underling.jpg"
   },
   {
     "name": "Voyage",
@@ -2072,7 +2072,7 @@
       "Odysseys"
     ],
     "dependencies": [],
-    "image": "images/Allies/Voyage.jpg"
+    "image": "images/expansions/Allies/Voyage.jpg"
   },
   {
     "name": "Warlord",
@@ -2104,7 +2104,7 @@
       "Clashes"
     ],
     "dependencies": [],
-    "image": "images/Allies/Warlord.jpg"
+    "image": "images/expansions/Allies/Warlord.jpg"
   },
   {
     "name": "Wizards",
@@ -2134,7 +2134,7 @@
       "Sorcerer",
       "Student"
     ],
-    "image": "images/Allies/Wizards.jpg"
+    "image": "images/expansions/Allies/Wizards.jpg"
   },
   {
     "name": "Woodworkers' Guild",
@@ -2161,6 +2161,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Allies/Woodworkers'_Guild.jpg"
+    "image": "images/expansions/Allies/Woodworkers'_Guild.jpg"
   }
 ]

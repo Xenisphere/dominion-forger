@@ -21,7 +21,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Alliance.jpg"
+    "image": "images/expansions/Menagerie/Alliance.jpg"
   },
   {
     "name": "Animal Fair",
@@ -49,7 +49,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Animal_Fair.jpg"
+    "image": "images/expansions/Menagerie/Animal_Fair.jpg"
   },
   {
     "name": "Banish",
@@ -72,7 +72,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Banish.jpg"
+    "image": "images/expansions/Menagerie/Banish.jpg"
   },
   {
     "name": "Bargain",
@@ -98,7 +98,7 @@
     "dependencies": [
       "Horse"
     ],
-    "image": "images/Menagerie/Bargain.jpg"
+    "image": "images/expansions/Menagerie/Bargain.jpg"
   },
   {
     "name": "Barge",
@@ -127,7 +127,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Barge.jpg"
+    "image": "images/expansions/Menagerie/Barge.jpg"
   },
   {
     "name": "Black Cat",
@@ -160,7 +160,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Menagerie/Black_Cat.jpg"
+    "image": "images/expansions/Menagerie/Black_Cat.jpg"
   },
   {
     "name": "Bounty Hunter",
@@ -187,7 +187,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Bounty_Hunter.jpg"
+    "image": "images/expansions/Menagerie/Bounty_Hunter.jpg"
   },
   {
     "name": "Camel Train",
@@ -212,7 +212,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Camel_Train.jpg"
+    "image": "images/expansions/Menagerie/Camel_Train.jpg"
   },
   {
     "name": "Cardinal",
@@ -242,7 +242,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Cardinal.jpg"
+    "image": "images/expansions/Menagerie/Cardinal.jpg"
   },
   {
     "name": "Cavalry",
@@ -270,7 +270,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Cavalry.jpg"
+    "image": "images/expansions/Menagerie/Cavalry.jpg"
   },
   {
     "name": "Commerce",
@@ -293,7 +293,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Commerce.jpg"
+    "image": "images/expansions/Menagerie/Commerce.jpg"
   },
   {
     "name": "Coven",
@@ -324,7 +324,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Menagerie/Coven.jpg"
+    "image": "images/expansions/Menagerie/Coven.jpg"
   },
   {
     "name": "Delay",
@@ -348,7 +348,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Delay.jpg"
+    "image": "images/expansions/Menagerie/Delay.jpg"
   },
   {
     "name": "Demand",
@@ -376,7 +376,7 @@
     "dependencies": [
       "Horse"
     ],
-    "image": "images/Menagerie/Demand.jpg"
+    "image": "images/expansions/Menagerie/Demand.jpg"
   },
   {
     "name": "Desperation",
@@ -405,7 +405,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Menagerie/Desperation.jpg"
+    "image": "images/expansions/Menagerie/Desperation.jpg"
   },
   {
     "name": "Destrier",
@@ -431,7 +431,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Destrier.jpg"
+    "image": "images/expansions/Menagerie/Destrier.jpg"
   },
   {
     "name": "Displace",
@@ -456,7 +456,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Displace.jpg"
+    "image": "images/expansions/Menagerie/Displace.jpg"
   },
   {
     "name": "Enclave",
@@ -480,7 +480,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Enclave.jpg"
+    "image": "images/expansions/Menagerie/Enclave.jpg"
   },
   {
     "name": "Enhance",
@@ -506,7 +506,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Enhance.jpg"
+    "image": "images/expansions/Menagerie/Enhance.jpg"
   },
   {
     "name": "Falconer",
@@ -534,7 +534,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Falconer.jpg"
+    "image": "images/expansions/Menagerie/Falconer.jpg"
   },
   {
     "name": "Fisherman",
@@ -561,7 +561,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Fisherman.jpg"
+    "image": "images/expansions/Menagerie/Fisherman.jpg"
   },
   {
     "name": "Gamble",
@@ -587,7 +587,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Gamble.jpg"
+    "image": "images/expansions/Menagerie/Gamble.jpg"
   },
   {
     "name": "Gatekeeper",
@@ -616,7 +616,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Gatekeeper.jpg"
+    "image": "images/expansions/Menagerie/Gatekeeper.jpg"
   },
   {
     "name": "Goatherd",
@@ -642,7 +642,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Goatherd.jpg"
+    "image": "images/expansions/Menagerie/Goatherd.jpg"
   },
   {
     "name": "Groom",
@@ -670,7 +670,7 @@
     "dependencies": [
       "Horse"
     ],
-    "image": "images/Menagerie/Groom.jpg"
+    "image": "images/expansions/Menagerie/Groom.jpg"
   },
   {
     "name": "Horse",
@@ -697,7 +697,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Horse.jpg"
+    "image": "images/expansions/Menagerie/Horse.jpg"
   },
   {
     "name": "Hostelry",
@@ -725,7 +725,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Hostelry.jpg"
+    "image": "images/expansions/Menagerie/Hostelry.jpg"
   },
   {
     "name": "Hunting Lodge",
@@ -751,7 +751,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Hunting_Lodge.jpg"
+    "image": "images/expansions/Menagerie/Hunting_Lodge.jpg"
   },
   {
     "name": "Invest",
@@ -776,7 +776,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Invest.jpg"
+    "image": "images/expansions/Menagerie/Invest.jpg"
   },
   {
     "name": "Kiln",
@@ -802,7 +802,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Kiln.jpg"
+    "image": "images/expansions/Menagerie/Kiln.jpg"
   },
   {
     "name": "Livery",
@@ -830,7 +830,7 @@
     "dependencies": [
       "Horse"
     ],
-    "image": "images/Menagerie/Livery.jpg"
+    "image": "images/expansions/Menagerie/Livery.jpg"
   },
   {
     "name": "March",
@@ -853,7 +853,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/March.jpg"
+    "image": "images/expansions/Menagerie/March.jpg"
   },
   {
     "name": "Mastermind",
@@ -878,7 +878,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Mastermind.jpg"
+    "image": "images/expansions/Menagerie/Mastermind.jpg"
   },
   {
     "name": "Paddock",
@@ -904,7 +904,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Paddock.jpg"
+    "image": "images/expansions/Menagerie/Paddock.jpg"
   },
   {
     "name": "Populate",
@@ -927,7 +927,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Populate.jpg"
+    "image": "images/expansions/Menagerie/Populate.jpg"
   },
   {
     "name": "Pursue",
@@ -954,7 +954,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Pursue.jpg"
+    "image": "images/expansions/Menagerie/Pursue.jpg"
   },
   {
     "name": "Reap",
@@ -978,7 +978,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Reap.jpg"
+    "image": "images/expansions/Menagerie/Reap.jpg"
   },
   {
     "name": "Ride",
@@ -1004,7 +1004,7 @@
     "dependencies": [
       "Horse"
     ],
-    "image": "images/Menagerie/Ride.jpg"
+    "image": "images/expansions/Menagerie/Ride.jpg"
   },
   {
     "name": "Sanctuary",
@@ -1031,7 +1031,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Sanctuary.jpg"
+    "image": "images/expansions/Menagerie/Sanctuary.jpg"
   },
   {
     "name": "Scrap",
@@ -1065,7 +1065,7 @@
     "dependencies": [
       "Horse"
     ],
-    "image": "images/Menagerie/Scrap.jpg"
+    "image": "images/expansions/Menagerie/Scrap.jpg"
   },
   {
     "name": "Seize the Day",
@@ -1088,7 +1088,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Seize_the_Day.jpg"
+    "image": "images/expansions/Menagerie/Seize_the_Day.jpg"
   },
   {
     "name": "Sheepdog",
@@ -1115,7 +1115,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Sheepdog.jpg"
+    "image": "images/expansions/Menagerie/Sheepdog.jpg"
   },
   {
     "name": "Sleigh",
@@ -1144,7 +1144,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Sleigh.jpg"
+    "image": "images/expansions/Menagerie/Sleigh.jpg"
   },
   {
     "name": "Snowy Village",
@@ -1171,7 +1171,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Snowy_Village.jpg"
+    "image": "images/expansions/Menagerie/Snowy_Village.jpg"
   },
   {
     "name": "Stampede",
@@ -1195,7 +1195,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Stampede.jpg"
+    "image": "images/expansions/Menagerie/Stampede.jpg"
   },
   {
     "name": "Stockpile",
@@ -1220,7 +1220,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Stockpile.jpg"
+    "image": "images/expansions/Menagerie/Stockpile.jpg"
   },
   {
     "name": "Supplies",
@@ -1248,7 +1248,7 @@
     "dependencies": [
       "Horse"
     ],
-    "image": "images/Menagerie/Supplies.jpg"
+    "image": "images/expansions/Menagerie/Supplies.jpg"
   },
   {
     "name": "Toil",
@@ -1273,7 +1273,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Toil.jpg"
+    "image": "images/expansions/Menagerie/Toil.jpg"
   },
   {
     "name": "Transport",
@@ -1297,7 +1297,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Transport.jpg"
+    "image": "images/expansions/Menagerie/Transport.jpg"
   },
   {
     "name": "Village Green",
@@ -1327,7 +1327,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Village_Green.jpg"
+    "image": "images/expansions/Menagerie/Village_Green.jpg"
   },
   {
     "name": "Way of the Butterfly",
@@ -1351,7 +1351,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Butterfly.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Butterfly.jpg"
   },
   {
     "name": "Way of the Camel",
@@ -1374,7 +1374,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Camel.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Camel.jpg"
   },
   {
     "name": "Way of the Chameleon",
@@ -1397,7 +1397,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Chameleon.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Chameleon.jpg"
   },
   {
     "name": "Way of the Frog",
@@ -1423,7 +1423,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Frog.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Frog.jpg"
   },
   {
     "name": "Way of the Goat",
@@ -1447,7 +1447,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Goat.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Goat.jpg"
   },
   {
     "name": "Way of the Horse",
@@ -1473,7 +1473,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Horse.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Horse.jpg"
   },
   {
     "name": "Way of the Mole",
@@ -1499,7 +1499,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Mole.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Mole.jpg"
   },
   {
     "name": "Way of the Monkey",
@@ -1524,7 +1524,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Monkey.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Monkey.jpg"
   },
   {
     "name": "Way of the Mouse",
@@ -1549,7 +1549,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Mouse.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Mouse.jpg"
   },
   {
     "name": "Way of the Mule",
@@ -1575,7 +1575,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Mule.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Mule.jpg"
   },
   {
     "name": "Way of the Otter",
@@ -1599,7 +1599,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Otter.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Otter.jpg"
   },
   {
     "name": "Way of the Owl",
@@ -1623,7 +1623,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Owl.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Owl.jpg"
   },
   {
     "name": "Way of the Ox",
@@ -1647,7 +1647,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Ox.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Ox.jpg"
   },
   {
     "name": "Way of the Pig",
@@ -1671,7 +1671,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Pig.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Pig.jpg"
   },
   {
     "name": "Way of the Rat",
@@ -1695,7 +1695,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Rat.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Rat.jpg"
   },
   {
     "name": "Way of the Seal",
@@ -1721,7 +1721,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Seal.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Seal.jpg"
   },
   {
     "name": "Way of the Sheep",
@@ -1745,7 +1745,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Sheep.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Sheep.jpg"
   },
   {
     "name": "Way of the Squirrel",
@@ -1769,7 +1769,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Squirrel.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Squirrel.jpg"
   },
   {
     "name": "Way of the Turtle",
@@ -1793,7 +1793,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Turtle.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Turtle.jpg"
   },
   {
     "name": "Way of the Worm",
@@ -1816,7 +1816,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Way_of_the_Worm.jpg"
+    "image": "images/expansions/Menagerie/Way_of_the_Worm.jpg"
   },
   {
     "name": "Wayfarer",
@@ -1842,6 +1842,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Menagerie/Wayfarer.jpg"
+    "image": "images/expansions/Menagerie/Wayfarer.jpg"
   }
 ]

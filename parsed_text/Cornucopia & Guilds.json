@@ -24,7 +24,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Advisor.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Advisor.jpg"
   },
   {
     "name": "Bag of Gold",
@@ -56,7 +56,7 @@
       "Tournament"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Bag_of_Gold.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Bag_of_Gold.jpg"
   },
   {
     "name": "Baker",
@@ -84,7 +84,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Baker.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Baker.jpg"
   },
   {
     "name": "Butcher",
@@ -114,7 +114,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Butcher.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Butcher.jpg"
   },
   {
     "name": "Candlestick Maker",
@@ -141,7 +141,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Candlestick_Maker.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Candlestick_Maker.jpg"
   },
   {
     "name": "Carnival",
@@ -168,7 +168,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Carnival.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Carnival.jpg"
   },
   {
     "name": "Coronet",
@@ -197,7 +197,7 @@
       "Joust"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Coronet.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Coronet.jpg"
   },
   {
     "name": "Courser",
@@ -229,7 +229,7 @@
       "Joust"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Courser.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Courser.jpg"
   },
   {
     "name": "Demesne",
@@ -262,7 +262,7 @@
       "Joust"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Demesne.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Demesne.jpg"
   },
   {
     "name": "Diadem",
@@ -290,7 +290,7 @@
       "Tournament"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Diadem.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Diadem.jpg"
   },
   {
     "name": "Doctor",
@@ -320,7 +320,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Doctor.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Doctor.jpg"
   },
   {
     "name": "Fairgrounds",
@@ -343,7 +343,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Fairgrounds.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Fairgrounds.jpg"
   },
   {
     "name": "Farmhands",
@@ -371,7 +371,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Farmhands.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Farmhands.jpg"
   },
   {
     "name": "Farming Village",
@@ -398,7 +398,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Farming_Village.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Farming_Village.jpg"
   },
   {
     "name": "Farrier",
@@ -425,7 +425,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Farrier.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Farrier.jpg"
   },
   {
     "name": "Ferryman",
@@ -452,7 +452,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Ferryman.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Ferryman.jpg"
   },
   {
     "name": "Followers",
@@ -490,7 +490,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Cornucopia & Guilds/Followers.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Followers.jpg"
   },
   {
     "name": "Footpad",
@@ -520,7 +520,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Footpad.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Footpad.jpg"
   },
   {
     "name": "Fortune Teller",
@@ -553,7 +553,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Cornucopia & Guilds/Fortune_Teller.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Fortune_Teller.jpg"
   },
   {
     "name": "Hamlet",
@@ -580,7 +580,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Hamlet.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Hamlet.jpg"
   },
   {
     "name": "Harvest",
@@ -608,7 +608,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Harvest.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Harvest.jpg"
   },
   {
     "name": "Herald",
@@ -637,7 +637,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Herald.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Herald.jpg"
   },
   {
     "name": "Horn of Plenty",
@@ -664,7 +664,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Horn_of_Plenty.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Horn_of_Plenty.jpg"
   },
   {
     "name": "Horse Traders",
@@ -695,7 +695,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Horse_Traders.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Horse_Traders.jpg"
   },
   {
     "name": "Housecarl",
@@ -724,7 +724,7 @@
       "Joust"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Housecarl.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Housecarl.jpg"
   },
   {
     "name": "Huge Turnip",
@@ -753,7 +753,7 @@
       "Joust"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Huge_Turnip.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Huge_Turnip.jpg"
   },
   {
     "name": "Hunting Party",
@@ -780,7 +780,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Hunting_Party.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Hunting_Party.jpg"
   },
   {
     "name": "Infirmary",
@@ -807,7 +807,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Infirmary.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Infirmary.jpg"
   },
   {
     "name": "Jester",
@@ -839,7 +839,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Cornucopia & Guilds/Jester.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Jester.jpg"
   },
   {
     "name": "Journeyman",
@@ -866,7 +866,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Journeyman.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Journeyman.jpg"
   },
   {
     "name": "Joust",
@@ -896,7 +896,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Joust.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Joust.jpg"
   },
   {
     "name": "Masterpiece",
@@ -920,7 +920,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Masterpiece.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Masterpiece.jpg"
   },
   {
     "name": "Menagerie",
@@ -945,7 +945,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Menagerie.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Menagerie.jpg"
   },
   {
     "name": "Merchant Guild",
@@ -972,7 +972,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Merchant_Guild.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Merchant_Guild.jpg"
   },
   {
     "name": "Plaza",
@@ -1000,7 +1000,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Plaza.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Plaza.jpg"
   },
   {
     "name": "Princess",
@@ -1030,7 +1030,7 @@
       "Tournament"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Princess.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Princess.jpg"
   },
   {
     "name": "Remake",
@@ -1058,7 +1058,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Remake.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Remake.jpg"
   },
   {
     "name": "Renown",
@@ -1088,7 +1088,7 @@
       "Joust"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Renown.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Renown.jpg"
   },
   {
     "name": "Shop",
@@ -1115,7 +1115,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Shop.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Shop.jpg"
   },
   {
     "name": "Soothsayer",
@@ -1145,7 +1145,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Cornucopia & Guilds/Soothsayer.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Soothsayer.jpg"
   },
   {
     "name": "Stonemason",
@@ -1175,7 +1175,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Stonemason.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Stonemason.jpg"
   },
   {
     "name": "Taxman",
@@ -1208,7 +1208,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Taxman.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Taxman.jpg"
   },
   {
     "name": "Tournament",
@@ -1242,7 +1242,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Tournament.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Tournament.jpg"
   },
   {
     "name": "Trusty Steed",
@@ -1275,7 +1275,7 @@
       "Tournament"
     ],
     "dependencies": [],
-    "image": "images/Cornucopia & Guilds/Trusty_Steed.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Trusty_Steed.jpg"
   },
   {
     "name": "Young Witch",
@@ -1308,6 +1308,6 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Cornucopia & Guilds/Young_Witch.jpg"
+    "image": "images/expansions/Cornucopia & Guilds/Young_Witch.jpg"
   }
 ]

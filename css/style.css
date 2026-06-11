@@ -73,6 +73,16 @@ header {
 	color: var(--ink);
 }
 
+#search-toggle {
+	color: var(--accent);
+}
+
+	#search-toggle img {
+		width: 20px;
+		height: 20px;
+		filter: invert(27%) sepia(60%) saturate(800%) hue-rotate(10deg) brightness(85%) contrast(90%);
+	}
+
 .site-title {
 	font-family: 'Cinzel', serif;
 	font-size: 1.5rem;
@@ -146,9 +156,9 @@ header {
 	z-index: 49;
 }
 
-	#mobile-search-bar.open {
-		display: block;
-	}
+#mobile-search-bar.open {
+	display: block;
+}
 
 #mobile-search-form {
 	display: flex;
@@ -404,10 +414,6 @@ footer {
 		font-size: 0.7rem;
 		gap: 0.5rem;
 	}
-	
-	.featured-image {
-		margin: auto;
-	}
 
 	.featured-name {
 		text-align: center;
@@ -522,6 +528,21 @@ footer {
 	width: 180px;
 	border: 1px solid var(--rule);
 	flex-shrink: 0;
+}
+
+.featured-image-wrap {
+	width: 180px;
+	height: 180px;
+	flex-shrink: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--rule);
+}
+
+.featured-image--landscape {
+	width: 360px;
 }
 
 .featured-info {

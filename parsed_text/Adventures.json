@@ -20,7 +20,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Alms.jpg"
+    "image": "images/expansions/Adventures/Alms.jpg"
   },
   {
     "name": "Amulet",
@@ -51,7 +51,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Amulet.jpg"
+    "image": "images/expansions/Adventures/Amulet.jpg"
   },
   {
     "name": "Artificer",
@@ -81,7 +81,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Artificer.jpg"
+    "image": "images/expansions/Adventures/Artificer.jpg"
   },
   {
     "name": "Ball",
@@ -104,7 +104,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Ball.jpg"
+    "image": "images/expansions/Adventures/Ball.jpg"
   },
   {
     "name": "Bonfire",
@@ -128,7 +128,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Bonfire.jpg"
+    "image": "images/expansions/Adventures/Bonfire.jpg"
   },
   {
     "name": "Borrow",
@@ -155,7 +155,7 @@
     "dependencies": [
       "-1 Card token"
     ],
-    "image": "images/Adventures/Borrow.jpg"
+    "image": "images/expansions/Adventures/Borrow.jpg"
   },
   {
     "name": "Bridge Troll",
@@ -185,7 +185,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Bridge_Troll.jpg"
+    "image": "images/expansions/Adventures/Bridge_Troll.jpg"
   },
   {
     "name": "Caravan Guard",
@@ -215,7 +215,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Caravan_Guard.jpg"
+    "image": "images/expansions/Adventures/Caravan_Guard.jpg"
   },
   {
     "name": "Champion",
@@ -250,7 +250,7 @@
       "Treasure Hunter",
       "Warrior"
     ],
-    "image": "images/Adventures/Champion.jpg"
+    "image": "images/expansions/Adventures/Champion.jpg"
   },
   {
     "name": "Coin of the Realm",
@@ -276,7 +276,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Coin_of_the_Realm.jpg"
+    "image": "images/expansions/Adventures/Coin_of_the_Realm.jpg"
   },
   {
     "name": "Disciple",
@@ -312,7 +312,7 @@
       "Soldier",
       "Teacher"
     ],
-    "image": "images/Adventures/Disciple.jpg"
+    "image": "images/expansions/Adventures/Disciple.jpg"
   },
   {
     "name": "Distant Lands",
@@ -338,7 +338,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Distant_Lands.jpg"
+    "image": "images/expansions/Adventures/Distant_Lands.jpg"
   },
   {
     "name": "Dungeon",
@@ -366,7 +366,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Dungeon.jpg"
+    "image": "images/expansions/Adventures/Dungeon.jpg"
   },
   {
     "name": "Duplicate",
@@ -391,7 +391,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Duplicate.jpg"
+    "image": "images/expansions/Adventures/Duplicate.jpg"
   },
   {
     "name": "Expedition",
@@ -414,7 +414,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Expedition.jpg"
+    "image": "images/expansions/Adventures/Expedition.jpg"
   },
   {
     "name": "Ferry",
@@ -437,7 +437,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Ferry.jpg"
+    "image": "images/expansions/Adventures/Ferry.jpg"
   },
   {
     "name": "Fugitive",
@@ -471,7 +471,7 @@
       "Soldier",
       "Teacher"
     ],
-    "image": "images/Adventures/Fugitive.jpg"
+    "image": "images/expansions/Adventures/Fugitive.jpg"
   },
   {
     "name": "Gear",
@@ -499,7 +499,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Gear.jpg"
+    "image": "images/expansions/Adventures/Gear.jpg"
   },
   {
     "name": "Giant",
@@ -534,7 +534,7 @@
       "Curse",
       "Journey"
     ],
-    "image": "images/Adventures/Giant.jpg"
+    "image": "images/expansions/Adventures/Giant.jpg"
   },
   {
     "name": "Guide",
@@ -562,7 +562,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Guide.jpg"
+    "image": "images/expansions/Adventures/Guide.jpg"
   },
   {
     "name": "Haunted Woods",
@@ -593,7 +593,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Haunted_Woods.jpg"
+    "image": "images/expansions/Adventures/Haunted_Woods.jpg"
   },
   {
     "name": "Hero",
@@ -627,7 +627,7 @@
       "Treasure Hunter",
       "Warrior"
     ],
-    "image": "images/Adventures/Hero.jpg"
+    "image": "images/expansions/Adventures/Hero.jpg"
   },
   {
     "name": "Hireling",
@@ -655,7 +655,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Hireling.jpg"
+    "image": "images/expansions/Adventures/Hireling.jpg"
   },
   {
     "name": "Inheritance",
@@ -681,7 +681,7 @@
     "dependencies": [
       "Estate token"
     ],
-    "image": "images/Adventures/Inheritance.jpg"
+    "image": "images/expansions/Adventures/Inheritance.jpg"
   },
   {
     "name": "Lost Arts",
@@ -706,7 +706,7 @@
     "dependencies": [
       "+1 Action token"
     ],
-    "image": "images/Adventures/Lost_Arts.jpg"
+    "image": "images/expansions/Adventures/Lost_Arts.jpg"
   },
   {
     "name": "Lost City",
@@ -734,7 +734,7 @@
     ],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Lost_City.jpg"
+    "image": "images/expansions/Adventures/Lost_City.jpg"
   },
   {
     "name": "Magpie",
@@ -761,7 +761,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Magpie.jpg"
+    "image": "images/expansions/Adventures/Magpie.jpg"
   },
   {
     "name": "Messenger",
@@ -788,7 +788,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Messenger.jpg"
+    "image": "images/expansions/Adventures/Messenger.jpg"
   },
   {
     "name": "Miser",
@@ -814,7 +814,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Miser.jpg"
+    "image": "images/expansions/Adventures/Miser.jpg"
   },
   {
     "name": "Mission",
@@ -837,7 +837,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Mission.jpg"
+    "image": "images/expansions/Adventures/Mission.jpg"
   },
   {
     "name": "Page",
@@ -872,7 +872,7 @@
       "Treasure Hunter",
       "Warrior"
     ],
-    "image": "images/Adventures/Page.jpg"
+    "image": "images/expansions/Adventures/Page.jpg"
   },
   {
     "name": "Pathfinding",
@@ -897,7 +897,7 @@
     "dependencies": [
       "+1 Card token"
     ],
-    "image": "images/Adventures/Pathfinding.jpg"
+    "image": "images/expansions/Adventures/Pathfinding.jpg"
   },
   {
     "name": "Peasant",
@@ -933,7 +933,7 @@
       "Soldier",
       "Teacher"
     ],
-    "image": "images/Adventures/Peasant.jpg"
+    "image": "images/expansions/Adventures/Peasant.jpg"
   },
   {
     "name": "Pilgrimage",
@@ -958,7 +958,7 @@
     "dependencies": [
       "Journey"
     ],
-    "image": "images/Adventures/Pilgrimage.jpg"
+    "image": "images/expansions/Adventures/Pilgrimage.jpg"
   },
   {
     "name": "Plan",
@@ -984,7 +984,7 @@
     "dependencies": [
       "Trashing token"
     ],
-    "image": "images/Adventures/Plan.jpg"
+    "image": "images/expansions/Adventures/Plan.jpg"
   },
   {
     "name": "Port",
@@ -1010,7 +1010,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Port.jpg"
+    "image": "images/expansions/Adventures/Port.jpg"
   },
   {
     "name": "Quest",
@@ -1034,7 +1034,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Quest.jpg"
+    "image": "images/expansions/Adventures/Quest.jpg"
   },
   {
     "name": "Raid",
@@ -1057,7 +1057,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Raid.jpg"
+    "image": "images/expansions/Adventures/Raid.jpg"
   },
   {
     "name": "Ranger",
@@ -1086,7 +1086,7 @@
     "dependencies": [
       "Journey"
     ],
-    "image": "images/Adventures/Ranger.jpg"
+    "image": "images/expansions/Adventures/Ranger.jpg"
   },
   {
     "name": "Ratcatcher",
@@ -1113,7 +1113,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Ratcatcher.jpg"
+    "image": "images/expansions/Adventures/Ratcatcher.jpg"
   },
   {
     "name": "Raze",
@@ -1143,7 +1143,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Raze.jpg"
+    "image": "images/expansions/Adventures/Raze.jpg"
   },
   {
     "name": "Relic",
@@ -1167,7 +1167,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Relic.jpg"
+    "image": "images/expansions/Adventures/Relic.jpg"
   },
   {
     "name": "Royal Carriage",
@@ -1193,7 +1193,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Royal_Carriage.jpg"
+    "image": "images/expansions/Adventures/Royal_Carriage.jpg"
   },
   {
     "name": "Save",
@@ -1218,7 +1218,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Save.jpg"
+    "image": "images/expansions/Adventures/Save.jpg"
   },
   {
     "name": "Scouting Party",
@@ -1245,7 +1245,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Scouting_Party.jpg"
+    "image": "images/expansions/Adventures/Scouting_Party.jpg"
   },
   {
     "name": "Seaway",
@@ -1271,7 +1271,7 @@
     "dependencies": [
       "+1 Buy token"
     ],
-    "image": "images/Adventures/Seaway.jpg"
+    "image": "images/expansions/Adventures/Seaway.jpg"
   },
   {
     "name": "Soldier",
@@ -1310,7 +1310,7 @@
       "Peasant",
       "Teacher"
     ],
-    "image": "images/Adventures/Soldier.jpg"
+    "image": "images/expansions/Adventures/Soldier.jpg"
   },
   {
     "name": "Storyteller",
@@ -1334,7 +1334,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Storyteller.jpg"
+    "image": "images/expansions/Adventures/Storyteller.jpg"
   },
   {
     "name": "Swamp Hag",
@@ -1367,7 +1367,7 @@
     "dependencies": [
       "Curse"
     ],
-    "image": "images/Adventures/Swamp_Hag.jpg"
+    "image": "images/expansions/Adventures/Swamp_Hag.jpg"
   },
   {
     "name": "Teacher",
@@ -1402,7 +1402,7 @@
       "Peasant",
       "Soldier"
     ],
-    "image": "images/Adventures/Teacher.jpg"
+    "image": "images/expansions/Adventures/Teacher.jpg"
   },
   {
     "name": "Trade",
@@ -1429,7 +1429,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Trade.jpg"
+    "image": "images/expansions/Adventures/Trade.jpg"
   },
   {
     "name": "Training",
@@ -1454,7 +1454,7 @@
     "dependencies": [
       "+(1) token"
     ],
-    "image": "images/Adventures/Training.jpg"
+    "image": "images/expansions/Adventures/Training.jpg"
   },
   {
     "name": "Transmogrify",
@@ -1485,7 +1485,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Transmogrify.jpg"
+    "image": "images/expansions/Adventures/Transmogrify.jpg"
   },
   {
     "name": "Travelling Fair",
@@ -1511,7 +1511,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Travelling_Fair.jpg"
+    "image": "images/expansions/Adventures/Travelling_Fair.jpg"
   },
   {
     "name": "Treasure Hunter",
@@ -1550,7 +1550,7 @@
       "Page",
       "Warrior"
     ],
-    "image": "images/Adventures/Treasure_Hunter.jpg"
+    "image": "images/expansions/Adventures/Treasure_Hunter.jpg"
   },
   {
     "name": "Treasure Trove",
@@ -1574,7 +1574,7 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Treasure_Trove.jpg"
+    "image": "images/expansions/Adventures/Treasure_Trove.jpg"
   },
   {
     "name": "Warrior",
@@ -1616,7 +1616,7 @@
       "Page",
       "Treasure Hunter"
     ],
-    "image": "images/Adventures/Warrior.jpg"
+    "image": "images/expansions/Adventures/Warrior.jpg"
   },
   {
     "name": "Wine Merchant",
@@ -1645,6 +1645,6 @@
     "opponent_tags": [],
     "parent": [],
     "dependencies": [],
-    "image": "images/Adventures/Wine_Merchant.jpg"
+    "image": "images/expansions/Adventures/Wine_Merchant.jpg"
   }
 ]
