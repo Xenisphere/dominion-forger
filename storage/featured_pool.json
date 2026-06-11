@@ -1,6 +1,4 @@
 [
-  "Palace",
-  "Livery",
   "Figurine",
   "Tunnel",
   "Baths",
@@ -38,6 +36,7 @@
   "Herbalist",
   "Tiara",
   "Band of Nomads",
+  "Livery",
   "Goatherd",
   "Rogue",
   "Apothecary",
@@ -79,6 +78,7 @@
   "Famine",
   "Butcher",
   "Farmers' Market",
+  "Palace",
   "Lost City",
   "Library",
   "Pendant",

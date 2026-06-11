@@ -73,15 +73,42 @@ header {
 	color: var(--ink);
 }
 
-#search-toggle {
-	color: var(--accent);
+#header-right {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-left: auto;
 }
 
-	#search-toggle img {
-		width: 20px;
-		height: 20px;
+#search-toggle {
+	display: block; /* always visible now */
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1.2rem;
+	color: var(--ink-light);
+	padding: 6px;
+	flex-shrink: 0;
+	transition: color 0.2s;
+}
+
+	#search-toggle img, #profile-btn img {
+		width: 22px;
+		height: 22px;
 		filter: invert(27%) sepia(60%) saturate(800%) hue-rotate(10deg) brightness(85%) contrast(90%);
 	}
+
+#profile-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 6px;
+	flex-shrink: 0;
+}
+
+#profile-btn:hover img, #search-toggle:hover img {
+	filter: invert(15%) sepia(80%) saturate(900%) hue-rotate(10deg) brightness(70%) contrast(95%);
+}
 
 .site-title {
 	font-family: 'Cinzel', serif;
@@ -140,11 +167,11 @@ header {
 	transition: color 0.2s;
 }
 
-	#search-toggle:hover {
-		color: var(--accent);
-	}
+#search-toggle:hover {
+	color: var(--accent);
+}
 
-#mobile-search-bar {
+#search-bar {
 	display: none;
 	position: fixed;
 	top: var(--header-h);
@@ -156,32 +183,22 @@ header {
 	z-index: 49;
 }
 
-#mobile-search-bar.open {
+#search-bar.open {
 	display: block;
 }
 
-#mobile-search-form {
+#search-bar-form {
 	display: flex;
 }
 
-#mobile-search-input {
-	width: 100%;
+#search-bar input {
+	width: 200px;
 	padding: 8px 12px;
 	border: 1px solid var(--rule);
 	background: var(--parchment);
 	color: var(--ink);
 	font-family: 'EB Garamond', Georgia, serif;
 	font-size: 1rem;
-}
-
-@media (max-width: 640px) {
-	.desktop-search {
-		display: none;
-	}
-
-	#search-toggle {
-		display: block;
-	}
 }
 
 /* -- OVERLAY -- */
