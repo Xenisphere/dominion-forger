@@ -419,7 +419,7 @@ footer {
 		text-align: center;
 	}
 	.featured-link {
-		display: block;
+		/*display: block;*/
 		text-align: center;
 	}
 }
