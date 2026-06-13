@@ -126,11 +126,21 @@ header {
 	transition: color 0.2s;
 }
 
-	#search-toggle img, #profile-btn img {
-		width: 22px;
-		height: 22px;
-		filter: invert(27%) sepia(60%) saturate(800%) hue-rotate(10deg) brightness(85%) contrast(90%);
-	}
+#search-bar input {
+    width: 200px;
+    padding: 8px 12px;
+    border: 1px solid var(--rule);
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1rem;
+}
+
+#search-toggle img, #profile-btn img {
+	width: 22px;
+	height: 22px;
+	filter: invert(27%) sepia(60%) saturate(800%) hue-rotate(10deg) brightness(85%) contrast(90%);
+}
 
 #profile-btn {
 	background: none;
