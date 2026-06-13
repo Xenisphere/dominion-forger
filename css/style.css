@@ -115,7 +115,7 @@ header {
 }
 
 #search-toggle {
-	display: block; /* always visible now */
+	display: block; 
 	background: none;
 	border: none;
 	cursor: pointer;
