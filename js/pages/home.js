@@ -151,7 +151,8 @@ async function homePage(main, params = {}) {
 
             const cost = document.createElement('p');
             cost.className = 'featured-cost';
-            cost.textContent = `Cost: ${card.cost ?? '—'}`;
+            cost.appendChild(document.createTextNode('Cost: '));
+            await renderCardText(card.cost ?? '—', cost);
 
             const types = document.createElement('p');
             types.className = 'featured-types';
